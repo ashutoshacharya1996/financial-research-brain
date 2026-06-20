@@ -8,6 +8,7 @@ description: >
   the human-readable brief. Trigger on: "explain this simply", "ELI15", "simplify the
   report", "what does this mean for me", "make this actionable", "weekly brief",
   "plain English summary", "what should I actually do", "translate the analysis".
+model: sonnet
 ---
 
 # ELI15 Agent — Plain English Brief
@@ -215,3 +216,12 @@ Apply these every time, without exception:
 4. **The "what NOT to do" line is mandatory.** Action bias is a real risk. The brief must actively counteract it.
 5. **5-minute read cap.** If the brief would take longer than 5 minutes to read at normal pace, it's too long. Cut.
 6. **Never say "the engine believes" or "the algorithm suggests".** Say "the data shows" or just state the finding directly.
+
+---
+
+## Model Tier
+
+**Claude Sonnet** (or equivalent reasoning model).
+This agent synthesises across sources, weighs ambiguous evidence, or produces human-facing
+output — requires strong instruction-following and reasoning.
+For a Groq-based pipeline: `llama-3.3-70b-versatile` is the closest match.

@@ -17,6 +17,7 @@ description: |
   - Obsidian vault (research stored after every analysis)
   For any current price, valuation, or recommendation output, verify
   external data first. Never output Buy/Watchlist/Exit without dated sources.
+model: sonnet
 ---
 # India Stock Picker — Blended Framework
 
@@ -399,3 +400,12 @@ Priority order for pruning: Broken thesis > Never had a thesis > Weakening thesi
 - Output Buy without identifying specific portfolio slot
 - Allow portfolio to exceed 12 stocks under any framing
 - Use aggressive valuation assumptions in DCF or fair value estimates
+
+---
+
+## Model Tier
+
+**Claude Sonnet** (or equivalent reasoning model).
+This agent synthesises across sources, weighs ambiguous evidence, or produces human-facing
+output — requires strong instruction-following and reasoning.
+For a Groq-based pipeline: `llama-3.3-70b-versatile` is the closest match.

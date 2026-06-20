@@ -7,6 +7,7 @@ description: >
   detection reports to 04_COMPANY_ANALYSIS/. Run after extraction, before theme detection.
   Trigger on: "run delta", "what changed", "compare quarters", "detect changes",
   "delta analysis", "what's different this quarter".
+model: haiku
 ---
 
 # Delta Agent
@@ -167,3 +168,11 @@ Ranked by signal strength:
 4. **No baseline = flag, not skip.** If there's no prior period data, produce a baseline file and explicitly flag that the next run will produce the first real delta.
 5. **Theme Signal Deltas are mandatory.** Even if financial deltas are unremarkable, theme signal deltas feed the Theme Agent and must be populated.
 6. **One file per company per period.** Do not overwrite prior delta files.
+
+---
+
+## Model Tier
+
+**Claude Haiku** (or equivalent lightweight model).
+This agent does structured, repetitive extraction work — no multi-step reasoning required.
+For a Groq-based pipeline: `llama-3.1-8b-instant` or `mixtral-8x7b-32768` are suitable.

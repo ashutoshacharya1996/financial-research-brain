@@ -7,6 +7,7 @@ description: >
   Run after delta agent, before opportunity screener. Trigger on: "run theme detection",
   "update themes", "what themes are emerging", "cluster signals into themes",
   "theme analysis", "which themes are strengthening".
+model: sonnet
 ---
 
 # Theme Agent
@@ -211,3 +212,12 @@ Themes passing to screener (Emerging or Developing, confidence ≥ 5.0):
 4. **Broken themes stay.** Mark as Broken, document why, keep the file. Broken themes are learning data.
 5. **Confidence > 8.0 requires explicit counter-arguments.** High conviction must acknowledge its own weaknesses.
 6. **Write the run summary last.** It is the handoff document to the Opportunity Screener.
+
+---
+
+## Model Tier
+
+**Claude Sonnet** (or equivalent reasoning model).
+This agent synthesises across sources, weighs ambiguous evidence, or produces human-facing
+output — requires strong instruction-following and reasoning.
+For a Groq-based pipeline: `llama-3.3-70b-versatile` is the closest match.

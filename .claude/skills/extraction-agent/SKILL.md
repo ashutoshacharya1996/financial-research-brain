@@ -7,6 +7,7 @@ description: >
   and writes structured outputs to 03_EXTRACTED_DATA/. Run after collection, before delta.
   Trigger on: "extract", "process documents", "run extraction", "parse earnings call",
   "extract signals from filings".
+model: haiku
 ---
 
 # Extraction Agent
@@ -165,3 +166,11 @@ Fields not mentioned in this document:
 5. **Date every value.** Every metric must carry the period it relates to (e.g. Q1 FY26, not just "latest").
 6. **Flag missing mandatory fields.** Use the Missing Data section for any field that couldn't be found.
 7. **Do not skip Theme Signal Log.** This is the primary input to the Theme Agent — it must be populated even if sparse.
+
+---
+
+## Model Tier
+
+**Claude Haiku** (or equivalent lightweight model).
+This agent does structured, repetitive extraction work — no multi-step reasoning required.
+For a Groq-based pipeline: `llama-3.1-8b-instant` or `mixtral-8x7b-32768` are suitable.

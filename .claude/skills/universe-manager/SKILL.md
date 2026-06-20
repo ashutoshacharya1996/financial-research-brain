@@ -7,6 +7,7 @@ description: >
   attention that may not yet be in the index. Run this first before any other agent.
   Trigger on: "run universe manager", "update company list", "populate universe",
   "rebuild company master", "which companies should we track", "add new stocks to universe".
+model: sonnet
 ---
 
 # Universe Manager
@@ -148,3 +149,12 @@ ticker,company_name,sector,source,discovery_reason,last_updated
 - **Discovery reason must be fundamental, not price-based.** "Stock up 20% this week" is not a reason to add. "Named as supplier in 3 defence order announcements" is.
 - **Do not remove companies.** Dropped from Nifty 1000? Flag it, keep tracking. The engine may have mid-cycle thesis on it.
 - **User watchlist always added, no threshold required.** If the user names a stock, it goes in.
+
+---
+
+## Model Tier
+
+**Claude Sonnet** (or equivalent reasoning model).
+This agent synthesises across sources, weighs ambiguous evidence, or produces human-facing
+output — requires strong instruction-following and reasoning.
+For a Groq-based pipeline: `llama-3.3-70b-versatile` is the closest match.

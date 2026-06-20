@@ -9,6 +9,7 @@ description: |
   outcome depends on other people's choices. Trigger for: "apply game theory", "think about
   this strategically", "what's the equilibrium", "how will this play out", "what are they
   thinking". Lead with ELI15. Always identify game type first — it changes the entire strategy.
+model: sonnet
 ---
 
 # Game Theory Master Skill
@@ -383,3 +384,12 @@ Load these when the situation matches. These are worked examples to calibrate ou
 - Provide ethical validation — a strategy can be optimal and still wrong. That's the user's call.
 - Guarantee a "win" — game theory finds the best available move, not a guaranteed outcome
 - Skip the ELI15 step — every output must be understandable to a non-expert
+
+---
+
+## Model Tier
+
+**Claude Sonnet** (or equivalent reasoning model).
+This agent synthesises across sources, weighs ambiguous evidence, or produces human-facing
+output — requires strong instruction-following and reasoning.
+For a Groq-based pipeline: `llama-3.3-70b-versatile` is the closest match.

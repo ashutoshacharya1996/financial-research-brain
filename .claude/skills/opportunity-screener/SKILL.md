@@ -8,6 +8,7 @@ description: >
   03_EXTRACTED_DATA/. Writes to 07_OPPORTUNITIES/weekly/ and 07_OPPORTUNITIES/active/.
   Trigger on: "run opportunity screener", "generate weekly report", "what should I research
   this week", "run the screener", "produce Sunday report", "top 10 stocks this week".
+model: sonnet
 ---
 
 # Opportunity Screener
@@ -22,3 +23,12 @@ When triggered:
 3. Read `07_OPPORTUNITIES/weekly/` for last week's report (for comparison)
 4. Execute all 8 steps as defined in the prompt
 5. Write output to `07_OPPORTUNITIES/weekly/YYYY-MM-DD.md`
+
+---
+
+## Model Tier
+
+**Claude Sonnet** (or equivalent reasoning model).
+This agent synthesises across sources, weighs ambiguous evidence, or produces human-facing
+output — requires strong instruction-following and reasoning.
+For a Groq-based pipeline: `llama-3.3-70b-versatile` is the closest match.

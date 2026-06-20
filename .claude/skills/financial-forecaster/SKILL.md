@@ -12,6 +12,7 @@ description: >
   weighted view of an investment's future. Works standalone — no prerequisite skills needed.
   Always saves final output to Obsidian vault. Use this skill liberally whenever the user
   wants to think through investment futures, not just evaluate current quality.
+model: sonnet
 ---
 
 # Financial Forecaster — Scenario Engine
@@ -455,3 +456,12 @@ Confirm vault write with: `Obsidian note saved: 02-Research/forecasts/TICKER-YYY
 - **financial-advisor**: Macro overlay from `references/macro-overlay.md` informs Phase 3. Call it if already loaded.
 - **Kite MCP**: Use for live Indian stock prices. Fall back to web search for global instruments.
 - **Obsidian**: Always write the final note. If Obsidian is unavailable, output the full note in the conversation and flag: "Obsidian write failed — copy above to vault manually."
+
+---
+
+## Model Tier
+
+**Claude Sonnet** (or equivalent reasoning model).
+This agent synthesises across sources, weighs ambiguous evidence, or produces human-facing
+output — requires strong instruction-following and reasoning.
+For a Groq-based pipeline: `llama-3.3-70b-versatile` is the closest match.
