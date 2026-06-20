@@ -1,1 +1,1 @@
- ticker,company_name,sector,industry,nse_symbol,bse_code,ir_website,tracking_status,last_updated
+ticker,company_name,sector,source,last_updated
