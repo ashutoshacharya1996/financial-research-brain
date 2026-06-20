@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Research Dashboard</title>
+<style>
+:root{
+  --bg:#000;--s1:#1C1C1E;--s2:#2C2C2E;--s3:#3A3A3C;
+  --bd:rgba(255,255,255,.08);--bd2:rgba(255,255,255,.14);
+  --blue:#0A84FF;--bl2:rgba(10,132,255,.14);--bl3:rgba(10,132,255,.25);
+  --green:#30D158;--gr2:rgba(48,209,88,.14);--gr3:rgba(48,209,88,.25);
+  --yellow:#FFD60A;--ye2:rgba(255,214,10,.14);
+  --orange:#FF9F0A;--or2:rgba(255,159,10,.14);--or3:rgba(255,159,10,.25);
+  --red:#FF453A;--re2:rgba(255,69,58,.14);--re3:rgba(255,69,58,.25);
+  --indigo:#5E5CE6;--in2:rgba(94,92,230,.14);
+  --teal:#5AC8FA;
+  --t1:#FFF;--t2:rgba(255,255,255,.58);--t3:rgba(255,255,255,.30);--t4:rgba(255,255,255,.15);
+  --st:env(safe-area-inset-top,44px);--sb:env(safe-area-inset-bottom,34px);
+  --r8:8px;--r12:12px;--r16:16px;--r20:20px;
+}
+[data-theme="light"]{
+  --bg:#F2F2F7;--s1:#FFF;--s2:#F2F2F7;--s3:#E5E5EA;
+  --bd:rgba(0,0,0,.08);--bd2:rgba(0,0,0,.12);
+  --t1:#000;--t2:rgba(0,0,0,.60);--t3:rgba(0,0,0,.35);--t4:rgba(0,0,0,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{background:var(--bg);color:var(--t1);font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;font-size:16px;min-height:100dvh;overflow-x:hidden}
+
+/* SCREENS */
+.screen{position:fixed;inset:0;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;transform:translateX(0);transition:transform .32s cubic-bezier(.4,0,.2,1);will-change:transform}
+.screen.slide-right{transform:translateX(100%)}
+.screen.slide-left{transform:translateX(-20%);pointer-events:none}
+
+/* HEADER */
+.hdr{position:sticky;top:0;z-index:90;background:rgba(0,0,0,.75);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);border-bottom:1px solid var(--bd)}
+[data-theme="light"] .hdr{background:rgba(242,242,247,.82)}
+.hdr-top{display:flex;align-items:center;justify-content:space-between;padding:calc(var(--st) + 8px) 16px 8px}
+.hdr-title{font-size:17px;font-weight:700}
+.hdr-sub{font-size:12px;color:var(--t3);margin-top:1px}
+.hdr-actions{display:flex;align-items:center;gap:8px}
+.icon-btn{width:34px;height:34px;border-radius:50%;background:var(--s2);border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;color:var(--t2);position:relative;flex-shrink:0}
+
+/* LANDING TABS */
+.landing-tabs{display:flex;overflow-x:auto;scrollbar-width:none;padding:0 12px 0;border-bottom:1px solid var(--bd);gap:2px}
+.landing-tabs::-webkit-scrollbar{display:none}
+.ltab{padding:10px 14px;font-size:13px;font-weight:600;color:var(--t3);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;transition:all .15s;display:flex;align-items:center;gap:6px}
+.ltab.active{color:var(--blue);border-bottom-color:var(--blue)}
+.ltab-badge{font-size:10px;font-weight:700;padding:1px 6px;border-radius:10px;background:var(--s2);color:var(--t3)}
+.ltab.active .ltab-badge{background:var(--bl2);color:var(--blue)}
+
+/* LANDING PANES */
+.landing-pane{display:none;animation:fadeIn .2s ease}
+.landing-pane.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+
+/* OPPORTUNITY CARDS */
+.opp-list{padding:14px 14px calc(var(--sb)+24px);display:flex;flex-direction:column;gap:14px}
+.opp-card{background:var(--s1);border-radius:var(--r20);border:1px solid var(--bd);overflow:hidden}
+.opp-card-header{padding:16px 16px 12px;display:flex;align-items:center;gap:14px}
+.conf-ring-wrap{position:relative;width:64px;height:64px;flex-shrink:0}
+.conf-ring-wrap svg{transform:rotate(-90deg)}
+.conf-ring-label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.conf-big{font-size:18px;font-weight:800;color:var(--blue);line-height:1}
+.conf-denom{font-size:9px;color:var(--t3);font-weight:600}
+.opp-header-info{flex:1;min-width:0}
+.opp-theme{font-size:15px;font-weight:700;line-height:1.3;margin-bottom:6px}
+.opp-pills{display:flex;gap:6px;flex-wrap:wrap}
+.opp-pill{font-size:10px;font-weight:700;padding:3px 8px;border-radius:10px}
+.pill-active{background:var(--gr2);color:var(--green)}
+.pill-accel{background:var(--bl2);color:var(--blue)}
+.pill-corr{background:var(--s2);color:var(--t3);border:1px solid var(--bd)}
+.opp-divider{height:1px;background:var(--bd);margin:0 16px}
+.opp-candidates{padding:12px 16px 8px}
+.opp-section-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);margin-bottom:8px}
+.candidate-badges{display:flex;flex-wrap:wrap;gap:6px}
+.cand-badge{padding:5px 12px;border-radius:20px;background:var(--s2);border:1px solid var(--bd2);font-size:12px;font-weight:700;color:var(--t2);cursor:pointer;transition:all .15s}
+.cand-badge:active{transform:scale(.95);background:var(--bl2);color:var(--blue);border-color:var(--bl3)}
+.opp-bullets{padding:12px 16px}
+.opp-bullet{display:flex;gap:10px;padding:6px 0;font-size:13px;color:var(--t2);line-height:1.5;border-bottom:1px solid var(--bd)}
+.opp-bullet:last-child{border-bottom:none}
+.bullet-icon{flex-shrink:0;font-size:14px}
+.opp-risks{padding:0 16px 12px}
+.risk-item{display:flex;gap:10px;padding:6px 0;font-size:12px;color:var(--t3);line-height:1.45;border-bottom:1px solid var(--bd)}
+.risk-item:last-child{border-bottom:none}
+.opp-footer{padding:12px 16px;background:var(--s2);display:flex;align-items:center;justify-content:space-between}
+.opp-footer-meta{font-size:11px;color:var(--t3)}
+.explore-btn{font-size:12px;font-weight:700;color:var(--blue);background:none;border:none;cursor:pointer;padding:4px 0}
+
+/* RESEARCH QUEUE */
+.queue-sticky{padding:10px 16px 8px;background:var(--s2);border-bottom:1px solid var(--bd)}
+.queue-note{font-size:12px;color:var(--t3);line-height:1.4}
+.queue-list{padding:0 14px calc(var(--sb)+24px)}
+.queue-entry{background:var(--s1);border-radius:var(--r16);border:1px solid var(--bd);margin-top:10px;overflow:hidden;cursor:pointer;transition:transform .1s}
+.queue-entry:active{transform:scale(.98)}
+.queue-entry.no-detail{cursor:default}
+.queue-entry.no-detail:active{transform:none}
+.qe-top{display:flex;align-items:flex-start;gap:12px;padding:12px 14px 8px}
+.qe-rank{width:28px;height:28px;border-radius:50%;background:var(--blue);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.qe-body{flex:1;min-width:0}
+.qe-ticker{font-size:11px;font-weight:700;letter-spacing:.07em;color:var(--t3);margin-bottom:1px}
+.qe-company{font-size:14px;font-weight:700;color:var(--t1)}
+.qe-reason{font-size:12px;color:var(--t2);line-height:1.5;padding:0 14px 8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.qe-footer{display:flex;align-items:center;gap:6px;padding:8px 14px;background:var(--s2);flex-wrap:wrap}
+.qe-opp-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:var(--bl2);color:var(--blue);border:1px solid var(--bl3)}
+.qe-pc-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:var(--gr2);color:var(--green);border:1px solid var(--gr3)}
+.qe-source{font-size:10px;color:var(--t3)}
+.queue-unfilled{margin:10px 0;background:var(--s1);border-radius:var(--r12);border:1px dashed var(--bd2);padding:14px;text-align:center;color:var(--t3);font-size:12px;line-height:1.5}
+
+/* CANDIDATES TAB CONTROLS */
+.candidates-controls{background:var(--bg);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:10}
+.sort-bar{display:flex;align-items:center;gap:6px;padding:8px 16px 4px;overflow-x:auto;scrollbar-width:none}
+.sort-bar::-webkit-scrollbar{display:none}
+.sort-label{font-size:11px;color:var(--t3);flex-shrink:0}
+.sort-pill{padding:4px 10px;border-radius:20px;font-size:11px;font-weight:600;background:var(--s2);border:1px solid var(--bd);color:var(--t3);cursor:pointer;white-space:nowrap;flex-shrink:0;transition:all .15s}
+.sort-pill.active{background:var(--bl2);border-color:var(--bl3);color:var(--blue)}
+.chips-row{display:flex;gap:6px;padding:2px 16px 6px;overflow-x:auto;scrollbar-width:none}
+.chips-row::-webkit-scrollbar{display:none}
+.chip{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:20px;font-size:11px;font-weight:600;background:var(--bl2);border:1px solid var(--bl3);color:var(--blue);white-space:nowrap;flex-shrink:0}
+.chip-x{cursor:pointer;opacity:.7;font-size:10px}
+.candidates-meta{display:flex;align-items:center;justify-content:space-between;padding:2px 16px 8px}
+.result-count{font-size:11px;color:var(--t3);font-weight:500}
+.filter-btn-sm{display:flex;align-items:center;gap:5px;padding:5px 12px;border-radius:20px;background:var(--s2);border:1px solid var(--bd);color:var(--t2);font-size:12px;font-weight:600;cursor:pointer;position:relative}
+.filter-badge{position:absolute;top:-4px;right:-4px;width:16px;height:16px;border-radius:50%;background:var(--blue);color:#fff;font-size:9px;font-weight:700;display:none;align-items:center;justify-content:center}
+.filter-badge.visible{display:flex}
+
+/* STOCK CARD GRID */
+.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px 12px calc(var(--sb)+24px)}
+@media(min-width:600px){.card-grid{grid-template-columns:1fr 1fr 1fr}}
+.stock-card{background:var(--s1);border-radius:var(--r16);border:1px solid var(--bd);cursor:pointer;overflow:hidden;transition:transform .12s}
+.stock-card:active{transform:scale(.97)}
+.card-top{padding:12px 12px 6px;display:flex;justify-content:space-between;align-items:flex-start}
+.card-score-col{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.card-zone-badge{font-size:9px;font-weight:700;padding:2px 6px;border-radius:10px;text-transform:uppercase;letter-spacing:.04em}
+.card-body{padding:0 12px 12px}
+.card-ticker{font-size:10px;font-weight:700;letter-spacing:.07em;color:var(--t3);margin-bottom:2px}
+.card-name{font-size:13px;font-weight:600;color:var(--t1);line-height:1.2;margin-bottom:6px}
+.card-stats{display:flex;gap:8px}
+.card-stat{flex:1}
+.cs-label{font-size:9px;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);font-weight:600}
+.cs-value{font-size:13px;font-weight:700;color:var(--t2);margin-top:1px}
+.card-meta{display:flex;align-items:center;gap:6px;margin-top:6px;flex-wrap:wrap}
+.tag{display:inline-block;padding:2px 6px;border-radius:6px;font-size:10px;font-weight:600}
+.tag-defence{background:var(--re2);color:var(--red)}
+.tag-capex{background:var(--in2);color:var(--indigo)}
+.tag-both{background:var(--or2);color:var(--orange)}
+
+/* Zone colors */
+.z-strong-buy{background:var(--gr2);color:var(--green)}
+.z-buy-zone{background:var(--gr2);color:var(--green)}
+.z-fair-value{background:var(--bl2);color:var(--blue)}
+.z-watch{background:var(--or2);color:var(--orange)}
+.z-expensive{background:var(--re2);color:var(--red)}
+
+/* Empty state */
+.empty-state{grid-column:1/-1;text-align:center;padding:48px 24px}
+.empty-icon{font-size:40px;margin-bottom:12px}
+.empty-title{font-size:17px;font-weight:600;margin-bottom:6px}
+.empty-sub{font-size:14px;color:var(--t3);margin-bottom:20px}
+.clear-btn{padding:8px 20px;border-radius:20px;background:var(--blue);color:#fff;font-size:14px;font-weight:600;cursor:pointer;border:none}
+
+/* DETAIL HEADER */
+.detail-hdr-top{display:flex;align-items:center;justify-content:space-between;padding:calc(var(--st) + 8px) 16px 6px}
+.back-btn{display:flex;align-items:center;gap:2px;color:var(--blue);font-size:16px;font-weight:400;background:none;border:none;cursor:pointer;padding:0}
+.detail-ticker-badge{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--t3)}
+.company-name-header{font-size:15px;font-weight:600;padding:0 16px 4px}
+.price-banner{padding:4px 16px 8px;display:flex;align-items:baseline;gap:8px}
+.price-val{font-size:28px;font-weight:800;color:var(--t1)}
+.price-meta{font-size:12px;color:var(--t3)}
+.detail-tabs{display:flex;padding:4px 12px 0;gap:4px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--bd)}
+.detail-tabs::-webkit-scrollbar{display:none}
+.dtab{padding:8px 14px;font-size:13px;font-weight:600;color:var(--t3);border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:all .15s}
+.dtab.active{color:var(--blue);border-bottom-color:var(--blue)}
+
+/* PANEL CONTENT */
+.panel-content{padding:12px 16px calc(var(--sb)+80px)}
+.p-card{background:var(--s1);border-radius:var(--r16);border:1px solid var(--bd);padding:14px;margin-bottom:10px}
+.p-card-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);margin-bottom:10px}
+.p2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.metric{background:var(--s1);border-radius:var(--r12);border:1px solid var(--bd);padding:12px}
+.metric-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-bottom:3px}
+.metric-val{font-size:18px;font-weight:700}
+.metric-sub{font-size:11px;color:var(--t2);margin-top:2px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--bd);font-size:13px}
+.row:last-child{border-bottom:none}
+.rk{color:var(--t2)}.rv{font-weight:600}
+.rv-g{color:var(--green)}.rv-o{color:var(--orange)}.rv-b{color:var(--blue)}.rv-r{color:var(--red)}
+
+/* ELI15 */
+.eli15{background:var(--s1);border-radius:var(--r12);border-left:3px solid var(--blue);padding:12px;margin-bottom:10px}
+.eli15-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--blue);margin-bottom:6px}
+.eli15-txt{font-size:14px;line-height:1.6;color:var(--t2)}
+
+/* BUY ZONE BAR */
+.bz-bar-wrap{margin-bottom:12px}
+.bz-gradient{height:12px;border-radius:8px;background:linear-gradient(to right,#0A3B20 0%,#1D5C30 8%,#30D158 29%,#5AC8FA 48%,#5AC8FA 58%,#FFD60A 70%,#FF9F0A 80%,#FF453A 100%);position:relative;margin-bottom:30px}
+.bz-marker{position:absolute;top:-4px;transform:translateX(-50%);transition:left 1s cubic-bezier(.4,0,.2,1)}
+.bz-dot{width:20px;height:20px;border-radius:50%;background:var(--bg);border:2.5px solid var(--yellow);box-shadow:0 0 14px rgba(255,214,10,.65)}
+.bz-label{position:absolute;top:24px;left:50%;transform:translateX(-50%);font-size:11px;font-weight:700;color:var(--yellow);white-space:nowrap}
+.bz-zones{display:flex;justify-content:space-between;margin-top:-18px}
+.bz-zone-lbl{font-size:8px;color:var(--t3);text-align:center;line-height:1.3}
+.bz-prices{display:flex;justify-content:space-between;margin-top:4px;margin-bottom:10px}
+.bz-price{font-size:9px;color:var(--t3);text-align:center}
+.bz-current{display:flex;align-items:center;justify-content:space-between;background:var(--s1);border-radius:var(--r12);border:1px solid var(--bd);padding:10px 14px;margin-bottom:10px}
+.bz-current-info .bz-zone-name{font-size:14px;font-weight:700}
+.bz-current-info .bz-dist{font-size:12px;color:var(--t2);margin-top:2px}
+.score-big{font-size:32px;font-weight:800;color:var(--blue)}
+.score-denom{font-size:15px;color:var(--t3)}
+.score-breakdown li{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--bd);font-size:13px;color:var(--t2)}
+.score-breakdown li:last-child{border-bottom:none;font-weight:700}
+.sb-mod{font-weight:600}
+
+/* SCENARIOS */
+.scenario{background:var(--s1);border-radius:var(--r16);border:1px solid var(--bd);overflow:hidden;margin-bottom:10px}
+.scen-stripe{height:4px}
+.scen-body{padding:12px}
+.scen-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.scen-name{font-size:15px;font-weight:700}
+.prob-pill{border-radius:20px;padding:3px 10px;font-size:12px;font-weight:700}
+.scen-thesis{font-size:13px;color:var(--t2);line-height:1.55;margin-bottom:10px}
+.scen-stats{display:flex;gap:8px;margin-bottom:8px}
+.scen-stat{flex:1;background:var(--s2);border-radius:10px;padding:8px;text-align:center}
+.scen-stat-lbl{font-size:9px;text-transform:uppercase;letter-spacing:.05em;color:var(--t3)}
+.scen-stat-val{font-size:13px;font-weight:700;margin-top:2px}
+.scen-falsifier{font-size:12px;color:var(--t3)}
+.scen-falsifier strong{color:var(--t2)}
+.watch-var{background:var(--in2);border:1px solid rgba(94,92,230,.25);border-radius:var(--r12);padding:12px;margin-bottom:10px}
+.wv-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--indigo);margin-bottom:5px}
+.wv-main{font-size:14px;font-weight:600;color:var(--t1)}
+.wv-sub{font-size:12px;color:var(--t2);margin-top:3px}
+.conf-row{display:flex;justify-content:space-between;align-items:center;background:var(--s1);border-radius:var(--r12);border:1px solid var(--bd);padding:10px 14px;margin-bottom:8px;font-size:13px}
+.conf-lbl{color:var(--t2)}.conf-badge{padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700}
+
+/* PORTFOLIO */
+.pos-status{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.pos-dot{width:10px;height:10px;border-radius:50%;background:var(--t4)}
+.pos-dot.held{background:var(--green)}
+.pos-txt{font-size:15px;font-weight:600}
+.rec-card{border-radius:var(--r16);padding:14px;margin-bottom:10px;border:1px solid var(--bl3);background:var(--bl2)}
+.rec-card.add{border-color:var(--gr3);background:var(--gr2)}
+.rec-card.avoid{border-color:var(--re3);background:var(--re2)}
+.rec-header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.rec-icon{font-size:22px}
+.rec-verdict{font-size:16px;font-weight:800}
+.rec-body{font-size:13px;line-height:1.55;color:var(--t2)}
+.rec-entry{background:var(--s2);border-radius:10px;padding:9px 12px;margin-top:8px;font-size:13px;color:var(--t2)}
+.rec-entry strong{color:var(--yellow)}
+.bias-card{background:var(--s1);border-radius:var(--r12);border-left:3px solid var(--yellow);padding:12px;margin-bottom:10px}
+.bias-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--yellow);margin-bottom:5px}
+.bias-txt{font-size:13px;color:var(--t2);line-height:1.5}
+
+/* DYNAMICS */
+.players-wrap{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;margin-bottom:4px}
+.player{padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600}
+.pl-company{background:var(--bl2);color:var(--blue);border:1px solid var(--bl3)}
+.pl-competitor{background:var(--or2);color:var(--orange);border:1px solid var(--or3)}
+.pl-customer{background:var(--in2);color:var(--indigo);border:1px solid rgba(94,92,230,.3)}
+.pl-regulator{background:var(--re2);color:var(--red);border:1px solid var(--re3)}
+.pl-other{background:var(--s2);color:var(--t3);border:1px solid var(--bd)}
+.value-row{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--bd);font-size:13px}
+.value-row:last-child{border-bottom:none}
+.value-actor{flex:1;color:var(--t2)}
+.vbar-wrap{flex:2;height:5px;background:var(--s3);border-radius:3px;overflow:hidden}
+.vbar-fill{height:100%;border-radius:3px}
+.value-pct{font-size:11px;font-weight:700;min-width:28px;text-align:right}
+.wildcard-list{list-style:none;margin-top:6px}
+.wildcard-item{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--bd);font-size:13px;color:var(--t2);line-height:1.5}
+.wildcard-item:last-child{border-bottom:none}
+.wc-icon{font-size:16px;flex-shrink:0}
+.disclaimer{font-size:11px;color:var(--t3);text-align:center;padding:10px 0 4px;line-height:1.6}
+
+/* SNOWFLAKE */
+.snowflake-wrap{display:flex;justify-content:center;margin:10px 0 6px}
+.axis-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:12px}
+.axis-leg{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--t2);cursor:pointer;padding:3px 8px;border-radius:20px;background:var(--s2);border:1px solid var(--bd)}
+.axis-dot{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.axis-score-pill{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;background:var(--bl2);color:var(--blue);margin-left:4px}
+
+/* FILTER SHEET */
+.sheet-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:200;opacity:0;transition:opacity .25s;pointer-events:none}
+.sheet-backdrop.open{opacity:1;pointer-events:all}
+.filter-sheet{position:fixed;bottom:0;left:0;right:0;z-index:210;background:var(--s1);border-radius:20px 20px 0 0;border:1px solid var(--bd);padding-bottom:var(--sb);transform:translateY(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);max-height:88dvh;overflow-y:auto}
+.filter-sheet.open{transform:translateY(0)}
+.sheet-handle{width:36px;height:4px;border-radius:2px;background:var(--t4);margin:10px auto 0}
+.sheet-title-row{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 8px}
+.sheet-title{font-size:17px;font-weight:700}
+.clear-all-btn{font-size:14px;color:var(--red);background:none;border:none;cursor:pointer}
+.sheet-section{padding:10px 16px}
+.sheet-section-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);margin-bottom:8px}
+.pill-row{display:flex;gap:6px;flex-wrap:wrap}
+.filter-pill{padding:6px 12px;border-radius:20px;font-size:13px;font-weight:600;background:var(--s2);border:1px solid var(--bd);color:var(--t2);cursor:pointer;transition:all .15s}
+.filter-pill.active{background:var(--bl2);border-color:var(--bl3);color:var(--blue)}
+.filter-pill.disabled{opacity:.35;cursor:default}
+
+/* AXIS SHEET */
+.axis-sheet{position:fixed;bottom:0;left:0;right:0;z-index:220;background:var(--s1);border-radius:20px 20px 0 0;border:1px solid var(--bd);padding-bottom:calc(var(--sb)+16px);transform:translateY(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);max-height:70dvh;overflow-y:auto}
+.axis-sheet.open{transform:translateY(0)}
+.axis-sheet-body{padding:16px}
+.axis-score-large{font-size:40px;font-weight:800;color:var(--blue);margin-bottom:4px}
+.axis-def{font-size:14px;color:var(--t2);line-height:1.6;margin-bottom:10px}
+.axis-what-changes{background:var(--s2);border-radius:var(--r12);padding:10px 12px;font-size:13px;color:var(--t2)}
+.axis-what-changes strong{color:var(--t1)}
+</style>
+</head>
+<body>
+
+<!-- SCREEN 1: LANDING -->
+<div id="s-landing" class="screen">
+  <div class="hdr">
+    <div class="hdr-top">
+      <div>
+        <div class="hdr-title">Research Dashboard</div>
+        <div class="hdr-sub" id="landing-sub">Loading…</div>
+      </div>
+      <div class="hdr-actions">
+        <button class="icon-btn" onclick="toggleTheme()" id="theme-btn" title="Toggle theme">☀</button>
+      </div>
+    </div>
+    <div class="landing-tabs" id="landing-tabs">
+      <button class="ltab active" data-pane="opportunities" onclick="switchLandingTab(this)">
+        Opportunities <span class="ltab-badge" id="ltab-opp-badge">2</span>
+      </button>
+      <button class="ltab" data-pane="queue" onclick="switchLandingTab(this)">
+        Research Queue <span class="ltab-badge" id="ltab-q-badge">6/10</span>
+      </button>
+      <button class="ltab" data-pane="candidates" onclick="switchLandingTab(this)">
+        Portfolio Candidates <span class="ltab-badge" id="ltab-c-badge">5</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="pane-opportunities" class="landing-pane active">
+    <div class="opp-list" id="opp-list"></div>
+  </div>
+
+  <div id="pane-queue" class="landing-pane">
+    <div class="queue-sticky" id="queue-note-bar"></div>
+    <div class="queue-list" id="queue-list"></div>
+  </div>
+
+  <div id="pane-candidates" class="landing-pane">
+    <div class="candidates-controls">
+      <div class="sort-bar" id="sort-bar"></div>
+      <div class="chips-row" id="chips-row" style="display:none"></div>
+      <div class="candidates-meta">
+        <span class="result-count" id="result-count"></span>
+        <button class="filter-btn-sm" onclick="openFilters()">
+          ⚡ Filters
+          <div class="filter-badge" id="filter-badge">0</div>
+        </button>
+      </div>
+    </div>
+    <div id="card-grid" class="card-grid"></div>
+  </div>
+</div>
+
+<!-- SCREEN 2: DETAIL -->
+<div id="s-detail" class="screen slide-right">
+  <div class="hdr">
+    <div class="detail-hdr-top">
+      <button class="back-btn" onclick="goBack()">‹ Back</button>
+      <div class="detail-ticker-badge" id="detail-ticker"></div>
+      <div style="width:60px"></div>
+    </div>
+    <div class="company-name-header" id="detail-name"></div>
+    <div class="price-banner">
+      <div class="price-val" id="detail-price"></div>
+      <div class="price-meta" id="detail-price-meta"></div>
+    </div>
+    <div class="detail-tabs" id="detail-tabs"></div>
+  </div>
+  <div id="detail-content" class="panel-content"></div>
+</div>
+
+<!-- FILTER SHEET -->
+<div class="sheet-backdrop" id="filter-backdrop" onclick="closeFilters()"></div>
+<div class="filter-sheet" id="filter-sheet">
+  <div class="sheet-handle"></div>
+  <div class="sheet-title-row">
+    <div class="sheet-title">Filters</div>
+    <button class="clear-all-btn" onclick="clearFilters()">Clear All</button>
+  </div>
+  <div id="filter-sheet-body"></div>
+</div>
+
+<!-- AXIS TOOLTIP SHEET -->
+<div class="sheet-backdrop" id="axis-backdrop" onclick="closeAxisSheet()"></div>
+<div class="axis-sheet" id="axis-sheet">
+  <div class="sheet-handle"></div>
+  <div class="axis-sheet-body" id="axis-sheet-body"></div>
+</div>
+
+<script>
+// ── AXIS INFO ──
+const AXIS_INFO = {
+  opportunity:{label:'Opportunity',def:'Strength of the investment thesis as rated by the Opportunity Screener — corroboration count, evidence quality, timing catalysts.',changes:'Rises when more companies corroborate the theme or new catalysts emerge. Falls if contradictory evidence surfaces or the theme weakens.'},
+  valuation:{label:'Valuation',def:'How attractively priced the stock is vs. its estimated fair value. Strong Buy = 10, Buy Zone = 8, Fair Value = 6, Watch = 4, Expensive = 2.',changes:'Rises as price falls toward or below fair value. Falls as price rises above fair value or fair value estimate is revised down.'},
+  execution:{label:'Execution',def:'Management track record of delivering on commitments — order completions, margin guidance, capacity timelines.',changes:'Rises with consistent on-time delivery and margin achievement. Falls with programme delays, guidance cuts, or management changes.'},
+  moat:{label:'Moat',def:'Durability of competitive advantage — barriers to entry, customer lock-in, IP, scale advantages, switching costs.',changes:'Rises as new regulations protect incumbents or switching costs increase. Falls if new entrants emerge or technology disrupts the business model.'},
+  momentum:{label:'Momentum',def:'Order book growth, revenue acceleration, and corroboration trend direction from the latest pipeline run.',changes:'Rises when order inflows accelerate and theme corroboration count grows. Falls when order intake misses guidance or revenue growth decelerates.'}
+};
+
+// ── STOCKS (updated by /stock-dashboard skill) ──
+const STOCKS = [
+{
+  id:'BEL',name:'Bharat Electronics Ltd',exchange:'NSE',
+  price:285.40,priceDate:'20 Jun 2026',
+  fv:{bear:230,base:305,bull:410},
+  zone:'fair-value',zoneLabel:'Fair Value',
+  themes:['defence'],sectors:['psu','defence','capital-goods'],
+  poised:7.5,action:'watch',actionLabel:'Add on dip',
+  watchPrice:260,pe:28,revenue:27480,orderBook:73882,obCoverage:2.7,
+  corroboration:4,trend:'accelerating',confidence:7.5,
+  opportunityId:'defence-electronics-aerospace-2026-Q4',
+  axes:{opportunity:7.5,valuation:6.0,execution:7.0,moat:7.5,momentum:8.0},
+  financials:[
+    {lbl:'FY26 Revenue',val:'₹27,480cr',sub:'+18.3% YoY'},
+    {lbl:'EBITDA Margin',val:'~29%',sub:'Expanding',col:'green'},
+    {lbl:'Order Book',val:'₹73,882cr',sub:'2.7× revenue'},
+    {lbl:'FY27 Inflow Guide',val:'>₹55,000cr',sub:'Mgmt guided',col:'blue'},
+  ],
+  whyNow:['QRSAM production order expected Jun–Jul 2026 (~₹9,500cr)','LCA Tejas Mk2 avionics deliveries Aug/Sep 2026','MALE UAV ₹30,000cr programme tender pending'],
+  risks:['Defence budget dependency','HAL delivery delays affect co-programmes'],
+  scoreBreakdown:[
+    {lbl:'Opportunity confidence (base)',val:'7.5',type:'base'},
+    {lbl:'Price in Fair Value zone',val:'±0.0',type:'neutral'},
+    {lbl:'Gate 1: Conditional quality pass',val:'±0.0',type:'neutral'},
+    {lbl:'PE ~28 (below 30 threshold)',val:'±0.0',type:'neutral'},
+    {lbl:'Final Poised Score',val:'7.5',type:'total'},
+  ],
+  eli15:'Think of the Poised Score like a traffic light meter. BEL scores 7.5 because the business is genuinely strong and the defence order pipeline is real — but at ₹285 you\'re paying fair value, not a bargain. The light is amber: great company, but wait for a better entry price.',
+  scenarios:[
+    {name:'Bull',col:'green',prob:35,return2yr:'+55–70%',returnNum:62,thesis:'Every order in the pipeline clears on schedule. QRSAM ships Jun 2026, LCA avionics ramp in Q2 FY27, MALE UAV awarded by year-end. Revenue grows 26–28% for two years.',assumption:'Execution on 3 concurrent programmes simultaneously',falsifier:'2+ programme delivery slips past Q2 FY27'},
+    {name:'Base',col:'blue',prob:45,return2yr:'+22–30%',returnNum:26,thesis:'India\'s defence spend keeps growing but programmes face the usual 6–12 month slips. QRSAM in Q3 FY27, avionics revenue accrues steadily. Inflows hit ₹55,000cr as guided.',assumption:'Order inflows ≥ ₹55,000cr in FY27',falsifier:'Inflows miss at < ₹45,000cr for full year'},
+    {name:'Bear',col:'red',prob:20,return2yr:'−15 to −25%',returnNum:-20,thesis:'A defence budget squeeze plus HAL delivery failures delay two major programmes. Order inflows disappoint at <₹40,000cr; market de-rates BEL from 28× to 20× PE.',assumption:'Budget cut AND HAL programme slip in same year',falsifier:'FY27 Union Budget hikes defence capex above 2% of GDP'},
+  ],
+  watchVariable:'QRSAM Production Order Signing',watchSub:'Best lead indicator. Signed by Jul 2026 → Bull/Base live. Delayed past Q2 FY27 → Bear probability rises materially.',
+  confLabel:'Medium',confReason:'Order pipeline is public but execution timelines are opaque. Programme slips are common in Indian defence.',
+  held:false,slot:'Extended',
+  portfolioRec:'Add on dip — watch ₹260',
+  portfolioBody:'BEL is a strong business with a real order pipeline. At ₹285 you\'re paying fair value, not a bargain. Wait for a dip to initiate.',
+  portfolioEntry:'Watch entry: ₹260 (15% below base fair value of ₹305). At that level, price enters Buy Zone and Poised Score would rise to ~8.0.',
+  bias:'Recency bias risk: Defence stocks have rallied hard in 2025–26. Ensure your excitement is thesis-driven, not momentum-driven.',
+  dynamics:{
+    gameType:'Non-zero-sum + Sequential',
+    gameNote:'The Indian defence electronics market is expanding — BEL and peers can all grow. But within each tender, it is zero-sum: one L1 winner takes the contract.',
+    asymmetry:'BEL knows the QRSAM integration timeline before MoD formally signals order dates — 6–9 month lead visibility over outside analysts.',
+    players:[{name:'BEL',type:'company'},{name:'HAL',type:'competitor'},{name:'L&T Defence',type:'competitor'},{name:'PARAS Defence',type:'competitor'},{name:'MoD / IAF',type:'customer'},{name:'DRDO',type:'regulator'},{name:'Rafael / Thales',type:'other'}],
+    valueRows:[{actor:'BEL (systems integrator)',pct:65},{actor:'Component suppliers',pct:20},{actor:'Foreign tech licensors',pct:10},{actor:'MoD (buyer discount)',pct:5}],
+    valueSummary:'BEL\'s share is strengthening: rising domestic content mandates are reducing foreign licensor fees over time.',
+    equilibrium:'In 3–5 years BEL retains incumbency on existing programmes. Private sector gains share on new categories. BEL is better positioned than today.',
+    wildcards:[{icon:'🎯',text:'MoD mandates 70%+ domestic content → eliminates foreign licensor fees, expands BEL margins 200–300bps in one regulatory move.'},{icon:'💸',text:'L&T bids MALE UAV at below-cost to establish reference client → BEL loses tender but avoids a value-destructive contract.'},{icon:'🏦',text:'Emergency import waiver during India-Pakistan tensions → 2–3 quarter revenue pause for BEL, not a structural break.'}],
+    eli15:'BEL is the head chef in a restaurant where the government is the only customer — it can\'t leave, but it controls the menu and timing. BEL wins if orders keep flowing and it delivers on time.',
+  },
+},
+{
+  id:'HAL',name:'Hindustan Aeronautics Ltd',exchange:'NSE',
+  price:4250,priceDate:'20 Jun 2026',
+  fv:{bear:3200,base:3900,bull:5400},
+  zone:'watch',zoneLabel:'Watch',
+  themes:['defence'],sectors:['psu','defence'],
+  poised:6.8,action:'watch',actionLabel:'Add on dip',
+  watchPrice:3315,pe:35,revenue:29000,orderBook:94000,obCoverage:3.2,
+  corroboration:4,trend:'accelerating',confidence:7.5,
+  opportunityId:'defence-electronics-aerospace-2026-Q4',
+  axes:{opportunity:7.5,valuation:4.5,execution:4.5,moat:8.5,momentum:7.5},
+  financials:[
+    {lbl:'FY26 Revenue',val:'~₹29,000cr',sub:'~+15% YoY'},
+    {lbl:'EBITDA Margin',val:'~18%',sub:'Stable'},
+    {lbl:'Order Book',val:'₹94,000cr',sub:'3.2× revenue'},
+    {lbl:'PE Ratio',val:'~35×',sub:'Premium valuation',col:'orange'},
+  ],
+  whyNow:['LCA Tejas Mk1A: 83 jets confirmed, deliveries accelerating','HTT-40 trainer aircraft: series production begun','LCH Prachand combat helicopter: first batch deliveries FY27'],
+  risks:['HAL delivery slips are structural — every major programme has been delayed','Premium PE (35×) leaves no margin of safety','Budget dependency: any MoD capex squeeze hits HAL hardest'],
+  scoreBreakdown:[
+    {lbl:'Opportunity confidence (base)',val:'7.5',type:'base'},
+    {lbl:'Price in Watch zone',val:'−0.5',type:'neg'},
+    {lbl:'Gate 1: Execution flag (delivery slips)',val:'−0.5',type:'neg'},
+    {lbl:'PE 30–40 band',val:'−0.5',type:'neg'},
+    {lbl:'Final Poised Score',val:'6.8*',type:'total'},
+  ],
+  eli15:'HAL is the only company in India that can make a fighter jet — that monopoly is incredibly valuable. But the stock is expensive (PE 35×) and HAL has a well-documented habit of missing delivery dates. You\'re paying full price for a company that often doesn\'t show up on time.',
+  scenarios:[
+    {name:'Bull',col:'green',prob:30,return2yr:'+45–60%',returnNum:52,thesis:'HAL actually delivers Tejas Mk1A on its revised schedule. Export orders materialise (Malaysia, Egypt). The market re-rates the execution track record.',assumption:'On-time delivery of ≥20 Tejas jets in FY27',falsifier:'Tejas delivery slips again past Q3 FY27'},
+    {name:'Base',col:'blue',prob:45,return2yr:'+15–25%',returnNum:20,thesis:'HAL delivers at its usual 6–12 month delay pace. Revenue grows ~15% per year. PE stays at 30–35×.',assumption:'Revenue growth ≥12%, no new programme cancellations',falsifier:'IAF publicly flags dissatisfaction with Tejas delivery quality'},
+    {name:'Bear',col:'red',prob:25,return2yr:'−20 to −30%',returnNum:-25,thesis:'LCA Mk2 programme is restructured or delayed by 2+ years. India fast-tracks fighter imports, reducing HAL\'s domestic order pipeline. PE de-rates to 22×.',assumption:'LCA Mk2 delayed AND import substitution reversed',falsifier:'LCA Mk2 order placed above ₹70,000cr in FY27 budget'},
+  ],
+  watchVariable:'LCA Mk1A Monthly Delivery Rate to IAF',watchSub:'If IAF accepts 3+ Tejas/month by Sep 2026, execution concern is being addressed. Below 2/month → Bear probability rises.',
+  confLabel:'Low–Medium',confReason:'Execution is HAL\'s biggest variable and it\'s hard to model — the bull case requires a structural change in HAL\'s delivery culture.',
+  held:false,slot:'Extended',
+  portfolioRec:'Add on dip — watch ₹3,315',
+  portfolioBody:'HAL has the best moat score (8.5/10) but the worst execution score (4.5/10). At ₹4,250 and PE 35×, you are paying for the bull case to happen. Wait for a delivery slip to provide a better entry.',
+  portfolioEntry:'Watch entry: ₹3,315 (15% below base fair value of ₹3,900). HAL does slip, and when it does the market sells aggressively.',
+  bias:'Narrative investing risk: The "Atmanirbhar Bharat" defence story is compelling. Require concrete delivery evidence before acting.',
+  dynamics:{
+    gameType:'Non-zero-sum (domestic market expanding) + Zero-sum per tender',
+    gameNote:'HAL benefits from a growing pie — IAF is acquiring more aircraft. But within export markets, HAL competes directly with Saab Gripen, Dassault Rafale where it is at a disadvantage.',
+    asymmetry:'HAL knows actual airworthiness certification timelines before IAF officially communicates.',
+    players:[{name:'HAL',type:'company'},{name:'Dassault Rafale',type:'competitor'},{name:'Saab Gripen',type:'competitor'},{name:'BEL (supplier)',type:'other'},{name:'IAF',type:'customer'},{name:'MoD',type:'regulator'}],
+    valueRows:[{actor:'HAL (OEM + integrator)',pct:58},{actor:'Tier-1 suppliers (BEL, etc.)',pct:28},{actor:'Foreign tech licensors',pct:12},{actor:'IAF discount',pct:2}],
+    valueSummary:'HAL captures less per rupee than BEL because it is assembling more foreign-designed components. IP transfer programmes will improve this over time.',
+    equilibrium:'HAL likely remains dominant in Indian military aviation maintenance for the next decade. In new production, private sector grows faster.',
+    wildcards:[{icon:'✈️',text:'India fast-tracks Rafale Mark 2 import (100+ jets) instead of waiting for LCA Mk2 → HAL loses the new fighter pipeline it was counting on for FY28–32 revenue.'},{icon:'🔧',text:'HAL wins a major export order (Malaysia or Argentina) → transforms market perception of execution capability and triggers significant re-rating.'},{icon:'⚡',text:'HAL\'s Bangalore workforce goes on strike during peak delivery period → immediate production halt, reinforces execution risk narrative.'}],
+    eli15:'HAL is the only garage in India that can fix (and assemble) military jets. Being irreplaceable when you\'re the only customer\'s only option can make you complacent. HAL\'s real risk is that the government eventually runs out of patience and imports more to compensate for delays.',
+  },
+},
+{
+  id:'JNKINDIA',name:'JNK India Ltd',exchange:'NSE',
+  price:1380,priceDate:'20 Jun 2026',
+  fv:{bear:1100,base:1560,bull:2200},
+  zone:'buy-zone',zoneLabel:'Buy Zone',
+  themes:['capex'],sectors:['capital-goods','engineering'],
+  poised:8.1,action:'add',actionLabel:'Add this week',
+  watchPrice:null,pe:42,revenue:2800,orderBook:null,obCoverage:null,
+  corroboration:6,trend:'accelerating',confidence:7.8,
+  opportunityId:'india-industrial-capex-cycle-2026-Q4',
+  axes:{opportunity:7.8,valuation:7.5,execution:7.5,moat:6.0,momentum:8.5},
+  financials:[
+    {lbl:'FY26 Revenue',val:'~₹2,800cr',sub:'~+32% YoY',col:'green'},
+    {lbl:'EBITDA Margin',val:'~22%',sub:'Expanding'},
+    {lbl:'Order Book',val:'Strong',sub:'Growing rapidly',col:'green'},
+    {lbl:'PE Ratio',val:'~42×',sub:'Growth premium',col:'orange'},
+  ],
+  whyNow:['India defence manufacturing mandating domestic precision machining','Auto/EV sector capex driving CNC machine demand','6 companies corroborating the industrial capex theme — strongest signal in current pipeline'],
+  risks:['PE 42× leaves little margin for earnings miss','Small-mid cap liquidity risk','Customer concentration in defence (single-sector dependency)'],
+  scoreBreakdown:[
+    {lbl:'Opportunity confidence (base)',val:'7.8',type:'base'},
+    {lbl:'Price in Buy Zone (+10% below FV)',val:'+0.5',type:'pos'},
+    {lbl:'Gate 1: Quality conditional pass',val:'±0.0',type:'neutral'},
+    {lbl:'PE 40–42 (borderline flag)',val:'−0.5',type:'neg'},
+    {lbl:'Final Poised Score',val:'8.1*',type:'total'},
+  ],
+  eli15:'JNK India is like a tool maker for the factory-building boom — as India\'s defence and EV industries race to build new manufacturing plants, every one of those plants needs precision CNC machines, and JNK makes them. At the current price, you\'re getting a 10% discount to fair value on a business growing at 30%+.',
+  scenarios:[
+    {name:'Bull',col:'green',prob:40,return2yr:'+60–80%',returnNum:70,thesis:'Defence DPP mandates 65%+ domestic content on precision components by FY28, forcing all defence OEMs to source from domestic CNC-certified manufacturers. JNK is one of 2–3 certified suppliers.',assumption:'Domestic content mandate accelerates + EV capex continues',falsifier:'Chinese CNC manufacturers gain BIS certification and undercut JNK by 30%+'},
+    {name:'Base',col:'blue',prob:40,return2yr:'+28–35%',returnNum:31,thesis:'India\'s industrial capex cycle continues at current pace. JNK grows revenue at 25–30% driven by existing order pipeline. Margins expand 100–150bps from operating leverage.',assumption:'Industrial capex cycle sustains through FY27–28',falsifier:'Interest rate reversal slows private capex; defence orders slow in FY28 budget'},
+    {name:'Bear',col:'red',prob:20,return2yr:'−20 to −30%',returnNum:-25,thesis:'PE 42× gets compressed as earnings growth slows to 15%. Small-cap de-rating from risk-off environment.',assumption:'Global growth shock + China CNC import surge',falsifier:'India imposes BIS mandatory certification + anti-dumping duty on CNC imports'},
+  ],
+  watchVariable:'Defence DPP Domestic Content % Update (H1 FY27)',watchSub:'A policy raise to 65%+ domestic content for precision components would be the single biggest accelerant for JNK.',
+  confLabel:'Medium',confReason:'Industrial capex has the strongest corroboration (6 companies) but JNK is a small-mid cap where earnings are more volatile.',
+  held:false,slot:'Extended',
+  portfolioRec:'Add this week',
+  portfolioBody:'At ₹1,380 vs fair value ₹1,560, JNK is 11% below fair value and in the Buy Zone. With the highest Poised Score of the 5 stocks (8.1/10) and the strongest corroboration count, the risk-reward is favourable.',
+  portfolioEntry:'Suggested allocation: Extended tier position (3–4% of equity portfolio). Size conservatively given PE 42× and small-mid cap liquidity.',
+  bias:'Small cap excitement: JNK is less well-known and feels like a hidden gem. Ensure you are buying the thesis not the discovery of a name others haven\'t found yet.',
+  dynamics:{
+    gameType:'Non-zero-sum (expanding market)',
+    gameNote:'India\'s precision machining market is growing faster than domestic supply can meet. Multiple suppliers can win simultaneously.',
+    asymmetry:'JNK has BIS certification and existing defence OEM relationships that newer entrants need 18–24 months to replicate.',
+    players:[{name:'JNK India',type:'company'},{name:'Ace Micromatic',type:'competitor'},{name:'BFW India',type:'competitor'},{name:'FANUC (Japan)',type:'competitor'},{name:'Defence OEMs (BEL, HAL)',type:'customer'},{name:'MoD DPP',type:'regulator'}],
+    valueRows:[{actor:'JNK India (OEM)',pct:60},{actor:'Component suppliers',pct:25},{actor:'Software/controls providers',pct:12},{actor:'Customer discount',pct:3}],
+    valueSummary:'JNK captures good margin per machine because the certification barrier limits price competition.',
+    equilibrium:'In 3–5 years, 2–3 large domestic CNC OEMs likely emerge as dominant. JNK is well-positioned to be one of them.',
+    wildcards:[{icon:'🏭',text:'FANUC or Yamazaki announce India manufacturing JV — local pricing competition intensifies, JNK\'s margin buffer erodes by 300–400bps.'},{icon:'📋',text:'DPP mandates "Indian CNC only" for critical defence components → JNK demand surges 2–3× over 18 months.'},{icon:'🔋',text:'EV capex cycle pauses → 25% of JNK\'s order pipeline from EV plant machinery evaporates.'}],
+    eli15:'JNK makes the precision tools that other factories use to make parts. As India builds more defence and EV factories, every single one needs these machines. JNK is like the pick-and-shovel seller in a gold rush — the factories might fail, but JNK gets paid to set them up regardless.',
+  },
+},
+{
+  id:'LT',name:'Larsen & Toubro Ltd',exchange:'NSE',
+  price:3620,priceDate:'20 Jun 2026',
+  fv:{bear:3100,base:3800,bull:5200},
+  zone:'fair-value',zoneLabel:'Fair Value',
+  themes:['capex','defence'],sectors:['engineering','capital-goods'],
+  poised:7.6,action:'watch',actionLabel:'Add on dip',
+  watchPrice:3230,pe:28,revenue:230000,orderBook:560000,obCoverage:2.4,
+  corroboration:6,trend:'accelerating',confidence:7.8,
+  opportunityId:'india-industrial-capex-cycle-2026-Q4',
+  axes:{opportunity:7.8,valuation:6.0,execution:8.5,moat:8.0,momentum:7.0},
+  financials:[
+    {lbl:'FY26 Revenue',val:'~₹2,30,000cr',sub:'~+17% YoY'},
+    {lbl:'EBITDA Margin',val:'~12%',sub:'Stable'},
+    {lbl:'Order Book',val:'₹5.6L cr',sub:'2.4× revenue'},
+    {lbl:'FY27 Order Intake',val:'>₹5.0L cr',sub:'Mgmt guidance',col:'blue'},
+  ],
+  whyNow:['National Infrastructure Pipeline driving EPC opportunities across power, roads, water','Middle East + Saudi Arabia: massive L&T order wins in FY26','Defence: L&T Defence wins submarine and warship EPC contracts'],
+  risks:['Large cap — growth rate moderates as base scales','Working capital intensive: any slowdown in client payments strains cash flow','International exposure (Middle East) adds geopolitical risk'],
+  scoreBreakdown:[
+    {lbl:'Opportunity confidence (base)',val:'7.8',type:'base'},
+    {lbl:'Price in Fair Value zone',val:'±0.0',type:'neutral'},
+    {lbl:'Gate 1: Full quality pass (all criteria)',val:'+0.5',type:'pos'},
+    {lbl:'Large cap — lower growth premium',val:'−0.5',type:'neg'},
+    {lbl:'Final Poised Score',val:'7.6*',type:'total'},
+  ],
+  eli15:'L&T is the largest and most capable engineering contractor in India — if India is building something big, L&T is probably building it. At PE 28× and fair value ₹3,800, you\'re paying a fair price for India\'s best execution machine.',
+  scenarios:[
+    {name:'Bull',col:'green',prob:35,return2yr:'+35–45%',returnNum:40,thesis:'National Infrastructure Pipeline projects accelerate post-elections. Saudi Arabia + UAE megaprojects deliver on schedule. L&T Defence wins 2–3 large shipbuilding/submarine contracts.',assumption:'Order intake ≥ ₹6.0L cr + international margins hold',falsifier:'Middle East geopolitical disruption causes L&T to write down project values'},
+    {name:'Base',col:'blue',prob:45,return2yr:'+18–25%',returnNum:21,thesis:'L&T delivers steadily at guided pace. Order intake ₹5.0–5.5L cr. Revenue grows 15–17%. Margins stable at 12%.',assumption:'Order intake ≥ ₹5.0L cr; no major project write-downs',falsifier:'Order intake below ₹4.5L cr for 2 consecutive quarters'},
+    {name:'Bear',col:'red',prob:20,return2yr:'−10 to −18%',returnNum:-14,thesis:'Government infrastructure spending slows post-budget. Middle East projects delayed by oil price fall. L&T guided-to growth misses by 500bps.',assumption:'India fiscal tightening + oil price collapse (< $55/bbl)',falsifier:'RBI rate cut cycle starts by Sep 2026 → infrastructure spending re-accelerates'},
+  ],
+  watchVariable:'Quarterly Order Intake — FY27 Q1 Results (Jul/Aug 2026)',watchSub:'Intake > ₹1.3L cr in Q1 → Bull/Base case intact. Below ₹1.0L cr → slowdown signal.',
+  confLabel:'Medium–High',confReason:'L&T is the most predictable of the 5 stocks. Confidence is limited only by the macro and international exposure.',
+  held:false,slot:'Core',
+  portfolioRec:'Add on dip — watch ₹3,230',
+  portfolioBody:'L&T is the lowest-risk stock in this set — best execution, best moat, most diversified revenue. Core portfolio material, but wait for a better entry.',
+  portfolioEntry:'Watch entry: ₹3,230 (15% below base fair value of ₹3,800). L&T dips meaningfully during risk-off periods.',
+  bias:'Large cap comfort bias: L&T often gets bought as a "safe" stock rather than a thesis-conviction position. Ensure you own it for the infrastructure + defence order cycle thesis.',
+  dynamics:{
+    gameType:'Non-zero-sum (India infrastructure spend growing) + Oligopolistic',
+    gameNote:'At the large project scale (>₹5,000cr), only 3–4 companies can execute. L&T dominates at this scale.',
+    asymmetry:'L&T\'s 85-year relationship with PSUs gives it access to pre-tender project scoping that competitors see only when tenders are published.',
+    players:[{name:'L&T',type:'company'},{name:'Tata Projects',type:'competitor'},{name:'KEC International',type:'competitor'},{name:'NCC Ltd',type:'competitor'},{name:'NHAI / MoP / MoD',type:'customer'},{name:'GoI (Planning)',type:'regulator'}],
+    valueRows:[{actor:'L&T (EPC + execution)',pct:55},{actor:'Sub-contractors',pct:30},{actor:'Material suppliers',pct:12},{actor:'Client discount',pct:3}],
+    valueSummary:'L&T captures strong margin per project because alternatives are limited at large-project scale.',
+    equilibrium:'India\'s infrastructure market consolidates around 3–4 mega-EPC players by 2030. L&T is the clear leader.',
+    wildcards:[{icon:'🌊',text:'Saudi Arabia / UAE megaproject delays due to oil price collapse (<$55) → L&T writes down 8–10% of international order book.'},{icon:'🏗️',text:'Government announces ₹25L cr infrastructure stimulus for next 5 years → L&T order pipeline surges to 4× annual revenue.'},{icon:'🤝',text:'Tata Projects acquires a major international EPC firm and immediately competes for L&T\'s Middle East pipeline at 10% lower margin.'}],
+    eli15:'L&T is the best builder in India — when the government or a Saudi prince needs a bridge, port, or missile factory built on time, they call L&T because no one else can reliably do it at scale.',
+  },
+},
+{
+  id:'PARAS',name:'Paras Defence & Space Technologies',exchange:'NSE',
+  price:1060,priceDate:'20 Jun 2026',
+  fv:{bear:860,base:1200,bull:1800},
+  zone:'buy-zone',zoneLabel:'Buy Zone',
+  themes:['defence'],sectors:['defence','small-cap'],
+  poised:7.9,action:'add',actionLabel:'Add this week',
+  watchPrice:null,pe:38,revenue:280,orderBook:null,obCoverage:null,
+  corroboration:4,trend:'accelerating',confidence:7.5,
+  opportunityId:'defence-electronics-aerospace-2026-Q4',
+  axes:{opportunity:7.5,valuation:7.5,execution:6.5,moat:7.0,momentum:8.0},
+  financials:[
+    {lbl:'FY26 Revenue',val:'~₹280cr',sub:'~+40% YoY',col:'green'},
+    {lbl:'EBITDA Margin',val:'~30%+',sub:'Niche premium',col:'green'},
+    {lbl:'Product Mix',val:'EO / Optics',sub:'Defence + Space'},
+    {lbl:'PE Ratio',val:'~38×',sub:'Growth premium',col:'orange'},
+  ],
+  whyNow:['Only ISRO-certified private EO system supplier for space applications in India','Defence optics for subs/warships — monopoly-like position in electro-optical systems','Export pipeline: Middle East + SE Asia government discussions active'],
+  risks:['Tiny revenue base (~₹280cr) — one programme delay = significant revenue miss','Customer concentration: MoD + ISRO are >80% of revenue'],
+  scoreBreakdown:[
+    {lbl:'Opportunity confidence (base)',val:'7.5',type:'base'},
+    {lbl:'Price in Buy Zone (~12% below FV)',val:'+0.5',type:'pos'},
+    {lbl:'Gate 1: Execution flag (young company)',val:'−0.5',type:'neg'},
+    {lbl:'PE 38× (slightly elevated)',val:'−0.5',type:'neg'},
+    {lbl:'Niche monopoly bonus (moat)',val:'+0.5',type:'pos'},
+    {lbl:'Final Poised Score',val:'7.9*',type:'total'},
+  ],
+  eli15:'PARAS makes the "eyes" for India\'s defence equipment — the electro-optical sensors that missiles and submarines use to see. Almost no one else in India makes these. At ₹1,060 vs fair value ₹1,200, you\'re getting a 12% discount on a niche monopoly.',
+  scenarios:[
+    {name:'Bull',col:'green',prob:40,return2yr:'+65–90%',returnNum:77,thesis:'PARAS wins 2–3 export contracts (Middle East, SE Asia) totalling ₹500cr+ by FY27. Space sector orders from ISRO and IN-SPACe new private satellite operators accelerate.',assumption:'≥1 export contract win + ISRO order acceleration',falsifier:'Both export contracts lost to Israeli/French competitors; ISRO delays next batch by 12 months'},
+    {name:'Base',col:'blue',prob:40,return2yr:'+30–40%',returnNum:35,thesis:'PARAS grows at 35–40% on existing domestic defence order momentum. No export contract yet — in discussions. Margins stable at 30%+.',assumption:'Domestic defence optics orders continue at FY26 run rate',falsifier:'MoD defers sub/warship programme that PARAS supplies → revenue gap of ₹50–70cr'},
+    {name:'Bear',col:'red',prob:20,return2yr:'−25 to −35%',returnNum:-30,thesis:'Elbit Systems or Safran wins a large Indian defence optics contract at significantly lower cost, breaking PARAS\'s pricing power.',assumption:'Foreign competitor wins major optics tender AND ISRO slowdown',falsifier:'DPP mandates Indian-only sourcing for EO systems in ALL defence platforms'},
+  ],
+  watchVariable:'Export Order Announcement (H2 FY27)',watchSub:'An export order from any Middle East or SE Asian defence ministry would transform the revenue trajectory.',
+  confLabel:'Low–Medium',confReason:'Small company, limited public data, young management team. High conviction in the niche but low confidence in ability to model timing.',
+  held:false,slot:'Extended',
+  portfolioRec:'Add this week',
+  portfolioBody:'At ₹1,060 vs fair value ₹1,200, PARAS is 12% below fair value — in the Buy Zone. The niche monopoly in EO systems is real. Size as a small Extended position (2–3% of equity) given the small-cap risk.',
+  portfolioEntry:'Suggested allocation: 2–3% of equity portfolio maximum. High upside (Bull +65–90%) but high variance (Bear −25–35%).',
+  bias:'Small cap narrative investing: PARAS is compelling because it\'s niche and sounds unique. Ensure the thesis is the monopoly-in-certification moat, not the excitement of a discovery.',
+  dynamics:{
+    gameType:'Niche monopoly within a broader non-zero-sum market',
+    gameNote:'PARAS operates in such a specialised niche (space-grade optics, EO for submarines) that it barely has domestic competition.',
+    asymmetry:'PARAS\'s ISRO certification is the most valuable barrier — the re-certification cost for a competitor entering space optics is ₹150–200cr and 3–4 years of testing.',
+    players:[{name:'PARAS Defence',type:'company'},{name:'Elbit Systems (Israel)',type:'competitor'},{name:'Safran (France)',type:'competitor'},{name:'ISRO / DRDO',type:'customer'},{name:'Indian Navy',type:'customer'},{name:'DPP / MoD',type:'regulator'}],
+    valueRows:[{actor:'PARAS (certified OEM)',pct:68},{actor:'Component suppliers',pct:18},{actor:'Foreign tech partners',pct:12},{actor:'Customer discount',pct:2}],
+    valueSummary:'PARAS captures unusually high margin for its size because certification is the real barrier, not scale.',
+    equilibrium:'In 3–5 years, 1–2 additional domestic EO suppliers may emerge. PARAS maintains leadership if it signs export contracts that validate its technology internationally.',
+    wildcards:[{icon:'🚀',text:'ISRO announces 50-satellite constellation requiring domestic EO systems → PARAS revenue could double in a single order.'},{icon:'🤝',text:'Elbit Systems or Safran sets up an India JV and qualifies for Make-in-India category — immediately competes for every contract PARAS bids.'},{icon:'📡',text:'India signs a defence partnership with a new export country → transforms PARAS into a dual-country OEM overnight.'}],
+    eli15:'PARAS makes the most specialised optical equipment in India — the kind that goes into submarines and satellites — and almost no one else can make it. The risk is that a foreign company decides to compete in your niche by setting up locally.',
+  },
+},
+];
+
+// ── FALLBACK DATA (used if JSON fetch fails) ──
+const FALLBACK_META={lastUpdated:'2026-06-20',period:'Q1 FY27 (Jun 2026)',activeOpportunities:2,researchQueueFilled:6,researchQueueTotal:10,portfolioCandidates:5};
+const FALLBACK_OPPS=[{id:'india-industrial-capex-cycle-2026-Q4',theme:'India Industrial Capex Cycle',confidence:7.8,trend:'Accelerating',status:'Active',dateIdentified:'2026-06-20',corroboration:6,candidateStocks:['BEL','HAL','JNKINDIA','LT','PARAS'],whyNow:['BEL QRSAM contract expected Jun–Jul 2026 — revenue recognition begins FY27 Q2 if awarded on schedule','HAL LCA Mark-1A deliveries targeted Aug/Sep 2026 — near-term revenue recognition milestone','Six companies across defence, infrastructure, auto, and industrials all cited demand acceleration simultaneously'],risks:['L&T FY26 revenue missed guidance by 300 bps despite order book beat — execution risk is real','India capex cycle is interest-rate-sensitive; RBI tightening in H2 FY27 could defer projects'],evidenceCount:6,evidenceSources:['LT Q4 FY26 Earnings Call — 2026-05-05','HAL Q4 FY26 Earnings Call — 2026-05-15','PARAS Q4 FY26 Quarterly Results — 2026-05-13','JNKINDIA Q4 FY26 Earnings Call — 2026-05-21','BEL Q4 FY26 Earnings Call — 2026-05-22','GABRIEL Q4 FY26 Earnings Call — 2026-05-28']},{id:'defence-electronics-aerospace-2026-Q4',theme:'Indian Defence Electronics & Aerospace Supply Chain',confidence:7.5,trend:'Accelerating',status:'Active',dateIdentified:'2026-06-20',corroboration:4,candidateStocks:['BEL','HAL','LT','PARAS'],whyNow:['BEL QRSAM contract expected Jun–Jul 2026 — specific near-term named catalyst','HAL LCA Mark-1A deliveries Aug/Sep 2026 — concrete production milestone','IAF MALE UAV programme (₹30,000cr) received bids from 10 qualified bidders'],risks:['HAL LCA Mark-1A was already delayed once; Aug/Sep 2026 target is management commitment, not contractual','All order inflows depend on Union Budget defence allocation'],evidenceCount:4,evidenceSources:['LT Q4 FY26 Earnings Call — 2026-05-05','HAL Q4 FY26 Earnings Call — 2026-05-15','PARAS Q4 FY26 Quarterly Results — 2026-05-13','BEL Q4 FY26 Earnings Call — 2026-05-22']}];
+const FALLBACK_QUEUE={weekOf:'2026-06-20',note:'First run. Only 6 of 10 slots filled — next run (Q1 FY27 earnings, Aug 2026) will expand coverage.',entries:[{rank:1,ticker:'BEL',company:'Bharat Electronics Ltd',reason:'FY27 order inflow guidance >₹55,000cr vs FY26 inflows of ₹30,000cr (83% step-up), with QRSAM contract expected Jun–Jul 2026',signalSource:'Q4 FY26 Earnings Call — BEL — 2026-05-22',opportunityId:'defence-electronics-aerospace-2026-Q4',portfolioCandidate:true},{rank:2,ticker:'HAL',company:'Hindustan Aeronautics Ltd',reason:'Order book ₹2,54,538cr (+34% YoY, 7.7× FY26 revenue) with LCA Mark-1A deliveries targeting Aug/Sep 2026',signalSource:'Q4 FY26 Earnings Call — HAL — 2026-05-15',opportunityId:'defence-electronics-aerospace-2026-Q4',portfolioCandidate:true},{rank:3,ticker:'JNKINDIA',company:'JNK India Ltd',reason:'Order book +81% YoY to ₹1,961cr with first international export order (UAE/ADNOC) and FY27 revenue guidance 25–30% growth',signalSource:'Q4 FY26 Earnings Call — JNKINDIA — 2026-05-21',opportunityId:'india-industrial-capex-cycle-2026-Q4',portfolioCandidate:true},{rank:4,ticker:'LT',company:'Larsen & Toubro Ltd',reason:'Order book ₹7.40 trillion (+28% YoY) beat guidance with K9 Vajra-T artillery contract (₹5,000–10,000cr) awarded post-Q4',signalSource:'Q4 FY26 Earnings Call — LT — 2026-05-05',opportunityId:'india-industrial-capex-cycle-2026-Q4',portfolioCandidate:true},{rank:5,ticker:'PARAS',company:'Paras Defence & Space Technologies',reason:'BEL electro-optics subcontract ₹52.82cr awarded Jun 2, 2026 confirms Tier-2 supply chain deepening; Q4 revenue +58% YoY',signalSource:'Q4 FY26 Quarterly Results — PARAS — 2026-05-13',opportunityId:'defence-electronics-aerospace-2026-Q4',portfolioCandidate:true},{rank:6,ticker:'GABRIEL',company:'Gabriel India Ltd',reason:'Motilal Oswal initiation projects 55% PAT CAGR FY26–28 anchored on EV-adjacent product pivot with Buy target ₹1,266',signalSource:'Q4 FY26 Earnings Call — GABRIEL — 2026-05-28',opportunityId:null,portfolioCandidate:false}]};
+
+// ── DATA (loaded from JSON) ──
+let DATA = {meta:FALLBACK_META, opportunities:FALLBACK_OPPS, queue:FALLBACK_QUEUE};
+
+// ── STATE ──
+const STATE = {
+  screen:'landing',
+  landingTab:'opportunities',
+  activeStock:null,
+  detailTab:'snowflake',
+  sort:'poised',
+  filters:{theme:'all',zone:'all',score:'all',action:'all',trend:'all',peBand:'all'},
+  theme: localStorage.getItem('rdb-theme')||'dark',
+};
+
+const SORT_OPTS=[{v:'poised',l:'Poised Score ↓'},{v:'confidence',l:'Confidence ↓'},{v:'momentum',l:'Momentum ↓'},{v:'return-bull',l:'Bull Return ↓'},{v:'corroboration',l:'Corroboration ↓'}];
+const FILTER_DEFS=[
+  {key:'theme',label:'Theme',opts:[{v:'all',l:'All Themes'},{v:'defence',l:'Defence & Aerospace'},{v:'capex',l:'Industrial Capex'}]},
+  {key:'zone',label:'Buy Zone',opts:[{v:'all',l:'All Zones'},{v:'buy-zone',l:'Buy Zone'},{v:'fair-value',l:'Fair Value'},{v:'watch',l:'Watch'},{v:'expensive',l:'Expensive'}]},
+  {key:'score',label:'Poised Score',opts:[{v:'all',l:'All'},{v:'high',l:'8.0+ High conviction'},{v:'mid',l:'6–7.9 Watchlist'},{v:'low',l:'< 6 Monitor'}]},
+  {key:'action',label:'Action',opts:[{v:'all',l:'All Actions'},{v:'add',l:'Add This Week'},{v:'watch',l:'Watch at Price'},{v:'hold',l:'Hold'},{v:'avoid',l:'Avoid'}]},
+  {key:'trend',label:'Trend',opts:[{v:'all',l:'All'},{v:'accelerating',l:'Accelerating'},{v:'stable',l:'Stable'},{v:'weakening',l:'Weakening'}]},
+  {key:'peBand',label:'PE Band',opts:[{v:'all',l:'All'},{v:'low',l:'< 20×'},{v:'mid',l:'20–30×'},{v:'hi',l:'30–40×'},{v:'premium',l:'> 40×'}]},
+];
+
+// ── INIT ──
+async function init(){
+  applyTheme(STATE.theme);
+  try{
+    const [meta,opps,queue]=await Promise.all([
+      fetch('./data/meta.json').then(r=>r.json()),
+      fetch('./data/opportunities.json').then(r=>r.json()),
+      fetch('./data/queue.json').then(r=>r.json()),
+    ]);
+    DATA={meta,opportunities:opps,queue};
+  }catch(e){/* use fallback */}
+  renderAll();
+  setupEventListeners();
+}
+
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme',t);
+  STATE.theme=t;
+  localStorage.setItem('rdb-theme',t);
+  const btn=document.getElementById('theme-btn');
+  if(btn) btn.textContent=t==='dark'?'☀':'☽';
+}
+
+function toggleTheme(){applyTheme(STATE.theme==='dark'?'light':'dark');}
+
+// ── RENDER ALL ──
+function renderAll(){
+  const m=DATA.meta;
+  document.getElementById('landing-sub').textContent=
+    `${m.activeOpportunities} active opportunities · ${m.lastUpdated}`;
+  document.getElementById('ltab-opp-badge').textContent=DATA.opportunities.length;
+  const filled=DATA.queue.entries.filter(e=>e.ticker&&!e.ticker.startsWith('-')).length;
+  document.getElementById('ltab-q-badge').textContent=`${filled}/${m.researchQueueTotal||10}`;
+  document.getElementById('ltab-c-badge').textContent=STOCKS.length;
+  renderOpportunitiesPane();
+  renderQueuePane();
+  renderCandidatesPane();
+}
+
+// ── LANDING TABS ──
+function switchLandingTab(btn){
+  document.querySelectorAll('.ltab').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.landing-pane').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  const pane=document.getElementById('pane-'+btn.dataset.pane);
+  if(pane) pane.classList.add('active');
+  STATE.landingTab=btn.dataset.pane;
+}
+
+function switchToTab(paneName){
+  const btn=document.querySelector(`.ltab[data-pane="${paneName}"]`);
+  if(btn) switchLandingTab(btn);
+}
+
+// ── OPPORTUNITIES PANE ──
+function renderOpportunitiesPane(){
+  const list=document.getElementById('opp-list');
+  if(!DATA.opportunities.length){list.innerHTML='<p style="padding:24px;color:var(--t3);text-align:center">No active opportunities</p>';return;}
+  list.innerHTML=DATA.opportunities.map(o=>renderOppCard(o)).join('');
+}
+
+function confRingHTML(score,size=64){
+  const r=24,cx=size/2,cy=size/2;
+  const circ=2*Math.PI*r;
+  const filled=(score/10)*circ;
+  return `<div class="conf-ring-wrap" style="width:${size}px;height:${size}px">
+    <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" style="transform:rotate(-90deg)">
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="var(--s3)" stroke-width="4"/>
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="var(--blue)" stroke-width="4"
+        stroke-dasharray="${filled} ${circ}" stroke-linecap="round"/>
+    </svg>
+    <div class="conf-ring-label"><div class="conf-big">${score}</div><div class="conf-denom">/10</div></div>
+  </div>`;
+}
+
+function renderOppCard(o){
+  const badges=o.candidateStocks.map(t=>`<button class="cand-badge" onclick="event.stopPropagation();openDetailById('${t}')">${t}</button>`).join('');
+  const bullets=o.whyNow.map(b=>`<div class="opp-bullet"><span class="bullet-icon">⚡</span><span>${b}</span></div>`).join('');
+  const risks=o.risks.map(r=>`<div class="risk-item"><span class="bullet-icon">⚠</span><span>${r}</span></div>`).join('');
+  const hasThemeFilter=o.id.includes('capex')?'capex':'defence';
+  return `<div class="opp-card">
+    <div class="opp-card-header">
+      ${confRingHTML(o.confidence)}
+      <div class="opp-header-info">
+        <div class="opp-theme">${o.theme}</div>
+        <div class="opp-pills">
+          <span class="opp-pill pill-active">${o.status}</span>
+          <span class="opp-pill pill-accel">${o.trend} ↑</span>
+          <span class="opp-pill pill-corr">${o.corroboration} companies</span>
+        </div>
+      </div>
+    </div>
+    <div class="opp-divider"></div>
+    <div class="opp-candidates">
+      <div class="opp-section-label">Candidate Stocks — tap to open</div>
+      <div class="candidate-badges">${badges}</div>
+    </div>
+    <div class="opp-divider"></div>
+    <div class="opp-bullets">
+      <div class="opp-section-label">Why Now</div>
+      ${bullets}
+    </div>
+    <div class="opp-risks">
+      <div class="opp-section-label" style="margin-top:4px">Risks</div>
+      ${risks}
+    </div>
+    <div class="opp-footer">
+      <span class="opp-footer-meta">${o.evidenceCount} evidence sources · ${o.dateIdentified}</span>
+      <button class="explore-btn" onclick="switchToTab('candidates')">Explore Candidates →</button>
+    </div>
+  </div>`;
+}
+
+// ── QUEUE PANE ──
+function renderQueuePane(){
+  const q=DATA.queue;
+  document.getElementById('queue-note-bar').innerHTML=`<div class="queue-note">${q.note||''}</div>`;
+  const list=document.getElementById('queue-list');
+  const filled=q.entries.filter(e=>e.ticker&&!e.ticker.startsWith('-'));
+  const total=DATA.meta.researchQueueTotal||10;
+  const unfilled=total-filled.length;
+  const items=filled.map(e=>{
+    const hasDetail=STOCKS.some(s=>s.id===e.ticker);
+    const oppBadge=e.opportunityId?`<span class="qe-opp-badge">${e.opportunityId.replace(/-2026-Q4/,'')}</span>`:'';
+    const pcBadge=e.portfolioCandidate?`<span class="qe-pc-badge">Portfolio Candidate</span>`:'';
+    return `<div class="queue-entry${hasDetail?'':' no-detail'}" onclick="${hasDetail?`openDetailById('${e.ticker}')`:''}" >
+      <div class="qe-top">
+        <div class="qe-rank">${e.rank}</div>
+        <div class="qe-body">
+          <div class="qe-ticker">NSE · ${e.ticker}</div>
+          <div class="qe-company">${e.company}</div>
+        </div>
+      </div>
+      <div class="qe-reason">${e.reason}</div>
+      <div class="qe-footer">${oppBadge}${pcBadge}<span class="qe-source">${e.signalSource||''}</span></div>
+    </div>`;
+  }).join('');
+  const unfilledHTML=unfilled>0?`<div class="queue-unfilled">Slots ${filled.length+1}–${total} · Unfilled<br>Awaiting next pipeline run (Q1 FY27 earnings, Aug 2026)</div>`:'';
+  list.innerHTML=items+unfilledHTML;
+}
+
+// ── CANDIDATES PANE ──
+function renderCandidatesPane(){
+  const {stocks,availZones}=getFilteredStocks();
+
+  // Sort bar
+  document.getElementById('sort-bar').innerHTML=
+    '<span class="sort-label">Sort:</span>'+
+    SORT_OPTS.map(o=>`<button class="sort-pill${STATE.sort===o.v?' active':''}" onclick="setSort('${o.v}')">${o.l}</button>`).join('');
+
+  // Chips
+  const chipsRow=document.getElementById('chips-row');
+  const chips=Object.entries(STATE.filters).filter(([k,v])=>v!=='all').map(([k,v])=>{
+    const def=FILTER_DEFS.find(d=>d.key===k);
+    const opt=def?.opts.find(o=>o.v===v);
+    return `<div class="chip">${opt?.l||v} <span class="chip-x" onclick="clearFilter('${k}')">✕</span></div>`;
+  });
+  if(chips.length){chipsRow.innerHTML=chips.join('');chipsRow.style.display='flex';}
+  else chipsRow.style.display='none';
+
+  // Badge
+  const cnt=countActiveFilters();
+  const badge=document.getElementById('filter-badge');
+  if(cnt>0){badge.textContent=cnt;badge.classList.add('visible');}
+  else badge.classList.remove('visible');
+
+  // Count
+  document.getElementById('result-count').textContent=`Showing ${stocks.length} of ${STOCKS.length} stocks`;
+
+  // Grid
+  const grid=document.getElementById('card-grid');
+  if(!stocks.length){
+    grid.innerHTML=`<div class="empty-state"><div class="empty-icon">🔍</div><div class="empty-title">No stocks match</div><div class="empty-sub">Try adjusting your filters</div><button class="clear-btn" onclick="clearFilters()">Clear All Filters</button></div>`;
+    return;
+  }
+  grid.innerHTML=stocks.map(s=>renderCard(s)).join('');
+}
+
+function renderCard(s){
+  const snow=svgSnowflake(s.axes,88,true);
+  const ring=miniPoisedRing(s.poised);
+  const zClass=`z-${s.zone}`;
+  const themes=s.themes;
+  const themeTag=themes.includes('defence')&&themes.includes('capex')
+    ?`<span class="tag tag-both">Both</span>`
+    :themes.includes('defence')
+    ?`<span class="tag tag-defence">Defence</span>`
+    :`<span class="tag tag-capex">Capex</span>`;
+  return `<div class="stock-card" onclick="openDetailById('${s.id}')">
+    <div class="card-top">
+      <div>${snow}</div>
+      <div class="card-score-col">${ring}<span class="card-zone-badge ${zClass}">${s.zoneLabel}</span></div>
+    </div>
+    <div class="card-body">
+      <div class="card-ticker">NSE · ${s.id}</div>
+      <div class="card-name">${s.name}</div>
+      <div class="card-stats">
+        <div class="card-stat"><div class="cs-label">Poised</div><div class="cs-value">${s.poised}/10</div></div>
+        <div class="card-stat"><div class="cs-label">Action</div><div class="cs-value">${s.actionLabel}</div></div>
+      </div>
+      <div class="card-meta">${themeTag}</div>
+    </div>
+  </div>`;
+}
+
+// ── FILTER LOGIC ──
+function getFilteredStocks(){
+  let stocks=[...STOCKS];
+  if(STATE.filters.theme!=='all') stocks=stocks.filter(s=>s.themes.includes(STATE.filters.theme));
+  if(STATE.filters.zone!=='all') stocks=stocks.filter(s=>s.zone===STATE.filters.zone);
+  if(STATE.filters.score!=='all'){
+    if(STATE.filters.score==='high') stocks=stocks.filter(s=>s.poised>=8.0);
+    else if(STATE.filters.score==='mid') stocks=stocks.filter(s=>s.poised>=6.0&&s.poised<8.0);
+    else if(STATE.filters.score==='low') stocks=stocks.filter(s=>s.poised<6.0);
+  }
+  if(STATE.filters.action!=='all') stocks=stocks.filter(s=>s.action===STATE.filters.action);
+  if(STATE.filters.trend!=='all') stocks=stocks.filter(s=>s.trend===STATE.filters.trend);
+  if(STATE.filters.peBand!=='all'){
+    if(STATE.filters.peBand==='low') stocks=stocks.filter(s=>s.pe<20);
+    else if(STATE.filters.peBand==='mid') stocks=stocks.filter(s=>s.pe>=20&&s.pe<30);
+    else if(STATE.filters.peBand==='hi') stocks=stocks.filter(s=>s.pe>=30&&s.pe<=40);
+    else if(STATE.filters.peBand==='premium') stocks=stocks.filter(s=>s.pe>40);
+  }
+  const availZones=new Set(stocks.map(s=>s.zone));
+  stocks.sort((a,b)=>{
+    if(STATE.sort==='poised') return b.poised-a.poised;
+    if(STATE.sort==='confidence') return b.confidence-a.confidence;
+    if(STATE.sort==='momentum') return b.axes.momentum-a.axes.momentum;
+    if(STATE.sort==='return-bull') return b.scenarios[0].returnNum-a.scenarios[0].returnNum;
+    if(STATE.sort==='corroboration') return b.corroboration-a.corroboration;
+    return 0;
+  });
+  return{stocks,availZones};
+}
+
+function countActiveFilters(){return Object.values(STATE.filters).filter(v=>v!=='all').length;}
+function setSort(v){STATE.sort=v;renderCandidatesPane();}
+function clearFilter(k){STATE.filters[k]='all';renderCandidatesPane();renderFilterSheet();}
+function clearFilters(){Object.keys(STATE.filters).forEach(k=>STATE.filters[k]='all');renderCandidatesPane();renderFilterSheet();}
+
+// ── FILTERS SHEET ──
+function openFilters(){
+  renderFilterSheet();
+  document.getElementById('filter-backdrop').classList.add('open');
+  document.getElementById('filter-sheet').classList.add('open');
+}
+function closeFilters(){
+  document.getElementById('filter-backdrop').classList.remove('open');
+  document.getElementById('filter-sheet').classList.remove('open');
+}
+function renderFilterSheet(){
+  const {availZones}=getFilteredStocks();
+  document.getElementById('filter-sheet-body').innerHTML=FILTER_DEFS.map(def=>{
+    const pills=def.opts.map(o=>{
+      const dis=def.key==='zone'&&o.v!=='all'&&!availZones.has(o.v);
+      const act=STATE.filters[def.key]===o.v;
+      return `<button class="filter-pill${act?' active':''}${dis?' disabled':''}" onclick="${dis?'':'setFilter(\''+def.key+'\',\''+o.v+'\')'}">${o.l}</button>`;
+    }).join('');
+    return `<div class="sheet-section"><div class="sheet-section-label">${def.label}</div><div class="pill-row">${pills}</div></div>`;
+  }).join('');
+}
+function setFilter(k,v){STATE.filters[k]=v;renderCandidatesPane();renderFilterSheet();}
+
+// ── SVG SNOWFLAKE ──
+function svgSnowflake(axes,size,mini=false){
+  const cx=size/2,cy=size/2,R=size*(mini?.38:.36),n=5;
+  const keys=['opportunity','valuation','execution','moat','momentum'];
+  let grid='';
+  for(let lv=1;lv<=5;lv++){
+    const pts=keys.map((_,i)=>{const a=(i*2*Math.PI/n)-Math.PI/2,r=(lv/5)*R;return `${cx+r*Math.cos(a)},${cy+r*Math.sin(a)}`;});
+    grid+=`<polygon points="${pts.join(' ')}" fill="none" stroke="rgba(255,255,255,.07)" stroke-width=".5"/>`;
+  }
+  let axisL='';
+  for(let i=0;i<n;i++){const a=(i*2*Math.PI/n)-Math.PI/2,x=cx+R*Math.cos(a),y=cy+R*Math.sin(a);axisL+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="rgba(255,255,255,.1)" stroke-width=".5"/>`;}
+  const scorePts=keys.map((k,i)=>{const s=axes[k]||0,a=(i*2*Math.PI/n)-Math.PI/2;return `${cx+R*Math.cos(a)*s/10},${cy+R*Math.sin(a)*s/10}`;});
+  let dots='';
+  if(mini){keys.forEach((k,i)=>{const s=axes[k]||0,a=(i*2*Math.PI/n)-Math.PI/2,x=cx+R*Math.cos(a)*s/10,y=cy+R*Math.sin(a)*s/10;dots+=`<circle cx="${x}" cy="${y}" r="2.5" fill="#0A84FF"/>`;});}
+  let labels='';
+  if(!mini){
+    ['Opportunity','Valuation','Execution','Moat','Momentum'].forEach((nm,i)=>{
+      const a=(i*2*Math.PI/n)-Math.PI/2,lx=cx+R*1.32*Math.cos(a),ly=cy+R*1.32*Math.sin(a);
+      const anchor=lx<cx-4?'end':lx>cx+4?'start':'middle',dy=ly<cy-4?0:ly>cy+4?4:2;
+      labels+=`<text x="${lx}" y="${ly+dy}" text-anchor="${anchor}" fill="rgba(255,255,255,.5)" font-size="8" font-family="-apple-system,sans-serif" class="sf-label" data-axis="${nm.toLowerCase()}" style="cursor:pointer">${nm}</text>`;
+    });
+  }
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${grid}${axisL}<polygon points="${scorePts.join(' ')}" fill="rgba(10,132,255,.18)" stroke="#0A84FF" stroke-width="${mini?1:1.5}" stroke-linejoin="round"/>${dots}${labels}</svg>`;
+}
+
+function miniPoisedRing(score){
+  const r=16,circ=2*Math.PI*r,filled=(score/10)*circ;
+  const col=score>=8?'var(--green)':score>=7?'var(--blue)':'var(--orange)';
+  return `<svg class="poised-ring-sm" width="40" height="40" viewBox="0 0 40 40" style="transform:rotate(-90deg)">
+    <circle cx="20" cy="20" r="${r}" fill="none" stroke="var(--s3)" stroke-width="3.5"/>
+    <circle cx="20" cy="20" r="${r}" fill="none" stroke="${col}" stroke-width="3.5" stroke-dasharray="${filled} ${circ}" stroke-linecap="round"/>
+    <text x="20" y="20" text-anchor="middle" dominant-baseline="central" fill="${col}" font-size="9" font-weight="800" font-family="-apple-system,sans-serif" style="transform:rotate(90deg);transform-origin:20px 20px">${score}</text>
+  </svg>`;
+}
+
+// ── NAVIGATION ──
+function openDetailById(id){
+  const s=STOCKS.find(x=>x.id===id);
+  if(!s)return;
+  STATE.activeStock=id;
+  STATE.detailTab='snowflake';
+  renderDetail(s);
+  document.getElementById('s-landing').classList.add('slide-left');
+  document.getElementById('s-detail').classList.remove('slide-right');
+  STATE.screen='detail';
+}
+
+function goBack(){
+  document.getElementById('s-landing').classList.remove('slide-left');
+  document.getElementById('s-detail').classList.add('slide-right');
+  STATE.screen='landing';
+}
+
+// ── SWIPE BACK ──
+let _tx=0,_sx=0;
+function setupEventListeners(){
+  const det=document.getElementById('s-detail');
+  det.addEventListener('touchstart',e=>{_sx=e.touches[0].clientX;_tx=0;},{passive:true});
+  det.addEventListener('touchmove',e=>{_tx=e.touches[0].clientX-_sx;},{passive:true});
+  det.addEventListener('touchend',()=>{if(_tx>70&&STATE.screen==='detail')goBack();});
+}
+
+// ── DETAIL SCREEN ──
+function renderDetail(s){
+  document.getElementById('detail-ticker').textContent=`NSE · ${s.id}`;
+  document.getElementById('detail-name').textContent=s.name;
+  document.getElementById('detail-price').textContent=`₹${s.price.toLocaleString('en-IN')}`;
+  document.getElementById('detail-price-meta').textContent=`· as of ${s.priceDate}`;
+
+  const tabs=['snowflake','buyzoneTab','scenarios','portfolio','dynamics'];
+  const labels=['Snowflake','Buy Zone','Scenarios','Portfolio','Dynamics'];
+  document.getElementById('detail-tabs').innerHTML=tabs.map((t,i)=>
+    `<button class="dtab${STATE.detailTab===t?' active':''}" onclick="switchDetailTab('${t}',this)">${labels[i]}</button>`
+  ).join('');
+  renderDetailTab(s);
+}
+
+function switchDetailTab(tab,btn){
+  STATE.detailTab=tab;
+  document.querySelectorAll('#detail-tabs .dtab').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  const s=STOCKS.find(x=>x.id===STATE.activeStock);
+  if(s) renderDetailTab(s);
+}
+
+function renderDetailTab(s){
+  const el=document.getElementById('detail-content');
+  if(STATE.detailTab==='snowflake') el.innerHTML=renderSnowflakeTab(s);
+  else if(STATE.detailTab==='buyzoneTab') el.innerHTML=renderBuyZoneTab(s);
+  else if(STATE.detailTab==='scenarios') el.innerHTML=renderScenariosTab(s);
+  else if(STATE.detailTab==='portfolio') el.innerHTML=renderPortfolioTab(s);
+  else if(STATE.detailTab==='dynamics') el.innerHTML=renderDynamicsTab(s);
+
+  // Wire up snowflake label clicks
+  el.querySelectorAll('.sf-label').forEach(lbl=>{
+    lbl.addEventListener('click',()=>openAxisSheet(lbl.dataset.axis,s));
+  });
+  // Wire up axis legend clicks
+  el.querySelectorAll('.axis-leg').forEach(leg=>{
+    leg.addEventListener('click',()=>openAxisSheet(leg.dataset.axis,s));
+  });
+  // Animate buy zone marker
+  if(STATE.detailTab==='buyzoneTab'){
+    setTimeout(()=>{
+      const m=document.getElementById('bz-marker-'+s.id);
+      if(m) m.style.left=bzPct(s.price,s.fv.base)+'%';
+    },60);
+  }
+}
+
+// ── TABS: SNOWFLAKE ──
+function renderSnowflakeTab(s){
+  const snow=svgSnowflake(s.axes,220,false);
+  const legs=Object.entries(AXIS_INFO).map(([k,v])=>
+    `<button class="axis-leg" data-axis="${k}"><span class="axis-dot"></span>${v.label}<span class="axis-score-pill">${s.axes[k]}</span></button>`
+  ).join('');
+  const fins=s.financials.map(f=>{
+    const col=f.col==='green'?'rv-g':f.col==='orange'?'rv-o':f.col==='blue'?'rv-b':'';
+    return `<div class="row"><span class="rk">${f.lbl}</span><div><div class="rv ${col}">${f.val}</div><div style="font-size:10px;color:var(--t3)">${f.sub}</div></div></div>`;
+  }).join('');
+  const whyNow=s.whyNow.map(w=>`<div class="opp-bullet"><span class="bullet-icon">⚡</span><span style="font-size:13px;color:var(--t2)">${w}</span></div>`).join('');
+  return `
+    <div class="snowflake-wrap">${snow}</div>
+    <div class="axis-legend">${legs}</div>
+    <div class="p-card"><div class="p-card-title">Key Financials</div>${fins}</div>
+    <div class="p-card"><div class="p-card-title">Why Now</div>${whyNow}</div>
+    <div class="disclaimer">Tap any axis label to see score breakdown and what changes it.</div>`;
+}
+
+// ── TABS: BUY ZONE ──
+function bzPct(price,fvBase){
+  const barMin=fvBase*.40,barMax=fvBase*1.60;
+  return Math.min(97,Math.max(3,((price-barMin)/(barMax-barMin))*100));
+}
+function renderBuyZoneTab(s){
+  const zones=['Strong Buy','Buy Zone','Fair Value','Watch','Expensive'];
+  const zoneLabels=zones.map(z=>`<span class="bz-zone-lbl">${z}</span>`).join('');
+  const thresholds=[s.fv.bear*.75,s.fv.bear,s.fv.base,s.fv.base*1.10,s.fv.bull*.85];
+  const prices=thresholds.map(p=>`<span class="bz-price">₹${p.toLocaleString('en-IN',{maximumFractionDigits:0})}</span>`).join('');
+  const pct=bzPct(s.price,s.fv.base);
+  const dist=((s.fv.base-s.price)/s.price*100).toFixed(1);
+  const distStr=parseFloat(dist)>0?`${dist}% below Fair Value`:Math.abs(parseFloat(dist)).toFixed(1)+'% above Fair Value';
+  const sbItems=s.scoreBreakdown.map(row=>{
+    const mod=row.type==='pos'?'rv-g':row.type==='neg'?'rv-r':row.type==='total'?'rv-b':'';
+    return `<li><span>${row.lbl}</span><span class="sb-mod ${mod}">${row.val}</span></li>`;
+  }).join('');
+  return `
+    <div class="p-card">
+      <div class="p-card-title">Buy Zone Bar</div>
+      <div class="bz-bar-wrap">
+        <div class="bz-gradient">
+          <div class="bz-marker" id="bz-marker-${s.id}" style="left:3%">
+            <div class="bz-dot"></div>
+            <div class="bz-label">₹${s.price.toLocaleString('en-IN')}</div>
+          </div>
+        </div>
+        <div class="bz-zones">${zoneLabels}</div>
+        <div class="bz-prices">${prices}</div>
+      </div>
+      <div class="bz-current">
+        <div class="bz-current-info">
+          <div class="bz-zone-name z-${s.zone}" style="padding:3px 10px;border-radius:10px;display:inline-block">${s.zoneLabel}</div>
+          <div class="bz-dist" style="margin-top:6px">${distStr}</div>
+        </div>
+        <div><span class="score-big">${s.poised}</span><span class="score-denom">/10</span></div>
+      </div>
+    </div>
+    <div class="p-card">
+      <div class="p-card-title">Poised Score Breakdown</div>
+      <ul class="score-breakdown" style="list-style:none">${sbItems}</ul>
+    </div>
+    <div class="eli15"><div class="eli15-lbl">ELI15</div><div class="eli15-txt">${s.eli15}</div></div>`;
+}
+
+// ── TABS: SCENARIOS ──
+function renderScenariosTab(s){
+  const scens=s.scenarios.map(sc=>{
+    const col=sc.col==='green'?'var(--green)':sc.col==='red'?'var(--red)':'var(--blue)';
+    const bg=sc.col==='green'?'var(--gr2)':sc.col==='red'?'var(--re2)':'var(--bl2)';
+    return `<div class="scenario">
+      <div class="scen-stripe" style="background:${col}"></div>
+      <div class="scen-body">
+        <div class="scen-header">
+          <span class="scen-name" style="color:${col}">${sc.name} Case</span>
+          <span class="prob-pill" style="background:${bg};color:${col}">${sc.prob}%</span>
+        </div>
+        <div class="scen-thesis">${sc.thesis}</div>
+        <div class="scen-stats">
+          <div class="scen-stat"><div class="scen-stat-lbl">2yr Return</div><div class="scen-stat-val" style="color:${col}">${sc.return2yr}</div></div>
+          <div class="scen-stat"><div class="scen-stat-lbl">Probability</div><div class="scen-stat-val">${sc.prob}%</div></div>
+        </div>
+        <div class="scen-falsifier"><strong>Key assumption:</strong> ${sc.assumption}<br><strong>Invalidated if:</strong> ${sc.falsifier}</div>
+      </div>
+    </div>`;
+  }).join('');
+  const confCol=s.confLabel.includes('High')?'var(--green)':s.confLabel.includes('Low')?'var(--orange)':'var(--blue)';
+  const confBg=s.confLabel.includes('High')?'var(--gr2)':s.confLabel.includes('Low')?'var(--or2)':'var(--bl2)';
+  return `
+    ${scens}
+    <div class="watch-var"><div class="wv-lbl">Key Watch Variable</div><div class="wv-main">${s.watchVariable}</div><div class="wv-sub">${s.watchSub}</div></div>
+    <div class="conf-row"><span class="conf-lbl">Probability Confidence</span><span class="conf-badge" style="background:${confBg};color:${confCol}">${s.confLabel}</span></div>
+    <div class="p-card" style="font-size:12px;color:var(--t3)">${s.confReason}</div>`;
+}
+
+// ── TABS: PORTFOLIO ──
+function renderPortfolioTab(s){
+  const isAdd=s.action==='add';
+  const recClass=isAdd?'add':s.action==='avoid'?'avoid':'';
+  const recIcon=isAdd?'📈':s.action==='avoid'?'🚫':'👁';
+  return `
+    <div class="p-card">
+      <div class="p-card-title">Current Position</div>
+      <div class="pos-status"><div class="pos-dot${s.held?' held':''}"></div><div class="pos-txt">${s.held?'Currently held':'Not held'}</div></div>
+      <div class="row"><span class="rk">Portfolio slot</span><span class="rv">${s.slot}</span></div>
+    </div>
+    <div class="rec-card ${recClass}">
+      <div class="rec-header"><span class="rec-icon">${recIcon}</span><span class="rec-verdict">${s.portfolioRec}</span></div>
+      <div class="rec-body">${s.portfolioBody}</div>
+      ${s.portfolioEntry?`<div class="rec-entry"><strong>Entry guidance:</strong> ${s.portfolioEntry}</div>`:''}
+    </div>
+    <div class="bias-card"><div class="bias-lbl">Behavioural Check</div><div class="bias-txt">${s.bias}</div></div>`;
+}
+
+// ── TABS: DYNAMICS ──
+function renderDynamicsTab(s){
+  const d=s.dynamics;
+  const VCOLS=['#30D158','#0A84FF','#FF9F0A','#FF453A'];
+  const players=d.players.map(p=>`<span class="player pl-${p.type}">${p.name}</span>`).join('');
+  const valRows=d.valueRows.map((r,i)=>`
+    <div class="value-row">
+      <span class="value-actor">${r.actor}</span>
+      <div class="vbar-wrap"><div class="vbar-fill" style="width:${r.pct}%;background:${VCOLS[i]||VCOLS[0]}"></div></div>
+      <span class="value-pct" style="color:${VCOLS[i]||VCOLS[0]}">${r.pct}%</span>
+    </div>`).join('');
+  const wc=d.wildcards.map(w=>`<li class="wildcard-item"><span class="wc-icon">${w.icon}</span><span>${w.text}</span></li>`).join('');
+  return `
+    <div class="p-card"><div class="p-card-title">Game Type</div>
+      <div style="font-size:14px;font-weight:600;color:var(--blue);margin-bottom:6px">${d.gameType}</div>
+      <div style="font-size:13px;color:var(--t2);line-height:1.5">${d.gameNote}</div>
+    </div>
+    <div class="p-card"><div class="p-card-title">Players</div><div class="players-wrap">${players}</div>
+      <div style="font-size:12px;color:var(--t3);margin-top:10px"><strong style="color:var(--t2)">Info asymmetry:</strong> ${d.asymmetry}</div>
+    </div>
+    <div class="p-card"><div class="p-card-title">Who Captures Value?</div>${valRows}
+      <div style="font-size:12px;color:var(--t3);margin-top:8px">${d.valueSummary}</div>
+    </div>
+    <div class="p-card"><div class="p-card-title">Equilibrium</div><div style="font-size:13px;color:var(--t2);line-height:1.5">${d.equilibrium}</div></div>
+    <div class="p-card"><div class="p-card-title">Behavioural Wildcards</div><ul class="wildcard-list">${wc}</ul></div>
+    <div class="eli15"><div class="eli15-lbl">ELI15 — Strategic Summary</div><div class="eli15-txt">${d.eli15}</div></div>`;
+}
+
+// ── AXIS TOOLTIP SHEET ──
+function openAxisSheet(axisName,s){
+  const info=AXIS_INFO[axisName];
+  if(!info)return;
+  const score=s.axes[axisName]||0;
+  document.getElementById('axis-sheet-body').innerHTML=`
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--blue);margin-bottom:8px">${info.label}</div>
+    <div class="axis-score-large">${score}<span style="font-size:20px;color:var(--t3)">/10</span></div>
+    <div class="axis-def">${info.def}</div>
+    <div class="axis-what-changes"><strong>What changes this score:</strong><br>${info.changes}</div>`;
+  document.getElementById('axis-backdrop').classList.add('open');
+  document.getElementById('axis-sheet').classList.add('open');
+}
+function closeAxisSheet(){
+  document.getElementById('axis-backdrop').classList.remove('open');
+  document.getElementById('axis-sheet').classList.remove('open');
+}
+
+// ── START ──
+init();
+</script>
+</body>
+</html>

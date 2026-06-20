@@ -1,0 +1,58 @@
+[
+  {
+    "id": "india-industrial-capex-cycle-2026-Q4",
+    "theme": "India Industrial Capex Cycle",
+    "confidence": 7.8,
+    "trend": "Accelerating",
+    "status": "Active",
+    "dateIdentified": "2026-06-20",
+    "corroboration": 6,
+    "candidateStocks": ["BEL", "HAL", "JNKINDIA", "LT", "PARAS"],
+    "whyNow": [
+      "BEL QRSAM contract expected Jun–Jul 2026 — if awarded on schedule, revenue recognition begins FY27 Q2",
+      "HAL LCA Mark-1A deliveries targeted Aug/Sep 2026 — near-term revenue recognition milestone for the largest item in HAL's order book",
+      "Six companies across defence, infrastructure, auto, and industrials all cited demand acceleration simultaneously — broad-based, not sector-specific"
+    ],
+    "risks": [
+      "L&T FY26 revenue missed guidance by 300 bps despite order book beat — execution risk is real and ongoing",
+      "India capex cycle is interest-rate-sensitive; RBI tightening in H2 FY27 could defer discretionary industrial projects"
+    ],
+    "evidenceCount": 6,
+    "evidenceSources": [
+      "LT Q4 FY26 Earnings Call — 2026-05-05",
+      "HAL Q4 FY26 Earnings Call — 2026-05-15",
+      "PARAS Q4 FY26 Quarterly Results — 2026-05-13",
+      "JNKINDIA Q4 FY26 Earnings Call — 2026-05-21",
+      "BEL Q4 FY26 Earnings Call — 2026-05-22",
+      "GABRIEL Q4 FY26 Earnings Call — 2026-05-28"
+    ],
+    "themeFile": "06_THEMES/india-industrial-capex-cycle.md"
+  },
+  {
+    "id": "defence-electronics-aerospace-2026-Q4",
+    "theme": "Indian Defence Electronics & Aerospace Supply Chain",
+    "confidence": 7.5,
+    "trend": "Accelerating",
+    "status": "Active",
+    "dateIdentified": "2026-06-20",
+    "corroboration": 4,
+    "candidateStocks": ["BEL", "HAL", "LT", "PARAS"],
+    "whyNow": [
+      "BEL QRSAM contract expected Jun–Jul 2026 — specific near-term named catalyst with a management-committed timeline",
+      "HAL LCA Mark-1A deliveries Aug/Sep 2026 — concrete production milestone confirming execution improvement after earlier delays",
+      "IAF MALE UAV programme (₹30,000cr) has received bids from 10 qualified bidders — contract award expected before FY27 end; first major domestic UAV programme"
+    ],
+    "risks": [
+      "HAL LCA Mark-1A was already delayed once; Aug/Sep 2026 target is management's stated commitment, not a contractual obligation",
+      "All order inflows depend on Union Budget defence allocation; FY28 budget changes could push timelines and defer revenue across all four stocks"
+    ],
+    "evidenceCount": 4,
+    "evidenceSources": [
+      "LT Q4 FY26 Earnings Call — 2026-05-05",
+      "HAL Q4 FY26 Earnings Call — 2026-05-15",
+      "PARAS Q4 FY26 Quarterly Results — 2026-05-13",
+      "BEL Q4 FY26 Earnings Call — 2026-05-22"
+    ],
+    "themeFile": "06_THEMES/defence-electronics-aerospace.md"
+  }
+]
