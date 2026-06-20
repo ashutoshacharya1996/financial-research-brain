@@ -1,0 +1,60 @@
+{
+  "weekOf": "2026-06-20",
+  "note": "First run. Only 6 of 10 slots filled — insufficient extracted evidence for remaining slots. Next run (Q1 FY27 earnings, Aug 2026) will expand coverage.",
+  "entries": [
+    {
+      "rank": 1,
+      "ticker": "BEL",
+      "company": "Bharat Electronics Ltd",
+      "reason": "FY27 order inflow guidance >₹55,000cr vs FY26 inflows of ₹30,000cr (83% step-up), with QRSAM contract expected Jun–Jul 2026 creating near-term revenue conversion event",
+      "signalSource": "Q4 FY26 Earnings Call — BEL — 2026-05-22",
+      "opportunityId": "defence-electronics-aerospace-2026-Q4",
+      "portfolioCandidate": true
+    },
+    {
+      "rank": 2,
+      "ticker": "HAL",
+      "company": "Hindustan Aeronautics Ltd",
+      "reason": "Order book ₹2,54,538cr (+34% YoY, 7.7× FY26 revenue) with LCA Mark-1A deliveries targeting Aug/Sep 2026 as a near-term revenue recognition milestone",
+      "signalSource": "Q4 FY26 Earnings Call — HAL — 2026-05-15",
+      "opportunityId": "defence-electronics-aerospace-2026-Q4",
+      "portfolioCandidate": true
+    },
+    {
+      "rank": 3,
+      "ticker": "JNKINDIA",
+      "company": "JNK India Ltd",
+      "reason": "Order book +81% YoY to ₹1,961cr with first international export order (UAE/ADNOC TA'ZIZ Salt Project) and FY27 revenue guidance 25–30% growth",
+      "signalSource": "Q4 FY26 Earnings Call — JNKINDIA — 2026-05-21 + Press Release — 2026-06-09",
+      "opportunityId": "india-industrial-capex-cycle-2026-Q4",
+      "portfolioCandidate": true
+    },
+    {
+      "rank": 4,
+      "ticker": "LT",
+      "company": "Larsen & Toubro Ltd",
+      "reason": "Order book ₹7.40 trillion (+28% YoY) beat guidance with K9 Vajra-T artillery contract (₹5,000–10,000cr) awarded post-Q4; execution risk is real (FY26 revenue missed guidance by 300 bps)",
+      "signalSource": "Q4 FY26 Earnings Call — LT — 2026-05-05",
+      "opportunityId": "india-industrial-capex-cycle-2026-Q4",
+      "portfolioCandidate": true
+    },
+    {
+      "rank": 5,
+      "ticker": "PARAS",
+      "company": "Paras Defence & Space Technologies",
+      "reason": "BEL electro-optics subcontract ₹52.82cr awarded Jun 2, 2026 confirms Tier-2 supply chain deepening; Q4 revenue +58% YoY validates demand acceleration beyond a single quarter",
+      "signalSource": "Q4 FY26 Quarterly Results — PARAS — 2026-05-13",
+      "opportunityId": "defence-electronics-aerospace-2026-Q4",
+      "portfolioCandidate": true
+    },
+    {
+      "rank": 6,
+      "ticker": "GABRIEL",
+      "company": "Gabriel India Ltd",
+      "reason": "Motilal Oswal initiation projects 55% PAT CAGR FY26–28 anchored on EV-adjacent product pivot (sunroofs, solar dampers, e-mobility) with Buy target ₹1,266 vs ~₹720 at initiation",
+      "signalSource": "Q4 FY26 Earnings Call — GABRIEL — 2026-05-28 + Motilal Oswal Initiation — 2026-06-09",
+      "opportunityId": null,
+      "portfolioCandidate": false
+    }
+  ]
+}
