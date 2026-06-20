@@ -40,11 +40,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-None yet — first tracking run. Will be linked once Opportunity Screener runs.
+- `defence-electronics-aerospace-2026-Q4` — Confidence: 7.5 / Status: Active
 
 ## Research Queue Appearances
 
-0 — first week of tracking
+4 — week of 2026-06-20 (BEL #1, HAL #2, LT #4, PARAS #5)
 
 ## Potential Losers
 

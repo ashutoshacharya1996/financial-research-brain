@@ -42,11 +42,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-None yet — first tracking run.
+- `india-industrial-capex-cycle-2026-Q4` — Confidence: 7.8 / Status: Active
 
 ## Research Queue Appearances
 
-0 — first week of tracking
+6 — week of 2026-06-20 (BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6)
 
 ## Potential Losers
 
