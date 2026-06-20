@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>BEL — Stock Dashboard</title>
+<style>
+:root {
+  --bg: #000000;
+  --surface: #1C1C1E;
+  --surface-2: #2C2C2E;
+  --surface-3: #3A3A3C;
+  --border: rgba(255,255,255,0.08);
+  --blue: #0A84FF;
+  --blue-dim: rgba(10,132,255,0.12);
+  --green: #30D158;
+  --green-dim: rgba(48,209,88,0.12);
+  --yellow: #FFD60A;
+  --orange: #FF9F0A;
+  --orange-dim: rgba(255,159,10,0.12);
+  --red: #FF453A;
+  --red-dim: rgba(255,69,58,0.12);
+  --indigo: #5E5CE6;
+  --indigo-dim: rgba(94,92,230,0.12);
+  --teal: #5AC8FA;
+  --text: #FFFFFF;
+  --text-2: rgba(255,255,255,0.55);
+  --text-3: rgba(255,255,255,0.30);
+  --safe-top: env(safe-area-inset-top, 44px);
+  --safe-bottom: env(safe-area-inset-bottom, 34px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+/* ── HEADER ── */
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding-top: var(--safe-top);
+  background: rgba(0,0,0,0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px 10px;
+}
+.header-left { flex: 1; }
+.ticker-badge {
+  display: inline-block;
+  background: var(--blue-dim);
+  border: 1px solid rgba(10,132,255,0.25);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--blue);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.header-company { font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.2; }
+.header-price { font-size: 12px; color: var(--text-2); margin-top: 1px; }
+.header-price span { color: var(--yellow); font-weight: 600; }
+.header-right { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+.score-ring-wrap { display: flex; flex-direction: column; align-items: center; }
+.score-ring-wrap svg { display: block; }
+.ring-score { font-size: 11px; font-weight: 700; fill: var(--blue); }
+.ring-label { font-size: 8px; fill: var(--text-2); }
+.ring-track { fill: none; stroke: var(--surface-3); stroke-width: 3.5; }
+.ring-fill {
+  fill: none;
+  stroke: var(--blue);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-dasharray: 188.5;
+  stroke-dashoffset: 188.5;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dashoffset 1.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ── TAB BAR ── */
+.tabbar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 100;
+  padding-bottom: var(--safe-bottom);
+  background: rgba(0,0,0,0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-top: 1px solid var(--border);
+}
+.tabbar-inner {
+  display: flex;
+  justify-content: space-around;
+  padding: 6px 0 4px;
+}
+.tab-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  min-width: 0;
+  flex: 1;
+}
+.tab-icon { font-size: 20px; line-height: 1; }
+.tab-label { font-size: 9px; font-weight: 500; color: var(--text-3); letter-spacing: 0.02em; }
+.tab-btn.active .tab-label { color: var(--blue); }
+.tab-btn.active .tab-icon { filter: none; }
+.tab-btn:not(.active) .tab-icon { opacity: 0.45; }
+
+/* ── SCROLL AREA ── */
+.scroll-area {
+  padding-top: calc(var(--safe-top) + 76px);
+  padding-bottom: calc(var(--safe-bottom) + 72px);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* ── PANELS ── */
+.panel { display: none; animation: fadeIn 0.25s ease; }
+.panel.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* ── CARDS ── */
+.card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+}
+.card-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 10px;
+}
+.card-value { font-size: 28px; font-weight: 700; line-height: 1; }
+.card-subtitle { font-size: 13px; color: var(--text-2); margin-top: 4px; }
+
+/* ── OVERVIEW GRID ── */
+.overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+.metric-card {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 14px;
+  border: 1px solid var(--border);
+}
+.metric-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-3); margin-bottom: 4px; }
+.metric-value { font-size: 20px; font-weight: 700; color: var(--text); }
+.metric-sub { font-size: 11px; color: var(--text-2); margin-top: 2px; }
+
+.opportunity-card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+}
+.opp-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.opp-title { font-size: 14px; font-weight: 600; }
+.confidence-pill {
+  background: var(--blue-dim);
+  border: 1px solid rgba(10,132,255,0.25);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue);
+}
+.why-now-list { list-style: none; margin-top: 8px; }
+.why-now-list li {
+  padding: 6px 0;
+  font-size: 13px;
+  color: var(--text-2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.why-now-list li:last-child { border-bottom: none; }
+.why-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); flex-shrink: 0; margin-top: 5px; }
+
+/* ── BUY ZONE BAR ── */
+.buyzone-bar-wrap { margin-bottom: 12px; }
+.buyzone-gradient {
+  height: 10px;
+  border-radius: 6px;
+  background: linear-gradient(to right,
+    #1A4F2B 0%,
+    #30D158 12%,
+    #7ED9A0 25%,
+    #5AC8FA 42%,
+    #FFCC00 58%,
+    #FF9F0A 74%,
+    #FF453A 100%
+  );
+  position: relative;
+  margin-bottom: 28px;
+}
+.buyzone-marker {
+  position: absolute;
+  top: -4px;
+  transform: translateX(-50%);
+  transition: left 1s cubic-bezier(0.4,0,0.2,1);
+}
+.buyzone-marker-dot {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2.5px solid var(--yellow);
+  box-shadow: 0 0 12px rgba(255,214,10,0.6);
+}
+.buyzone-marker-label {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--yellow);
+  white-space: nowrap;
+}
+.buyzone-zones { display: flex; justify-content: space-between; margin-top: -18px; }
+.zone-label { font-size: 9px; color: var(--text-3); text-align: center; }
+.buyzone-prices {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+.zone-price { font-size: 10px; color: var(--text-3); text-align: center; }
+
+.zone-current-card {
+  background: var(--orange-dim);
+  border: 1px solid rgba(255,159,10,0.25);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.zone-current-label { font-size: 13px; font-weight: 600; color: var(--orange); }
+.zone-current-sub { font-size: 11px; color: var(--text-2); margin-top: 2px; }
+.zone-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.zone-badge.watch { background: var(--orange-dim); color: var(--orange); border: 1px solid rgba(255,159,10,0.3); }
+.zone-badge.buy { background: var(--green-dim); color: var(--green); border: 1px solid rgba(48,209,88,0.3); }
+.zone-badge.strong-buy { background: var(--green-dim); color: var(--green); border: 1px solid rgba(48,209,88,0.5); }
+.zone-badge.fair { background: var(--blue-dim); color: var(--teal); border: 1px solid rgba(90,200,250,0.3); }
+.zone-badge.expensive { background: var(--red-dim); color: var(--red); border: 1px solid rgba(255,69,58,0.3); }
+
+.eli15-card {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-left: 3px solid var(--blue);
+}
+.eli15-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--blue); margin-bottom: 6px; }
+.eli15-text { font-size: 14px; line-height: 1.55; color: var(--text-2); }
+
+.poised-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.poised-label { font-size: 13px; color: var(--text-2); }
+.poised-score-large { font-size: 32px; font-weight: 800; color: var(--blue); }
+.poised-denom { font-size: 16px; font-weight: 400; color: var(--text-3); }
+
+.score-breakdown { list-style: none; }
+.score-breakdown li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-2);
+}
+.score-breakdown li:last-child { border-bottom: none; }
+.score-mod { font-weight: 600; }
+.score-mod.pos { color: var(--green); }
+.score-mod.neg { color: var(--red); }
+.score-mod.base { color: var(--blue); }
+
+/* ── SCENARIOS ── */
+.scenario-card {
+  background: var(--surface);
+  border-radius: 16px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.scenario-stripe { height: 4px; width: 100%; }
+.scenario-stripe.bull { background: var(--green); }
+.scenario-stripe.base { background: var(--blue); }
+.scenario-stripe.bear { background: var(--red); }
+.scenario-body { padding: 14px; }
+.scenario-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.scenario-name { font-size: 15px; font-weight: 700; }
+.scenario-name.bull { color: var(--green); }
+.scenario-name.base { color: var(--blue); }
+.scenario-name.bear { color: var(--red); }
+.prob-badge {
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.prob-badge.bull { background: var(--green-dim); color: var(--green); }
+.prob-badge.base { background: var(--blue-dim); color: var(--blue); }
+.prob-badge.bear { background: var(--red-dim); color: var(--red); }
+.scenario-thesis { font-size: 13px; color: var(--text-2); line-height: 1.5; margin-bottom: 10px; }
+.scenario-stats { display: flex; gap: 8px; }
+.stat-pill {
+  flex: 1;
+  background: var(--surface-2);
+  border-radius: 10px;
+  padding: 8px 10px;
+  text-align: center;
+}
+.stat-pill-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-3); }
+.stat-pill-value { font-size: 14px; font-weight: 700; margin-top: 2px; }
+.stat-pill-value.pos { color: var(--green); }
+.stat-pill-value.neg { color: var(--red); }
+.stat-pill-value.neu { color: var(--blue); }
+.scenario-trigger { font-size: 12px; color: var(--text-3); margin-top: 10px; }
+.scenario-trigger strong { color: var(--text-2); }
+
+.watch-var-card {
+  background: var(--indigo-dim);
+  border: 1px solid rgba(94,92,230,0.25);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.watch-var-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--indigo); margin-bottom: 6px; }
+.watch-var-text { font-size: 14px; font-weight: 600; color: var(--text); }
+.watch-var-sub { font-size: 12px; color: var(--text-2); margin-top: 4px; }
+
+.confidence-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+}
+.conf-label { font-size: 13px; color: var(--text-2); }
+.conf-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--orange-dim);
+  color: var(--orange);
+  border: 1px solid rgba(255,159,10,0.3);
+}
+
+/* ── PORTFOLIO ── */
+.position-card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+}
+.position-status { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.position-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--text-3); }
+.position-dot.held { background: var(--green); }
+.position-dot.not-held { background: var(--text-3); }
+.position-text { font-size: 15px; font-weight: 600; }
+
+.fit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.fit-row:last-child { border-bottom: none; }
+.fit-key { color: var(--text-2); }
+.fit-val { font-weight: 600; color: var(--text); }
+.fit-val.ok { color: var(--green); }
+.fit-val.warn { color: var(--orange); }
+
+.recommendation-card {
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(10,132,255,0.3);
+  background: var(--blue-dim);
+}
+.rec-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.rec-icon { font-size: 24px; }
+.rec-verdict { font-size: 17px; font-weight: 800; color: var(--blue); }
+.rec-body { font-size: 13px; line-height: 1.55; color: var(--text-2); }
+.rec-entry {
+  margin-top: 10px;
+  background: var(--surface-2);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+.rec-entry strong { color: var(--yellow); }
+
+.bias-card {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-left: 3px solid var(--yellow);
+}
+.bias-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yellow); margin-bottom: 6px; }
+.bias-text { font-size: 13px; color: var(--text-2); line-height: 1.5; }
+
+/* ── DYNAMICS ── */
+.players-wrap { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; margin-bottom: 2px; }
+.player-pill {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-2);
+}
+.player-pill.company { background: var(--blue-dim); color: var(--blue); border-color: rgba(10,132,255,0.25); }
+.player-pill.competitor { background: var(--orange-dim); color: var(--orange); border-color: rgba(255,159,10,0.25); }
+.player-pill.customer { background: var(--indigo-dim); color: var(--indigo); border-color: rgba(94,92,230,0.25); }
+.player-pill.regulator { background: var(--red-dim); color: var(--red); border-color: rgba(255,69,58,0.25); }
+
+.value-chain { margin-top: 8px; }
+.value-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.value-row:last-child { border-bottom: none; }
+.value-actor { flex: 1; color: var(--text-2); }
+.value-bar-wrap { flex: 2; height: 6px; background: var(--surface-3); border-radius: 3px; overflow: hidden; }
+.value-bar-fill { height: 100%; border-radius: 3px; }
+.value-pct { font-size: 11px; font-weight: 700; color: var(--text-2); min-width: 28px; text-align: right; }
+
+.wildcard-list { list-style: none; margin-top: 8px; }
+.wildcard-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+.wildcard-item:last-child { border-bottom: none; }
+.wildcard-icon { font-size: 18px; flex-shrink: 0; }
+
+/* ── DISCLAIMER ── */
+.disclaimer {
+  font-size: 11px;
+  color: var(--text-3);
+  text-align: center;
+  padding: 8px 0 4px;
+  line-height: 1.5;
+}
+
+/* ── SECTION HEADER ── */
+.section-header { font-size: 13px; font-weight: 600; color: var(--text-2); margin: 6px 0 10px; padding-top: 2px; }
+
+/* ── DIVIDER ── */
+.divider { height: 1px; background: var(--border); margin: 12px 0; }
+
+/* ── TAG ── */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+.tag.green { background: var(--green-dim); color: var(--green); }
+.tag.blue { background: var(--blue-dim); color: var(--blue); }
+.tag.orange { background: var(--orange-dim); color: var(--orange); }
+.tag.red { background: var(--red-dim); color: var(--red); }
+
+/* ── EQUILIBRIUM ── */
+.equilibrium-card {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+}
+.eq-timeline { display: flex; align-items: flex-start; gap: 10px; margin-top: 8px; }
+.eq-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--green); flex-shrink: 0; margin-top: 3px; }
+.eq-dot.future { background: var(--blue); }
+.eq-text { font-size: 13px; color: var(--text-2); line-height: 1.5; flex: 1; }
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-left">
+      <div class="ticker-badge">NSE · BEL</div>
+      <div class="header-company">Bharat Electronics Ltd</div>
+      <div class="header-price">
+        Live price: <span id="live-price">₹285.40</span>
+        <span style="color:var(--text-3);font-weight:400"> · 20 Jun 2026</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="score-ring-wrap">
+        <svg width="60" height="60" viewBox="0 0 60 60">
+          <circle class="ring-track" cx="30" cy="30" r="24"/>
+          <circle class="ring-fill" id="ring-fill" cx="30" cy="30" r="24"/>
+          <text x="30" y="27" text-anchor="middle" class="ring-score" id="ring-score-text">7.5</text>
+          <text x="30" y="37" text-anchor="middle" class="ring-label">POISED</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SCROLL AREA -->
+<div class="scroll-area">
+
+  <!-- ── PANEL: OVERVIEW ── -->
+  <div class="panel active" id="panel-overview">
+
+    <div class="overview-grid">
+      <div class="metric-card">
+        <div class="metric-label">FY26 Revenue</div>
+        <div class="metric-value" style="font-size:18px">₹27,480cr</div>
+        <div class="metric-sub">+18.3% YoY</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">EBITDA Margin</div>
+        <div class="metric-value" style="color:var(--green)">~29%</div>
+        <div class="metric-sub">Expanding</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Order Book</div>
+        <div class="metric-value" style="font-size:18px">₹73,882cr</div>
+        <div class="metric-sub">2.7× revenue</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">FY27 Inflow Guide</div>
+        <div class="metric-value" style="font-size:16px; color:var(--blue)">&gt;₹55,000cr</div>
+        <div class="metric-sub">Mgmt guided</div>
+      </div>
+    </div>
+
+    <div class="opportunity-card">
+      <div class="opp-header">
+        <div class="opp-title">Linked Opportunity</div>
+        <div class="confidence-pill">7.5 / 10</div>
+      </div>
+      <div style="font-size:12px;color:var(--text-3);margin-bottom:6px">defence-electronics-aerospace-2026-Q4 · Active</div>
+      <div style="font-size:13px;color:var(--text-2);margin-bottom:8px">India's defence electronics push is hitting execution phase — order books are filling faster than manufacturing capacity, and BEL sits at the centre of three simultaneous programme ramp-ups.</div>
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-3);margin-bottom:6px">Why Now</div>
+      <ul class="why-now-list">
+        <li><span class="why-dot"></span>QRSAM production order expected Jun–Jul 2026 (~₹9,500cr)</li>
+        <li><span class="why-dot"></span>LCA Tejas Mk2 deliveries commence Aug/Sep 2026 (BEL supplies avionics)</li>
+        <li><span class="why-dot"></span>MALE UAV ₹30,000cr programme tender pending</li>
+        <li><span class="why-dot" style="background:var(--orange)"></span>Risk: Budget allocation; HAL delivery track record</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom:8px">
+      <div style="font-size:12px;color:var(--text-3);margin-bottom:6px">CORROBORATING COMPANIES</div>
+      <div>
+        <span class="tag blue">LT (May 5)</span>
+        <span class="tag blue">HAL (May 15)</span>
+        <span class="tag blue">PARAS (May 13)</span>
+        <span class="tag blue">BEL (May 22)</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="disclaimer">
+      This is a research document, not investment advice.<br>Verify all data before acting.
+    </div>
+  </div>
+
+  <!-- ── PANEL: BUY ZONE ── -->
+  <div class="panel" id="panel-buyzone">
+
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-title">Buy Zone Bar</div>
+      <div class="buyzone-bar-wrap">
+        <div class="buyzone-gradient" id="buyzone-bar">
+          <div class="buyzone-marker" id="buyzone-marker" style="left:0%">
+            <div class="buyzone-marker-dot"></div>
+            <div class="buyzone-marker-label">₹285</div>
+          </div>
+        </div>
+        <div class="buyzone-zones">
+          <div class="zone-label">Strong<br>Buy</div>
+          <div class="zone-label">Buy<br>Zone</div>
+          <div class="zone-label">Fair<br>Value</div>
+          <div class="zone-label">Watch</div>
+          <div class="zone-label">Expensive</div>
+        </div>
+        <div class="buyzone-prices">
+          <div class="zone-price">≤₹229</div>
+          <div class="zone-price">₹230–274</div>
+          <div class="zone-price">₹275–335</div>
+          <div class="zone-price">₹336–381</div>
+          <div class="zone-price">≥₹382</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="zone-current-card">
+      <div>
+        <div class="zone-current-label">Current Zone</div>
+        <div class="zone-current-sub">₹285 · 7% below fair value (₹305)</div>
+      </div>
+      <div class="zone-badge watch">FAIR VALUE</div>
+    </div>
+
+    <div class="card">
+      <div class="poised-row">
+        <div>
+          <div class="card-title" style="margin-bottom:4px">Poised Score</div>
+          <div style="font-size:12px;color:var(--text-3)">Entry positioning index</div>
+        </div>
+        <div><span class="poised-score-large">7.5</span><span class="poised-denom">/10</span></div>
+      </div>
+      <ul class="score-breakdown">
+        <li><span>Opportunity confidence base</span><span class="score-mod base">7.5</span></li>
+        <li><span>Price in Fair Value zone</span><span class="score-mod" style="color:var(--text-3)">±0.0</span></li>
+        <li><span>Gate 1: Quality pass (conditional)</span><span class="score-mod" style="color:var(--text-3)">±0.0</span></li>
+        <li><span>PE ~28 (below 30 threshold)</span><span class="score-mod" style="color:var(--text-3)">±0.0</span></li>
+        <li style="border-bottom:none;font-weight:700"><span>Final Poised Score</span><span class="score-mod base">7.5 / 10</span></li>
+      </ul>
+    </div>
+
+    <div class="eli15-card">
+      <div class="eli15-label">ELI15 — Plain English</div>
+      <div class="eli15-text">
+        Think of the Poised Score like a "green light" meter — 10 means the stock is on sale with a great business underneath, 1 means overpriced with risks. BEL scores 7.5 because the business is genuinely strong and the defence order pipeline is real, but the current price is right at fair value — you're not getting a bargain, you're paying a fair price for a good company. A dip to ₹260 would push this into Buy Zone and unlock a higher score.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Fair Value Basis</div>
+      <div class="fit-row">
+        <span class="fit-key">Valuation method</span>
+        <span class="fit-val">PE vs. 10-yr median</span>
+      </div>
+      <div class="fit-row">
+        <span class="fit-key">Lynch category</span>
+        <span class="fit-val">Fast Grower</span>
+      </div>
+      <div class="fit-row">
+        <span class="fit-key">Bear fair value</span>
+        <span class="fit-val">₹230</span>
+      </div>
+      <div class="fit-row">
+        <span class="fit-key">Base fair value</span>
+        <span class="fit-val" style="color:var(--blue)">₹305</span>
+      </div>
+      <div class="fit-row" style="border-bottom:none">
+        <span class="fit-key">Bull fair value</span>
+        <span class="fit-val" style="color:var(--green)">₹410</span>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      Poised Score ≠ buy signal. High score in fair-value zone = watch, not buy.<br>
+      This is a research document, not investment advice.
+    </div>
+  </div>
+
+  <!-- ── PANEL: SCENARIOS ── -->
+  <div class="panel" id="panel-scenarios">
+
+    <div class="card" style="padding:12px 14px;margin-bottom:12px">
+      <div style="font-size:11px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Porter's Structural View</div>
+      <div style="font-size:14px;font-weight:600;color:var(--green);margin-bottom:4px">GOOD ↑</div>
+      <div style="font-size:13px;color:var(--text-2);line-height:1.5">Structure favours incumbents like BEL — high capital barriers, PSU customer lock-in, and government preference for domestic sourcing limit new entrant threat. Key pressure: buyer power (MoD is a monopsony).</div>
+    </div>
+
+    <!-- Bull -->
+    <div class="scenario-card">
+      <div class="scenario-stripe bull"></div>
+      <div class="scenario-body">
+        <div class="scenario-header">
+          <div class="scenario-name bull">BULL</div>
+          <div class="prob-badge bull">35%</div>
+        </div>
+        <div class="scenario-thesis">Imagine every order in BEL's pipeline clears on schedule — QRSAM ships Jun 2026, LCA avionics ramp in Q2 FY27, and the MALE UAV contract is awarded by year-end. Revenue grows 26–28% for two years, margins inch toward 31%, and the re-rating takes PE from 28× to 36×.</div>
+        <div class="scenario-stats">
+          <div class="stat-pill">
+            <div class="stat-pill-label">2-Year Return</div>
+            <div class="stat-pill-value pos">+55–70%</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill-label">Key Assumption</div>
+            <div class="stat-pill-value neu" style="font-size:11px">Execution on 3 concurrent programmes</div>
+          </div>
+        </div>
+        <div class="scenario-trigger">Falsified by: <strong>2+ programme delivery slips</strong></div>
+      </div>
+    </div>
+
+    <!-- Base -->
+    <div class="scenario-card">
+      <div class="scenario-stripe base"></div>
+      <div class="scenario-body">
+        <div class="scenario-header">
+          <div class="scenario-name base">BASE</div>
+          <div class="prob-badge base">45%</div>
+        </div>
+        <div class="scenario-thesis">India's defence spend keeps growing but programmes face the usual 6–12 month slips. BEL delivers QRSAM in Q3 FY27 instead of Q1, avionics revenue accrues steadily, and inflows hit ₹55,000cr as guided. Revenue grows 18–22% per year — solid, not spectacular.</div>
+        <div class="scenario-stats">
+          <div class="stat-pill">
+            <div class="stat-pill-label">2-Year Return</div>
+            <div class="stat-pill-value neu">+22–30%</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill-label">Key Assumption</div>
+            <div class="stat-pill-value neu" style="font-size:11px">Inflows ≥₹55,000cr FY27</div>
+          </div>
+        </div>
+        <div class="scenario-trigger">Falsified by: <strong>Inflows miss &lt;₹45,000cr</strong></div>
+      </div>
+    </div>
+
+    <!-- Bear -->
+    <div class="scenario-card">
+      <div class="scenario-stripe bear"></div>
+      <div class="scenario-body">
+        <div class="scenario-header">
+          <div class="scenario-name bear">BEAR</div>
+          <div class="prob-badge bear">20%</div>
+        </div>
+        <div class="scenario-thesis">A defence budget squeeze (Union Budget FY27 prioritises social spending) plus HAL's well-documented delivery failures delay two major programmes. Order inflows disappoint at &lt;₹40,000cr; market de-rates BEL from 28× PE to 20×, erasing recent gains.</div>
+        <div class="scenario-stats">
+          <div class="stat-pill">
+            <div class="stat-pill-label">2-Year Return</div>
+            <div class="stat-pill-value neg">−15 to −25%</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill-label">Key Assumption</div>
+            <div class="stat-pill-value neg" style="font-size:11px">Budget cut + HAL slip</div>
+          </div>
+        </div>
+        <div class="scenario-trigger">Falsified by: <strong>FY27 Budget hikes defence capex</strong></div>
+      </div>
+    </div>
+
+    <div class="confidence-row">
+      <div class="conf-label">Confidence in probabilities</div>
+      <div class="conf-badge">MEDIUM</div>
+    </div>
+    <div style="font-size:12px;color:var(--text-3);margin-bottom:12px;padding:0 2px">
+      Medium confidence — order pipeline data is public but execution timeline is opaque. Programme slips are common in Indian defence; the 45% base probability reflects this uncertainty.
+    </div>
+
+    <div class="watch-var-card">
+      <div class="watch-var-label">Single Variable to Watch</div>
+      <div class="watch-var-text">QRSAM Production Order Signing</div>
+      <div class="watch-var-sub">This is the single best lead indicator — if signed by Jul 2026, Bull/Base scenarios are live. If delayed past Q2 FY27, Bear probability rises materially.</div>
+    </div>
+
+    <div class="disclaimer">
+      Probabilities sum to 100%. Scenarios illustrate range of outcomes, not predictions.<br>
+      This is a research document, not investment advice.
+    </div>
+  </div>
+
+  <!-- ── PANEL: PORTFOLIO ── -->
+  <div class="panel" id="panel-portfolio">
+
+    <div class="position-card">
+      <div class="position-status">
+        <div class="position-dot not-held"></div>
+        <div class="position-text">Not Currently Held</div>
+      </div>
+      <div style="font-size:13px;color:var(--text-2);margin-bottom:12px">BEL is not in your Kite equity holdings. This would be a new position.</div>
+      <div class="fit-row">
+        <span class="fit-key">Available slot</span>
+        <span class="fit-val ok">Yes — Extended tier</span>
+      </div>
+      <div class="fit-row">
+        <span class="fit-key">Slot type</span>
+        <span class="fit-val">Extended (positions 7–12)</span>
+      </div>
+      <div class="fit-row" style="border-bottom:none">
+        <span class="fit-key">Displacement needed?</span>
+        <span class="fit-val ok">No — slot available</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Portfolio Fit Assessment</div>
+      <div class="fit-row">
+        <span class="fit-key">Defence/Infra weight (post-add)</span>
+        <span class="fit-val warn">~12% equity</span>
+      </div>
+      <div class="fit-row">
+        <span class="fit-key">Theme limit (15%)</span>
+        <span class="fit-val ok">Within limit</span>
+      </div>
+      <div class="fit-row">
+        <span class="fit-key">Thesis duration</span>
+        <span class="fit-val">2–5 years</span>
+      </div>
+      <div class="fit-row">
+        <span class="fit-key">FIRE runway</span>
+        <span class="fit-val ok">~11 years (fits)</span>
+      </div>
+      <div class="fit-row" style="border-bottom:none">
+        <span class="fit-key">Theme already in portfolio</span>
+        <span class="fit-val warn">Check HAL/LT holdings</span>
+      </div>
+    </div>
+
+    <div class="recommendation-card">
+      <div class="rec-header">
+        <div class="rec-icon">📍</div>
+        <div class="rec-verdict">ADD ON DIP</div>
+      </div>
+      <div class="rec-body">
+        BEL is a strong business with a real order pipeline and active corroboration — the thesis is solid. But at ₹285, you're paying fair value, not a bargain. The Poised Score of 7.5 reflects the quality, not a price margin of safety. Wait for a dip before initiating.
+      </div>
+      <div class="rec-entry">
+        Watch entry: <strong>₹260</strong> (15% below base fair value of ₹305). At that level, price enters the Buy Zone and the Poised Score would rise to ~8.0.
+      </div>
+    </div>
+
+    <div class="bias-card">
+      <div class="bias-label">Behavioural Check</div>
+      <div class="bias-text">
+        <strong style="color:var(--yellow)">Recency bias risk:</strong> Defence stocks have rallied hard in 2025–26. If you're excited about BEL partly because it's been going up, that's recency bias. The thesis (QRSAM, LCA, MALE UAV) exists independently of recent price — but you should not let price momentum substitute for evidence-checking the timeline. The bear case (programme delays) is real and has happened before.
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      Portfolio data sourced from Kite live holdings at time of dashboard generation.<br>
+      This is a research document, not investment advice.
+    </div>
+  </div>
+
+  <!-- ── PANEL: DYNAMICS ── -->
+  <div class="panel" id="panel-dynamics">
+
+    <div class="card">
+      <div class="card-title">The Game</div>
+      <div style="font-size:13px;color:var(--text-2);margin-bottom:8px">
+        <strong style="color:var(--text)">Game type:</strong> Non-zero-sum + Sequential. The Indian defence electronics market is expanding — BEL and peers can all grow. But within each tender, it is zero-sum: one L1 winner takes the contract.
+      </div>
+      <div style="font-size:12px;color:var(--text-3);margin-bottom:6px;font-weight:600;text-transform:uppercase;letter-spacing:.05em">Players</div>
+      <div class="players-wrap">
+        <span class="player-pill company">BEL (Manufacturer)</span>
+        <span class="player-pill competitor">HAL (Integrator)</span>
+        <span class="player-pill competitor">L&T Defence</span>
+        <span class="player-pill competitor">PARAS Defence</span>
+        <span class="player-pill customer">MoD / Indian Army</span>
+        <span class="player-pill customer">IAF</span>
+        <span class="player-pill regulator">DRDO</span>
+        <span class="player-pill" style="background:var(--surface-3);color:var(--text-3)">Rafael / Thales (Foreign)</span>
+      </div>
+      <div style="margin-top:10px;font-size:13px;color:var(--text-2)">
+        <strong style="color:var(--text)">Key asymmetry:</strong> BEL knows the QRSAM integration timeline before MoD formally signals order dates — it is the production partner. This gives BEL a 6–9 month lead on scheduling vs. analysts estimating from public procurement notices.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Who Captures Value</div>
+      <div class="value-chain">
+        <div class="value-row">
+          <div class="value-actor">BEL (systems integrator)</div>
+          <div class="value-bar-wrap"><div class="value-bar-fill" style="width:65%;background:var(--green)"></div></div>
+          <div class="value-pct" style="color:var(--green)">~65%</div>
+        </div>
+        <div class="value-row">
+          <div class="value-actor">Component suppliers</div>
+          <div class="value-bar-wrap"><div class="value-bar-fill" style="width:20%;background:var(--blue)"></div></div>
+          <div class="value-pct" style="color:var(--blue)">~20%</div>
+        </div>
+        <div class="value-row">
+          <div class="value-actor">Foreign tech licensors</div>
+          <div class="value-bar-wrap"><div class="value-bar-fill" style="width:10%;background:var(--orange)"></div></div>
+          <div class="value-pct" style="color:var(--orange)">~10%</div>
+        </div>
+        <div class="value-row">
+          <div class="value-actor">MoD (buyer discount)</div>
+          <div class="value-bar-wrap"><div class="value-bar-fill" style="width:5%;background:var(--red)"></div></div>
+          <div class="value-pct" style="color:var(--red)">~5%</div>
+        </div>
+      </div>
+      <div style="margin-top:10px;font-size:13px;color:var(--text-2)">BEL's position is <strong style="color:var(--green)">strengthening</strong>: increasing indigenous content requirements reduce foreign licensor fees, and DRDO IP transfer lets BEL retain more margin per system over time.</div>
+    </div>
+
+    <div class="equilibrium-card">
+      <div class="card-title" style="margin-bottom:8px">3–5 Year Equilibrium</div>
+      <div class="eq-timeline">
+        <div class="eq-dot"></div>
+        <div class="eq-text"><strong style="color:var(--text)">Today (2026):</strong> BEL is the dominant government-backed defence electronics OEM with limited private competition at system-integration level. Market share ~40%+ in its served segments.</div>
+      </div>
+      <div style="height:10px;border-left:1px dashed var(--border);margin-left:5px"></div>
+      <div class="eq-timeline">
+        <div class="eq-dot future"></div>
+        <div class="eq-text"><strong style="color:var(--blue)">2029 Equilibrium:</strong> Private sector (L&T, Tata Advanced Systems) gains share in new categories but BEL retains incumbency on existing programmes. BEL is better positioned than today — larger installed base, more IP, higher recurring maintenance revenue from a growing fleet. Margins improve as domestic content % rises.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Behavioral Wildcards</div>
+      <ul class="wildcard-list">
+        <li>
+          <div class="wildcard-icon">🎯</div>
+          <div><strong style="color:var(--text)">Government mandates 70%+ domestic content</strong> — MoD updates DPP to require >70% indigenous value on all defence electronics by FY28. This eliminates Rafael/Thales licence fees from BEL's cost structure and expands margins by 200–300bps in one regulatory move.</div>
+        </li>
+        <li>
+          <div class="wildcard-icon">💸</div>
+          <div><strong style="color:var(--text)">L&T Defence wins MALE UAV at below-cost bid</strong> — to establish a reference client and capture future platform upgrades, L&T bids the ₹30,000cr MALE UAV at negative gross margin. BEL loses the tender but avoids a value-destructive contract. Short-term revenue miss; long-term neutral to positive.</div>
+        </li>
+        <li>
+          <div class="wildcard-icon">🏦</div>
+          <div><strong style="color:var(--text)">Emergency import waiver during India-Pakistan tensions</strong> — Government fast-tracks import of Israeli/US systems, bypassing domestic procurement for 12–18 months. BEL order intake pauses; programme timelines slip. This would be a 2–3 quarter revenue headwind, not a structural break.</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="eli15-card">
+      <div class="eli15-label">ELI15 — The Strategic Picture</div>
+      <div class="eli15-text">
+        Think of BEL as the head chef in a restaurant where the government is the only customer — the customer can't easily leave (no alternatives exist at scale), but they control the menu and timing. BEL wins over the next 3 years if the government keeps ordering and BEL delivers on time; the competitive risk is from private kitchen rivals (L&T, Tata) poaching new menu items while BEL focuses on cooking the existing orders.
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      Game theory analysis is a framework, not a prediction. Named players and scenarios are based on public information.<br>
+      This is a research document, not investment advice.
+    </div>
+  </div>
+
+</div><!-- /scroll-area -->
+
+<!-- TAB BAR -->
+<nav class="tabbar">
+  <div class="tabbar-inner">
+    <button class="tab-btn active" onclick="showTab('overview', this)">
+      <span class="tab-icon">📊</span>
+      <span class="tab-label">Overview</span>
+    </button>
+    <button class="tab-btn" onclick="showTab('buyzone', this)">
+      <span class="tab-icon">🎯</span>
+      <span class="tab-label">Buy Zone</span>
+    </button>
+    <button class="tab-btn" onclick="showTab('scenarios', this)">
+      <span class="tab-icon">🔮</span>
+      <span class="tab-label">Scenarios</span>
+    </button>
+    <button class="tab-btn" onclick="showTab('portfolio', this)">
+      <span class="tab-icon">💼</span>
+      <span class="tab-label">Portfolio</span>
+    </button>
+    <button class="tab-btn" onclick="showTab('dynamics', this)">
+      <span class="tab-icon">♟️</span>
+      <span class="tab-label">Dynamics</span>
+    </button>
+  </div>
+</nav>
+
+<script>
+function showTab(name, btn) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + name).classList.add('active');
+  btn.classList.add('active');
+}
+
+// Animate SVG ring on load
+// Score = 7.5 / 10; circumference = 2π×24 = 150.8
+function animateRing() {
+  const fill = document.getElementById('ring-fill');
+  const score = 7.5;
+  const circumference = 2 * Math.PI * 24; // r=24
+  fill.style.strokeDasharray = circumference;
+  fill.style.strokeDashoffset = circumference;
+  // Update actual style to use correct circumference
+  fill.setAttribute('style',
+    'fill:none;stroke:var(--blue);stroke-width:3.5;stroke-linecap:round;' +
+    'stroke-dasharray:' + circumference + ';' +
+    'stroke-dashoffset:' + circumference + ';' +
+    'transform:rotate(-90deg);transform-origin:center;' +
+    'transition:stroke-dashoffset 1.4s cubic-bezier(0.4,0,0.2,1)'
+  );
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      const offset = circumference * (1 - score / 10);
+      fill.style.strokeDashoffset = offset;
+    });
+  });
+}
+
+// Position buy zone marker
+// Zones: strong-buy 0–12.5%, buy-zone 12.5–25%, fair-value 25–42%,
+//        watch 42–58%, expensive 58–100%
+// Price ₹285, fair value ₹305
+// ₹229 = 25% below 305, ₹274 = 10% below 305, ₹305 = fair, ₹336 = 10% above, ₹382 = 25% above
+function positionMarker() {
+  const price = 285;
+  const fv = 305;
+  // Zone boundaries
+  const strongBuyTop = fv * 0.75;  // 228.75
+  const buyZoneTop = fv * 0.90;    // 274.5
+  const fairTop = fv * 1.10;       // 335.5
+  const watchTop = fv * 1.25;      // 381.25
+  // Map price to 0–100% on bar
+  // Bar spans: [0%=strongBuy floor ₹150] to [100%=very expensive ₹450]
+  const barMin = 150;
+  const barMax = 450;
+  const pct = Math.min(100, Math.max(0, ((price - barMin) / (barMax - barMin)) * 100));
+  const marker = document.getElementById('buyzone-marker');
+  // Animate after short delay
+  setTimeout(() => {
+    marker.style.left = pct + '%';
+  }, 300);
+}
+
+window.addEventListener('load', () => {
+  animateRing();
+  positionMarker();
+});
+</script>
+
+</body>
+</html>
