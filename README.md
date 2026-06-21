@@ -1,5 +1,24 @@
 Opportunity Discovery Engine
 
+## Weekly Workflow
+
+**Sunday (automatic):** A GitHub Action runs at 09:00 IST. It fetches prices, news, and exchange filings for all active companies using `scripts/fetch_evidence.py` — no AI, no API keys. Raw evidence is committed to `02_RAW_DOCUMENTS/<TICKER>/`.
+
+**Monday+ (local):** Pull the new evidence and run the AI pipeline locally:
+
+```
+git pull
+claude
+```
+
+Then say: _"New evidence is in. Run the pipeline from extraction onwards. Skip universe discovery and collection."_
+
+Claude Code processes extraction → delta → themes → opportunity screener → weekly brief and commits the outputs.
+
+To add a company to the fetch cycle: add a row to `data/company_master.csv` with `active: true`.
+
+---
+
 Mission
 
 Build a machine that continuously narrows the market down to the few opportunities most likely to make money.
