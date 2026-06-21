@@ -1161,27 +1161,33 @@ function setFilter(k,v){STATE.filters[k]=v;renderCandidatesPane();renderFilterSh
 
 // ── SVG SNOWFLAKE ──
 function svgSnowflake(axes,size,mini=false){
-  const cx=size/2,cy=size/2,R=size*(mini?.38:.36),n=5;
+  const n=5;
+  // Non-mini: expand the internal viewBox canvas so axis labels don't clip at edges
+  const vbPad=mini?0:46;
+  const vbSz=size+vbPad*2;
+  const cx=vbSz/2,cy=vbSz/2;
+  const R=size*(mini?.38:.33);
   const keys=['opportunity','valuation','execution','moat','momentum'];
   let grid='';
   for(let lv=1;lv<=5;lv++){
     const pts=keys.map((_,i)=>{const a=(i*2*Math.PI/n)-Math.PI/2,r=(lv/5)*R;return `${cx+r*Math.cos(a)},${cy+r*Math.sin(a)}`;});
-    grid+=`<polygon points="${pts.join(' ')}" fill="none" stroke="rgba(255,255,255,.07)" stroke-width=".5"/>`;
+    grid+=`<polygon points="${pts.join(' ')}" fill="none" stroke="rgba(255,255,255,.08)" stroke-width=".7"/>`;
   }
   let axisL='';
-  for(let i=0;i<n;i++){const a=(i*2*Math.PI/n)-Math.PI/2,x=cx+R*Math.cos(a),y=cy+R*Math.sin(a);axisL+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="rgba(255,255,255,.1)" stroke-width=".5"/>`;}
-  const scorePts=keys.map((k,i)=>{const s=axes[k]||0,a=(i*2*Math.PI/n)-Math.PI/2;return `${cx+R*Math.cos(a)*s/10},${cy+R*Math.sin(a)*s/10}`;});
+  for(let i=0;i<n;i++){const a=(i*2*Math.PI/n)-Math.PI/2,x=cx+R*Math.cos(a),y=cy+R*Math.sin(a);axisL+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="rgba(255,255,255,.12)" stroke-width=".7"/>`;}
+  const scorePts=keys.map((k,i)=>{const sv=axes[k]||0,a=(i*2*Math.PI/n)-Math.PI/2;return `${cx+R*Math.cos(a)*sv/10},${cy+R*Math.sin(a)*sv/10}`;});
   let dots='';
-  if(mini){keys.forEach((k,i)=>{const s=axes[k]||0,a=(i*2*Math.PI/n)-Math.PI/2,x=cx+R*Math.cos(a)*s/10,y=cy+R*Math.sin(a)*s/10;dots+=`<circle cx="${x}" cy="${y}" r="2.5" fill="#0A84FF"/>`;});}
+  if(mini){keys.forEach((k,i)=>{const sv=axes[k]||0,a=(i*2*Math.PI/n)-Math.PI/2,x=cx+R*Math.cos(a)*sv/10,y=cy+R*Math.sin(a)*sv/10;dots+=`<circle cx="${x}" cy="${y}" r="2.5" fill="#0A84FF"/>`;});}
   let labels='';
   if(!mini){
     ['Opportunity','Valuation','Execution','Moat','Momentum'].forEach((nm,i)=>{
-      const a=(i*2*Math.PI/n)-Math.PI/2,lx=cx+R*1.32*Math.cos(a),ly=cy+R*1.32*Math.sin(a);
-      const anchor=lx<cx-4?'end':lx>cx+4?'start':'middle',dy=ly<cy-4?0:ly>cy+4?4:2;
-      labels+=`<text x="${lx}" y="${ly+dy}" text-anchor="${anchor}" fill="rgba(255,255,255,.5)" font-size="8" font-family="-apple-system,sans-serif" class="sf-label" data-axis="${nm.toLowerCase()}" style="cursor:pointer">${nm}</text>`;
+      const a=(i*2*Math.PI/n)-Math.PI/2,lx=cx+R*1.28*Math.cos(a),ly=cy+R*1.28*Math.sin(a);
+      const anchor=lx<cx-4?'end':lx>cx+4?'start':'middle';
+      const dyOff=ly<cy-4?-2:ly>cy+4?10:2;
+      labels+=`<text x="${lx}" y="${ly+dyOff}" text-anchor="${anchor}" fill="rgba(255,255,255,.60)" font-size="9.5" font-family="-apple-system,sans-serif" class="sf-label" data-axis="${nm.toLowerCase()}" style="cursor:pointer">${nm}</text>`;
     });
   }
-  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${grid}${axisL}<polygon points="${scorePts.join(' ')}" fill="rgba(10,132,255,.18)" stroke="#0A84FF" stroke-width="${mini?1:1.5}" stroke-linejoin="round"/>${dots}${labels}</svg>`;
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${vbSz} ${vbSz}">${grid}${axisL}<polygon points="${scorePts.join(' ')}" fill="rgba(10,132,255,.2)" stroke="#0A84FF" stroke-width="${mini?1:1.8}" stroke-linejoin="round"/>${dots}${labels}</svg>`;
 }
 
 function miniPoisedRing(score){
