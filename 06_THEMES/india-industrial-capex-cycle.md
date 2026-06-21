@@ -1,14 +1,14 @@
 # Theme: India Industrial Capex Cycle
 
 ## Status
-Emerging
+Developing
 
 ## Confidence Score
-7.8 / 10
-Justification: All six tracked companies in this week's run cited industrial capex demand as a primary driver — from a ₹7.40 trillion L&T order book, to HAL's ₹97,028 crore fresh orders, to JNK India's 81% order book growth servicing refinery/petrochemical clients — and the signal is present across defence, industrials, infrastructure, and auto, suggesting broad-based capex expansion rather than a sector-specific blip; confidence capped at 7.8 because this is the first tracking week with no trend direction established.
+7.5 / 10
+Justification: Six companies across defence, infrastructure, industrials, and auto all showing strong order pipelines, but LT's confirmed Q4 FY26 data (PAT -3% YoY, EBITDA 10.4% compressed vs "stable" prior characterisation) introduces a real execution quality caveat — the order-to-revenue conversion lag and margin compression at the largest capex EPC player prevents a higher score; all five other companies still confirming demand is real and growing.
 
 ## Trend Direction
-Accelerating
+Stable
 
 ## Evidence
 
@@ -21,6 +21,11 @@ Companies mentioning this theme this week:
 | JNKINDIA | Q4 FY26 Earnings Call | 2026-05-21 | New mention | High | Order book +81% YoY to ₹1,961 crore; 2.3x revenue coverage; strong refinery/petrochemical demand |
 | PARAS | Q4 FY26 Results | 2026-05-13 | New mention | Medium | Revenue +31% FY26 / +58% Q4 on defence electronics demand |
 | GABRIEL | Q4 FY26 Earnings Call | 2026-05-28 | New mention | Medium | Capex expansion into new segments (sunroofs, solar dampers); ₹50,000 crore group revenue target 2030 |
+| BEL | Catalyst Update | 2026-06-21 | Strengthening | High | Post-QRSAM order book ~₹94,000–95,000cr (+40%); own capex >₹1,200cr FY27 unchanged |
+| GABRIEL | Analyst Initiation + Earnings Update | 2026-06-21 | Strengthening | High | FY26 PAT ₹252cr confirmed; Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA 81%; WC 27 days |
+| JNKINDIA | UAE Order Filing | 2026-06-21 | Strengthening | High | UAE order additive to ₹1,961cr book; full EPC scope (design → commissioning) confirms engineering depth |
+| PARAS | Exchange Filing | 2026-06-21 | Strengthening | High | Order book ₹928cr (1.9x FY26 revenue) — first disclosed; BEL supply chain embedded |
+| LT | Earnings Update | 2026-06-21 | **Negative** | High | Q4 FY26 PAT -3% YoY (₹5,326cr); EBITDA margin 10.4% — compressed vs "stable" prior characterisation; Lakshya 2031 ROE 16–17% described by analysts as "underwhelming" |
 
 ## Supporting Data
 
@@ -30,6 +35,10 @@ Companies mentioning this theme this week:
 - **JNKINDIA** — Q4 FY26 Earnings Call — May 21, 2026: Order book +81% YoY driven by refinery and petrochemical clients; green hydrogen orders emerging
 - **PARAS** — Q4 FY26 Results — May 13, 2026: Revenue +58% Q4 / +31% FY26 on rising defence electronics orders
 - **GABRIEL** — Q4 FY26 Earnings Call — May 28, 2026: Aggressive new product/segment expansion; management targeting ₹50,000 crore group revenue by 2030
+- **BEL** — Catalyst Update — June 2026: QRSAM signing July 2026 → order book ~₹94,000–95,000cr; capacity investment confirmed (own capex >₹1,200cr)
+- **GABRIEL** — Earnings Update + Analyst Initiation — June 2026: FY26 PAT ₹252cr confirmed; Core ROCE +800bps to 37.7% by FY28; 10-yr cash conversion 81%; WC ~27 days — highest capital efficiency in tracked universe
+- **LT** ⚠️ — Earnings Update — June 2026: Q4 PAT ₹5,326cr (-3% YoY); EBITDA margin 10.4% (compressed); Lakshya 2031: ₹5.8 trillion revenue by FY31 (target); ROE 16–17% (analysts: "underwhelming") — ORDER FLOW STRONG; EXECUTION QUALITY QUESTION LIVE
+- **PARAS** — Exchange Filing — June 2026: Order book ₹928cr confirmed (1.9x revenue) — first disclosed; embedded in BEL supply chain
 
 ## Beneficiaries
 
@@ -63,12 +72,14 @@ Companies mentioning this theme this week:
 
 ## Counter Arguments
 
-- L&T FY26 revenue MISSED guidance (12% vs 15%) due to Middle East execution disruptions — strong orders ≠ immediate revenue; execution lag is real
+- **LT Q4 FY26 PAT -3% YoY** (confirmed June 21): Strong orders are not converting to profit growth at India's largest EPC contractor — execution quality deteriorating despite record order book; EBITDA compressed to 10.4%
+- L&T FY26 revenue MISSED guidance (12% vs 15%) due to Middle East execution disruptions — strong orders ≠ immediate revenue; execution lag is real and confirmed with a second data point
 - Capex cycle is interest-rate sensitive; if RBI raises rates in H2 FY27, some discretionary capex may be deferred
 - JNKINDIA margin pressure (15.2% EBITDA) despite strong order book — capacity constraints could compress margins further
+- LT Lakshya 2031 ROE guidance 16–17% described by analysts as "underwhelming" — management ambition may not translate to shareholder returns at scale
 
 ## Corroboration Count
-6 companies this week | 6 companies cumulative (first run)
+6 companies this week | 6 companies cumulative
 
 ## Last Updated
-2026-06-20
+2026-06-21

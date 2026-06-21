@@ -1,11 +1,11 @@
 # Theme: Indian Defence Electronics & Aerospace Supply Chain
 
 ## Status
-Emerging
+Developing
 
 ## Confidence Score
-7.5 / 10
-Justification: Four companies with concrete order values (not vague language) all pointing to the same demand surge — HAL's ₹97,028 crore FY26 inflows, BEL's ₹30,000 crore inflows ahead of guidance, a ₹30,000 crore IAF UAV tender drawing 10 bids, and a Tier-2 supplier (Paras) getting repeat subcontracts from Tier-1 PSUs — but this is the first week of tracking, so no trend direction is established yet.
+8.3 / 10
+Justification: Second consecutive run with four companies providing concrete ₹ data — QRSAM contract value now confirmed at ₹30,000cr with BEL's ~₹21,000cr share quantified, K9 Vajra-T confirmed at ₹7,628.70cr, MALE UAV tender confirmed at 10 bidders with a split-order mechanism that increases probability of multiple companies winning, and PARAS order book ₹928cr (1.9x revenue) for the first time on record; the only reason this is not higher is HAL's LCA delivery slip (already acknowledged) and the QRSAM one-quarter delay. Counter-arguments must be explicit at 8.0+.
 
 ## Trend Direction
 Accelerating
@@ -19,6 +19,10 @@ Companies mentioning this theme this week:
 | BEL | Q4 FY26 Earnings Call | 2026-05-22 | New mention | High | FY26 order inflows ₹30,000 crore (beat guidance); FY27 guided >₹55,000 crore; QRSAM expected Jun–Jul 2026 |
 | LT | Q4 FY26 Earnings Call | 2026-05-05 | New mention | High | K9 Vajra-T contract ₹5,000–10,000 crore awarded post-Q4; MALE UAV bid ₹30,000 crore submitted |
 | PARAS | Q4 FY26 Quarterly Results | 2026-05-13 | New mention | High | BEL electro-optics subcontract ₹52.82 crore (June 2, 2026); Revenue +58% YoY Q4 |
+| BEL | Catalyst Update — QRSAM | 2026-06-21 | Strengthening | High | QRSAM ₹30,000cr confirmed; BEL system integrator ~70% (~₹21,000cr); BDL missile ~30%; signing expected July 2026; deliveries ~18 months post-signing (~Jan 2028); order book lifts ~40% to ~₹94,000–95,000cr |
+| HAL | MALE UAV Tender Event | 2026-06-16 | Strengthening | High | 10 Indian firms bid; HAL confirmed bidder; window closed June 16 (extended twice); split order (L1+L2) → two production lines mandated; Q4 FY26 PAT ₹4,196cr / FY26 PAT ₹9,116cr (27.6% net margin) confirmed |
+| LT | MALE UAV Tender Event + Earnings Update | 2026-06-21 | Strengthening | High | K9 Vajra-T ₹7,628.70cr (Dec 2024) CONFIRMED (vs "₹5,000–10,000 crore estimate" prior); LT confirmed bidder for MALE UAV ₹30,000cr |
+| PARAS | Press Release — BEL Order | 2026-06-02 | Strengthening | High | Exchange filing confirms ₹52.82cr electro-optics order from BEL; order book ~₹928cr (1.9x FY26 revenue) — FIRST disclosed order book |
 
 ## Supporting Data
 
@@ -26,6 +30,10 @@ Companies mentioning this theme this week:
 - **BEL** — Q4 FY26 Earnings Call — May 22, 2026: FY26 order inflows ₹30,000 crore (ahead of own guidance); order book ₹73,882 crore; FY27 order inflow guidance >₹55,000 crore; QRSAM, P-75I submarines, AMCA in pipeline
 - **LT** — Q4 FY26 Earnings Call — May 5, 2026: Defence contract K9 Vajra-T ₹5,000–10,000 crore; submitted bid for ₹30,000 crore IAF MALE UAV programme
 - **PARAS** — Q4 FY26 Results — May 13, 2026: BEL subcontract ₹52.82 crore for electro-optics; signals Tier-2 supply chain deepening
+- **BEL** — Catalyst Update — June 2026: QRSAM value CONFIRMED ₹30,000cr; BEL ~70% system integrator share (~₹21,000cr); BDL missile ~30%; post-QRSAM order book ~₹94,000–95,000cr
+- **HAL** — Q4 Earnings Update — June 2026: FY26 PAT ₹9,115.52 crore (27.6% net margin) — first confirmed PAT; Q4 FY26 PAT ₹4,196 crore (+5.4% YoY); Tejas Mark-II prototype targeted March 2027
+- **LT** — Earnings Update — June 2026: K9 Vajra-T CONFIRMED ₹7,628.70 crore (MoD contract Dec 2024, 100 units); MALE UAV bid confirmed
+- **PARAS** — Exchange Filing — June 2, 2026: ₹52.82cr electro-optics from BEL CONFIRMED (regulatory filing); order book ~₹928 crore (1.9x FY26 revenue) — first ever disclosed
 
 ## Beneficiaries
 
@@ -62,11 +70,13 @@ Companies mentioning this theme this week:
 ## Counter Arguments
 
 - Government defence budget dependency: All these order inflows require budget allocation; slippage in Union Budget could delay awards
-- HAL delivery track record: LCA Mark-1A already delayed once; if Aug/Sep 2026 deadline slips again, FY27 guidance becomes risky
-- BEL QRSAM timing: "Expected Jun–Jul 2026" is management's statement from May; procurement delays are common in Indian defence
+- HAL delivery track record: LCA Mark-1A already delayed once (FY26 → Aug/Sep 2026); if Aug/Sep 2026 deadline slips again, FY27 guidance at risk
+- BEL QRSAM timing: Already slipped from Feb/Mar 2026 to July 2026 — one quarter delay; procurement delays are common in Indian defence
+- LT margin compression: Q4 FY26 EBITDA 10.4% and PAT -3% YoY — the execution quality question applies to defence EPC as well as infrastructure
+- MALE UAV: 10-way competition means any single company faces ~10–20% probability of winning; optionality, not certainty
 
 ## Corroboration Count
-4 companies this week | 4 companies cumulative (first run)
+4 companies this week | 4 companies cumulative
 
 ## Last Updated
-2026-06-20
+2026-06-21
