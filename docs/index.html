@@ -1004,13 +1004,21 @@ function openDetailById(id){
   STATE.activeStock=id;
   STATE.detailTab='snowflake';
   renderDetail(s);
-  document.getElementById('s-landing').classList.add('slide-left');
+  const landing=document.getElementById('s-landing');
+  landing.style.visibility='';
+  landing.classList.add('slide-left');
   document.getElementById('s-detail').classList.remove('slide-right');
   STATE.screen='detail';
+  clearTimeout(STATE._hideTimer);
+  // Hide landing from GPU compositing after slide completes (340ms > 320ms transition)
+  STATE._hideTimer=setTimeout(()=>{landing.style.visibility='hidden';},340);
 }
 
 function goBack(){
-  document.getElementById('s-landing').classList.remove('slide-left');
+  clearTimeout(STATE._hideTimer);
+  const landing=document.getElementById('s-landing');
+  landing.style.visibility='';  // restore before reverse animation
+  landing.classList.remove('slide-left');
   document.getElementById('s-detail').classList.add('slide-right');
   STATE.screen='landing';
 }
