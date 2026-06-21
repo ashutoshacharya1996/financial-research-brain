@@ -30,9 +30,11 @@
 html,body{background:var(--bg);color:var(--t1);font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;font-size:16px;min-height:100dvh;overflow-x:hidden}
 
 /* SCREENS */
-.screen{position:fixed;inset:0;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;transform:translateX(0);transition:transform .32s cubic-bezier(.4,0,.2,1);will-change:transform}
+.screen{position:fixed;inset:0;background:var(--bg);overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;transform:translateX(0);transition:transform .32s cubic-bezier(.4,0,.2,1);will-change:transform}
 .screen.slide-right{transform:translateX(100%)}
 .screen.slide-left{transform:translateX(-20%);pointer-events:none}
+#s-landing{z-index:1}
+#s-detail{z-index:2}
 
 /* HEADER */
 .hdr{position:sticky;top:0;z-index:90;background:rgba(0,0,0,.75);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);border-bottom:1px solid var(--bd)}
@@ -110,7 +112,7 @@ html,body{background:var(--bg);color:var(--t1);font-family:-apple-system,BlinkMa
 .queue-unfilled{margin:10px 0;background:var(--s1);border-radius:var(--r12);border:1px dashed var(--bd2);padding:14px;text-align:center;color:var(--t3);font-size:12px;line-height:1.5}
 
 /* CANDIDATES TAB CONTROLS */
-.candidates-controls{background:var(--bg);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:10}
+.candidates-controls{background:var(--bg);border-bottom:1px solid var(--bd);position:sticky;top:var(--hdr-h,0);z-index:10}
 .sort-bar{display:flex;align-items:center;gap:6px;padding:8px 16px 4px;overflow-x:auto;scrollbar-width:none}
 .sort-bar::-webkit-scrollbar{display:none}
 .sort-label{font-size:11px;color:var(--t3);flex-shrink:0}
@@ -477,9 +479,8 @@ const STOCKS = [
   scoreBreakdown:[
     {lbl:'Opportunity confidence (base)',val:'7.5',type:'base'},
     {lbl:'Price in Watch zone',val:'−0.5',type:'neg'},
-    {lbl:'Gate 1: Execution flag (delivery slips)',val:'−0.5',type:'neg'},
-    {lbl:'PE 30–40 band',val:'−0.5',type:'neg'},
-    {lbl:'Final Poised Score',val:'6.8*',type:'total'},
+    {lbl:'Gate 1: Execution flag (delivery slips)',val:'−0.2',type:'neg'},
+    {lbl:'Final Poised Score',val:'6.8',type:'total'},
   ],
   eli15:'HAL is the only company in India that can make a fighter jet — that monopoly is incredibly valuable. But the stock is expensive (PE 35×) and HAL has a well-documented habit of missing delivery dates. You\'re paying full price for a company that often doesn\'t show up on time.',
   scenarios:[
@@ -527,10 +528,10 @@ const STOCKS = [
   risks:['PE 42× leaves little margin for earnings miss','Small-mid cap liquidity risk','Customer concentration in defence (single-sector dependency)'],
   scoreBreakdown:[
     {lbl:'Opportunity confidence (base)',val:'7.8',type:'base'},
-    {lbl:'Price in Buy Zone (+10% below FV)',val:'+0.5',type:'pos'},
+    {lbl:'Price in Buy Zone (+12% below FV)',val:'+0.8',type:'pos'},
     {lbl:'Gate 1: Quality conditional pass',val:'±0.0',type:'neutral'},
     {lbl:'PE 40–42 (borderline flag)',val:'−0.5',type:'neg'},
-    {lbl:'Final Poised Score',val:'8.1*',type:'total'},
+    {lbl:'Final Poised Score',val:'8.1',type:'total'},
   ],
   eli15:'JNK India is like a tool maker for the factory-building boom — as India\'s defence and EV industries race to build new manufacturing plants, every one of those plants needs precision CNC machines, and JNK makes them. At the current price, you\'re getting a 10% discount to fair value on a business growing at 30%+.',
   scenarios:[
@@ -581,7 +582,8 @@ const STOCKS = [
     {lbl:'Price in Fair Value zone',val:'±0.0',type:'neutral'},
     {lbl:'Gate 1: Full quality pass (all criteria)',val:'+0.5',type:'pos'},
     {lbl:'Large cap — lower growth premium',val:'−0.5',type:'neg'},
-    {lbl:'Final Poised Score',val:'7.6*',type:'total'},
+    {lbl:'FY26 revenue guidance miss (−300bps)',val:'−0.2',type:'neg'},
+    {lbl:'Final Poised Score',val:'7.6',type:'total'},
   ],
   eli15:'L&T is the largest and most capable engineering contractor in India — if India is building something big, L&T is probably building it. At PE 28× and fair value ₹3,800, you\'re paying a fair price for India\'s best execution machine.',
   scenarios:[
@@ -630,10 +632,10 @@ const STOCKS = [
   scoreBreakdown:[
     {lbl:'Opportunity confidence (base)',val:'7.5',type:'base'},
     {lbl:'Price in Buy Zone (~12% below FV)',val:'+0.5',type:'pos'},
-    {lbl:'Gate 1: Execution flag (young company)',val:'−0.5',type:'neg'},
-    {lbl:'PE 38× (slightly elevated)',val:'−0.5',type:'neg'},
+    {lbl:'Gate 1: Execution flag (young company)',val:'−0.3',type:'neg'},
+    {lbl:'PE 38× (slightly elevated)',val:'−0.3',type:'neg'},
     {lbl:'Niche monopoly bonus (moat)',val:'+0.5',type:'pos'},
-    {lbl:'Final Poised Score',val:'7.9*',type:'total'},
+    {lbl:'Final Poised Score',val:'7.9',type:'total'},
   ],
   eli15:'PARAS makes the "eyes" for India\'s defence equipment — the electro-optical sensors that missiles and submarines use to see. Almost no one else in India makes these. At ₹1,060 vs fair value ₹1,200, you\'re getting a 12% discount on a niche monopoly.',
   scenarios:[
@@ -728,6 +730,12 @@ function renderAll(){
   renderOpportunitiesPane();
   renderQueuePane();
   renderCandidatesPane();
+  updateHdrHeight();
+}
+
+function updateHdrHeight(){
+  const hdr=document.querySelector('#s-landing .hdr');
+  if(hdr) document.documentElement.style.setProperty('--hdr-h',hdr.offsetHeight+'px');
 }
 
 // ── LANDING TABS ──
@@ -900,6 +908,7 @@ function renderCard(s){
 function getFilteredStocks(){
   let stocks=[...STOCKS];
   if(STATE.filters.theme!=='all') stocks=stocks.filter(s=>s.themes.includes(STATE.filters.theme));
+  const availZones=new Set(stocks.map(s=>s.zone));
   if(STATE.filters.zone!=='all') stocks=stocks.filter(s=>s.zone===STATE.filters.zone);
   if(STATE.filters.score!=='all'){
     if(STATE.filters.score==='high') stocks=stocks.filter(s=>s.poised>=8.0);
@@ -914,7 +923,6 @@ function getFilteredStocks(){
     else if(STATE.filters.peBand==='hi') stocks=stocks.filter(s=>s.pe>=30&&s.pe<=40);
     else if(STATE.filters.peBand==='premium') stocks=stocks.filter(s=>s.pe>40);
   }
-  const availZones=new Set(stocks.map(s=>s.zone));
   stocks.sort((a,b)=>{
     if(STATE.sort==='poised') return b.poised-a.poised;
     if(STATE.sort==='confidence') return b.confidence-a.confidence;
@@ -996,13 +1004,21 @@ function openDetailById(id){
   STATE.activeStock=id;
   STATE.detailTab='snowflake';
   renderDetail(s);
-  document.getElementById('s-landing').classList.add('slide-left');
+  const landing=document.getElementById('s-landing');
+  landing.style.visibility='';
+  landing.classList.add('slide-left');
   document.getElementById('s-detail').classList.remove('slide-right');
   STATE.screen='detail';
+  clearTimeout(STATE._hideTimer);
+  // Hide landing from GPU compositing after slide completes (340ms > 320ms transition)
+  STATE._hideTimer=setTimeout(()=>{landing.style.visibility='hidden';},340);
 }
 
 function goBack(){
-  document.getElementById('s-landing').classList.remove('slide-left');
+  clearTimeout(STATE._hideTimer);
+  const landing=document.getElementById('s-landing');
+  landing.style.visibility='';  // restore before reverse animation
+  landing.classList.remove('slide-left');
   document.getElementById('s-detail').classList.add('slide-right');
   STATE.screen='landing';
 }
