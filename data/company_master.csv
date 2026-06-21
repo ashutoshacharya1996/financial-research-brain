@@ -1,0 +1,7 @@
+ticker,company_name,nse_symbol,bse_code,yfinance_symbol,sector,active
+BEL,Bharat Electronics Ltd,BEL,500049,BEL.NS,Defence Electronics,true
+HAL,Hindustan Aeronautics Ltd,HAL,541154,HAL.NS,Aerospace & Defence,true
+JNKINDIA,JNK India Ltd,JNKINDIA,544010,JNKINDIA.NS,Industrial Equipment,true
+LT,Larsen & Toubro Ltd,LT,500510,LT.NS,Engineering & Construction,true
+PARAS,Paras Defence & Space Technologies Ltd,PARAS,543317,PARAS.NS,Defence Electronics,true
+GABRIEL,Gabriel India Ltd,GABRIEL,505714,GABRIEL.NS,Auto Components,true
