@@ -12,11 +12,13 @@ Extraction date: 2026-06-20
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
-| Revenue | ₹33,050 crore | FY26 | +7% YoY | Confirmed across multiple sources |
+| Revenue (Q4) | ₹13,942.40 crore | Q4 FY26 | Confirmed | "revenue growing to ₹13,942.40 crore" (ForgeUp, Scanx citing Q4 FY26) |
+| PAT (Q4) | ₹4,196.04 crore | Q4 FY26 | +5.4% YoY | "5.4% YoY increase in Q4 net profit to ₹4,196.04 crore" |
+| Revenue (full year) | ₹33,088.82 crore | FY26 | +7% YoY | "net profit stood at ₹9,115.52 crore on revenue of ₹33,088.82 crore" |
+| PAT (full year) | ₹9,115.52 crore | FY26 | Not stated vs prior | Confirmed per ForgeUp/Scanx |
 | EBITDA | ₹13,472 crore | FY26 | +11% YoY | Confirmed across multiple sources |
 | EBITDA margin | ~30% | FY26 | Stable | "maintaining a 30% operating margin" |
-| PAT | Not stated separately | FY26 | Not stated | — |
-| Order book | ₹2,54,538 crore | April 1, 2025 (as stated) | +34% YoY (vs ₹1,89,302 crore) | Confirmed: "order book improved to ₹2,54,538 crore against ₹1,89,302 crore as on April 1, 2025" |
+| Order book | ₹2,54,538 crore | April 1, 2025 (as stated in filing) | +34% YoY (vs ₹1,89,302 crore) | Confirmed: "order book improved to ₹2,54,538 crore against ₹1,89,302 crore as on April 1, 2025" |
 | Order inflows | ₹97,028 crore | FY26 | Not stated vs prior | Confirmed: "fresh orders worth INR97,028 crores during FY26" |
 | Capex | Not stated | — | — | — |
 
@@ -24,9 +26,10 @@ Extraction date: 2026-06-20
 
 FY27 revenue growth: 10–12%. EBITDA margin: 30–31%.
 
-*Reported from search snippets citing the May 15, 2026 earnings call hosted by Ambit Capital.*
+*Reported from search snippets citing the May 15, 2026 earnings call hosted by Ambit Capital. Updated 2026-06-21 with confirmed Q4 quarterly metrics.*
 
 LCA Tejas Mark-1A deliveries: ~20 aircraft targeted for FY27, commencing August/September 2026.
+Tejas Mark-II prototype: Targeted rollout by March 2027.
 
 ## Management Commentary — Demand
 

@@ -12,13 +12,19 @@ Extraction date: 2026-06-20
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
-| Revenue (standalone) | ₹1,111 crore | Q4 FY26 | +19% YoY | "standalone revenue up 19% YoY" |
-| EBITDA (standalone) | ₹101 crore | Q4 FY26 | +16% YoY | "Standalone Adjusted EBITDA was INR 101 crore in Q4 FY26, a 16% YoY growth" |
-| EBITDA margin | ~9.1% | Q4 FY26 | Slight contraction (EBITDA grew slower than revenue) | Calculated from ₹101 crore / ₹1,111 crore |
-| Revenue (full year, standalone) | ₹4,223 crore | FY26 | +16% YoY | "Standalone Operating Revenue was INR 4,223 crore for FY26, a 16% YoY growth" |
-| PAT | Not stated | Q4 FY26 | Not stated | — |
+| Revenue (standalone, Q4) | ₹1,111 crore | Q4 FY26 | +19% YoY | "standalone revenue up 19% YoY" |
+| EBITDA (standalone, Q4) | ₹101 crore | Q4 FY26 | +16% YoY | "Standalone Adjusted EBITDA was INR 101 crore in Q4 FY26, a 16% YoY growth" |
+| EBITDA margin (standalone, Q4) | ~9.1% | Q4 FY26 | Slight contraction | Calculated: ₹101 crore / ₹1,111 crore |
+| Revenue (standalone, FY26) | ₹4,223 crore | FY26 | +16% YoY | "Standalone Operating Revenue was INR 4,223 crore for FY26, a 16% YoY growth" |
+| Revenue (consolidated, Q4) | ₹1,210 crore | Q4 FY26 | +13% YoY | "Consolidated Operating Revenue was INR 1,210 crore in Q4 FY26, a 13% YoY growth" |
+| Revenue (consolidated, FY26) | ₹4,667 crore | FY26 | +15% YoY | "Consolidated Operating Revenue was INR 4,667 crore for FY26, a 15% YoY growth" |
+| EBITDA (consolidated, Q4) | ₹117 crore | Q4 FY26 | +6.5% YoY | "Consolidated Adjusted EBITDA was INR 117 crore in Q4 FY26, a 6.5% YoY growth" |
+| EBITDA margin (consolidated, Q4) | 9.7% | Q4 FY26 | Not stated vs prior | Calculated: ₹117 / ₹1,210 |
+| EBITDA (consolidated, FY26) | ₹452 crore | FY26 | +15% YoY; margin 9.7% | "Consolidated Adjusted EBITDA was INR 452 crore for FY26, a 15% YoY growth" |
+| PAT (consolidated, FY26) | ₹252.2 crore | FY26 | Confirmed | "Consolidated profit after tax (PAT) at ₹252.2 crore" |
+| PAT (net profit, FY26) | ₹243.2 crore (₹2,432 million) | FY26 | +14.8% YoY | "Gabriel India FY26 net profit rises 14.8% to ₹2,432 million" |
+| Dividend | ₹5/share total (₹3.1 final) | FY26 | — | "Final dividend: ₹3.1/share; total FY26 dividend ₹5/share" |
 | Order book | Not applicable | — | — | Auto components — made-to-order, not order book model |
-| Order inflows | Not applicable | — | — | — |
 | Capex | Not stated | — | — | — |
 
 ## Guidance
@@ -76,8 +82,10 @@ Motilal Oswal (analyst initiation, June 9, 2026) projects:
 ## Missing Data
 
 - Verbatim management quotes: Transcript (GuruFocus, Yahoo Finance) not accessible (403)
-- PAT value Q4 FY26 and FY26 absolute
+- PAT Q4 FY26 standalone (FY26 consolidated PAT now confirmed: ₹252.2 crore; net profit ₹243.2 crore)
 - QoQ comparison
 - Capex plan for FY27/28
 - Order visibility / customer mix
 - Sunroof/solar damper revenue contribution (not yet material, but no number given)
+
+*Updated 2026-06-21: Consolidated FY26 revenue, EBITDA, PAT, and dividend added from search-accessible sources.*
