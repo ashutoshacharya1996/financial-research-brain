@@ -30,7 +30,7 @@
 html,body{background:var(--bg);color:var(--t1);font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;font-size:16px;min-height:100dvh;overflow-x:hidden}
 
 /* SCREENS */
-.screen{position:fixed;inset:0;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;transform:translateX(0);transition:transform .32s cubic-bezier(.4,0,.2,1);will-change:transform}
+.screen{position:fixed;inset:0;background:var(--bg);overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;transform:translateX(0);transition:transform .32s cubic-bezier(.4,0,.2,1);will-change:transform}
 .screen.slide-right{transform:translateX(100%)}
 .screen.slide-left{transform:translateX(-20%);pointer-events:none}
 #s-landing{z-index:1}
