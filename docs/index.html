@@ -304,6 +304,39 @@ html,body{background:var(--bg);color:var(--t1);font-family:-apple-system,BlinkMa
 .axis-def{font-size:14px;color:var(--t2);line-height:1.6;margin-bottom:10px}
 .axis-what-changes{background:var(--s2);border-radius:var(--r12);padding:10px 12px;font-size:13px;color:var(--t2)}
 .axis-what-changes strong{color:var(--t1)}
+
+/* SNOWFLAKE REASONING PANEL */
+.sf-chips-row{display:flex;gap:6px;flex-wrap:wrap;padding:0 0 12px}
+.sf-chip{padding:5px 10px;border-radius:20px;font-size:12px;font-weight:600;background:var(--s2);border:1px solid var(--bd);color:var(--t3);cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:4px}
+.sf-chip.active{background:var(--bl2);border-color:var(--bl3);color:var(--blue)}
+.sf-chip-score{font-size:10px;font-weight:800;padding:1px 5px;border-radius:8px;background:var(--s3);color:var(--t2)}
+.sf-chip.active .sf-chip-score{background:var(--blue);color:#fff}
+.sr-panel{background:var(--s1);border-radius:var(--r12);border:1px solid var(--bd);margin:0 0 12px;overflow:hidden}
+.sr-head{padding:12px 14px 8px;border-bottom:1px solid var(--bd)}
+.sr-score-row{display:flex;align-items:baseline;gap:4px;margin-bottom:2px}
+.sr-score-num{font-size:32px;font-weight:800;color:var(--blue)}
+.sr-score-denom{font-size:14px;color:var(--t3)}
+.sr-score-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--blue);margin-left:4px}
+.sr-subtitle{font-size:12px;color:var(--t3);line-height:1.5}
+.sr-section{padding:10px 14px}
+.sr-sec-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.sr-sec-label.pos{color:var(--green)}
+.sr-sec-label.neg{color:var(--red)}
+.sr-driver{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;padding:4px 0}
+.sr-driver+.sr-driver{border-top:1px solid var(--bd)}
+.sr-driver-text{font-size:13px;color:var(--t2);flex:1;line-height:1.4}
+.sr-impact.pos{font-size:12px;font-weight:700;color:var(--green);white-space:nowrap}
+.sr-impact.neg{font-size:12px;font-weight:700;color:var(--red);white-space:nowrap}
+.sr-evidence{padding:8px 14px;background:var(--s2);border-top:1px solid var(--bd)}
+.sr-ev-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-bottom:4px}
+.sr-ev-tags{display:flex;flex-wrap:wrap;gap:4px}
+.sr-ev-tag{font-size:11px;padding:2px 7px;border-radius:8px;background:var(--s3);color:var(--t3)}
+.sr-bottom{padding:10px 14px;border-top:1px solid var(--bd)}
+.sr-bottom-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-bottom:3px}
+.sr-bottom-text{font-size:13px;color:var(--t1);font-weight:500;line-height:1.5}
+.sr-how-btn{display:flex;align-items:center;justify-content:center;gap:4px;width:100%;padding:9px;font-size:12px;color:var(--t3);background:none;border:none;border-top:1px solid var(--bd);cursor:pointer}
+.sr-empty{padding:20px 14px;font-size:13px;color:var(--t3);text-align:center;line-height:1.6}
+.sf-wrap-sm{display:flex;justify-content:center;padding:8px 0 4px}
 </style>
 </head>
 <body>
@@ -445,6 +478,38 @@ const STOCKS = [
   portfolioBody:'BEL is a strong business with a real order pipeline. At ₹285 you\'re paying fair value, not a bargain. Wait for a dip to initiate.',
   portfolioEntry:'Watch entry: ₹260 (15% below base fair value of ₹305). At that level, price enters Buy Zone and Poised Score would rise to ~8.0.',
   bias:'Recency bias risk: Defence stocks have rallied hard in 2025–26. Ensure your excitement is thesis-driven, not momentum-driven.',
+  snowflakeReasoning:{
+    opportunity:{
+      pos:[{driver:'FY27 order inflow guidance >₹55,000cr — 83% step-up vs FY26 actuals of ₹30,000cr',impact:'+core'},{driver:'QRSAM production contract (₹9,500cr) expected Jun–Jul 2026 — specific, named, near-term catalyst',impact:'+catalyst'},{driver:'Defence indigenisation push accelerating — domestic content mandates rising every year',impact:'+structural'}],
+      neg:[{driver:'Single customer dependency: 95%+ revenue from Government of India — no pricing power',impact:'−concentration'},{driver:'Programme timing opaque — order signing dates routinely slip 6–12 months',impact:'−timing'}],
+      evidence:['BEL Q4 FY26 Earnings Call — May 22, 2026','Opp Record: defence-electronics-aerospace-2026-Q4'],
+      bottomLine:'Strong thesis with a concrete near-term trigger. QRSAM is the binary event for FY27 — if it signs by Jul 2026, the bull case is live.'
+    },
+    valuation:{
+      pos:[],
+      neg:[{driver:'Price ₹285 vs fair value ₹305 — at fair value, no margin of safety',impact:'0% upside to FV'},{driver:'PE 28× is full price for a PSU defence company with execution risk',impact:'−premium'}],
+      evidence:['India Stock Picker — Fair Value Model','Buy Zone Bar — Jun 2026'],
+      bottomLine:'Fair value zone means you\'re paying full price. The math works at ₹260 (Buy Zone) — not before.'
+    },
+    execution:{
+      pos:[{driver:'Consistent delivery on EW systems and Akash programme over 5+ years',impact:'+track record'},{driver:'Q4 FY26 revenue on schedule; no guidance cut in recent history',impact:'+reliability'}],
+      neg:[{driver:'QRSAM trial phase had minor delays — large ramp from ₹30k to ₹55k cr inflows is untested',impact:'−capacity risk'},{driver:'New hiring required to absorb FY27 order surge — talent supply is constrained',impact:'−execution lag'}],
+      evidence:['BEL Q4 FY26 Earnings Call — May 22, 2026','PARAS Q4 FY26 — mentioned BEL as dependable anchor customer'],
+      bottomLine:'Solid delivery history on existing programmes. The FY27 ramp is a stress test — larger than anything BEL has managed before.'
+    },
+    moat:{
+      pos:[{driver:'Government-mandated PSU status for classified defence electronics — cannot be replaced by private sector on sensitive systems',impact:'+structural'},{driver:'50+ years of DRDO co-development; institutional IP not replicated',impact:'+knowledge moat'}],
+      neg:[{driver:'Private challengers growing: L&T Defence, Data Patterns gaining share in newer categories',impact:'−competition'},{driver:'Not immune to foreign JV entries for next-gen programmes',impact:'−long-term'}],
+      evidence:['Industry structure analysis','Competitive dynamics — BEL dashboard'],
+      bottomLine:'PSU status is a structural moat for the next decade. The question is whether private-sector margins compress BEL\'s pricing power after 2030.'
+    },
+    momentum:{
+      pos:[{driver:'Order book ₹73,882cr — 2.7× revenue; highest in BEL history',impact:'+backlog'},{driver:'Three concurrent pipeline triggers: QRSAM, LCA avionics, MALE UAV',impact:'+acceleration'},{driver:'Corroboration count 4 — multiple companies confirm defence spending is real',impact:'+cross-validation'}],
+      neg:[{driver:'FY26 revenue ₹27,480cr — order-to-revenue conversion slower than market expects',impact:'−lag'},{driver:'Some order-to-revenue gaps due to long delivery cycles on complex systems',impact:'−timing'}],
+      evidence:['BEL Q4 FY26 Earnings Call — May 22, 2026'],
+      bottomLine:'Order pipeline is genuinely accelerating. The question is how fast revenue converts from a ₹73,882cr backlog — watch FY27 H1 quarterly revenue.'
+    }
+  },
   dynamics:{
     gameType:'Non-zero-sum + Sequential',
     gameNote:'The Indian defence electronics market is expanding — BEL and peers can all grow. But within each tender, it is zero-sum: one L1 winner takes the contract.',
@@ -495,6 +560,38 @@ const STOCKS = [
   portfolioBody:'HAL has the best moat score (8.5/10) but the worst execution score (4.5/10). At ₹4,250 and PE 35×, you are paying for the bull case to happen. Wait for a delivery slip to provide a better entry.',
   portfolioEntry:'Watch entry: ₹3,315 (15% below base fair value of ₹3,900). HAL does slip, and when it does the market sells aggressively.',
   bias:'Narrative investing risk: The "Atmanirbhar Bharat" defence story is compelling. Require concrete delivery evidence before acting.',
+  snowflakeReasoning:{
+    opportunity:{
+      pos:[{driver:'Order book ₹94,000cr — 3.2× revenue; highest in HAL history',impact:'+backlog'},{driver:'LCA Mk1A programme: 83 jets confirmed; deliveries accelerating in FY27',impact:'+catalyst'},{driver:'MALE UAV programme ₹30,000cr tender pending — potential new revenue stream',impact:'+pipeline'}],
+      neg:[{driver:'Single customer (IAF/MoD) — 100% revenue concentration',impact:'−concentration'},{driver:'LCA Mk1A was already delayed once; programme track record creates uncertainty',impact:'−reliability'}],
+      evidence:['HAL Q4 FY26 Earnings Call — May 15, 2026','Opp Record: defence-electronics-aerospace-2026-Q4'],
+      bottomLine:'Strongest order book coverage in Indian defence (3.2×) but execution risk is real. Thesis is solid; timing is the uncertainty.'
+    },
+    valuation:{
+      pos:[],
+      neg:[{driver:'Price ₹4,250 vs fair value ₹3,900 — 9% above fair value; in Watch zone',impact:'Overvalued'},{driver:'PE 35× prices in bull case execution that HAL has not yet demonstrated',impact:'−premium'}],
+      evidence:['India Stock Picker — Fair Value Model','Buy Zone Bar — Jun 2026'],
+      bottomLine:'HAL is priced for perfection. The thesis requires the stock to dip to ₹3,315 before the risk-reward makes sense.'
+    },
+    execution:{
+      pos:[{driver:'Large-scale manufacturing capacity at Bangalore, Nashik, Lucknow facilities',impact:'+capacity'},{driver:'HTT-40 trainer and LCH Prachand now in series production — two programmes delivering',impact:'+evidence'}],
+      neg:[{driver:'LCA Mk1A delivery delayed once already from original schedule',impact:'−slippage'},{driver:'Historical pattern: every major programme (ALH, LCA Mk1, HTT-40) ran late by 2–4 years',impact:'−structural'},{driver:'GE engine supply dependency — foreign component availability creates constraint',impact:'−supply chain'}],
+      evidence:['HAL Q4 FY26 Earnings Call — May 15, 2026','Historical programme records'],
+      bottomLine:'The 4.5/10 execution score is HAL\'s defining constraint. Improvement here is the single most important re-rating catalyst.'
+    },
+    moat:{
+      pos:[{driver:'Only Indian company certified to assemble and maintain fighter jets — no domestic competitor',impact:'+monopoly'},{driver:'Decades of institutional IP from Tejas, ALH, and DRDO partnerships',impact:'+knowledge'},{driver:'Government won\'t allow HAL to fail — strategic importance is too high',impact:'+implicit guarantee'}],
+      neg:[{driver:'Long-term: AMCA programme opens door for private JV competition',impact:'−future risk'},{driver:'Rafale partnership means France (not HAL) holds fighter jet IP',impact:'−IP dependency'}],
+      evidence:['Industry structure','Competitive dynamics — HAL dashboard'],
+      bottomLine:'Irreplaceable in Indian military aviation for the next decade. Best moat in the portfolio at 8.5/10 — but moat doesn\'t protect against self-inflicted execution delays.'
+    },
+    momentum:{
+      pos:[{driver:'Order book +34% YoY; LCA Mk1A concrete delivery milestones in FY27',impact:'+acceleration'},{driver:'HTT-40 and LCH now delivering — two concurrent revenue streams active',impact:'+breadth'}],
+      neg:[{driver:'Revenue ₹29,000cr flat QoQ — order book not converting to revenue fast enough',impact:'−lag'},{driver:'Market already pricing FY28–30 earnings; near-term momentum is muted',impact:'−priced in'}],
+      evidence:['HAL Q4 FY26 Earnings Call — May 15, 2026'],
+      bottomLine:'Watch the Aug/Sep 2026 Mk1A delivery milestone. If IAF accepts 3+ jets/month, revenue conversion accelerates and momentum score rises.'
+    }
+  },
   dynamics:{
     gameType:'Non-zero-sum (domestic market expanding) + Zero-sum per tender',
     gameNote:'HAL benefits from a growing pie — IAF is acquiring more aircraft. But within export markets, HAL competes directly with Saab Gripen, Dassault Rafale where it is at a disadvantage.',
@@ -546,6 +643,38 @@ const STOCKS = [
   portfolioBody:'At ₹1,380 vs fair value ₹1,560, JNK is 11% below fair value and in the Buy Zone. With the highest Poised Score of the 5 stocks (8.1/10) and the strongest corroboration count, the risk-reward is favourable.',
   portfolioEntry:'Suggested allocation: Extended tier position (3–4% of equity portfolio). Size conservatively given PE 42× and small-mid cap liquidity.',
   bias:'Small cap excitement: JNK is less well-known and feels like a hidden gem. Ensure you are buying the thesis not the discovery of a name others haven\'t found yet.',
+  snowflakeReasoning:{
+    opportunity:{
+      pos:[{driver:'Order book +81% YoY to ₹1,961cr — highest growth rate in the portfolio',impact:'+conviction'},{driver:'First international export order (UAE/ADNOC) — unlocks global refinery capex market',impact:'+expansion'},{driver:'FY27 revenue guidance 25–30% growth — management confidence in pipeline',impact:'+guidance'}],
+      neg:[{driver:'Small company entering competitive global market against established global OEMs',impact:'−size risk'},{driver:'Customer concentration in India remains high; ADNOC is first but not yet a pattern',impact:'−concentration'}],
+      evidence:['JNKINDIA Q4 FY26 Earnings Call — May 21, 2026','Opp Record: india-industrial-capex-cycle-2026-Q4'],
+      bottomLine:'The ADNOC export order is the most important recent signal — it validates that JNK can compete outside India and opens a TAM 10× larger than domestic alone.'
+    },
+    valuation:{
+      pos:[{driver:'Price ₹1,380 vs fair value ₹1,560 — 12% below fair value; comfortably in Buy Zone',impact:'+margin of safety'}],
+      neg:[{driver:'PE 42× is premium for a small-cap industrial; pricing in international expansion story',impact:'−premium PE'}],
+      evidence:['India Stock Picker — Fair Value Model','Buy Zone Bar — Jun 2026'],
+      bottomLine:'Best risk-reward entry in the portfolio today — Buy Zone with margin of safety. PE 42× is the only concern; it needs the growth to materialise.'
+    },
+    execution:{
+      pos:[{driver:'Order book +81% YoY delivered on time; no missed quarters in recent history',impact:'+track record'},{driver:'Management guidance has been conservative and then beaten in last 3 quarters',impact:'+reliability'}],
+      neg:[{driver:'UAE/ADNOC is first international order — untested in cross-border execution complexity',impact:'−new territory'},{driver:'UAE market margins may compress vs domestic as JNK competes on price to establish reference',impact:'−margin risk'}],
+      evidence:['JNKINDIA Q4 FY26 Earnings Call — May 21, 2026'],
+      bottomLine:'Domestic execution track record is strong. The real test begins with UAE — watch first ADNOC delivery milestone.'
+    },
+    moat:{
+      pos:[{driver:'Specialized fired heater and process equipment technology for refinery applications',impact:'+expertise'},{driver:'BIS certification and defence OEM relationships take 18–24 months for new entrants',impact:'+barrier'}],
+      neg:[{driver:'Global competitors (Heurtey Petrochem, Amec Foster Wheeler) are larger and more established',impact:'−scale gap'},{driver:'No hard IP protection; a well-capitalised competitor can replicate technology with time',impact:'−replicable'}],
+      evidence:['Competitive analysis','Industry structure'],
+      bottomLine:'Moat is relationships and expertise — real but not unassailable. Good for 5–7 years of pricing power; watch whether global players decide JNK\'s market is worth attacking.'
+    },
+    momentum:{
+      pos:[{driver:'Order book +81% YoY — highest momentum growth rate of the 5 stocks',impact:'+acceleration'},{driver:'First export order changes ceiling — addressable market expands from ₹5,000cr to ₹50,000cr+',impact:'+TAM expansion'},{driver:'Corroboration count 6 — strongest industrial capex signal in portfolio',impact:'+cross-validation'}],
+      neg:[{driver:'Single export order is not yet a pattern — needs 2nd and 3rd international win to confirm',impact:'−concentration'},{driver:'Domestic refinery capex can slow if crude oil prices drop',impact:'−sensitivity'}],
+      evidence:['JNKINDIA Q4 FY26 Earnings Call — May 21, 2026'],
+      bottomLine:'Highest momentum score of the 5 stocks. The ADNOC order is new information that materially changes the growth ceiling — this is why the score is 8.5.'
+    }
+  },
   dynamics:{
     gameType:'Non-zero-sum (expanding market)',
     gameNote:'India\'s precision machining market is growing faster than domestic supply can meet. Multiple suppliers can win simultaneously.',
@@ -598,6 +727,38 @@ const STOCKS = [
   portfolioBody:'L&T is the lowest-risk stock in this set — best execution, best moat, most diversified revenue. Core portfolio material, but wait for a better entry.',
   portfolioEntry:'Watch entry: ₹3,230 (15% below base fair value of ₹3,800). L&T dips meaningfully during risk-off periods.',
   bias:'Large cap comfort bias: L&T often gets bought as a "safe" stock rather than a thesis-conviction position. Ensure you own it for the infrastructure + defence order cycle thesis.',
+  snowflakeReasoning:{
+    opportunity:{
+      pos:[{driver:'K9 Vajra-T artillery contract (₹5,000–10,000cr) awarded post-Q4 — concrete new revenue stream',impact:'+catalyst'},{driver:'Order book ₹7.40 trillion +28% YoY; beats guidance on intake while also in infra and defence',impact:'+diversification'},{driver:'Benefits from two independent themes simultaneously: defence + industrial capex',impact:'+rare'}],
+      neg:[{driver:'Conglomerate discount: services + IT divisions dilute pure-play infrastructure thesis',impact:'−focus'},{driver:'Large cap ceiling: at this size, market share gains are incremental, not step-change',impact:'−growth ceiling'}],
+      evidence:['LT Q4 FY26 Earnings Call — May 5, 2026','Both opportunity records active for LT'],
+      bottomLine:'Two themes at once is genuinely rare and valuable — defence + infrastructure capex cycle simultaneously. L&T captures both without double-counting.'
+    },
+    valuation:{
+      pos:[],
+      neg:[{driver:'Price ₹3,620 vs FV ₹3,800 — 5% below fair value; slim margin of safety',impact:'Only 5% buffer'},{driver:'FY26 revenue missed guidance by 300bps — market still pricing perfection',impact:'−miss risk'}],
+      evidence:['India Stock Picker — Fair Value Model','Buy Zone Bar — Jun 2026'],
+      bottomLine:'Fair value, not cheap. Decent entry but the risk-reward improves meaningfully at ₹3,230 — worth the patience.'
+    },
+    execution:{
+      pos:[{driver:'Best execution track record of all 5 stocks: consistent on-time delivery across decades of large-scale projects',impact:'+benchmark'},{driver:'Q4 FY26 order book beat despite revenue miss — pipeline discipline is intact',impact:'+reliability'},{driver:'Consistent margin delivery on complex, multi-year infrastructure projects',impact:'+margin track'}],
+      neg:[{driver:'FY26 revenue missed guidance by 300bps — first blemish on an excellent record',impact:'−miss'},{driver:'International projects (Middle East) add execution complexity and FX risk',impact:'−complexity'}],
+      evidence:['LT Q4 FY26 Earnings Call — May 5, 2026','Historical delivery record'],
+      bottomLine:'One guidance miss doesn\'t change 40 years of delivery. Highest execution score in the portfolio is deserved — 8.5 reflects the track record, not just aspiration.'
+    },
+    moat:{
+      pos:[{driver:'Unmatched project management capability for ₹5,000cr+ infrastructure projects — only 3–4 competitors at this scale',impact:'+oligopoly'},{driver:'85-year PSU relationships give pre-tender visibility competitors don\'t have',impact:'+information edge'},{driver:'L&T Defence JV established in electronics — competing in BEL\'s turf',impact:'+expansion'}],
+      neg:[{driver:'L&T Defence JV competes with BEL — creates some complexity in government relationships',impact:'−conflict'},{driver:'Tata Projects growing aggressively; not irreplaceable in all sub-segments',impact:'−competition'}],
+      evidence:['Competitive dynamics analysis','Industry structure'],
+      bottomLine:'The gold standard in complex project delivery. Takes 40 years to build this reputation — that\'s the real moat, not any single product or patent.'
+    },
+    momentum:{
+      pos:[{driver:'K9 Vajra-T contract win post-Q4 — new data not priced in at time of earnings call',impact:'+surprise'},{driver:'Order book +28% YoY; two consecutive years of above-guidance intake',impact:'+trend'}],
+      neg:[{driver:'Revenue missed guidance — order-to-revenue conversion slower than market modelling',impact:'−lag'},{driver:'Large cap: momentum moves are measured in percentages, not multiples',impact:'−scale'}],
+      evidence:['LT Q4 FY26 Earnings Call — May 5, 2026'],
+      bottomLine:'Solid momentum, not spectacular. Watch Q1 FY27 order intake — above ₹1.3L cr confirms the cycle is intact.'
+    }
+  },
   dynamics:{
     gameType:'Non-zero-sum (India infrastructure spend growing) + Oligopolistic',
     gameNote:'At the large project scale (>₹5,000cr), only 3–4 companies can execute. L&T dominates at this scale.',
@@ -650,6 +811,38 @@ const STOCKS = [
   portfolioBody:'At ₹1,060 vs fair value ₹1,200, PARAS is 12% below fair value — in the Buy Zone. The niche monopoly in EO systems is real. Size as a small Extended position (2–3% of equity) given the small-cap risk.',
   portfolioEntry:'Suggested allocation: 2–3% of equity portfolio maximum. High upside (Bull +65–90%) but high variance (Bear −25–35%).',
   bias:'Small cap narrative investing: PARAS is compelling because it\'s niche and sounds unique. Ensure the thesis is the monopoly-in-certification moat, not the excitement of a discovery.',
+  snowflakeReasoning:{
+    opportunity:{
+      pos:[{driver:'BEL electro-optics subcontract ₹52.82cr awarded Jun 2, 2026 — Tier-2 deepening thesis confirmed with a real order',impact:'+concrete validation'},{driver:'Q4 FY26 revenue +58% YoY — highest growth rate of the 5 stocks',impact:'+momentum'},{driver:'ISRO certification opens the space segment — a market that barely existed for PARAS 3 years ago',impact:'+new TAM'}],
+      neg:[{driver:'Small cap with limited analyst coverage and quarterly data — harder to model accurately',impact:'−visibility'},{driver:'Single product category (EO systems) — no diversification buffer',impact:'−concentration'}],
+      evidence:['PARAS Q4 FY26 Quarterly Results — May 13, 2026','BEL subcontract announcement — Jun 2, 2026','Opp Record: defence-electronics-aerospace-2026-Q4'],
+      bottomLine:'The BEL subcontract is the most concrete validation of the Tier-2 thesis — it\'s not narrative, it\'s a live purchase order from the most credible buyer.'
+    },
+    valuation:{
+      pos:[{driver:'Price ₹1,060 vs fair value ₹1,200 — 12% below fair value; Buy Zone with real margin of safety',impact:'+12% buffer'},{driver:'Bull case at ₹1,960–2,000 (65–90% upside) — unusually high upside-to-downside ratio',impact:'+asymmetry'}],
+      neg:[{driver:'PE 38× is elevated for a small cap — if growth disappoints, de-rating from 38× to 22× alone costs 42%',impact:'−de-rating risk'}],
+      evidence:['India Stock Picker — Fair Value Model','Buy Zone Bar — Jun 2026'],
+      bottomLine:'Best valuation entry for a growth investor willing to accept small-cap risk. Buy Zone with a genuine 12% margin of safety and strong asymmetric upside.'
+    },
+    execution:{
+      pos:[{driver:'Q4 FY26 revenue +58% YoY shows the ramp is happening — not just promised',impact:'+real delivery'},{driver:'BEL subcontract delivery will be a visible near-term execution signal',impact:'+upcoming test'}],
+      neg:[{driver:'Listed only in 2021 — limited track record on large, complex orders',impact:'−young company'},{driver:'Capacity constraints possible as revenues scale past ₹400cr',impact:'−capacity risk'},{driver:'First BEL subcontract is the first big public test — outcome is unknown',impact:'−unproven'}],
+      evidence:['PARAS Q4 FY26 Quarterly Results — May 13, 2026'],
+      bottomLine:'Execution track record is still being built. Revenue ramp is real and impressive — the BEL subcontract delivery is the next test to watch.'
+    },
+    moat:{
+      pos:[{driver:'ISRO certification for space-grade optics: ₹150–200cr and 3–4 years to replicate for any competitor',impact:'+hard barrier'},{driver:'Navy qualification for submarine EO systems — same certification economics',impact:'+dual certification'},{driver:'PARAS is the only domestic company certified for both space and submarine EO systems',impact:'+monopoly'}],
+      neg:[{driver:'If the market grows large enough, Elbit Systems or Safran may justify setting up India JV',impact:'−threshold risk'},{driver:'Foreign competitors can import finished systems if DPP doesn\'t mandate domestic sourcing',impact:'−import risk'}],
+      evidence:['Competitive dynamics analysis','PARAS investor presentation FY26'],
+      bottomLine:'Certification is the real moat — not technology, not scale. As long as re-certification costs ₹150–200cr and 4 years, PARAS holds the barrier.'
+    },
+    momentum:{
+      pos:[{driver:'Revenue +58% YoY — strongest percentage growth momentum of the 5 stocks',impact:'+acceleration'},{driver:'BEL subcontract confirms FY27 visible revenue that wasn\'t booked yet',impact:'+forward visibility'},{driver:'Order pipeline building across ISRO, Indian Navy, and commercial EO',impact:'+breadth'}],
+      neg:[{driver:'Small absolute revenue base (₹200–250cr) — percentage growth can overstate absolute momentum',impact:'−base effect'},{driver:'Export market and international orders are still nascent — not yet a revenue driver',impact:'−nascent'}],
+      evidence:['PARAS Q4 FY26 Quarterly Results','BEL subcontract — Jun 2, 2026'],
+      bottomLine:'Strongest revenue growth momentum on a percentage basis. Key question: can FY27 sustain the +50% trajectory? BEL subcontract delivery in H1 FY27 is the first answer.'
+    }
+  },
   dynamics:{
     gameType:'Niche monopoly within a broader non-zero-sum market',
     gameNote:'PARAS operates in such a specialised niche (space-grade optics, EO for submarines) that it barely has domestic competition.',
@@ -678,6 +871,7 @@ const STATE = {
   landingTab:'opportunities',
   activeStock:null,
   detailTab:'snowflake',
+  activeAxis:'opportunity',
   sort:'poised',
   filters:{theme:'all',zone:'all',score:'all',action:'all',trend:'all',peBand:'all'},
   theme: localStorage.getItem('rdb-theme')||'dark',
@@ -1003,6 +1197,7 @@ function openDetailById(id){
   if(!s)return;
   STATE.activeStock=id;
   STATE.detailTab='snowflake';
+  STATE.activeAxis='opportunity';
   renderDetail(s);
   const landing=document.getElementById('s-landing');
   landing.style.visibility='';
@@ -1065,9 +1260,9 @@ function renderDetailTab(s){
 
   // Wire up snowflake label clicks
   el.querySelectorAll('.sf-label').forEach(lbl=>{
-    lbl.addEventListener('click',()=>openAxisSheet(lbl.dataset.axis,s));
+    lbl.addEventListener('click',()=>selectSfAxis(lbl.dataset.axis));
   });
-  // Wire up axis legend clicks
+  // Wire up axis legend clicks (non-snowflake tabs)
   el.querySelectorAll('.axis-leg').forEach(leg=>{
     leg.addEventListener('click',()=>openAxisSheet(leg.dataset.axis,s));
   });
@@ -1082,21 +1277,56 @@ function renderDetailTab(s){
 
 // ── TABS: SNOWFLAKE ──
 function renderSnowflakeTab(s){
-  const snow=svgSnowflake(s.axes,220,false);
-  const legs=Object.entries(AXIS_INFO).map(([k,v])=>
-    `<button class="axis-leg" data-axis="${k}"><span class="axis-dot"></span>${v.label}<span class="axis-score-pill">${s.axes[k]}</span></button>`
-  ).join('');
+  const snow=svgSnowflake(s.axes,140,false);
+  const chips=Object.entries(AXIS_INFO).map(([k,v])=>{
+    const active=STATE.activeAxis===k;
+    return `<button class="sf-chip${active?' active':''}" data-axis="${k}" onclick="selectSfAxis('${k}')">${v.label}<span class="sf-chip-score">${s.axes[k]}</span></button>`;
+  }).join('');
+  const whyNow=s.whyNow.map(w=>`<div class="opp-bullet"><span class="bullet-icon">⚡</span><span style="font-size:13px;color:var(--t2)">${w}</span></div>`).join('');
   const fins=s.financials.map(f=>{
     const col=f.col==='green'?'rv-g':f.col==='orange'?'rv-o':f.col==='blue'?'rv-b':'';
     return `<div class="row"><span class="rk">${f.lbl}</span><div><div class="rv ${col}">${f.val}</div><div style="font-size:10px;color:var(--t3)">${f.sub}</div></div></div>`;
   }).join('');
-  const whyNow=s.whyNow.map(w=>`<div class="opp-bullet"><span class="bullet-icon">⚡</span><span style="font-size:13px;color:var(--t2)">${w}</span></div>`).join('');
   return `
-    <div class="snowflake-wrap">${snow}</div>
-    <div class="axis-legend">${legs}</div>
-    <div class="p-card"><div class="p-card-title">Key Financials</div>${fins}</div>
-    <div class="p-card"><div class="p-card-title">Why Now</div>${whyNow}</div>
-    <div class="disclaimer">Tap any axis label to see score breakdown and what changes it.</div>`;
+    <div class="p-card" style="padding-bottom:8px"><div class="p-card-title">Why Now</div>${whyNow}</div>
+    <div class="sf-wrap-sm">${snow}</div>
+    <div class="sf-chips-row">${chips}</div>
+    <div id="sf-reasoning-panel">${renderSfReasoningPanel(s,STATE.activeAxis)}</div>
+    <div class="p-card"><div class="p-card-title">Key Financials</div>${fins}</div>`;
+}
+
+function renderSfReasoningPanel(s,axisKey){
+  const info=AXIS_INFO[axisKey];
+  if(!info)return'';
+  const score=s.axes[axisKey];
+  const r=s.snowflakeReasoning&&s.snowflakeReasoning[axisKey];
+  if(!r){
+    return `<div class="sr-panel"><div class="sr-empty">No stock-specific reasoning for <strong>${info.label}</strong> yet.<br>Run /stock-dashboard ${s.id} to generate it.</div><button class="sr-how-btn" onclick="openAxisSheet('${axisKey}',STOCKS.find(x=>x.id==='${s.id}'))">How this score works ›</button></div>`;
+  }
+  const posDrivers=r.pos.map(d=>`<div class="sr-driver"><span class="sr-driver-text">${d.driver}</span><span class="sr-impact pos">${d.impact}</span></div>`).join('');
+  const negDrivers=r.neg.map(d=>`<div class="sr-driver"><span class="sr-driver-text">${d.driver}</span><span class="sr-impact neg">${d.impact}</span></div>`).join('');
+  const evTags=r.evidence.map(e=>`<span class="sr-ev-tag">${e}</span>`).join('');
+  const posSection=posDrivers?`<div class="sr-section"><div class="sr-sec-label pos">Positive Drivers</div>${posDrivers}</div>`:'';
+  const negSection=negDrivers?`<div class="sr-section" style="border-top:1px solid var(--bd)"><div class="sr-sec-label neg">Negative Drivers</div>${negDrivers}</div>`:'';
+  return `<div class="sr-panel">
+    <div class="sr-head">
+      <div class="sr-score-row"><span class="sr-score-num">${score}</span><span class="sr-score-denom">/10</span><span class="sr-score-label">${info.label}</span></div>
+      <div class="sr-subtitle">Why ${s.id} scored ${score} on ${info.label}</div>
+    </div>
+    ${posSection}${negSection}
+    <div class="sr-evidence"><div class="sr-ev-label">Evidence Sources</div><div class="sr-ev-tags">${evTags}</div></div>
+    <div class="sr-bottom"><div class="sr-bottom-label">Bottom Line</div><div class="sr-bottom-text">${r.bottomLine}</div></div>
+    <button class="sr-how-btn" onclick="openAxisSheet('${axisKey}',STOCKS.find(x=>x.id==='${s.id}'))">How this score works ›</button>
+  </div>`;
+}
+
+function selectSfAxis(axisKey){
+  STATE.activeAxis=axisKey;
+  const s=STOCKS.find(x=>x.id===STATE.activeStock);
+  if(!s)return;
+  document.querySelectorAll('.sf-chip').forEach(c=>c.classList.toggle('active',c.dataset.axis===axisKey));
+  const panel=document.getElementById('sf-reasoning-panel');
+  if(panel) panel.innerHTML=renderSfReasoningPanel(s,axisKey);
 }
 
 // ── TABS: BUY ZONE ──
@@ -1227,7 +1457,7 @@ function openAxisSheet(axisName,s){
   if(!info)return;
   const score=s.axes[axisName]||0;
   document.getElementById('axis-sheet-body').innerHTML=`
-    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--blue);margin-bottom:8px">${info.label}</div>
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--blue);margin-bottom:8px">How this score works: ${info.label}</div>
     <div class="axis-score-large">${score}<span style="font-size:20px;color:var(--t3)">/10</span></div>
     <div class="axis-def">${info.def}</div>
     <div class="axis-what-changes"><strong>What changes this score:</strong><br>${info.changes}</div>`;
