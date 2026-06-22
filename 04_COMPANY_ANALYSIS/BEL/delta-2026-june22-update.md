@@ -13,6 +13,8 @@ Source documents:
 
 QRSAM signing timeline hardened to July 2026 at the June 19 investor meet, Motilal Oswal upgraded BEL to top defence pick with 20% upside on June 18, and the India defence production record (₹1.78 lakh crore) provides macro validation — three reinforcing signals arriving within 48 hours of each other.
 
+**Addendum (2026-06-22 extraction):** BEL GBMES order (₹1,251 crore, May 5, 2026) confirmed from PDF — a contract with MoD for an indigenous Ground Based Mobile ELINT System for Indian Army, designed by DLRL Hyderabad and manufactured by BEL. This is the highest-value single BEL order confirmed in this run and was not previously captured in delta files. ELINT systems are classified, high-margin, strategic assets — distinct from BEL's routine communication/avionics orders.
+
 ## Financial Metric Deltas
 
 | Metric | Prior (June 21 delta) | Current (June 22 update) | Delta Type | Signal Strength | Notes |

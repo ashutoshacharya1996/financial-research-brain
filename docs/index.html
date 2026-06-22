@@ -485,7 +485,7 @@ html,body{background:var(--terminal)}
         Research Queue <span class="ltab-badge" id="ltab-q-badge">6/10</span>
       </button>
       <button class="ltab" data-pane="candidates" onclick="switchLandingTab(this)">
-        Portfolio Candidates <span class="ltab-badge" id="ltab-c-badge">5</span>
+        Portfolio Candidates <span class="ltab-badge" id="ltab-c-badge">6</span>
       </button>
     </div>
   </div>
@@ -996,12 +996,115 @@ const STOCKS = [
     eli15:'PARAS makes the most specialised optical equipment in India — the kind that goes into submarines and satellites — and almost no one else can make it. The risk is that a foreign company decides to compete in your niche by setting up locally.',
   },
 },
+{
+  id:'GABRIEL',name:'Gabriel India Ltd',exchange:'NSE',
+  price:1241.90,priceDate:'22 Jun 2026',
+  fv:{bear:400,base:920,bull:1266},
+  zone:'watch',zoneLabel:'Watch',
+  themes:['ev','capex'],sectors:['auto-ancillary','capital-goods'],
+  poised:6.5,action:'watch',actionLabel:'Add on dip',
+  watchPrice:830,pe:53,revenue:4667,orderBook:null,obCoverage:null,
+  corroboration:6,trend:'stable',confidence:7.5,
+  opportunityId:'india-industrial-capex-cycle-2026-Q4',
+  axes:{opportunity:7.2,valuation:4.0,execution:6.0,moat:6.5,momentum:7.5},
+  financials:[
+    {lbl:'FY26 Revenue',val:'₹4,667cr',sub:'+15% YoY'},
+    {lbl:'PAT FY26',val:'₹252.2cr',sub:'+14.8% YoY',col:'green'},
+    {lbl:'PAT CAGR FY26–28E',val:'55%',sub:'Motilal Oswal est.',col:'green'},
+    {lbl:'Core ROCE (FY28E)',val:'37.7%',sub:'+800bps vs today',col:'blue'},
+  ],
+  whyNow:[
+    'Sunroof JV (Inalfa Gabriel) delivered 15.1% EBITDA margin in Year 1 — above management\'s own 12–14% guidance',
+    'EV two-wheelers +30% YoY — first concrete EV revenue number for Gabriel',
+    'Motilal Oswal Buy initiation at ₹1,266 (35× FY28E EPS, PAT CAGR 55%) — first institutional coverage anchors valuation',
+    'Both governance risk flags cleared Jun 2026: PwC re-appointment confirmed; NCLT Scheme of Arrangement positive',
+  ],
+  risks:[
+    'All 5 growth levers must fire simultaneously — Genos (Q4 CY26), Mahindra/Mobis ramp, sunroof scale, fastener plant — any slip breaks 55% PAT CAGR thesis',
+    'Current price ₹1,241.90 is 35% above base fair value (₹920) — priced for full execution with zero margin of error',
+  ],
+  scoreBreakdown:[
+    {lbl:'Opportunity confidence (base)',val:'7.5',type:'base'},
+    {lbl:'Watch zone (price +35% above base FV)',val:'−0.5',type:'neg'},
+    {lbl:'PE 53× FY27E (growth-priced forward)',val:'−0.5',type:'neg'},
+    {lbl:'Gate 1: Execution flag (5 simultaneous levers)',val:'−0.3',type:'neg'},
+    {lbl:'Governance: both risk alerts cleared Jun 2026',val:'+0.3',type:'pos'},
+    {lbl:'Final Poised Score',val:'6.5',type:'total'},
+  ],
+  eli15:'Think of Gabriel India like a school kid who used to study only one subject (shock absorbers) and just enrolled in four new classes at once. Test results for the first new class (sunroofs) came in above expectations. But at ₹1,241.90, you\'re paying as if all four new classes will also score top marks. Wait for a better entry price at ₹830.',
+  scenarios:[
+    {name:'Bull',col:'green',prob:25,return2yr:'+35–50%',returnNum:42,
+     thesis:'All 5 growth levers fire: Genos online Q4 CY26, Mahindra/Mobis ramp, sunroof 200k+ units, fastener from H2 FY27. PAT CAGR 55% materialises — market re-rates to 35× FY28E EPS.',
+     assumption:'All 5 growth levers execute simultaneously on schedule',
+     falsifier:'Genos plant slips past Q1 CY27; Mahindra/Mobis order volumes disappoint vs plan'},
+    {name:'Base',col:'blue',prob:45,return2yr:'+5–20%',returnNum:12,
+     thesis:'Core suspension and sunroof deliver. Genos delayed 1Q. Fastener ramp slower than plan. PAT CAGR lands at 35–40% — market pays 28× FY28E EPS.',
+     assumption:'Sunroof scale-up continues; Genos on schedule by Q1 CY27',
+     falsifier:'Sunroof EBITDA margin drops below 12% for two consecutive quarters'},
+    {name:'Bear',col:'red',prob:30,return2yr:'−30 to −50%',returnNum:-40,
+     thesis:'Genos slips to mid-CY27, capex overruns ₹260–270cr plan, core suspension margins under pressure. PAT CAGR falls to 15% — market de-rates from 53× to 20× FY27E.',
+     assumption:'Two or more growth levers miss simultaneously',
+     falsifier:'Q4 CY26 Genos commercial production confirmed AND sunroof margin stable above 13%'},
+  ],
+  watchVariable:'Genos Plant Commercial Production (Q4 CY26)',
+  watchSub:'First production from the auto glass plant confirms the third growth leg beyond suspension + sunroof and de-risks the 5-simultaneous-levers execution concern.',
+  confLabel:'Low–Medium',
+  confReason:'Strong thesis with delivered Year-1 evidence on sunroof JV, but limited public data on Genos timeline and Mahindra/Mobis ramp schedule.',
+  held:false,slot:'Extended',
+  portfolioRec:'Add on dip — watch ₹830',
+  portfolioBody:'Gabriel India at ₹1,241.90 is 35% above base fair value (₹920) and within 2% of the Motilal Oswal bull target. The thesis is real but you\'re paying for all 5 levers to fire simultaneously. Wait for ₹830 (buy zone entry).',
+  portfolioEntry:'Watch entry: ₹830 (10% below base FV ₹920). Sizing: 2–3% of equity maximum. Confirm live price via Kite before acting.',
+  bias:'Recency confirmation bias: Gabriel\'s Year-1 sunroof JV result above guidance is a genuine positive, but one quarter of data on a new business is not an execution track record. Do not let the sunroof success anchor expectations for 4 additional simultaneous pivots.',
+  snowflakeReasoning:{
+    opportunity:{
+      pos:[{driver:'Sunroof JV FY26: ₹434cr revenue at 15.1% EBITDA — above management\'s own 12–14% guidance in Year 1',impact:'+validated'},{driver:'EV two-wheelers +30% YoY — first concrete EV revenue attached to Gabriel\'s e-mobility story',impact:'+concrete'},{driver:'Motilal Oswal Buy initiation — first institutional coverage anchors ₹1,266 valuation; PAT CAGR 55% FY26–28E',impact:'+analyst anchor'}],
+      neg:[{driver:'Auto ancillary cycle is not structural like defence — more sensitive to OEM volume and credit cycles',impact:'−cyclicality'},{driver:'6-company corroboration is capex cycle-wide; Gabriel-specific data points are 3 not 6',impact:'−specificity'}],
+      evidence:['GABRIEL Q4 FY26 Investor Presentation — May 27, 2026','Motilal Oswal Initiation — Jun 9, 2026','Opp Record: india-industrial-capex-cycle-2026-Q4'],
+      bottomLine:'Year-1 JV delivery above plan is the single strongest data point — it converts the sunroof story from intent to delivered fact.'
+    },
+    valuation:{
+      pos:[],
+      neg:[{driver:'Price ₹1,241.90 vs base fair value ₹920 — 35% above base; zero margin of safety on the base case',impact:'−35% premium'},{driver:'At ₹1,241.90, you\'re paying 98% of the MO bull target (₹1,266) upfront — near zero residual upside on base/bear',impact:'−limited upside'}],
+      evidence:['India Stock Picker — Fair Value Model Jun 2026','Buy Zone Bar — Jun 2026'],
+      bottomLine:'Worst valuation entry of the 5 stocks relative to fair value. The math only works at ₹830 (buy zone) — not at current price.'
+    },
+    execution:{
+      pos:[{driver:'Sunroof JV EBITDA 15.1% in Year 1 — above 12–14% guidance; execution exceeded management\'s own plan',impact:'+delivered'},{driver:'Core suspension: EV two-wheelers +30% YoY — existing business growing into new segments',impact:'+momentum'}],
+      neg:[{driver:'Genos plant (auto glass) not yet commercial — Q4 CY26 target, no delivery evidence yet',impact:'−unproven'},{driver:'Mahindra/Mobis OEM ramp is a new customer relationship — unconfirmed volumes',impact:'−unconfirmed'},{driver:'₹260–270cr capex load across 3 new plants simultaneously — largest capex programme in Gabriel\'s history',impact:'−capacity strain'}],
+      evidence:['GABRIEL Q4 FY26 Investor Presentation — May 27, 2026'],
+      bottomLine:'One lever delivered above plan (sunroof). Four levers still unproven. Genos Q4 CY26 is the next execution test and the most important data point.'
+    },
+    moat:{
+      pos:[{driver:'Multi-OEM suspension relationships (TVS, Hero, Bajaj, Honda) built over 30+ years — switching cost is real',impact:'+relationships'},{driver:'First mover in Indian premium sunroof segment via Inalfa JV (Tier-1 global partner)',impact:'+first mover'}],
+      neg:[{driver:'No certification-based moat like PARAS — global Tier-1s (Magna, Webasto) could enter if India market scales',impact:'−barrier low'},{driver:'OEM bargaining power is high — auto suppliers typically get squeezed on margins at volume ramp',impact:'−customer power'}],
+      evidence:['Competitive dynamics analysis — GABRIEL Jun 2026'],
+      bottomLine:'Moat is OEM relationships and localization cost advantage — real but not impenetrable. Weaker barrier than PARAS or BEL.'
+    },
+    momentum:{
+      pos:[{driver:'MO Buy initiation at ₹1,266 — institutional coverage creates new buyer base',impact:'+coverage'},{driver:'Both governance risk flags cleared this week — removes overhang',impact:'+sentiment'},{driver:'Price up 3.7% today (₹1,241.90 vs ₹1,197.40 close) — short-term momentum positive',impact:'+price'}],
+      neg:[{driver:'₹260–270cr capex load will dilute near-term FCF and ROCE before benefits materialise',impact:'−FCF drag'},{driver:'Core suspension margins under pressure from raw material costs and new plant absorption',impact:'−margin dilution'}],
+      evidence:['GABRIEL Q4 FY26 Investor Presentation','Motilal Oswal Initiation — Jun 9, 2026'],
+      bottomLine:'Momentum is driven by the MO initiation and governance clearance this week. Next momentum driver is Genos production confirmation in Q4 CY26.'
+    }
+  },
+  dynamics:{
+    gameType:'Competitive upgrade cycle in Indian auto OEM supply chain (non-zero-sum)',
+    gameNote:'The Indian auto ancillary market is expanding with EV adoption and premiumization — Gabriel and peers can all grow. But within each OEM platform decision, it is zero-sum: one supplier wins the contract.',
+    asymmetry:'Gabriel\'s Inalfa JV (global sunroof Tier-1) gives it access to proprietary technology and OEM approval that competitors cannot replicate without their own JV partner.',
+    players:[{name:'Gabriel India',type:'company'},{name:'Minda Industries',type:'competitor'},{name:'Magna International',type:'competitor'},{name:'Webasto',type:'competitor'},{name:'TVS / Hero / Bajaj',type:'customer'},{name:'Mahindra / Mobis',type:'customer'}],
+    valueRows:[{actor:'OEMs (pricing power)',pct:55},{actor:'Gabriel (scale + localization)',pct:28},{actor:'Component suppliers',pct:12},{actor:'Inalfa (JV tech licensor)',pct:5}],
+    valueSummary:'OEMs capture most value as buyers with high bargaining power. Gabriel\'s scale and localization are the margin sources — not technology exclusivity.',
+    equilibrium:'In 3–5 years, 2–3 domestic Tier-1 auto ancillaries will dominate EV-adjacent components. Gabriel is positioned to be one of them but faces real competition from Minda and potentially Tata AutoComp.',
+    wildcards:[{icon:'🔋',text:'EV two-wheeler adoption slows if battery costs stay elevated → Gabriel\'s +30% EV YoY growth stalls; sunroof demand also at risk.'},{icon:'🏭',text:'Mahindra singles out a global Tier-1 sunroof supplier to standardize across platforms → Gabriel loses its anchor Genos customer before scale.'},{icon:'📜',text:'PLI scheme for auto glass launches with 25% incentive → new entrants accelerate, compressing Gabriel\'s first-mover margin on sunroofs.'}],
+    eli15:'Gabriel is trying to upgrade from making parts for yesterday\'s cars (shock absorbers) to parts for tomorrow\'s cars (sunroofs, EV components). It has a head start but the market is not locked — an OEM could switch supplier or the EV ramp could slow. The thesis depends on execution, not monopoly.',
+  },
+},
 ];
 
 // ── FALLBACK DATA (used if JSON fetch fails) ──
-const FALLBACK_META={lastUpdated:'2026-06-20',period:'Q1 FY27 (Jun 2026)',activeOpportunities:2,researchQueueFilled:6,researchQueueTotal:10,portfolioCandidates:5};
+const FALLBACK_META={lastUpdated:'2026-06-22',period:'Q1 FY27 (Jun 2026)',activeOpportunities:2,researchQueueFilled:6,researchQueueTotal:10,portfolioCandidates:6};
 const FALLBACK_OPPS=[{id:'india-industrial-capex-cycle-2026-Q4',theme:'India Industrial Capex Cycle',confidence:7.8,trend:'Accelerating',status:'Active',dateIdentified:'2026-06-20',corroboration:6,candidateStocks:['BEL','HAL','JNKINDIA','LT','PARAS'],whyNow:['BEL QRSAM contract expected Jun–Jul 2026 — revenue recognition begins FY27 Q2 if awarded on schedule','HAL LCA Mark-1A deliveries targeted Aug/Sep 2026 — near-term revenue recognition milestone','Six companies across defence, infrastructure, auto, and industrials all cited demand acceleration simultaneously'],risks:['L&T FY26 revenue missed guidance by 300 bps despite order book beat — execution risk is real','India capex cycle is interest-rate-sensitive; RBI tightening in H2 FY27 could defer projects'],evidenceCount:6,evidenceSources:['LT Q4 FY26 Earnings Call — 2026-05-05','HAL Q4 FY26 Earnings Call — 2026-05-15','PARAS Q4 FY26 Quarterly Results — 2026-05-13','JNKINDIA Q4 FY26 Earnings Call — 2026-05-21','BEL Q4 FY26 Earnings Call — 2026-05-22','GABRIEL Q4 FY26 Earnings Call — 2026-05-28']},{id:'defence-electronics-aerospace-2026-Q4',theme:'Indian Defence Electronics & Aerospace Supply Chain',confidence:7.5,trend:'Accelerating',status:'Active',dateIdentified:'2026-06-20',corroboration:4,candidateStocks:['BEL','HAL','LT','PARAS'],whyNow:['BEL QRSAM contract expected Jun–Jul 2026 — specific near-term named catalyst','HAL LCA Mark-1A deliveries Aug/Sep 2026 — concrete production milestone','IAF MALE UAV programme (₹30,000cr) received bids from 10 qualified bidders'],risks:['HAL LCA Mark-1A was already delayed once; Aug/Sep 2026 target is management commitment, not contractual','All order inflows depend on Union Budget defence allocation'],evidenceCount:4,evidenceSources:['LT Q4 FY26 Earnings Call — 2026-05-05','HAL Q4 FY26 Earnings Call — 2026-05-15','PARAS Q4 FY26 Quarterly Results — 2026-05-13','BEL Q4 FY26 Earnings Call — 2026-05-22']}];
-const FALLBACK_QUEUE={weekOf:'2026-06-20',note:'First run. Only 6 of 10 slots filled — next run (Q1 FY27 earnings, Aug 2026) will expand coverage.',entries:[{rank:1,ticker:'BEL',company:'Bharat Electronics Ltd',reason:'FY27 order inflow guidance >₹55,000cr vs FY26 inflows of ₹30,000cr (83% step-up), with QRSAM contract expected Jun–Jul 2026',signalSource:'Q4 FY26 Earnings Call — BEL — 2026-05-22',opportunityId:'defence-electronics-aerospace-2026-Q4',portfolioCandidate:true},{rank:2,ticker:'HAL',company:'Hindustan Aeronautics Ltd',reason:'Order book ₹2,54,538cr (+34% YoY, 7.7× FY26 revenue) with LCA Mark-1A deliveries targeting Aug/Sep 2026',signalSource:'Q4 FY26 Earnings Call — HAL — 2026-05-15',opportunityId:'defence-electronics-aerospace-2026-Q4',portfolioCandidate:true},{rank:3,ticker:'JNKINDIA',company:'JNK India Ltd',reason:'Order book +81% YoY to ₹1,961cr with first international export order (UAE/ADNOC) and FY27 revenue guidance 25–30% growth',signalSource:'Q4 FY26 Earnings Call — JNKINDIA — 2026-05-21',opportunityId:'india-industrial-capex-cycle-2026-Q4',portfolioCandidate:true},{rank:4,ticker:'LT',company:'Larsen & Toubro Ltd',reason:'Order book ₹7.40 trillion (+28% YoY) beat guidance with K9 Vajra-T artillery contract (₹5,000–10,000cr) awarded post-Q4',signalSource:'Q4 FY26 Earnings Call — LT — 2026-05-05',opportunityId:'india-industrial-capex-cycle-2026-Q4',portfolioCandidate:true},{rank:5,ticker:'PARAS',company:'Paras Defence & Space Technologies',reason:'BEL electro-optics subcontract ₹52.82cr awarded Jun 2, 2026 confirms Tier-2 supply chain deepening; Q4 revenue +58% YoY',signalSource:'Q4 FY26 Quarterly Results — PARAS — 2026-05-13',opportunityId:'defence-electronics-aerospace-2026-Q4',portfolioCandidate:true},{rank:6,ticker:'GABRIEL',company:'Gabriel India Ltd',reason:'Motilal Oswal initiation projects 55% PAT CAGR FY26–28 anchored on EV-adjacent product pivot with Buy target ₹1,266',signalSource:'Q4 FY26 Earnings Call — GABRIEL — 2026-05-28',opportunityId:null,portfolioCandidate:false}]};
+const FALLBACK_QUEUE={weekOf:'2026-06-20',note:'First run. Only 6 of 10 slots filled — next run (Q1 FY27 earnings, Aug 2026) will expand coverage.',entries:[{rank:1,ticker:'BEL',company:'Bharat Electronics Ltd',reason:'FY27 order inflow guidance >₹55,000cr vs FY26 inflows of ₹30,000cr (83% step-up), with QRSAM contract expected Jun–Jul 2026',signalSource:'Q4 FY26 Earnings Call — BEL — 2026-05-22',opportunityId:'defence-electronics-aerospace-2026-Q4',portfolioCandidate:true},{rank:2,ticker:'HAL',company:'Hindustan Aeronautics Ltd',reason:'Order book ₹2,54,538cr (+34% YoY, 7.7× FY26 revenue) with LCA Mark-1A deliveries targeting Aug/Sep 2026',signalSource:'Q4 FY26 Earnings Call — HAL — 2026-05-15',opportunityId:'defence-electronics-aerospace-2026-Q4',portfolioCandidate:true},{rank:3,ticker:'JNKINDIA',company:'JNK India Ltd',reason:'Order book +81% YoY to ₹1,961cr with first international export order (UAE/ADNOC) and FY27 revenue guidance 25–30% growth',signalSource:'Q4 FY26 Earnings Call — JNKINDIA — 2026-05-21',opportunityId:'india-industrial-capex-cycle-2026-Q4',portfolioCandidate:true},{rank:4,ticker:'LT',company:'Larsen & Toubro Ltd',reason:'Order book ₹7.40 trillion (+28% YoY) beat guidance with K9 Vajra-T artillery contract (₹5,000–10,000cr) awarded post-Q4',signalSource:'Q4 FY26 Earnings Call — LT — 2026-05-05',opportunityId:'india-industrial-capex-cycle-2026-Q4',portfolioCandidate:true},{rank:5,ticker:'PARAS',company:'Paras Defence & Space Technologies',reason:'BEL electro-optics subcontract ₹52.82cr awarded Jun 2, 2026 confirms Tier-2 supply chain deepening; Q4 revenue +58% YoY',signalSource:'Q4 FY26 Quarterly Results — PARAS — 2026-05-13',opportunityId:'defence-electronics-aerospace-2026-Q4',portfolioCandidate:true},{rank:6,ticker:'GABRIEL',company:'Gabriel India Ltd',reason:'Motilal Oswal initiation projects 55% PAT CAGR FY26–28 anchored on EV-adjacent product pivot with Buy target ₹1,266',signalSource:'Q4 FY26 Earnings Call — GABRIEL — 2026-05-28',opportunityId:'india-industrial-capex-cycle-2026-Q4',portfolioCandidate:true}]};
 
 // ── DATA (loaded from JSON) ──
 let DATA = {meta:FALLBACK_META, opportunities:FALLBACK_OPPS, queue:FALLBACK_QUEUE};

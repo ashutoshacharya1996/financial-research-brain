@@ -62,4 +62,16 @@ None yet — eligible for screener this run (confidence now ≥ 5.0 with confirm
 2 companies this week | 2 companies cumulative
 
 ## Last Updated
-2026-06-21
+2026-06-22
+
+---
+
+## Update — 2026-06-22 (Extraction Run)
+
+**JNKINDIA FY26 financials confirmed from press release PDF:**
+- Revenue ₹838 Cr (+68% YoY); Order Inflows FY26 ₹1,694.4 Cr; **Book-to-bill 2.0x**
+- Management verbatim: "JNK India is well-positioned to capture opportunities in both traditional and sustainable energy sectors **in India and abroad**"
+- Green hydrogen JV (JNK Chemdist): 7% group revenue in debut year — clean energy export potential layered on top of industrial export thesis
+- Stock +94% YTD 2026 reflects market's pricing of this international thesis
+
+**Confidence revised: 6.5** (from 6.0) — book-to-bill 2.0x and explicit CEO statement on international ambition add quality to what was a single-order signal. Still capped below 7.0 pending a second international order win.
