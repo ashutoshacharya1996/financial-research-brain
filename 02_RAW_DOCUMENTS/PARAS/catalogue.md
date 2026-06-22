@@ -27,6 +27,7 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 
 | Date | Source | Type | Title | URL | Status |
 |---|---|---|---|---|---|
+| 2026-05-22 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_22052026121136_Investormeet.pdf | New |
 | 2026-06-03 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_03062026131537_Investormeet09062026.pdf | New |
 | 2026-06-10 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_10062026152832_InvestormeetKotakLondon.pdf | New |
 | 2026-04-30 | NSE | Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PARAS_30042026130338_IntimationDRDOOrder30042026.pdf | New |

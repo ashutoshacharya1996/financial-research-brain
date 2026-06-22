@@ -30,6 +30,11 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 
 | Date | Source | Type | Title | URL | Status |
 |---|---|---|---|---|---|
+| 2026-05-28 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_28052026154717_Intimation28052026.pdf | New |
+| 2026-05-13 | NSE | Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PAM_13052026144608_AGM2026NewspaperAdvtPre.pdf | New |
+| 2026-05-07 | NSE | Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_07052026104518_PressRelease07052026.pdf | New |
+| 2026-05-05 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_05052026210809_IntimationKMP05052026.pdf | New |
+| 2026-04-24 | NSE | Filing | Press Release | https://nsearchives.nseindia.com/corporate/PAM_24042026100811_PressRelease24042026.pdf | New |
 | 2026-06-03 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_03062026144751_intimation03062026.pdf | New |
 | 2026-05-15 | NSE | Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PAM_15052026142228_AGM2026NewspaperAdvtPost.pdf | New |
 | 2026-05-14 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_14052026185323_LTIntegratedReportFY26.pdf | New |
