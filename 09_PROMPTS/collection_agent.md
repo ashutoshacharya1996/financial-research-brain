@@ -13,6 +13,10 @@ For each tracked company, the Collection Agent must:
 5. save usable raw files or text snapshots,
 6. index failures without stopping the run.
 
+It must also run a broad discovery news lane under
+`02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/` so the Universe Manager has fresh
+signals for companies that are not already tracked.
+
 Do not summarize, analyse, or form opinions. Collection is deterministic and
 non-AI.
 
@@ -99,6 +103,8 @@ Discovery-wide material remains under:
 
 ```text
 02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/
+02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/evidence-index.jsonl
+02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-news.md
 ```
 
 `evidence-index.jsonl` is the durable machine-readable audit trail.
@@ -122,9 +128,4 @@ Discovery-wide material remains under:
 - Do not summarize, extract, or analyse documents.
 - Never let one bad source stop the run.
 - Record `failure_reason` for 403, 404, 429, timeout, connection error,
-  paywall, malformed response, unsupported file type, and validation failure.
-- Reject fake PDFs such as HTML error pages with `.pdf` URLs.
-- Preserve source URL and metadata even if the content is unavailable.
-- Universe Manager decides what companies are tracked; Collection only gathers
-  evidence for selected companies.
-
+  paywall, malformed response
