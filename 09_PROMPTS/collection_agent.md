@@ -17,6 +17,9 @@ It must also run a broad discovery news lane under
 `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/` so the Universe Manager has fresh
 signals for companies that are not already tracked.
 
+Google News RSS is a signal detector, not proof. NSE/BSE are valuable evidence
+sources, but the workflow must not depend on downloading NSE/BSE PDFs.
+
 Do not summarize, analyse, or form opinions. Collection is deterministic and
 non-AI.
 
@@ -36,6 +39,9 @@ All external sources are fallible:
 - any future external source
 
 The workflow must never fail only because one source cannot be retrieved.
+
+No individual website is mandatory. Every material signal should be discoverable
+through multiple evidence paths.
 
 For every discovered item:
 
@@ -116,9 +122,34 @@ Discovery-wide material remains under:
 
 | Tier | Meaning | Handling |
 |---|---|---|
-| Tier 1 | Filings, company disclosures, annual reports, earnings calls, investor presentations, press releases, credit reports, high-quality industry reports | Prioritize download; if blocked, attempt corroboration |
-| Tier 2 | News articles, discovery news, sector updates, order-win/capex/tender coverage | Save text snapshot or metadata; corroborate if signal is material |
-| Tier 3 | Aggregator headlines, duplicate reposts, social chatter, unverified claims | Metadata-only is acceptable unless corroborated |
+| Tier 1 | Company IR pages, company press releases, annual reports, earnings calls, investor presentations, credit rating reports from CRISIL/ICRA/CARE/India Ratings | One Tier 1 source can confirm a material signal |
+| Tier 2 | BSE/NSE filings or metadata, Business Standard, Moneycontrol, Economic Times, CNBC-TV18, NDTV Profit/BQ Prime | Two independent Tier 2 sources can confirm a material signal |
+| Tier 3 | Google News RSS, aggregators, duplicate headlines, market commentary, social/unverified claims | Detection only unless corroborated |
+
+---
+
+## Discovery Lanes
+
+| Lane | Role |
+|---|---|
+| Lane A | Tracked company evidence for `fetch_enabled=true` |
+| Lane B | Broad news discovery; detects possible signals only |
+| Lane C | Company website / IR discovery for high-signal names |
+| Lane D | Corroboration search across company site, rating agencies, BSE/NSE metadata, and credible media |
+| Lane E | Credit rating agency scan |
+
+The scheduled script currently runs Lane A and Lane B and records
+corroboration queries for Lane C/D/E follow-up.
+
+---
+
+## Signal Classification
+
+| Classification | Rule |
+|---|---|
+| Confirmed | 1 Tier 1 source, or 2 independent Tier 2 sources |
+| Watch | 1 Tier 2 source, repeated weak signals, or a material headline needing corroboration |
+| Ignore | Duplicate aggregators, social/low-quality reposts, immaterial order size, unverifiable ticker/company |
 
 ---
 
@@ -128,4 +159,10 @@ Discovery-wide material remains under:
 - Do not summarize, extract, or analyse documents.
 - Never let one bad source stop the run.
 - Record `failure_reason` for 403, 404, 429, timeout, connection error,
-  paywall, malformed response
+  paywall, malformed response, unsupported file type, and validation failure.
+- Reject fake PDFs such as HTML error pages with `.pdf` URLs.
+- Preserve source URL and metadata even if the content is unavailable.
+- Universe Manager decides what companies are tracked; Collection only gathers
+  evidence for selected companies.
+- Do not try to bypass NSE/BSE protections. Save the failure, try alternate
+  evidence paths, and continue.
