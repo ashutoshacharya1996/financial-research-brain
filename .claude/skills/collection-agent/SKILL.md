@@ -21,6 +21,10 @@ For each tracked company, locate source items, save metadata, attempt retrieval,
 validate content, save usable local files or text snapshots, and preserve failure
 reasons when retrieval fails.
 
+Also collect broad discovery news into `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/`
+so Universe Manager can promote new companies that are not yet marked
+`fetch_enabled=true`.
+
 Do not summarize. Do not analyse. Do not form opinions.
 
 ---
@@ -32,6 +36,7 @@ Do not summarize. Do not analyse. Do not form opinions.
 | Companies to collect for | `01_UNIVERSE/company_master.csv` |
 | Existing machine-readable evidence index | `02_RAW_DOCUMENTS/<TICKER>/evidence-index.jsonl` |
 | Existing human catalogue | `02_RAW_DOCUMENTS/<TICKER>/catalogue.md` |
+| Discovery evidence | `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/evidence-index.jsonl` |
 
 Default: collect for rows where `fetch_enabled=true`. If that column is not yet
 present during migration, use the explicit user request or the current active
@@ -113,6 +118,8 @@ Discovery-wide material remains under:
 
 ```text
 02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/
+02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/evidence-index.jsonl
+02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-news.md
 ```
 
 ---
@@ -145,4 +152,3 @@ Discovery-wide material remains under:
 
 **Claude Haiku** (or equivalent lightweight model) for manual collection review.
 The scheduled Sunday collection script remains deterministic Python.
-
