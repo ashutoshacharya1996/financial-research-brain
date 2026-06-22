@@ -30,6 +30,16 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 
 | Date | Source | Type | Title | URL | Status |
 |---|---|---|---|---|---|
+| 2026-06-20 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_20062026214334_Intimation_-_LTN_Compute.pdf | New |
+| 2026-06-20 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_20062026204754_Analyst_Meet_Intimation-200626.pdf | New |
+| 2026-06-06 | NSE | Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PAM_06062026155747_IntimationChairmanSpeech06062026.pdf | New |
+| 2026-05-24 | NSE | Filing | Cessation | https://nsearchives.nseindia.com/corporate/PAM_24052026181837_CessationSA.pdf | New |
+| 2026-05-14 | NSE | Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/PAM_14052026185748_LTIntegratedReportFY26.pdf | New |
+| 2026-05-13 | NSE | Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_13052026101129_PressRelease13052026.pdf | New |
+| 2026-05-05 | NSE | Filing | Change in Management | https://nsearchives.nseindia.com/corporate/PAM_05052026175304_LTResultMarch2026.pdf | New |
+| 2026-05-05 | NSE | Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PAM_05052026171629_LTResultMarch2026.pdf | New |
+| 2026-05-05 | NSE | Filing | Allotment of Securities | https://nsearchives.nseindia.com/corporate/PAM_05052026123629_ESOPAllotment05052026.pdf | New |
+| 2026-04-30 | NSE | Filing | Press Release | https://nsearchives.nseindia.com/corporate/PAM_30042026115253_PressRelease30042026.pdf | New |
 | 2026-06-21 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_21062026000405_SEIntimationLTNCompute20062026.pdf | New |
 | 2026-06-20 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_20062026234444_AnalystMeetIntimation20062026.pdf | New |
 | 2026-06-06 | NSE | Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PAM_06062026155938_IEPFNewspaperAdvt06062026.pdf | New |
