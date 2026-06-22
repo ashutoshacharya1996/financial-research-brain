@@ -128,20 +128,20 @@ This maintains the bidirectional link: Theme → Opportunity → Research Queue 
 
 ### Step 9 — Identify Portfolio Handoff Candidates
 
-Select up to 3 stocks from the Top 10 or Top 3 Opportunities where the signal is investment-relevant — meaning it could plausibly change underwriting decisions if verified.
+Select up to 3 stocks from the Top 10 or Top 3 Opportunities for Investment Impact note creation. Do not select a stock just because it sounds exciting.
+
+Select a stock only if **all four** criteria are met:
+1. The signal is primary-source verified or clearly sourced (not inferred)
+2. The signal affects at least one of: growth, margins, cash conversion, moat, management quality, valuation, or portfolio fit
+3. There is a clear question for the India Stock Picker to answer if the note escalates
+4. There is at least one named blocker or risk to test
 
 For each handoff candidate:
 - Identify the **strongest signal** this week (the specific delta or corroboration that's material)
 - Identify the **strongest blocker** that currently prevents underwriting (valuation flag, cash conversion concern, execution risk, governance issue, portfolio conflict)
 - Record both in Section 3 of the weekly report
 
-These 3 names hand off to the Investment Impact Agent, which will:
-1. Fact-check the signal
-2. Assess financial impact (growth, margins, cash, moat, valuation)
-3. Identify 2–3 specific buy blockers
-4. Decide routing: Re-run India Stock Picker (Deep Dive) / Upgrade Watchlist / Keep Tracking / Ignore
-
-**Rule:** Do not select a handoff candidate if the strongest blocker is structural (unlikely to resolve in 1–2 quarters). Prefer candidates where blockers are addressable.
+The actual Investment Impact notes are produced by `09_PROMPTS/investment_impact.md` — write the note path in the weekly report and the agent will fill it.
 
 ---
 
@@ -152,6 +152,7 @@ See `07_OPPORTUNITIES/weekly_output_template.md` for the exact format.
 Summary:
 - **Section 1:** Markdown table, 10 rows, one stock per row with rank, reason, signal source, and optional opportunity link
 - **Section 2:** Structured block per Opportunity — theme, confidence, trend, stocks, why-now bullets, risk bullets, evidence count, link to active file
+- **Section 3: Portfolio Handoff** — up to 3 names, each with strongest signal, strongest blocker, and impact note path
 - **Signal Notes:** 2–4 sentences on what changed vs. last week
 
 ---

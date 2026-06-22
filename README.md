@@ -341,7 +341,9 @@ Decision types:
 
 Output: Investment Impact Notes in `08_PORTFOLIO_INPUTS/investment-impact/`
 
-Key rule: **Positive signals cannot override failed quality gates, weak cash conversion, valuation flags, or portfolio constraints.**
+Key rules:
+* **Positive signals cannot override failed quality gates, weak cash conversion, valuation flags, or portfolio constraints.**
+* **This agent never outputs Buy / Sell / Add / Exit.** Routing decision only.
 
 ⸻
 

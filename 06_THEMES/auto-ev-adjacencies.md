@@ -4,8 +4,8 @@
 Emerging
 
 ## Confidence Score
-5.2 / 10
-Justification: Two companies with EV-adjacent signals this week, but they are different types of exposure — Gabriel India is a traditional auto component maker entering new EV-compatible products (sunroofs, solar dampers), while JNK India's green hydrogen signal is industrial/energy rather than automotive; the theme is coherent at the level of "Indian industrial companies positioning for energy transition," but the automotive-specific EV pivot thesis rests primarily on Gabriel, which is a single-company signal at that specificity.
+5.6 / 10
+Justification: Gabriel India's investment case is now better-evidenced — FY26 PAT ₹252cr confirmed, Core ROCE reaching 37.7% by FY28 (+800bps), and a decade of 81% cash conversion supporting the new-product-launch capital model — but the EV pivot thesis remains primarily a Gabriel-specific story with JNK India's green hydrogen signal still unconfirmed by any order data; corroboration count unchanged at 2.
 
 ## Trend Direction
 Accelerating
@@ -17,11 +17,13 @@ Companies mentioning this theme this week:
 |---|---|---|---|---|---|
 | GABRIEL | Q4 FY26 Earnings Call | 2026-05-28 | New mention | Medium | Sunroofs, solar dampers, e-mobility adjacencies — management guiding at least one new product per year; ₹50,000 crore group target 2030 |
 | JNKINDIA | Q4 FY26 Earnings Call | 2026-05-21 | New mention | Low | Green hydrogen orders mentioned as emerging segment; no order value or timeline given |
+| GABRIEL | Analyst Initiation + Earnings Update | 2026-06-21 | Strengthening | High | FY26 PAT ₹252cr confirmed; Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA 81%; net cash balance sheet; WC 27 days — quality of the EV pivot execution vehicle is now higher than previously evidenced |
 
 ## Supporting Data
 
 - **GABRIEL** — Motilal Oswal Initiation Note — June 9, 2026: "management targeting group revenues of ₹50,000 crore by 2030 and plans to launch at least one new product annually while expanding into adjacencies such as sunroofs, solar dampers, and e-mobility" — Motilal projects PAT CAGR 55% FY26–28 anchored on new product revenue
 - **JNKINDIA** — Q4 FY26 Earnings Call — May 21, 2026: Green hydrogen orders described as "emerging" segment — no specific order size or customer named; noted as directional signal only
+- **GABRIEL** — Earnings Update — June 2026: FY26 consolidated PAT ₹252.2cr confirmed; Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA ratio 81%; net cash; WC ~27 days — strongest balance sheet quality signal in auto components peer group
 
 ## Beneficiaries
 
@@ -59,7 +61,7 @@ None yet — first tracking run.
 - EV penetration in India remains below 5% of total new vehicle sales — domestic EV transition is slower than management narratives suggest
 
 ## Corroboration Count
-2 companies this week | 2 companies cumulative (first run) — AT THRESHOLD
+2 companies this week | 2 companies cumulative
 
 ## Last Updated
-2026-06-20
+2026-06-21
