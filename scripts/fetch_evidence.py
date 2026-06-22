@@ -12,6 +12,7 @@ import sys
 import time
 import urllib.request
 import urllib.error
+import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -131,7 +132,6 @@ def fetch_news(row: dict, out_dir: Path, session: requests.Session):
     )
 
     try:
-        import urllib.parse
         r = retry_get(rss_url, session)
         root = ET.fromstring(r.content)
         items = root.findall(".//item")[:15]
@@ -390,5 +390,4 @@ def main():
 
 
 if __name__ == "__main__":
-    import urllib.parse
     main()
