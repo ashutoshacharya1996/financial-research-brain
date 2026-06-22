@@ -15,6 +15,16 @@ Then say: _"New evidence is in. Run the pipeline from extraction onwards. Skip u
 
 Claude Code processes extraction → delta → themes → opportunity screener → weekly brief and commits the outputs.
 
+If a stock from the weekly report looks investment-relevant, run the Investment
+Impact layer before any stock-selection work:
+
+```
+Run investment impact notes for the top handoff names from this week's report.
+```
+
+This creates files in `08_PORTFOLIO_INPUTS/investment-impact/`. Those notes are
+the bridge into India Stock Picker review. They are not buy/sell decisions.
+
 To add a company to the fetch cycle: add a row to `data/company_master.csv` with `active: true`.
 
 ---
@@ -57,6 +67,8 @@ Theme Detection Agent
 Opportunity Screener          ← produces the weekly Top 10 + Top 3
       ↓
 Weekly Opportunity Report
+      ↓
+Investment Impact Layer       ← translates signals into underwriting triggers
       ↓
 Market Intelligence Agent
       ↓
@@ -235,6 +247,13 @@ Examples:
 * Risk alerts
 * Sector scorecards
 * Company watchlists
+* Investment Impact notes that bridge opportunity signals into underwriting
+
+Rule:
+
+* A positive Opportunity signal can create a handoff.
+* Only the India Stock Picker can create a Buy / Watchlist / Pass verdict.
+* Only Portfolio Fit can convert a Buy candidate into an actual portfolio action.
 
 ⸻
 
@@ -319,6 +338,22 @@ Outputs:
 * Top 10 Stocks for the Research Queue
 * Top 3 High-Conviction Opportunities
 * Updated Opportunity Records in `07_OPPORTUNITIES/active/`
+* Portfolio Handoff candidates for Investment Impact notes
+
+⸻
+
+Agent 6.5 – Investment Impact Agent
+
+Bridges Opportunity Discovery to stock selection.
+
+Purpose:
+
+* Fact-check the specific signal
+* Map the impact to growth, margins, cash conversion, moat, valuation, and portfolio fit
+* Identify buy blockers
+* Decide whether to re-run the India Stock Picker, upgrade watchlist priority, keep tracking, or ignore
+
+Hard rule: this agent never outputs Buy / Sell / Add / Exit.
 
 ⸻
 
