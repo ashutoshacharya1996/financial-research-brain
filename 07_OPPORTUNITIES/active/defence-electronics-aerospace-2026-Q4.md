@@ -5,10 +5,10 @@
 - **opportunity_id:** defence-electronics-aerospace-2026-Q4
 - **theme_name:** Indian Defence Electronics & Aerospace Supply Chain
 - **theme_status:** Developing
-- **confidence_score:** 8.3
+- **confidence_score:** 8.7
 - **trend_direction:** Accelerating
 - **date_identified:** 2026-06-20
-- **last_validated:** 2026-06-21
+- **last_validated:** 2026-06-22
 - **status:** Active
 
 ---
@@ -20,7 +20,7 @@
 | BEL | Bharat Electronics Ltd | QRSAM ₹30,000cr confirmed; BEL ~70% system integrator (~₹21,000cr share); July 2026 signing expected; order book lifts ~40% on signing day (₹73,882cr → ~₹94,000cr); FY27 inflow guidance >₹55,000cr |
 | HAL | Hindustan Aeronautics Ltd | FY26 PAT ₹9,115.52cr (27.6% net margin) — extraordinarily high for a manufacturer; order book ₹2,54,538cr (7.7x revenue); LCA Mark-1A delivery Aug/Sep 2026; MALE UAV ₹30,000cr bidder |
 | LT | Larsen & Toubro Ltd | K9 Vajra-T ₹7,628.70cr confirmed (MoD, Dec 2024); MALE UAV bid submitted; Lakshya 2031 targets (₹5.8tr revenue by FY31); execution concern: Q4 PAT -3% YoY |
-| PARAS | Paras Defence & Space Technologies | Order book ₹928cr (1.9x FY26 revenue) — first ever disclosed; BEL electro-optics subcontract ₹52.82cr confirmed via regulatory filing (Jun 2, 2026); embedded Tier-2 supply chain position on record |
+| PARAS | Paras Defence & Space Technologies | **[UPGRADED Jun 22]** Order book ₹928cr (1.9x FY26 revenue); BEL electro-optics subcontract ₹52.82cr on record; **FY27/FY28 revenue guidance 30–40% — FIRST EVER management guidance**; GIC + Temasek SWFs at June 9 investor meet; optics strategic pivot management-confirmed |
 
 ---
 
@@ -30,6 +30,9 @@
 - **IAF MALE UAV ₹30,000cr — bids confirmed closed June 16, 2026:** 10 qualified bidders (HAL, LT, Adani, Tata among them); split-order mechanism (L1 + L2 both awarded production lines ~₹15,000cr each); evaluation phase now active — award decision pending but tender closed; per MALE UAV Tender Event — 2026-06-16
 - **LCA Tejas Mark-1A delivery August/September 2026:** HAL committed to first batch of ~20 aircraft; concrete production milestone that triggers FY27 H1 revenue recognition; after one prior delay, this is management's firm target; per Earnings Update — HAL — 2026-06-21
 - **BEL → PARAS supply chain delegation confirmed on official record:** ₹52.82cr electro-optics subcontract placed to PARAS via NSE/BSE regulatory filing — Tier-1 PSU to Tier-2 private company architecture is documented, not anecdotal; per Exchange Filing — PARAS — 2026-06-02
+- **India defence production record ₹1.78 lakh crore FY26 (+15.6% YoY):** Ministry of Defence announcement June 18 — production doubled in 5 years (+110% vs FY21); defence exports ₹38,424 crore (+62.7%); private sector share 24% all-time high; 145 exporting firms; 80+ countries — the most credible macro validation of the India defence thesis available; per MoD Announcement — 2026-06-18
+- **PARAS FY27/FY28 guidance 30–40% revenue growth — FIRST EVER:** Management stated guidance in investor presentation and institutional meetings (Citigroup June 9; Kotak London June 15–16); GIC Group (Singapore SWF) and Temasek Holdings (Singapore SWF) attended the June 9 meet — sovereign wealth fund institutional engagement is the highest quality signal for a small-cap; per Investor Presentation — PARAS — 2026-06-22
+- **Motilal Oswal: BEL top pick, target ₹510:** Independent institutional price target at 45x 2-year forward EPS; June 18 report; adds second broker Buy note on BEL alongside existing coverage; per Motilal Oswal Research — 2026-06-18
 
 ---
 

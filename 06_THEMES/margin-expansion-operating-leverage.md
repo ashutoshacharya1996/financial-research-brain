@@ -4,8 +4,8 @@
 Emerging
 
 ## Confidence Score
-5.5 / 10
-Justification: Two companies this run with concrete margin leverage evidence — GABRIEL's 55% PAT CAGR thesis now anchored by confirmed ₹252cr PAT base, 37.7% Core ROCE by FY28 (+800bps), and 81% decade-long cash conversion; PARAS's Q4 FY26 PAT +89% vs revenue +58% demonstrates implicit leverage; signal crossed the 2-company corroboration threshold this run, but PARAS is a small company without earnings call transparency and GABRIEL is the primary carrier — confidence elevated from below-threshold to 5.5.
+6.5 / 10
+Justification: June 22 update — PARAS management explicitly confirmed strategic pivot to optics-heavy product mix for higher margins (investor presentation June 2026, Whalesbook summary). This elevates PARAS from "implicit leverage via Q4 financials" to "management-confirmed margin expansion intent." Combined with GIC/Temasek institutional validation and explicit 30–40% FY27/FY28 growth guidance, PARAS is now a secondary carrier with confirmed management thesis, not just quarterly data extrapolation. GABRIEL remains the primary carrier. Confidence upgraded 5.5 → 6.5. Two companies with management-stated margin intent now confirmed.
 
 ## Trend Direction
 Accelerating
@@ -19,6 +19,7 @@ Companies mentioning this theme this week:
 | PARAS | Q4 FY26 Quarterly Results | 2026-05-13 | New mention | Medium | PAT +89% YoY Q4 vs revenue +58% YoY — implicit operating leverage; PAT growing 1.5x faster than revenue |
 | GABRIEL | Analyst Initiation + Earnings Update | 2026-06-21 | Strengthening | High | FY26 PAT ₹252.2cr confirmed (base anchored); Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA 81%; WC 27 days; net cash — structural quality compounder profile confirmed |
 | PARAS | Exchange Filing + Q4 Results | 2026-06-21 | Stable | Medium | Order book ₹928cr (1.9x revenue); PAT growing faster than revenue continues; no earnings call but operating leverage implied by Q4 data |
+| PARAS | Investor Presentation 2026 + Institutional Meetings | 2026-06-22 | **Strengthening** | **High** | Management explicitly guiding 30–40% revenue growth FY27/FY28 "while maintaining or growing profitability" — optics-focus strategy confirmed by management as margin driver; sovereign wealth funds GIC + Temasek at June 9 meet validate the thesis |
 
 ## Supporting Data
 
@@ -64,4 +65,4 @@ None yet — first run at threshold. Eligible for screener consideration.
 2 companies this week | 2 companies cumulative — AT THRESHOLD
 
 ## Last Updated
-2026-06-21
+2026-06-22

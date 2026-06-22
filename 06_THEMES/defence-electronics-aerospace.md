@@ -4,8 +4,8 @@
 Developing
 
 ## Confidence Score
-8.3 / 10
-Justification: Second consecutive run with four companies providing concrete ₹ data — QRSAM contract value now confirmed at ₹30,000cr with BEL's ~₹21,000cr share quantified, K9 Vajra-T confirmed at ₹7,628.70cr, MALE UAV tender confirmed at 10 bidders with a split-order mechanism that increases probability of multiple companies winning, and PARAS order book ₹928cr (1.9x revenue) for the first time on record; the only reason this is not higher is HAL's LCA delivery slip (already acknowledged) and the QRSAM one-quarter delay. Counter-arguments must be explicit at 8.0+.
+8.7 / 10
+Justification: June 22 update — three independent streams of confirmation in this run: (1) India defence production record ₹1.78 lakh crore FY26 announced June 18 is the sector-level macro validation of everything tracked in this theme; (2) PARAS management explicitly guiding 30–40% revenue growth FY27/FY28 — first-ever guidance from the Tier-2 supplier in the tracked universe, which extends the thesis to the supply chain layer; (3) Sovereign wealth funds (GIC, Temasek) in the PARAS investor meet validate that institutional capital is seeing the same thesis. QRSAM remains unsigned (risk flag) but the macro environment has never been stronger. Score upgraded 8.3 → 8.7. Counter-arguments unchanged: QRSAM delay risk, HAL delivery track record, MALE UAV winner still unknown.
 
 ## Trend Direction
 Accelerating
@@ -23,6 +23,8 @@ Companies mentioning this theme this week:
 | HAL | MALE UAV Tender Event | 2026-06-16 | Strengthening | High | 10 Indian firms bid; HAL confirmed bidder; window closed June 16 (extended twice); split order (L1+L2) → two production lines mandated; Q4 FY26 PAT ₹4,196cr / FY26 PAT ₹9,116cr (27.6% net margin) confirmed |
 | LT | MALE UAV Tender Event + Earnings Update | 2026-06-21 | Strengthening | High | K9 Vajra-T ₹7,628.70cr (Dec 2024) CONFIRMED (vs "₹5,000–10,000 crore estimate" prior); LT confirmed bidder for MALE UAV ₹30,000cr |
 | PARAS | Press Release — BEL Order | 2026-06-02 | Strengthening | High | Exchange filing confirms ₹52.82cr electro-optics order from BEL; order book ~₹928cr (1.9x FY26 revenue) — FIRST disclosed order book |
+| PARAS | Investor Presentation 2026 + Institutional Meetings | 2026-06-22 | **Strengthening** | **High** | FY27/FY28 revenue guidance 30–40% explicitly stated — first-ever multi-year guidance from Tier-2 supplier; GIC + Temasek at June 9 investor meet confirm sovereign wealth fund institutional engagement |
+| SECTOR | MoD Announcement — India Defence Production Record | 2026-06-18 | **Macro Validation** | **High** | India defence production ₹1.78 lakh crore FY26 (+15.6% YoY, +110% vs FY21); defence exports ₹38,424 crore (+62.7%); private sector share 24% all-time high; 145 exporting firms; 80+ countries |
 
 ## Supporting Data
 
@@ -48,7 +50,7 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-- `defence-electronics-aerospace-2026-Q4` — Confidence: 8.3 / Status: Active
+- `defence-electronics-aerospace-2026-Q4` — Confidence: 8.7 / Status: Active
 
 ## Research Queue Appearances
 
