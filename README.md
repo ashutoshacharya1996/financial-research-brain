@@ -58,9 +58,15 @@ Opportunity Screener          ← produces the weekly Top 10 + Top 3
       ↓
 Weekly Opportunity Report
       ↓
-Market Intelligence Agent
+Portfolio Handoff              ← identifies 3 candidates for deeper review
       ↓
-Research Brief Generator
+Investment Impact Agent       ← fact-checks signals, gates underwriting effort
+      ↓
+Investment Impact Notes       ← routing decision: Deep Dive / Watchlist / Track / Ignore
+      ↓
+India Stock Picker            ← valuation + quality gates (if Impact notes flags for review)
+      ↓
+Portfolio Fit Check           ← personal allocation decision
       ↓
 Portfolio Intelligence Output
 
@@ -226,15 +232,14 @@ Contains:
 
 08_PORTFOLIO_INPUTS
 
-Outputs consumed by the portfolio and stock-selection systems.
+Handoff zone between research discovery and investment decisions.
 
-Examples:
+Contains:
 
-* Theme rankings
-* Opportunity lists
-* Risk alerts
-* Sector scorecards
-* Company watchlists
+* Weekly Portfolio Handoff (3 candidates for Investment Impact review)
+* Investment Impact Notes (fact-checked signals, underwriting gates, routing decisions)
+* Weekly ELI15 brief (human-readable summary)
+* Stock dashboards (reference link to latest India Stock Picker output)
 
 ⸻
 
@@ -318,19 +323,55 @@ Outputs:
 
 * Top 10 Stocks for the Research Queue
 * Top 3 High-Conviction Opportunities
+* Portfolio Handoff (3 names for deeper review)
 * Updated Opportunity Records in `07_OPPORTUNITIES/active/`
 
 ⸻
 
-Agent 7 – Market Intelligence Agent
+Agent 6.5 – Investment Impact Agent
+
+Fact-checks Portfolio Handoff signals, assesses underwriting impact, and gates whether India Stock Picker deep dive is warranted.
+
+Decision types:
+
+* Re-run India Stock Picker (Deep Dive)
+* Upgrade Watchlist Priority
+* Keep Tracking
+* Ignore For Now
+
+Output: Investment Impact Notes in `08_PORTFOLIO_INPUTS/investment-impact/`
+
+Key rule: **Positive signals cannot override failed quality gates, weak cash conversion, valuation flags, or portfolio constraints.**
+
+⸻
+
+Agent 7 – India Stock Picker
+
+Runs on-demand when triggered by Investment Impact notes flagged for "Deep Dive" or "Upgrade Watchlist."
+
+Evaluates: Valuation gates (fair value, buy zones), quality gates (delivery track record, cash conversion), and portfolio fit.
+
+⸻
+
+Agent 8 – Portfolio Fit / Financial Advisor
+
+Runs on-demand after India Stock Picker clears gates.
+
+Assesses: FIRE horizon alignment, portfolio slot availability, personal biases, holdings overlap.
+
+Final decision: Add / Hold / Avoid
+
+⸻
+
+Agent 9 – Market Intelligence Agent
 
 Monitors external sources and industry developments.
 
 ⸻
 
-Agent 8 – Research Committee Agent
+Agent 10 – Research Committee Agent
 
-Challenges conclusions and seeks contradictory evidence.
+Challenges conclusions and seeks contradictory evidence (run as needed, not weekly).
 
 Purpose:
 

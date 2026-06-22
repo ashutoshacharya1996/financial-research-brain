@@ -129,23 +129,40 @@ For each scenario (Bull / Base / Bear):
 
 ### Step 5 — Panel 3: Personal Fit (Financial Advisor)
 
-**5A. Current position** — from live Kite holdings:
+**5A. Load Investment Impact Note (if available)**
+
+Check: `08_PORTFOLIO_INPUTS/investment-impact/<TICKER>-impact-*.md`
+
+If an Investment Impact note exists for this stock from the current week (most recent date):
+- Load the routing decision: [Re-run Deep Dive] / [Upgrade Watchlist] / [Keep Tracking] / [Ignore For Now]
+- Load the buy blockers (2–3 listed specifically)
+- **Critical:** Test each blocker in this dashboard. Personal recommendation must explicitly acknowledge and verify that blockers are either resolved or correctly interpreted.
+
+If routing decision is "Ignore For Now" or "Keep Tracking": defer this dashboard or add a warning header stating "Investment Impact Agent flags this for monitoring only. See investment-impact note for blockers."
+
+**5B. Current position** — from live Kite holdings:
 - Held or not held
 - If held: quantity, average cost, current value, % of portfolio, unrealised P&L, holding period
 - If not held: confirm slot availability (Core / Extended) per india-stock-picker portfolio rules
 
-**5B. Portfolio fit assessment:**
+**5C. Portfolio fit assessment:**
 - Sector / theme concentration: does adding this stock push theme weight above 15% of equity?
 - FIRE fit: is the thesis duration (typically 2–5 years for these themes) consistent with the 10-year FIRE runway?
 - Displacement: if portfolio is at ceiling (12 stocks), which position would this displace?
 
-**5C. Personal recommendation** — one of four verdicts:
-- **Add this week** — if: price is in Buy Zone or better, Poised Score ≥ 6.5, portfolio has capacity, no blocking flag
+**5D. Test listed blockers** — if Investment Impact note exists:
+For each blocker listed in the impact note, run a specific gate check:
+- **Blocker: [Name]** — [Current status measured] — [Gate: Pass / Fail / Unknown]
+
+Do NOT recommend Add if any gate returns Fail (e.g. "Cash conversion broken" gates as Fail if DSO is rising). Unknown gates should be labeled for due diligence.
+
+**5E. Personal recommendation** — one of four verdicts:
+- **Add this week** — if: price is in Buy Zone or better, Poised Score ≥ 6.5, portfolio has capacity, all tested blockers pass or are absent, Investment Impact routing is "Deep Dive" or "Upgrade Watchlist"
 - **Add on dip — watch ₹X** — if: thesis is strong but price is in Watch or Expensive zone; give specific entry price (base fair value −15%)
 - **Hold** — if: already held at appropriate size, or if held and thesis is intact but no action needed
-- **Avoid** — if: blocking issue (PE > 40, execution flag, sector overweight, thesis doesn't fit FIRE runway)
+- **Avoid** — if: blocking issue (PE > 40, execution flag, sector overweight, thesis doesn't fit FIRE runway, Investment Impact flags for "Ignore")
 
-**5D. Behavioural check** — name any active bias. Do not soften.
+**5F. Behavioural check** — name any active bias. Do not soften.
 
 ---
 

@@ -99,9 +99,23 @@ These meet the full Opportunity Record threshold: ≥ 3 corroborating companies,
 
 ---
 
+## Section 3: Portfolio Handoff
+
+Up to 3 names from Section 1 or Section 2 that deserve Investment Impact review — fact-check, impact assessment, blocker identification, and routing decision (Deep Dive / Watchlist / Track / Ignore).
+
+Each handoff entry includes strongest signal + strongest blocker:
+
+| Ticker | Company Name | Strongest Signal | Strongest Blocker | Impact Link |
+|--------|--------------|------------------|-------------------|-------------|
+| [TICKER] | [Name] | [Most material positive delta] | [Most material concern] | investment-impact/[TICKER]-impact-YYYY-MM-DD.md |
+| [TICKER] | [Name] | [Most material positive delta] | [Most material concern] | investment-impact/[TICKER]-impact-YYYY-MM-DD.md |
+| [TICKER] | [Name] | [Most material positive delta] | [Most material concern] | investment-impact/[TICKER]-impact-YYYY-MM-DD.md |
+
+---
+
 ## Signal Notes
 
-[2–4 sentences. What changed vs. last week? Which themes strengthened, which weakened, any new themes entering the pipeline, any opportunities that were closed or downgraded.]
+[2–4 sentences. What changed vs. last week? Which themes strengthened, which weakened, any new themes entering the pipeline, any opportunities that were closed or downgraded. Which Portfolio Handoff candidates are priority and why.]
 ```
 
 ---
