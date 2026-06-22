@@ -4,8 +4,8 @@
 Developing
 
 ## Confidence Score
-8.3 / 10
-Justification: Second consecutive run with four companies providing concrete ₹ data — QRSAM contract value now confirmed at ₹30,000cr with BEL's ~₹21,000cr share quantified, K9 Vajra-T confirmed at ₹7,628.70cr, MALE UAV tender confirmed at 10 bidders with a split-order mechanism that increases probability of multiple companies winning, and PARAS order book ₹928cr (1.9x revenue) for the first time on record; the only reason this is not higher is HAL's LCA delivery slip (already acknowledged) and the QRSAM one-quarter delay. Counter-arguments must be explicit at 8.0+.
+9.0 / 10
+Justification: Three consecutive runs with strengthening concrete evidence — this run adds a sector-level government confirmation (India defence production ₹1.78 lakh crore +15.6% FY26, record exports ₹38,424 crore), PARAS's first-ever management guidance (30-40% revenue growth FY27-28, articulated at London roadshow attended by GIC, Temasek, global funds), BEL's multi-programme pipeline decomposed at investor meet (QRSAM + P-75I + AMCA + data centres explicitly named), ₹608 crore Q1 FY27 order flow across avionics/radar/EW/tanks, and the macro private sector share at 24% all-time high (₹42,000 crore); the only cap to 9.0 rather than higher is QRSAM still unsigned (slipped twice) and MALE UAV evaluation still pending.
 
 ## Trend Direction
 Accelerating
@@ -23,6 +23,11 @@ Companies mentioning this theme this week:
 | HAL | MALE UAV Tender Event | 2026-06-16 | Strengthening | High | 10 Indian firms bid; HAL confirmed bidder; window closed June 16 (extended twice); split order (L1+L2) → two production lines mandated; Q4 FY26 PAT ₹4,196cr / FY26 PAT ₹9,116cr (27.6% net margin) confirmed |
 | LT | MALE UAV Tender Event + Earnings Update | 2026-06-21 | Strengthening | High | K9 Vajra-T ₹7,628.70cr (Dec 2024) CONFIRMED (vs "₹5,000–10,000 crore estimate" prior); LT confirmed bidder for MALE UAV ₹30,000cr |
 | PARAS | Press Release — BEL Order | 2026-06-02 | Strengthening | High | Exchange filing confirms ₹52.82cr electro-optics order from BEL; order book ~₹928cr (1.9x FY26 revenue) — FIRST disclosed order book |
+| PARAS | Investor Meets — June 2026 | 2026-06-09 / 2026-06-15 / 2026-06-25 | Strengthening | High | First-ever revenue guidance: "30-40% revenue growth in FY27 and FY28 while maintaining or growing profitability"; Sight-25HD >5,000 unit opportunity across FRCV/FICV/RCWS; "India's only listed company in the electro-optic and imaging segment for defence"; London roadshow June 15-16 with GIC, Temasek, global funds |
+| BEL | Order Win Announcement | 2026-05-25 | Strengthening | High | ₹608 crore fresh orders Q1 FY27: avionics, coastal surveillance radar, seekers, jammers, tank sub-systems, laser fuzes, simulators — multi-domain breadth |
+| BEL | Investor Meet | 2026-06-19 | Strengthening | High | QRSAM July 2026 reiterated; P-75I submarines and AMCA (Next-Gen Combat Aircraft) explicitly named as FY27 pipeline; FY27 order inflow target >₹55,000 crore maintained; data centre solutions added as non-defence stream |
+| HAL | Macro Production Record (indirect) | 2026-06-17 | Strengthening | High | India defence production FY26: ₹1.78 lakh crore (+15.6% YoY, record); HAL ~18.6% of total as single contributor; defence exports ₹38,424 crore (record) |
+| MACRO | Government Announcement | 2026-06-17 | New Mention | High | Private sector share 24% (₹42,000 crore) — all-time high; reflects structural shift from PSU-only to mixed defence manufacturing ecosystem; PARAS is directly in this cohort |
 
 ## Supporting Data
 
@@ -34,6 +39,10 @@ Companies mentioning this theme this week:
 - **HAL** — Q4 Earnings Update — June 2026: FY26 PAT ₹9,115.52 crore (27.6% net margin) — first confirmed PAT; Q4 FY26 PAT ₹4,196 crore (+5.4% YoY); Tejas Mark-II prototype targeted March 2027
 - **LT** — Earnings Update — June 2026: K9 Vajra-T CONFIRMED ₹7,628.70 crore (MoD contract Dec 2024, 100 units); MALE UAV bid confirmed
 - **PARAS** — Exchange Filing — June 2, 2026: ₹52.82cr electro-optics from BEL CONFIRMED (regulatory filing); order book ~₹928 crore (1.9x FY26 revenue) — first ever disclosed
+- **PARAS** — Investor Meets — June 2026: First-ever guidance: 30-40% revenue growth FY27 and FY28; Sight-25HD optical system >5,000 unit opportunity across FRCV/FICV/RCWS/armoured vehicles over 3-7 years; "India's only listed electro-optic and imaging defence company"; London roadshow with Kotak (GIC, Temasek, global funds); PL Capital "Armoured Alpha" conference June 25
+- **BEL** — Order Win (NSE filing) — May 25, 2026: ₹608 crore Q1 FY27 orders — avionics, information fusion centres, coastal surveillance radar, seekers, jammers, tank sub-systems, laser-based fuzes, simulators, medical electronics, batteries — 12 product categories, 3 military domains
+- **BEL** — Investor Meet — June 19, 2026: QRSAM July 2026 reiterated; FY27 pipeline decomposed: QRSAM (~₹21,000cr) + P-75I submarines + AMCA + data centre solutions; >₹55,000 crore FY27 order inflow target maintained; Motilal Oswal rates BEL top defence pick with 20% upside (June 18)
+- **MACRO** — Government announcement — June 17, 2026: India defence production FY26 = ₹1.78 lakh crore (+15.6% YoY, all-time record); private sector ₹42,000 crore (24% share, all-time high); defence exports ₹38,424 crore (record); growth 4x since FY13-14 and +110% since FY20-21
 
 ## Beneficiaries
 
@@ -52,7 +61,7 @@ Companies mentioning this theme this week:
 
 ## Research Queue Appearances
 
-8 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6
+12 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6 | 2026-06-22: PARAS #1, BEL #2, HAL #4, LT #6
 
 ## Potential Losers
 
@@ -76,7 +85,7 @@ Companies mentioning this theme this week:
 - MALE UAV: 10-way competition means any single company faces ~10–20% probability of winning; optionality, not certainty
 
 ## Corroboration Count
-4 companies this week | 4 companies cumulative
+5 companies this week (HAL, BEL, LT, PARAS, MACRO) | 5 companies cumulative
 
 ## Last Updated
-2026-06-21
+2026-06-22
