@@ -21,6 +21,7 @@ This agent is triggered on demand — not as part of the Sunday pipeline — bec
 | Target ticker | User request |
 | Active Opportunity Record | `07_OPPORTUNITIES/active/<opportunity-id>.md` |
 | Linked theme record | `06_THEMES/<theme-slug>.md` |
+| Investment Impact note | `08_PORTFOLIO_INPUTS/investment-impact/<TICKER>-impact-YYYY-MM-DD.md` if available |
 | Dashboard schema | `10_DASHBOARD/dashboard_schema.md` |
 | India Stock Picker framework | `.claude/skills/india-stock-picker/SKILL.md` |
 | Financial Forecaster framework | `.claude/skills/financial-forecaster/SKILL.md` |
@@ -43,6 +44,17 @@ Check: `status: Active` AND `corroboration_count ≥ 3`.
 If no matching record: stop and output — "TICKER has no active Opportunity Record. It may be in the Research Queue as an early-signal stock. Run `/india-stock-picker TICKER` for a standalone analysis."
 
 If record found: load it fully. Note the `opportunity_id`, `confidence_score`, `theme_name`, `candidate_stocks`, `why_now`, and `risks`. Load the linked theme record from `06_THEMES/`.
+
+If an Investment Impact note exists for the ticker, load the most recent one
+before valuation. Use it to identify:
+
+- which signal changed
+- which investment-case areas were affected
+- which buy blockers remain
+- whether a full India Stock Picker review was triggered
+
+If no Investment Impact note exists, state that the dashboard is being produced
+directly from the Opportunity Record and live data.
 
 ---
 
@@ -82,6 +94,9 @@ If any Kite call fails: note "live data unavailable as of [timestamp]" and conti
 - Use the appropriate valuation method for the category (PE vs. 10-year median for Compounders; PEG + DCF for Fast Growers; EV/EBITDA for Cyclicals)
 - Use data from the Opportunity Record and Extracted Data where available; supplement with web search for current PE, ROCE, revenue growth if needed
 - Produce three fair value estimates: Bear / Base / Bull
+- Explicitly test any buy blockers listed in the latest Investment Impact note.
+  A positive opportunity signal must not bypass Gate 1 quality or Gate 4
+  valuation checks.
 
 **3B. Render the buy zone bar:**
 
@@ -144,6 +159,10 @@ For each scenario (Bull / Base / Bear):
 - **Add on dip — watch ₹X** — if: thesis is strong but price is in Watch or Expensive zone; give specific entry price (base fair value −15%)
 - **Hold** — if: already held at appropriate size, or if held and thesis is intact but no action needed
 - **Avoid** — if: blocking issue (PE > 40, execution flag, sector overweight, thesis doesn't fit FIRE runway)
+
+If the latest Investment Impact note selected "Upgrade watchlist priority" or
+"Keep tracking only", do not upgrade to "Add this week" unless the India Stock
+Picker gates and live portfolio fit independently support it.
 
 **5D. Behavioural check** — name any active bias. Do not soften.
 

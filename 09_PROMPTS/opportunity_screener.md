@@ -8,6 +8,7 @@ Synthesize all signals from the prior week — theme outputs, delta analysis, an
 
 1. **Top 10 Stocks for the Research Queue** — early-signal, one per stock, evidence-backed
 2. **Top 3 High-Conviction Opportunities** — conviction-stage, meet full Opportunity Record thresholds
+3. **Portfolio Handoff** — the small set of names that deserve Investment Impact notes before any underwriting
 
 This is the engine's primary output. Every other agent feeds into this one.
 
@@ -99,6 +100,11 @@ Use the format defined in `07_OPPORTUNITIES/weekly_output_template.md` exactly.
 
 The date in the filename is the Sunday on which this report is generated.
 
+Include the Portfolio Handoff section. This section is not a recommendation.
+It should identify up to 3 names where a signal is material enough to affect a
+future investment decision, and it must state the strongest remaining blocker
+for each name.
+
 ---
 
 ### Step 7 — Create or Update Opportunity Records
@@ -123,6 +129,31 @@ This maintains the bidirectional link: Theme → Opportunity → Research Queue 
 
 ---
 
+### Step 9 — Identify Investment Impact Notes To Create
+
+From the Top 10 and Top 3, select up to 3 items that deserve an Investment
+Impact note.
+
+Select a stock only if:
+
+- the signal is primary-source verified or clearly sourced
+- the signal affects growth, margins, cash conversion, moat, management,
+  valuation, or portfolio fit
+- there is a clear question for the India Stock Picker to answer
+- there is at least one named blocker or risk to test
+
+Do not select a stock just because it sounds exciting.
+
+Write the required note path in the weekly report:
+
+```text
+08_PORTFOLIO_INPUTS/investment-impact/<TICKER>-impact-YYYY-MM-DD.md
+```
+
+The actual note is produced by `09_PROMPTS/investment_impact.md`.
+
+---
+
 ## Output Format
 
 See `07_OPPORTUNITIES/weekly_output_template.md` for the exact format.
@@ -131,6 +162,7 @@ Summary:
 - **Section 1:** Markdown table, 10 rows, one stock per row with rank, reason, signal source, and optional opportunity link
 - **Section 2:** Structured block per Opportunity — theme, confidence, trend, stocks, why-now bullets, risk bullets, evidence count, link to active file
 - **Signal Notes:** 2–4 sentences on what changed vs. last week
+- **Portfolio Handoff:** up to 3 impact notes to create, each with strongest signal and strongest blocker
 
 ---
 
@@ -143,3 +175,5 @@ Summary:
 5. Opportunities are research hypotheses, not investment recommendations. Do not frame them as buy calls.
 6. If a theme's `trend_direction` changed to Weakening since last week, any linked Opportunity must be flagged for re-validation and its `confidence_score` reviewed.
 7. The report must be written before end of Sunday. It covers signals from the Monday–Saturday window of the prior week.
+8. Do not output Buy, Sell, Add, Exit, target price, or position size. Those belong to the India Stock Picker and portfolio-fit process.
+9. A positive delta can trigger a handoff, but it cannot override valuation, cash conversion, governance, or portfolio blockers.
