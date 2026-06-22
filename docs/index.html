@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Research Dashboard</title>
+<title>Research OS</title>
 <style>
 :root{
   --bg:#000;--s1:#1C1C1E;--s2:#2C2C2E;--s3:#3A3A3C;
@@ -273,6 +273,128 @@ html,body{background:var(--bg);color:var(--t1);font-family:-apple-system,BlinkMa
 .wc-icon{font-size:14px;flex-shrink:0}
 .disclaimer{font-size:11px;color:var(--t3);text-align:center;padding:10px 0 4px;line-height:1.6}
 
+/* RESEARCH OS REDESIGN */
+:root{
+  --terminal:#05070A;
+  --surface:rgba(12,18,27,.92);
+  --surface2:rgba(16,24,36,.76);
+  --line:rgba(174,197,226,.12);
+  --muted:rgba(213,224,238,.56);
+  --accent:#2F8CFF;
+  --accent2:#65D878;
+}
+html,body{background:var(--terminal)}
+.screen{background:
+  radial-gradient(circle at 20% -10%,rgba(47,140,255,.12),transparent 28%),
+  linear-gradient(180deg,#060B12 0%,#030507 48%,#05070A 100%)}
+.hdr{background:rgba(5,8,13,.82);border-bottom:1px solid var(--line)}
+[data-theme="light"] .hdr{background:rgba(246,248,252,.88)}
+.hdr-top{padding:calc(var(--st) + 10px) 22px 12px;max-width:1120px;margin:0 auto;width:100%}
+.hdr-kicker{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);margin-bottom:5px}
+.hdr-title{font-size:24px;font-weight:760;letter-spacing:0}
+.hdr-sub{font-size:12px;color:var(--muted);margin-top:4px}
+.landing-tabs{display:none}
+.research-feed{max-width:1120px;margin:0 auto;padding:22px 22px calc(var(--sb) + 40px)}
+.opp-list{padding:0;gap:14px}
+.feed-section{margin-top:24px}
+.feed-section-head,.candidates-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:12px}
+.feed-section-head h2,.candidates-head h2{font-size:18px;line-height:1.15;font-weight:760;letter-spacing:0}
+.feed-label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-bottom:5px}
+.text-link{border:0;background:none;color:var(--accent);font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}
+.os-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(14,24,40,.98),rgba(8,13,21,.96));border:1px solid rgba(95,142,205,.22);border-radius:8px;padding:20px;margin-bottom:20px;box-shadow:0 18px 70px rgba(0,0,0,.34)}
+.os-hero:after{content:"";position:absolute;right:-80px;top:-90px;width:230px;height:230px;border:1px solid rgba(47,140,255,.22);border-radius:50%;box-shadow:inset 0 0 42px rgba(47,140,255,.11)}
+.os-hero-main{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:center}
+.os-hero-copy h1{font-size:28px;line-height:1.08;font-weight:780;letter-spacing:0;margin-bottom:10px}
+.os-hero-copy p{font-size:14px;line-height:1.55;color:var(--t2);max-width:680px}
+.os-hero-action{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+.os-pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:999px;padding:6px 10px;font-size:11px;font-weight:700;color:var(--t2)}
+.pulse-dot{width:7px;height:7px;border-radius:50%;background:var(--accent2);box-shadow:0 0 0 5px rgba(101,216,120,.12)}
+.hero-score{width:126px;height:126px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;border:1px solid rgba(47,140,255,.35);background:radial-gradient(circle,rgba(47,140,255,.16),rgba(47,140,255,.04) 58%,transparent 59%)}
+.hero-score strong{font-size:34px;color:#A983FF}
+.hero-score span{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.os-metrics{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.os-metric{border-left:1px solid var(--line);padding-left:12px}
+.os-metric:first-child{border-left:0;padding-left:0}
+.os-metric b{display:block;font-size:20px;color:var(--t1);margin-bottom:2px}
+.os-metric span{font-size:11px;color:var(--muted)}
+.opp-card,.queue-entry,.stock-card,.p-card,.sr-panel,.scenario-col,.conf-row,.bz-current{background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.opp-card{padding:0;box-shadow:none}
+.opp-card-header{padding:16px;align-items:flex-start}
+.opp-theme{font-size:17px}
+.opp-divider{background:var(--line)}
+.opp-footer,.qe-footer{background:rgba(255,255,255,.035)}
+.opp-section-label,.p-card-title,.sr-sec-label,.sr-ev-label,.sr-bottom-label{letter-spacing:.12em}
+.candidate-badges{gap:8px}
+.cand-badge,.sort-pill,.filter-btn-sm,.filter-pill,.sf-chip{border-radius:999px}
+.queue-sticky{padding:0;margin-bottom:10px;background:transparent;border:0}
+.queue-note{border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:8px;padding:10px 12px}
+.queue-list{padding:0;display:grid;gap:8px}
+.queue-entry{margin-top:0}
+.qe-rank{border-radius:6px;background:rgba(47,140,255,.14);color:#6DB0FF}
+.qe-company{font-size:15px}
+.card-grid{max-width:1120px;margin:0 auto;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));padding:12px 22px calc(var(--sb) + 40px)}
+.candidates-head{max-width:1120px;margin:0 auto;padding:22px 22px 8px;align-items:center}
+.candidates-controls{top:0;background:rgba(5,8,13,.9);backdrop-filter:saturate(180%) blur(22px);-webkit-backdrop-filter:saturate(180%) blur(22px);border-color:var(--line)}
+.sort-bar,.chips-row,.candidates-meta{max-width:1120px;margin:0 auto}
+.panel-content{max-width:980px;margin:0 auto;padding:14px 22px calc(var(--sb) + 70px)}
+.detail-hdr-top,.detail-name-price-row,.detail-tabs{max-width:980px;margin:0 auto;width:100%}
+.detail-name-price-row{padding:10px 22px 14px}
+.company-name-header{font-size:22px;font-weight:760}
+.price-val{font-size:28px}
+.detail-tabs{display:none;padding:0 22px;gap:16px;border-color:var(--line)}
+.dtab{padding:12px 0;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.thesis-hero{background:linear-gradient(135deg,rgba(14,24,40,.98),rgba(8,13,21,.96));border:1px solid rgba(95,142,205,.22);border-radius:8px;padding:18px;margin-bottom:12px}
+.thesis-hero h2{font-size:20px;line-height:1.25;margin-bottom:8px}
+.thesis-hero p{font-size:14px;color:var(--t2);line-height:1.58}
+.thesis-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:10px;margin-bottom:10px}
+.thesis-list{display:grid;gap:7px}
+.thesis-item{display:flex;gap:9px;font-size:13px;line-height:1.45;color:var(--t2);padding:8px 0;border-bottom:1px solid var(--line)}
+.thesis-item:last-child{border-bottom:0}
+.check-dot{color:var(--accent2);font-weight:800}
+.risk-dot{color:var(--orange);font-weight:800}
+.score-bars{display:grid;gap:8px}
+.score-row{display:grid;grid-template-columns:104px 1fr 40px;gap:12px;align-items:center;font-size:12px;color:var(--t2);width:100%;border:0;background:none;text-align:left;padding:9px 0;cursor:pointer;border-bottom:1px solid var(--line)}
+.score-row:last-child{border-bottom:0}
+.score-track{display:block;height:10px;border-radius:999px;background:rgba(139,171,213,.22);overflow:hidden;box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.score-fill{display:block;min-width:3px;height:100%;border-radius:999px;background:linear-gradient(90deg,#178BFF,#42D97B);box-shadow:0 0 16px rgba(47,140,255,.45)}
+.score-value{text-align:right;font-weight:850;color:#EAF3FF}
+.evidence-strip{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.evidence-chip{font-size:10px;color:var(--muted);border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:999px;padding:4px 8px}
+.sf-hero{display:flex;justify-content:center;padding:12px 0 10px}
+.sf-chips-row{margin-bottom:10px}
+.hero-candidates{position:relative;z-index:1;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:18px}
+.hero-candidate{border:1px solid rgba(95,142,205,.24);border-radius:8px;background:rgba(255,255,255,.045);padding:11px;text-align:left;color:var(--t1);cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) 82px;gap:8px;align-items:center;transition:transform .14s,border-color .14s,background .14s}
+.hero-candidate:hover{border-color:rgba(47,140,255,.55);background:rgba(47,140,255,.08)}
+.hero-candidate:active{transform:scale(.98)}
+.hcs-ticker{display:block;font-size:15px;font-weight:850;margin-bottom:3px}
+.hcs-name{display:block;font-size:10px;color:var(--muted);line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hcs-meta{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+.hcs-pill{font-size:9px;font-weight:800;border-radius:999px;padding:3px 6px;background:rgba(255,255,255,.07);color:var(--t2)}
+.hcs-score{color:#76E08A}
+.hcs-snow{width:82px;height:82px;display:flex;align-items:center;justify-content:center;overflow:visible}
+.hcs-snow svg{width:82px;height:82px;overflow:visible}
+.brief-stack{display:grid;gap:10px}
+.brief-section-title{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:18px 0 8px}
+.brief-snowflake-grid{display:grid;grid-template-columns:390px minmax(0,1fr);gap:16px;align-items:start}
+.brief-snowflake-grid .sf-hero{background:var(--surface);border:1px solid rgba(95,142,205,.25);border-radius:8px;margin:0;padding:22px;overflow:visible;min-height:390px;align-items:center}
+.brief-snowflake-grid .sf-hero svg{width:340px;height:340px;overflow:visible}
+.brief-snowflake-grid .p-card{background:rgba(12,18,27,.72)}
+@media(max-width:700px){
+  .hdr-title{font-size:21px}
+  .research-feed,.panel-content,.card-grid{padding-left:16px;padding-right:16px}
+  .os-hero-main{grid-template-columns:1fr}
+  .hero-score{width:104px;height:104px}
+  .os-metrics{grid-template-columns:1fr 1fr}
+  .os-metric:nth-child(odd){border-left:0;padding-left:0}
+  .thesis-grid{grid-template-columns:1fr}
+  .hero-candidates{grid-template-columns:1fr}
+  .brief-snowflake-grid{grid-template-columns:1fr}
+  .brief-snowflake-grid .sf-hero{min-height:auto}
+  .brief-snowflake-grid .sf-hero svg{width:min(320px,100%);height:auto}
+  .detail-tabs{padding:0 16px}
+  .detail-name-price-row{padding-left:16px;padding-right:16px}
+}
+
 /* SNOWFLAKE */
 .snowflake-wrap{display:flex;justify-content:center;margin:10px 0 6px}
 .sf-hero{display:flex;justify-content:center;padding:18px 0 6px}
@@ -347,14 +469,15 @@ html,body{background:var(--bg);color:var(--t1);font-family:-apple-system,BlinkMa
   <div class="hdr">
     <div class="hdr-top">
       <div>
-        <div class="hdr-title">Research Dashboard</div>
+        <div class="hdr-kicker">Research OS</div>
+        <div class="hdr-title">Attention This Week</div>
         <div class="hdr-sub" id="landing-sub">Loading…</div>
       </div>
       <div class="hdr-actions">
         <button class="icon-btn" onclick="toggleTheme()" id="theme-btn" title="Toggle theme">☀</button>
       </div>
     </div>
-    <div class="landing-tabs" id="landing-tabs">
+    <div class="landing-tabs" id="landing-tabs" aria-hidden="true">
       <button class="ltab active" data-pane="opportunities" onclick="switchLandingTab(this)">
         Opportunities <span class="ltab-badge" id="ltab-opp-badge">2</span>
       </button>
@@ -368,15 +491,30 @@ html,body{background:var(--bg);color:var(--t1);font-family:-apple-system,BlinkMa
   </div>
 
   <div id="pane-opportunities" class="landing-pane active">
-    <div class="opp-list" id="opp-list"></div>
-  </div>
-
-  <div id="pane-queue" class="landing-pane">
-    <div class="queue-sticky" id="queue-note-bar"></div>
-    <div class="queue-list" id="queue-list"></div>
+    <div class="research-feed">
+      <div class="opp-list" id="opp-list"></div>
+      <section class="feed-section">
+        <div class="feed-section-head">
+          <div>
+            <div class="feed-label">Research Queue</div>
+            <h2>Next companies to open</h2>
+          </div>
+          <button class="text-link" onclick="switchToTab('candidates')">View candidates</button>
+        </div>
+        <div class="queue-sticky" id="queue-note-bar"></div>
+        <div class="queue-list" id="queue-list"></div>
+      </section>
+    </div>
   </div>
 
   <div id="pane-candidates" class="landing-pane">
+    <div class="candidates-head">
+      <button class="back-btn" onclick="switchToTab('opportunities')">Back to feed</button>
+      <div>
+        <div class="feed-label">Portfolio Candidates</div>
+        <h2>Screen the investable set</h2>
+      </div>
+    </div>
     <div class="candidates-controls">
       <div class="sort-bar" id="sort-bar"></div>
       <div class="chips-row" id="chips-row" style="display:none"></div>
@@ -873,7 +1011,7 @@ const STATE = {
   screen:'landing',
   landingTab:'opportunities',
   activeStock:null,
-  detailTab:'snowflake',
+  detailTab:'overview',
   activeAxis:'opportunity',
   sort:'poised',
   filters:{theme:'all',zone:'all',score:'all',action:'all',trend:'all',peBand:'all'},
@@ -919,7 +1057,7 @@ function toggleTheme(){applyTheme(STATE.theme==='dark'?'light':'dark');}
 function renderAll(){
   const m=DATA.meta;
   document.getElementById('landing-sub').textContent=
-    `${m.activeOpportunities} active opportunities · ${m.lastUpdated}`;
+    `${m.activeOpportunities} active themes · ${m.period||m.lastUpdated}`;
   document.getElementById('ltab-opp-badge').textContent=DATA.opportunities.length;
   const filled=DATA.queue.entries.filter(e=>e.ticker&&!e.ticker.startsWith('-')).length;
   document.getElementById('ltab-q-badge').textContent=`${filled}/${m.researchQueueTotal||10}`;
@@ -954,7 +1092,61 @@ function switchToTab(paneName){
 function renderOpportunitiesPane(){
   const list=document.getElementById('opp-list');
   if(!DATA.opportunities.length){list.innerHTML='<p style="padding:24px;color:var(--t3);text-align:center">No active opportunities</p>';return;}
-  list.innerHTML=DATA.opportunities.map(o=>renderOppCard(o)).join('');
+  const ranked=[...DATA.opportunities].sort((a,b)=>(b.confidence-a.confidence)||(b.corroboration-a.corroboration));
+  list.innerHTML=renderTopInsight(ranked[0])+`
+    <section class="feed-section">
+      <div class="feed-section-head">
+        <div>
+          <div class="feed-label">Top Opportunities</div>
+          <h2>Best ideas from the theme engine</h2>
+        </div>
+        <button class="text-link" onclick="switchToTab('candidates')">Open screener</button>
+      </div>
+      ${ranked.map((o,i)=>renderOppCard(o,i+1)).join('')}
+    </section>`;
+}
+
+function renderTopInsight(o){
+  const candidateStocks=o.candidateStocks.map(t=>STOCKS.find(s=>s.id===t)).filter(Boolean);
+  const stocks=candidateStocks.map(s=>`<button class="hero-candidate" onclick="openDetailById('${s.id}')">
+    <span>
+      <b class="hcs-ticker">${s.id}</b>
+      <span class="hcs-name">${s.name}</span>
+      <span class="hcs-meta">
+        <span class="hcs-pill hcs-score">${s.poised}/10</span>
+        <span class="hcs-pill">${s.zoneLabel}</span>
+        <span class="hcs-pill">${s.actionLabel}</span>
+      </span>
+    </span>
+    <span class="hcs-snow">${svgSnowflake(s.axes,92,true)}</span>
+  </button>`).join('');
+  const firstWhy=o.whyNow.slice(0,2).join(' ');
+  return `<section class="os-hero">
+    <div class="os-hero-main">
+      <div class="os-hero-copy">
+        <div class="feed-label">Top Insight This Week</div>
+        <h1>${o.theme}</h1>
+        <p>${firstWhy}</p>
+        <div class="os-hero-action">
+          <span class="os-pill"><span class="pulse-dot"></span>${o.status}</span>
+          <span class="os-pill">${o.trend}</span>
+          <span class="os-pill">${o.candidateStocks.length} companies</span>
+        </div>
+      </div>
+      <div class="hero-score">
+        <strong>${Math.round(o.confidence*10)}</strong>
+        <span>Confidence</span>
+      </div>
+    </div>
+    <div class="os-metrics">
+      <div class="os-metric"><b>${o.corroboration}</b><span>New corroborations</span></div>
+      <div class="os-metric"><b>${o.candidateStocks.length}</b><span>Companies involved</span></div>
+      <div class="os-metric"><b>${o.evidenceCount}</b><span>Evidence points</span></div>
+      <div class="os-metric"><b>${o.dateIdentified}</b><span>Identified</span></div>
+    </div>
+    <div class="feed-label" style="margin-top:18px">Candidate Stocks</div>
+    <div class="hero-candidates">${stocks}</div>
+  </section>`;
 }
 
 function confRingHTML(score,size=64){
@@ -971,27 +1163,21 @@ function confRingHTML(score,size=64){
   </div>`;
 }
 
-function renderOppCard(o){
-  const badges=o.candidateStocks.map(t=>`<button class="cand-badge" onclick="event.stopPropagation();openDetailById('${t}')">${t}</button>`).join('');
-  const bullets=o.whyNow.map(b=>`<div class="opp-bullet"><span class="bullet-icon">⚡</span><span>${b}</span></div>`).join('');
-  const risks=o.risks.map(r=>`<div class="risk-item"><span class="bullet-icon">⚠</span><span>${r}</span></div>`).join('');
-  const hasThemeFilter=o.id.includes('capex')?'capex':'defence';
+function renderOppCard(o,rank=1){
+  const bullets=o.whyNow.slice(0,3).map(b=>`<div class="opp-bullet"><span class="check-dot">+</span><span>${b}</span></div>`).join('');
+  const risks=o.risks.slice(0,2).map(r=>`<div class="risk-item"><span class="risk-dot">-</span><span>${r}</span></div>`).join('');
   return `<div class="opp-card">
     <div class="opp-card-header">
-      ${confRingHTML(o.confidence)}
+      <div class="qe-rank">${rank}</div>
       <div class="opp-header-info">
         <div class="opp-theme">${o.theme}</div>
         <div class="opp-pills">
           <span class="opp-pill pill-active">${o.status}</span>
           <span class="opp-pill pill-accel">${o.trend} ↑</span>
           <span class="opp-pill pill-corr">${o.corroboration} companies</span>
+          <span class="opp-pill pill-corr">Confidence ${o.confidence}/10</span>
         </div>
       </div>
-    </div>
-    <div class="opp-divider"></div>
-    <div class="opp-candidates">
-      <div class="opp-section-label">Candidate Stocks — tap to open</div>
-      <div class="candidate-badges">${badges}</div>
     </div>
     <div class="opp-divider"></div>
     <div class="opp-bullets">
@@ -1161,7 +1347,9 @@ function setFilter(k,v){STATE.filters[k]=v;renderCandidatesPane();renderFilterSh
 
 // ── SVG SNOWFLAKE ──
 function svgSnowflake(axes,size,mini=false){
-  const cx=size/2,cy=size/2,R=size*(mini?.38:.36),n=5;
+  const vbPad=mini?8:70;
+  const vbSize=size+(vbPad*2);
+  const cx=size/2+vbPad,cy=size/2+vbPad,R=size*(mini?0.34:0.28),n=5;
   const keys=['opportunity','valuation','execution','moat','momentum'];
   let grid='';
   for(let lv=1;lv<=5;lv++){
@@ -1169,19 +1357,19 @@ function svgSnowflake(axes,size,mini=false){
     grid+=`<polygon points="${pts.join(' ')}" fill="none" stroke="rgba(255,255,255,.07)" stroke-width=".5"/>`;
   }
   let axisL='';
-  for(let i=0;i<n;i++){const a=(i*2*Math.PI/n)-Math.PI/2,x=cx+R*Math.cos(a),y=cy+R*Math.sin(a);axisL+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="rgba(255,255,255,.1)" stroke-width=".5"/>`;}
+  for(let i=0;i<n;i++){const a=(i*2*Math.PI/n)-Math.PI/2,x=cx+R*Math.cos(a),y=cy+R*Math.sin(a);axisL+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="rgba(170,205,255,.18)" stroke-width="${mini?0.6:1}"/>`;}
   const scorePts=keys.map((k,i)=>{const s=axes[k]||0,a=(i*2*Math.PI/n)-Math.PI/2;return `${cx+R*Math.cos(a)*s/10},${cy+R*Math.sin(a)*s/10}`;});
   let dots='';
-  if(mini){keys.forEach((k,i)=>{const s=axes[k]||0,a=(i*2*Math.PI/n)-Math.PI/2,x=cx+R*Math.cos(a)*s/10,y=cy+R*Math.sin(a)*s/10;dots+=`<circle cx="${x}" cy="${y}" r="2.5" fill="#0A84FF"/>`;});}
+  keys.forEach((k,i)=>{const s=axes[k]||0,a=(i*2*Math.PI/n)-Math.PI/2,x=cx+R*Math.cos(a)*s/10,y=cy+R*Math.sin(a)*s/10;dots+=`<circle cx="${x}" cy="${y}" r="${mini?2.6:4}" fill="#65D878" stroke="#06101B" stroke-width="${mini?0.8:1.2}"/>`;});
   let labels='';
   if(!mini){
     ['Opportunity','Valuation','Execution','Moat','Momentum'].forEach((nm,i)=>{
-      const a=(i*2*Math.PI/n)-Math.PI/2,lx=cx+R*1.32*Math.cos(a),ly=cy+R*1.32*Math.sin(a);
-      const anchor=lx<cx-4?'end':lx>cx+4?'start':'middle',dy=ly<cy-4?0:ly>cy+4?4:2;
-      labels+=`<text x="${lx}" y="${ly+dy}" text-anchor="${anchor}" fill="rgba(255,255,255,.5)" font-size="8" font-family="-apple-system,sans-serif" class="sf-label" data-axis="${nm.toLowerCase()}" style="cursor:pointer">${nm}</text>`;
+      const a=(i*2*Math.PI/n)-Math.PI/2,lx=cx+R*1.62*Math.cos(a),ly=cy+R*1.62*Math.sin(a);
+      const anchor=lx<cx-8?'end':lx>cx+8?'start':'middle',dy=ly<cy-8?0:ly>cy+8?7:3;
+      labels+=`<text x="${lx}" y="${ly+dy}" text-anchor="${anchor}" fill="rgba(229,240,255,.78)" font-size="13" font-weight="700" font-family="-apple-system,sans-serif" class="sf-label" data-axis="${nm.toLowerCase()}" style="cursor:pointer">${nm}</text>`;
     });
   }
-  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${grid}${axisL}<polygon points="${scorePts.join(' ')}" fill="rgba(10,132,255,.18)" stroke="#0A84FF" stroke-width="${mini?1:1.5}" stroke-linejoin="round"/>${dots}${labels}</svg>`;
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${vbSize} ${vbSize}" overflow="visible">${grid}${axisL}<polygon points="${scorePts.join(' ')}" fill="rgba(23,139,255,.24)" stroke="#178BFF" stroke-width="${mini?1.4:2.4}" stroke-linejoin="round"/>${dots}${labels}</svg>`;
 }
 
 function miniPoisedRing(score){
@@ -1199,7 +1387,7 @@ function openDetailById(id){
   const s=STOCKS.find(x=>x.id===id);
   if(!s)return;
   STATE.activeStock=id;
-  STATE.detailTab='snowflake';
+  STATE.detailTab='overview';
   STATE.activeAxis='opportunity';
   renderDetail(s);
   const landing=document.getElementById('s-landing');
@@ -1238,12 +1426,9 @@ function renderDetail(s){
   const zh=document.getElementById('detail-zone-hdr');
   if(zh) zh.innerHTML=`<span class="card-zone-badge z-${s.zone}">${s.zoneLabel}</span><div style="font-size:9px;color:var(--t3);margin-top:2px;text-align:right">${s.priceDate}</div>`;
 
-  const tabs=['snowflake','buyzoneTab','scenarios','portfolio','dynamics'];
-  const labels=['Snowflake','Buy Zone','Scenarios','Portfolio','Dynamics'];
-  document.getElementById('detail-tabs').innerHTML=tabs.map((t,i)=>
-    `<button class="dtab${STATE.detailTab===t?' active':''}" onclick="switchDetailTab('${t}',this)">${labels[i]}</button>`
-  ).join('');
-  renderDetailTab(s);
+  document.getElementById('detail-tabs').innerHTML='';
+  document.getElementById('detail-content').innerHTML=renderResearchBrief(s);
+  wireDetailInteractions(s);
 }
 
 function switchDetailTab(tab,btn){
@@ -1256,7 +1441,8 @@ function switchDetailTab(tab,btn){
 
 function renderDetailTab(s){
   const el=document.getElementById('detail-content');
-  if(STATE.detailTab==='snowflake') el.innerHTML=renderSnowflakeTab(s);
+  if(STATE.detailTab==='overview') el.innerHTML=renderOverviewTab(s);
+  else if(STATE.detailTab==='snowflake') el.innerHTML=renderSnowflakeTab(s);
   else if(STATE.detailTab==='buyzoneTab') el.innerHTML=renderBuyZoneTab(s);
   else if(STATE.detailTab==='scenarios') el.innerHTML=renderScenariosTab(s);
   else if(STATE.detailTab==='portfolio') el.innerHTML=renderPortfolioTab(s);
@@ -1279,6 +1465,166 @@ function renderDetailTab(s){
   }
 }
 
+function wireDetailInteractions(s){
+  const el=document.getElementById('detail-content');
+  el.querySelectorAll('.sf-label').forEach(lbl=>{
+    lbl.addEventListener('click',()=>selectSfAxis(lbl.dataset.axis));
+  });
+  el.querySelectorAll('.axis-leg').forEach(leg=>{
+    leg.addEventListener('click',()=>openAxisSheet(leg.dataset.axis,s));
+  });
+  setTimeout(()=>{
+    const m=document.getElementById('bz-marker-'+s.id);
+    if(m) m.style.left=bzPct(s.price,s.fv.base)+'%';
+  },60);
+}
+
+function renderResearchBrief(s){
+  const thesis=s.snowflakeReasoning?.opportunity?.bottomLine||s.eli15;
+  const why=s.whyNow.map(w=>`<div class="thesis-item"><span class="check-dot">+</span><span>${w}</span></div>`).join('');
+  const risks=s.risks.map(r=>`<div class="thesis-item"><span class="risk-dot">-</span><span>${r}</span></div>`).join('');
+  const evidence=Object.values(s.snowflakeReasoning||{}).flatMap(r=>r.evidence||[]);
+  const uniqueEvidence=[...new Set(evidence)].slice(0,10).map(e=>`<span class="evidence-chip">${e}</span>`).join('');
+  const fins=s.financials.map(f=>{
+    const col=f.col==='green'?'rv-g':f.col==='orange'?'rv-o':f.col==='blue'?'rv-b':'';
+    return `<div class="row"><span class="rk">${f.lbl}</span><div><div class="rv ${col}">${f.val}</div><div style="font-size:10px;color:var(--t3)">${f.sub}</div></div></div>`;
+  }).join('');
+  return `<div class="brief-stack">
+    <div class="brief-section-title">Thesis / ELI15</div>
+    <section class="thesis-hero">
+      <div class="feed-label">Investment Thesis</div>
+      <h2>${s.name} is a ${s.zoneLabel} candidate with a ${s.poised}/10 poised score</h2>
+      <p>${thesis}</p>
+    </section>
+    <div class="eli15"><div class="eli15-lbl">ELI15</div><div class="eli15-txt">${s.eli15}</div></div>
+
+    <div class="brief-section-title">Snowflake Investment Score</div>
+    ${renderSnowflakeBrief(s)}
+
+    <div class="brief-section-title">Why Now / Catalysts</div>
+    <div class="p-card"><div class="thesis-list">${why}</div></div>
+
+    <div class="brief-section-title">Financials And Valuation / Buy Zone</div>
+    <div class="thesis-grid">
+      <div class="p-card"><div class="p-card-title">Key Financials</div>${fins}</div>
+      ${renderBuyZoneCard(s)}
+    </div>
+
+    <div class="brief-section-title">Scenarios</div>
+    ${renderScenariosTab(s)}
+
+    <div class="brief-section-title">Portfolio Action</div>
+    ${renderPortfolioTab(s)}
+
+    <div class="brief-section-title">Competitive Dynamics</div>
+    ${renderDynamicsTab(s)}
+
+    <div class="brief-section-title">Risks And Evidence</div>
+    <div class="thesis-grid">
+      <div class="p-card"><div class="p-card-title">Primary Risks</div><div class="thesis-list">${risks}</div></div>
+      <div class="p-card"><div class="p-card-title">Evidence Sources</div><div class="evidence-strip">${uniqueEvidence}</div></div>
+    </div>
+  </div>`;
+}
+
+function renderSnowflakeBrief(s){
+  const snow=svgSnowflake(s.axes,320,false);
+  const chips=Object.entries(AXIS_INFO).map(([k,v])=>{
+    const active=STATE.activeAxis===k;
+    return `<button class="sf-chip${active?' active':''}" data-axis="${k}" onclick="selectSfAxis('${k}')">${v.label}<span class="sf-chip-score">${s.axes[k]}</span></button>`;
+  }).join('');
+  return `<div class="brief-snowflake-grid">
+    <div>
+      <div class="sf-hero">${snow}</div>
+      <div class="p-card" style="margin-top:10px"><div class="p-card-title">Investment Scores</div>${renderScoreBars(s)}</div>
+    </div>
+    <div>
+      <div class="sf-chips-row">${chips}</div>
+      <div id="sf-reasoning-panel">${renderSfReasoningPanel(s,STATE.activeAxis)}</div>
+    </div>
+  </div>`;
+}
+
+function renderBuyZoneCard(s){
+  const zones=['Strong Buy','Buy Zone','Fair Value','Watch','Expensive'];
+  const zoneLabels=zones.map(z=>`<span class="bz-zone-lbl">${z}</span>`).join('');
+  const thresholds=[s.fv.bear*.75,s.fv.bear,s.fv.base,s.fv.base*1.10,s.fv.bull*.85];
+  const prices=thresholds.map(p=>`<span class="bz-price">₹${p.toLocaleString('en-IN',{maximumFractionDigits:0})}</span>`).join('');
+  const dist=((s.fv.base-s.price)/s.price*100).toFixed(1);
+  const distStr=parseFloat(dist)>0?`${dist}% below Fair Value`:Math.abs(parseFloat(dist)).toFixed(1)+'% above Fair Value';
+  const sbItems=s.scoreBreakdown.map(row=>{
+    const mod=row.type==='pos'?'rv-g':row.type==='neg'?'rv-r':row.type==='total'?'rv-b':'';
+    return `<li><span>${row.lbl}</span><span class="sb-mod ${mod}">${row.val}</span></li>`;
+  }).join('');
+  return `<div class="p-card">
+    <div class="p-card-title">Buy Zone</div>
+    <div class="bz-bar-wrap">
+      <div class="bz-gradient">
+        <div class="bz-marker" id="bz-marker-${s.id}" style="left:3%">
+          <div class="bz-dot"></div>
+          <div class="bz-label">₹${s.price.toLocaleString('en-IN')}</div>
+        </div>
+      </div>
+      <div class="bz-zones">${zoneLabels}</div>
+      <div class="bz-prices">${prices}</div>
+    </div>
+    <div class="bz-current">
+      <div class="bz-current-info">
+        <div class="bz-zone-name z-${s.zone}" style="padding:3px 10px;border-radius:10px;display:inline-block">${s.zoneLabel}</div>
+        <div class="bz-dist" style="margin-top:6px">${distStr}</div>
+      </div>
+      <div><span class="score-big">${s.poised}</span><span class="score-denom">/10</span></div>
+    </div>
+    <ul class="score-breakdown" style="list-style:none">${sbItems}</ul>
+  </div>`;
+}
+
+// ── TABS: OVERVIEW ──
+function renderOverviewTab(s){
+  const thesis=s.snowflakeReasoning?.opportunity?.bottomLine||s.eli15;
+  const why=s.whyNow.map(w=>`<div class="thesis-item"><span class="check-dot">+</span><span>${w}</span></div>`).join('');
+  const risks=s.risks.map(r=>`<div class="thesis-item"><span class="risk-dot">-</span><span>${r}</span></div>`).join('');
+  const evidence=(s.snowflakeReasoning?.opportunity?.evidence||[]).map(e=>`<span class="evidence-chip">${e}</span>`).join('');
+  return `<section class="thesis-hero">
+    <div class="feed-label">Investment Thesis</div>
+    <h2>${s.name} is a ${s.zoneLabel} candidate with a ${s.poised}/10 poised score</h2>
+    <p>${thesis}</p>
+    <div class="evidence-strip">${evidence}</div>
+  </section>
+  <div class="thesis-grid">
+    <div class="p-card">
+      <div class="p-card-title">Why Now</div>
+      <div class="thesis-list">${why}</div>
+    </div>
+    <div class="p-card">
+      <div class="p-card-title">Primary Risks</div>
+      <div class="thesis-list">${risks}</div>
+    </div>
+  </div>
+  <div class="p-card">
+    <div class="p-card-title">Investment Scores</div>
+    ${renderScoreBars(s)}
+  </div>
+  <div class="p-card">
+    <div class="p-card-title">Decision Context</div>
+    <div class="row"><span class="rk">Portfolio action</span><span class="rv">${s.actionLabel}</span></div>
+    <div class="row"><span class="rk">Watch price</span><span class="rv">${s.watchPrice?('₹'+s.watchPrice.toLocaleString('en-IN')):'Current zone'}</span></div>
+    <div class="row"><span class="rk">Theme trend</span><span class="rv rv-b">${s.trend}</span></div>
+    <div class="row"><span class="rk">Confidence</span><span class="rv">${s.confidence}/10</span></div>
+  </div>`;
+}
+
+function renderScoreBars(s){
+  return Object.entries(AXIS_INFO).map(([k,v])=>{
+    const score=s.axes[k]||0;
+    return `<button class="score-row" onclick="selectSfAxis('${k}')">
+      <span>${v.label}</span>
+      <span class="score-track"><span class="score-fill" style="width:${score*10}%"></span></span>
+      <span class="score-value">${score}</span>
+    </button>`;
+  }).join('');
+}
+
 // ── TABS: SNOWFLAKE ──
 function renderSnowflakeTab(s){
   const snow=svgSnowflake(s.axes,200,false);
@@ -1292,6 +1638,10 @@ function renderSnowflakeTab(s){
     return `<div class="row"><span class="rk">${f.lbl}</span><div><div class="rv ${col}">${f.val}</div><div style="font-size:10px;color:var(--t3)">${f.sub}</div></div></div>`;
   }).join('');
   return `
+    <div class="p-card">
+      <div class="p-card-title">Snowflake Scorecard</div>
+      ${renderScoreBars(s)}
+    </div>
     <div class="sf-hero">${snow}</div>
     <div class="sf-chips-row">${chips}</div>
     <div id="sf-reasoning-panel">${renderSfReasoningPanel(s,STATE.activeAxis)}</div>
