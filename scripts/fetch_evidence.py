@@ -50,7 +50,7 @@ DISCOVERY_DIR = RAW_DIR / "_discovery" / TODAY
 NOW_ISO = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 COLLECTION_STATUSES = {"downloaded", "text_snapshot", "metadata_only", "failed"}
-COLLECTOR_VERSION = "resilient-discovery-index-v2"
+COLLECTOR_VERSION = "resilient-discovery-index-v3-corroboration"
 
 HEADERS = {
     "User-Agent": (
@@ -259,7 +259,7 @@ def append_index_record(out_dir: Path, record: dict) -> None:
 
 
 def base_record(row: dict, source: dict, status: str) -> dict:
-    return {
+    rec = {
         "company": row.get("company_name", ""),
         "ticker": row.get("ticker", ""),
         "source_name": source.get("source_name", source.get("source", "")),
@@ -276,6 +276,10 @@ def base_record(row: dict, source: dict, status: str) -> dict:
         "content_hash": "",
         "extraction_status": "pending_extraction" if status in {"downloaded", "text_snapshot"} else "unavailable",
     }
+    for discovery_field in ("discovery_action", "corroboration_status", "corroboration_queries"):
+        if discovery_field in source:
+            rec[discovery_field] = source[discovery_field]
+    return rec
 
 
 def infer_source_tier(source: dict) -> str:
@@ -284,7 +288,7 @@ def infer_source_tier(source: dict) -> str:
     if source_name in {"nse", "bse"} or "filing" in source_type or "annual report" in source_type:
         return "tier_1"
     if "news" in source_type or "rss" in source_type:
-        return "tier_2"
+        return "tier_3"
     return "tier_3"
 
 
@@ -462,7 +466,7 @@ def fetch_news(row: dict, out_dir: Path, session: requests.Session, known_urls: 
             news_source = {
                 "source_name": source_name,
                 "source_type": "News RSS",
-                "source_tier": "tier_2",
+                "source_tier": "tier_3",
                 "title": title,
                 "published_date": pub_date,
                 "source_url": link,
@@ -545,10 +549,13 @@ def fetch_discovery_news(session: requests.Session) -> bool:
             source = {
                 "source_name": source_name,
                 "source_type": "Discovery News",
-                "source_tier": "tier_2",
+                "source_tier": "tier_3",
                 "title": title,
                 "published_date": pub_date,
                 "source_url": link,
+                "discovery_action": "pending_review",
+                "corroboration_status": "needs_corroboration",
+                "corroboration_queries": [],
             }
             record = collect_source_item(
                 discovery_row,

@@ -60,7 +60,7 @@ Commit message: `chore: discovery news summary YYYY-MM-DD`
 
 Invoke: `/universe-manager`
 
-Reads the discovery summary from Step 1a plus the live Nifty 1000.
+Reads the discovery summary from Step 1a.
 Updates `01_UNIVERSE/company_master.csv` — promotes, deprioritizes, or adds companies.
 Writes `01_UNIVERSE/discovery-log-YYYY-MM-DD.md`.
 
@@ -150,7 +150,7 @@ Commit message: `feat: weekly brief YYYY-MM-DD`
 | Situation | Action |
 |---|---|
 | Step 1a fails (no discovery file) | Use prior week's summary if available; log warning; continue to 1b |
-| Step 1b fails (Nifty 1000 fetch error) | Use existing company_master.csv; log warning; continue |
+| Step 1b fails (no discovery summary available) | Use existing company_master.csv; log warning; continue |
 | No new documents in Step 2a | Skip extraction; run delta against prior extracted data |
 | No new themes detected | Run Screener on existing theme records |
 | Any step fails | Commit whatever was produced; log error; continue to next step |
