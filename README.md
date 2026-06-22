@@ -2,42 +2,31 @@ Opportunity Discovery Engine
 
 ## Weekly Workflow
 
-**Sunday (automatic, no AI, no API keys):**
+**Sunday (automatic):** A GitHub Action runs at 09:00 IST. It fetches prices, news, and exchange filings for all active companies using `scripts/fetch_evidence.py` — no AI, no API keys. Raw evidence is committed to `02_RAW_DOCUMENTS/<TICKER>/`.
 
-A GitHub Action runs at 09:00 IST and executes `scripts/fetch_evidence.py` with two lanes:
-
-```
-Lane A — Company Evidence Fetch
-  Reads: 01_UNIVERSE/company_master.csv where fetch_enabled=true
-  Writes: 02_RAW_DOCUMENTS/<TICKER>/  (prices, news, filings)
-
-Lane B — Discovery News Fetch
-  Broad market queries (order wins, L1 bids, capex plans, defence acquisitions, etc.)
-  Writes: 02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-news.md
-  Does NOT modify the universe. Discovery News Agent reviews this on Monday.
-```
-
-**Monday (local, Claude Code):**
+**Monday+ (local):** Pull the new evidence and run the AI pipeline locally:
 
 ```
 git pull
 claude
 ```
 
-Then run: `/weekly-run`
+Then say: _"New evidence is in. Run the pipeline from extraction onwards. Skip universe discovery and collection."_
+
+Claude Code processes extraction → delta → themes → opportunity screener → weekly brief and commits the outputs.
+
+If a stock from the weekly report looks investment-relevant, run the Investment
+Impact layer before any stock-selection work:
 
 ```
-Step 1a: /discovery-news-agent   → reviews _discovery/, writes summary
-Step 1b: /universe-manager       → updates 01_UNIVERSE/company_master.csv
-Step 2:  extraction → delta → themes  (for fetch_enabled=true companies)
-Step 3:  /opportunity-screener   → Top 10 + Top 3 + Portfolio Handoff
-Step 4:  /investment-impact      → for Portfolio Handoff names only
+Run investment impact notes for the top handoff names from this week's report.
 ```
 
-**To add a company to the fetch cycle:**
-Universe Manager is the only agent that updates `01_UNIVERSE/company_master.csv`. Run `/universe-manager` and name the company, or let it be surfaced through the Discovery News Agent.
+This creates files in `08_PORTFOLIO_INPUTS/investment-impact/`. Those notes are
+the bridge into India Stock Picker review. They are not buy/sell decisions.
 
-**Canonical universe file:** `01_UNIVERSE/company_master.csv` — do not maintain `data/company_master.csv` separately.
+To add a company to the fetch cycle: add or update the row in
+`01_UNIVERSE/company_master.csv` and set `fetch_enabled: true`.
 
 ---
 
@@ -80,15 +69,11 @@ Opportunity Screener          ← produces the weekly Top 10 + Top 3
       ↓
 Weekly Opportunity Report
       ↓
-Portfolio Handoff              ← identifies 3 candidates for deeper review
+Investment Impact Layer       ← translates signals into underwriting triggers
       ↓
-Investment Impact Agent       ← fact-checks signals, gates underwriting effort
+Market Intelligence Agent
       ↓
-Investment Impact Notes       ← routing decision: Deep Dive / Watchlist / Track / Ignore
-      ↓
-India Stock Picker            ← valuation + quality gates (if Impact notes flags for review)
-      ↓
-Portfolio Fit Check           ← personal allocation decision
+Research Brief Generator
       ↓
 Portfolio Intelligence Output
 
@@ -167,10 +152,22 @@ Examples:
 * Annual reports
 * Exchange filings
 * Press releases
+* Evidence indexes and retrieval failure metadata
 
 Organized by:
 
 Company → Year → Quarter
+
+Collection principle:
+
+* Source retrieval is fallible. If a source blocks, times out, returns a
+  paywall, or serves an invalid file, the workflow records metadata and failure
+  reason instead of stopping.
+* For each company, `evidence-index.jsonl` is the machine-readable audit trail.
+  Raw PDFs and text snapshots are local evidence for extraction, not permanent
+  archives.
+* Raw files may be removed after successful extraction and retention checks;
+  extracted knowledge, metadata, URLs, hashes, and failure reasons remain.
 
 ⸻
 
@@ -254,14 +251,22 @@ Contains:
 
 08_PORTFOLIO_INPUTS
 
-Handoff zone between research discovery and investment decisions.
+Outputs consumed by the portfolio and stock-selection systems.
 
-Contains:
+Examples:
 
-* Weekly Portfolio Handoff (3 candidates for Investment Impact review)
-* Investment Impact Notes (fact-checked signals, underwriting gates, routing decisions)
-* Weekly ELI15 brief (human-readable summary)
-* Stock dashboards (reference link to latest India Stock Picker output)
+* Theme rankings
+* Opportunity lists
+* Risk alerts
+* Sector scorecards
+* Company watchlists
+* Investment Impact notes that bridge opportunity signals into underwriting
+
+Rule:
+
+* A positive Opportunity signal can create a handoff.
+* Only the India Stock Picker can create a Buy / Watchlist / Pass verdict.
+* Only Portfolio Fit can convert a Buy candidate into an actual portfolio action.
 
 ⸻
 
@@ -293,15 +298,9 @@ Examples:
 
 Agent Framework
 
-Agent 0 – Discovery News Agent
-
-Reviews raw discovery output from Lane B (`02_RAW_DOCUMENTS/_discovery/`). Classifies signals by source tier (Tier 1–4). Surfaces new company candidates and risk alerts for Universe Manager review. **Cannot modify `01_UNIVERSE/company_master.csv`.** Trigger: `/discovery-news-agent`.
-
-⸻
-
 Agent 1 – Universe Manager
 
-The **sole agent authorised to update `01_UNIVERSE/company_master.csv`**. Reads Discovery News Agent summary, evaluates signals against promotion/deprioritization rules, and decides universe membership. Sets `active_universe`, `fetch_enabled`, `status`, `priority`. Trigger: `/universe-manager`.
+Maintains company universe and metadata.
 
 ⸻
 
@@ -351,57 +350,35 @@ Outputs:
 
 * Top 10 Stocks for the Research Queue
 * Top 3 High-Conviction Opportunities
-* Portfolio Handoff (3 names for deeper review)
 * Updated Opportunity Records in `07_OPPORTUNITIES/active/`
+* Portfolio Handoff candidates for Investment Impact notes
 
 ⸻
 
 Agent 6.5 – Investment Impact Agent
 
-Fact-checks Portfolio Handoff signals, assesses underwriting impact, and gates whether India Stock Picker deep dive is warranted.
+Bridges Opportunity Discovery to stock selection.
 
-Decision types:
+Purpose:
 
-* Re-run India Stock Picker (Deep Dive)
-* Upgrade Watchlist Priority
-* Keep Tracking
-* Ignore For Now
+* Fact-check the specific signal
+* Map the impact to growth, margins, cash conversion, moat, valuation, and portfolio fit
+* Identify buy blockers
+* Decide whether to re-run the India Stock Picker, upgrade watchlist priority, keep tracking, or ignore
 
-Output: Investment Impact Notes in `08_PORTFOLIO_INPUTS/investment-impact/`
-
-Key rules:
-* **Positive signals cannot override failed quality gates, weak cash conversion, valuation flags, or portfolio constraints.**
-* **This agent never outputs Buy / Sell / Add / Exit.** Routing decision only.
+Hard rule: this agent never outputs Buy / Sell / Add / Exit.
 
 ⸻
 
-Agent 7 – India Stock Picker
-
-Runs on-demand when triggered by Investment Impact notes flagged for "Deep Dive" or "Upgrade Watchlist."
-
-Evaluates: Valuation gates (fair value, buy zones), quality gates (delivery track record, cash conversion), and portfolio fit.
-
-⸻
-
-Agent 8 – Portfolio Fit / Financial Advisor
-
-Runs on-demand after India Stock Picker clears gates.
-
-Assesses: FIRE horizon alignment, portfolio slot availability, personal biases, holdings overlap.
-
-Final decision: Add / Hold / Avoid
-
-⸻
-
-Agent 9 – Market Intelligence Agent
+Agent 7 – Market Intelligence Agent
 
 Monitors external sources and industry developments.
 
 ⸻
 
-Agent 10 – Research Committee Agent
+Agent 8 – Research Committee Agent
 
-Challenges conclusions and seeks contradictory evidence (run as needed, not weekly).
+Challenges conclusions and seeks contradictory evidence.
 
 Purpose:
 
