@@ -2,12 +2,12 @@
 name: collection-agent
 description: >
   Collection Agent for the Opportunity Discovery Engine. Trigger when the user wants to
-  find and catalogue source documents for companies in the universe — IR websites, NSE/BSE
-  filings, earnings transcripts, investor presentations, annual reports, press releases.
-  Reads from 01_UNIVERSE/company_master.csv and writes document catalogues to
-  02_RAW_DOCUMENTS/. Run after universe-manager, before extraction-agent. Trigger on:
-  "run collection", "find documents", "collect filings", "catalogue documents",
-  "find earnings calls", "collect for [company name]".
+  collect source evidence for tracked companies - IR websites, NSE/BSE filings,
+  earnings transcripts, investor presentations, annual reports, press releases.
+  Reads from 01_UNIVERSE/company_master.csv and writes local evidence, metadata,
+  and catalogues to 02_RAW_DOCUMENTS/. Run after universe-manager, before
+  extraction-agent. Trigger on: "run collection", "find documents", "collect
+  filings", "catalogue documents", "find earnings calls", "collect for [company]".
 model: haiku
 ---
 
@@ -15,7 +15,17 @@ model: haiku
 
 ## Objective
 
-For each company in the universe, locate and catalogue the latest source documents. Record where they are — do not download, summarise, or analyse them.
+Collect evidence, not just URLs.
+
+For each tracked company, locate source items, save metadata, attempt retrieval,
+validate content, save usable local files or text snapshots, and preserve failure
+reasons when retrieval fails.
+
+Also collect broad discovery news into `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/`
+so Universe Manager can promote new companies that are not yet marked
+`fetch_enabled=true`.
+
+Do not summarize. Do not analyse. Do not form opinions.
 
 ---
 
@@ -24,82 +34,121 @@ For each company in the universe, locate and catalogue the latest source documen
 | Input | Location |
 |---|---|
 | Companies to collect for | `01_UNIVERSE/company_master.csv` |
-| Existing catalogue (to avoid re-collecting) | `02_RAW_DOCUMENTS/<TICKER>/catalogue.md` (if exists) |
+| Existing machine-readable evidence index | `02_RAW_DOCUMENTS/<TICKER>/evidence-index.jsonl` |
+| Existing human catalogue | `02_RAW_DOCUMENTS/<TICKER>/catalogue.md` |
+| Discovery evidence | `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/evidence-index.jsonl` |
 
-Default: collect for all companies in `company_master.csv` where the latest document is more than 7 days old or no catalogue exists.
-
-User can also specify a single company: "collect for Siemens" → collect only for `SIEMENS`.
-
----
-
-## Process
-
-**Step 1** — Load `company_master.csv`. Filter to companies needing collection (no recent catalogue or explicitly requested).
-
-**Step 2** — For each company, locate:
-1. Investor Relations (IR) website — search `[company name] investor relations site`
-2. NSE filing page — `https://www.nseindia.com/companies-listing/corporate-filings-financial-results`
-3. BSE filing page — `https://www.bseindia.com/corporates/ann.html`
-
-**Step 3** — Identify the latest version of each document type:
-- Latest Annual Report (PDF)
-- Latest Investor Presentation (PDF or slides)
-- Latest Earnings Call Transcript (PDF or text)
-- Latest Quarterly Result Filing (NSE/BSE)
-- Latest Press Release (if any in last 30 days)
-
-**Step 4** — For each document found, record:
-- Document type
-- Publication date
-- Quarter (e.g. Q4 FY25)
-- Source URL
-- Whether it is new since last collection run
-
-**Step 5** — Write catalogue to `02_RAW_DOCUMENTS/<TICKER>/catalogue.md`.
+Default: collect for rows where `fetch_enabled=true`. If that column is not yet
+present during migration, use the explicit user request or the current active
+tracking subset.
 
 ---
 
-## Output Format
+## Source Retrieval Resilience Rule
 
-`02_RAW_DOCUMENTS/<TICKER>/catalogue.md`:
+All external sources are fallible: NSE, BSE, company IR pages, exchange
+archives, PDFs, HTML pages, RSS feeds, news sites, Screener, Moneycontrol,
+Business Standard, Economic Times, CNBC TV18, and future sources.
 
-```markdown
-# Document Catalogue — [COMPANY NAME] ([TICKER])
-Last updated: YYYY-MM-DD
+The workflow must never fail only because one source cannot be retrieved.
 
-| Document Type | Date | Quarter | Source URL | New This Run |
-|---|---|---|---|---|
-| Earnings Call Transcript | YYYY-MM-DD | Q4 FY25 | [URL] | Yes/No |
-| Investor Presentation | YYYY-MM-DD | Q4 FY25 | [URL] | Yes/No |
-| Annual Report | YYYY-MM-DD | FY25 | [URL] | Yes/No |
-| Quarterly Filing (NSE) | YYYY-MM-DD | Q4 FY25 | [URL] | Yes/No |
-| Press Release | YYYY-MM-DD | — | [URL] | Yes/No |
+For every discovered item:
 
-## IR Website
-[URL]
+1. save metadata,
+2. attempt content download or text snapshot,
+3. validate content before writing raw files,
+4. save failure reason if retrieval fails,
+5. continue to the next item.
 
-## NSE Filing Page
-[URL]
+---
 
-## Notes
-[Any access issues, missing documents, or unusual findings]
+## Collection Status Contract
+
+Use exactly these statuses:
+
+| Status | Meaning |
+|---|---|
+| `downloaded` | Raw file saved locally after content-type and file-signature validation |
+| `text_snapshot` | Readable text saved locally when full raw download is unnecessary or unavailable |
+| `metadata_only` | Metadata saved, but content unavailable |
+| `failed` | Source was attempted, but the record is incomplete or unusable |
+
+Never save an HTML error page as a PDF. Validate content type and file
+signature before writing any raw file.
+
+---
+
+## Required Metadata
+
+Every discovered source item must be written to `evidence-index.jsonl`, even
+when retrieval fails:
+
+```yaml
+company:
+ticker:
+source_name:
+source_type:
+source_tier:
+title:
+published_date:
+source_url:
+discovered_at:
+collection_status:
+failure_reason:
+alternate_sources_checked:
+local_path:
+content_hash:
 ```
+
+`local_path` and `content_hash` are required only for `downloaded` and
+`text_snapshot`.
+
+---
+
+## Storage Layout
+
+```text
+02_RAW_DOCUMENTS/<TICKER>/raw/YYYY-MM-DD/<safe-title>-<hash-prefix>.pdf
+02_RAW_DOCUMENTS/<TICKER>/snapshots/YYYY-MM-DD/<safe-title>-<hash-prefix>.txt
+02_RAW_DOCUMENTS/<TICKER>/evidence-index.jsonl
+02_RAW_DOCUMENTS/<TICKER>/catalogue.md
+```
+
+Discovery-wide material remains under:
+
+```text
+02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/
+02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/evidence-index.jsonl
+02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-news.md
+```
+
+---
+
+## Evidence Tiering
+
+| Tier | Meaning | Handling |
+|---|---|---|
+| Tier 1 | Filings, company disclosures, annual reports, earnings calls, investor presentations, press releases, credit reports, high-quality industry reports | Prioritize download; if blocked, attempt corroboration |
+| Tier 2 | News articles, discovery news, sector updates, order-win/capex/tender coverage | Save text snapshot or metadata; corroborate if signal is material |
+| Tier 3 | Aggregator headlines, duplicate reposts, social chatter, unverified claims | Metadata-only is acceptable unless corroborated |
 
 ---
 
 ## Rules
 
-- Prefer company IR websites and NSE/BSE official filings over third-party sources.
-- Do not summarise, extract, or analyse documents — cataloguing only.
-- If a document URL requires login or payment, note it and skip.
-- Flag if a company has no earnings call transcript available (common for smaller companies).
-- Mark each document as `New This Run: Yes` only if it was published since the last collection date.
-- If a company has no public IR presence, log it and escalate to user.
+1. Prefer company IR websites and NSE/BSE official filings over third-party sources.
+2. Do not summarize, extract, or analyse documents.
+3. Never let one bad source stop the run.
+4. Record `failure_reason` for 403, 404, 429, timeout, connection error,
+   paywall, malformed response, unsupported file type, and validation failure.
+5. Reject fake PDFs such as HTML error pages with `.pdf` URLs.
+6. Preserve source URL and metadata even if content is unavailable.
+7. Collection is deterministic: no Claude API, no OAuth, no manual intervention
+   in the Sunday workflow.
 
 ---
 
 ## Model Tier
 
-**Claude Haiku** (or equivalent lightweight model).
-This agent does structured, repetitive extraction work — no multi-step reasoning required.
-For a Groq-based pipeline: `llama-3.1-8b-instant` or `mixtral-8x7b-32768` are suitable.
+**Claude Haiku** (or equivalent lightweight model) for manual collection review.
+The scheduled Sunday collection script remains deterministic Python.

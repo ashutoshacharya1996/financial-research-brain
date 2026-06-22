@@ -28,6 +28,12 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 
 | Date | Source | Type | Title | URL | Status |
 |---|---|---|---|---|---|
+| 2026-05-15 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_15052026165302_Concall_Invite_signed.pdf | New |
+| 2026-05-20 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_20052026200229_CL_Audio_recording_signed.pdf | New |
+| 2026-06-22 | NSE | Filing | Press Release | https://nsearchives.nseindia.com/corporate/BEL_22062026160613_Lettersigned.pdf | New |
+| 2026-05-22 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_22052026120346_Letter_signed.pdf | New |
+| 2026-05-05 | NSE | Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_05052026152508_PR_Letter_Signed.pdf | New |
+| 2026-04-30 | NSE | Filing | Change in Management | https://nsearchives.nseindia.com/corporate/BEL_30042026172632_Letter_SM_Signed.pdf | New |
 | 2026-06-19 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_19062026161417_Covering_letter_1906_signed.pdf | New |
 | 2026-06-01 | NSE | Filing | Change in Management | https://nsearchives.nseindia.com/corporate/BEL_01062026104138_Letter_SM_signed.pdf | New |
 | 2026-05-25 | NSE | Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_25052026162125_PR_Letter_signed.pdf | New |
