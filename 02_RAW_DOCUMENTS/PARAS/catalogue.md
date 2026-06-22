@@ -22,3 +22,16 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 - FY26 full year: Revenue ₹478 crore (+31% YoY), PAT ₹88 crore (+40% YoY)
 - BEL order (June 2): Electro-optics contract worth ₹52.82 crore, execution by Sep 2027
 - Annual Report FY26: Not yet located — check NSE filings page
+
+## Exchange Filings — fetched 2026-06-22
+
+| Date | Source | Type | Title | URL | Status |
+|---|---|---|---|---|---|
+| 2026-06-18 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_18062026133949_Investormeet25062026.pdf | New |
+| 2026-06-02 | NSE | Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PARAS_02062026111306_IntimationBELOrder.pdf | New |
+| 2026-05-14 | NSE | Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PARAS_14052026111824_NPAD.pdf | New |
+| 2026-05-13 | NSE | Filing | Change in Auditors | https://nsearchives.nseindia.com/corporate/PARAS_13052026145345_Outcome13052026.pdf | New |
+| 2026-05-13 | NSE | Filing | Dividend | https://nsearchives.nseindia.com/corporate/PARAS_13052026144752_Outcome13052026.pdf | New |
+| 2026-05-13 | NSE | Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PARAS_13052026144317_Outcome13052026.pdf | New |
+| 2026-04-30 | NSE | Filing | Disclosure under SEBI Takeover Regulations | https://nsearchives.nseindia.com/corporate/team_sandeshc_15042026122108_Disc1.pdf | New |
+| 2026-04-28 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/PARAS_28042026113732_IntimationMOU28042026.pdf | New |

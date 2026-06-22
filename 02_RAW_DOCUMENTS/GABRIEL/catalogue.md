@@ -26,3 +26,19 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 - Revenue/EBITDA/PAT CAGR FY26-28 estimates: 22%/23%/55% (Motilal Oswal)
 - Annual Report FY26: Not yet located — check NSE filings
 - Investor Presentation: Not located — check IR website
+
+## Exchange Filings — fetched 2026-06-22
+
+| Date | Source | Type | Title | URL | Status |
+|---|---|---|---|---|---|
+| 2026-06-16 | NSE | Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/GABRIEL_16062026153429_SEintimation_signed_re-lodgement.pdf | New |
+| 2026-06-09 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_09062026230855_SE_Intimation_-_Allotment_of_Shares_signed.pdf | New |
+| 2026-06-03 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_03062026203135_SEIntimationwrittentranscriptsigned.pdf | New |
+| 2026-05-29 | NSE | Filing | Disclosure under SEBI Takeover Regulations | https://nsearchives.nseindia.com/corporate/team_sandeshc_29052026110831_Anfilco.pdf | New |
+| 2026-05-27 | NSE | Filing | Investor Presentation | https://nsearchives.nseindia.com/corporate/GABRIEL_27052026233605_mergedsigned.pdf | New |
+| 2026-05-27 | NSE | Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_27052026194014_Finalresulttouploadsigned.pdf | New |
+| 2026-05-27 | NSE | Filing | Change in Management | https://nsearchives.nseindia.com/corporate/GABRIEL_27052026180032_SEIntimation_senior_mangement_NJ.pdf | New |
+| 2026-05-27 | NSE | Filing | Change in Auditors | https://nsearchives.nseindia.com/corporate/GABRIEL_27052026175825_SEIntimationtoupload_organized.pdf | New |
+| 2026-05-22 | NSE | Filing | Scheme of Arrangement | https://nsearchives.nseindia.com/corporate/GABRIEL_22052026172555_SE_Intimation_Effective_Date_GIL_signed.pdf | New |
+| 2026-05-20 | NSE | Filing | Record Date | https://nsearchives.nseindia.com/corporate/GABRIEL_20052026144829_Record_date_Intimation.pdf | New |
+| 2026-05-11 | NSE | Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_11052026165143_SE_Intimation_final_Pallavi_Joshi.pdf | New |

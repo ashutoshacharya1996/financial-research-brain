@@ -25,3 +25,24 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 - Also submitted bid for ₹30,000 crore IAF MALE UAV tender
 - Annual Report FY26: Not located — likely on LT IR website above
 - Investor Presentation: Not located — check LT IR website
+
+## Exchange Filings — fetched 2026-06-22
+
+| Date | Source | Type | Title | URL | Status |
+|---|---|---|---|---|---|
+| 2026-06-21 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_21062026000405_SEIntimationLTNCompute20062026.pdf | New |
+| 2026-06-20 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_20062026234444_AnalystMeetIntimation20062026.pdf | New |
+| 2026-06-06 | NSE | Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PAM_06062026155938_IEPFNewspaperAdvt06062026.pdf | New |
+| 2026-06-05 | NSE | Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/PAM_05062026212803_OutcomeAGM2026.pdf | New |
+| 2026-05-30 | NSE | Filing | Credit Rating- New | https://nsearchives.nseindia.com/corporate/PAM_30052026163932_IntimationESGRating30052026.pdf | New |
+| 2026-05-26 | NSE | Filing | Cessation | https://nsearchives.nseindia.com/corporate/PAM_26052026182031_IntimationCessationNK.pdf | New |
+| 2026-05-26 | NSE | Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_26052026120112_PressRelease26052026.pdf | New |
+| 2026-05-25 | NSE | Filing | Change in Management | https://nsearchives.nseindia.com/corporate/PAM_25052026193714_IntimationSrManagement.pdf | New |
+| 2026-05-15 | NSE | Filing | Allotment of Securities | https://nsearchives.nseindia.com/corporate/PAM_15052026185953_ESOPAllotment15052026.pdf | New |
+| 2026-05-14 | NSE | Filing | Press Release | https://nsearchives.nseindia.com/corporate/PAM_14052026124116_PressRelease14052026.pdf | New |
+| 2026-05-05 | NSE | Filing | Updates | https://nsearchives.nseindia.com/corporate/PAM_05052026182003_AnalystPresentationMarch2026.pdf | New |
+| 2026-05-05 | NSE | Filing | Change in Director(s) | https://nsearchives.nseindia.com/corporate/PAM_05052026175058_LTResultMarch2026.pdf | New |
+| 2026-05-05 | NSE | Filing | Record Date | https://nsearchives.nseindia.com/corporate/PAM_05052026172549_LTResultMarch2026.pdf | New |
+| 2026-05-05 | NSE | Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PAM_05052026172324_LTResultMarch2026.pdf | New |
+| 2026-05-05 | NSE | Filing | Dividend | https://nsearchives.nseindia.com/corporate/PAM_05052026171203_LTResultMarch2026.pdf | New |
+| 2026-05-01 | NSE | Filing | Credit Rating- Revision | https://nsearchives.nseindia.com/corporate/Subhodh_01052026174527_CreditRatingNSEESGRating01052026.pdf | New |

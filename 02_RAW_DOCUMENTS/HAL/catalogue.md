@@ -24,3 +24,15 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 - Current catalyst (June 2026): Bid submitted for ₹30,000 crore IAF MALE UAV tender (bidding window closed June 16)
 - Annual Report FY26: Not yet located — likely on HAL IR website
 - Investor Presentation: Not located this run
+
+## Exchange Filings — fetched 2026-06-22
+
+| Date | Source | Type | Title | URL | Status |
+|---|---|---|---|---|---|
+| 2026-06-05 | NSE | Filing | Disclosure under SEBI Takeover Regulations | https://nsearchives.nseindia.com/corporate/team_bbodade_30042026182757_HAL.pdf | New |
+| 2026-05-27 | NSE | Filing | Change in Management | https://nsearchives.nseindia.com/corporate/HAL_27052026105757_ChangeInManagement_27052026.pdf | New |
+| 2026-05-15 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/HAL_15052026174321_ConferenceCall_15052026.pdf | New |
+| 2026-05-14 | NSE | Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/HAL_14052026124453_financialresults_Mar26_.pdf | New |
+| 2026-05-11 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_11052026164551_Dops_additionalcharge.pdf | New |
+| 2026-05-01 | NSE | Filing | Change in Director(s) | https://nsearchives.nseindia.com/corporate/HAL_01052026125434_ChangeInDirectorate_01052026.pdf | New |
+| 2026-04-28 | NSE | Filing | Updates | https://nsearchives.nseindia.com/corporate/HAL_28042026170921_RevisedPolicy_28042026.pdf | New |
