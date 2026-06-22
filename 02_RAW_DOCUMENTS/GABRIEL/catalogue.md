@@ -51,3 +51,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-05-22 | NSE | Filing | Scheme of Arrangement | https://nsearchives.nseindia.com/corporate/GABRIEL_22052026172555_SE_Intimation_Effective_Date_GIL_signed.pdf | New |
 | 2026-05-20 | NSE | Filing | Record Date | https://nsearchives.nseindia.com/corporate/GABRIEL_20052026144829_Record_date_Intimation.pdf | New |
 | 2026-05-11 | NSE | Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_11052026165143_SE_Intimation_final_Pallavi_Joshi.pdf | New |
+
+## Evidence collected 2026-06-22
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-05-06 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_06052026210223_SE_Intimation_final_merge.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-06-22/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-6b2bc453e7.pdf | 6b2bc453e7f8 | downloaded |
