@@ -136,12 +136,28 @@ Commit message: `feat: weekly brief YYYY-MM-DD`
 
 ---
 
+### Step 5 — Dashboard Refresh
+
+Invoke: `/refresh-dashboard`
+
+Fetches live prices from Kite for every stock in the STOCKS array in `docs/index.html`.
+Updates price, zone, valuation axis, scoreBreakdown zone modifier, poised total, action,
+held, and priceDate. Does not change fair values, scenarios, or layout.
+
+If Kite login has expired: log "Dashboard refresh skipped — Kite login required" and
+continue. The user can run `/refresh-dashboard` manually after logging in.
+
+Commit message: `chore: dashboard price refresh YYYY-MM-DD`
+
+---
+
 ## After All Steps
 
 1. Print a summary of what each step produced (files written, counts).
 2. Flag any steps that were skipped or produced no output.
 3. Link to the final brief: `08_PORTFOLIO_INPUTS/weekly-brief-YYYY-MM-DD.md`
 4. List the Portfolio Handoff names and their Investment Impact routing decisions.
+5. Show the dashboard refresh summary table (old price → new price, zone changes).
 
 ---
 
@@ -153,6 +169,7 @@ Commit message: `feat: weekly brief YYYY-MM-DD`
 | Step 1b fails (no discovery summary available) | Use existing company_master.csv; log warning; continue |
 | No new documents in Step 2a | Skip extraction; run delta against prior extracted data |
 | No new themes detected | Run Screener on existing theme records |
+| Step 5 fails (Kite login expired) | Log warning; skip dashboard refresh; user runs `/refresh-dashboard` manually |
 | Any step fails | Commit whatever was produced; log error; continue to next step |
 
 ---
