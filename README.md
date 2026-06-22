@@ -1,8 +1,13 @@
-Opportunity Discovery Engine
+﻿Opportunity Discovery Engine
 
 ## Weekly Workflow
 
-**Sunday (automatic):** A GitHub Action runs at 09:00 IST. It fetches prices, news, and exchange filings for all active companies using `scripts/fetch_evidence.py` — no AI, no API keys. Raw evidence is committed to `02_RAW_DOCUMENTS/<TICKER>/`.
+Current rule: Sunday runs collection only. Lane A fetches companies where
+`fetch_enabled=true`; Lane B writes discovery evidence under
+`02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/`. Universe Manager updates
+`01_UNIVERSE/company_master.csv` later on Monday.
+
+**Sunday (automatic):** A GitHub Action runs at 09:00 IST. It fetches prices, news, and exchange filings for companies where `fetch_enabled=true`, and also runs broad discovery collection using `scripts/fetch_evidence.py` - no AI, no API keys. Evidence is committed to `02_RAW_DOCUMENTS/`.
 
 **Monday+ (local):** Pull the new evidence and run the AI pipeline locally:
 
@@ -11,9 +16,14 @@ git pull
 claude
 ```
 
-Then say: _"New evidence is in. Run the pipeline from extraction onwards. Skip universe discovery and collection."_
+Then say: _"New evidence is in. Run extraction, discovery summary, Universe Manager, delta, themes, opportunity screener, and weekly brief. Skip only the collection step."_
 
-Claude Code processes extraction → delta → themes → opportunity screener → weekly brief and commits the outputs.
+Universe Manager runs on Monday after the discovery summary is generated from
+`02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/`. It is the step that updates
+`01_UNIVERSE/company_master.csv`. Sunday collection does not directly promote,
+deprioritize, or remove companies.
+
+Claude Code processes extraction â†’ delta â†’ themes â†’ opportunity screener â†’ weekly brief and commits the outputs.
 
 If a stock from the weekly report looks investment-relevant, run the Investment
 Impact layer before any stock-selection work:
@@ -36,7 +46,7 @@ Build a machine that continuously narrows the market down to the few opportuniti
 
 The system ingests company disclosures, earnings calls, exchange filings, industry reports, and market intelligence. It synthesizes that into a single weekly output: which stocks are worth researching right now, and why.
 
-The central object is not a company. It is not a theme. It is an **Opportunity** — defined as:
+The central object is not a company. It is not a theme. It is an **Opportunity** â€” defined as:
 
 ```
 Theme + Evidence + Candidate Stocks + Timing + Risk
@@ -44,40 +54,40 @@ Theme + Evidence + Candidate Stocks + Timing + Risk
 
 Every Sunday, the system produces exactly two outputs:
 
-1. **Top 10 Stocks Worth Researching** — the research queue for the week, grounded in specific evidence from the prior week’s documents
-2. **Top 3 High-Conviction Opportunities** — conviction-stage convergences of theme acceleration, cross-company corroboration, and near-term catalysts
+1. **Top 10 Stocks Worth Researching** â€” the research queue for the week, grounded in specific evidence from the prior weekâ€™s documents
+2. **Top 3 High-Conviction Opportunities** â€” conviction-stage convergences of theme acceleration, cross-company corroboration, and near-term catalysts
 
-The output feeds a separate stock-selection and portfolio construction process. The system’s job is not to pick stocks. Its job is to continuously narrow the universe to where the evidence is pointing.
+The output feeds a separate stock-selection and portfolio construction process. The systemâ€™s job is not to pick stocks. Its job is to continuously narrow the universe to where the evidence is pointing.
 
-⸻
+â¸»
 
 System Architecture
 
 Internet Sources
-      ↓
+      â†“
 Collection Agent
-      ↓
+      â†“
 Document Repository
-      ↓
+      â†“
 Extraction Agent
-      ↓
+      â†“
 Delta Analysis Agent
-      ↓
+      â†“
 Theme Detection Agent
-      ↓
-Opportunity Screener          ← produces the weekly Top 10 + Top 3
-      ↓
+      â†“
+Opportunity Screener          â† produces the weekly Top 10 + Top 3
+      â†“
 Weekly Opportunity Report
-      ↓
-Investment Impact Layer       ← translates signals into underwriting triggers
-      ↓
+      â†“
+Investment Impact Layer       â† translates signals into underwriting triggers
+      â†“
 Market Intelligence Agent
-      ↓
+      â†“
 Research Brief Generator
-      ↓
+      â†“
 Portfolio Intelligence Output
 
-⸻
+â¸»
 
 Research Universe
 
@@ -93,7 +103,7 @@ Future Expansion:
 * Macroeconomic sources
 * Alternative data sources
 
-⸻
+â¸»
 
 Repository Structure
 
@@ -110,7 +120,7 @@ financial-research-brain
 09_PROMPTS
 10_AUTOMATION
 
-⸻
+â¸»
 
 Folder Definitions
 
@@ -125,7 +135,7 @@ Examples:
 * Operating manuals
 * System architecture
 
-⸻
+â¸»
 
 01_UNIVERSE
 
@@ -139,7 +149,7 @@ Examples:
 * Investor relations links
 * NSE/BSE identifiers
 
-⸻
+â¸»
 
 02_RAW_DOCUMENTS
 
@@ -156,13 +166,17 @@ Examples:
 
 Organized by:
 
-Company → Year → Quarter
+Company â†’ Year â†’ Quarter
 
 Collection principle:
 
 * Sunday collection has two lanes: company-specific evidence for rows where
   `fetch_enabled=true`, and discovery-wide news for fresh ideas outside the
   tracked list.
+* No individual website is mandatory. NSE/BSE are valuable evidence sources,
+  but not dependencies; Google News RSS is a detector, not proof.
+* Material signals should be corroborated through company IR, press releases,
+  credit rating agencies, exchange metadata/filings, or credible media.
 * Source retrieval is fallible. If a source blocks, times out, returns a
   paywall, or serves an invalid file, the workflow records metadata and failure
   reason instead of stopping.
@@ -175,7 +189,15 @@ Collection principle:
   `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/evidence-index.jsonl` and
   `discovery-news.md` for Universe Manager review.
 
-⸻
+Universe status principle:
+
+* `candidate_watch` means interesting but unproven, with `fetch_enabled=false`.
+* `active` and `high_priority` mean evidence-backed enough for weekly fetch,
+  with `fetch_enabled=true`.
+* `deprioritized` means the signal faded or the thesis weakened, with
+  `fetch_enabled=false`.
+
+â¸»
 
 03_EXTRACTED_DATA
 
@@ -191,7 +213,7 @@ Examples:
 * Management commentary
 * Risk statements
 
-⸻
+â¸»
 
 04_COMPANY_ANALYSIS
 
@@ -204,7 +226,7 @@ Examples:
 * Change detection reports
 * Management sentiment analysis
 
-⸻
+â¸»
 
 05_SECTOR_ANALYSIS
 
@@ -218,7 +240,7 @@ Examples:
 * Industrials trends
 * Consumer demand trends
 
-⸻
+â¸»
 
 06_THEMES
 
@@ -241,7 +263,7 @@ Each theme should contain:
 * Confidence score
 * Trend direction
 
-⸻
+â¸»
 
 07_OPPORTUNITIES
 
@@ -253,7 +275,7 @@ Contains:
 * Active Opportunity Records, one file per live opportunity
 * Opportunity schema and weekly report template
 
-⸻
+â¸»
 
 08_PORTFOLIO_INPUTS
 
@@ -274,7 +296,7 @@ Rule:
 * Only the India Stock Picker can create a Buy / Watchlist / Pass verdict.
 * Only Portfolio Fit can convert a Buy candidate into an actual portfolio action.
 
-⸻
+â¸»
 
 09_PROMPTS
 
@@ -287,7 +309,7 @@ Examples:
 * Theme detection prompts
 * Delta analysis prompts
 
-⸻
+â¸»
 
 10_AUTOMATION
 
@@ -300,17 +322,17 @@ Examples:
 * Collection workflows
 * Update processes
 
-⸻
+â¸»
 
 Agent Framework
 
-Agent 1 – Universe Manager
+Agent 1 â€“ Universe Manager
 
 Maintains company universe and metadata.
 
-⸻
+â¸»
 
-Agent 2 – Collection Agent
+Agent 2 â€“ Collection Agent
 
 Discovers and archives:
 
@@ -319,15 +341,15 @@ Discovers and archives:
 * Investor relations documents
 * Earnings materials
 
-⸻
+â¸»
 
-Agent 3 – Extraction Agent
+Agent 3 â€“ Extraction Agent
 
 Converts unstructured documents into structured data.
 
-⸻
+â¸»
 
-Agent 4 – Delta Agent
+Agent 4 â€“ Delta Agent
 
 Identifies changes versus prior periods.
 
@@ -340,15 +362,15 @@ Focus:
 * Capex
 * Sentiment
 
-⸻
+â¸»
 
-Agent 5 – Theme Agent
+Agent 5 â€“ Theme Agent
 
 Identifies recurring themes across companies and sectors.
 
-⸻
+â¸»
 
-Agent 6 – Opportunity Screener
+Agent 6 â€“ Opportunity Screener
 
 Runs every Sunday. Synthesizes theme signals, delta outputs, and evidence weight into ranked Opportunities.
 
@@ -359,9 +381,9 @@ Outputs:
 * Updated Opportunity Records in `07_OPPORTUNITIES/active/`
 * Portfolio Handoff candidates for Investment Impact notes
 
-⸻
+â¸»
 
-Agent 6.5 – Investment Impact Agent
+Agent 6.5 â€“ Investment Impact Agent
 
 Bridges Opportunity Discovery to stock selection.
 
@@ -374,15 +396,15 @@ Purpose:
 
 Hard rule: this agent never outputs Buy / Sell / Add / Exit.
 
-⸻
+â¸»
 
-Agent 7 – Market Intelligence Agent
+Agent 7 â€“ Market Intelligence Agent
 
 Monitors external sources and industry developments.
 
-⸻
+â¸»
 
-Agent 8 – Research Committee Agent
+Agent 8 â€“ Research Committee Agent
 
 Challenges conclusions and seeks contradictory evidence.
 
@@ -392,7 +414,7 @@ Purpose:
 * Surface key risks
 * Identify thesis breakers
 
-⸻
+â¸»
 
 Research Principles
 
@@ -402,9 +424,9 @@ Research Principles
 4. Themes require cross-company validation.
 5. Contradictory evidence must always be documented.
 6. Research outputs should be reusable across future analyses.
-7. Every insight should answer: “Why does this matter for investors?”
+7. Every insight should answer: â€œWhy does this matter for investors?â€
 
-⸻
+â¸»
 
 Long-Term Objective
 
