@@ -1,8 +1,18 @@
 #!/usr/bin/env python3
 """
 Weekly evidence fetch — no AI, no API keys required.
-Pulls prices (yfinance), news (Google News RSS), and exchange filings (NSE/BSE).
-Commits raw evidence to the repo for Claude Code to process locally.
+
+Lane A: Company Evidence Fetch
+  Reads 01_UNIVERSE/company_master.csv where fetch_enabled=true.
+  Fetches prices (yfinance), company news (Google News RSS), and exchange
+  filings (NSE/BSE) for each tracked company.
+  Output: 02_RAW_DOCUMENTS/<TICKER>/
+
+Lane B: Discovery News Fetch
+  Runs broad market/theme queries — not tied to any company list.
+  Output: 02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-news.md
+  This lane does NOT add companies to the universe. Discovery News Agent
+  reviews the output; Universe Manager makes the addition decision.
 """
 
 import csv
@@ -30,8 +40,9 @@ except ImportError:
     sys.exit(1)
 
 ROOT = Path(__file__).parent.parent
-DATA_DIR = ROOT / "data"
+UNIVERSE_CSV = ROOT / "01_UNIVERSE" / "company_master.csv"
 RAW_DIR = ROOT / "02_RAW_DOCUMENTS"
+DISCOVERY_DIR = RAW_DIR / "_discovery"
 TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 HEADERS = {
@@ -42,6 +53,48 @@ HEADERS = {
 
 NSE_BASE = "https://www.nseindia.com"
 BSE_API = "https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w"
+
+# Broad discovery queries for Lane B.
+# These are market-wide signals — not company-specific.
+# Source: Google News RSS, filtered to India business news.
+DISCOVERY_QUERIES = [
+    "India order win NSE stock",
+    "India contract awarded defence",
+    "India L1 bidder government",
+    "India letter of award infrastructure",
+    "India capacity expansion plant",
+    "India capex announcement manufacturing",
+    "India PLI approval production",
+    "India export order industrial",
+    "India joint venture technology",
+    "India defence acquisition procurement",
+    "India tender awarded railways",
+    "India guidance raised earnings",
+    "India commissioning commercial production",
+    "India semiconductor plant electronics",
+    "India data center order",
+    "India green hydrogen order SECI",
+    "India power transmission order PGCIL",
+    "India railway order RVNL IRCON",
+    "India promoter pledge SEBI order",
+    "India credit rating downgrade CRISIL ICRA",
+]
+
+
+# ---------------------------------------------------------------------------
+# Guardrail check
+# ---------------------------------------------------------------------------
+
+def check_legacy_csv():
+    legacy = ROOT / "data" / "company_master.csv"
+    if legacy.exists():
+        print("=" * 70)
+        print("FATAL: data/company_master.csv still exists.")
+        print("This file is no longer the source of truth.")
+        print("The canonical universe is: 01_UNIVERSE/company_master.csv")
+        print("Delete data/company_master.csv before running this script.")
+        print("=" * 70)
+        sys.exit(1)
 
 
 # ---------------------------------------------------------------------------
@@ -71,7 +124,6 @@ def retry_get(url: str, session: requests.Session, retries: int = 3, timeout: in
 
 
 def prime_nse(session: requests.Session):
-    """Hit NSE homepage to establish cookies before API calls."""
     try:
         retry_get(NSE_BASE, session)
         time.sleep(1)
@@ -80,7 +132,7 @@ def prime_nse(session: requests.Session):
 
 
 # ---------------------------------------------------------------------------
-# Price fetch
+# Lane A — Price fetch
 # ---------------------------------------------------------------------------
 
 def fetch_prices(row: dict, out_dir: Path):
@@ -121,8 +173,28 @@ def fetch_prices(row: dict, out_dir: Path):
 
 
 # ---------------------------------------------------------------------------
-# News fetch (Google News RSS)
+# Lane A — Company news fetch (Google News RSS)
 # ---------------------------------------------------------------------------
+
+def _parse_rss_items(content: bytes, cutoff: datetime) -> list:
+    root = ET.fromstring(content)
+    rows = []
+    for item in root.findall(".//item")[:15]:
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        pub_str = (item.findtext("pubDate") or "").strip()
+        source_el = item.find("{http://search.yahoo.com/mrss/}credit")
+        source = source_el.text if source_el is not None else "Google News"
+        try:
+            pub_dt = datetime.strptime(pub_str, "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=timezone.utc)
+            if pub_dt < cutoff:
+                continue
+            pub_date = pub_dt.strftime("%Y-%m-%d")
+        except Exception:
+            pub_date = TODAY
+        rows.append((source, title, pub_date, link))
+    return rows
+
 
 def fetch_news(row: dict, out_dir: Path, session: requests.Session):
     query = f"{row['company_name']} {row['ticker']} NSE"
@@ -130,31 +202,12 @@ def fetch_news(row: dict, out_dir: Path, session: requests.Session):
         f"https://news.google.com/rss/search?q={urllib.parse.quote(query)}"
         f"&hl=en-IN&gl=IN&ceid=IN:en"
     )
-
     try:
         r = retry_get(rss_url, session)
-        root = ET.fromstring(r.content)
-        items = root.findall(".//item")[:15]
-
-        rows = []
         cutoff = datetime.now(timezone.utc) - timedelta(days=30)
-        for item in items:
-            title = (item.findtext("title") or "").strip()
-            link = (item.findtext("link") or "").strip()
-            pub_str = (item.findtext("pubDate") or "").strip()
-            source_el = item.find("{http://search.yahoo.com/mrss/}credit")
-            source = source_el.text if source_el is not None else "Google News"
-            try:
-                pub_dt = datetime.strptime(pub_str, "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=timezone.utc)
-                if pub_dt < cutoff:
-                    continue
-                pub_date = pub_dt.strftime("%Y-%m-%d")
-            except Exception:
-                pub_date = TODAY
+        items = _parse_rss_items(r.content, cutoff)
 
-            rows.append(f"| {source} | {title} | {pub_date} | {link} |")
-
-        if not rows:
+        if not items:
             print(f"  [{row['ticker']}] No recent news items found")
             return False
 
@@ -164,11 +217,11 @@ def fetch_news(row: dict, out_dir: Path, session: requests.Session):
             "",
             "| Source | Headline | Date | URL |",
             "|---|---|---|---|",
-        ] + rows
+        ] + [f"| {s} | {t} | {d} | {l} |" for s, t, d, l in items]
 
         out_file = out_dir / f"news-{TODAY}.md"
         out_file.write_text("\n".join(lines))
-        print(f"  [{row['ticker']}] News: {len(rows)} items → {out_file.name}")
+        print(f"  [{row['ticker']}] News: {len(items)} items → {out_file.name}")
         return True
     except Exception as e:
         print(f"  [{row['ticker']}] News fetch failed: {e}")
@@ -176,11 +229,10 @@ def fetch_news(row: dict, out_dir: Path, session: requests.Session):
 
 
 # ---------------------------------------------------------------------------
-# Exchange filings
+# Lane A — Exchange filings
 # ---------------------------------------------------------------------------
 
 def _parse_date(raw: str) -> str:
-    """Parse NSE or BSE date strings to YYYY-MM-DD."""
     for fmt in ("%d-%b-%Y %H:%M:%S", "%Y%m%dT%H:%M:%S", "%Y-%m-%dT%H:%M:%S", "%d-%m-%Y"):
         try:
             return datetime.strptime(raw.strip(), fmt).strftime("%Y-%m-%d")
@@ -207,14 +259,13 @@ def fetch_nse_filings(row: dict, session: requests.Session) -> list:
             if date < cutoff:
                 continue
             attach = item.get("attchmntFile", "") or item.get("nsurl", "")
-            url_str = f"https://nsearchives.nseindia.com/{attach}" if attach and not attach.startswith("http") else attach
-            filings.append({
-                "date": date,
-                "type": item.get("cmpyname", "Filing"),
-                "title": desc[:200],
-                "url": url_str,
-                "source": "NSE",
-            })
+            url_str = (
+                f"https://nsearchives.nseindia.com/{attach}"
+                if attach and not attach.startswith("http")
+                else attach
+            )
+            filings.append({"date": date, "type": item.get("cmpyname", "Filing"),
+                             "title": desc[:200], "url": url_str, "source": "NSE"})
         return filings
     except Exception as e:
         print(f"  [{row['ticker']}] NSE filings failed: {e}")
@@ -234,8 +285,6 @@ def fetch_bse_filings(row: dict, session: requests.Session) -> list:
         "strType": "C",
     }
     try:
-        r = retry_get(BSE_API, session)
-        # BSE requires POST with form data
         r = session.post(BSE_API, data=params, timeout=15)
         r.raise_for_status()
         data = r.json()
@@ -245,14 +294,12 @@ def fetch_bse_filings(row: dict, session: requests.Session) -> list:
             date = _parse_date(str(date_raw)) if date_raw else TODAY
             title = item.get("NEWSSUB", "") or item.get("HEADLINE", "")
             link = item.get("ATTACHMENTNAME", "") or ""
-            url_str = f"https://www.bseindia.com/xml-data/corpfiling/AttachHis/{link}" if link else ""
-            filings.append({
-                "date": date,
-                "type": "BSE Filing",
-                "title": title[:200],
-                "url": url_str,
-                "source": "BSE",
-            })
+            url_str = (
+                f"https://www.bseindia.com/xml-data/corpfiling/AttachHis/{link}"
+                if link else ""
+            )
+            filings.append({"date": date, "type": "BSE Filing",
+                             "title": title[:200], "url": url_str, "source": "BSE"})
         return filings
     except Exception as e:
         print(f"  [{row['ticker']}] BSE filings failed: {e}")
@@ -260,7 +307,7 @@ def fetch_bse_filings(row: dict, session: requests.Session) -> list:
 
 
 # ---------------------------------------------------------------------------
-# Catalogue update
+# Lane A — Catalogue update
 # ---------------------------------------------------------------------------
 
 CATALOGUE_HEADER = "| Date | Source | Type | Title | URL | Status |"
@@ -273,16 +320,12 @@ def update_catalogue(row: dict, out_dir: Path, filings: list):
 
     cat_file = out_dir / "catalogue.md"
     existing = cat_file.read_text(encoding="utf-8") if cat_file.exists() else ""
-
-    # Determine if this is legacy Claude format (5-col) or new format (6-col)
     is_legacy = CATALOGUE_HEADER not in existing
 
-    # De-dupe: collect known URLs and titles already in the file
     known = set()
     for line in existing.splitlines():
         if line.startswith("|") and "http" in line:
-            parts = [p.strip() for p in line.split("|")]
-            for p in parts:
+            for p in [p.strip() for p in line.split("|")]:
                 if p.startswith("http"):
                     known.add(p)
         if line.startswith("|"):
@@ -307,23 +350,18 @@ def update_catalogue(row: dict, out_dir: Path, filings: list):
         return
 
     rows_text = "\n".join(new_rows)
-
     if is_legacy:
-        # Append a new dated section so existing Claude-format data is untouched
         section = (
             f"\n\n## Exchange Filings — fetched {TODAY}\n\n"
             f"{CATALOGUE_HEADER}\n{CATALOGUE_SEP}\n{rows_text}\n"
         )
         cat_file.write_text(existing.rstrip() + section, encoding="utf-8")
     else:
-        # Insert after the header separator row
-        insert_after = CATALOGUE_SEP
-        idx = existing.find(insert_after)
+        idx = existing.find(CATALOGUE_SEP)
         if idx == -1:
-            # No separator found — append
             cat_file.write_text(existing.rstrip() + f"\n{rows_text}\n", encoding="utf-8")
         else:
-            insert_pos = idx + len(insert_after)
+            insert_pos = idx + len(CATALOGUE_SEP)
             cat_file.write_text(
                 existing[:insert_pos] + "\n" + rows_text + existing[insert_pos:],
                 encoding="utf-8",
@@ -333,26 +371,98 @@ def update_catalogue(row: dict, out_dir: Path, filings: list):
 
 
 # ---------------------------------------------------------------------------
-# Main
+# Lane B — Discovery news fetch (broad market/theme queries)
+# ---------------------------------------------------------------------------
+
+def fetch_discovery(session: requests.Session):
+    """
+    Lane B: broad market signal collection.
+    Runs DISCOVERY_QUERIES against Google News RSS.
+    Writes raw headlines to 02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-news.md.
+    Does NOT parse company names. Does NOT modify 01_UNIVERSE/company_master.csv.
+    Universe Manager and Discovery News Agent review this output on Monday.
+    """
+    print("\n=== Lane B: Discovery News Fetch ===\n")
+    out_dir = DISCOVERY_DIR / TODAY
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_file = out_dir / "discovery-news.md"
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+
+    lines = [
+        f"# Discovery News — {TODAY}",
+        f"Fetched: {TODAY}",
+        "",
+        "Raw market signals for Discovery News Agent review.",
+        "Source: Google News RSS. This file is read-only input for Universe Manager.",
+        "Universe Manager is the only agent authorised to update company_master.csv.",
+        "",
+    ]
+
+    total_items = 0
+    for query in DISCOVERY_QUERIES:
+        rss_url = (
+            f"https://news.google.com/rss/search?q={urllib.parse.quote(query)}"
+            f"&hl=en-IN&gl=IN&ceid=IN:en"
+        )
+        try:
+            r = retry_get(rss_url, session)
+            items = _parse_rss_items(r.content, cutoff)
+            lines.append(f"## {query}")
+            lines.append("")
+            lines.append("| Source | Headline | Date | URL |")
+            lines.append("|---|---|---|---|")
+            for source, title, date, link in items:
+                lines.append(f"| {source} | {title} | {date} | {link} |")
+                total_items += 1
+            if not items:
+                lines.append("_No items in the last 7 days._")
+            lines.append("")
+            time.sleep(0.5)
+        except Exception as e:
+            lines.append(f"_Query failed: {e}_")
+            lines.append("")
+            print(f"  Discovery query failed [{query}]: {e}")
+
+    out_file.write_text("\n".join(lines))
+    print(f"Discovery: {total_items} items across {len(DISCOVERY_QUERIES)} queries → {out_file}")
+    return total_items > 0
+
+
+# ---------------------------------------------------------------------------
+# Universe loader
 # ---------------------------------------------------------------------------
 
 def load_companies() -> list:
-    csv_path = DATA_DIR / "company_master.csv"
-    with open(csv_path, newline="", encoding="utf-8") as f:
-        return [r for r in csv.DictReader(f) if r.get("active", "").lower() == "true"]
+    if not UNIVERSE_CSV.exists():
+        print(f"ERROR: Universe CSV not found: {UNIVERSE_CSV}")
+        sys.exit(1)
+    with open(UNIVERSE_CSV, newline="", encoding="utf-8") as f:
+        return [r for r in csv.DictReader(f) if r.get("fetch_enabled", "").lower() == "true"]
 
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
 
 def main():
-    import urllib.parse  # ensure available in module scope
+    check_legacy_csv()
 
     print(f"=== Weekly Evidence Fetch — {TODAY} ===\n")
+    print(f"Universe: {UNIVERSE_CSV}")
+
     companies = load_companies()
-    print(f"Active companies: {len(companies)}\n")
+    print(f"Lane A companies (fetch_enabled=true): {len(companies)}")
+    for c in companies:
+        print(f"  {c['ticker']} — {c['company_name']}")
+    print()
 
     session = make_session()
     print("Priming NSE session...")
     prime_nse(session)
 
+    # Lane A — Company Evidence Fetch
+    print("\n=== Lane A: Company Evidence Fetch ===\n")
     successes, failures = 0, 0
 
     for row in companies:
@@ -365,7 +475,6 @@ def main():
         ok_news = fetch_news(row, out_dir, session)
         time.sleep(1)
 
-        # Try NSE first, fall back to BSE
         filings = fetch_nse_filings(row, session)
         time.sleep(1)
         if not filings:
@@ -384,8 +493,13 @@ def main():
             failures += 1
             print(f"  [{ticker}] WARNING: no data fetched")
 
-    print(f"\n=== Done — {successes} succeeded, {failures} failed ===")
-    if failures == len(companies):
+    print(f"\nLane A: {successes} succeeded, {failures} failed")
+
+    # Lane B — Discovery News Fetch
+    fetch_discovery(session)
+
+    print(f"\n=== Weekly Evidence Fetch Complete — {TODAY} ===")
+    if failures == len(companies) and len(companies) > 0:
         sys.exit(1)
 
 

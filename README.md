@@ -2,20 +2,42 @@ Opportunity Discovery Engine
 
 ## Weekly Workflow
 
-**Sunday (automatic):** A GitHub Action runs at 09:00 IST. It fetches prices, news, and exchange filings for all active companies using `scripts/fetch_evidence.py` — no AI, no API keys. Raw evidence is committed to `02_RAW_DOCUMENTS/<TICKER>/`.
+**Sunday (automatic, no AI, no API keys):**
 
-**Monday+ (local):** Pull the new evidence and run the AI pipeline locally:
+A GitHub Action runs at 09:00 IST and executes `scripts/fetch_evidence.py` with two lanes:
+
+```
+Lane A — Company Evidence Fetch
+  Reads: 01_UNIVERSE/company_master.csv where fetch_enabled=true
+  Writes: 02_RAW_DOCUMENTS/<TICKER>/  (prices, news, filings)
+
+Lane B — Discovery News Fetch
+  Broad market queries (order wins, L1 bids, capex plans, defence acquisitions, etc.)
+  Writes: 02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-news.md
+  Does NOT modify the universe. Discovery News Agent reviews this on Monday.
+```
+
+**Monday (local, Claude Code):**
 
 ```
 git pull
 claude
 ```
 
-Then say: _"New evidence is in. Run the pipeline from extraction onwards. Skip universe discovery and collection."_
+Then run: `/weekly-run`
 
-Claude Code processes extraction → delta → themes → opportunity screener → weekly brief and commits the outputs.
+```
+Step 1a: /discovery-news-agent   → reviews _discovery/, writes summary
+Step 1b: /universe-manager       → updates 01_UNIVERSE/company_master.csv
+Step 2:  extraction → delta → themes  (for fetch_enabled=true companies)
+Step 3:  /opportunity-screener   → Top 10 + Top 3 + Portfolio Handoff
+Step 4:  /investment-impact      → for Portfolio Handoff names only
+```
 
-To add a company to the fetch cycle: add a row to `data/company_master.csv` with `active: true`.
+**To add a company to the fetch cycle:**
+Universe Manager is the only agent that updates `01_UNIVERSE/company_master.csv`. Run `/universe-manager` and name the company, or let it be surfaced through the Discovery News Agent.
+
+**Canonical universe file:** `01_UNIVERSE/company_master.csv` — do not maintain `data/company_master.csv` separately.
 
 ---
 
@@ -271,9 +293,15 @@ Examples:
 
 Agent Framework
 
+Agent 0 – Discovery News Agent
+
+Reviews raw discovery output from Lane B (`02_RAW_DOCUMENTS/_discovery/`). Classifies signals by source tier (Tier 1–4). Surfaces new company candidates and risk alerts for Universe Manager review. **Cannot modify `01_UNIVERSE/company_master.csv`.** Trigger: `/discovery-news-agent`.
+
+⸻
+
 Agent 1 – Universe Manager
 
-Maintains company universe and metadata.
+The **sole agent authorised to update `01_UNIVERSE/company_master.csv`**. Reads Discovery News Agent summary, evaluates signals against promotion/deprioritization rules, and decides universe membership. Sets `active_universe`, `fetch_enabled`, `status`, `priority`. Trigger: `/universe-manager`.
 
 ⸻
 

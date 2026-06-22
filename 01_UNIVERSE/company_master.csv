@@ -1,116 +1,116 @@
-ticker,company_name,sector,source,discovery_reason,last_updated
-RELIANCE,Reliance Industries Ltd,Oil Gas & Consumable Fuels,nifty_500,,2026-06-20
-TCS,Tata Consultancy Services Ltd,Information Technology,nifty_500,,2026-06-20
-HDFCBANK,HDFC Bank Ltd,Financial Services,nifty_500,,2026-06-20
-ICICIBANK,ICICI Bank Ltd,Financial Services,nifty_500,,2026-06-20
-INFY,Infosys Ltd,Information Technology,nifty_500,,2026-06-20
-HINDUNILVR,Hindustan Unilever Ltd,Fast Moving Consumer Goods,nifty_500,,2026-06-20
-ITC,ITC Ltd,Fast Moving Consumer Goods,nifty_500,,2026-06-20
-SBIN,State Bank of India,Financial Services,nifty_500,,2026-06-20
-BAJFINANCE,Bajaj Finance Ltd,Financial Services,nifty_500,,2026-06-20
-KOTAKBANK,Kotak Mahindra Bank Ltd,Financial Services,nifty_500,,2026-06-20
-LT,Larsen & Toubro Ltd,Capital Goods,nifty_500,,2026-06-20
-HCLTECH,HCL Technologies Ltd,Information Technology,nifty_500,,2026-06-20
-AXISBANK,Axis Bank Ltd,Financial Services,nifty_500,,2026-06-20
-ASIANPAINT,Asian Paints Ltd,Consumer Durables,nifty_500,,2026-06-20
-MARUTI,Maruti Suzuki India Ltd,Automobile and Auto Components,nifty_500,,2026-06-20
-SUNPHARMA,Sun Pharmaceutical Industries Ltd,Healthcare,nifty_500,,2026-06-20
-BAJAJFINSV,Bajaj Finserv Ltd,Financial Services,nifty_500,,2026-06-20
-NTPC,NTPC Ltd,Power,nifty_500,,2026-06-20
-TITAN,Titan Company Ltd,Consumer Durables,nifty_500,,2026-06-20
-WIPRO,Wipro Ltd,Information Technology,nifty_500,,2026-06-20
-ULTRACEMCO,UltraTech Cement Ltd,Construction Materials,nifty_500,,2026-06-20
-POWERGRID,Power Grid Corporation of India Ltd,Power,nifty_500,,2026-06-20
-TATAMOTORS,Tata Motors Ltd,Automobile and Auto Components,nifty_500,,2026-06-20
-BHARTIARTL,Bharti Airtel Ltd,Telecommunication,nifty_500,,2026-06-20
-NESTLEIND,Nestle India Ltd,Fast Moving Consumer Goods,nifty_500,,2026-06-20
-M&M,Mahindra & Mahindra Ltd,Automobile and Auto Components,nifty_500,,2026-06-20
-TATASTEEL,Tata Steel Ltd,Metals & Mining,nifty_500,,2026-06-20
-TECHM,Tech Mahindra Ltd,Information Technology,nifty_500,,2026-06-20
-DRREDDY,Dr. Reddy's Laboratories Ltd,Healthcare,nifty_500,,2026-06-20
-ADANIENT,Adani Enterprises Ltd,Services,nifty_500,,2026-06-20
-ADANIPORTS,Adani Ports and Special Economic Zone Ltd,Services,nifty_500,,2026-06-20
-COALINDIA,Coal India Ltd,Oil Gas & Consumable Fuels,nifty_500,,2026-06-20
-ONGC,Oil and Natural Gas Corporation Ltd,Oil Gas & Consumable Fuels,nifty_500,,2026-06-20
-BPCL,Bharat Petroleum Corporation Ltd,Oil Gas & Consumable Fuels,nifty_500,,2026-06-20
-IOC,Indian Oil Corporation Ltd,Oil Gas & Consumable Fuels,nifty_500,,2026-06-20
-GRASIM,Grasim Industries Ltd,Construction Materials,nifty_500,,2026-06-20
-CIPLA,Cipla Ltd,Healthcare,nifty_500,,2026-06-20
-EICHERMOT,Eicher Motors Ltd,Automobile and Auto Components,nifty_500,,2026-06-20
-HEROMOTOCO,Hero MotoCorp Ltd,Automobile and Auto Components,nifty_500,,2026-06-20
-BRITANNIA,Britannia Industries Ltd,Fast Moving Consumer Goods,nifty_500,,2026-06-20
-DIVISLAB,Divi's Laboratories Ltd,Healthcare,nifty_500,,2026-06-20
-SHRIRAMFIN,Shriram Finance Ltd,Financial Services,nifty_500,,2026-06-20
-JSWSTEEL,JSW Steel Ltd,Metals & Mining,nifty_500,,2026-06-20
-HINDALCO,Hindalco Industries Ltd,Metals & Mining,nifty_500,,2026-06-20
-INDUSINDBK,IndusInd Bank Ltd,Financial Services,nifty_500,,2026-06-20
-BAJAJ-AUTO,Bajaj Auto Ltd,Automobile and Auto Components,nifty_500,,2026-06-20
-APOLLOHOSP,Apollo Hospitals Enterprise Ltd,Healthcare,nifty_500,,2026-06-20
-HDFCLIFE,HDFC Life Insurance Company Ltd,Financial Services,nifty_500,,2026-06-20
-SBILIFE,SBI Life Insurance Company Ltd,Financial Services,nifty_500,,2026-06-20
-TATACONSUM,Tata Consumer Products Ltd,Fast Moving Consumer Goods,nifty_500,,2026-06-20
-HAL,Hindustan Aeronautics Ltd,Capital Goods,nifty_500,,2026-06-20
-BEL,Bharat Electronics Ltd,Capital Goods,nifty_500,,2026-06-20
-SIEMENS,Siemens Ltd,Capital Goods,nifty_500,,2026-06-20
-ABB,ABB India Ltd,Capital Goods,nifty_500,,2026-06-20
-BHEL,Bharat Heavy Electricals Ltd,Capital Goods,nifty_500,,2026-06-20
-DLF,DLF Ltd,Realty,nifty_500,,2026-06-20
-GODREJPROP,Godrej Properties Ltd,Realty,nifty_500,,2026-06-20
-LODHA,Macrotech Developers Ltd,Realty,nifty_500,,2026-06-20
-PIDILITIND,Pidilite Industries Ltd,Chemicals,nifty_500,,2026-06-20
-SRF,SRF Ltd,Chemicals,nifty_500,,2026-06-20
-DEEPAKNTR,Deepak Nitrite Ltd,Chemicals,nifty_500,,2026-06-20
-POLYCAB,Polycab India Ltd,Capital Goods,nifty_500,,2026-06-20
-HAVELLS,Havells India Ltd,Capital Goods,nifty_500,,2026-06-20
-KEI,KEI Industries Ltd,Capital Goods,nifty_500,,2026-06-20
-DIXON,Dixon Technologies (India) Ltd,Consumer Durables,nifty_500,,2026-06-20
-KAYNES,Kaynes Technology India Ltd,Capital Goods,nifty_500,,2026-06-20
-PAGEIND,Page Industries Ltd,Textiles,nifty_500,,2026-06-20
-LUPIN,Lupin Ltd,Healthcare,nifty_500,,2026-06-20
-AUROPHARMA,Aurobindo Pharma Ltd,Healthcare,nifty_500,,2026-06-20
-TORNTPHARM,Torrent Pharmaceuticals Ltd,Healthcare,nifty_500,,2026-06-20
-PERSISTENT,Persistent Systems Ltd,Information Technology,nifty_500,,2026-06-20
-COFORGE,Coforge Ltd,Information Technology,nifty_500,,2026-06-20
-LTIM,LTIMindtree Ltd,Information Technology,nifty_500,,2026-06-20
-MPHASIS,Mphasis Ltd,Information Technology,nifty_500,,2026-06-20
-CUMMINSIND,Cummins India Ltd,Capital Goods,nifty_500,,2026-06-20
-THERMAX,Thermax Ltd,Capital Goods,nifty_500,,2026-06-20
-ADANIGREEN,Adani Green Energy Ltd,Power,nifty_500,,2026-06-20
-TATAPOWER,Tata Power Company Ltd,Power,nifty_500,,2026-06-20
-VEDL,Vedanta Ltd,Metals & Mining,nifty_500,,2026-06-20
-SAIL,Steel Authority of India Ltd,Metals & Mining,nifty_500,,2026-06-20
-NMDC,NMDC Ltd,Metals & Mining,nifty_500,,2026-06-20
-MARICO,Marico Ltd,Fast Moving Consumer Goods,nifty_500,,2026-06-20
-DABUR,Dabur India Ltd,Fast Moving Consumer Goods,nifty_500,,2026-06-20
-COLPAL,Colgate-Palmolive (India) Ltd,Fast Moving Consumer Goods,nifty_500,,2026-06-20
-GODREJCP,Godrej Consumer Products Ltd,Fast Moving Consumer Goods,nifty_500,,2026-06-20
-VBL,Varun Beverages Ltd,Fast Moving Consumer Goods,nifty_500,,2026-06-20
-FORTIS,Fortis Healthcare Ltd,Healthcare,nifty_500,,2026-06-20
-MAXHEALTH,Max Healthcare Institute Ltd,Healthcare,nifty_500,,2026-06-20
-OBEROIRLTY,Oberoi Realty Ltd,Realty,nifty_500,,2026-06-20
-PRESTIGE,Prestige Estates Projects Ltd,Realty,nifty_500,,2026-06-20
-AMBUJACEMENT,Ambuja Cements Ltd,Construction Materials,nifty_500,,2026-06-20
-ACC,ACC Ltd,Construction Materials,nifty_500,,2026-06-20
-SHREECEM,Shree Cement Ltd,Construction Materials,nifty_500,,2026-06-20
-DALBHARAT,Dalmia Bharat Ltd,Construction Materials,nifty_500,,2026-06-20
-RAMCOCEM,The Ramco Cements Ltd,Construction Materials,nifty_500,,2026-06-20
-INDIGO,InterGlobe Aviation Ltd,Services,nifty_500,,2026-06-20
-CHOLAFIN,Cholamandalam Investment and Finance Company Ltd,Financial Services,nifty_500,,2026-06-20
-MUTHOOTFIN,Muthoot Finance Ltd,Financial Services,nifty_500,,2026-06-20
-HFCL,HFCL Ltd,Telecommunication,nifty_500,,2026-06-20
-TATACOMM,Tata Communications Ltd,Telecommunication,nifty_500,,2026-06-20
-MOTHERSON,Samvardhana Motherson International Ltd,Automobile and Auto Components,nifty_500,,2026-06-20
-BOSCHLTD,Bosch Ltd,Automobile and Auto Components,nifty_500,,2026-06-20
-TVSMOTORS,TVS Motor Company Ltd,Automobile and Auto Components,nifty_500,,2026-06-20
-ASHOKLEY,Ashok Leyland Ltd,Automobile and Auto Components,nifty_500,,2026-06-20
-RAYMOND,Raymond Ltd,Textiles,nifty_500,,2026-06-20
-BERGERINDIA,Berger Paints India Ltd,Consumer Durables,nifty_500,,2026-06-20
-KANSAINER,Kansai Nerolac Paints Ltd,Consumer Durables,nifty_500,,2026-06-20
-NATIONALUM,National Aluminium Company Ltd,Metals & Mining,nifty_500,,2026-06-20
-GAIL,GAIL (India) Ltd,Oil Gas & Consumable Fuels,nifty_500,,2026-06-20
-ALKEM,Alkem Laboratories Ltd,Healthcare,nifty_500,,2026-06-20
-IPCA,Ipca Laboratories Ltd,Healthcare,nifty_500,,2026-06-20
-BIOCON,Biocon Ltd,Healthcare,nifty_500,,2026-06-20
-PARAS,Paras Defence & Space Technologies Ltd,Capital Goods,news_discovery,BEL subcontract for electro-optics worth Rs 52.82 crore (June 2 filing) — defence electronics supplier gaining repeat government orders,2026-06-20
-JNKINDIA,JNK India Ltd,Capital Goods,news_discovery,Large UAE export order for waste gas handling systems (TA'ZIZ Salt Project ADNOC) — emerging industrial export story with 94% stock return YTD 2026,2026-06-20
-GABRIEL,Gabriel India Ltd,Automobile and Auto Components,news_discovery,Motilal Oswal initiates coverage with Buy (target Rs 1266 ~24% upside); management targeting Rs 50000 crore group revenue by 2030 with diversification into sunroofs/solar dampers/e-mobility,2026-06-20
+ticker,company_name,sector,industry,active_universe,fetch_enabled,fetch_reason,priority,status,last_reviewed,source,notes,deprioritization_reason,next_review_date,yfinance_symbol,nse_symbol,bse_code
+RELIANCE,Reliance Industries Ltd,Oil Gas & Consumable Fuels,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+TCS,Tata Consultancy Services Ltd,Information Technology,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+HDFCBANK,HDFC Bank Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ICICIBANK,ICICI Bank Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+INFY,Infosys Ltd,Information Technology,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+HINDUNILVR,Hindustan Unilever Ltd,Fast Moving Consumer Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ITC,ITC Ltd,Fast Moving Consumer Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+SBIN,State Bank of India,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+BAJFINANCE,Bajaj Finance Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+KOTAKBANK,Kotak Mahindra Bank Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+LT,Larsen & Toubro Ltd,Capital Goods,Engineering & Construction,true,true,Core tracked company — active thesis with weekly evidence,high,active,2026-06-20,nifty_500,,,,LT.NS,LT,500510
+HCLTECH,HCL Technologies Ltd,Information Technology,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+AXISBANK,Axis Bank Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ASIANPAINT,Asian Paints Ltd,Consumer Durables,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+MARUTI,Maruti Suzuki India Ltd,Automobile and Auto Components,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+SUNPHARMA,Sun Pharmaceutical Industries Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+BAJAJFINSV,Bajaj Finserv Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+NTPC,NTPC Ltd,Power,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+TITAN,Titan Company Ltd,Consumer Durables,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+WIPRO,Wipro Ltd,Information Technology,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ULTRACEMCO,UltraTech Cement Ltd,Construction Materials,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+POWERGRID,Power Grid Corporation of India Ltd,Power,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+TATAMOTORS,Tata Motors Ltd,Automobile and Auto Components,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+BHARTIARTL,Bharti Airtel Ltd,Telecommunication,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+NESTLEIND,Nestle India Ltd,Fast Moving Consumer Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+M&M,Mahindra & Mahindra Ltd,Automobile and Auto Components,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+TATASTEEL,Tata Steel Ltd,Metals & Mining,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+TECHM,Tech Mahindra Ltd,Information Technology,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+DRREDDY,Dr. Reddy's Laboratories Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ADANIENT,Adani Enterprises Ltd,Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ADANIPORTS,Adani Ports and Special Economic Zone Ltd,Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+COALINDIA,Coal India Ltd,Oil Gas & Consumable Fuels,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ONGC,Oil and Natural Gas Corporation Ltd,Oil Gas & Consumable Fuels,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+BPCL,Bharat Petroleum Corporation Ltd,Oil Gas & Consumable Fuels,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+IOC,Indian Oil Corporation Ltd,Oil Gas & Consumable Fuels,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+GRASIM,Grasim Industries Ltd,Construction Materials,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+CIPLA,Cipla Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+EICHERMOT,Eicher Motors Ltd,Automobile and Auto Components,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+HEROMOTOCO,Hero MotoCorp Ltd,Automobile and Auto Components,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+BRITANNIA,Britannia Industries Ltd,Fast Moving Consumer Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+DIVISLAB,Divi's Laboratories Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+SHRIRAMFIN,Shriram Finance Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+JSWSTEEL,JSW Steel Ltd,Metals & Mining,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+HINDALCO,Hindalco Industries Ltd,Metals & Mining,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+INDUSINDBK,IndusInd Bank Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+BAJAJ-AUTO,Bajaj Auto Ltd,Automobile and Auto Components,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+APOLLOHOSP,Apollo Hospitals Enterprise Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+HDFCLIFE,HDFC Life Insurance Company Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+SBILIFE,SBI Life Insurance Company Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+TATACONSUM,Tata Consumer Products Ltd,Fast Moving Consumer Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+HAL,Hindustan Aeronautics Ltd,Capital Goods,Aerospace & Defence,true,true,Core tracked company — active thesis with weekly evidence,high,active,2026-06-20,nifty_500,,,,HAL.NS,HAL,541154
+BEL,Bharat Electronics Ltd,Capital Goods,Defence Electronics,true,true,Core tracked company — active thesis with weekly evidence,high,active,2026-06-20,nifty_500,,,,BEL.NS,BEL,500049
+SIEMENS,Siemens Ltd,Capital Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ABB,ABB India Ltd,Capital Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+BHEL,Bharat Heavy Electricals Ltd,Capital Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+DLF,DLF Ltd,Realty,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+GODREJPROP,Godrej Properties Ltd,Realty,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+LODHA,Macrotech Developers Ltd,Realty,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+PIDILITIND,Pidilite Industries Ltd,Chemicals,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+SRF,SRF Ltd,Chemicals,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+DEEPAKNTR,Deepak Nitrite Ltd,Chemicals,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+POLYCAB,Polycab India Ltd,Capital Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+HAVELLS,Havells India Ltd,Capital Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+KEI,KEI Industries Ltd,Capital Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+DIXON,Dixon Technologies (India) Ltd,Consumer Durables,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+KAYNES,Kaynes Technology India Ltd,Capital Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+PAGEIND,Page Industries Ltd,Textiles,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+LUPIN,Lupin Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+AUROPHARMA,Aurobindo Pharma Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+TORNTPHARM,Torrent Pharmaceuticals Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+PERSISTENT,Persistent Systems Ltd,Information Technology,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+COFORGE,Coforge Ltd,Information Technology,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+LTIM,LTIMindtree Ltd,Information Technology,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+MPHASIS,Mphasis Ltd,Information Technology,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+CUMMINSIND,Cummins India Ltd,Capital Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+THERMAX,Thermax Ltd,Capital Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ADANIGREEN,Adani Green Energy Ltd,Power,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+TATAPOWER,Tata Power Company Ltd,Power,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+VEDL,Vedanta Ltd,Metals & Mining,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+SAIL,Steel Authority of India Ltd,Metals & Mining,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+NMDC,NMDC Ltd,Metals & Mining,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+MARICO,Marico Ltd,Fast Moving Consumer Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+DABUR,Dabur India Ltd,Fast Moving Consumer Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+COLPAL,Colgate-Palmolive (India) Ltd,Fast Moving Consumer Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+GODREJCP,Godrej Consumer Products Ltd,Fast Moving Consumer Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+VBL,Varun Beverages Ltd,Fast Moving Consumer Goods,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+FORTIS,Fortis Healthcare Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+MAXHEALTH,Max Healthcare Institute Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+OBEROIRLTY,Oberoi Realty Ltd,Realty,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+PRESTIGE,Prestige Estates Projects Ltd,Realty,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+AMBUJACEMENT,Ambuja Cements Ltd,Construction Materials,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ACC,ACC Ltd,Construction Materials,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+SHREECEM,Shree Cement Ltd,Construction Materials,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+DALBHARAT,Dalmia Bharat Ltd,Construction Materials,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+RAMCOCEM,The Ramco Cements Ltd,Construction Materials,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+INDIGO,InterGlobe Aviation Ltd,Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+CHOLAFIN,Cholamandalam Investment and Finance Company Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+MUTHOOTFIN,Muthoot Finance Ltd,Financial Services,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+HFCL,HFCL Ltd,Telecommunication,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+TATACOMM,Tata Communications Ltd,Telecommunication,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+MOTHERSON,Samvardhana Motherson International Ltd,Automobile and Auto Components,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+BOSCHLTD,Bosch Ltd,Automobile and Auto Components,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+TVSMOTORS,TVS Motor Company Ltd,Automobile and Auto Components,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ASHOKLEY,Ashok Leyland Ltd,Automobile and Auto Components,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+RAYMOND,Raymond Ltd,Textiles,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+BERGERINDIA,Berger Paints India Ltd,Consumer Durables,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+KANSAINER,Kansai Nerolac Paints Ltd,Consumer Durables,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+NATIONALUM,National Aluminium Company Ltd,Metals & Mining,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+GAIL,GAIL (India) Ltd,Oil Gas & Consumable Fuels,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+ALKEM,Alkem Laboratories Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+IPCA,Ipca Laboratories Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+BIOCON,Biocon Ltd,Healthcare,,true,false,,medium,monitoring,2026-06-20,nifty_500,,,,,,
+PARAS,Paras Defence & Space Technologies Ltd,Capital Goods,Defence Electronics,true,true,Core tracked company — active thesis with weekly evidence,high,active,2026-06-20,news_discovery,BEL subcontract for electro-optics worth Rs 52.82 crore (June 2 filing) — defence electronics supplier gaining repeat government orders,,,PARAS.NS,PARAS,543317
+JNKINDIA,JNK India Ltd,Capital Goods,Industrial Equipment,true,true,Core tracked company — active thesis with weekly evidence,high,active,2026-06-20,news_discovery,Large UAE export order for waste gas handling systems (TA'ZIZ Salt Project ADNOC) — emerging industrial export story with 94% stock return YTD 2026,,,JNKINDIA.NS,JNKINDIA,544010
+GABRIEL,Gabriel India Ltd,Automobile and Auto Components,Auto Components,true,true,Core tracked company — active thesis with weekly evidence,high,active,2026-06-20,news_discovery,Motilal Oswal initiates coverage with Buy (target Rs 1266 ~24% upside); management targeting Rs 50000 crore group revenue by 2030 with diversification into sunroofs/solar dampers/e-mobility,,,GABRIEL.NS,GABRIEL,505714

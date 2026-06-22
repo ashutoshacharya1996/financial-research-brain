@@ -13,12 +13,21 @@ Its objective is to surface the most important emerging, developing, and breakin
 ### Theme Name
 
 ### Status
-- Emerging
-- Developing
-- Consensus
-- Mature
-- Declining
-- Broken
+
+Full lifecycle (in order):
+
+| Status | Meaning |
+|---|---|
+| `Emerging` | Appearing for the first time across multiple companies; no prior record |
+| `Developing` | Has a prior record; corroboration growing; signal strengthening |
+| `Conviction` | Evidence strong and consistent; multiple corroborating companies; clear catalysts; suitable for Opportunity Screener Top 3 |
+| `Consensus` | Widely known; appearing in analyst reports and mainstream media; no longer early-signal |
+| `Fading` | Was Consensus or Conviction; now corroboration count or signal strength declining |
+| `Declining` | Fewer companies mentioning it vs prior periods; language more hedged |
+| `Broken` | Primary evidence companies are now contradicting the thesis |
+| `Closed` | Thesis played out, became fully priced in, or is no longer relevant; no fetch unless manually reactivated |
+
+Downgrade triggers (move theme status backward): corroboration count drops, order delays confirmed, guidance cut, thesis breaker triggered, or no meaningful update in 8–12 weeks.
 
 ### Confidence Score
 1-10
