@@ -582,15 +582,15 @@ const AXIS_INFO = {
 const STOCKS = [
 {
   id:'BEL',name:'Bharat Electronics Ltd',exchange:'NSE',
-  price:285.40,priceDate:'20 Jun 2026',
+  price:431.50,priceDate:'22 Jun 2026',
   fv:{bear:230,base:305,bull:410},
-  zone:'fair-value',zoneLabel:'Fair Value',
+  zone:'expensive',zoneLabel:'Expensive',
   themes:['defence'],sectors:['psu','defence','capital-goods'],
-  poised:7.5,action:'watch',actionLabel:'Add on dip',
+  poised:6.5,action:'avoid',actionLabel:'Avoid',
   watchPrice:260,pe:28,revenue:27480,orderBook:73882,obCoverage:2.7,
   corroboration:4,trend:'accelerating',confidence:7.5,
   opportunityId:'defence-electronics-aerospace-2026-Q4',
-  axes:{opportunity:7.5,valuation:6.0,execution:7.0,moat:7.5,momentum:8.0},
+  axes:{opportunity:7.5,valuation:2.0,execution:7.0,moat:7.5,momentum:8.0},
   financials:[
     {lbl:'FY26 Revenue',val:'₹27,480cr',sub:'+18.3% YoY'},
     {lbl:'EBITDA Margin',val:'~29%',sub:'Expanding',col:'green'},
@@ -601,10 +601,10 @@ const STOCKS = [
   risks:['Defence budget dependency','HAL delivery delays affect co-programmes'],
   scoreBreakdown:[
     {lbl:'Opportunity confidence (base)',val:'7.5',type:'base'},
-    {lbl:'Price in Fair Value zone',val:'±0.0',type:'neutral'},
+    {lbl:'Expensive (price above bull FV)',val:'−1.0',type:'neg'},
     {lbl:'Gate 1: Conditional quality pass',val:'±0.0',type:'neutral'},
     {lbl:'PE ~28 (below 30 threshold)',val:'±0.0',type:'neutral'},
-    {lbl:'Final Poised Score',val:'7.5',type:'total'},
+    {lbl:'Final Poised Score',val:'6.5',type:'total'},
   ],
   eli15:'Think of the Poised Score like a traffic light meter. BEL scores 7.5 because the business is genuinely strong and the defence order pipeline is real — but at ₹285 you\'re paying fair value, not a bargain. The light is amber: great company, but wait for a better entry price.',
   scenarios:[
@@ -665,7 +665,7 @@ const STOCKS = [
 },
 {
   id:'HAL',name:'Hindustan Aeronautics Ltd',exchange:'NSE',
-  price:4250,priceDate:'20 Jun 2026',
+  price:4515.20,priceDate:'22 Jun 2026',
   fv:{bear:3200,base:3900,bull:5400},
   zone:'watch',zoneLabel:'Watch',
   themes:['defence'],sectors:['psu','defence'],
@@ -673,7 +673,7 @@ const STOCKS = [
   watchPrice:3315,pe:35,revenue:29000,orderBook:94000,obCoverage:3.2,
   corroboration:4,trend:'accelerating',confidence:7.5,
   opportunityId:'defence-electronics-aerospace-2026-Q4',
-  axes:{opportunity:7.5,valuation:4.5,execution:4.5,moat:8.5,momentum:7.5},
+  axes:{opportunity:7.5,valuation:4.0,execution:4.5,moat:8.5,momentum:7.5},
   financials:[
     {lbl:'FY26 Revenue',val:'~₹29,000cr',sub:'~+15% YoY'},
     {lbl:'EBITDA Margin',val:'~18%',sub:'Stable'},
@@ -747,7 +747,7 @@ const STOCKS = [
 },
 {
   id:'JNKINDIA',name:'JNK India Ltd',exchange:'NSE',
-  price:1380,priceDate:'20 Jun 2026',
+  price:479.45,priceDate:'22 Jun 2026',
   fv:{bear:1100,base:1560,bull:2200},
   zone:'buy-zone',zoneLabel:'Buy Zone',
   themes:['capex'],sectors:['capital-goods','engineering'],
@@ -830,15 +830,15 @@ const STOCKS = [
 },
 {
   id:'LT',name:'Larsen & Toubro Ltd',exchange:'NSE',
-  price:3620,priceDate:'20 Jun 2026',
+  price:4201.30,priceDate:'22 Jun 2026',
   fv:{bear:3100,base:3800,bull:5200},
-  zone:'fair-value',zoneLabel:'Fair Value',
+  zone:'watch',zoneLabel:'Watch',
   themes:['capex','defence'],sectors:['engineering','capital-goods'],
-  poised:7.6,action:'watch',actionLabel:'Add on dip',
+  poised:7.1,action:'watch',actionLabel:'Add on dip',
   watchPrice:3230,pe:28,revenue:230000,orderBook:560000,obCoverage:2.4,
   corroboration:6,trend:'accelerating',confidence:7.8,
   opportunityId:'india-industrial-capex-cycle-2026-Q4',
-  axes:{opportunity:7.8,valuation:6.0,execution:8.5,moat:8.0,momentum:7.0},
+  axes:{opportunity:7.8,valuation:4.0,execution:8.5,moat:8.0,momentum:7.0},
   financials:[
     {lbl:'FY26 Revenue',val:'~₹2,30,000cr',sub:'~+17% YoY'},
     {lbl:'EBITDA Margin',val:'~12%',sub:'Stable'},
@@ -849,11 +849,11 @@ const STOCKS = [
   risks:['Large cap — growth rate moderates as base scales','Working capital intensive: any slowdown in client payments strains cash flow','International exposure (Middle East) adds geopolitical risk'],
   scoreBreakdown:[
     {lbl:'Opportunity confidence (base)',val:'7.8',type:'base'},
-    {lbl:'Price in Fair Value zone',val:'±0.0',type:'neutral'},
+    {lbl:'Watch zone (price above base FV)',val:'−0.5',type:'neg'},
     {lbl:'Gate 1: Full quality pass (all criteria)',val:'+0.5',type:'pos'},
     {lbl:'Large cap — lower growth premium',val:'−0.5',type:'neg'},
     {lbl:'FY26 revenue guidance miss (−300bps)',val:'−0.2',type:'neg'},
-    {lbl:'Final Poised Score',val:'7.6',type:'total'},
+    {lbl:'Final Poised Score',val:'7.1',type:'total'},
   ],
   eli15:'L&T is the largest and most capable engineering contractor in India — if India is building something big, L&T is probably building it. At PE 28× and fair value ₹3,800, you\'re paying a fair price for India\'s best execution machine.',
   scenarios:[
@@ -914,15 +914,15 @@ const STOCKS = [
 },
 {
   id:'PARAS',name:'Paras Defence & Space Technologies',exchange:'NSE',
-  price:1060,priceDate:'20 Jun 2026',
+  price:1378.85,priceDate:'22 Jun 2026',
   fv:{bear:860,base:1200,bull:1800},
-  zone:'buy-zone',zoneLabel:'Buy Zone',
+  zone:'watch',zoneLabel:'Watch',
   themes:['defence'],sectors:['defence','small-cap'],
-  poised:7.9,action:'add',actionLabel:'Add this week',
+  poised:6.9,action:'watch',actionLabel:'Add on dip',
   watchPrice:null,pe:38,revenue:280,orderBook:null,obCoverage:null,
   corroboration:4,trend:'accelerating',confidence:7.5,
   opportunityId:'defence-electronics-aerospace-2026-Q4',
-  axes:{opportunity:7.5,valuation:7.5,execution:6.5,moat:7.0,momentum:8.0},
+  axes:{opportunity:7.5,valuation:4.0,execution:6.5,moat:7.0,momentum:8.0},
   financials:[
     {lbl:'FY26 Revenue',val:'~₹280cr',sub:'~+40% YoY',col:'green'},
     {lbl:'EBITDA Margin',val:'~30%+',sub:'Niche premium',col:'green'},
@@ -933,11 +933,11 @@ const STOCKS = [
   risks:['Tiny revenue base (~₹280cr) — one programme delay = significant revenue miss','Customer concentration: MoD + ISRO are >80% of revenue'],
   scoreBreakdown:[
     {lbl:'Opportunity confidence (base)',val:'7.5',type:'base'},
-    {lbl:'Price in Buy Zone (~12% below FV)',val:'+0.5',type:'pos'},
+    {lbl:'Watch zone (price above base FV)',val:'−0.5',type:'neg'},
     {lbl:'Gate 1: Execution flag (young company)',val:'−0.3',type:'neg'},
     {lbl:'PE 38× (slightly elevated)',val:'−0.3',type:'neg'},
     {lbl:'Niche monopoly bonus (moat)',val:'+0.5',type:'pos'},
-    {lbl:'Final Poised Score',val:'7.9',type:'total'},
+    {lbl:'Final Poised Score',val:'6.9',type:'total'},
   ],
   eli15:'PARAS makes the "eyes" for India\'s defence equipment — the electro-optical sensors that missiles and submarines use to see. Almost no one else in India makes these. At ₹1,060 vs fair value ₹1,200, you\'re getting a 12% discount on a niche monopoly.',
   scenarios:[
