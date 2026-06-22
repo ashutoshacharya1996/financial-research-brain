@@ -182,6 +182,20 @@ An opportunity record requires:
 * At least 1 articulated risk
 * Defined thesis breakers
 
+An opportunity record is not a buy recommendation. It is a research object.
+Before any stock from an opportunity can enter underwriting, create an
+Investment Impact note in `08_PORTFOLIO_INPUTS/investment-impact/`.
+
+The Investment Impact note answers:
+
+```text
+What changed?
+Is it verified?
+Which part of the investment case does it affect?
+What still blocks a buy decision?
+Should this trigger a full India Stock Picker review?
+```
+
 ---
 
 ## Opportunity Lifecycle
@@ -216,6 +230,10 @@ Confidence rises
         ↓
 
 Stage: Conviction
+
+        ↓
+
+Investment Impact Note
 
         ↓
 

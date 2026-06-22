@@ -102,6 +102,19 @@ These meet the full Opportunity Record threshold: ≥ 3 corroborating companies,
 ## Signal Notes
 
 [2–4 sentences. What changed vs. last week? Which themes strengthened, which weakened, any new themes entering the pipeline, any opportunities that were closed or downgraded.]
+
+---
+
+## Portfolio Handoff
+
+These are not buy recommendations. They are the items that deserve an
+Investment Impact note before any India Stock Picker review.
+
+| Priority | Stock / Opportunity | Why It Needs Handoff | Required Next File |
+|----------|---------------------|----------------------|--------------------|
+| 1 | [Ticker or opportunity-id] | [Material signal and strongest blocker] | `08_PORTFOLIO_INPUTS/investment-impact/[TICKER]-impact-[YYYY-MM-DD].md` |
+| 2 | [Ticker or opportunity-id] | [Material signal and strongest blocker] | `08_PORTFOLIO_INPUTS/investment-impact/[TICKER]-impact-[YYYY-MM-DD].md` |
+| 3 | [Ticker or opportunity-id] | [Material signal and strongest blocker] | `08_PORTFOLIO_INPUTS/investment-impact/[TICKER]-impact-[YYYY-MM-DD].md` |
 ```
 
 ---
@@ -113,3 +126,6 @@ These meet the full Opportunity Record threshold: ≥ 3 corroborating companies,
 - Every stock in Section 1 must have a named source document in the Signal Source column.
 - Every Opportunity in Section 2 must have a corresponding file in `07_OPPORTUNITIES/active/`.
 - Signal Notes must reference at least one change from the prior week's report.
+- Portfolio Handoff must list only signals material enough to affect underwriting.
+- Portfolio Handoff must name the strongest blocker; positive evidence alone is not enough.
+- Do not use Buy / Sell / Add / Exit language anywhere in the weekly report.
