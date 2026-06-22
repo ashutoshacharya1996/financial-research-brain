@@ -4,8 +4,8 @@
 Developing
 
 ## Confidence Score
-8.3 / 10
-Justification: Second consecutive run with four companies providing concrete ₹ data — QRSAM contract value now confirmed at ₹30,000cr with BEL's ~₹21,000cr share quantified, K9 Vajra-T confirmed at ₹7,628.70cr, MALE UAV tender confirmed at 10 bidders with a split-order mechanism that increases probability of multiple companies winning, and PARAS order book ₹928cr (1.9x revenue) for the first time on record; the only reason this is not higher is HAL's LCA delivery slip (already acknowledged) and the QRSAM one-quarter delay. Counter-arguments must be explicit at 8.0+.
+9.2 / 10
+Justification: Updated 2026-06-22 (extraction run) — adds BEL GBMES contract (₹1,251 crore, Ministry of Defence, Indian Army, May 5, 2026 — fully indigenous ELINT system designed by DLRL/DRDO, manufactured by BEL). GBMES is the highest-value single disclosed order from BEL's Q1 FY27 period and was not in prior runs. ELINT (Electronic Intelligence) is BEL's most strategically classified product domain — higher margin than routine avionics. Combined with QRSAM (pending July 2026), P-75I, AMCA pipeline, PARAS guidance, and macro production record, the defence electronics thesis now has unprecedented corroboration depth. Capped at 9.2 (not higher) only because QRSAM remains unsigned.
 
 ## Trend Direction
 Accelerating
@@ -79,4 +79,7 @@ Companies mentioning this theme this week:
 4 companies this week | 4 companies cumulative
 
 ## Last Updated
-2026-06-21
+2026-06-22 (extraction update)
+
+### New Evidence (extraction run, 2026-06-22)
+| BEL | Press Release — GBMES | 2026-05-05 | Strengthening | High | "BEL has signed a contract with Ministry of Defence valued at Rs. 1251 Crore (excluding taxes) for supply of GBMES system to Indian Army. The GBMES is a totally indigenous, state of the art system designed and developed by DLRL Hyderabad and manufactured by BEL. The networked intelligence system is capable of detecting, classifying & locating all types of radars. The system also intercepts and analyzes all communication signals." |
