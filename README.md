@@ -160,6 +160,9 @@ Company → Year → Quarter
 
 Collection principle:
 
+* Sunday collection has two lanes: company-specific evidence for rows where
+  `fetch_enabled=true`, and discovery-wide news for fresh ideas outside the
+  tracked list.
 * Source retrieval is fallible. If a source blocks, times out, returns a
   paywall, or serves an invalid file, the workflow records metadata and failure
   reason instead of stopping.
@@ -168,6 +171,9 @@ Collection principle:
   archives.
 * Raw files may be removed after successful extraction and retention checks;
   extracted knowledge, metadata, URLs, hashes, and failure reasons remain.
+* Discovery-wide news is saved to
+  `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/evidence-index.jsonl` and
+  `discovery-news.md` for Universe Manager review.
 
 ⸻
 
