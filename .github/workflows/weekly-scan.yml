@@ -1,5 +1,14 @@
 name: Weekly Opportunity Scan
 
+# NOTE: This workflow runs the full AI pipeline (Claude Code) in CI.
+# It requires ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN in repo secrets.
+# If neither is set, the pipeline step is skipped gracefully.
+#
+# The recommended operating model is the hybrid approach:
+#   1. weekly-evidence-fetch.yml runs automatically on Sunday (no API key needed)
+#   2. You run Claude Code locally after git pull to process the evidence
+# This workflow is provided for teams that prefer fully automated Sunday runs.
+
 on:
   schedule:
     # Every Sunday at 3:00 AM UTC (8:30 AM IST)
@@ -21,16 +30,28 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
         with:
           ref: main
           fetch-depth: 0
 
+      - name: Check for API credentials
+        id: check-creds
+        run: |
+          if [ -n "${{ secrets.ANTHROPIC_API_KEY }}" ] || [ -n "${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" ]; then
+            echo "has_creds=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_creds=false" >> $GITHUB_OUTPUT
+            echo "::warning::No ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN secret configured. Pipeline step skipped. Set one in Settings → Secrets to enable automated Sunday runs."
+          fi
+
       - name: Run Opportunity Discovery Engine
+        if: steps.check-creds.outputs.has_creds == 'true'
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          model: claude-sonnet-4-6
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: --model claude-sonnet-4-6
           prompt: |
             Run the full Opportunity Discovery Engine weekly pipeline in sequence.
             Use the /weekly-run skill to execute all stages:
