@@ -24,10 +24,14 @@ Do not summarise. Do not analyse. Do not form opinions. Extract only what is exp
 
 | Input | Location |
 |---|---|
-| Raw documents to process | `02_RAW_DOCUMENTS/<TICKER>/<YYYY>/<QUARTER>/` |
+| Evidence index | `02_RAW_DOCUMENTS/<TICKER>/evidence-index.jsonl` |
+| Raw documents to process | `02_RAW_DOCUMENTS/<TICKER>/raw/` |
+| Text snapshots to process | `02_RAW_DOCUMENTS/<TICKER>/snapshots/` |
 | Company master (for ticker/name validation) | `01_UNIVERSE/company_master.csv` |
 
-Documents processed per run: all new documents in `02_RAW_DOCUMENTS/` that do not yet have a corresponding file in `03_EXTRACTED_DATA/`.
+Documents processed per run: all new local evidence records in
+`evidence-index.jsonl` that do not yet have a corresponding file in
+`03_EXTRACTED_DATA/`.
 
 ---
 
@@ -35,7 +39,15 @@ Documents processed per run: all new documents in `02_RAW_DOCUMENTS/` that do no
 
 ### Step 1 — Identify Unprocessed Documents
 
-Scan `02_RAW_DOCUMENTS/` for documents without a matching output in `03_EXTRACTED_DATA/`. Process one document at a time.
+Scan `02_RAW_DOCUMENTS/<TICKER>/evidence-index.jsonl` first. Prioritize:
+
+1. `downloaded`
+2. `text_snapshot`
+3. `metadata_only` only if important and corroborated
+4. skip or flag `failed`
+
+Process one evidence item at a time. Prefer `local_path` over `source_url`.
+Do not attempt to re-download blocked external URLs during extraction.
 
 ### Step 2 — Identify Document Type
 
@@ -101,6 +113,11 @@ Write to: `03_EXTRACTED_DATA/<TICKER>/<YYYY>/<QUARTER>/<doc-type>.md`
 # Extracted Data — [COMPANY NAME] ([TICKER])
 Document type: [Earnings Call / Investor Presentation / Annual Report / Quarterly Filing / Press Release]
 Source: [URL or filing reference]
+Local evidence: [local_path if available]
+Content hash: [content_hash if available]
+Collection status: [downloaded / text_snapshot / metadata_only / failed]
+Source tier: [tier_1 / tier_2 / tier_3]
+Collection failure reason: [if applicable]
 Date: YYYY-MM-DD
 Quarter: [Q1/Q2/Q3/Q4 FY__]
 Extracted by: Extraction Agent
@@ -166,6 +183,14 @@ Fields not mentioned in this document:
 5. **Date every value.** Every metric must carry the period it relates to (e.g. Q1 FY26, not just "latest").
 6. **Flag missing mandatory fields.** Use the Missing Data section for any field that couldn't be found.
 7. **Do not skip Theme Signal Log.** This is the primary input to the Theme Agent — it must be populated even if sparse.
+
+---
+
+## Local Evidence Rules
+
+1. **Use local evidence first.** If `local_path` exists in `evidence-index.jsonl`, read it. Do not rely on external URLs during extraction.
+2. **Preserve collection metadata.** Output must keep source URL, local path, content hash, source tier, collection status, and failure reason where present.
+3. **Do not process unusable failures.** Records marked `failed` are audit evidence, not extraction input, unless the user explicitly asks for forensic review.
 
 ---
 

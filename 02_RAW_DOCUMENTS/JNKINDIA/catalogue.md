@@ -26,3 +26,23 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 - Margin pressure flagged by MarketsMojo despite strong profit growth — watch Q1 FY27
 - Annual Report FY26: Not located — check BSE filings
 - Stock listed April 2024 at Rs 621 (50% premium to IPO price of Rs 415)
+
+## Exchange Filings — fetched 2026-06-22
+
+| Date | Source | Type | Title | URL | Status |
+|---|---|---|---|---|---|
+| 2026-05-18 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_18052026152049_Q4FY26_earnings_call_intimation.pdf | New |
+| 2026-05-18 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_18052026190914_JNK_Intimation_Investor_meet_.pdf | New |
+| 2026-05-21 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_21052026192342_Audio_Recording_of_Q4_FY26_earnings_call.pdf | New |
+| 2026-05-20 | NSE | Filing | Press Release | https://nsearchives.nseindia.com/corporate/JNKINDIA23_20052026201454_Q4FY26_Press_Release_.pdf | New |
+| 2026-06-08 | NSE | Filing | Press Release | https://nsearchives.nseindia.com/corporate/JNKINDIA23_08062026192919_Receipt_of_order_080626.pdf | New |
+| 2026-06-08 | NSE | Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/JNKINDIA23_08062026164240_JNK_Reg_30_Disclosure_CC7_Incinerator_Order_08062026.pdf | New |
+| 2026-06-05 | NSE | Filing | Disclosure under SEBI Takeover Regulations | https://nsearchives.nseindia.com/corporate/team_bbodade_21052026161827_JNKINDIA.pdf | New |
+| 2026-05-27 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_27052026182650_Q4FY26_earnings_call_transcript.pdf | New |
+| 2026-05-22 | NSE | Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/JNKINDIA23_22052026145524_Newspaper_publication_JNK_India.pdf | New |
+| 2026-05-20 | NSE | Filing | Investor Presentation | https://nsearchives.nseindia.com/corporate/JNKINDIA23_20052026202543_Q4FY26_Earnings_presentation_new.pdf | New |
+| 2026-05-20 | NSE | Filing | Dividend | https://nsearchives.nseindia.com/corporate/JNKINDIA23_20052026191625_outcome_of_bm_alongwith_results_final.pdf | New |
+| 2026-05-20 | NSE | Filing | Change in Management | https://nsearchives.nseindia.com/corporate/JNKINDIA23_20052026184000_outcome_of_bm_alongwith_results_final.pdf | New |
+| 2026-05-20 | NSE | Filing | Integrated Filing- Financial | https://nsearchives.nseindia.com/corporate/JNKINDIA23_20052026182932_outcome_of_bm_alongwith_results_final.pdf | New |
+| 2026-05-20 | NSE | Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_20052026180618_outcome_of_bm_alongwith_results_final.pdf | New |
+| 2026-05-15 | NSE | Filing | Monitoring Agency Report | https://nsearchives.nseindia.com/corporate/JNKINDIA23_15052026165500_JNK_Monitoring_Agency_Covering_letter_with_report.pdf | New |

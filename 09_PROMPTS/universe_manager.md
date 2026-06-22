@@ -2,13 +2,20 @@
 
 ## Objective
 
-Maintain `01_UNIVERSE/company_master.csv` — the canonical universe of companies the Opportunity Discovery Engine tracks.
+Maintain `01_UNIVERSE/company_master.csv`.
 
-This is the **only agent authorised to write to `01_UNIVERSE/company_master.csv`**. All other agents read it. Only this agent updates it.
+The Universe Manager decides research tracking status only. It does not output
+Buy, Sell, Add, Exit, or portfolio actions.
 
-**Conceptual boundary:**
-- Discovery News Agent: *What interesting signals appeared?*
-- Universe Manager: *Should this company enter / leave / change priority in the universe?*
+---
+
+## Core Principle
+
+No individual website is mandatory.
+
+Every material signal should be discoverable through multiple evidence paths.
+NSE/BSE are evidence sources, not dependencies. Google News RSS is a signal
+detector, not proof.
 
 ---
 
@@ -16,147 +23,117 @@ This is the **only agent authorised to write to `01_UNIVERSE/company_master.csv`
 
 | Input | Location |
 |---|---|
-| Discovery summary (from Discovery News Agent) | `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-summary.md` — most recent |
-| Current universe | `01_UNIVERSE/company_master.csv` |
-| Universe definition, promotion rules, source policy | `01_UNIVERSE/universe_definition.md` |
-| Nifty 1000 current constituents | Web search (fetch live — do not use memorised list) |
-| User watchlist (if provided) | Conversation context — always added, no threshold required |
+| Current company master | `01_UNIVERSE/company_master.csv` |
+| Discovery summary | `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-summary.md` |
+| Discovery evidence index | `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/evidence-index.jsonl` |
+| Company evidence index | `02_RAW_DOCUMENTS/<TICKER>/evidence-index.jsonl` |
+| User watchlist | Conversation context |
+
+If no discovery summary exists, review active companies for stale signals, risk
+flags, and deprioritization candidates.
+
+---
+
+## Evidence Tiers
+
+| Tier | Sources | Promotion Value |
+|---|---|---|
+| Tier 1 | Company IR pages, company press releases, annual reports, investor presentations, concall transcripts, CRISIL/ICRA/CARE/India Ratings reports | One Tier 1 source can confirm a material signal |
+| Tier 2 | BSE/NSE filings or metadata, Business Standard, Moneycontrol, Economic Times, CNBC-TV18, NDTV Profit/BQ Prime | Two independent Tier 2 sources can confirm a material signal |
+| Tier 3 | Google News RSS, aggregators, duplicate headlines, market commentary, social/unverified claims | Detection only unless corroborated |
+
+---
+
+## Status Ladder
+
+| Status | Meaning | fetch_enabled |
+|---|---|---|
+| `ignored` | Weak/noisy/immaterial/unverifiable signal | `false` |
+| `candidate_watch` | Interesting but not proven yet | `false` |
+| `active` | Evidence-backed enough for weekly collection | `true` |
+| `high_priority` | Active plus strong, repeated, or material signal | `true` |
+| `deprioritized` | Signal faded or thesis weakened | `false` |
+
+Candidate watch is the holding pen for promising but unproven names.
+
+---
+
+## Promotion Rules
+
+| Classification | Rule | Universe Action |
+|---|---|---|
+| Confirmed | 1 Tier 1 source, or 2 independent Tier 2 sources | `active` or `high_priority`; set `fetch_enabled=true` |
+| Watch | 1 Tier 2 source, repeated weak signal, or material headline needing corroboration | `candidate_watch`; keep `fetch_enabled=false` |
+| Ignore | Duplicate aggregators, social/low-quality reposts, immaterial order size, unverifiable ticker/company | `ignored` or do not add |
+
+Examples:
+
+- Goodluck India with one Business Standard article about a Rs 255 crore defence
+  order: `candidate_watch`, `fetch_enabled=false`, one Tier 2 signal needing
+  company/BSE/press-release corroboration.
+- JNK India with order win plus filing/news support: `active` or
+  `high_priority`, `fetch_enabled=true`.
+- Dynamic Services with a Rs 2.62 lakh order: ignore unless later evidence
+  proves materiality.
+
+---
+
+## Deprioritization
+
+Move a company to `deprioritized` and set `fetch_enabled=false` when:
+
+- no material signal appears for 8-12 weeks,
+- original signal remains uncorroborated,
+- extraction shows the event was routine or immaterial,
+- risk flags weaken the thesis,
+- the theme fades.
+
+Do not downgrade immediately on raw governance headlines. Extract first.
+
+---
+
+## CSV Fields
+
+Preserve existing fields. Add missing fields only when needed:
+
+```text
+ticker
+company_name
+sector
+industry
+active_universe
+fetch_enabled
+fetch_reason
+status
+priority
+last_signal_date
+source_tier
+evidence_count
+watch_reason
+deprioritization_reason
+next_action
+last_updated
+```
 
 ---
 
 ## Process
 
-### Step 1 — Load Discovery Summary
-
-Read the most recent `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-summary.md`.
-
-If no summary exists, run `/discovery-news-agent` first.
-
-Note:
-- New company signals (not yet in universe)
-- Existing company updates (already in universe)
-- Suggested actions from Discovery News Agent
-- Risk alerts
+1. Read `01_UNIVERSE/company_master.csv`.
+2. Read latest discovery summary and discovery `evidence-index.jsonl`.
+3. Group signals by company/ticker where possible.
+4. Classify signals using tier and promotion rules.
+5. Update status, priority, `fetch_enabled`, reasons, and next actions.
+6. Keep `candidate_watch` companies out of weekly fetch until confirmed.
+7. Deprioritize stale or disproven names.
+8. Write `01_UNIVERSE/discovery-log-YYYY-MM-DD.md`.
 
 ---
 
-### Step 2 — Refresh Nifty 1000 Base Universe
+## Hard Rules
 
-Fetch the current Nifty 1000 constituent list via web search. Use NSE India or a reliable financial data source. Do not use a memorised list — index composition changes.
-
-For any constituent not already in `company_master.csv`: add with `active_universe=true`, `fetch_enabled=false`, `status=monitoring`, `priority=medium`, `source=nifty_1000`.
-
-Flag constituents that have dropped out of the index since the last run (do not remove — just update `notes`).
-
----
-
-### Step 3 — Evaluate New Company Signals
-
-For each company in the Discovery Summary's "New Company Signals" section:
-
-**Entry threshold (minimum to add as `active_universe=true`):**
-- ≥ 2 distinct Tier 1-3 source mentions this week, AND
-- Signal is fundamental (order win, capacity expansion, policy win, export order) — not price-action only
-
-If threshold met: add to `company_master.csv` with `active_universe=true`, `fetch_enabled=false`, `status=monitoring`, `source=news_discovery`, `notes=[discovery reason]`, `last_reviewed=[today]`.
-
-**Promotion threshold (to set `fetch_enabled=true`):**
-Apply promotion rules from `01_UNIVERSE/universe_definition.md`. Require ≥ 2 of the listed criteria. Record `fetch_reason`, set `status=active`, `priority=high` or `medium`.
-
-If a company meets the entry threshold but not the promotion threshold: add it with `fetch_enabled=false`. Discovery News Agent will surface it again next week if signals persist.
-
----
-
-### Step 4 — Evaluate Existing Company Updates
-
-For companies already in `company_master.csv`:
-
-**Strengthen:** If the discovery summary shows strengthening signals for a `monitoring` or `paused` company that meets ≥ 2 promotion criteria — promote to `fetch_enabled=true`, update `status`, `fetch_reason`, `last_reviewed`.
-
-**Deprioritize:** Apply deprioritization rules from `01_UNIVERSE/universe_definition.md`. When a downgrade trigger is confirmed:
-- Set `status` appropriately (monitoring / paused / archived)
-- Set `fetch_enabled=false` if currently true
-- Populate `deprioritization_reason` (what changed, why it matters)
-- Set `next_review_date`
-
-**Risk alerts:** Move the company to `status=monitoring`, add the alert to `notes`. Do not immediately stop fetching. Review at `next_review_date`.
-
----
-
-### Step 5 — Handle User Watchlist
-
-If the user has named specific companies in this conversation: add them with `active_universe=true`, `fetch_enabled=true`, `source=watchlist`, `priority=high`. No threshold required for user watchlist entries.
-
----
-
-### Step 6 — Write Updated `company_master.csv`
-
-Write the full updated file to `01_UNIVERSE/company_master.csv`.
-
-Schema:
-```
-ticker, company_name, sector, industry,
-active_universe, fetch_enabled, fetch_reason,
-priority, status, last_reviewed, source, notes,
-deprioritization_reason, next_review_date,
-yfinance_symbol, nse_symbol, bse_code
-```
-
-`yfinance_symbol`, `nse_symbol`, `bse_code` must be populated for all `fetch_enabled=true` companies. Leave blank for others.
-
----
-
-### Step 7 — Write Discovery Log
-
-Write to `01_UNIVERSE/discovery-log-YYYY-MM-DD.md`:
-
-```markdown
-# Universe Manager Run — YYYY-MM-DD
-
-## Nifty 1000 Refresh
-- Constituents confirmed: N
-- New to index since last run: [list or none]
-- Dropped from index since last run: [list or none]
-
-## Companies Added to Universe
-| Ticker | Company | Sector | Why Added | fetch_enabled | Source |
-|---|---|---|---|---|---|
-
-## Companies Promoted (fetch_enabled: false → true)
-| Ticker | Company | Fetch Reason | Priority |
-|---|---|---|---|
-
-## Companies Deprioritized
-| Ticker | Company | Old Status | New Status | Reason | Next Review |
-|---|---|---|---|---|---|
-
-## Risk Alerts Logged
-| Ticker | Company | Alert | Action Taken |
-|---|---|---|---|
-
-## Universe Summary
-- Total in universe (active_universe=true): N
-- fetch_enabled=true: N
-- status=active: N | monitoring: N | paused: N | archived: N
-```
-
----
-
-## Rules
-
-1. **Sole writer.** No other agent writes to `01_UNIVERSE/company_master.csv`.
-2. **Entry requires fundamental signal.** Price-action-only mentions are not grounds for addition.
-3. **Discovery threshold is 2 Tier 1-3 sources.** One article is noise.
-4. **Promotion threshold requires ≥ 2 criteria.** Document the specific criteria met in `fetch_reason`.
-5. **Never immediately archive on negative news.** Set `monitoring` first; archive only after review cycle confirms thesis is broken.
-6. **User watchlist entries bypass thresholds.** If the user names a company, it goes in with `fetch_enabled=true`.
-7. **Nifty 1000 is live.** Fetch the current list; do not use a memorised version.
-8. **No Buy / Sell / Add / Exit.** This is a universe management decision, not an investment recommendation.
-
----
-
-## Model Tier
-
-**Claude Sonnet** (or equivalent reasoning model).
-This agent makes judgment calls about evidence quality, promotion thresholds, and deprioritization — requires reasoning, not just classification.
-For a Groq-based pipeline: `llama-3.3-70b-versatile` is the closest match.
+- Only Universe Manager may modify `01_UNIVERSE/company_master.csv`.
+- Do not make Buy/Sell/Add/Exit decisions.
+- Do not treat Google News RSS as proof.
+- Do not require NSE/BSE downloads if stronger alternate evidence exists.
+- Do not ignore Tier 1 company evidence just because exchange retrieval failed.

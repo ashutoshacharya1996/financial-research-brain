@@ -1,0 +1,16 @@
+{
+  "ticker": "HAL",
+  "company_name": "Hindustan Aeronautics Ltd",
+  "as_of": "2026-06-22",
+  "currency": "INR",
+  "latest_close": 4515.2,
+  "latest_open": 4424.1,
+  "latest_high": 4528.5,
+  "latest_low": 4386.0,
+  "volume": 1336561,
+  "fifty_two_week_high": 5065.0,
+  "fifty_two_week_low": 3479.1,
+  "market_cap": 3019652988928,
+  "pe_ratio": 33.148815,
+  "source": "yfinance:HAL.NS"
+}

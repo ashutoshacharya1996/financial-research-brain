@@ -1,43 +1,42 @@
-Opportunity Discovery Engine
+﻿Opportunity Discovery Engine
 
 ## Weekly Workflow
 
-**Sunday (automatic, no AI, no API keys):**
+Current rule: Sunday runs collection only. Lane A fetches companies where
+`fetch_enabled=true`; Lane B writes discovery evidence under
+`02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/`. Universe Manager updates
+`01_UNIVERSE/company_master.csv` later on Monday.
 
-A GitHub Action runs at 09:00 IST and executes `scripts/fetch_evidence.py` with two lanes:
+**Sunday (automatic):** A GitHub Action runs at 09:00 IST. It fetches prices, news, and exchange filings for companies where `fetch_enabled=true`, and also runs broad discovery collection using `scripts/fetch_evidence.py` - no AI, no API keys. Evidence is committed to `02_RAW_DOCUMENTS/`.
 
-```
-Lane A — Company Evidence Fetch
-  Reads: 01_UNIVERSE/company_master.csv where fetch_enabled=true
-  Writes: 02_RAW_DOCUMENTS/<TICKER>/  (prices, news, filings)
-
-Lane B — Discovery News Fetch
-  Broad market queries (order wins, L1 bids, capex plans, defence acquisitions, etc.)
-  Writes: 02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/discovery-news.md
-  Does NOT modify the universe. Discovery News Agent reviews this on Monday.
-```
-
-**Monday (local, Claude Code):**
+**Monday+ (local):** Pull the new evidence and run the AI pipeline locally:
 
 ```
 git pull
 claude
 ```
 
-Then run: `/weekly-run`
+Then say: _"New evidence is in. Run extraction, discovery summary, Universe Manager, delta, themes, opportunity screener, and weekly brief. Skip only the collection step."_
+
+Universe Manager runs on Monday after the discovery summary is generated from
+`02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/`. It is the step that updates
+`01_UNIVERSE/company_master.csv`. Sunday collection does not directly promote,
+deprioritize, or remove companies.
+
+Claude Code processes extraction â†’ delta â†’ themes â†’ opportunity screener â†’ weekly brief and commits the outputs.
+
+If a stock from the weekly report looks investment-relevant, run the Investment
+Impact layer before any stock-selection work:
 
 ```
-Step 1a: /discovery-news-agent   → reviews _discovery/, writes summary
-Step 1b: /universe-manager       → updates 01_UNIVERSE/company_master.csv
-Step 2:  extraction → delta → themes  (for fetch_enabled=true companies)
-Step 3:  /opportunity-screener   → Top 10 + Top 3 + Portfolio Handoff
-Step 4:  /investment-impact      → for Portfolio Handoff names only
+Run investment impact notes for the top handoff names from this week's report.
 ```
 
-**To add a company to the fetch cycle:**
-Universe Manager is the only agent that updates `01_UNIVERSE/company_master.csv`. Run `/universe-manager` and name the company, or let it be surfaced through the Discovery News Agent.
+This creates files in `08_PORTFOLIO_INPUTS/investment-impact/`. Those notes are
+the bridge into India Stock Picker review. They are not buy/sell decisions.
 
-**Canonical universe file:** `01_UNIVERSE/company_master.csv` — do not maintain `data/company_master.csv` separately.
+To add a company to the fetch cycle: add or update the row in
+`01_UNIVERSE/company_master.csv` and set `fetch_enabled: true`.
 
 ---
 
@@ -47,7 +46,7 @@ Build a machine that continuously narrows the market down to the few opportuniti
 
 The system ingests company disclosures, earnings calls, exchange filings, industry reports, and market intelligence. It synthesizes that into a single weekly output: which stocks are worth researching right now, and why.
 
-The central object is not a company. It is not a theme. It is an **Opportunity** — defined as:
+The central object is not a company. It is not a theme. It is an **Opportunity** â€” defined as:
 
 ```
 Theme + Evidence + Candidate Stocks + Timing + Risk
@@ -55,44 +54,40 @@ Theme + Evidence + Candidate Stocks + Timing + Risk
 
 Every Sunday, the system produces exactly two outputs:
 
-1. **Top 10 Stocks Worth Researching** — the research queue for the week, grounded in specific evidence from the prior week’s documents
-2. **Top 3 High-Conviction Opportunities** — conviction-stage convergences of theme acceleration, cross-company corroboration, and near-term catalysts
+1. **Top 10 Stocks Worth Researching** â€” the research queue for the week, grounded in specific evidence from the prior weekâ€™s documents
+2. **Top 3 High-Conviction Opportunities** â€” conviction-stage convergences of theme acceleration, cross-company corroboration, and near-term catalysts
 
-The output feeds a separate stock-selection and portfolio construction process. The system’s job is not to pick stocks. Its job is to continuously narrow the universe to where the evidence is pointing.
+The output feeds a separate stock-selection and portfolio construction process. The systemâ€™s job is not to pick stocks. Its job is to continuously narrow the universe to where the evidence is pointing.
 
-⸻
+â¸»
 
 System Architecture
 
 Internet Sources
-      ↓
+      â†“
 Collection Agent
-      ↓
+      â†“
 Document Repository
-      ↓
+      â†“
 Extraction Agent
-      ↓
+      â†“
 Delta Analysis Agent
-      ↓
+      â†“
 Theme Detection Agent
-      ↓
-Opportunity Screener          ← produces the weekly Top 10 + Top 3
-      ↓
+      â†“
+Opportunity Screener          â† produces the weekly Top 10 + Top 3
+      â†“
 Weekly Opportunity Report
-      ↓
-Portfolio Handoff              ← identifies 3 candidates for deeper review
-      ↓
-Investment Impact Agent       ← fact-checks signals, gates underwriting effort
-      ↓
-Investment Impact Notes       ← routing decision: Deep Dive / Watchlist / Track / Ignore
-      ↓
-India Stock Picker            ← valuation + quality gates (if Impact notes flags for review)
-      ↓
-Portfolio Fit Check           ← personal allocation decision
-      ↓
+      â†“
+Investment Impact Layer       â† translates signals into underwriting triggers
+      â†“
+Market Intelligence Agent
+      â†“
+Research Brief Generator
+      â†“
 Portfolio Intelligence Output
 
-⸻
+â¸»
 
 Research Universe
 
@@ -108,7 +103,7 @@ Future Expansion:
 * Macroeconomic sources
 * Alternative data sources
 
-⸻
+â¸»
 
 Repository Structure
 
@@ -125,7 +120,7 @@ financial-research-brain
 09_PROMPTS
 10_AUTOMATION
 
-⸻
+â¸»
 
 Folder Definitions
 
@@ -140,7 +135,7 @@ Examples:
 * Operating manuals
 * System architecture
 
-⸻
+â¸»
 
 01_UNIVERSE
 
@@ -154,7 +149,7 @@ Examples:
 * Investor relations links
 * NSE/BSE identifiers
 
-⸻
+â¸»
 
 02_RAW_DOCUMENTS
 
@@ -167,12 +162,42 @@ Examples:
 * Annual reports
 * Exchange filings
 * Press releases
+* Evidence indexes and retrieval failure metadata
 
 Organized by:
 
-Company → Year → Quarter
+Company â†’ Year â†’ Quarter
 
-⸻
+Collection principle:
+
+* Sunday collection has two lanes: company-specific evidence for rows where
+  `fetch_enabled=true`, and discovery-wide news for fresh ideas outside the
+  tracked list.
+* No individual website is mandatory. NSE/BSE are valuable evidence sources,
+  but not dependencies; Google News RSS is a detector, not proof.
+* Material signals should be corroborated through company IR, press releases,
+  credit rating agencies, exchange metadata/filings, or credible media.
+* Source retrieval is fallible. If a source blocks, times out, returns a
+  paywall, or serves an invalid file, the workflow records metadata and failure
+  reason instead of stopping.
+* For each company, `evidence-index.jsonl` is the machine-readable audit trail.
+  Raw PDFs and text snapshots are local evidence for extraction, not permanent
+  archives.
+* Raw files may be removed after successful extraction and retention checks;
+  extracted knowledge, metadata, URLs, hashes, and failure reasons remain.
+* Discovery-wide news is saved to
+  `02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/evidence-index.jsonl` and
+  `discovery-news.md` for Universe Manager review.
+
+Universe status principle:
+
+* `candidate_watch` means interesting but unproven, with `fetch_enabled=false`.
+* `active` and `high_priority` mean evidence-backed enough for weekly fetch,
+  with `fetch_enabled=true`.
+* `deprioritized` means the signal faded or the thesis weakened, with
+  `fetch_enabled=false`.
+
+â¸»
 
 03_EXTRACTED_DATA
 
@@ -188,7 +213,7 @@ Examples:
 * Management commentary
 * Risk statements
 
-⸻
+â¸»
 
 04_COMPANY_ANALYSIS
 
@@ -201,7 +226,7 @@ Examples:
 * Change detection reports
 * Management sentiment analysis
 
-⸻
+â¸»
 
 05_SECTOR_ANALYSIS
 
@@ -215,7 +240,7 @@ Examples:
 * Industrials trends
 * Consumer demand trends
 
-⸻
+â¸»
 
 06_THEMES
 
@@ -238,7 +263,7 @@ Each theme should contain:
 * Confidence score
 * Trend direction
 
-⸻
+â¸»
 
 07_OPPORTUNITIES
 
@@ -250,20 +275,28 @@ Contains:
 * Active Opportunity Records, one file per live opportunity
 * Opportunity schema and weekly report template
 
-⸻
+â¸»
 
 08_PORTFOLIO_INPUTS
 
-Handoff zone between research discovery and investment decisions.
+Outputs consumed by the portfolio and stock-selection systems.
 
-Contains:
+Examples:
 
-* Weekly Portfolio Handoff (3 candidates for Investment Impact review)
-* Investment Impact Notes (fact-checked signals, underwriting gates, routing decisions)
-* Weekly ELI15 brief (human-readable summary)
-* Stock dashboards (reference link to latest India Stock Picker output)
+* Theme rankings
+* Opportunity lists
+* Risk alerts
+* Sector scorecards
+* Company watchlists
+* Investment Impact notes that bridge opportunity signals into underwriting
 
-⸻
+Rule:
+
+* A positive Opportunity signal can create a handoff.
+* Only the India Stock Picker can create a Buy / Watchlist / Pass verdict.
+* Only Portfolio Fit can convert a Buy candidate into an actual portfolio action.
+
+â¸»
 
 09_PROMPTS
 
@@ -276,7 +309,7 @@ Examples:
 * Theme detection prompts
 * Delta analysis prompts
 
-⸻
+â¸»
 
 10_AUTOMATION
 
@@ -289,23 +322,17 @@ Examples:
 * Collection workflows
 * Update processes
 
-⸻
+â¸»
 
 Agent Framework
 
-Agent 0 – Discovery News Agent
+Agent 1 â€“ Universe Manager
 
-Reviews raw discovery output from Lane B (`02_RAW_DOCUMENTS/_discovery/`). Classifies signals by source tier (Tier 1–4). Surfaces new company candidates and risk alerts for Universe Manager review. **Cannot modify `01_UNIVERSE/company_master.csv`.** Trigger: `/discovery-news-agent`.
+Maintains company universe and metadata.
 
-⸻
+â¸»
 
-Agent 1 – Universe Manager
-
-The **sole agent authorised to update `01_UNIVERSE/company_master.csv`**. Reads Discovery News Agent summary, evaluates signals against promotion/deprioritization rules, and decides universe membership. Sets `active_universe`, `fetch_enabled`, `status`, `priority`. Trigger: `/universe-manager`.
-
-⸻
-
-Agent 2 – Collection Agent
+Agent 2 â€“ Collection Agent
 
 Discovers and archives:
 
@@ -314,15 +341,15 @@ Discovers and archives:
 * Investor relations documents
 * Earnings materials
 
-⸻
+â¸»
 
-Agent 3 – Extraction Agent
+Agent 3 â€“ Extraction Agent
 
 Converts unstructured documents into structured data.
 
-⸻
+â¸»
 
-Agent 4 – Delta Agent
+Agent 4 â€“ Delta Agent
 
 Identifies changes versus prior periods.
 
@@ -335,15 +362,15 @@ Focus:
 * Capex
 * Sentiment
 
-⸻
+â¸»
 
-Agent 5 – Theme Agent
+Agent 5 â€“ Theme Agent
 
 Identifies recurring themes across companies and sectors.
 
-⸻
+â¸»
 
-Agent 6 – Opportunity Screener
+Agent 6 â€“ Opportunity Screener
 
 Runs every Sunday. Synthesizes theme signals, delta outputs, and evidence weight into ranked Opportunities.
 
@@ -351,57 +378,35 @@ Outputs:
 
 * Top 10 Stocks for the Research Queue
 * Top 3 High-Conviction Opportunities
-* Portfolio Handoff (3 names for deeper review)
 * Updated Opportunity Records in `07_OPPORTUNITIES/active/`
+* Portfolio Handoff candidates for Investment Impact notes
 
-⸻
+â¸»
 
-Agent 6.5 – Investment Impact Agent
+Agent 6.5 â€“ Investment Impact Agent
 
-Fact-checks Portfolio Handoff signals, assesses underwriting impact, and gates whether India Stock Picker deep dive is warranted.
+Bridges Opportunity Discovery to stock selection.
 
-Decision types:
+Purpose:
 
-* Re-run India Stock Picker (Deep Dive)
-* Upgrade Watchlist Priority
-* Keep Tracking
-* Ignore For Now
+* Fact-check the specific signal
+* Map the impact to growth, margins, cash conversion, moat, valuation, and portfolio fit
+* Identify buy blockers
+* Decide whether to re-run the India Stock Picker, upgrade watchlist priority, keep tracking, or ignore
 
-Output: Investment Impact Notes in `08_PORTFOLIO_INPUTS/investment-impact/`
+Hard rule: this agent never outputs Buy / Sell / Add / Exit.
 
-Key rules:
-* **Positive signals cannot override failed quality gates, weak cash conversion, valuation flags, or portfolio constraints.**
-* **This agent never outputs Buy / Sell / Add / Exit.** Routing decision only.
+â¸»
 
-⸻
-
-Agent 7 – India Stock Picker
-
-Runs on-demand when triggered by Investment Impact notes flagged for "Deep Dive" or "Upgrade Watchlist."
-
-Evaluates: Valuation gates (fair value, buy zones), quality gates (delivery track record, cash conversion), and portfolio fit.
-
-⸻
-
-Agent 8 – Portfolio Fit / Financial Advisor
-
-Runs on-demand after India Stock Picker clears gates.
-
-Assesses: FIRE horizon alignment, portfolio slot availability, personal biases, holdings overlap.
-
-Final decision: Add / Hold / Avoid
-
-⸻
-
-Agent 9 – Market Intelligence Agent
+Agent 7 â€“ Market Intelligence Agent
 
 Monitors external sources and industry developments.
 
-⸻
+â¸»
 
-Agent 10 – Research Committee Agent
+Agent 8 â€“ Research Committee Agent
 
-Challenges conclusions and seeks contradictory evidence (run as needed, not weekly).
+Challenges conclusions and seeks contradictory evidence.
 
 Purpose:
 
@@ -409,7 +414,7 @@ Purpose:
 * Surface key risks
 * Identify thesis breakers
 
-⸻
+â¸»
 
 Research Principles
 
@@ -419,9 +424,9 @@ Research Principles
 4. Themes require cross-company validation.
 5. Contradictory evidence must always be documented.
 6. Research outputs should be reusable across future analyses.
-7. Every insight should answer: “Why does this matter for investors?”
+7. Every insight should answer: â€œWhy does this matter for investors?â€
 
-⸻
+â¸»
 
 Long-Term Objective
 
