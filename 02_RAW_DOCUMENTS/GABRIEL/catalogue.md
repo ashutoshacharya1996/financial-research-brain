@@ -31,6 +31,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 
 | Date | Source | Type | Title | URL | Status |
 |---|---|---|---|---|---|
+| 2026-06-22 | NSE | Filing | Clarification - Financial Results | https://nsearchives.nseindia.com/- | New |
+| 2026-05-29 | NSE | Filing | Disclosure under SEBI Takeover Regulations | https://nsearchives.nseindia.com/corporate/team_sandeshc_29052026110955_Anand.pdf | New |
+| 2026-05-18 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_18052026171630_SE_Intimation_final_signed.pdf | New |
+| 2026-05-11 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_11052026194435_SEIntimationFinalsigned_1.pdf | New |
 | 2026-06-16 | NSE | Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/GABRIEL_16062026132553_SEintimation_merged_signed.pdf | New |
 | 2026-05-29 | NSE | Filing | Disclosure under SEBI Takeover Regulations | https://nsearchives.nseindia.com/corporate/team_sandeshc_29052026110904_Anjali.pdf | New |
 | 2026-05-28 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_28052026201415_Cover_Letter_Audio_signed.pdf | New |

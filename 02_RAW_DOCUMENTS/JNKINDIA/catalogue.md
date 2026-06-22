@@ -31,6 +31,7 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 
 | Date | Source | Type | Title | URL | Status |
 |---|---|---|---|---|---|
+| 2026-05-18 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_18052026190914_JNK_Intimation_Investor_meet_.pdf | New |
 | 2026-05-21 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_21052026192342_Audio_Recording_of_Q4_FY26_earnings_call.pdf | New |
 | 2026-05-20 | NSE | Filing | Press Release | https://nsearchives.nseindia.com/corporate/JNKINDIA23_20052026201454_Q4FY26_Press_Release_.pdf | New |
 | 2026-06-08 | NSE | Filing | Press Release | https://nsearchives.nseindia.com/corporate/JNKINDIA23_08062026192919_Receipt_of_order_080626.pdf | New |

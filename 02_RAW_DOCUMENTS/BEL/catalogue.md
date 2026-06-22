@@ -28,6 +28,7 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 
 | Date | Source | Type | Title | URL | Status |
 |---|---|---|---|---|---|
+| 2026-05-20 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_20052026200229_CL_Audio_recording_signed.pdf | New |
 | 2026-06-22 | NSE | Filing | Press Release | https://nsearchives.nseindia.com/corporate/BEL_22062026160613_Lettersigned.pdf | New |
 | 2026-05-22 | NSE | Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_22052026120346_Letter_signed.pdf | New |
 | 2026-05-05 | NSE | Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_05052026152508_PR_Letter_Signed.pdf | New |
