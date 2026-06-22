@@ -372,7 +372,7 @@ Identifies recurring themes across companies and sectors.
 
 Agent 6 â€“ Opportunity Screener
 
-Runs every Sunday. Synthesizes theme signals, delta outputs, and evidence weight into ranked Opportunities.
+Runs every Monday. Synthesizes theme signals, delta outputs, and evidence weight into ranked Opportunities.
 
 Outputs:
 
