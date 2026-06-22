@@ -4,8 +4,8 @@
 Emerging
 
 ## Confidence Score
-5.6 / 10
-Justification: Gabriel India's investment case is now better-evidenced — FY26 PAT ₹252cr confirmed, Core ROCE reaching 37.7% by FY28 (+800bps), and a decade of 81% cash conversion supporting the new-product-launch capital model — but the EV pivot thesis remains primarily a Gabriel-specific story with JNK India's green hydrogen signal still unconfirmed by any order data; corroboration count unchanged at 2.
+7.0 / 10
+Justification: This run unlocks the first concrete operational numbers on Gabriel's EV pivot — EV two-wheelers +30% YoY confirmed, Inalfa Gabriel sunroof JV delivering FY26 revenue ₹434 crore at 15.1% EBITDA margin (above management's own 12–14% target), ~170,000 sunroofs sold, Mahindra and Mobis confirmed as new OEM customers, Genos plant construction underway (commercial production Q4 CY26), and solar dampers and lubricants JVs both active; GABRIEL has crossed from "strategic intent with capex committed" to "operational business delivering above-guidance margins"; the cap to 7.0 is that JNKINDIA's green hydrogen signal remains unconfirmed, Mahindra/Mobis order values are undisclosed, and Q4 FY26 saw a ramp-up issue in the sunroof JV suggesting execution is not fully smooth.
 
 ## Trend Direction
 Accelerating
@@ -18,12 +18,14 @@ Companies mentioning this theme this week:
 | GABRIEL | Q4 FY26 Earnings Call | 2026-05-28 | New mention | Medium | Sunroofs, solar dampers, e-mobility adjacencies — management guiding at least one new product per year; ₹50,000 crore group target 2030 |
 | JNKINDIA | Q4 FY26 Earnings Call | 2026-05-21 | New mention | Low | Green hydrogen orders mentioned as emerging segment; no order value or timeline given |
 | GABRIEL | Analyst Initiation + Earnings Update | 2026-06-21 | Strengthening | High | FY26 PAT ₹252cr confirmed; Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA 81%; net cash balance sheet; WC 27 days — quality of the EV pivot execution vehicle is now higher than previously evidenced |
+| GABRIEL | Investor Presentation (NSE May 27) | 2026-06-22 | Strengthening | High | EV two-wheelers +30% YoY (first concrete number); Inalfa Gabriel sunroof JV: FY26 revenue ₹434 crore, EBITDA ₹65.4 crore, margin 15.1% (above management's 12-14% guidance); ~170,000 sunroofs sold FY26; Mahindra and Mobis confirmed as new OEM customers; Genos plant construction underway (commercial production Q4 CY26); solar dampers JV active; lubricants JV active; total capex plan ₹260-270 crore confirmed |
 
 ## Supporting Data
 
 - **GABRIEL** — Motilal Oswal Initiation Note — June 9, 2026: "management targeting group revenues of ₹50,000 crore by 2030 and plans to launch at least one new product annually while expanding into adjacencies such as sunroofs, solar dampers, and e-mobility" — Motilal projects PAT CAGR 55% FY26–28 anchored on new product revenue
 - **JNKINDIA** — Q4 FY26 Earnings Call — May 21, 2026: Green hydrogen orders described as "emerging" segment — no specific order size or customer named; noted as directional signal only
 - **GABRIEL** — Earnings Update — June 2026: FY26 consolidated PAT ₹252.2cr confirmed; Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA ratio 81%; net cash; WC ~27 days — strongest balance sheet quality signal in auto components peer group
+- **GABRIEL** — Investor Presentation (NSE May 27, extracted June 22): Inalfa Gabriel Sunroof Systems JV — FY26 revenue ₹434 crore, EBITDA ₹65.4 crore (15.1% margin — above management's 12-14% guidance); Q4 FY26 revenue ₹99 crore (14.6% margin); volumes ~170,000 units FY26; EV two-wheelers +30% YoY; new OEM customers Mahindra and Mobis; Genos plant online Q4 CY26; SK operations started; fastener plant capex ₹60-70 crore committed; solar dampers and lubricants JVs active; total capex ₹260-270 crore
 
 ## Beneficiaries
 
@@ -38,7 +40,7 @@ None yet — first tracking run.
 
 ## Research Queue Appearances
 
-0 — first week of tracking
+1 — 2026-06-22: GABRIEL #3
 
 ## Potential Losers
 
@@ -64,4 +66,4 @@ None yet — first tracking run.
 2 companies this week | 2 companies cumulative
 
 ## Last Updated
-2026-06-21
+2026-06-22

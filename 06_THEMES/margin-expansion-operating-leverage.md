@@ -4,8 +4,8 @@
 Emerging
 
 ## Confidence Score
-5.5 / 10
-Justification: Two companies this run with concrete margin leverage evidence — GABRIEL's 55% PAT CAGR thesis now anchored by confirmed ₹252cr PAT base, 37.7% Core ROCE by FY28 (+800bps), and 81% decade-long cash conversion; PARAS's Q4 FY26 PAT +89% vs revenue +58% demonstrates implicit leverage; signal crossed the 2-company corroboration threshold this run, but PARAS is a small company without earnings call transparency and GABRIEL is the primary carrier — confidence elevated from below-threshold to 5.5.
+6.5 / 10
+Justification: Gabriel's sunroof JV now producing concrete above-guidance margin data (15.1% FY26 vs 12-14% target) on ₹434 crore revenue — the margin expansion thesis is no longer a projection but a Year-1 operational reality; PARAS issued first-ever revenue guidance (30-40% FY27-28 "while maintaining or growing profitability") implying explicit margin leverage alongside revenue growth; corroboration count unchanged at 2 companies but evidence quality has increased substantially — from projections to confirmed operational numbers for GABRIEL and from no-guidance to first guidance for PARAS; cap to 6.5 because the theme still needs 1-2 more companies and GABRIEL has a Q4 ramp-up issue that must be watched.
 
 ## Trend Direction
 Accelerating
@@ -19,6 +19,8 @@ Companies mentioning this theme this week:
 | PARAS | Q4 FY26 Quarterly Results | 2026-05-13 | New mention | Medium | PAT +89% YoY Q4 vs revenue +58% YoY — implicit operating leverage; PAT growing 1.5x faster than revenue |
 | GABRIEL | Analyst Initiation + Earnings Update | 2026-06-21 | Strengthening | High | FY26 PAT ₹252.2cr confirmed (base anchored); Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA 81%; WC 27 days; net cash — structural quality compounder profile confirmed |
 | PARAS | Exchange Filing + Q4 Results | 2026-06-21 | Stable | Medium | Order book ₹928cr (1.9x revenue); PAT growing faster than revenue continues; no earnings call but operating leverage implied by Q4 data |
+| GABRIEL | Investor Presentation (NSE May 27) | 2026-06-22 | Strengthening | High | Sunroof JV FY26 margin 15.1% — above management guidance of 12-14%; ₹434 crore JV revenue; Genos plant adding capacity Q4 CY26; new OEM customers (Mahindra, Mobis) at premium end; EV 2W +30% YoY — margin leverage materialising in new segments |
+| PARAS | Investor Meets — June 2026 | 2026-06-22 | Strengthening | High | First-ever guidance: "30-40% revenue growth in FY27 and FY28 while maintaining or growing profitability" — explicit management commitment to margin maintenance alongside growth; implies PAT growing ≥30-40% (leverage maintained) |
 
 ## Supporting Data
 
@@ -61,7 +63,7 @@ None yet — first run at threshold. Eligible for screener consideration.
 - LT is a counter-case at scale: margin compression at ₹82,762 crore quarterly revenue despite massive order book — operating leverage is not automatic
 
 ## Corroboration Count
-2 companies this week | 2 companies cumulative — AT THRESHOLD
+2 companies this week | 2 companies cumulative
 
 ## Last Updated
-2026-06-21
+2026-06-22

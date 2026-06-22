@@ -26,6 +26,9 @@ Companies mentioning this theme this week:
 | JNKINDIA | UAE Order Filing | 2026-06-21 | Strengthening | High | UAE order additive to ₹1,961cr book; full EPC scope (design → commissioning) confirms engineering depth |
 | PARAS | Exchange Filing | 2026-06-21 | Strengthening | High | Order book ₹928cr (1.9x FY26 revenue) — first disclosed; BEL supply chain embedded |
 | LT | Earnings Update | 2026-06-21 | **Negative** | High | Q4 FY26 PAT -3% YoY (₹5,326cr); EBITDA margin 10.4% — compressed vs "stable" prior characterisation; Lakshya 2031 ROE 16–17% described by analysts as "underwhelming" |
+| GABRIEL | Investor Presentation (NSE May 27) | 2026-06-22 | Strengthening | High | Total capex plan ₹260-270 crore confirmed: ₹150cr (suspension) + ₹50cr (sunroofs) + ₹60-70cr (fastener plant — entirely new vertical); Genos plant under construction (commercial production Q4 CY26); SK operations already started; aggressive multi-vertical capex signals high management conviction |
+| LT | Analyst Meet | 2026-06-20 | **Negative** | Medium | H1 FY27 explicitly "softer due to execution headwinds"; H2 FY27 recovery dependent on Middle East normalization — external condition outside LT's control; FY27 guidance 10-12% maintained but trajectory now H1 weak/H2 recovery |
+| BEL | Order Win + Investor Meet | 2026-06-19 | Strengthening | High | ₹608 crore Q1 FY27 fresh orders (multi-domain); own capex >₹1,200 crore + R&D ₹2,200 crore FY27 unchanged — BEL capex commitment undisturbed by QRSAM delay |
 
 ## Supporting Data
 
@@ -55,7 +58,7 @@ Companies mentioning this theme this week:
 
 ## Research Queue Appearances
 
-12 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6
+18 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6
 
 ## Potential Losers
 
@@ -79,7 +82,7 @@ Companies mentioning this theme this week:
 - LT Lakshya 2031 ROE guidance 16–17% described by analysts as "underwhelming" — management ambition may not translate to shareholder returns at scale
 
 ## Corroboration Count
-6 companies this week | 6 companies cumulative
+6 companies this week | 6 companies cumulative (LT negative signal; 5 positive + 1 mixed)
 
 ## Last Updated
-2026-06-21
+2026-06-22
