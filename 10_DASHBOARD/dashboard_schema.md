@@ -190,6 +190,27 @@ One row per stock with an active Opportunity Record.
 
 ---
 
+## Investment Impact Link
+
+If a recent Investment Impact note exists, every dashboard must reference it in
+the header:
+
+```markdown
+Investment impact note: 08_PORTFOLIO_INPUTS/investment-impact/<TICKER>-impact-YYYY-MM-DD.md
+```
+
+Panel 1 and Panel 3 must explicitly test the blockers from that note. A positive
+Opportunity Record or Poised Score cannot override:
+
+- failed financial quality gates
+- weak cash conversion
+- valuation flags
+- missing live portfolio data
+- missing portfolio slot
+- unresolved governance issues
+
+---
+
 ## Rules
 
 1. **Live price is mandatory for Panel 1 bar.** If Kite fails, render bar as "unavailable" and note timestamp.
@@ -198,3 +219,4 @@ One row per stock with an active Opportunity Record.
 4. **Poised Score is not a buy signal.** It is an index of how well-positioned the stock is for entry right now — a high Poised Score in an expensive market is still a watch, not a buy.
 5. **Dashboard is research, not advice.** Every dashboard ends with: "This is a research document, not investment advice. Verify all data before acting."
 6. **Only stocks with active Opportunity Records qualify.** No dashboard for Research Queue-only stocks.
+7. **Investment Impact notes are handoffs, not verdicts.** They can trigger underwriting or watchlist upgrades, but they cannot authorize a buy.
