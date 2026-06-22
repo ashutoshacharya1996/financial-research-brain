@@ -160,6 +160,22 @@ Plain English. "The strategic landscape basically means..."
 
 ---
 
+## Investment Impact Link
+
+**If an Investment Impact Note exists for this stock from the current week:**
+
+Reference it in the header and test its blockers:
+
+```markdown
+Investment Impact Note: 08_PORTFOLIO_INPUTS/investment-impact/[TICKER]-impact-[YYYY-MM-DD].md
+Impact routing: [Re-run Deep Dive / Upgrade Watchlist / Keep Tracking / Ignore For Now]
+Blockers listed: [2–3 specific conditions]
+```
+
+Panel 3 (Personal Fit) must explicitly test each blocker listed in the impact note. Personal recommendation cannot recommend "Add" if any blocker gates as Fail (e.g. "Cash conversion broken" if DSO is rising).
+
+---
+
 ## File Header (Mandatory)
 
 Every dashboard must begin:
@@ -170,6 +186,7 @@ Date: YYYY-MM-DD
 Live price: ₹X (as of YYYY-MM-DD HH:MM IST via Kite)
 Linked opportunity: [opportunity-id]
 Opportunity confidence: X.X / 10 | Theme: [theme name] | Trend: [Accelerating/Stable/Weakening]
+Investment Impact: [link if available, else "—"]
 ```
 
 ---
@@ -190,33 +207,13 @@ One row per stock with an active Opportunity Record.
 
 ---
 
-## Investment Impact Link
-
-If a recent Investment Impact note exists, every dashboard must reference it in
-the header:
-
-```markdown
-Investment impact note: 08_PORTFOLIO_INPUTS/investment-impact/<TICKER>-impact-YYYY-MM-DD.md
-```
-
-Panel 1 and Panel 3 must explicitly test the blockers from that note. A positive
-Opportunity Record or Poised Score cannot override:
-
-- failed financial quality gates
-- weak cash conversion
-- valuation flags
-- missing live portfolio data
-- missing portfolio slot
-- unresolved governance issues
-
----
-
 ## Rules
 
 1. **Live price is mandatory for Panel 1 bar.** If Kite fails, render bar as "unavailable" and note timestamp.
 2. **Scenarios must sum to 100%.** If probability is uncertain, use "qualitative ranking only" and explain.
 3. **Panel 3 must cite current holding.** Never give a portfolio recommendation without checking live Kite holdings first.
 4. **Poised Score is not a buy signal.** It is an index of how well-positioned the stock is for entry right now — a high Poised Score in an expensive market is still a watch, not a buy.
-5. **Dashboard is research, not advice.** Every dashboard ends with: "This is a research document, not investment advice. Verify all data before acting."
-6. **Only stocks with active Opportunity Records qualify.** No dashboard for Research Queue-only stocks.
-7. **Investment Impact notes are handoffs, not verdicts.** They can trigger underwriting or watchlist upgrades, but they cannot authorize a buy.
+5. **Load and test Investment Impact blockers.** If an Investment Impact Note exists (current week), load it and test each blocker listed. Personal recommendation "Add" is blocked if any gate returns Fail.
+6. **Positive Opportunity score cannot override failed gates.** A high Poised Score or Opportunity confidence does not override failed quality gates, weak cash conversion, valuation red flags, or missing portfolio slot. State this explicitly if recommending Avoid.
+7. **Dashboard is research, not advice.** Every dashboard ends with: "This is a research document, not investment advice. Verify all data before acting."
+8. **Only stocks with active Opportunity Records qualify.** No dashboard for Research Queue-only stocks.

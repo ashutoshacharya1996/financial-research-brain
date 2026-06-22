@@ -15,16 +15,6 @@ Then say: _"New evidence is in. Run the pipeline from extraction onwards. Skip u
 
 Claude Code processes extraction → delta → themes → opportunity screener → weekly brief and commits the outputs.
 
-If a stock from the weekly report looks investment-relevant, run the Investment
-Impact layer before any stock-selection work:
-
-```
-Run investment impact notes for the top handoff names from this week's report.
-```
-
-This creates files in `08_PORTFOLIO_INPUTS/investment-impact/`. Those notes are
-the bridge into India Stock Picker review. They are not buy/sell decisions.
-
 To add a company to the fetch cycle: add a row to `data/company_master.csv` with `active: true`.
 
 ---
@@ -68,11 +58,15 @@ Opportunity Screener          ← produces the weekly Top 10 + Top 3
       ↓
 Weekly Opportunity Report
       ↓
-Investment Impact Layer       ← translates signals into underwriting triggers
+Portfolio Handoff              ← identifies 3 candidates for deeper review
       ↓
-Market Intelligence Agent
+Investment Impact Agent       ← fact-checks signals, gates underwriting effort
       ↓
-Research Brief Generator
+Investment Impact Notes       ← routing decision: Deep Dive / Watchlist / Track / Ignore
+      ↓
+India Stock Picker            ← valuation + quality gates (if Impact notes flags for review)
+      ↓
+Portfolio Fit Check           ← personal allocation decision
       ↓
 Portfolio Intelligence Output
 
@@ -238,22 +232,14 @@ Contains:
 
 08_PORTFOLIO_INPUTS
 
-Outputs consumed by the portfolio and stock-selection systems.
+Handoff zone between research discovery and investment decisions.
 
-Examples:
+Contains:
 
-* Theme rankings
-* Opportunity lists
-* Risk alerts
-* Sector scorecards
-* Company watchlists
-* Investment Impact notes that bridge opportunity signals into underwriting
-
-Rule:
-
-* A positive Opportunity signal can create a handoff.
-* Only the India Stock Picker can create a Buy / Watchlist / Pass verdict.
-* Only Portfolio Fit can convert a Buy candidate into an actual portfolio action.
+* Weekly Portfolio Handoff (3 candidates for Investment Impact review)
+* Investment Impact Notes (fact-checked signals, underwriting gates, routing decisions)
+* Weekly ELI15 brief (human-readable summary)
+* Stock dashboards (reference link to latest India Stock Picker output)
 
 ⸻
 
@@ -337,35 +323,57 @@ Outputs:
 
 * Top 10 Stocks for the Research Queue
 * Top 3 High-Conviction Opportunities
+* Portfolio Handoff (3 names for deeper review)
 * Updated Opportunity Records in `07_OPPORTUNITIES/active/`
-* Portfolio Handoff candidates for Investment Impact notes
 
 ⸻
 
 Agent 6.5 – Investment Impact Agent
 
-Bridges Opportunity Discovery to stock selection.
+Fact-checks Portfolio Handoff signals, assesses underwriting impact, and gates whether India Stock Picker deep dive is warranted.
 
-Purpose:
+Decision types:
 
-* Fact-check the specific signal
-* Map the impact to growth, margins, cash conversion, moat, valuation, and portfolio fit
-* Identify buy blockers
-* Decide whether to re-run the India Stock Picker, upgrade watchlist priority, keep tracking, or ignore
+* Re-run India Stock Picker (Deep Dive)
+* Upgrade Watchlist Priority
+* Keep Tracking
+* Ignore For Now
 
-Hard rule: this agent never outputs Buy / Sell / Add / Exit.
+Output: Investment Impact Notes in `08_PORTFOLIO_INPUTS/investment-impact/`
+
+Key rules:
+* **Positive signals cannot override failed quality gates, weak cash conversion, valuation flags, or portfolio constraints.**
+* **This agent never outputs Buy / Sell / Add / Exit.** Routing decision only.
 
 ⸻
 
-Agent 7 – Market Intelligence Agent
+Agent 7 – India Stock Picker
+
+Runs on-demand when triggered by Investment Impact notes flagged for "Deep Dive" or "Upgrade Watchlist."
+
+Evaluates: Valuation gates (fair value, buy zones), quality gates (delivery track record, cash conversion), and portfolio fit.
+
+⸻
+
+Agent 8 – Portfolio Fit / Financial Advisor
+
+Runs on-demand after India Stock Picker clears gates.
+
+Assesses: FIRE horizon alignment, portfolio slot availability, personal biases, holdings overlap.
+
+Final decision: Add / Hold / Avoid
+
+⸻
+
+Agent 9 – Market Intelligence Agent
 
 Monitors external sources and industry developments.
 
 ⸻
 
-Agent 8 – Research Committee Agent
+Agent 10 – Research Committee Agent
 
-Challenges conclusions and seeks contradictory evidence.
+Challenges conclusions and seeks contradictory evidence (run as needed, not weekly).
 
 Purpose:
 

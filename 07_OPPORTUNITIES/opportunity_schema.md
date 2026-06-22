@@ -4,7 +4,9 @@
 
 An Opportunity is the central object of the Opportunity Discovery Engine.
 
-It represents a convergence of Theme + Evidence + Candidate Stocks + Timing + Risk that is specific enough and well-evidenced enough to direct research attention and, ultimately, investment consideration.
+It represents a convergence of Theme + Evidence + Candidate Stocks + Timing + Risk that is specific enough and well-evidenced enough to direct research attention.
+
+**Important:** Opportunity Records are **research objects**, not buy recommendations. They signal "where to look." A positive Opportunity Record is the START of underwriting, not the end. The Investment Impact Agent decides whether the signal warrants deeper review. The India Stock Picker gate-checks valuation and quality. The Portfolio Fit stage decides personal allocation. Positive signals cannot override failed quality gates, weak cash conversion, valuation red flags, or portfolio constraints.
 
 There are two record types: the **Opportunity Record** (conviction-stage) and the **Research Queue Entry** (early-signal stage). A stock can appear in the Research Queue without a full Opportunity Record behind it. An Opportunity Record requires higher evidence thresholds.
 
@@ -182,20 +184,6 @@ An opportunity record requires:
 * At least 1 articulated risk
 * Defined thesis breakers
 
-An opportunity record is not a buy recommendation. It is a research object.
-Before any stock from an opportunity can enter underwriting, create an
-Investment Impact note in `08_PORTFOLIO_INPUTS/investment-impact/`.
-
-The Investment Impact note answers:
-
-```text
-What changed?
-Is it verified?
-Which part of the investment case does it affect?
-What still blocks a buy decision?
-Should this trigger a full India Stock Picker review?
-```
-
 ---
 
 ## Opportunity Lifecycle
@@ -233,15 +221,29 @@ Stage: Conviction
 
         ↓
 
+Portfolio Handoff
+(Opportunity Screener identifies 3 candidates for deeper review)
+
+        ↓
+
 Investment Impact Note
+(Fact-check signal, assess impact, identify blockers, gate underwriting)
 
         ↓
 
-India Stock Picker Review
+Routing Decision:
+- Re-run India Stock Picker (Deep Dive)
+- Upgrade Watchlist Priority
+- Keep Tracking
+- Ignore For Now
 
         ↓
 
-Portfolio Decision
+India Stock Picker Review (if Impact Note flags for Deep Dive)
+
+        ↓
+
+Portfolio Fit Decision
 
         ↓
 

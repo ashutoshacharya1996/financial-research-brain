@@ -8,9 +8,11 @@ Synthesize all signals from the prior week — theme outputs, delta analysis, an
 
 1. **Top 10 Stocks for the Research Queue** — early-signal, one per stock, evidence-backed
 2. **Top 3 High-Conviction Opportunities** — conviction-stage, meet full Opportunity Record thresholds
-3. **Portfolio Handoff** — the small set of names that deserve Investment Impact notes before any underwriting
+3. **Portfolio Handoff** — up to 3 names (from Top 10 or Top 3) for Investment Impact agent review
 
 This is the engine's primary output. Every other agent feeds into this one.
+
+**Important:** This agent produces research signals, not investment recommendations. Positive signals in this report cannot override buy blockers, weak cash conversion, valuation red flags, or portfolio constraints. The Investment Impact Agent gates underwriting effort before any India Stock Picker review.
 
 ---
 
@@ -100,11 +102,6 @@ Use the format defined in `07_OPPORTUNITIES/weekly_output_template.md` exactly.
 
 The date in the filename is the Sunday on which this report is generated.
 
-Include the Portfolio Handoff section. This section is not a recommendation.
-It should identify up to 3 names where a signal is material enough to affect a
-future investment decision, and it must state the strongest remaining blocker
-for each name.
-
 ---
 
 ### Step 7 — Create or Update Opportunity Records
@@ -129,28 +126,22 @@ This maintains the bidirectional link: Theme → Opportunity → Research Queue 
 
 ---
 
-### Step 9 — Identify Investment Impact Notes To Create
+### Step 9 — Identify Portfolio Handoff Candidates
 
-From the Top 10 and Top 3, select up to 3 items that deserve an Investment
-Impact note.
+Select up to 3 stocks from the Top 10 or Top 3 Opportunities for Investment Impact note creation. Do not select a stock just because it sounds exciting.
 
-Select a stock only if:
+Select a stock only if **all four** criteria are met:
+1. The signal is primary-source verified or clearly sourced (not inferred)
+2. The signal affects at least one of: growth, margins, cash conversion, moat, management quality, valuation, or portfolio fit
+3. There is a clear question for the India Stock Picker to answer if the note escalates
+4. There is at least one named blocker or risk to test
 
-- the signal is primary-source verified or clearly sourced
-- the signal affects growth, margins, cash conversion, moat, management,
-  valuation, or portfolio fit
-- there is a clear question for the India Stock Picker to answer
-- there is at least one named blocker or risk to test
+For each handoff candidate:
+- Identify the **strongest signal** this week (the specific delta or corroboration that's material)
+- Identify the **strongest blocker** that currently prevents underwriting (valuation flag, cash conversion concern, execution risk, governance issue, portfolio conflict)
+- Record both in Section 3 of the weekly report
 
-Do not select a stock just because it sounds exciting.
-
-Write the required note path in the weekly report:
-
-```text
-08_PORTFOLIO_INPUTS/investment-impact/<TICKER>-impact-YYYY-MM-DD.md
-```
-
-The actual note is produced by `09_PROMPTS/investment_impact.md`.
+The actual Investment Impact notes are produced by `09_PROMPTS/investment_impact.md` — write the note path in the weekly report and the agent will fill it.
 
 ---
 
@@ -161,8 +152,8 @@ See `07_OPPORTUNITIES/weekly_output_template.md` for the exact format.
 Summary:
 - **Section 1:** Markdown table, 10 rows, one stock per row with rank, reason, signal source, and optional opportunity link
 - **Section 2:** Structured block per Opportunity — theme, confidence, trend, stocks, why-now bullets, risk bullets, evidence count, link to active file
+- **Section 3: Portfolio Handoff** — up to 3 names, each with strongest signal, strongest blocker, and impact note path
 - **Signal Notes:** 2–4 sentences on what changed vs. last week
-- **Portfolio Handoff:** up to 3 impact notes to create, each with strongest signal and strongest blocker
 
 ---
 
@@ -172,8 +163,7 @@ Summary:
 2. Every Opportunity Record must have `corroboration_count` ≥ 3. Do not create an Opportunity Record for a single-company signal, no matter how strong.
 3. Confidence scores above 8.0 require `contradictory_evidence` to be populated. High conviction without acknowledged risk is not permitted.
 4. Do not carry forward last week's Top 10 unchanged. Every entry must be re-validated from this week's signals. An entry can return to the list, but its reason must cite this week's evidence.
-5. Opportunities are research hypotheses, not investment recommendations. Do not frame them as buy calls.
+5. **Opportunities are research hypotheses, not investment recommendations. Do not output Buy/Sell/Add/Exit language.** Frame all output as "worth researching" or "watch for next catalyst." That decision belongs to Investment Impact Agent → India Stock Picker → Portfolio Fit.
 6. If a theme's `trend_direction` changed to Weakening since last week, any linked Opportunity must be flagged for re-validation and its `confidence_score` reviewed.
 7. The report must be written before end of Sunday. It covers signals from the Monday–Saturday window of the prior week.
-8. Do not output Buy, Sell, Add, Exit, target price, or position size. Those belong to the India Stock Picker and portfolio-fit process.
-9. A positive delta can trigger a handoff, but it cannot override valuation, cash conversion, governance, or portfolio blockers.
+8. Portfolio Handoff section lists 3 candidates with strongest signal + strongest blocker. These drive the Investment Impact Agent's work. Blocking candidates with structural blockers should not be listed — prefer addressable concerns.
