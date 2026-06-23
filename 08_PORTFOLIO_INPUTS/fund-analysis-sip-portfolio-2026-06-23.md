@@ -130,32 +130,32 @@ The underlying business quality is genuinely good (WQS 7.5/10). The fund manager
 
 | Field | Value |
 |---|---|
-| Fund manager | Shreyash Devalkar (left), now Hitesh Das + team |
-|AUM | ₹32,852 Cr |
+| Fund manager | Shreyash Devalkar (since Nov 2016, active), Nitin Arora, Krishnaa N |
+| AUM | ₹32,852 Cr |
 | NAV | — |
 | Mandate | 65%+ in mid cap stocks |
 | Category rank | 15/25 |
 | Expense ratio (Direct) | 0.57% |
-| Sharpe ratio | **0.31** — very low |
+| Sharpe ratio (Direct Growth) | **0.98** — healthy |
+
+*Correction note (23 Jun 2026): An earlier draft of this report incorrectly stated that Devalkar had departed and cited a Sharpe ratio of 0.31. Both were wrong — the manager departure was a hallucination, and the 0.31 Sharpe belongs to the IDCW share class, not Direct Growth. Direct Growth Sharpe is 0.98. The verdicts below reflect corrected data.*
 
 ## Top 10 Holdings — Individual Verdicts
 
-*Source: Kuvera portfolio as of 14 Jun 2026. Items 1–3 are non-equity (cash management / derivatives). Real equity starts at rank 4.*
+*Source: Kuvera portfolio as of 14 Jun 2026. Items 1–3 are technical line items from the AMFI disclosure format — the Clearing Corp and Nifty futures entries represent normal settlement/hedging mechanics, not a large structural cash position. Net receivables at −4.44% is negative (liability), not additional cash. Equity holdings start at rank 4.*
 
 | Rank | Stock / Instrument | Weight | Notes |
 |---|---|---|---|
-| 1 | Clearing Corporation of India | 6.57% | ⚠️ DEBT PROXY — cash parking, not equity |
-| 2 | Nifty June 2026 Future | 5.46% | ⚠️ FUTURES HEDGE — arbitrage/risk mgmt |
-| 3 | Net Receivables | 4.44% | ⚠️ CASH — not deployed |
-| 4 | Federal Bank | 3.83% | ✓ Equity — Quality 7.0 | Fair Value |
-| 5 | Fortis Healthcare | 3.54% | ✓ Equity — Quality 7.0 | Watch |
-| 6 | MCX | 3.04% | ✓ Equity — Quality 7.5 | Watch |
-| 7 | GE Vernova T&D India | 2.90% | ✓ Equity — Quality 7.5 | Buy Zone |
-| 8 | BSE Ltd | 2.39% | ✓ Equity — Quality 7.0 | Watch |
-| 9 | Schaeffler India | 2.22% | ✓ Equity — Quality 7.5 | Fair Value |
-| 10 | Cummins India | 2.11% | ✓ Equity — Quality 7.5 | Fair Value |
-
-**⚠️ Critical observation:** 16.5% of the fund (items 1–3) is in cash, debt proxies, and futures hedges. You are paying mid cap fund fees (0.57%) on ₹5,400 Cr worth of assets that are earning near-debt returns. This is a significant hidden drag.
+| 1 | Clearing Corporation of India | 6.57% | Settlement/margin — normal for equity funds |
+| 2 | Nifty June 2026 Future | 5.46% | Hedging overlay — standard practice |
+| 3 | Net Receivables | −4.44% | Negative (payable) — not cash hoard |
+| 4 | Federal Bank | 3.83% | Quality 7.0 \| Fair Value |
+| 5 | Fortis Healthcare | 3.54% | Quality 7.0 \| Watch |
+| 6 | MCX | 3.04% | Quality 7.5 \| Watch |
+| 7 | GE Vernova T&D India | 2.90% | Quality 7.5 \| Buy Zone |
+| 8 | BSE Ltd | 2.39% | Quality 7.0 \| Watch |
+| 9 | Schaeffler India | 2.22% | Quality 7.5 \| Fair Value |
+| 10 | Cummins India | 2.11% | Quality 7.5 \| Fair Value |
 
 ### Individual Stock Analysis
 
@@ -222,26 +222,29 @@ The underlying business quality is genuinely good (WQS 7.5/10). The fund manager
 
 | Metric | Value |
 |---|---|
-| Effective equity deployment | **83.5%** (16.5% in cash/derivatives) |
-| WQS (equity holdings only) | **7.2/10** |
-| WQS (total portfolio, cash dragging) | **~6.0/10** |
-| Zone distribution (equity) | GE Vernova in Buy Zone; majority at Fair Value or Watch |
+| WQS (equity holdings) | **7.2/10** |
+| Zone distribution | GE Vernova in Buy Zone; majority at Fair Value or Watch |
 | Sector concentration | Financial services + exchanges = ~9%; Industrials = ~7%; Healthcare = ~3.5% |
-| Cash drag | **Severe** — 16.5% not earning mid cap returns |
+| Sharpe (Direct Growth) | **0.98** — healthy; in line with category peers |
+| Since-inception alpha | Marginal (+0.65% vs benchmark) |
+| 3yr alpha | Slightly negative vs Nifty Midcap 150 TRI |
+| AUM | ₹32,852 Cr — above category average, a size headwind |
 
 ## Verdict
 
-**Reduce allocation significantly. Consider switching.**
+**Watch — no urgent action.**
 
-The equity holdings the team has chosen are reasonably good quality (GE Vernova, Schaeffler, Cummins, Federal Bank are all decent). But three structural problems override the stock quality:
+The three triggers originally cited for urgent reduction (manager departure, Sharpe 0.31, 16.5% cash drag) were all wrong. Correcting for that, what actually remains:
 
-1. **Sharpe 0.31** — you are taking substantial mid cap volatility and being compensated very poorly for it
-2. **16.5% in cash/derivatives** — you are paying 0.57% annual fee on ₹5,400 Cr of assets that are essentially earning liquid fund returns
-3. **Fund manager transition** — Shreyash Devalkar (the architect of Axis Mid Cap's historical alpha) departed; the current team has not yet demonstrated equivalent alpha-generation at this AUM
+- **Legitimate concern:** Category rank 15/25 and 3yr returns marginally behind benchmark — this is real and worth tracking
+- **Legitimate concern:** AUM at ₹32,852 Cr is large for a mid cap mandate — creates deployment constraints over time
+- **Not a concern:** Devalkar still active (10-year track record on this fund intact); Direct Growth Sharpe 0.98 is healthy; cash drag was a misread of the portfolio disclosure format
 
-**Routing:** Reduce from ₹23k to ₹10–12k. The ₹11–13k freed up should go to either:
-- A better mid cap fund (HDFC Mid Cap Opportunities / Kotak Emerging Equity — both top-5 in category with Sharpe >0.6)
-- Or increased allocation to Quant Quantamental (which is generating differentiated returns)
+The equity holdings are decent quality (GE Vernova, Schaeffler, Cummins — genuine capex cycle beneficiaries; Federal Bank — value play). Nothing alarming at the stock level.
+
+**Routing:** Hold at ₹23k. Reassess in 2 rolling quarters. The signal to act would be: category rank slipping below 18/25, or a confirmed manager exit, or Sharpe dropping below 0.6 on Direct Growth data.
+
+**What to watch:** Pull your actual Kite holdings for Axis when logged in — cost basis, P&L, and LTCG eligibility should inform timing of any future reallocation, not just performance data.
 
 ---
 
@@ -369,9 +372,9 @@ The Quant Quantamental fund earns its place not because every holding is obvious
 |---|---|---|---|---|
 | Nifty 50 Index (UTI/HDFC) | — | ₹9,000 | **+₹9k** | Real "platform base" — guaranteed at 0.1% TER |
 | Mirae Asset L&M Cap | ₹17,000 | ₹8,000 | −₹9k | Keep manager for mid-large alpha; reduce since base role moves to index |
-| Axis Mid Cap | ₹23,000 | ₹10,000 | −₹13k | Sharpe 0.31, 16.5% cash drag, manager transition — de-risk |
-| Better mid cap fund* | — | ₹10,000 | **+₹10k** | HDFC Mid Cap Opps or Kotak Emerging Equity (top-5 category, Sharpe >0.6) |
-| Quant Quantamental | ₹8,000 | ₹12,000 | +₹4k | Differentiated strategy, 3yr CAGR 19.7%, small AUM — room to grow |
+| Axis Mid Cap | ₹23,000 | ₹23,000 | — | Watch: rank 15/25 and 3yr alpha thin, but no urgent trigger |
+| Better mid cap fund* | — | — | — | Revisit only if Axis triggers breach (rank <18/25, Sharpe <0.6, manager exit) |
+| Quant Quantamental | ₹8,000 | ₹8,000 | — | Keep; revisit sizing once Axis decision is settled |
 | Bandhan Small Cap | ₹17,000 | ₹17,000 | — | Don't touch the best fund |
 | **Total** | **₹65,000** | **₹66,000** | ≈ same | |
 
