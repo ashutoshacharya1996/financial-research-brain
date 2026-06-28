@@ -39,3 +39,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-05-11 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_11052026164551_Dops_additionalcharge.pdf | New |
 | 2026-05-01 | NSE | Filing | Change in Director(s) | https://nsearchives.nseindia.com/corporate/HAL_01052026125434_ChangeInDirectorate_01052026.pdf | New |
 | 2026-04-28 | NSE | Filing | Updates | https://nsearchives.nseindia.com/corporate/HAL_28042026170921_RevisedPolicy_28042026.pdf | New |
+
+## Evidence collected 2026-06-28
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-06-26 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.com/corporate/HAL_26062026120340_ChangeInMngt_26062026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-06-28/Change-in-Management-3007914fff.pdf | 3007914fff51 | downloaded |

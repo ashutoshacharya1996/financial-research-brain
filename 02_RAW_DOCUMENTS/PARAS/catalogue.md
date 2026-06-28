@@ -39,3 +39,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-05-13 | NSE | Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PARAS_13052026144317_Outcome13052026.pdf | New |
 | 2026-04-30 | NSE | Filing | Disclosure under SEBI Takeover Regulations | https://nsearchives.nseindia.com/corporate/team_sandeshc_15042026122108_Disc1.pdf | New |
 | 2026-04-28 | NSE | Filing | General Updates | https://nsearchives.nseindia.com/corporate/PARAS_28042026113732_IntimationMOU28042026.pdf | New |
+
+## Evidence collected 2026-06-28
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-06-25 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_25062026165437_Investormeet27062026.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-06-28/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-4da2c25783.pdf | 4da2c25783d5 | downloaded |

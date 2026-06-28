@@ -1,0 +1,16 @@
+{
+  "ticker": "GABRIEL",
+  "company_name": "Gabriel India Ltd",
+  "as_of": "2026-06-28",
+  "currency": "INR",
+  "latest_close": 1229.2,
+  "latest_open": 1245.0,
+  "latest_high": 1270.0,
+  "latest_low": 1221.3,
+  "volume": 445571,
+  "fifty_two_week_high": 1388.0,
+  "fifty_two_week_low": 667.55,
+  "market_cap": 216575082496,
+  "pe_ratio": 69.51081,
+  "source": "yfinance:GABRIEL.NS"
+}

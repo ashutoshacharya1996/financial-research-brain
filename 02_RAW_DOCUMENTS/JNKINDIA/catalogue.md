@@ -46,3 +46,9 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 | 2026-05-20 | NSE | Filing | Integrated Filing- Financial | https://nsearchives.nseindia.com/corporate/JNKINDIA23_20052026182932_outcome_of_bm_alongwith_results_final.pdf | New |
 | 2026-05-20 | NSE | Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_20052026180618_outcome_of_bm_alongwith_results_final.pdf | New |
 | 2026-05-15 | NSE | Filing | Monitoring Agency Report | https://nsearchives.nseindia.com/corporate/JNKINDIA23_15052026165500_JNK_Monitoring_Agency_Covering_letter_with_report.pdf | New |
+
+## Evidence collected 2026-06-28
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-06-25 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/JNKINDIA23_25062026151542_JNK_Trading_window_closure_June_2026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-06-28/Trading-Window-9fb5e46eb7.pdf | 9fb5e46eb722 | downloaded |

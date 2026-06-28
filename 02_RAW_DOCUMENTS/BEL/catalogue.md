@@ -42,3 +42,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-05-19 | NSE | Filing | Dividend | https://nsearchives.nseindia.com/corporate/BEL_19052026160758_Letter_signed.pdf | New |
 | 2026-05-19 | NSE | Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/BEL_19052026151725_Letter_signed.pdf | New |
 | 2026-04-23 | NSE | Filing | Cessation | https://nsearchives.nseindia.com/corporate/BEL_23042026114636_Letter_signed.pdf | New |
+
+## Evidence collected 2026-06-28
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-06-26 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/BEL_26062026121936_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-06-28/Trading-Window-48eb02d0fa.pdf | 48eb02d0fa46 | downloaded |

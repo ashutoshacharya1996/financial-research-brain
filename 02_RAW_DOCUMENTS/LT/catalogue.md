@@ -83,3 +83,14 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-04-28 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_28042026153025_Intimation28042026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-22/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-fa14020573.pdf | fa14020573f9 | downloaded |
 | 2026-04-23 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_23042026161907_IntimationVyomaAI.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-22/General-Updates-138031ff5a.pdf | 138031ff5a15 | downloaded |
 | 2026-04-23 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_23042026093723_PressRelease23042026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-22/Bagging-Receiving-of-orders-contracts-f4e19b1fd1.pdf | f4e19b1fd1ea | downloaded |
+
+## Evidence collected 2026-06-28
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-06-27 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/PAM_27062026191223_LTEGMNOTICEANNEXURES27JUNE2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-28/Shareholders-meeting-e1fd03cd3e.pdf | e1fd03cd3e37 | downloaded |
+| 2026-06-25 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_25062026174025_IntimationNABHA250626.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-28/General-Updates-bf96ff4918.pdf | bf96ff4918e1 | downloaded |
+| 2026-06-25 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_25062026162051_Intimation25062026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-28/General-Updates-2e4a9fda93.pdf | 2e4a9fda9387 | downloaded |
+| 2026-06-25 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/PAM_25062026133814_FixedClosedPeriod25062026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-28/Trading-Window-352b0b1e68.pdf | 352b0b1e68a0 | downloaded |
+| 2026-06-24 | NSE | Exchange Filing | Scheme of Arrangement | https://nsearchives.nseindia.com/corporate/PAM_24062026190028_Reg3024062026signed1.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-28/Scheme-of-Arrangement-8afb707bf2.pdf | 8afb707bf2db | downloaded |
+| 2026-06-24 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_24062026125433_ESG_Rating24062026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-28/General-Updates-cffb9ee958.pdf | cffb9ee95815 | downloaded |
