@@ -45,3 +45,12 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-06-26 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.com/corporate/HAL_26062026120340_ChangeInMngt_26062026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-06-28/Change-in-Management-3007914fff.pdf | 3007914fff51 | downloaded |
+
+## Evidence collected 2026-07-05
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-01 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.com/corporate/HAL_01072026141639_ChangeInSeniorMngt_01072026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-07-05/Change-in-Management-d4d60a1935.pdf | d4d60a193543 | downloaded |
+| 2026-06-29 | NSE | Exchange Filing | Change in Auditors | https://nsearchives.nseindia.com/corporate/HAL_29062026125127_outcome_boardmeeting_29062026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-07-05/Change-in-Auditors-4dc397c778.pdf | 4dc397c77882 | downloaded |
+| 2026-06-29 | NSE | Exchange Filing | Record Date | https://nsearchives.nseindia.com/corporate/HAL_29062026124357_outcome_boardmeeting_29062026.pdf |  |  | metadata_only |
+| 2026-06-29 | NSE | Exchange Filing | Dividend | https://nsearchives.nseindia.com/corporate/HAL_29062026124231_outcome_boardmeeting_29062026.pdf |  |  | metadata_only |

@@ -57,3 +57,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-05-06 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_06052026210223_SE_Intimation_final_merge.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-06-22/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-6b2bc453e7.pdf | 6b2bc453e7f8 | downloaded |
+
+## Evidence collected 2026-07-05
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-06-29 | NSE | Exchange Filing | Disclosure under SEBI Takeover Regulations | https://nsearchives.nseindia.com/corporate/team_sandeshc_11052026130830_9.PDF | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-05/Disclosure-under-SEBI-Takeover-Regulations-7e901bca42.pdf | 7e901bca42ec | downloaded |
+| 2026-06-29 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/GABRIEL_29062026111929_SE_Intimation_Q1.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-05/Trading-Window-27fd0f112d.pdf | 27fd0f112df4 | downloaded |

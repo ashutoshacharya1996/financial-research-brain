@@ -45,3 +45,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-06-25 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_25062026165437_Investormeet27062026.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-06-28/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-4da2c25783.pdf | 4da2c25783d5 | downloaded |
+
+## Evidence collected 2026-07-05
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-06-30 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PARAS_30062026155053_Reg30IP.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-05/General-Updates-e861a5a31b.pdf | e861a5a31b3e | downloaded |
+| 2026-06-29 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/PARAS_29062026154219_Intimation_for_Closure_of_Trading_Window.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-05/Trading-Window-c328f41464.pdf | c328f414649a | downloaded |

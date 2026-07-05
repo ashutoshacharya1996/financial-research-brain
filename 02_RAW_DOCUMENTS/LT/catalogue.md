@@ -94,3 +94,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-06-25 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/PAM_25062026133814_FixedClosedPeriod25062026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-28/Trading-Window-352b0b1e68.pdf | 352b0b1e68a0 | downloaded |
 | 2026-06-24 | NSE | Exchange Filing | Scheme of Arrangement | https://nsearchives.nseindia.com/corporate/PAM_24062026190028_Reg3024062026signed1.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-28/Scheme-of-Arrangement-8afb707bf2.pdf | 8afb707bf2db | downloaded |
 | 2026-06-24 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_24062026125433_ESG_Rating24062026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-06-28/General-Updates-cffb9ee958.pdf | cffb9ee95815 | downloaded |
+
+## Evidence collected 2026-07-05
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-01 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_01072026184241_SEIntimation01072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-05/General-Updates-ba4af32785.pdf | ba4af32785f0 | downloaded |
+| 2026-06-29 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PAM_29062026153937_NewspaperAdvertisement29062026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-05/Copy-of-Newspaper-Publication-7b804711ff.pdf | 7b804711ff76 | downloaded |
