@@ -23,6 +23,7 @@ Companies mentioning this theme this week:
 | HAL | MALE UAV Tender Event | 2026-06-16 | Strengthening | High | 10 Indian firms bid; HAL confirmed bidder; window closed June 16 (extended twice); split order (L1+L2) → two production lines mandated; Q4 FY26 PAT ₹4,196cr / FY26 PAT ₹9,116cr (27.6% net margin) confirmed |
 | LT | MALE UAV Tender Event + Earnings Update | 2026-06-21 | Strengthening | High | K9 Vajra-T ₹7,628.70cr (Dec 2024) CONFIRMED (vs "₹5,000–10,000 crore estimate" prior); LT confirmed bidder for MALE UAV ₹30,000cr |
 | PARAS | Press Release — BEL Order | 2026-06-02 | Strengthening | High | Exchange filing confirms ₹52.82cr electro-optics order from BEL; order book ~₹928cr (1.9x FY26 revenue) — FIRST disclosed order book |
+| PARAS | IP License Agreement — Powerus/Tandem Defense | 2026-06-30 | New mention | Medium | Exclusive 12-month renewable India license for Guardian-1 Interceptor counter-drone system; "manufacturing and commercializing Products in India" — first move beyond electro-optics into counter-UAS category; no financial terms disclosed |
 
 ## Supporting Data
 
@@ -79,7 +80,13 @@ Companies mentioning this theme this week:
 4 companies this week | 4 companies cumulative
 
 ## Last Updated
-2026-06-22 (extraction update)
+2026-07-06 (extraction update)
 
 ### New Evidence (extraction run, 2026-06-22)
 | BEL | Press Release — GBMES | 2026-05-05 | Strengthening | High | "BEL has signed a contract with Ministry of Defence valued at Rs. 1251 Crore (excluding taxes) for supply of GBMES system to Indian Army. The GBMES is a totally indigenous, state of the art system designed and developed by DLRL Hyderabad and manufactured by BEL. The networked intelligence system is capable of detecting, classifying & locating all types of radars. The system also intercepts and analyzes all communication signals." |
+
+### New Evidence (extraction run, 2026-07-05 batch)
+
+**PARAS — Guardian-1 Interceptor counter-drone IP license (2026-06-30):** Exclusive, 12-month renewable India manufacturing/commercialization license from Powerus (via Tandem Defense LLC, USA) for a battery-powered counter-UAS interceptor. This diversifies PARAS beyond its BEL-subcontract electro-optics franchise into a new product category, one week after the company's first-ever FY27/28 30–40% revenue guidance (June 22). No license fee, royalty, or revenue timeline disclosed — treated as a qualitative diversification signal, not a quantified order.
+
+Confidence held at **9.2** (not raised) — this is breadth-of-portfolio evidence, not a new dollar figure against the QRSAM/GBMES/MALE-UAV thesis that anchors the score. Watch for: (1) financial terms of the Powerus license in a future filing, (2) whether the 12-month term renews.
