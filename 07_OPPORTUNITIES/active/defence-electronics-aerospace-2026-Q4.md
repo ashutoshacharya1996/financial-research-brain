@@ -5,10 +5,10 @@
 - **opportunity_id:** defence-electronics-aerospace-2026-Q4
 - **theme_name:** Indian Defence Electronics & Aerospace Supply Chain
 - **theme_status:** Developing
-- **confidence_score:** 9.0
+- **confidence_score:** 9.2
 - **trend_direction:** Accelerating
 - **date_identified:** 2026-06-20
-- **last_validated:** 2026-06-22
+- **last_validated:** 2026-07-06
 - **status:** Active
 
 ---
@@ -20,7 +20,7 @@
 | BEL | Bharat Electronics Ltd | QRSAM ₹30,000cr confirmed; BEL ~70% system integrator (~₹21,000cr share); July 2026 signing expected; order book lifts ~40% on signing day (₹73,882cr → ~₹94,000cr); FY27 inflow guidance >₹55,000cr; FY27 pipeline decomposed into 4 named programmes (QRSAM + P-75I + AMCA + data centres); ₹608cr fresh Q1 FY27 orders confirmed; Motilal Oswal top defence pick 20% upside |
 | HAL | Hindustan Aeronautics Ltd | FY26 PAT ₹9,115.52cr (27.6% net margin) — extraordinarily high for a manufacturer; order book ₹2,54,538cr (7.7x revenue); LCA Mark-1A delivery Aug/Sep 2026; MALE UAV ₹30,000cr bidder; macro ecosystem validation: India defence production FY26 ₹1.78L cr (+15.6%), HAL ~18.6% of total |
 | LT | Larsen & Toubro Ltd | K9 Vajra-T ₹7,628.70cr confirmed (MoD, Dec 2024); MALE UAV bid submitted; Lakshya 2031 targets (₹5.8tr revenue by FY31); execution concern: Q4 PAT -3% YoY; H1 FY27 explicitly soft |
-| PARAS | Paras Defence & Space Technologies | First-ever revenue guidance: "30-40% FY27 and FY28 while maintaining or growing profitability" — London roadshow with GIC, Temasek, global funds; order book ₹928cr (1.9x FY26 revenue); BEL electro-optics subcontract ₹52.82cr confirmed via regulatory filing; embedded Tier-2 supply chain; India's only listed electro-optic and imaging defence company |
+| PARAS | Paras Defence & Space Technologies | First-ever revenue guidance: "30-40% FY27 and FY28 while maintaining or growing profitability" — London roadshow with GIC, Temasek, global funds; order book ₹928cr (1.9x FY26 revenue); BEL electro-optics subcontract ₹52.82cr confirmed via regulatory filing; embedded Tier-2 supply chain; India's only listed electro-optic and imaging defence company; exclusive 12-month renewable India IP license from Powerus for Guardian-1 Interceptor counter-drone system (2026-06-30) — new addressable product category, no financial terms disclosed yet |
 
 ---
 
@@ -34,6 +34,7 @@
 - **IAF MALE UAV ₹30,000cr — bids confirmed closed June 16, 2026:** 10 qualified bidders (HAL, LT, Adani, Tata among them); split-order mechanism (~₹15,000cr each for L1 and L2); evaluation phase active; per MALE UAV Tender Event — 2026-06-16
 - **LCA Tejas Mark-1A delivery August/September 2026:** HAL committed to first batch of ~20 aircraft; revenue recognition milestone FY27 H1; per Earnings Update — HAL — 2026-06-21
 - **BEL → PARAS supply chain delegation confirmed on official record:** ₹52.82cr electro-optics subcontract via NSE/BSE regulatory filing — Tier-1 PSU to Tier-2 private company architecture documented; per Exchange Filing — PARAS — 2026-06-02
+- **PARAS diversifies into counter-drone / counter-UAS technology:** Exclusive, 12-month renewable India manufacturing/commercialization license for the Guardian-1 Interceptor from Powerus (Tandem Defense LLC, USA) — first move beyond electro-optics into a new product category; no financial terms disclosed yet; per NSE/BSE Filing — PARAS — 2026-06-30
 
 ---
 
@@ -42,6 +43,7 @@
 - **QRSAM third delay risk:** QRSAM has already slipped from February/March 2026 → July 2026; a third slip would push BEL's ~40% order book event deeper into FY27/FY28 and defer revenue recognition; "expected July 2026" is management-stated, not contractually committed
 - **HAL delivery track record:** LCA Mark-1A already slipped once (FY26 → Aug/Sep 2026); Aug/Sep 2026 target is management's stated timeline, not a contracted delivery date; if slips again, FY27 revenue guidance of 10–12% is directly at risk
 - **PARAS guidance unconfirmed by order book:** 30-40% guidance implies ₹621-669cr FY27 revenue; current order book ~₹928cr covers only 1.4-1.5x — barely adequate without fresh wins in FY27; Sight-25HD >5,000 unit opportunity cited is total addressable market, not confirmed customer pipeline
+- **PARAS counter-drone license lacks disclosed economics:** No license fee, royalty, minimum-commercialization volume, or manufacturing timeline disclosed for the Guardian-1 Interceptor; 12-month term is renewable (not permanent) — a single foreign-licensor dependency for the underlying IP
 - **10-way competition on MALE UAV:** Split-order mechanism reduces winner-takes-all risk but also means no single company gets the full ₹30,000cr; probability of any specific company winning is uncertain with 10 qualified bidders
 - **LT H1 FY27 explicitly soft:** Management has now acknowledged near-term execution headwinds; H2 recovery conditional on Middle East normalisation (external); Q1 FY27 results are a live earnings miss risk for LT's defence EPC segment
 - **Budget dependency:** All award timelines assume sustained Union Budget defence allocation; any compression in FY28 defence budget (presented February 2027) would defer awards across BEL, HAL, LT, and PARAS
@@ -66,11 +68,12 @@
 | BEL | Investor Meet — FY27 pipeline: QRSAM + P-75I + AMCA + data centres; Motilal top pick | 2026-06-19 |
 | PARAS | Investor Meets — First-ever guidance: 30-40% FY27/FY28; London roadshow GIC/Temasek | June 2026 |
 | LT | Analyst Meet — H1 FY27 explicitly soft; H2 recovery tied to Middle East | 2026-06-20 |
+| PARAS | NSE/BSE Filing — Guardian-1 Interceptor IP license from Powerus (Tandem Defense LLC) | 2026-06-30 |
 
 ---
 
 ## Corroboration Count
-5 companies | 3 runs — BEL, HAL, LT, PARAS, MACRO
+5 companies | 4 runs — BEL, HAL, LT, PARAS, MACRO
 
 ---
 
