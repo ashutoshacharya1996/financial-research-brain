@@ -64,3 +64,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-06-29 | NSE | Exchange Filing | Disclosure under SEBI Takeover Regulations | https://nsearchives.nseindia.com/corporate/team_sandeshc_11052026130830_9.PDF | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-05/Disclosure-under-SEBI-Takeover-Regulations-7e901bca42.pdf | 7e901bca42ec | downloaded |
 | 2026-06-29 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/GABRIEL_29062026111929_SE_Intimation_Q1.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-05/Trading-Window-27fd0f112d.pdf | 27fd0f112df4 | downloaded |
+
+## Evidence collected 2026-07-12
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-09 | NSE | Exchange Filing | Reply to Clarification- Financial results | https://nsearchives.nseindia.com/corporate/GABRIEL_29062026232352_Discrepancy_Clarification.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-12/Reply-to-Clarification--Financial-results-d4c4a2ced6.pdf | d4c4a2ced6ce | downloaded |

@@ -54,3 +54,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-07-01 | NSE | Exchange Filing | Change in Director(s) | https://nsearchives.nseindia.com/corporate/BEL_01072026103247_Intimation_of_change_in_Director.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-07-05/Change-in-Director-s-895fb0e23a.pdf | 895fb0e23a85 | downloaded |
+
+## Evidence collected 2026-07-12
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-10 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/BEL_10072026162304_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-07-12/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-a5c5275288.pdf | a5c527528804 | downloaded |

@@ -52,3 +52,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-06-30 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PARAS_30062026155053_Reg30IP.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-05/General-Updates-e861a5a31b.pdf | e861a5a31b3e | downloaded |
 | 2026-06-29 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/PARAS_29062026154219_Intimation_for_Closure_of_Trading_Window.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-05/Trading-Window-c328f41464.pdf | c328f414649a | downloaded |
+
+## Evidence collected 2026-07-12
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-07 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/PARAS_07072026180514_Certificate_under_Regulation_74_5_.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-12/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-bccd9bd4f8.pdf | bccd9bd4f889 | downloaded |

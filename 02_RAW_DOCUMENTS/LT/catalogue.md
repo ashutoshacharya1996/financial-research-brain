@@ -101,3 +101,12 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-07-01 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_01072026184241_SEIntimation01072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-05/General-Updates-ba4af32785.pdf | ba4af32785f0 | downloaded |
 | 2026-06-29 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PAM_29062026153937_NewspaperAdvertisement29062026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-05/Copy-of-Newspaper-Publication-7b804711ff.pdf | 7b804711ff76 | downloaded |
+
+## Evidence collected 2026-07-12
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-08 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/PAM_08072026122809_PressRelease08072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-12/Press-Release-389527431b.pdf | 389527431b63 | downloaded |
+| 2026-07-07 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/PAM_07072026124152_PressRelease07072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-12/Press-Release-517847e44f.pdf | 517847e44f9e | downloaded |
+| 2026-07-07 | NSE | Exchange Filing | Credit Rating- New | https://nsearchives.nseindia.com/corporate/PAM_07072026123936_PressRelease07072026.pdf |  |  | metadata_only |
+| 2026-07-06 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/PAM_06072026185004_Intimation745June2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-12/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-d16ea78288.pdf | d16ea7828808 | downloaded |
