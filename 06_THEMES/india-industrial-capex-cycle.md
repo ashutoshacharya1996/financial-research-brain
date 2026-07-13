@@ -58,7 +58,7 @@ Companies mentioning this theme this week:
 
 ## Research Queue Appearances
 
-18 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6
+19 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6 | 2026-07-13: LT #1 (thin evidence week — only LT had new evidence)
 
 ## Potential Losers
 
