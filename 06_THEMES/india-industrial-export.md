@@ -75,3 +75,15 @@ None yet — eligible for screener this run (confidence now ≥ 5.0 with confirm
 - Stock +94% YTD 2026 reflects market's pricing of this international thesis
 
 **Confidence revised: 6.5** (from 6.0) — book-to-bill 2.0x and explicit CEO statement on international ambition add quality to what was a single-order signal. Still capped below 7.0 pending a second international order win.
+
+---
+
+## Update — 2026-07-13 (Extraction Run)
+
+**LT — Moody's Baa1 issuer rating (2026-07-06/07), Stable outlook:**
+- Moody's explicitly cites "high-margin engineering services and large-scale EPC projects in West Asia continue to scale" as a basis for the Stable outlook — an external, third-party read that West Asia execution is scaling, not deteriorating.
+- Moody's assigned a matching Baa1 rating to L&T Hydrocarbon Saudi Company LLC (wholly owned subsidiary), citing "tight operational integration with the parent Company and the strategic importance of Larsen & Toubro's West Asia operations."
+- This is the first external-agency data point in the pipeline that runs counter to the standing "LT's Middle East execution problem" counter-argument (Q4 FY26 revenue miss, 12% vs 15% guidance). It does not resolve the counter-argument — Moody's rating actions are backward/structural-looking, not a quarterly execution update — but it tempers the one-sided reading that Middle East exposure is purely a risk factor for LT.
+- No LT-specific order or revenue figures for the Middle East accompanied this filing; treat as sentiment/credit-quality corroboration only, not a financial delta.
+
+**Confidence unchanged at 6.5** — Moody's commentary is generic rating-agency language, not company-reported operational data, and does not add a third corroborating company to the theme. Retained as a noted tension in the Counter Arguments rather than a confidence upgrade. Still capped below 7.0 pending a second JNKINDIA-style international order win or a quarter where LT's own reporting confirms Middle East execution has stabilized.
