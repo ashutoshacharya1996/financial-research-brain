@@ -54,3 +54,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-06-29 | NSE | Exchange Filing | Change in Auditors | https://nsearchives.nseindia.com/corporate/HAL_29062026125127_outcome_boardmeeting_29062026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-07-05/Change-in-Auditors-4dc397c778.pdf | 4dc397c77882 | downloaded |
 | 2026-06-29 | NSE | Exchange Filing | Record Date | https://nsearchives.nseindia.com/corporate/HAL_29062026124357_outcome_boardmeeting_29062026.pdf |  |  | metadata_only |
 | 2026-06-29 | NSE | Exchange Filing | Dividend | https://nsearchives.nseindia.com/corporate/HAL_29062026124231_outcome_boardmeeting_29062026.pdf |  |  | metadata_only |
+
+## Evidence collected 2026-07-19
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-17 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_17072026160132_DividendUpdate_17072026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-07-19/General-Updates-dc5ff84476.pdf | dc5ff8447695 | downloaded |

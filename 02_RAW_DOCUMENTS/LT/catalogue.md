@@ -110,3 +110,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-07-07 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/PAM_07072026124152_PressRelease07072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-12/Press-Release-517847e44f.pdf | 517847e44f9e | downloaded |
 | 2026-07-07 | NSE | Exchange Filing | Credit Rating- New | https://nsearchives.nseindia.com/corporate/PAM_07072026123936_PressRelease07072026.pdf |  |  | metadata_only |
 | 2026-07-06 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/PAM_06072026185004_Intimation745June2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-12/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-d16ea78288.pdf | d16ea7828808 | downloaded |
+
+## Evidence collected 2026-07-19
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-17 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_17072026165939_Intimation17072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-19/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-1b6d193fe0.pdf | 1b6d193fe043 | downloaded |

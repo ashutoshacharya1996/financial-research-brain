@@ -58,3 +58,9 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-07-10 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/JNKINDIA23_10072026160034_covering_letter_and_complaince_certificate_under_reg_74_5_.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-07-12/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-811638d1d7.pdf | 811638d1d7a3 | downloaded |
+
+## Evidence collected 2026-07-19
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-16 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_16072026152805_JNK_Reg_30_Updation_of_Order_CC7_16072026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-07-19/Updates-f57a48183b.pdf | f57a48183b5d | downloaded |

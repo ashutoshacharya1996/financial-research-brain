@@ -70,3 +70,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-07-09 | NSE | Exchange Filing | Reply to Clarification- Financial results | https://nsearchives.nseindia.com/corporate/GABRIEL_29062026232352_Discrepancy_Clarification.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-12/Reply-to-Clarification--Financial-results-d4c4a2ced6.pdf | d4c4a2ced6ce | downloaded |
+
+## Evidence collected 2026-07-19
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-17 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_17072026200033_SE_intimation_merged_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-19/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-0a8a7cb55b.pdf | 0a8a7cb55bd9 | downloaded |
