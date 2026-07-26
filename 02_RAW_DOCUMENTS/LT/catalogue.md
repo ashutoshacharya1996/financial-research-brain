@@ -116,3 +116,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-07-17 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_17072026165939_Intimation17072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-19/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-1b6d193fe0.pdf | 1b6d193fe043 | downloaded |
+
+## Evidence collected 2026-07-26
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-24 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_24072026092018_PressRelease24072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-26/Bagging-Receiving-of-orders-contracts-423f892721.pdf | 423f892721bb | downloaded |
+| 2026-07-20 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_20072026090928_PressRelease20072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-26/Bagging-Receiving-of-orders-contracts-6be982e4e4.pdf | 6be982e4e424 | downloaded |

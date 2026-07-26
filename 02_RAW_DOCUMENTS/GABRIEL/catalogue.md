@@ -76,3 +76,18 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-07-17 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_17072026200033_SE_intimation_merged_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-19/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-0a8a7cb55b.pdf | 0a8a7cb55bd9 | downloaded |
+
+## Evidence collected 2026-07-26
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-25 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/GABRIEL_25072026151104_SE_intimation_NP_adv_merged_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/Copy-of-Newspaper-Publication-4b6d171ddb.pdf | 4b6d171ddb4f | downloaded |
+| 2026-07-22 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_22072026185745_Cover_Letter_Audio.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-baf884cb93.pdf | baf884cb9317 | downloaded |
+| 2026-07-21 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026233051_SE_Intimation_merged_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/General-Updates-81ea7495a9.pdf | 81ea7495a9c6 | downloaded |
+| 2026-07-21 | NSE | Exchange Filing | Investor Presentation | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026232851_SE_Intimation_merged__2_.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/Investor-Presentation-6eb4102c5e.pdf | 6eb4102c5e02 | downloaded |
+| 2026-07-21 | NSE | Exchange Filing | Amendment to AOA/MOA | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026202548_Jupiter_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/Amendment-to-AOA-MOA-83a2f50f0a.pdf | 83a2f50f0a6d | downloaded |
+| 2026-07-21 | NSE | Exchange Filing | Acquisition | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026195228_Jupiter_signed.pdf |  |  | metadata_only |
+| 2026-07-21 | NSE | Exchange Filing | Preferential issue | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026194907_Jupiter_signed.pdf |  |  | metadata_only |
+| 2026-07-21 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026194235_Jupiter_signed.pdf |  |  | metadata_only |
+| 2026-07-21 | NSE | Exchange Filing | Acquisition | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026192218_Reg_30_Proj_Lavender_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/Acquisition-c86b289bbd.pdf | c86b289bbd23 | downloaded |
+| 2026-07-21 | NSE | Exchange Filing | Change in Director(s) | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026191306_Reg_30_SE_Disclosure_Changes_in_Directors_SIGNED.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/Change-in-Director-s-38949d665b.pdf | 38949d665bc9 | downloaded |

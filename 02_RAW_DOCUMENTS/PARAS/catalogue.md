@@ -58,3 +58,12 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-07-07 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/PARAS_07072026180514_Certificate_under_Regulation_74_5_.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-12/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-bccd9bd4f8.pdf | bccd9bd4f889 | downloaded |
+
+## Evidence collected 2026-07-26
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-24 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/PARAS_24072026155835_Outcome.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-26/Updates-e69493b3f1.pdf | e69493b3f1dc | downloaded |
+| 2026-07-24 | NSE | Exchange Filing | Appointment | https://nsearchives.nseindia.com/corporate/PARAS_24072026154715_SMP.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-26/Appointment-e3709d658d.pdf | e3709d658d13 | downloaded |
+| 2026-07-22 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/PARAS_22072026130104_Press_ReleaseMOU.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-26/Press-Release-93825ebb2b.pdf | 93825ebb2b0a | downloaded |
+| 2026-07-22 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PARAS_22072026091138_IntimationParasSemiconMoUwithMPState.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-26/General-Updates-af848795e5.pdf | af848795e559 | downloaded |
