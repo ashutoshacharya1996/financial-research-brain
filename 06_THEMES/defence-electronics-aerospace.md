@@ -7,6 +7,8 @@ Developing
 9.2 / 10
 Justification: Updated 2026-06-22 (extraction run) — adds BEL GBMES contract (₹1,251 crore, Ministry of Defence, Indian Army, May 5, 2026 — fully indigenous ELINT system designed by DLRL/DRDO, manufactured by BEL). GBMES is the highest-value single disclosed order from BEL's Q1 FY27 period and was not in prior runs. ELINT (Electronic Intelligence) is BEL's most strategically classified product domain — higher margin than routine avionics. Combined with QRSAM (pending July 2026), P-75I, AMCA pipeline, PARAS guidance, and macro production record, the defence electronics thesis now has unprecedented corroboration depth. Capped at 9.2 (not higher) only because QRSAM remains unsigned.
 
+**No change 2026-07-27**: Score held at 9.2, not revised. This week's only relevant new document is administrative (BEL's Q1 FY27 earnings-call scheduling notice — see Evidence table; no financial or strategic content). PARAS adds a minor reinforcing signal (new VP-Business Development hire with an electro-optics/laser remit, plus a semiconductor MoU press release that explicitly anchors the new bet in "Paras Defence's longstanding expertise in optics and optronics") but this is personnel/narrative-level, not order-value evidence, so it does not move the score. QRSAM signing status is still the binary catalyst to watch — BEL's Q1 FY27 call on July 27, 2026 is the next scheduled opportunity for an update.
+
 ## Trend Direction
 Accelerating
 
@@ -48,11 +50,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-- `defence-electronics-aerospace-2026-Q4` — Confidence: 8.3 / Status: Active
+- `defence-electronics-aerospace-2026-Q4` — Confidence: 9.2 / Status: Active (synced 2026-07-27)
 
 ## Research Queue Appearances
 
-8 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6
+12 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6 | 2026-07-27: PARAS #3, BEL #4, HAL #5
 
 ## Potential Losers
 
@@ -76,10 +78,17 @@ Companies mentioning this theme this week:
 - MALE UAV: 10-way competition means any single company faces ~10–20% probability of winning; optionality, not certainty
 
 ## Corroboration Count
-4 companies this week | 4 companies cumulative
+1 company this week (PARAS, minor reinforcement only; BEL administrative-only) | 4 companies cumulative
 
 ## Last Updated
-2026-06-22 (extraction update)
+2026-07-27
 
 ### New Evidence (extraction run, 2026-06-22)
 | BEL | Press Release — GBMES | 2026-05-05 | Strengthening | High | "BEL has signed a contract with Ministry of Defence valued at Rs. 1251 Crore (excluding taxes) for supply of GBMES system to Indian Army. The GBMES is a totally indigenous, state of the art system designed and developed by DLRL Hyderabad and manufactured by BEL. The networked intelligence system is capable of detecting, classifying & locating all types of radars. The system also intercepts and analyzes all communication signals." |
+
+### New Evidence (2026-07-27 update)
+| BEL | Conference Call Notification (Reg 30) | 2026-07-22 | Administrative — no signal | Low | Q1 FY27 earnings call confirmed for July 27, 2026, 4:00pm IST (Motilal Oswal-hosted); no financial results, guidance, or QRSAM commentary in this filing — next catalyst to watch |
+| PARAS | Appointment — VP Business Development | 2026-07-24 | Strengthening (minor) | Low-Medium | Anushka Munjal Shah appointed VP-Business Development; remit covers "electro-optics, heavy electronics, and high-power laser systems for military and space applications" — reinforces continued organisational investment in core defence-optics franchise |
+| PARAS | Press Release — MP Semiconductor MoU | 2026-07-22 | Strengthening (minor, indirect) | Low-Medium | New ₹6,200cr semiconductor OSAT bet explicitly anchored in "Paras Defence's longstanding expertise in optics and optronics" — narrative reinforcement of the core defence-electronics competency even as PARAS diversifies; note this is a separate emerging Semiconductors/OSAT signal (see Watchlist in 2026-07-27 run summary), not itself new defence order evidence |
+
+Note: BEL — the theme's largest single corroborator — had no substantive update this week (administrative filing only); the QRSAM/P-75I/AMCA pipeline established through June 22 stands unchanged pending the July 27 Q1 FY27 earnings call.

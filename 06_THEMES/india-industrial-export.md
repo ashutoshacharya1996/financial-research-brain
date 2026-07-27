@@ -1,11 +1,11 @@
 # Theme: India Industrial Export — Manufacturing Beyond IT & Pharma
 
 ## Status
-Emerging
+Developing
 
 ## Confidence Score
-6.0 / 10
-Justification: JNKINDIA's UAE order is now a confirmed regulatory filing (not just a report) — CC7 Emirates / ADNOC / TA'ZIZ Salt Project / ₹100–300cr / December 2027 — moving from "first export win" to "first verified international EPC contract with named ADNOC relationship"; confidence upgrades materially because the ADNOC ecosystem is a high-quality recurring customer (not a spot order) and the full-scope nature (design → commissioning) signals engineering depth; still capped at 6.0 because it remains a 2-company theme and LT's international execution problems are a live counter-signal.
+7.4 / 10
+Justification: Updated 2026-07-27 — corroboration grows from 2 to 3 companies: GABRIEL's Q1 FY27 investor presentation flags "RFQs from major global CV OEMs expected from FY27," new export geographies added in Latin America (plus continuing Africa/Australia focus), and reaffirms established relationships ("Consistent supply to DAF customers (Netherlands)"; "Exports to Yamaha, Japan"); the HL Klemove JV's Korean parent is also framed by management as "a natural bridge for future collaborations for emerging technologies." This is the first time a third distinct company has corroborated the theme, satisfying the "corroboration growing" test for a status upgrade to Developing. Capped at 7.4, not higher, because GABRIEL's signal is forward-looking (RFQs expected, not yet won) rather than a confirmed contract like JNKINDIA's ADNOC deal, and LT's Middle East execution problems remain an unresolved counter-signal from the largest company in the cohort.
 
 ## Trend Direction
 Accelerating
@@ -18,16 +18,20 @@ Companies mentioning this theme this week:
 | JNKINDIA | Q4 FY26 Earnings Call + Press Release | 2026-05-21 / 2026-06-09 | New mention | High | UAE export order — CC7 Emirates, TA'ZIZ Salt Project (ADNOC), Abu Dhabi — incinerator/waste gas handling; first significant international order |
 | LT | Q4 FY26 Earnings Call | 2026-05-05 | New mention | Medium | Middle East supply chain disruptions caused FY26 revenue miss (12% vs 15% guidance) — cautious signal on international execution |
 | JNKINDIA | Exchange Filing (NSE/BSE regulatory) | 2026-06-08 | Strengthening | High | UAE order CONFIRMED via regulatory filing: client CC7 Emirates Engineering Solutions L.L.C.; project TA'ZIZ Salt Project, ADNOC, Abu Dhabi; scope: full incinerator package (design, engineering, mfg, procurement, supply) on FCA basis + commissioning support; value ₹100–300cr; completion December 2027; no related-party transaction |
+| GABRIEL | Q1 FY27 Investor Presentation | 2026-07-21 | New mention (3rd corroborating company) | Medium | "RFQs from major global CV OEMs expected from FY27"; "Focus on Latin American, Australia & African markets for growth in Aftermarket Exports"; "New geographies added in Latin America"; "Consistent supply to DAF customers (Netherlands)"; "Exports to Yamaha, Japan" |
+| GABRIEL | Business Update Presentation — Project Jupiter | 2026-07-21 | New mention | Low-Medium | HL Klemove JV (Korean parent) framed as creating "a natural bridge for future collaborations for emerging technologies through HL Group" — potential future export/technology-transfer channel, not yet quantified |
 
 ## Supporting Data
 
 - **JNKINDIA** — Press Release — June 9, 2026: UAE export order, CC7 Emirates Engineering Solutions L.L.C., TA'ZIZ Salt Project, ADNOC, Abu Dhabi — waste gas handling systems including incinerator package; company stock +12% on announcement; stock +94% YTD 2026
 - **LT** — Q4 FY26 Earnings Call — May 5, 2026: FY26 revenue guidance missed (12% vs 15%); attributed to "supply chain disruptions and project delays" in Middle East international projects
 - **JNKINDIA** — Exchange Filing — June 8, 2026: CONFIRMED: full scope incinerator package on FCA basis; value ₹100–300cr; December 2027 completion; international order book was ~2.5% of ₹1,961cr book pre-order → now materially higher; ADNOC is one of world's largest NOCs — reference client for GCC market re-entry
+- **GABRIEL** — Q1 FY27 Investor Presentation — July 21, 2026: New export geographies added in Latin America; established export relationships to DAF (Netherlands) and Yamaha (Japan) reaffirmed; "RFQs from major global CV OEMs expected from FY27" — forward-looking pipeline signal, not yet a confirmed order
 
 ## Beneficiaries
 
 - **JNKINDIA** — first-mover in international fired heater/waste gas handling export market; UAE as beachhead
+- **GABRIEL** — auto components exporter diversifying geographies (Latin America, Africa, Australia) beyond established DAF/Yamaha relationships; global CV OEM RFQ pipeline flagged for FY27
 - **THERMAX** (tracked, not yet extracted) — industrial process equipment; established international presence
 - **CUMMINSIND** (tracked, not yet extracted) — engines/generators; significant international revenue already
 
@@ -57,12 +61,14 @@ None yet — eligible for screener this run (confidence now ≥ 5.0 with confirm
 - JNKINDIA's UAE order: Company's first significant export — unproven international execution capability; December 2027 deadline is 18 months away, many things can go wrong
 - 97.5% of JNKINDIA's order book was domestic as of March 31, 2026 — export is early-stage, not a scaled thesis yet
 - Single reference customer (ADNOC) does not validate the broader GCC/international market; JNKINDIA needs 2–3 more international orders before the export theme is confirmed
+- GABRIEL's export signal is a forward-looking RFQ pipeline ("expected from FY27"), not a confirmed order — weaker evidence quality than JNKINDIA's signed ADNOC contract; do not double-count it as equivalent corroboration strength
+- GABRIEL's existing DAF/Yamaha export relationships are not new — they are reaffirmed legacy relationships, not fresh market entry
 
 ## Corroboration Count
-2 companies this week | 2 companies cumulative
+1 company this week | 3 companies cumulative
 
 ## Last Updated
-2026-06-22
+2026-07-27
 
 ---
 

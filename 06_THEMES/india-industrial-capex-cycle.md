@@ -4,11 +4,11 @@
 Developing
 
 ## Confidence Score
-7.5 / 10
-Justification: Six companies across defence, infrastructure, industrials, and auto all showing strong order pipelines, but LT's confirmed Q4 FY26 data (PAT -3% YoY, EBITDA 10.4% compressed vs "stable" prior characterisation) introduces a real execution quality caveat — the order-to-revenue conversion lag and margin compression at the largest capex EPC player prevents a higher score; all five other companies still confirming demand is real and growing.
+8.0 / 10
+Justification: Updated 2026-07-27 — LT booked three "Mega"-band Metals & Minerals EPC orders (combined ₹10,000–15,000 crore) tied to a named PSU client's 100 MTPA-by-2030 iron ore expansion and a Navratna PSU's steel capacity growth (2.5→7.1 MTPA) — the first dedicated Metals & Minerals order-win event in tracked data, and concrete corroboration that arrives just as the "H1 FY27 softer" execution caveat was starting to weigh on the theme; separately GABRIEL's ₹2,231cr HL Mando Anand deal adds new steering/braking manufacturing near Chennai and HL Klemove adds "India's first localized ADAS radar/smart camera production lines," reinforcing that capex-cycle beneficiaries are diversifying beyond pure EPC into auto-electronics manufacturing. Raised from 7.5 because the LT order win is exactly the kind of concrete, named-programme evidence that offsets the prior quarter's execution-quality concern — order intake and demand are unambiguously strong even where margin conversion remains a live question. Capped at 8.0, not higher, because a second LT filing this week (Heavy Engineering international order) arrived with a corrupted source PDF and is unusable, and LT's underlying margin/PAT data has not been refreshed since the June 21 compression readings.
 
 ## Trend Direction
-Stable
+Accelerating
 
 ## Evidence
 
@@ -29,6 +29,8 @@ Companies mentioning this theme this week:
 | GABRIEL | Investor Presentation (NSE May 27) | 2026-06-22 | Strengthening | High | Total capex plan ₹260-270 crore confirmed: ₹150cr (suspension) + ₹50cr (sunroofs) + ₹60-70cr (fastener plant — entirely new vertical); Genos plant under construction (commercial production Q4 CY26); SK operations already started; aggressive multi-vertical capex signals high management conviction |
 | LT | Analyst Meet | 2026-06-20 | **Negative** | Medium | H1 FY27 explicitly "softer due to execution headwinds"; H2 FY27 recovery dependent on Middle East normalization — external condition outside LT's control; FY27 guidance 10-12% maintained but trajectory now H1 weak/H2 recovery |
 | BEL | Order Win + Investor Meet | 2026-06-19 | Strengthening | High | ₹608 crore Q1 FY27 fresh orders (multi-domain); own capex >₹1,200 crore + R&D ₹2,200 crore FY27 unchanged — BEL capex commitment undisturbed by QRSAM delay |
+| LT | Order Win — Metals & Minerals | 2026-07-20 | Strengthening | High | Three "Mega"-band orders (combined ₹10,000–15,000 crore): 18 MTPA Iron Ore Handling Plant, Chhattisgarh (part of PSU client's 100 MTPA-by-2030 expansion); Steel Plant expansion, West Bengal (2.5→7.1 MTPA); Zinc Processing Plant EPC (repeat private-sector client) — first dedicated Metals & Minerals order-win event in tracked data |
+| GABRIEL | Business Update Presentation — Project Jupiter | 2026-07-21 | Strengthening | High | HL Mando Anand deal adds manufacturing footprint "near Chennai, growing south India based industrial hub"; HL Klemove JV brings "India's first localized ADAS radar production line" and "smart camera production line" — new high-tech manufacturing capacity, not just order-book growth |
 
 ## Supporting Data
 
@@ -42,6 +44,8 @@ Companies mentioning this theme this week:
 - **GABRIEL** — Earnings Update + Analyst Initiation — June 2026: FY26 PAT ₹252cr confirmed; Core ROCE +800bps to 37.7% by FY28; 10-yr cash conversion 81%; WC ~27 days — highest capital efficiency in tracked universe
 - **LT** ⚠️ — Earnings Update — June 2026: Q4 PAT ₹5,326cr (-3% YoY); EBITDA margin 10.4% (compressed); Lakshya 2031: ₹5.8 trillion revenue by FY31 (target); ROE 16–17% (analysts: "underwhelming") — ORDER FLOW STRONG; EXECUTION QUALITY QUESTION LIVE
 - **PARAS** — Exchange Filing — June 2026: Order book ₹928cr confirmed (1.9x revenue) — first disclosed; embedded in BEL supply chain
+- **LT** — Press Release — July 20, 2026: Combined "Mega"-band Metals & Minerals orders ₹10,000–15,000 crore (individual values undisclosed); CMD S N Subrahmanyan: "As India accelerates investments in augmenting its Metals & Minerals capacity to support long-term economic growth, L&T remains committed to partnering with the country's leading enterprises" — first vertical-specific order-win event tracked for this business line
+- **GABRIEL** — Business Update Presentation — July 21, 2026: ₹2,231cr HL Mando Anand acquisition + ₹935cr HL Klemove India JV; combined group revenue base (100% consolidated) steps up from ₹4,667cr (pre-Rise) to ₹16,111cr (post-Rise & post-Jupiter) — largest capital allocation events in company history, both manufacturing-capacity-adding
 
 ## Beneficiaries
 
@@ -54,11 +58,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-- `india-industrial-capex-cycle-2026-Q4` — Confidence: 7.5 / Status: Active
+- `india-industrial-capex-cycle-2026-Q4` — Confidence: 8.0 / Status: Active (synced 2026-07-27)
 
 ## Research Queue Appearances
 
-18 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6
+24 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6 | 2026-07-27: GABRIEL #1, LT #2, JNKINDIA #6
 
 ## Potential Losers
 
@@ -80,9 +84,12 @@ Companies mentioning this theme this week:
 - Capex cycle is interest-rate sensitive; if RBI raises rates in H2 FY27, some discretionary capex may be deferred
 - JNKINDIA margin pressure (15.2% EBITDA) despite strong order book — capacity constraints could compress margins further
 - LT Lakshya 2031 ROE guidance 16–17% described by analysts as "underwhelming" — management ambition may not translate to shareholder returns at scale
+- LT's own Q4 FY26 margin/PAT compression (10.4% EBITDA, PAT -3% YoY) has not been refreshed since June 21 — the new Metals & Minerals order win confirms demand, not that margin conversion has improved
+- A second LT filing this week (Heavy Engineering, international markets, "Large"-tier order) is unusable — source PDF corrupted/truncated at source, only the subject line survived; do not treat as confirmed until recollected
+- Individual order values for the three Metals & Minerals wins are undisclosed (only the combined "Mega" ₹10,000–15,000cr band given) and none of the three clients are named — reduces verifiability vs a fully disclosed order
 
 ## Corroboration Count
-6 companies this week | 6 companies cumulative (LT negative signal; 5 positive + 1 mixed)
+2 companies this week (LT, GABRIEL) | 6 companies cumulative (LT negative-then-positive; 5 positive + GABRIEL)
 
 ## Last Updated
-2026-06-22
+2026-07-27

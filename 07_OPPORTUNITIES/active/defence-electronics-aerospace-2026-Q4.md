@@ -5,10 +5,10 @@
 - **opportunity_id:** defence-electronics-aerospace-2026-Q4
 - **theme_name:** Indian Defence Electronics & Aerospace Supply Chain
 - **theme_status:** Developing
-- **confidence_score:** 9.0
+- **confidence_score:** 9.2 (synced up from 9.0 — matches theme file's June 22 GBMES-driven score, which had not yet been reflected in this record; unchanged this week, no material new order-value evidence)
 - **trend_direction:** Accelerating
 - **date_identified:** 2026-06-20
-- **last_validated:** 2026-06-22
+- **last_validated:** 2026-07-27
 - **status:** Active
 
 ---
@@ -34,6 +34,8 @@
 - **IAF MALE UAV ₹30,000cr — bids confirmed closed June 16, 2026:** 10 qualified bidders (HAL, LT, Adani, Tata among them); split-order mechanism (~₹15,000cr each for L1 and L2); evaluation phase active; per MALE UAV Tender Event — 2026-06-16
 - **LCA Tejas Mark-1A delivery August/September 2026:** HAL committed to first batch of ~20 aircraft; revenue recognition milestone FY27 H1; per Earnings Update — HAL — 2026-06-21
 - **BEL → PARAS supply chain delegation confirmed on official record:** ₹52.82cr electro-optics subcontract via NSE/BSE regulatory filing — Tier-1 PSU to Tier-2 private company architecture documented; per Exchange Filing — PARAS — 2026-06-02
+- **BEL Q1 FY27 earnings call confirmed for today, July 27, 2026:** First scheduled opportunity since June 19 for a QRSAM signing update and FY27 order-pipeline commentary; per Conference Call Notification (Reg 30) — BEL — 2026-07-22
+- **PARAS core defence/optics franchise reinforced via two independent channels:** New VP-Business Development hire (electro-optics/laser/military remit) and semiconductor MoU press release explicitly anchored in "Paras Defence's longstanding expertise in optics and optronics"; per Appointment — PARAS — 2026-07-24 and Press Release — PARAS — 2026-07-22
 
 ---
 
@@ -45,6 +47,8 @@
 - **10-way competition on MALE UAV:** Split-order mechanism reduces winner-takes-all risk but also means no single company gets the full ₹30,000cr; probability of any specific company winning is uncertain with 10 qualified bidders
 - **LT H1 FY27 explicitly soft:** Management has now acknowledged near-term execution headwinds; H2 recovery conditional on Middle East normalisation (external); Q1 FY27 results are a live earnings miss risk for LT's defence EPC segment
 - **Budget dependency:** All award timelines assume sustained Union Budget defence allocation; any compression in FY28 defence budget (presented February 2027) would defer awards across BEL, HAL, LT, and PARAS
+- **PARAS management attention split across two unrelated large bets:** The guided 30-40% FY27/28 defence/optics growth story now competes for management bandwidth with a ~13x-FY26-revenue semiconductor OSAT MoU (~₹6,200cr, non-binding, no funding structure or shareholding disclosed); per Press Release — PARAS — 2026-07-22
+- **BEL and HAL contributed no order-value evidence this period:** BEL's only filing was administrative (call scheduling); HAL had zero new evidence in the 2026-07-26 collection run — both companies' contribution to this record is carried forward from May/June, unrevalidated this week
 
 ---
 
@@ -66,11 +70,14 @@
 | BEL | Investor Meet — FY27 pipeline: QRSAM + P-75I + AMCA + data centres; Motilal top pick | 2026-06-19 |
 | PARAS | Investor Meets — First-ever guidance: 30-40% FY27/FY28; London roadshow GIC/Temasek | June 2026 |
 | LT | Analyst Meet — H1 FY27 explicitly soft; H2 recovery tied to Middle East | 2026-06-20 |
+| BEL | Conference Call Notification (Reg 30) — Q1 FY27 earnings call confirmed | 2026-07-22 |
+| PARAS | Appointment — VP Business Development (electro-optics/laser/military remit) | 2026-07-24 |
+| PARAS | Press Release — MP Semiconductor MoU (narrative reinforcement of core defence-optics competency) | 2026-07-22 |
 
 ---
 
 ## Corroboration Count
-5 companies | 3 runs — BEL, HAL, LT, PARAS, MACRO
+5 companies | 4 runs — BEL, HAL, LT, PARAS, MACRO
 
 ---
 
@@ -82,3 +89,5 @@
 - **LCA Tejas Mark-1A prior delivery slip:** HAL had originally targeted LCA Mark-1A deliveries in FY26; this slipped to Aug/Sep 2026. Management's Aug/Sep 2026 target is the second iteration — HAL's track record of delivery commitments on LCA is not clean. Revenue recognition for this programme is contingent on physical delivery of aircraft. Source: Earnings Update — HAL — 2026-06-21.
 - **LT H1 FY27 explicitly soft — forward deterioration:** LT management characterised H1 FY27 as "softer due to execution headwinds" with H2 recovery conditional on Middle East normalisation. This extends the execution quality concern (Q4 FY26 PAT -3%) forward in time; it is no longer a one-quarter rear-view risk. Source: Analyst Meet — LT — 2026-06-20.
 - **10-way competition limits MALE UAV win probability:** With 10 qualified bidders and a split-order (L1 + L2 winning ~₹15,000cr each), the expected value for any individual company is materially lower than the ₹30,000cr headline. One winning and one losing is the base case across LT and HAL. Source: MALE UAV Tender Event — 2026-06-16.
+- **PARAS optionality dilution risk (2026-07-27):** The ~₹6,200cr semiconductor OSAT MoU is ~13x PARAS's own FY26 revenue with no funding structure, subsidiary shareholding, or execution timeline disclosed. If management bandwidth or eventual capital is diverted from the guided defence/optics growth story to fund or oversee this new vertical, the 30-40% FY27/28 guidance underpinning this record could be put at risk even though the two narratives are formally kept separate today. Source: Press Release — PARAS — 2026-07-22.
+- **BEL and HAL administrative/silent this period:** Neither company produced order-value or guidance evidence in the 2026-07-26 collection run; the QRSAM signing status specifically remains unresolved pending today's (2026-07-27) BEL Q1 FY27 earnings call. Source: Conference Call Notification — BEL — 2026-07-22.

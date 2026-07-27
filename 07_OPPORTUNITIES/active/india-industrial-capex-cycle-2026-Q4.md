@@ -5,10 +5,10 @@
 - **opportunity_id:** india-industrial-capex-cycle-2026-Q4
 - **theme_name:** India Industrial Capex Cycle
 - **theme_status:** Developing
-- **confidence_score:** 7.5
-- **trend_direction:** Stable
+- **confidence_score:** 8.0 (upgraded from 7.5 — LT's Metals & Minerals mega order offsets the prior execution-quality caution; see Why Now)
+- **trend_direction:** Accelerating (upgraded from Stable)
 - **date_identified:** 2026-06-20
-- **last_validated:** 2026-06-22
+- **last_validated:** 2026-07-27
 - **status:** Active
 
 ---
@@ -22,7 +22,7 @@
 | JNKINDIA | JNK India Ltd | UAE export order confirmed via NSE/BSE regulatory filing (Jun 8, 2026): CC7 Emirates / ADNOC / TA'ZIZ Salt Project; ₹100–300cr; Dec 2027; ADNOC reference customer established |
 | LT | Larsen & Toubro Ltd | Order book ₹7.40 trillion (+28% YoY); K9 Vajra-T ₹7,628.70cr confirmed; MALE UAV bid submitted; EXECUTION CONCERN: Q4 PAT -3% YoY, EBITDA 10.4% |
 | PARAS | Paras Defence & Space Technologies | Order book ₹928cr (1.9x FY26 revenue) first disclosed; BEL subcontract ₹52.82cr confirmed via regulatory filing; PAT +89% Q4 YoY vs revenue +58% — operating leverage visible |
-| GABRIEL | Gabriel India Ltd | FY26 PAT ₹252.2cr confirmed (+14.8% YoY); Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA 81%; Motilal Oswal Buy ₹1,266; sunroof JV margin 15.1% above 12-14% guidance on ₹434cr revenue; total capex ₹260-270cr confirmed including new fastener vertical; Genos plant Q4 CY26 |
+| GABRIEL | Gabriel India Ltd | FY26 PAT ₹252.2cr confirmed (+14.8% YoY); Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA 81%; Motilal Oswal Buy ₹1,266; sunroof JV margin 15.1% above 12-14% guidance on ₹434cr revenue; total capex ₹260-270cr confirmed including new fastener vertical; Genos plant Q4 CY26; NEW (2026-07-21): ~₹2,231cr HL Mando Anand acquisition (steering/braking, ~13% guided incremental EPS accretion) + ~₹935cr HL Klemove ADAS JV adding new manufacturing capacity near Chennai — group revenue base steps up to ₹16,111cr (100%-consolidated); related-party sourcing from promoter AIPL and promoter stake increase (63.55%→66.29%) are open governance questions |
 
 ---
 
@@ -33,6 +33,8 @@
 - **JNKINDIA UAE export confirmed via regulatory filing:** NSE/BSE filing (Jun 8, 2026) with named client CC7 Emirates, named project (TA'ZIZ Salt Project, ADNOC), full EPC scope, ₹100–300cr, Dec 2027 completion — moves the export thesis from anecdote to documented exchange filing; per Exchange Filing — JNKINDIA — 2026-06-08
 - **GABRIEL quality compounder profile confirmed with above-guidance operational numbers:** Sunroof JV FY26 margin 15.1% above management's own 12-14% guidance on ₹434cr revenue in Year 1; Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA 81%; confirms capex cycle is producing durable high-quality returns, not just order volume; per Analyst Initiation + Investor Presentation — GABRIEL — 2026-06-09 / 2026-06-22
 - **LCA Mark-1A deliveries Aug/Sep 2026:** HAL targeting near-term delivery of first batch (~20 aircraft); revenue recognition milestone in FY27 H1; per Earnings Update — HAL — 2026-06-21
+- **LT's first-ever dedicated Metals & Minerals order-win event (2026-07-27 update):** Three "Mega"-band orders combined ₹10,000-15,000cr — 18 MTPA Iron Ore Handling Plant (Chhattisgarh, part of a PSU client's 100 MTPA-by-2030 expansion), Steel Plant expansion (West Bengal, 2.5→7.1 MTPA, Navratna PSU client), Zinc Processing Plant EPC (repeat private-sector client) — the first concrete order-flow evidence in this specific vertical, arriving exactly as the "H1 FY27 softer" execution caution was starting to weigh on the theme; per Order Win Announcement, Metals & Minerals — LT — 2026-07-20
+- **GABRIEL's dual acquisitions add capex-cycle manufacturing capacity, not just order flow (2026-07-27 update):** HL Mando Anand adds steering/braking manufacturing near Chennai; HL Klemove JV adds "India's first localized ADAS radar production line" and "smart camera production line" — capex-cycle beneficiaries are diversifying into auto-electronics manufacturing; per Business Update Presentation "Project Jupiter" — GABRIEL — 2026-07-21
 
 ---
 
@@ -43,6 +45,9 @@
 - **Order-to-revenue conversion lag:** BEL, HAL, and LT collectively hold 2–8x annual revenue in order books; strong inflows are visible but revenue conversion is multi-year; near-term earnings may disappoint even with thesis intact
 - **JNKINDIA international execution unproven:** UAE order is JNKINDIA's first significant export; 97.5% of the pre-order book was domestic; international EPC in Middle East is harder than domestic (per LT's own experience); Dec 2027 completion is 18 months away
 - **Interest rate sensitivity:** India industrial capex cycle is partly rate-sensitive; RBI increases in H2 FY27 could defer discretionary industrial projects
+- **LT Heavy Engineering international filing corrupted (2026-07-27):** A second LT order-win filing this week (Heavy Engineering, international markets, "Large" tier) arrived with a source PDF truncated to ~58% of declared length — order value, client, and country are unrecoverable; do not treat as confirmed until recollected. LT's underlying Q4 FY26 margin/PAT compression (EBITDA 10.4%, PAT -3% YoY) and the "H1 FY27 softer" guidance from June 20 also remain unrefreshed — the new Metals & Minerals order confirms demand, not that margin conversion has improved. Individual order values for the three M&M wins are undisclosed and no client is named.
+- **GABRIEL related-party / governance flag (2026-07-27):** The HL Mando Anand stake was bought directly from Gabriel's own promoter/holding company AIPL; promoter shareholding rises 63.55%→66.29%, diluting public shareholders 36.45%→33.71%. Independent valuation (KPMG, BDO) is cited as mitigant but this is the largest related-party capital allocation event tracked for GABRIEL to date.
+- **HAL and JNKINDIA contributed no new evidence this period:** Their positive contribution to this theme (LCA Mark-1A delivery timeline, ADNOC export order) is carried forward unvalidated from the June 22 report.
 
 ---
 
@@ -67,15 +72,17 @@
 | BEL | Order Win Announcement — ₹608cr Q1 FY27 fresh orders (12 product categories) | 2026-05-25 |
 | BEL | Investor Meet — FY27 pipeline: QRSAM + P-75I + AMCA + data centres; capex >₹1,200cr undisturbed | 2026-06-19 |
 | LT | Analyst Meet — H1 FY27 explicitly soft; H2 recovery tied to Middle East normalisation (NEGATIVE SIGNAL) | 2026-06-20 |
+| LT | Order Win Announcement — Metals & Minerals mega orders ₹10,000-15,000cr combined | 2026-07-20 |
+| GABRIEL | Business Update Presentation "Project Jupiter" — HL Mando Anand ₹2,231cr + HL Klemove JV ₹935cr | 2026-07-21 |
 
 ---
 
 ## Corroboration Count
-6 companies | 3 runs — BEL, HAL, LT, JNKINDIA, PARAS, GABRIEL
+6 companies | 4 runs — BEL, HAL, LT, JNKINDIA, PARAS, GABRIEL
 
 ---
 
 ## Contradictory Evidence
-Not required at 7.5/10. Key counter-evidence documented in Risks above and in the linked theme record (`06_THEMES/india-industrial-capex-cycle.md`).
+Not required at 8.0/10 (threshold is >8.0). Key counter-evidence documented in Risks above and in the linked theme record (`06_THEMES/india-industrial-capex-cycle.md`).
 
-**Most material counter-signal this run:** LT Q4 FY26 PAT -3% YoY + EBITDA margin 10.4% — the largest EPC company in the universe is experiencing margin compression despite record order inflows; order quality (profit-generating) is not tracking order quantity. Watch FY27 Q1 for whether this is a one-quarter anomaly or structural.
+**Most material counter-signal this run:** LT's Heavy Engineering international filing was corrupted at source and is unscored, and LT's Q4 FY26 PAT -3% YoY / EBITDA margin 10.4% compression has not been refreshed since June 20 — the new Metals & Minerals order confirms demand strength but not that margin conversion has improved. GABRIEL's HL Mando Anand deal is also a related-party transaction sourced from the promoter, with a resulting increase in promoter shareholding that dilutes public shareholders. Watch FY27 Q1 (LT and GABRIEL both report in August) for whether order momentum is converting to margin quality.
