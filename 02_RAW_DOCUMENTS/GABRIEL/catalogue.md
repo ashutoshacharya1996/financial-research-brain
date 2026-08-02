@@ -91,3 +91,15 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-07-21 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026194235_Jupiter_signed.pdf |  |  | metadata_only |
 | 2026-07-21 | NSE | Exchange Filing | Acquisition | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026192218_Reg_30_Proj_Lavender_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/Acquisition-c86b289bbd.pdf | c86b289bbd23 | downloaded |
 | 2026-07-21 | NSE | Exchange Filing | Change in Director(s) | https://nsearchives.nseindia.com/corporate/GABRIEL_21072026191306_Reg_30_SE_Disclosure_Changes_in_Directors_SIGNED.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/Change-in-Director-s-38949d665b.pdf | 38949d665bc9 | downloaded |
+
+## Evidence collected 2026-08-02
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-30 | NSE | Exchange Filing | Credit Rating- Revision | https://nsearchives.nseindia.com/corporate/GABRIEL_30072026003537_SEIntimation_Credit_rating_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Credit-Rating--Revision-fcf82474ab.pdf | fcf82474ab58 | downloaded |
+| 2026-07-29 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/GABRIEL_29072026170129_SE_Intimation_merged_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Copy-of-Newspaper-Publication-3b92ce74b1.pdf | 3b92ce74b1fd | downloaded |
+| 2026-07-29 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_29072026153652_SEIntimation_final_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-df05bed177.pdf | df05bed177cc | downloaded |
+| 2026-07-28 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_28072026195217_SE_Intimation_book_closure_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Updates-d927b2847b.pdf | d927b2847bc3 | downloaded |
+| 2026-07-28 | NSE | Exchange Filing | Record Date | https://nsearchives.nseindia.com/corporate/GABRIEL_28072026194509_SE_Intimation_Final_signed.pdf |  |  | metadata_only |
+| 2026-07-28 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_28072026191332_SE_intimation_final_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Shareholders-meeting-0c178193ac.pdf | 0c178193ac97 | downloaded |
+| 2026-07-27 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_27072026200413_Stock_Exchange_Intimation_Non_Deal_Roadshow.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-cec43098e8.pdf | cec43098e81a | downloaded |

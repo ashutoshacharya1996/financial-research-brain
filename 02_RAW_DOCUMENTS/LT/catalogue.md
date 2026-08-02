@@ -123,3 +123,21 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-07-24 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_24072026092018_PressRelease24072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-26/Bagging-Receiving-of-orders-contracts-423f892721.pdf | 423f892721bb | downloaded |
 | 2026-07-20 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_20072026090928_PressRelease20072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-07-26/Bagging-Receiving-of-orders-contracts-6be982e4e4.pdf | 6be982e4e424 | downloaded |
+
+## Evidence collected 2026-08-02
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-31 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/PAM_31072026093000_PressRelease31072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Press-Release-704682b6f1.pdf | 704682b6f1d7 | downloaded |
+| 2026-07-30 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_30072026093602_PressRelease30072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Bagging-Receiving-of-orders-contracts-9ff57996d9.pdf | 9ff57996d979 | downloaded |
+| 2026-07-29 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PAM_29072026163945_NewspaperAdvtJune2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Copy-of-Newspaper-Publication-5ef637e854.pdf | 5ef637e854b5 | downloaded |
+| 2026-07-29 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_29072026093852_PressRelease29072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Bagging-Receiving-of-orders-contracts-ae31195ab7.pdf | ae31195ab760 | downloaded |
+| 2026-07-28 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_28072026223622_Intimation28072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-4148020ba7.pdf | 4148020ba725 | downloaded |
+| 2026-07-28 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_28072026182357_AnalystPresentationJune2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/General-Updates-8f321266ad.pdf | 8f321266add6 | downloaded |
+| 2026-07-28 | NSE | Exchange Filing | Amalgamation/Merger | https://nsearchives.nseindia.com/corporate/PAM_28072026172853_LTJune2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Amalgamation-Merger-ecb42d3cd4.pdf | ecb42d3cd4d3 | downloaded |
+| 2026-07-28 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PAM_28072026171704_LTJune2026.pdf |  |  | metadata_only |
+| 2026-07-28 | NSE | Exchange Filing | Allotment of Securities | https://nsearchives.nseindia.com/corporate/PAM_28072026133313_ESOPAllotment28072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Allotment-of-Securities-215c076eca.pdf | 215c076eca8a | downloaded |
+| 2026-07-28 | NSE | Exchange Filing | Resignation | https://nsearchives.nseindia.com/corporate/PAM_28072026110805_IntimationCessationHebbar.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Resignation-5930deea42.pdf | 5930deea4250 | downloaded |
+| 2026-07-28 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_28072026091533_PressRelease28072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Bagging-Receiving-of-orders-contracts-66821d0d30.pdf | 66821d0d306c | downloaded |
+| 2026-07-27 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_27072026144648_PressRelease27072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Bagging-Receiving-of-orders-contracts-3e765a2e4d.pdf | 3e765a2e4dc4 | downloaded |
+| 2026-07-27 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/PAM_27072026123028_SESESGRating27072026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-02/Updates-9e8f90ddd5.pdf | 9e8f90ddd5be | downloaded |

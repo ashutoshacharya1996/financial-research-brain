@@ -60,3 +60,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-07-17 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_17072026160132_DividendUpdate_17072026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-07-19/General-Updates-dc5ff84476.pdf | dc5ff8447695 | downloaded |
+
+## Evidence collected 2026-08-02
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-07-29 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.com/corporate/HAL_29072026170512_changeinmangt_29072026_other.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-02/Change-in-Management-7262d05798.pdf | 7262d0579813 | downloaded |
+| 2026-07-29 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_29072026145244_changeinmangt_29072026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-02/General-Updates-e06eb38112.pdf | e06eb38112a4 | downloaded |

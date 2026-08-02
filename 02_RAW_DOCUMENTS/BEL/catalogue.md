@@ -72,3 +72,14 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-07-22 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_22072026165109_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-07-26/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-68bd50feb4.pdf | 68bd50feb484 | downloaded |
+
+## Evidence collected 2026-08-02
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-01 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.com/corporate/BEL_01082026123541_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-02/Change-in-Management-06b0fc0311.pdf | 06b0fc031113 | downloaded |
+| 2026-07-31 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_31072026183351_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-02/Bagging-Receiving-of-orders-contracts-e612b59085.pdf | e612b5908561 | downloaded |
+| 2026-07-28 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/BEL_28072026214910_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-02/Copy-of-Newspaper-Publication-505c024c94.pdf | 505c024c9424 | downloaded |
+| 2026-07-28 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_28072026140315_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-02/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-cc0efddac6.pdf | cc0efddac611 | downloaded |
+| 2026-07-27 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_27072026213502_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-02/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-b5aefa9c2a.pdf | b5aefa9c2af6 | downloaded |
+| 2026-07-27 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/BEL_27072026160426_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-02/Outcome-of-Board-Meeting-7f57554114.pdf | 7f575541145a | downloaded |

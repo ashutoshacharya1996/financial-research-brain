@@ -1,0 +1,16 @@
+{
+  "ticker": "LT",
+  "company_name": "Larsen & Toubro Ltd",
+  "as_of": "2026-08-02",
+  "currency": "INR",
+  "latest_close": 3938.9,
+  "latest_open": 3962.9,
+  "latest_high": 3973.1,
+  "latest_low": 3923.2,
+  "volume": 1753377,
+  "fifty_two_week_high": 4440.0,
+  "fifty_two_week_low": 3288.1,
+  "market_cap": 5419398856704,
+  "pe_ratio": 32.67983,
+  "source": "yfinance:LT.NS"
+}
