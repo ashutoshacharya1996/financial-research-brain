@@ -103,3 +103,13 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-07-28 | NSE | Exchange Filing | Record Date | https://nsearchives.nseindia.com/corporate/GABRIEL_28072026194509_SE_Intimation_Final_signed.pdf |  |  | metadata_only |
 | 2026-07-28 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_28072026191332_SE_intimation_final_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Shareholders-meeting-0c178193ac.pdf | 0c178193ac97 | downloaded |
 | 2026-07-27 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_27072026200413_Stock_Exchange_Intimation_Non_Deal_Roadshow.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-cec43098e8.pdf | cec43098e81a | downloaded |
+
+## Evidence collected 2026-08-09
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-07 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_07082026124301_SE_Intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-09/General-Updates-6ade4b5e6b.pdf | 6ade4b5e6b9b | downloaded |
+| 2026-08-06 | NSE | Exchange Filing | Resignation of Director/KMP/SMP | https://nsearchives.nseindia.com/corporate/GABRIEL_ROID_94948_KMP_Doc.zip |  |  | metadata_only |
+| 2026-08-06 | NSE | Exchange Filing | Resignation of Director/KMP/SMP | https://nsearchives.nseindia.com/corporate/GABRIEL_ROID_94945_KMP_Doc.zip |  |  | metadata_only |
+| 2026-08-06 | NSE | Exchange Filing | Resignation | https://nsearchives.nseindia.com/corporate/GABRIEL_06082026104241_SE_intimation_final_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-09/Resignation-98c5faa111.pdf | 98c5faa1112f | downloaded |
+| 2026-08-03 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_03082026193848_SE_Intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-09/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-0a935f385c.pdf | 0a935f385ce1 | downloaded |

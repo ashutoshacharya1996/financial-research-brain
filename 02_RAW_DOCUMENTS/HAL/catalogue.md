@@ -67,3 +67,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-07-29 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.com/corporate/HAL_29072026170512_changeinmangt_29072026_other.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-02/Change-in-Management-7262d05798.pdf | 7262d0579813 | downloaded |
 | 2026-07-29 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_29072026145244_changeinmangt_29072026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-02/General-Updates-e06eb38112.pdf | e06eb38112a4 | downloaded |
+
+## Evidence collected 2026-08-09
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-05 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_05082026115142_Advertisement_63AGM.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-09/General-Updates-df717bc54c.pdf | df717bc54c39 | downloaded |
+| 2026-08-04 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/HAL_04082026104323_Intimationof63AGM.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-09/Shareholders-meeting-f4fd6d5c68.pdf | f4fd6d5c6825 | downloaded |

@@ -64,3 +64,10 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-07-16 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_16072026152805_JNK_Reg_30_Updation_of_Order_CC7_16072026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-07-19/Updates-f57a48183b.pdf | f57a48183b5d | downloaded |
+
+## Evidence collected 2026-08-09
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-07 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_07082026181531_07082026_JNK_Intimation_Investor_meet.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-09/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-ba905ac7f8.pdf | ba905ac7f847 | downloaded |
+| 2026-08-07 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_07082026180502_JNK_Intimation_Q1FY27_earnings_concall.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-09/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-8e52e42d2a.pdf | 8e52e42d2a39 | downloaded |

@@ -67,3 +67,14 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-07-24 | NSE | Exchange Filing | Appointment | https://nsearchives.nseindia.com/corporate/PARAS_24072026154715_SMP.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-26/Appointment-e3709d658d.pdf | e3709d658d13 | downloaded |
 | 2026-07-22 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/PARAS_22072026130104_Press_ReleaseMOU.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-26/Press-Release-93825ebb2b.pdf | 93825ebb2b0a | downloaded |
 | 2026-07-22 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PARAS_22072026091138_IntimationParasSemiconMoUwithMPState.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-07-26/General-Updates-af848795e5.pdf | af848795e559 | downloaded |
+
+## Evidence collected 2026-08-09
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-08 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PARAS_08082026115600_NPAD.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-09/Copy-of-Newspaper-Publication-18eef59234.pdf | 18eef592345d | downloaded |
+| 2026-08-07 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/PARAS_07082026151725_Intimation_of_notice_CC.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-09/Updates-9b5d3f126e.pdf | 9b5d3f126e9d | downloaded |
+| 2026-08-07 | NSE | Exchange Filing | Record Date | https://nsearchives.nseindia.com/corporate/PARAS_07082026150244_Record_date.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-09/Record-Date-2f2679ed09.pdf | 2f2679ed095b | downloaded |
+| 2026-08-07 | NSE | Exchange Filing | Diversification/Disinvestment | https://nsearchives.nseindia.com/corporate/PARAS_07082026145450_IntimationaboutKrasnyRegulation30.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-09/Diversification-Disinvestment-2fce0c6248.pdf | 2fce0c624885 | downloaded |
+| 2026-08-07 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PARAS_07082026144513_Outcome.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-09/Outcome-of-Board-Meeting-5eaa513f8b.pdf | 5eaa513f8b52 | downloaded |
+| 2026-08-04 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_04082026132330_InvestormeetCiti.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-09/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-80e5bee571.pdf | 80e5bee5716f | downloaded |

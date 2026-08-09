@@ -83,3 +83,13 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-07-28 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_28072026140315_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-02/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-cc0efddac6.pdf | cc0efddac611 | downloaded |
 | 2026-07-27 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_27072026213502_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-02/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-b5aefa9c2a.pdf | b5aefa9c2af6 | downloaded |
 | 2026-07-27 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/BEL_27072026160426_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-02/Outcome-of-Board-Meeting-7f57554114.pdf | 7f575541145a | downloaded |
+
+## Evidence collected 2026-08-09
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-05 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/BEL_05082026212159_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-09/Copy-of-Newspaper-Publication-e2b06b7816.pdf | e2b06b781688 | downloaded |
+| 2026-08-05 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/BEL_05082026211750_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-09/General-Updates-3e20851e7c.pdf | 3e20851e7ce3 | downloaded |
+| 2026-08-05 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/BEL_05082026210844_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-09/General-Updates-6b066fab8c.pdf | 6b066fab8c98 | downloaded |
+| 2026-08-05 | NSE | Exchange Filing | Record Date | https://nsearchives.nseindia.com/corporate/BEL_05082026205920_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-09/Record-Date-98e26cdc22.pdf | 98e26cdc2260 | downloaded |
+| 2026-08-05 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/BEL_05082026203450_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-09/Shareholders-meeting-c9bd3de333.pdf | c9bd3de33371 | downloaded |
