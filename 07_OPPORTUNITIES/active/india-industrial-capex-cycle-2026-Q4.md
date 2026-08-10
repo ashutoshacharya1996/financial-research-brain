@@ -8,7 +8,7 @@
 - **confidence_score:** 7.5
 - **trend_direction:** Stable
 - **date_identified:** 2026-06-20
-- **last_validated:** 2026-06-22
+- **last_validated:** 2026-07-13
 - **status:** Active
 
 ---
@@ -79,3 +79,16 @@
 Not required at 7.5/10. Key counter-evidence documented in Risks above and in the linked theme record (`06_THEMES/india-industrial-capex-cycle.md`).
 
 **Most material counter-signal this run:** LT Q4 FY26 PAT -3% YoY + EBITDA margin 10.4% — the largest EPC company in the universe is experiencing margin compression despite record order inflows; order quality (profit-generating) is not tracking order quantity. Watch FY27 Q1 for whether this is a one-quarter anomaly or structural.
+
+---
+
+## Update — 2026-07-13 (Thin Evidence Run)
+
+**LT — Moody's Baa1 issuer rating (2026-07-06/07), Stable outlook, two notches above India's sovereign 'Baa3' grade:**
+- Moody's cites "high-margin engineering services and large-scale EPC projects in West Asia continue to scale" as supporting the Stable outlook — a third-party, credit-agency read that tempers (does not resolve) the standing "LT execution quality" risk documented above.
+- Matching Baa1 rating assigned to L&T Hydrocarbon Saudi Company LLC (wholly owned subsidiary), citing "the strategic importance of Larsen & Toubro's West Asia operations."
+- This is backward/structural-looking rating-agency commentary, not new quarterly operating data — it does not confirm that the H1 FY27 "softer" guidance (flagged 2026-06-20, still unresolved) will not materialize. Treat as a partial offset to the LT execution-risk narrative, not a resolution of it.
+
+**LT — L&T Vyoma × Fortanix × NVIDIA partnership (2026-07-08):** New sovereign-AI/data-centre infrastructure business line (Confidential Computing SaaS for regulated Indian enterprises/government) — no financial terms disclosed. Adds unquantified growth optionality outside the core EPC/capex-cycle thesis; not counted toward this Opportunity's capex-cycle evidence base since it is a distinct (non-EPC) business line.
+
+Confidence held at **7.5** (unchanged) — neither item is new quarterly financial data; both are logged as evidence but do not move the score. Per Screener Rule 6, since `trend_direction` (Stable) has not changed to Weakening, no re-validation flag is required this run.
