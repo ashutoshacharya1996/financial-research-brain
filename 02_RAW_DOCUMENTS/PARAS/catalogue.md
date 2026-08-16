@@ -78,3 +78,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-08-07 | NSE | Exchange Filing | Diversification/Disinvestment | https://nsearchives.nseindia.com/corporate/PARAS_07082026145450_IntimationaboutKrasnyRegulation30.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-09/Diversification-Disinvestment-2fce0c6248.pdf | 2fce0c624885 | downloaded |
 | 2026-08-07 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PARAS_07082026144513_Outcome.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-09/Outcome-of-Board-Meeting-5eaa513f8b.pdf | 5eaa513f8b52 | downloaded |
 | 2026-08-04 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_04082026132330_InvestormeetCiti.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-09/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-80e5bee571.pdf | 80e5bee5716f | downloaded |
+
+## Evidence collected 2026-08-16
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-14 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_14082026131230_InvestormeetCitiMotilalOswal.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-16/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-a69e8ee7b8.pdf | a69e8ee7b8d1 | downloaded |

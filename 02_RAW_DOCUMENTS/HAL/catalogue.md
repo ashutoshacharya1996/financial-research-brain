@@ -74,3 +74,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-08-05 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_05082026115142_Advertisement_63AGM.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-09/General-Updates-df717bc54c.pdf | df717bc54c39 | downloaded |
 | 2026-08-04 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/HAL_04082026104323_Intimationof63AGM.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-09/Shareholders-meeting-f4fd6d5c68.pdf | f4fd6d5c6825 | downloaded |
+
+## Evidence collected 2026-08-16
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-12 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/HAL_12082026140538_FR_30062026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-16/Outcome-of-Board-Meeting-71a0b8c15b.pdf | 71a0b8c15b57 | downloaded |

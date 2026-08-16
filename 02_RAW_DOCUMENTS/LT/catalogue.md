@@ -153,3 +153,11 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-08-04 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/PAM_04082026194655_OutcomeNCLTConvenedMeeting04082026_1.pdf |  |  | metadata_only |
 | 2026-08-04 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_04082026093319_PressRelease04082026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-09/Bagging-Receiving-of-orders-contracts-4ec6ec0a1c.pdf | 4ec6ec0a1cd3 | downloaded |
 | 2026-08-03 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_03082026181720_TranscriptJune2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-09/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-f5f2797d8c.pdf | f5f2797d8ca3 | downloaded |
+
+## Evidence collected 2026-08-16
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-13 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_13082026112910_PressRelease13082026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-16/Bagging-Receiving-of-orders-contracts-7bbb23ba22.pdf | 7bbb23ba2251 | downloaded |
+| 2026-08-11 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_11082026155835_Intimation11082026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-16/General-Updates-d62f04a12e.pdf | d62f04a12e2d | downloaded |
+| 2026-08-11 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_11082026140555_NSEESGRating11082026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-16/General-Updates-690d31245b.pdf | 690d31245b03 | downloaded |

@@ -93,3 +93,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-08-05 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/BEL_05082026210844_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-09/General-Updates-6b066fab8c.pdf | 6b066fab8c98 | downloaded |
 | 2026-08-05 | NSE | Exchange Filing | Record Date | https://nsearchives.nseindia.com/corporate/BEL_05082026205920_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-09/Record-Date-98e26cdc22.pdf | 98e26cdc2260 | downloaded |
 | 2026-08-05 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/BEL_05082026203450_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-09/Shareholders-meeting-c9bd3de333.pdf | c9bd3de33371 | downloaded |
+
+## Evidence collected 2026-08-16
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-13 | NSE | Exchange Filing | Change in Director(s) | https://nsearchives.nseindia.com/corporate/BEL_13082026174654_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-16/Change-in-Director-s-b2f70d39c1.pdf | b2f70d39c1cf | downloaded |
+| 2026-08-10 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_10082026173144_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-16/Bagging-Receiving-of-orders-contracts-2795a4cab5.pdf | 2795a4cab54d | downloaded |

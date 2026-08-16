@@ -71,3 +71,20 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 |---|---|---|---|---|---|---|---|
 | 2026-08-07 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_07082026181531_07082026_JNK_Intimation_Investor_meet.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-09/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-ba905ac7f8.pdf | ba905ac7f847 | downloaded |
 | 2026-08-07 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_07082026180502_JNK_Intimation_Q1FY27_earnings_concall.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-09/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-8e52e42d2a.pdf | 8e52e42d2a39 | downloaded |
+
+## Evidence collected 2026-08-16
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-14 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_14082026222735_Intimation_Corporate_presentation_14082026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-16/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-0edc8e4527.pdf | 0edc8e4527c3 | downloaded |
+| 2026-08-13 | NSE | Exchange Filing | Monitoring Agency Report | https://nsearchives.nseindia.com/corporate/JNKINDIA23_13082026184956_Letter_MA_report.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-16/Monitoring-Agency-Report-5c051ef1e5.pdf | 5c051ef1e596 | downloaded |
+| 2026-08-13 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/JNKINDIA23_13082026135042_Letter_with_Newspaper_Adv_13082026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-16/Copy-of-Newspaper-Publication-f58ab8f6bb.pdf | f58ab8f6bb29 | downloaded |
+| 2026-08-12 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_12082026195152_Audio_Recording_of_Q1_FY27_earnings_call_12082026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-16/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-3bddf2ae11.pdf | 3bddf2ae1135 | downloaded |
+| 2026-08-12 | NSE | Exchange Filing | Investor Presentation | https://nsearchives.nseindia.com/corporate/JNKINDIA23_12082026184956_Revised_Q1FY27_investr_presentation_12082026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-16/Investor-Presentation-ed4c55f390.pdf | ed4c55f39048 | downloaded |
+| 2026-08-12 | NSE | Exchange Filing | Investor Presentation | https://nsearchives.nseindia.com/corporate/JNKINDIA23_12082026000152_Q1_FY27_Investor_Presentation_11082026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-16/Investor-Presentation-d4273e90db.pdf | d4273e90db5a | downloaded |
+| 2026-08-11 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11082026235416_Q1FY27_Press_Release_11082026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-16/Press-Release-8268252f72.pdf | 8268252f720e | downloaded |
+| 2026-08-11 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11082026212750_Outcome_of_BM_with_Annexures_11082026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-16/General-Updates-9592f04ad8.pdf | 9592f04ad841 | downloaded |
+| 2026-08-11 | NSE | Exchange Filing | Amendment to AOA/MOA | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11082026211635_Outcome_of_BM_with_Annexures_11082026.pdf |  |  | metadata_only |
+| 2026-08-11 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11082026210640_Outcome_of_BM_with_Annexures_11082026.pdf |  |  | metadata_only |
+| 2026-08-11 | NSE | Exchange Filing | Integrated Filing- Financial | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11082026205651_Outcome_of_BM_with_Annexures_11082026.pdf |  |  | metadata_only |
+| 2026-08-11 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11082026204341_Outcome_of_BM_with_Annexures_11082026.pdf |  |  | metadata_only |
