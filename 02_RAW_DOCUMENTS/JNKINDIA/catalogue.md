@@ -88,3 +88,9 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 | 2026-08-11 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11082026210640_Outcome_of_BM_with_Annexures_11082026.pdf |  |  | metadata_only |
 | 2026-08-11 | NSE | Exchange Filing | Integrated Filing- Financial | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11082026205651_Outcome_of_BM_with_Annexures_11082026.pdf |  |  | metadata_only |
 | 2026-08-11 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11082026204341_Outcome_of_BM_with_Annexures_11082026.pdf |  |  | metadata_only |
+
+## Evidence collected 2026-08-23
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-19 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_19082026143438_Q1FY27_earnings_call_transcript_19082026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-23/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-7b3758fe06.pdf | 7b3758fe0699 | downloaded |

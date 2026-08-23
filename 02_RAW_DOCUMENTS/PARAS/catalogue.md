@@ -84,3 +84,13 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-08-14 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_14082026131230_InvestormeetCitiMotilalOswal.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-16/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-a69e8ee7b8.pdf | a69e8ee7b8d1 | downloaded |
+
+## Evidence collected 2026-08-23
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-22 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/PARAS_22082026133730_TDS_Communication.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-23/Updates-8d72d10b19.pdf | 8d72d10b1916 | downloaded |
+| 2026-08-19 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_19082026183412_Investor_meet_-_Paras_Plant_Visit.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-23/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-c044ae688d.pdf | c044ae688ddc | downloaded |
+| 2026-08-19 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PARAS_19082026161448_NewspaperAdAGM.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-23/Copy-of-Newspaper-Publication-444927357b.pdf | 444927357bc0 | downloaded |
+| 2026-08-18 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/PARAS_18082026115538_Notice.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-23/Shareholders-meeting-0dd90b98be.pdf | 0dd90b98be01 | downloaded |
+| 2026-08-17 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_17082026191438_InvestormeetKotakInstitutionalEquities.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-23/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-d05b351906.pdf | d05b3519060d | downloaded |

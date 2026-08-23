@@ -113,3 +113,13 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-08-06 | NSE | Exchange Filing | Resignation of Director/KMP/SMP | https://nsearchives.nseindia.com/corporate/GABRIEL_ROID_94945_KMP_Doc.zip |  |  | metadata_only |
 | 2026-08-06 | NSE | Exchange Filing | Resignation | https://nsearchives.nseindia.com/corporate/GABRIEL_06082026104241_SE_intimation_final_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-09/Resignation-98c5faa111.pdf | 98c5faa1112f | downloaded |
 | 2026-08-03 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_03082026193848_SE_Intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-09/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-0a935f385c.pdf | 0a935f385ce1 | downloaded |
+
+## Evidence collected 2026-08-23
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-21 | NSE | Exchange Filing | Acquisition | https://nsearchives.nseindia.com/corporate/GABRIEL_21082026151524_SE_Disclosure_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/Acquisition-c673e93d08.pdf | c673e93d084f | downloaded |
+| 2026-08-20 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_20082026182146_SE_Intimation_Scrutinizer_Report_final_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/Shareholders-meeting-57934f9b1d.pdf | 57934f9b1dfe | downloaded |
+| 2026-08-20 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_20082026164725_SE_intimation_NJ_revised_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/General-Updates-0efdab0f6e.pdf | 0efdab0f6e7e | downloaded |
+| 2026-08-19 | NSE | Exchange Filing | Amendment to AOA/MOA | https://nsearchives.nseindia.com/corporate/GABRIEL_19082026203734_SE_Intimation_1_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/Amendment-to-AOA-MOA-972ea5b8ed.pdf | 972ea5b8edfa | downloaded |
+| 2026-08-19 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_19082026170819_SEIntimation_Summary_of_AGM_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/Shareholders-meeting-7e6292b263.pdf | 7e6292b2631c | downloaded |

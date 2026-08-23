@@ -80,3 +80,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-08-12 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/HAL_12082026140538_FR_30062026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-16/Outcome-of-Board-Meeting-71a0b8c15b.pdf | 71a0b8c15b57 | downloaded |
+
+## Evidence collected 2026-08-23
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-20 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/HAL_20082026172023_dissolution_infotechHAL.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-23/Updates-416ce89c87.pdf | 416ce89c879e | downloaded |
