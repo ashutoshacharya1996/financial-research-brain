@@ -123,3 +123,11 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-08-20 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_20082026164725_SE_intimation_NJ_revised_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/General-Updates-0efdab0f6e.pdf | 0efdab0f6e7e | downloaded |
 | 2026-08-19 | NSE | Exchange Filing | Amendment to AOA/MOA | https://nsearchives.nseindia.com/corporate/GABRIEL_19082026203734_SE_Intimation_1_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/Amendment-to-AOA-MOA-972ea5b8ed.pdf | 972ea5b8edfa | downloaded |
 | 2026-08-19 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_19082026170819_SEIntimation_Summary_of_AGM_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/Shareholders-meeting-7e6292b263.pdf | 7e6292b2631c | downloaded |
+
+## Evidence collected 2026-08-30
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-27 | NSE | Exchange Filing | Credit Rating- New | https://nsearchives.nseindia.com/corporate/GABRIEL_27082026214338_SE_intimation_debenture_merged_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-30/Credit-Rating--New-4ddb0d643e.pdf | 4ddb0d643e80 | downloaded |
+| 2026-08-26 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/GABRIEL_26082026115630_SE_intimation_merged_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-30/Press-Release-34b6bd4c49.pdf | 34b6bd4c491a | downloaded |
+| 2026-08-24 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_24082026105235_Project_Gamut_BM_Outcome_24082026_2_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-30/Outcome-of-Board-Meeting-7b66191054.pdf | 7b66191054b4 | downloaded |

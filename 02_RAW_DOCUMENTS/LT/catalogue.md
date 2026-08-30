@@ -168,3 +168,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-08-20 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_20082026100532_Press_Release_Initmation_sgd.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-23/Bagging-Receiving-of-orders-contracts-177554f340.pdf | 177554f3400a | downloaded |
 | 2026-08-17 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/Subhodh_17082026113557_SEIntimation_Pressrelease_17082026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-23/Bagging-Receiving-of-orders-contracts-81d6c24042.pdf | 81d6c2404208 | downloaded |
+
+## Evidence collected 2026-08-30
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-08-25 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_25082026093347_PressRelease25082026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-30/Bagging-Receiving-of-orders-contracts-f4e62e9012.pdf | f4e62e90122d | downloaded |
+| 2026-08-24 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_24082026093929_PressRelease24082026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-30/Bagging-Receiving-of-orders-contracts-ecfd34bfdd.pdf | ecfd34bfdd26 | downloaded |
