@@ -93,3 +93,11 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-08-28 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/HAL_28082026172950_Proceedings.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-30/Shareholders-meeting-7c2041259d.pdf | 7c2041259d10 | downloaded |
 | 2026-08-26 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/HAL_26082026111035_Mediarelease_26082026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-08-30/Press-Release-9afb859277.pdf | 9afb859277fb | downloaded |
+
+## Evidence collected 2026-09-06
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-04 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/HAL_04092026133636_RevisedPolicy_04092026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-09-06/Updates-27d1c84b35.pdf | 27d1c84b3557 | downloaded |
+| 2026-08-31 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_31082026182838_Disclosureofmaterialevents.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-09-06/General-Updates-5a53474f6e.pdf | 5a53474f6ed4 | downloaded |
+| 2026-08-31 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/HAL_31082026182352_Voitngresultandscrutinizerreport.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-09-06/Shareholders-meeting-05e5a6d27e.pdf | 05e5a6d27e5a | downloaded |

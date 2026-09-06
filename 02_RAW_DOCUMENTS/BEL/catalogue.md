@@ -116,3 +116,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-08-28 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/BEL_28082026195246_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-30/Shareholders-meeting-b343755216.pdf | b34375521624 | downloaded |
 | 2026-08-28 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/BEL_28082026194601_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-30/Shareholders-meeting-0d70c5b646.pdf | 0d70c5b646d5 | downloaded |
 | 2026-08-26 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_26082026153621_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-08-30/Bagging-Receiving-of-orders-contracts-5ea68c0d88.pdf | 5ea68c0d88a4 | downloaded |
+
+## Evidence collected 2026-09-06
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-02 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/BEL_02092026173219_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-09-06/Copy-of-Newspaper-Publication-79718d5ace.pdf | 79718d5ace5d | downloaded |

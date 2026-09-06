@@ -175,3 +175,11 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-08-25 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_25082026093347_PressRelease25082026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-30/Bagging-Receiving-of-orders-contracts-f4e62e9012.pdf | f4e62e90122d | downloaded |
 | 2026-08-24 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_24082026093929_PressRelease24082026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-08-30/Bagging-Receiving-of-orders-contracts-ecfd34bfdd.pdf | ecfd34bfdd26 | downloaded |
+
+## Evidence collected 2026-09-06
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-04 | NSE | Exchange Filing | Credit Rating | https://nsearchives.nseindia.com/corporate/PAM_04092026173240_SE_Intimation_Credit_Rating_CRISIL_0409.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-06/Credit-Rating-8dfe76091c.pdf | 8dfe76091cca | downloaded |
+| 2026-09-01 | NSE | Exchange Filing | Credit Rating | https://nsearchives.nseindia.com/corporate/PAM_01092026191301_SE_Intimation_CreditRating_IndiaRatings_010926.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-06/Credit-Rating-3041aa2fb0.pdf | 3041aa2fb008 | downloaded |
+| 2026-09-01 | NSE | Exchange Filing | Scheme of Arrangement | https://nsearchives.nseindia.com/corporate/PAM_01092026184703_Reg30192026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-06/Scheme-of-Arrangement-b48b67a0ca.pdf | b48b67a0ca6c | downloaded |

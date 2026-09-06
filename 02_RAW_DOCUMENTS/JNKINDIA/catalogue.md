@@ -94,3 +94,12 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-08-19 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_19082026143438_Q1FY27_earnings_call_transcript_19082026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-23/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-7b3758fe06.pdf | 7b3758fe0699 | downloaded |
+
+## Evidence collected 2026-09-06
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-04 | NSE | Exchange Filing | Record Date | https://nsearchives.nseindia.com/corporate/JNKINDIA23_04092026165305_Intimation_of_Record_Date_and_Book_Closure_Date.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-06/Record-Date-6680fc6d29.pdf | 6680fc6d2995 | downloaded |
+| 2026-09-04 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_04092026162813_covering_letter_with_physical_dispatch_letter.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-06/Updates-29d4220970.pdf | 29d422097017 | downloaded |
+| 2026-09-04 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/JNKINDIA23_04092026160113_covering_letter_newspaper.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-06/Copy-of-Newspaper-Publication-c2664affe8.pdf | c2664affe8bd | downloaded |
+| 2026-09-03 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_03092026193653_AR_2026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-06/Shareholders-meeting-550d54149c.pdf | 550d54149cec | downloaded |
