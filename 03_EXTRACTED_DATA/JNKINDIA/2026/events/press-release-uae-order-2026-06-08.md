@@ -1,6 +1,10 @@
 # Extracted Data — JNK INDIA LTD (JNKINDIA)
 Document type: Press Release / Exchange Filing
-Source: NSE/BSE regulatory filing dated June 8, 2026; reported by Whalesbook, BusinessUpturn, IndexBox, Zawya, MachineMaker, HDFCSky (multiple sources confirming same filing)
+Source: https://nsearchives.nseindia.com/corporate/JNKINDIA23_08062026164240_JNK_Reg_30_Disclosure_CC7_Incinerator_Order_08062026.pdf (also reported by Whalesbook, BusinessUpturn, IndexBox, Zawya, MachineMaker, HDFCSky)
+Local evidence: 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-06-22/Bagging-Receiving-of-orders-contracts-a84aba748b.pdf
+Content hash: a84aba748bb02e4251ba875f3f7f9c31a5eede584f7c2dd38d7715551c2fe29c
+Collection status: downloaded
+Source tier: tier_1
 Date: 2026-06-08
 Quarter: Non-quarterly event (post Q4 FY26)
 Extracted by: Extraction Agent

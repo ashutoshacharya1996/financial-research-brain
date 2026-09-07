@@ -4,11 +4,11 @@
 Developing
 
 ## Confidence Score
-9.2 / 10
-Justification: Updated 2026-06-22 (extraction run) — adds BEL GBMES contract (₹1,251 crore, Ministry of Defence, Indian Army, May 5, 2026 — fully indigenous ELINT system designed by DLRL/DRDO, manufactured by BEL). GBMES is the highest-value single disclosed order from BEL's Q1 FY27 period and was not in prior runs. ELINT (Electronic Intelligence) is BEL's most strategically classified product domain — higher margin than routine avionics. Combined with QRSAM (pending July 2026), P-75I, AMCA pipeline, PARAS guidance, and macro production record, the defence electronics thesis now has unprecedented corroboration depth. Capped at 9.2 (not higher) only because QRSAM remains unsigned.
+8.8 / 10
+Justification: Updated 2026-09-07 — downgraded from 9.2. QRSAM, the single largest anchor to BEL's FY27 order guidance, was guided for a July 2026 signing at the June 19 investor meet; no confirmation has appeared in any evidence through September 6 — a real slip, not just an unconfirmed formality, and the P-75I/AMCA pipeline names that were explicitly announced alongside QRSAM in June have gone quiet in July-August commentary. Offsetting this: HAL's Aravalli engine JV with Safran is a genuinely new, high-quality indigenous co-development win; BEL sustained ~₹2,500cr of fresh multi-domain orders over the period; PARAS continues to add BEL/DRDO order flow. Net: evidence breadth still excellent, but the theme's single largest catalyst is now overdue rather than merely pending.
 
 ## Trend Direction
-Accelerating
+Stable (QRSAM delay offsetting new order/programme wins)
 
 ## Evidence
 
@@ -52,7 +52,7 @@ Companies mentioning this theme this week:
 
 ## Research Queue Appearances
 
-8 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6
+10 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6 | 2026-09-07: HAL #5, BEL #6
 
 ## Potential Losers
 
@@ -79,7 +79,20 @@ Companies mentioning this theme this week:
 4 companies this week | 4 companies cumulative
 
 ## Last Updated
-2026-06-22 (extraction update)
+2026-09-07
 
 ### New Evidence (extraction run, 2026-06-22)
 | BEL | Press Release — GBMES | 2026-05-05 | Strengthening | High | "BEL has signed a contract with Ministry of Defence valued at Rs. 1251 Crore (excluding taxes) for supply of GBMES system to Indian Army. The GBMES is a totally indigenous, state of the art system designed and developed by DLRL Hyderabad and manufactured by BEL. The networked intelligence system is capable of detecting, classifying & locating all types of radars. The system also intercepts and analyzes all communication signals." |
+
+### Update — 2026-09-07 (Delta Run, covering 2026-06-22 through 2026-09-06)
+
+| Company | Document | Date | Signal Type | Strength | Quote / Data Point |
+|---|---|---|---|---|---|
+| BEL | Order wins (multiple filings) | 2026-06-22 to 2026-07-31 | Strengthening | High | ~₹2,500cr fresh orders across communications, radars, CBRN, seekers, avionics, electro-optics, security ops centres — pace consistent with prior 48-day window (~₹1,859cr) |
+| BEL | Investor meet cadence | through 2026-09-06 | **Fading** | High | QRSAM guided for July 2026 signing (June 19 investor meet); no signing confirmation in any subsequent filing or news item through Sept 6 — one full month overdue against management's own timeline. P-75I and AMCA, named alongside QRSAM in June as FY27 pipeline contributors, receive zero mentions in July-August evidence. |
+| HAL | Aravalli Engine Programme | 2026-08-26 | New mention | High | HAL + Safran Helicopter Engines (JV: SAFHAL) co-developing a 3,500-4,000shp turboshaft for the 13-ton IMRH and naval DBMRH variants — first Safran co-development at this engine class; builds indigenous MRO ecosystem; dual military/civil/export application |
+| HAL | Q1FY27 Results | 2026-08-12 | Strengthening | High | Revenue +14.4% YoY (₹5,51,528 lakh vs ₹4,81,914 lakh); PAT +14.8% YoY — production ramp converting to revenue |
+| PARAS | BEL Electro-Optics Order | 2026-06-02 | Strengthening | Medium | ₹52.82cr order, execution by Sept 2027 — continued Tier-2 embedding in BEL's supply chain |
+| PARAS | DRDO Satellite Antenna Order | 2026-04-30 | New mention | Medium | ₹7.72cr, 24-month development — diversifies PARAS's defence-electronics customer base beyond BEL |
+
+**Counter-evidence added this run:** QRSAM's July 2026 target has now passed unconfirmed — this is the theme's most important open risk. If QRSAM slips into Q3 FY27 (Oct-Dec) or beyond, BEL's >₹55,000cr FY27 order guidance is at risk of a miss, which would be the first material guidance disappointment in this theme's history. HAL's own extraction this run also surfaced SEBI Reg 17(1) board-composition non-compliance and an unconstituted audit committee since April 5, 2026 — a company-specific governance risk, not a theme-wide one, but material enough to flag for anyone underwriting HAL as the primary vehicle for the Aravalli/Safran signal.

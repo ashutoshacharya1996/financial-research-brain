@@ -1,11 +1,11 @@
 # Theme: Indian Industrial Mid-Cap Margin Expansion & Operating Leverage
 
 ## Status
-Emerging
+Developing
 
 ## Confidence Score
-6.5 / 10
-Justification: Gabriel's sunroof JV now producing concrete above-guidance margin data (15.1% FY26 vs 12-14% target) on ₹434 crore revenue — the margin expansion thesis is no longer a projection but a Year-1 operational reality; PARAS issued first-ever revenue guidance (30-40% FY27-28 "while maintaining or growing profitability") implying explicit margin leverage alongside revenue growth; corroboration count unchanged at 2 companies but evidence quality has increased substantially — from projections to confirmed operational numbers for GABRIEL and from no-guidance to first guidance for PARAS; cap to 6.5 because the theme still needs 1-2 more companies and GABRIEL has a Q4 ramp-up issue that must be watched.
+7.6 / 10
+Justification: Updated 2026-09-07 — JNKINDIA joins as a third corroborating company with the strongest single data point in this theme's history: Q1FY27 EBITDA +3.1x YoY (vs FY26's already-strong 71.6%) and PAT margin swinging +410bps to 5.2%, with revenue growing "only" 80.6% YoY — profit scaling meaningfully faster than revenue for the second consecutive period. PARAS's Q1FY27 delivered on its own guidance with PBT margin expanding to 23.6% (from 22.9%) despite 33% YoY expense growth. Crossing to 3 companies moves this from Emerging to Developing. Held below 8.0 because JNKINDIA's own delta flagged the 5.2% PAT margin as "extreme" and needing Q2/Q3 confirmation before ruling out a one-time mix benefit, and LT remains a live counter-case (order book accelerating without confirmed margin recovery yet — see below).
 
 ## Trend Direction
 Accelerating
@@ -36,11 +36,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-None yet — first run at threshold. Eligible for screener consideration.
+- `margin-expansion-operating-leverage-2026-Q4` — Confidence: 7.6 / Status: Active (created 2026-09-07)
 
 ## Research Queue Appearances
 
-0 — first run at threshold
+1 — 2026-09-07: JNKINDIA #2 (cumulative: 1)
 
 ## Potential Losers
 
@@ -63,7 +63,19 @@ None yet — first run at threshold. Eligible for screener consideration.
 - LT is a counter-case at scale: margin compression at ₹82,762 crore quarterly revenue despite massive order book — operating leverage is not automatic
 
 ## Corroboration Count
-2 companies this week | 2 companies cumulative
+3 companies this week | 3 companies cumulative
 
 ## Last Updated
-2026-06-22
+2026-09-07
+
+---
+
+## Update — 2026-09-07 (Delta Run, covering 2026-06-22 through 2026-09-06)
+
+| Company | Document | Date | Signal Type | Strength | Quote / Data Point |
+|---|---|---|---|---|---|
+| JNKINDIA | Q1FY27 press release | 2026-08-11 | New mention (theme entry) | High | EBITDA +3.1x YoY vs revenue +80.6% YoY — the widest profit/revenue growth gap of any company tracked in this theme; PAT margin 5.2% vs prior-year ~1.1% (+410bps) |
+| PARAS | Q1FY27 board outcome | 2026-08-07 | Strengthening | High | PBT margin 23.6% (from 22.9%) despite 33% YoY expense growth — delivering on the "30-40% growth while maintaining or growing profitability" guidance issued in June |
+| LT | Order wins | Jul-Aug 2026 | **Watch, not yet corroborating** | — | Order book accelerating sharply (₹50,000+cr in 60 days), but no new margin data in this window — orders have not yet converted to a confirmed margin recovery from the Q4 FY26 compression (10.4% EBITDA) that made LT this theme's counter-case. Do not count LT as supporting evidence until a margin print confirms it. |
+
+**Counter-arguments addition:** JNKINDIA's own delta agent flagged its 5.2% PAT margin as possibly reflecting a one-time favorable project mix rather than structural operating leverage — needs Q2/Q3 FY27 confirmation before being treated as durable. GABRIEL's HL Klemove investment (see auto-ev-autonomous-adjacencies.md) is a 30% equity stake, not owned capex — it will not show up in GABRIEL's own margin line for some time, and should not be read as incremental evidence for this theme.

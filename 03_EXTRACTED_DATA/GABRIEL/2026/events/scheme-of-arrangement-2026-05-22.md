@@ -1,6 +1,10 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing / Corporate Action
-Source: NSE/BSE regulatory filing dated May 22, 2026; Regulation 30 disclosure
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_22052026172555_SE_Intimation_Effective_Date_GIL_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-06-22/Scheme-of-Arrangement-21590789a0.pdf
+Content hash: 21590789a0ae92046b2bd1ad180d8dd2d5d62ac1792be137e498f678f153d6d7
+Collection status: downloaded
+Source tier: tier_1
 Date: 2026-05-22
 Quarter: Non-quarterly event (Q1 FY27)
 Extracted by: Extraction Agent

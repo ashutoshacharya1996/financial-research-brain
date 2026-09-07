@@ -1,14 +1,14 @@
 # Theme: India Industrial Capex Cycle
 
 ## Status
-Developing
+Conviction
 
 ## Confidence Score
-7.5 / 10
-Justification: Six companies across defence, infrastructure, industrials, and auto all showing strong order pipelines, but LT's confirmed Q4 FY26 data (PAT -3% YoY, EBITDA 10.4% compressed vs "stable" prior characterisation) introduces a real execution quality caveat — the order-to-revenue conversion lag and margin compression at the largest capex EPC player prevents a higher score; all five other companies still confirming demand is real and growing.
+8.7 / 10
+Justification: Updated 2026-09-07 — the execution-quality caveat that capped this theme at 7.5 has been resolved, not just softened: LT's June 2026 "H1 soft, H2 recovery dependent on Middle East normalization" thesis is now confirmed correct, with seven Mega-to-Ultra-Mega orders (₹50,000+ Cr, Jul 20–Aug 20) including two Middle East wins (ADNOC, Strategic Offshore). BEL sustained order pace (~₹2,500cr in 40 days), HAL revenue accelerated to 14.4% YoY (from 7% FY26), JNKINDIA order pipeline reached 3.2x book with international deals, and PARAS committed ₹6,200cr to a new semiconductor OSAT vertical. Held below 9.0 because BEL's QRSAM — the largest single order anchoring FY27 defence capex guidance — remains unsigned past its own July 2026 target, and PARAS's semiconductor capex carries real execution/financing risk undisclosed in the filing.
 
 ## Trend Direction
-Stable
+Accelerating
 
 ## Evidence
 
@@ -58,7 +58,7 @@ Companies mentioning this theme this week:
 
 ## Research Queue Appearances
 
-18 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6
+23 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6 | 2026-09-07: LT #1, JNKINDIA #2, PARAS #3, HAL #5, BEL #6
 
 ## Potential Losers
 
@@ -82,7 +82,23 @@ Companies mentioning this theme this week:
 - LT Lakshya 2031 ROE guidance 16–17% described by analysts as "underwhelming" — management ambition may not translate to shareholder returns at scale
 
 ## Corroboration Count
-6 companies this week | 6 companies cumulative (LT negative signal; 5 positive + 1 mixed)
+6 companies this week | 6 companies cumulative (all 6 now positive — LT's prior negative/mixed signal has flipped to positive)
 
 ## Last Updated
-2026-06-22
+2026-09-07
+
+---
+
+## Update — 2026-09-07 (Delta Run, covering 2026-06-22 through 2026-09-06)
+
+**LT — execution-quality caveat resolved:** Seven Mega-to-Ultra-Mega orders worth ₹50,000+ Cr announced Jul 20–Aug 20, 2026: ADNOC Ultra-Mega (>₹15,000cr), Strategic Offshore Ultra-Mega (>₹15,000cr), Metals & Minerals Mega (₹10-15,000cr), AI Factory Mega — Vyoma.AI/NVIDIA B300 (₹10-15,000cr, LT's first hyperscale AI-infrastructure order), ONGC Major (₹5-10,000cr), Dubai APM Large (₹2,500-5,000cr). This vastly exceeds FY27 guidance of 10-12% order growth. Two of the seven orders are in the Middle East — the same geography LT's June 20 analyst meet flagged as an "execution headwind" — confirming the H2 recovery thesis rather than extending the prior concern. Shareholders approved the Realty business demerger (Aug 4); NCLT hearing Oct 6.
+
+**BEL:** Order inflow pace held at ~₹2,500cr over 40 days (Jun 22–Jul 31), similar run-rate to the prior period. QRSAM — the single largest anchor to BEL's >₹55,000cr FY27 order guidance — was guided for July 2026 signing; no confirmation found through Sept 6. This is now the theme's largest single open risk (see defence-electronics-aerospace.md).
+
+**HAL:** Q1FY27 revenue growth accelerated to 14.4% YoY (from 7% in FY26) — production ramp (LCA Mk1A, HTT-40) converting to top-line. Aravalli helicopter engine JV with Safran (SAFHAL) signed Aug 26 — first indigenous co-development at the 3,500-4,000shp class, for IMRH/DBMRH.
+
+**JNKINDIA:** Order pipeline reached ₹6,000cr bidding book (3.2x current order book), now including international deals; Iraq branch approved as a second export geography beyond the UAE.
+
+**PARAS:** Committed ₹6,200cr (~4x FY26 revenue) to a greenfield semiconductor OSAT facility (Ujjain-Indore) — the single largest capital allocation event in the theme this run, but financing source, timeline, and customer offtake are all undisclosed. This is capex-cycle evidence, not yet a standalone "semiconductor" theme (single-company signal, below the 2-company corroboration minimum).
+
+**GABRIEL:** No new quarterly capex disclosure in this window; see auto-ev-autonomous-adjacencies.md for the HL Klemove capital allocation instead (equity JV, not owned capex).
