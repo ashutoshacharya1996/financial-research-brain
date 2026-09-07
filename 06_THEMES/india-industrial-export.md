@@ -1,11 +1,11 @@
 # Theme: India Industrial Export — Manufacturing Beyond IT & Pharma
 
 ## Status
-Emerging
+Developing
 
 ## Confidence Score
-6.0 / 10
-Justification: JNKINDIA's UAE order is now a confirmed regulatory filing (not just a report) — CC7 Emirates / ADNOC / TA'ZIZ Salt Project / ₹100–300cr / December 2027 — moving from "first export win" to "first verified international EPC contract with named ADNOC relationship"; confidence upgrades materially because the ADNOC ecosystem is a high-quality recurring customer (not a spot order) and the full-scope nature (design → commissioning) signals engineering depth; still capped at 6.0 because it remains a 2-company theme and LT's international execution problems are a live counter-signal.
+7.8 / 10
+Justification: Updated 2026-09-07 — LT's own June counter-signal (Middle East "execution headwind") has flipped to supporting evidence: LT confirmed two Middle East Ultra-Mega orders (ADNOC, Strategic Offshore, Jul-Aug 2026), demonstrating that Indian industrials can win and be trusted with large-scale Middle East work, not just JNKINDIA on a single small order. JNKINDIA itself moved from "one order, one geography" to a second geography (Iraq branch approved) and three new verticals (offshore, metals/minerals, renewables) with a ₹6,000cr bidding pipeline that is now explicitly international, not domestic-only. This is now a genuine 2-company theme with concrete, escalating order values rather than one company's single reference client. Held below 8.0 because JNKINDIA's non-UAE execution is still unproven (Iraq branch is newly approved, not yet delivering) and PARAS's semiconductor ambitions (domestic-only, Ujjain-Indore) do not corroborate this theme.
 
 ## Trend Direction
 Accelerating
@@ -59,10 +59,23 @@ None yet — eligible for screener this run (confidence now ≥ 5.0 with confirm
 - Single reference customer (ADNOC) does not validate the broader GCC/international market; JNKINDIA needs 2–3 more international orders before the export theme is confirmed
 
 ## Corroboration Count
-2 companies this week | 2 companies cumulative
+2 companies this week | 2 companies cumulative (LT flips from counter-evidence to supporting evidence)
 
 ## Last Updated
-2026-06-22
+2026-09-07
+
+---
+
+## Update — 2026-09-07 (Delta Run, covering 2026-06-22 through 2026-09-06)
+
+| Company | Document | Date | Signal Type | Strength | Quote / Data Point |
+|---|---|---|---|---|---|
+| LT | Order wins | 2026-08-13 to 2026-08-20 | **Flips from counter-evidence to supporting** | High | ADNOC Ultra-Mega order (>₹15,000cr) and Strategic Offshore Ultra-Mega order (>₹15,000cr), both Middle East — the same geography LT's June 20 analyst meet cited as an "execution headwind" causing H1 FY27 softness. Winning and being awarded two Ultra-Mega contracts there is direct evidence the headwind was transient (order-timing, not a structural execution failure). |
+| JNKINDIA | Iraq branch approval | 2026-08-11 (board approval) | New mention | High | Second export geography beyond UAE approved; management commentary shifts from "well-positioned" (June) to "increasing participation in international projects" (August) — execution language, not aspiration |
+| JNKINDIA | Bidding pipeline | as of 2026-08-14 | Strengthening | High | ₹6,000cr bidding pipeline (3.2x current order book) explicitly includes international deals across three new verticals: offshore, metals/minerals, renewables — diversifying beyond the single ADNOC relationship |
+| JNKINDIA | Q1FY27 results | 2026-08-11 | Strengthening | High | Revenue +80.6% YoY, EBITDA +3.1x YoY — the export-adjacent order mix (higher-complexity, higher-margin per prior delta) is converting into the strongest margin quarter in this company's tracked history |
+
+**Counter-arguments updated:** The original counter-argument — "LT's Middle East execution problems show international work is harder than domestic" — no longer holds as stated; it should be read as "Middle East execution has a longer lead time and more variance, but is not structurally broken for well-capitalized Indian EPC players." Remaining, still-valid counter-arguments: JNKINDIA's Iraq branch has zero delivery track record yet (approved, not executing); a single JNKINDIA order or LT contract slipping in the Middle East again would reopen the original concern; PARAS's parallel semiconductor ambitions are explicitly domestic (Ujjain-Indore, MP state incentives) and do not extend this theme.
 
 ---
 

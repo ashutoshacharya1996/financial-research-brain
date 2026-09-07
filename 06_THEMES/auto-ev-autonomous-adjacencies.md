@@ -1,11 +1,11 @@
-# Theme: Auto Component Makers Pivoting into EV Adjacencies
+# Theme: Auto Component Makers Pivoting into EV & Autonomous-Mobility Adjacencies
 
 ## Status
-Emerging
+Developing
 
 ## Confidence Score
-7.0 / 10
-Justification: This run unlocks the first concrete operational numbers on Gabriel's EV pivot — EV two-wheelers +30% YoY confirmed, Inalfa Gabriel sunroof JV delivering FY26 revenue ₹434 crore at 15.1% EBITDA margin (above management's own 12–14% target), ~170,000 sunroofs sold, Mahindra and Mobis confirmed as new OEM customers, Genos plant construction underway (commercial production Q4 CY26), and solar dampers and lubricants JVs both active; GABRIEL has crossed from "strategic intent with capex committed" to "operational business delivering above-guidance margins"; the cap to 7.0 is that JNKINDIA's green hydrogen signal remains unconfirmed, Mahindra/Mobis order values are undisclosed, and Q4 FY26 saw a ramp-up issue in the sunroof JV suggesting execution is not fully smooth.
+7.9 / 10
+Justification: Updated 2026-09-07 — GABRIEL took its adjacency strategy a large step further with a ₹935cr / 30% stake in HL Klemove (Aug 26, 2026), moving beyond sunroofs/solar dampers into ADAS radar/camera and autonomous-driving electronics — management explicitly frames it as an "inflection point." A CRISIL upgrade to AA+/Stable one month prior (Jul 30) suggests the balance sheet was already being positioned for this scale of commitment. JNKINDIA's green hydrogen JV also moved from "no orders confirmed" (the theme's standing counter-argument) to ₹16.5cr of actual Q1FY27 revenue (~₹66cr annualized run-rate) — a real, if still small, resolution of that gap. Renamed to include autonomous-mobility given HL Klemove's scope extends well beyond EV powertrain adjacency. Held below 8.0 because Rs 935cr is ~3.5x Gabriel's annual EBITDA with no funding-source disclosure yet, and the JV is a 30% minority stake (equity-method accounting, delayed margin accretion, no control).
 
 ## Trend Direction
 Accelerating
@@ -66,4 +66,18 @@ None yet — first tracking run.
 2 companies this week | 2 companies cumulative
 
 ## Last Updated
-2026-06-22
+2026-09-07
+
+---
+
+## Update — 2026-09-07 (Delta Run, covering 2026-06-22 through 2026-09-06)
+
+| Company | Document | Date | Signal Type | Strength | Quote / Data Point |
+|---|---|---|---|---|---|
+| GABRIEL | HL Klemove JV press release | 2026-08-26 | New mention | High | ₹935cr for 30% stake in HL Klemove India; ADAS radar/camera and autonomous-driving electronics — "this new JV marks an important inflection point, enabling Gabriel India to further diversify its portfolio and strengthen its participation in emerging mobility segments" |
+| GABRIEL | CRISIL rating action | 2026-07-30 | Strengthening | Medium | Credit rating upgraded AA → AA+/Stable one month ahead of the HL Klemove commitment — balance sheet capacity signal preceding the capital deployment |
+| JNKINDIA | Q1FY27 press release | 2026-08-11 | Strengthening (resolves prior counter-argument) | Medium | JNK Chemdist Technologies (green hydrogen JV) generated ₹16.5cr revenue in Q1FY27 alone (~₹66cr annualized run-rate) — the prior delta's counter-argument ("no orders confirmed") is now partially resolved with real, if still small, revenue |
+
+**Beneficiaries addition:** HL Klemove (unlisted JV partner, not directly investable) — the relevant listed beneficiary remains GABRIEL as the India-market access vehicle.
+
+**Counter-arguments addition:** ₹935cr is roughly 3.5x GABRIEL's consolidated annual EBITDA — a large bet relative to balance sheet size even after the ratings upgrade; funding source (debt vs internal accruals vs further capital raise) is not yet disclosed. As a 30% stake, GABRIEL will not consolidate HL Klemove's results — margin/earnings accretion will show up on a lag via equity-method income, not revenue.
