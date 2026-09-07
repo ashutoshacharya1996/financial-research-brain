@@ -37,7 +37,7 @@ None yet — eligible for screener this run (confidence now ≥ 5.0 with confirm
 
 ## Research Queue Appearances
 
-0 — first two weeks of tracking; JNKINDIA eligible for queue entry this run
+1 — 2026-09-07: JNKINDIA #2 (cumulative: 1)
 
 ## Potential Losers
 

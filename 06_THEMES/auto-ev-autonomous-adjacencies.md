@@ -40,7 +40,7 @@ None yet — first tracking run.
 
 ## Research Queue Appearances
 
-1 — 2026-06-22: GABRIEL #3
+2 — 2026-06-22: GABRIEL #3 | 2026-09-07: GABRIEL #4
 
 ## Potential Losers
 

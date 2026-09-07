@@ -36,11 +36,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-None yet — first run at threshold. Eligible for screener consideration.
+- `margin-expansion-operating-leverage-2026-Q4` — Confidence: 7.6 / Status: Active (created 2026-09-07)
 
 ## Research Queue Appearances
 
-0 — first run at threshold
+1 — 2026-09-07: JNKINDIA #2 (cumulative: 1)
 
 ## Potential Losers
 
