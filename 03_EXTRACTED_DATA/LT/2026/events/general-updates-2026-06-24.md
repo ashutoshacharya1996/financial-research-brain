@@ -1,0 +1,49 @@
+# Extracted Data — LARSEN & TOUBRO LTD (LT)
+Document type: General Updates
+Source: https://nsearchives.nseindia.com/corporate/PAM_24062026125433_ESG_Rating24062026.pdf
+Local evidence: 02_RAW_DOCUMENTS/LT/raw/2026-06-28/General-Updates-cffb9ee958.pdf
+Content hash: cffb9ee95815b20e993e56cbbe3903b9379aa705e9f6c4a633c443c4159a7ad6
+Collection status: downloaded
+Source tier: tier_1
+Date: 2026-06-24
+Quarter: Q1FY2027
+Extracted by: Extraction Agent
+Extraction date: 2026-09-07
+
+---
+
+## Financial Metrics
+| Metric | Value | Period | vs Prior Period | Source Quote |
+|--------|-------|--------|----------------|--------------|
+| Revenue | | | | |
+| EBITDA margin | | | | |
+| PAT | | | | |
+| Order book | | | | |
+| Order inflows | | | | |
+| Capex | | | | |
+
+## Guidance
+None stated
+
+## Management Commentary — Demand
+None stated
+
+## Management Commentary — Margins
+None stated
+
+## Management Commentary — Capacity / Expansion
+None stated
+
+## Named Catalysts
+- None stated
+
+## Named Risks
+- None stated
+
+## Theme Signal Log
+| Theme Category | Exact Quote | Context (bullish/cautious/neutral) |
+|---|---|---|
+| General | None stated | |
+
+## Missing Data
+Administrative filing — no extractable financial or thematic signal.
