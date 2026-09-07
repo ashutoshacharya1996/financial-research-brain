@@ -28,16 +28,16 @@ Extraction date: 2026-09-07
 None stated beyond current quarter results
 
 ## Management Commentary — Demand
-Revenue growth from operations: 35% YoY (Rs. 11,808 Cr from Rs. 8,741 Cr in Q1FY26). Strong order execution evident across defence segments.
+Revenue growth from operations: 35% YoY (Rs. 11,808 Lakhs from Rs. 8,741 Lakhs in Q1FY26). Strong order execution evident across defence segments.
 
 ## Management Commentary — Margins
-Profit Before Tax margin: 23.6% (Rs. 2,851 Cr / Rs. 12,084 Cr total income) for Q1FY27 vs. 22.9% in Q1FY26. Slight margin expansion despite 33% YoY expense growth.
+Profit Before Tax margin: 23.6% (Rs. 2,851 Lakhs / Rs. 12,084 Lakhs total income) for Q1FY27 vs. 22.9% in Q1FY26. Slight margin expansion despite 33% YoY expense growth.
 
 ## Management Commentary — Capacity / Expansion
 None stated in Q1 results announcement
 
 ## Named Catalysts
-- Q1FY27 profit growth: PAT up 39% YoY to Rs. 2,141 Cr
+- Q1FY27 profit growth: PAT up 39% YoY to Rs. 2,141 Lakhs
 - EPS growth: 34% YoY to Rs. 2.56
 - Final Dividend payout: Rs. 1 per share for FY2025-26
 - 17th Annual General Meeting: September 11, 2026 (via video conferencing)
