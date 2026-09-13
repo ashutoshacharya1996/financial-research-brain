@@ -183,3 +183,12 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-09-04 | NSE | Exchange Filing | Credit Rating | https://nsearchives.nseindia.com/corporate/PAM_04092026173240_SE_Intimation_Credit_Rating_CRISIL_0409.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-06/Credit-Rating-8dfe76091c.pdf | 8dfe76091cca | downloaded |
 | 2026-09-01 | NSE | Exchange Filing | Credit Rating | https://nsearchives.nseindia.com/corporate/PAM_01092026191301_SE_Intimation_CreditRating_IndiaRatings_010926.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-06/Credit-Rating-3041aa2fb0.pdf | 3041aa2fb008 | downloaded |
 | 2026-09-01 | NSE | Exchange Filing | Scheme of Arrangement | https://nsearchives.nseindia.com/corporate/PAM_01092026184703_Reg30192026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-06/Scheme-of-Arrangement-b48b67a0ca.pdf | b48b67a0ca6c | downloaded |
+
+## Evidence collected 2026-09-13
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-09 | NSE | Exchange Filing | Allotment of Securities | https://nsearchives.nseindia.com/corporate/PAM_09092026144602_Intimation09092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-13/Allotment-of-Securities-efda5a2a39.pdf | efda5a2a3975 | downloaded |
+| 2026-09-09 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/PAM_09092026131822_PressRelease090920261.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-13/Press-Release-95feb70365.pdf | 95feb70365e5 | downloaded |
+| 2026-09-09 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_09092026100141_PressRelease09092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-13/Bagging-Receiving-of-orders-contracts-4179fcfaf6.pdf | 4179fcfaf631 | downloaded |
+| 2026-09-08 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/AB_08092026165958_Reg_30_Newspaper_Publication_of_Notice_08092026sgd.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-13/Copy-of-Newspaper-Publication-d9251603b3.pdf | d9251603b35c | downloaded |

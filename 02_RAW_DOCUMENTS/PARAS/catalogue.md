@@ -94,3 +94,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-08-19 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PARAS_19082026161448_NewspaperAdAGM.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-23/Copy-of-Newspaper-Publication-444927357b.pdf | 444927357bc0 | downloaded |
 | 2026-08-18 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/PARAS_18082026115538_Notice.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-23/Shareholders-meeting-0dd90b98be.pdf | 0dd90b98be01 | downloaded |
 | 2026-08-17 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_17082026191438_InvestormeetKotakInstitutionalEquities.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-08-23/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-d05b351906.pdf | d05b3519060d | downloaded |
+
+## Evidence collected 2026-09-13
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-11 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/PARAS_11092026185733_VR.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-09-13/Shareholders-meeting-dc15072a80.pdf | dc15072a8081 | downloaded |
+| 2026-09-11 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/PARAS_11092026185202_17th_AGM_proceedings_Outcome.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-09-13/Shareholders-meeting-090ebcbafb.pdf | 090ebcbafb44 | downloaded |

@@ -122,3 +122,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-09-02 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/BEL_02092026173219_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-09-06/Copy-of-Newspaper-Publication-79718d5ace.pdf | 79718d5ace5d | downloaded |
+
+## Evidence collected 2026-09-13
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-11 | NSE | Exchange Filing | Appointment | https://nsearchives.nseindia.com/corporate/BEL_11092026171507_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-09-13/Appointment-5cd4c024c7.pdf | 5cd4c024c784 | downloaded |
+| 2026-09-08 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/BEL_08092026155034_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-09-13/Updates-8de22d5906.pdf | 8de22d59061e | downloaded |

@@ -103,3 +103,9 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 | 2026-09-04 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_04092026162813_covering_letter_with_physical_dispatch_letter.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-06/Updates-29d4220970.pdf | 29d422097017 | downloaded |
 | 2026-09-04 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/JNKINDIA23_04092026160113_covering_letter_newspaper.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-06/Copy-of-Newspaper-Publication-c2664affe8.pdf | c2664affe8bd | downloaded |
 | 2026-09-03 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_03092026193653_AR_2026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-06/Shareholders-meeting-550d54149c.pdf | 550d54149cec | downloaded |
+
+## Evidence collected 2026-09-13
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-11 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11092026150858_Investor_meeting.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-13/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-0880120cbe.pdf | 0880120cbe94 | downloaded |

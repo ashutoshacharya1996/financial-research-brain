@@ -137,3 +137,12 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-09-01 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_01092026160943_SE_Intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-09-06/General-Updates-f27dc30cfa.pdf | f27dc30cfaba | downloaded |
+
+## Evidence collected 2026-09-13
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-11 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_11092026221007_Stock_exchange_intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-09-13/General-Updates-a5785f4d0d.pdf | a5785f4d0d12 | downloaded |
+| 2026-09-10 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_10092026223351_SE_Intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-09-13/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-a8fc14f969.pdf | a8fc14f969d7 | downloaded |
+| 2026-09-10 | NSE | Exchange Filing | Committee Meeting Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_10092026184347_SE_Intimation_signed_1.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-09-13/Committee-Meeting-Updates-627256fdc5.pdf | 627256fdc56f | downloaded |
+| 2026-09-09 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_09092026210609_SE_Intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-09-13/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-8590fb988b.pdf | 8590fb988bd2 | downloaded |

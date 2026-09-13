@@ -101,3 +101,11 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-09-04 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/HAL_04092026133636_RevisedPolicy_04092026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-09-06/Updates-27d1c84b35.pdf | 27d1c84b3557 | downloaded |
 | 2026-08-31 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_31082026182838_Disclosureofmaterialevents.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-09-06/General-Updates-5a53474f6e.pdf | 5a53474f6ed4 | downloaded |
 | 2026-08-31 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/HAL_31082026182352_Voitngresultandscrutinizerreport.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-09-06/Shareholders-meeting-05e5a6d27e.pdf | 05e5a6d27e5a | downloaded |
+
+## Evidence collected 2026-09-13
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-10 | NSE | Exchange Filing | Change in Director(s) | https://nsearchives.nseindia.com/corporate/HAL_10092026174050_changeindirector_signed.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-09-13/Change-in-Director-s-ac3ecd3f25.pdf | ac3ecd3f253d | downloaded |
+| 2026-09-08 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/HAL_08092026150304_AON_ALH_08092026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-09-13/General-Updates-e43d3aa207.pdf | e43d3aa20728 | downloaded |
+| 2026-09-08 | NSE | Exchange Filing | Change in Auditors | https://nsearchives.nseindia.com/corporate/HAL_08092026150146_appointmentstatutoryAuditors.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-09-13/Change-in-Auditors-40232a64dc.pdf | 40232a64dc73 | downloaded |
