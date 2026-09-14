@@ -4,11 +4,11 @@
 Developing
 
 ## Confidence Score
-7.5 / 10
-Justification: Six companies across defence, infrastructure, industrials, and auto all showing strong order pipelines, but LT's confirmed Q4 FY26 data (PAT -3% YoY, EBITDA 10.4% compressed vs "stable" prior characterisation) introduces a real execution quality caveat — the order-to-revenue conversion lag and margin compression at the largest capex EPC player prevents a higher score; all five other companies still confirming demand is real and growing.
+7.3 / 10
+Justification: Revised slightly DOWN from 7.5 — this was the thinnest week for capex-cycle-specific evidence since tracking began: no company reported a fresh order-book figure, guidance update, or capex commitment this period. The only theme-tagged item is HAL's DAC AoN (~₹1,10,000 crore, ~98% Indian-sourcing reiterated) which the Extraction Agent itself classifies as confirming, not incrementing, the prior macro signal; GABRIEL's ₹1,881cr promoter allotment + ₹1,000cr NCD are large in absolute terms but are M&A/treasury capital structure events, explicitly NOT organic capex per the Delta Agent's own classification, and LT's ONGC offshore order sits outside the defined theme taxonomy. The prior LT execution-quality caveat (PAT -3% YoY, EBITDA 10.4%) remains unresolved and uncontradicted this period.
 
 ## Trend Direction
-Stable
+Stable (unchanged — no new corroborating or contradicting evidence at company level this week; still awaiting Q1 FY27 results across the universe)
 
 ## Evidence
 
@@ -29,6 +29,9 @@ Companies mentioning this theme this week:
 | GABRIEL | Investor Presentation (NSE May 27) | 2026-06-22 | Strengthening | High | Total capex plan ₹260-270 crore confirmed: ₹150cr (suspension) + ₹50cr (sunroofs) + ₹60-70cr (fastener plant — entirely new vertical); Genos plant under construction (commercial production Q4 CY26); SK operations already started; aggressive multi-vertical capex signals high management conviction |
 | LT | Analyst Meet | 2026-06-20 | **Negative** | Medium | H1 FY27 explicitly "softer due to execution headwinds"; H2 FY27 recovery dependent on Middle East normalization — external condition outside LT's control; FY27 guidance 10-12% maintained but trajectory now H1 weak/H2 recovery |
 | BEL | Order Win + Investor Meet | 2026-06-19 | Strengthening | High | ₹608 crore Q1 FY27 fresh orders (multi-domain); own capex >₹1,200 crore + R&D ₹2,200 crore FY27 unchanged — BEL capex commitment undisturbed by QRSAM delay |
+| HAL | DAC AoN — Advanced Light Helicopters | 2026-09-08 | Stable | Medium | "Of the total AoNs accorded, approximately 98% of procurements will be made from the Indian Industry" — reiterates, does not increment, the prior domestic-manufacturing macro signal; ~₹1,10,000cr sector-wide, HAL-specific share unquantified |
+| GABRIEL | Preferential Allotment + NCD Filings | 2026-09-10/11 | Stable-to-diverging | High | ₹1,881cr promoter preferential allotment (Mando acquisition, non-cash) + ₹1,000cr unsecured NCD (8.15%, 36-month) — large capital activity but M&A/treasury in nature, not organic manufacturing capex; does not directly extend the prior organic-capex evidence line |
+| LT | Delta Analysis — quiet capex-cycle week | 2026-09-14 | Stable | Low | No new order-book, guidance, or capex disclosure this period; ONGC offshore order (Sept 9) explicitly falls outside the theme's defined keyword taxonomy per the Extraction Agent's own classification |
 
 ## Supporting Data
 
@@ -80,9 +83,10 @@ Companies mentioning this theme this week:
 - Capex cycle is interest-rate sensitive; if RBI raises rates in H2 FY27, some discretionary capex may be deferred
 - JNKINDIA margin pressure (15.2% EBITDA) despite strong order book — capacity constraints could compress margins further
 - LT Lakshya 2031 ROE guidance 16–17% described by analysts as "underwhelming" — management ambition may not translate to shareholder returns at scale
+- **Quiet week, 2026-09-14**: No tracked company reported a new order-book figure, capex commitment, or guidance update this period — the theme is being carried forward on prior evidence rather than fresh confirmation; GABRIEL's large capital raise this week is M&A/treasury, not organic capex, and should not be read as incremental capex-cycle strength without further disclosure on use of proceeds.
 
 ## Corroboration Count
-6 companies this week | 6 companies cumulative (LT negative signal; 5 positive + 1 mixed)
+2 companies this week (HAL, GABRIEL — both weak/tangential: one reiterates a macro figure, one is capital-structure not organic capex) | 6 companies cumulative
 
 ## Last Updated
-2026-06-22
+2026-09-14
