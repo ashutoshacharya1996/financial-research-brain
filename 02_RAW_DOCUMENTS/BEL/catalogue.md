@@ -129,3 +129,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-09-11 | NSE | Exchange Filing | Appointment | https://nsearchives.nseindia.com/corporate/BEL_11092026171507_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-09-13/Appointment-5cd4c024c7.pdf | 5cd4c024c784 | downloaded |
 | 2026-09-08 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/BEL_08092026155034_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-09-13/Updates-8de22d5906.pdf | 8de22d59061e | downloaded |
+
+## Evidence collected 2026-09-20
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-17 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_17092026164308_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-09-20/Bagging-Receiving-of-orders-contracts-cc1bcf82fa.pdf | cc1bcf82fae2 | downloaded |

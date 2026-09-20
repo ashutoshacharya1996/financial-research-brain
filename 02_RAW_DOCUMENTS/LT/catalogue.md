@@ -192,3 +192,12 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-09-09 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/PAM_09092026131822_PressRelease090920261.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-13/Press-Release-95feb70365.pdf | 95feb70365e5 | downloaded |
 | 2026-09-09 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_09092026100141_PressRelease09092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-13/Bagging-Receiving-of-orders-contracts-4179fcfaf6.pdf | 4179fcfaf631 | downloaded |
 | 2026-09-08 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/AB_08092026165958_Reg_30_Newspaper_Publication_of_Notice_08092026sgd.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-13/Copy-of-Newspaper-Publication-d9251603b3.pdf | d9251603b35c | downloaded |
+
+## Evidence collected 2026-09-20
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-18 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/PAM_18092026105408_PressRelease18092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-20/Press-Release-feb1a4460d.pdf | feb1a4460dad | downloaded |
+| 2026-09-17 | NSE | Exchange Filing | Credit Rating | https://nsearchives.nseindia.com/corporate/PAM_17092026142102_ESGRating17092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-20/Credit-Rating-f95358569f.pdf | f95358569f1c | downloaded |
+| 2026-09-16 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_16092026172400_Intimation16092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-20/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-69646ddf2a.pdf | 69646ddf2a31 | downloaded |
+| 2026-09-15 | NSE | Exchange Filing | Allotment of Securities | https://nsearchives.nseindia.com/corporate/PAM_15092026173026_ESOPAllotment15092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-20/Allotment-of-Securities-54d4823020.pdf | 54d48230200c | downloaded |
