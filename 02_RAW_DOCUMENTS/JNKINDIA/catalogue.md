@@ -109,3 +109,10 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-09-11 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_11092026150858_Investor_meeting.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-13/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-0880120cbe.pdf | 0880120cbe94 | downloaded |
+
+## Evidence collected 2026-09-27
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-25 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_25092026152751_covering_letter_and_AGM_proceeding.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-27/Shareholders-meeting-cfabd8a9d5.pdf | cfabd8a9d539 | downloaded |
+| 2026-09-24 | NSE | Exchange Filing | Credit Rating- Revision | https://nsearchives.nseindia.com/corporate/JNKINDIA23_24092026130742_JNK_Reg_30_Disclosure_Revision_of_Credit_rating.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-27/Credit-Rating--Revision-6b460b0b67.pdf | 6b460b0b67b9 | downloaded |

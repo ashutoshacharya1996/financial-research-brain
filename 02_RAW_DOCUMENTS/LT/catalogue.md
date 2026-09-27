@@ -201,3 +201,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-09-17 | NSE | Exchange Filing | Credit Rating | https://nsearchives.nseindia.com/corporate/PAM_17092026142102_ESGRating17092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-20/Credit-Rating-f95358569f.pdf | f95358569f1c | downloaded |
 | 2026-09-16 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_16092026172400_Intimation16092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-20/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-69646ddf2a.pdf | 69646ddf2a31 | downloaded |
 | 2026-09-15 | NSE | Exchange Filing | Allotment of Securities | https://nsearchives.nseindia.com/corporate/PAM_15092026173026_ESOPAllotment15092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-20/Allotment-of-Securities-54d4823020.pdf | 54d48230200c | downloaded |
+
+## Evidence collected 2026-09-27
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-25 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/PAM_25092026164412_Intimation25092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-09-27/Trading-Window-cb5563e359.pdf | cb5563e359d3 | downloaded |
