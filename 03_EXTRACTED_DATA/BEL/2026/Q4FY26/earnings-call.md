@@ -18,10 +18,10 @@ Note: This file supersedes the earlier version of this extraction, which was bui
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
-| Revenue (Q4 only — secondary source, not confirmed verbatim in this transcript) | ₹10,224 crore | Q4 FY26 | +12% YoY (vs ₹9,150 crore Q4 FY25) | Secondary news source (see prior extraction); not stated verbatim in this call |
+| Revenue (Q4 only, consolidated) | ₹10,224.43 crore | Q4 FY26 (31.03.2026) | vs ₹9,149.59 crore Q4 FY25 (31.03.2025); vs ₹7,153.85 crore Q3 FY26 (31.12.2025) | Confirmed from official quarterly results extract — see 03_EXTRACTED_DATA/BEL/2026/Q4FY26/quarterly-results-2026-05-19.md |
 | Revenue (full year, verbatim from CMD) | ₹27,480 crore | FY26 (FY25-26) | +16% YoY (vs ₹23,658 crore FY25) | "the revenue from operations has increased to INR27,480 crores in '25-'26 as compared to INR23,658 crores previous year with a growth of 16%." — Manoj Jain, CMD |
 | Profit Before Tax (full year) | ₹8,075 crore | FY26 | +14% YoY (vs ₹7,090 crore FY25) | "The profit before tax increased to INR8,075 crores in '25-'26 as compared to INR7,090 crores previous year with a growth of 14%." — Manoj Jain |
-| PAT (Q4 only — secondary source) | ₹2,225 crore | Q4 FY26 | +4.6% YoY | Secondary news source (see prior extraction); not stated verbatim in this call |
+| PAT (Q4 only, consolidated) | ₹2,226.35 crore | Q4 FY26 (31.03.2026) | vs ₹2,127.02 crore Q4 FY25 (31.03.2025) | Confirmed from official quarterly results extract — see 03_EXTRACTED_DATA/BEL/2026/Q4FY26/quarterly-results-2026-05-19.md |
 | PAT (full year, verbatim) | ₹6,048 crore | FY26 | +14% YoY (vs ₹5,288 crore FY25) | "The profit after tax increased to INR6,048 crores in '25-'26 as compared to INR5,288 crores in the previous year, with a growth of 14%." — Manoj Jain |
 | EBITDA margin | 30% | FY26 | vs 29% FY25 | "The EBITDA has increased to 30% in '25-'26 as compared to 29% in '24-'25." — Manoj Jain |
 | EPS | ₹8.27 | FY26 | vs ₹7.23 FY25 | "The earnings per share also increased to INR8.27 in '25-'26 as compared to INR7.23 in year '24-'25." — Manoj Jain |
