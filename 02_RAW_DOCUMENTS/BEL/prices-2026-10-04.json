@@ -1,0 +1,16 @@
+{
+  "ticker": "BEL",
+  "company_name": "Bharat Electronics Ltd",
+  "as_of": "2026-10-04",
+  "currency": "INR",
+  "latest_close": 383.1,
+  "latest_open": 385.2,
+  "latest_high": 386.15,
+  "latest_low": 378.65,
+  "volume": 10250149,
+  "fifty_two_week_high": 473.45,
+  "fifty_two_week_low": 378.65,
+  "market_cap": 2800376348672,
+  "pe_ratio": 45.6615,
+  "source": "yfinance:BEL.NS"
+}

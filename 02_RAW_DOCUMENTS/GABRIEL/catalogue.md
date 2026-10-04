@@ -153,3 +153,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-09-24 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/GABRIEL_24092026164311_SE_Intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-09-27/Trading-Window-b8453d4682.pdf | b8453d468296 | downloaded |
 | 2026-09-21 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_21092026180231_SE_Intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-09-27/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-0213e29c17.pdf | 0213e29c1749 | downloaded |
+
+## Evidence collected 2026-10-04
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-02 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/GABRIEL_02102026112554_SE_Intimation.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-04/Copy-of-Newspaper-Publication-c99f9f203c.pdf | c99f9f203c93 | downloaded |

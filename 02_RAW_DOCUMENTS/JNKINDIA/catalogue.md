@@ -116,3 +116,11 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 |---|---|---|---|---|---|---|---|
 | 2026-09-25 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_25092026152751_covering_letter_and_AGM_proceeding.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-27/Shareholders-meeting-cfabd8a9d5.pdf | cfabd8a9d539 | downloaded |
 | 2026-09-24 | NSE | Exchange Filing | Credit Rating- Revision | https://nsearchives.nseindia.com/corporate/JNKINDIA23_24092026130742_JNK_Reg_30_Disclosure_Revision_of_Credit_rating.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-09-27/Credit-Rating--Revision-6b460b0b67.pdf | 6b460b0b67b9 | downloaded |
+
+## Evidence collected 2026-10-04
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-29 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/JNKINDIA23_29092026184058_JNK_Reg_30.PDF | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-10-04/Bagging-Receiving-of-orders-contracts-0db6fdd48f.pdf | 0db6fdd48f56 | downloaded |
+| 2026-09-29 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_29092026160921_JNK_Covering_letter_and_Scrutinizer_Report.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-10-04/Shareholders-meeting-e5954cd624.pdf | e5954cd6245f | downloaded |
+| 2026-09-28 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/JNKINDIA23_28092026161152_JNK_Trading_window_closure_September_2026.PDF | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-10-04/Trading-Window-c3cca2f173.pdf | c3cca2f17372 | downloaded |

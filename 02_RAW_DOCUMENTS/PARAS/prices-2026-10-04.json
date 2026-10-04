@@ -1,0 +1,16 @@
+{
+  "ticker": "PARAS",
+  "company_name": "Paras Defence & Space Technologies Ltd",
+  "as_of": "2026-10-04",
+  "currency": "INR",
+  "latest_close": 1276.0,
+  "latest_open": 1308.0,
+  "latest_high": 1315.0,
+  "latest_low": 1255.0,
+  "volume": 562208,
+  "fifty_two_week_high": 1585.0,
+  "fifty_two_week_low": 580.5,
+  "market_cap": 102990602240,
+  "pe_ratio": 108.858604,
+  "source": "yfinance:PARAS.NS"
+}

@@ -113,3 +113,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-09-24 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_24092026121421_InvestormeetNuvamaCC.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-09-27/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-b587226575.pdf | b5872265752d | downloaded |
+
+## Evidence collected 2026-10-04
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-09-30 | NSE | Exchange Filing | Credit Rating | https://nsearchives.nseindia.com/corporate/PARAS_30092026180526_Reg_30_ICRA.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-10-04/Credit-Rating-c0dd39a25b.pdf | c0dd39a25b5b | downloaded |
+| 2026-09-28 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PARAS_28092026132508_Intimation_DRDO_Order_CC_signed.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-10-04/Bagging-Receiving-of-orders-contracts-6a77f1f561.pdf | 6a77f1f561b7 | downloaded |
