@@ -11,7 +11,7 @@ Quarter: Q1 FY27 (Apr-Jun 2026; quarter ended June 30, 2026)
 Extracted by: Extraction Agent
 Extraction date: 2026-10-05
 
-Note: Two near-identical files collected. This extraction uses the revised filing (2026-08-12, hash ed4c55f390). The original (2026-08-12 hash d4273e90db, dated 2026-08-11 cover letter, local path 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-16/Investor-Presentation-d4273e90db.pdf) differs in cover-letter date/subject and slide-4 chart layout only per text diff; P&L and order-book text matched.
+Note: Two near-identical files collected. This extraction uses the revised filing (hash ed4c55f390; cover letter dated 2026-08-12). The original (hash d4273e90db; cover letter dated 2026-08-11; local path 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-08-16/Investor-Presentation-d4273e90db.pdf) has an identical consolidated P&L, order-book and commentary text, but its Standalone P&L slide shows different figures (Q1 FY27 standalone EBITDA 9.5, PAT -0.8) which the revised filing replaces with the figures extracted here. Standalone figures from the original are NOT used.
 
 ---
 
