@@ -82,3 +82,7 @@
 - **LCA Tejas Mark-1A prior delivery slip:** HAL had originally targeted LCA Mark-1A deliveries in FY26; this slipped to Aug/Sep 2026. Management's Aug/Sep 2026 target is the second iteration — HAL's track record of delivery commitments on LCA is not clean. Revenue recognition for this programme is contingent on physical delivery of aircraft. Source: Earnings Update — HAL — 2026-06-21.
 - **LT H1 FY27 explicitly soft — forward deterioration:** LT management characterised H1 FY27 as "softer due to execution headwinds" with H2 recovery conditional on Middle East normalisation. This extends the execution quality concern (Q4 FY26 PAT -3%) forward in time; it is no longer a one-quarter rear-view risk. Source: Analyst Meet — LT — 2026-06-20.
 - **10-way competition limits MALE UAV win probability:** With 10 qualified bidders and a split-order (L1 + L2 winning ~₹15,000cr each), the expected value for any individual company is materially lower than the ₹30,000cr headline. One winning and one losing is the base case across LT and HAL. Source: MALE UAV Tender Event — 2026-06-16.
+
+---
+## Status 2026-10-05
+See 07_OPPORTUNITIES/weekly/2026-10-05.md. Confidence revised (defence 9.2 to 8.5; capex 7.5 to 7.0).

@@ -79,3 +79,7 @@
 Not required at 7.5/10. Key counter-evidence documented in Risks above and in the linked theme record (`06_THEMES/india-industrial-capex-cycle.md`).
 
 **Most material counter-signal this run:** LT Q4 FY26 PAT -3% YoY + EBITDA margin 10.4% — the largest EPC company in the universe is experiencing margin compression despite record order inflows; order quality (profit-generating) is not tracking order quantity. Watch FY27 Q1 for whether this is a one-quarter anomaly or structural.
+
+---
+## Status 2026-10-05
+See 07_OPPORTUNITIES/weekly/2026-10-05.md. Confidence revised (defence 9.2 to 8.5; capex 7.5 to 7.0).

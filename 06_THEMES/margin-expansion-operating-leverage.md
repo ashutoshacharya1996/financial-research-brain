@@ -67,3 +67,7 @@ None yet — first run at threshold. Eligible for screener consideration.
 
 ## Last Updated
 2026-06-22
+
+---
+## Update 2026-10-05
+Confidence revised to 4.5/10 — see 06_THEMES/theme-run-2026-10-05.md.
