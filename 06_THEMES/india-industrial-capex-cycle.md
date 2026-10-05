@@ -86,3 +86,7 @@ Companies mentioning this theme this week:
 
 ## Last Updated
 2026-06-22
+
+---
+## Update 2026-10-05
+Confidence revised to 7.0/10 — see 06_THEMES/theme-run-2026-10-05.md.

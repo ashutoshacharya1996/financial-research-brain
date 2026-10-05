@@ -75,3 +75,7 @@ None yet — eligible for screener this run (confidence now ≥ 5.0 with confirm
 - Stock +94% YTD 2026 reflects market's pricing of this international thesis
 
 **Confidence revised: 6.5** (from 6.0) — book-to-bill 2.0x and explicit CEO statement on international ambition add quality to what was a single-order signal. Still capped below 7.0 pending a second international order win.
+
+---
+## Update 2026-10-05
+Confidence revised to 5.0/10 — see 06_THEMES/theme-run-2026-10-05.md.
