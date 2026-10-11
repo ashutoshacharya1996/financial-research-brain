@@ -120,3 +120,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-09-30 | NSE | Exchange Filing | Credit Rating | https://nsearchives.nseindia.com/corporate/PARAS_30092026180526_Reg_30_ICRA.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-10-04/Credit-Rating-c0dd39a25b.pdf | c0dd39a25b5b | downloaded |
 | 2026-09-28 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PARAS_28092026132508_Intimation_DRDO_Order_CC_signed.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-10-04/Bagging-Receiving-of-orders-contracts-6a77f1f561.pdf | 6a77f1f561b7 | downloaded |
+
+## Evidence collected 2026-10-11
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-08 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/PARAS_08102026165119_DPCertificate30092026.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-10-11/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-97074d9f59.pdf | 97074d9f5943 | downloaded |

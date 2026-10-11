@@ -159,3 +159,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-10-02 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/GABRIEL_02102026112554_SE_Intimation.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-04/Copy-of-Newspaper-Publication-c99f9f203c.pdf | c99f9f203c93 | downloaded |
+
+## Evidence collected 2026-10-11
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-06 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/GABRIEL_06102026215748_SE_intimation_press_release_final_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-11/Press-Release-d3d18c6ee3.pdf | d3d18c6ee310 | downloaded |
+| 2026-10-06 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_06102026211621_SE_intimation_final_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-11/Outcome-of-Board-Meeting-9888b186b8.pdf | 9888b186b8ac | downloaded |

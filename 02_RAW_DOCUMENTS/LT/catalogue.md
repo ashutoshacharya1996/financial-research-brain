@@ -214,3 +214,11 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-09-30 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PAM_30092026152845_IntimationLTMRHL30092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-04/General-Updates-7b8f981661.pdf | 7b8f981661d4 | downloaded |
 | 2026-09-30 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_30092026121641_PressRelease30092026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-04/Bagging-Receiving-of-orders-contracts-76ba0f15b5.pdf | 76ba0f15b5ec | downloaded |
+
+## Evidence collected 2026-10-11
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-07 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.com/corporate/PAM_07102026212904_IntimationSRMGT07102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-11/Change-in-Management-7628c045a6.pdf | 7628c045a600 | downloaded |
+| 2026-10-07 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_07102026101304_PressRelease07102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-11/Bagging-Receiving-of-orders-contracts-f3f71f9f5d.pdf | f3f71f9f5d6d | downloaded |
+| 2026-10-05 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_05102026093512_PressRelease05102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-11/Bagging-Receiving-of-orders-contracts-e16363dce6.pdf | e16363dce68b | downloaded |
