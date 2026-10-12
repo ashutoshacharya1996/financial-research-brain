@@ -34,6 +34,8 @@ Not stated.
 
 "Paras Semiconductors and MPSeDC will integrate their respective expertise and resources to collaboratively facilitate the establishment of a greenfield advanced IC packaging OSAT facility in Madhya Pradesh."
 
+"The facility will undertake advanced packaging operations including 3D heterogeneous integration, 2.5D/3D advanced packaging, hybrid bonding, ultra-high-density fan-out packaging, chiplet integration, wafer bumping, flip-chip assembly, testing and reliability."
+
 ## Named Catalysts
 
 - MoU between Paras Semiconductors Private Limited (subsidiary of PARAS) and Department of Science and Technology through MP State Electronics Development Corporation (MPSeDC).

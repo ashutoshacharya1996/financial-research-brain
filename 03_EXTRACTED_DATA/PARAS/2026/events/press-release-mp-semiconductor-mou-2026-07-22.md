@@ -34,8 +34,7 @@ Not stated in this release.
 
 ## Management Commentary — Capacity / Expansion
 
-- "Paras Semiconductors will set up a greenfield advanced IC packaging OSAT facility in Indore-Ujjain, Madhya Pradesh" (intimation letter, same date).
-- Scope (release): "The facility will undertake advanced packaging operations including 3D heterogeneous integration, 2.5D/3D advanced packaging, hybrid bonding, ultra-high-density fan-out packaging, chiplet integration, wafer bumping, flip-chip assembly, testing and reliability." (Quoted from intimation letter; the release text lists the same scope in its own words.)
+- Release: "Paras Semiconductor's proposed facility represents a significant step in this direction by combining advanced manufacturing capabilities with ecosystem development."
 - Target products (release): "aims to develop semiconductor devices for sensor technologies, optical and optronic systems, and other strategic applications in the near term."
 - Future optionality (release): "The facility also offers the potential to support future expansion into AI chips and other advanced semiconductor technologies, as market opportunities evolve."
 
