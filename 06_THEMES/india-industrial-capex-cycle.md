@@ -69,11 +69,11 @@ Update 2026-10-12 (source: 04_COMPANY_ANALYSIS/*/delta-2026-10-12-update.md):
 
 ## Linked Opportunities
 
-- `india-industrial-capex-cycle-2026-Q4` — Confidence: 7.5 / Status: Active
+- `india-industrial-capex-cycle-2026-Q4` — Confidence: 5.5 / Status: Monitoring (re-scored 2026-10-12; was 7.5)
 
 ## Research Queue Appearances
 
-18 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6
+24 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6 | 2026-10-12: BEL #1, LT #2, GABRIEL #3, PARAS #4, HAL #5, JNKINDIA #6
 
 ## Potential Losers
 

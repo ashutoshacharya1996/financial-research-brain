@@ -69,11 +69,11 @@ Update 2026-10-12 (Q1 FY27 and Jul-Oct events; source: 04_COMPANY_ANALYSIS/*/del
 
 ## Linked Opportunities
 
-- `defence-electronics-aerospace-2026-Q4` — Confidence: 8.3 / Status: Active
+- `defence-electronics-aerospace-2026-Q4` — Confidence: 6.4 / Status: Monitoring (re-scored 2026-10-12; was 9.0 in the record, 8.3 here)
 
 ## Research Queue Appearances
 
-8 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6
+12 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6 | 2026-10-12: BEL #1, PARAS #4, HAL #5, LT #2 (LT counted via capex/restructuring; defence-silent)
 
 ## Potential Losers
 

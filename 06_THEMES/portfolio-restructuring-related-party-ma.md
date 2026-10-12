@@ -38,11 +38,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-None yet - first tracking run.
+- `portfolio-restructuring-related-party-ma-2026-Q4` — Confidence: 4.9 / Status: Active (created 2026-10-12)
 
 ## Research Queue Appearances
 
-Not yet tracked as a theme (stocks appear under other themes).
+4 — 2026-10-12: GABRIEL #3, LT #2, HAL #5, PARAS #4
 
 ## Potential Losers
 
