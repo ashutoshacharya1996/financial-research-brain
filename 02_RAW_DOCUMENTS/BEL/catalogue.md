@@ -142,3 +142,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-09-30 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/BEL_30092026164929_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-10-04/General-Updates-e4d6d74550.pdf | e4d6d7455097 | downloaded |
 | 2026-09-28 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/BEL_28092026102208_LetterSigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-10-04/Trading-Window-ebd644bc31.pdf | ebd644bc3157 | downloaded |
+
+## Evidence collected 2026-10-18
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-13 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_13102026153239_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-10-18/Bagging-Receiving-of-orders-contracts-cf9229b750.pdf | cf9229b7502b | downloaded |
+| 2026-10-12 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/BEL_12102026173613_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-10-18/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-0909b85ae7.pdf | 0909b85ae7b3 | downloaded |

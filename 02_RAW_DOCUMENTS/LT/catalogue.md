@@ -222,3 +222,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-10-07 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.com/corporate/PAM_07102026212904_IntimationSRMGT07102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-11/Change-in-Management-7628c045a6.pdf | 7628c045a600 | downloaded |
 | 2026-10-07 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_07102026101304_PressRelease07102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-11/Bagging-Receiving-of-orders-contracts-f3f71f9f5d.pdf | f3f71f9f5d6d | downloaded |
 | 2026-10-05 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_05102026093512_PressRelease05102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-11/Bagging-Receiving-of-orders-contracts-e16363dce6.pdf | e16363dce68b | downloaded |
+
+## Evidence collected 2026-10-18
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-16 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_16102026170806_Intimation16102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-18/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-353fd33f12.pdf | 353fd33f127b | downloaded |
+| 2026-10-12 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/PAM_12102026183004_Intimation745Sep2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-18/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-adc4b4596a.pdf | adc4b4596a0c | downloaded |

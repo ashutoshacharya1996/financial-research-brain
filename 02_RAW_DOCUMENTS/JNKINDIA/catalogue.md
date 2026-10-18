@@ -124,3 +124,9 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 | 2026-09-29 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/JNKINDIA23_29092026184058_JNK_Reg_30.PDF | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-10-04/Bagging-Receiving-of-orders-contracts-0db6fdd48f.pdf | 0db6fdd48f56 | downloaded |
 | 2026-09-29 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_29092026160921_JNK_Covering_letter_and_Scrutinizer_Report.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-10-04/Shareholders-meeting-e5954cd624.pdf | e5954cd6245f | downloaded |
 | 2026-09-28 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.com/corporate/JNKINDIA23_28092026161152_JNK_Trading_window_closure_September_2026.PDF | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-10-04/Trading-Window-c3cca2f173.pdf | c3cca2f17372 | downloaded |
+
+## Evidence collected 2026-10-18
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-14 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/JNKINDIA23_14102026173747_JNK_Regulation_74_5__Sep_26_with_letter.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-10-18/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-6b8175be4f.pdf | 6b8175be4f4b | downloaded |
