@@ -54,7 +54,7 @@ Chemdist: "our expectation is that by year-end, we should be able to get it into
 
 "both refinery and fertilizer, the order finalization should happen in Q2, Q3. Yes, that's correct." (p.14)
 
-"exports is about 50%. That is around INR 3,000 crores. So that is mainly on the heating equipment ... the other opportunities are domestic, which is INR 3,000-plus crores. They are mainly more of non-heating equipment kind of a business ... we expect that all this pipeline should get finalized in this financial year." (p.6)
+"the export opportunity is about 50%. That is around INR 3,000 crores. So that is mainly on the heating equipment." "the other opportunities are domestic, which is INR 3,000-plus crores. They are mainly more of non-heating equipment kind of a business." "we expect that all this pipeline should get finalized in this financial year." (p.6)
 
 Dangote: "we were the supplier for the Phase 1. Now Phase 2 is still under the discussion, and we stand a good chance of getting it." (p.5)
 
@@ -74,7 +74,7 @@ BPCL Bina: "the execution would happen this year and next year, both the years u
 
 "Our upcoming avenue are the offshore and metals and minerals industries with a focus also on renewable energy." (p.3)
 
-"in around 3 to 5 years, we want to move this non-heating segment to around 40% of our revenue" — Mr. Dipak Bharuka (p.5)
+"coming to around 3 to 5 years, we want to move this non-heating segment to around 40% of our revenue" — Mr. Dipak Bharuka (p.5)
 
 TAM (India only): "offshore, currently, only in India, the TAM is somewhere around $300 million to $500 million. And in metals and minerals, it is about $500 million to $1 billion." Project size: "around $30 million to $50 million to $60 million kind of a project." (p.9)
 
@@ -118,7 +118,7 @@ Revenue recognition: "it's whatever now we are going on the input method." (p.16
 | Manufacturing / PLI / capex cycle | "Our current overall opportunity pipeline is more than INR 6,000 crores with a broadly balanced 50:50% mix between international and domestic opportunities." | Bullish |
 | Manufacturing / PLI / capex cycle | "we want to move this non-heating segment to around 40% of our revenue" | Neutral (diversification) |
 | EV / energy transition | "hydrogen is a byproduct. So, it's basically from ethanol, we make ethyl acetate and hydrogen is a byproduct." | Bullish |
-| EV / energy transition | "NTPC is also diversifying in some of these fertilizer and renewable fuel ... green ammonia, green hydrogen, green urea" (part of bid pipeline) | Bullish |
+| EV / energy transition | "green ammonia, green hydrogen, green urea. So it is not in the power sector. NTPC is also diversifying in some of these fertilizer and renewable fuel" (part of bid pipeline) | Bullish |
 | Margin expansion / operating leverage | "as the business scales up through the upcoming quarters, we expect the operating leverage to improve meaningfully" (re: Chemdist) | Bullish |
 | Margin expansion / operating leverage | "we maintain our full year EBITDA margin guidance of about 12% to 14%" | Neutral |
 | Working capital improvement | "we should be able to manage the working capital for quite some time now." | Bullish |
