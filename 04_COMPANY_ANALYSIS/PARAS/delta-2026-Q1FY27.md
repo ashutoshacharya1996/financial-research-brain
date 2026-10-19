@@ -113,7 +113,7 @@ No earnings call, presentation or press commentary on Q1 FY27 exists in the evid
 ## Flags
 
 [ ] Guidance revised (up/down) — not revised; not restated either (no call/deck in batch)
-[ ] Auditor / management change — none new in batch (Anushka Munjal Shah appointment as VP-Business Development was a routine senior management addition, skip log 2026-07-24; the Change-in-Auditors filing dated June 22 pre-dates this period and was handled in the June deltas)
+[ ] Auditor / management change — none new in batch (Anushka Munjal Shah appointment as VP-Business Development was a routine senior management addition, skip log 2026-07-24; a Change-in-Auditors filing exists in raw 2026-06-22 but pre-dates this period and was not re-verified here)
 [ ] Promoter pledge change — none found
 [x] New related-party transactions mentioned — YES. (a) Resolution 6, material RPT with Paras Anti-Drone Technologies Pvt Ltd (subsidiary), NOT passed (56.8% against). (b) Resolution 5, Controp-Paras Technologies (associate, Controp Precision Technologies, Israel is co-promoter; Paras holds 30%), limit Rs. 450 crore (about 94% of annual turnover per the notice), passed at 58.57% in favour; linked to L&T CIWS order with Paras Indian Content ~Rs. 293 crore. (c) Board approved both RPTs on 2026-08-07 (results filing). Both appeared only in the skip log and results board-outcome list, not in extracted records. Note: Krasny Paras sale and Powerus licence are explicitly stated as non-related-party in their filings.
 [x] Legal or regulatory mention new this quarter — shareholder defeat of a resolution (corporate-governance event), not a legal proceeding. SEBI depositories certificates and trading-window notices skipped as administrative.
