@@ -82,7 +82,7 @@ No numeric forward guidance in this presentation. Deck states: "Strong addressab
 - "Oil-driven inflation risk amid global trade uncertainty"
 - "Currency and commodity volatility amid shifting rate expectations"
 - "supply chain constraints in the Middle East" (revenue)
-- "credit cost in FS and PP&M"; "increase in credit provisions" (ECL)
+- "credit cost in FS and PP&M"; "higher ECL provisions"
 
 ## Theme Signal Log
 
