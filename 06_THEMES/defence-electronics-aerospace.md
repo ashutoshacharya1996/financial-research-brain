@@ -66,11 +66,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-- `defence-electronics-aerospace-2026-Q4` — Confidence: 8.3 / Status: Active
+- `defence-electronics-aerospace-2026-Q4` — Confidence: 5.5 / Status: Monitoring (re-graded 2026-10-19; was 8.3 then 9.0)
 
 ## Research Queue Appearances
 
-8 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6
+12 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6 | 2026-10-19: LT #1, BEL #2, PARAS #3, HAL #6
 
 ## Potential Losers
 
