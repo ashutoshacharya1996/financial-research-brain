@@ -24,9 +24,9 @@ Note: Text extracted from first 25-30 pages via pdftotext; chart data labels par
 | PAT | ₹ 41 bn (Reported PAT 41.2) | Q1 FY27 | +14% YoY (Q1 FY26 ₹ 36.2 bn) | "Reported PAT 36 41 14%" |
 | Order book | ₹ 7,790 bn as on 30-Jun-26 | 30-Jun-2026 | +27% YoY (₹ 6,128 bn at 30-Jun-25); International 52% of order book | "Order Book 6128 7790 27%" |
 | Order inflows | ₹ 1,080 bn (Domestic 473 / International 607) | Q1 FY27 | +14% YoY (₹ 945 bn) | "Order Inflow 945 1080 14%" |
-| Net working capital | 4.9% of revenue | As on Jun-26 | Jun-25 10.1% (520 bps improvement) | "NWC% TO REVENUE 4.9%" / "520 bps YoY improvement" |
-| ROE (TTM) | 16.1% | As on Jun-26 | Jun-25 17.0%; includes 100 bps Labour Code provision recognised in Q3 FY26 | "Return on Equity 16.1%*" |
-| Cash flow from operations (excl Financial Services) | ₹ 43 bn | Q1 FY27 | Q1 FY26 ₹ 58 bn | "Cash flow from Operations (excl Financial Services business) 58 43" |
+| Net working capital | 4.9% of revenue | As on Jun-26 | Jun-25 10.1% (520 bps improvement) | "NWC% TO REVENUE" ... "4.9%" / "520 bps YoY improvement" |
+| ROE (TTM) | 16.1% | As on Jun-26 | Jun-25 17.0%; includes 100 bps Labour Code provision recognised in Q3 FY26 | "RETURN ON EQUITY" ... "16.1%*" |
+| Cash flow from operations (excl Financial Services) | ₹ 43 bn | Q1 FY27 | Q1 FY26 ₹ 58 bn | "Cash flow from Operations (excl Financial Services business)" with "58 43" |
 | Net Cash from Operations (as reported, group) | ₹ (20.2) bn | Q1 FY27 | Q1 FY26 ₹ 30.5 bn | "Net Cash from / (used in) Operations (A) 30.5 (20.2)" |
 | Cash & current investments (Group) | ₹ 851 bn (Standalone 426) | Jun-26 | Mar-26 ₹ 804 bn | "L&T Group 804 851" |
 | Net Debt / Equity | 0.39 | Jun-26 | Mar-26 0.35; Gross Debt/Equity 1.01 vs 0.95 | "Net Debt / Equity Ratio 0.35 0.39" |
@@ -64,11 +64,11 @@ No numeric forward guidance in this presentation. Deck states: "Strong addressab
 
 - "Further expansion into NCR with acquisition of 20 acres of land in Gurgaon" (Realty)
 - "Divestment of Nabha Power completed on 25-Jun-2026"; "SPA signed to divest LTMRHL stake to Hyderabad Metro Rail Ltd"
-- "LTM issued an offer to acquire Randstad's Technology and Consulting Services business"
+- "LTM issued an offer to acquire Randstad’s Technology and Consulting Services business"
 - "L&T Vyoma partnered with Fortanix to deliver sovereign and secure AI cloud solutions"
 - "Partnership with France-based Exail to make Advanced Unmanned Mine Counter-Measure Suite" (Electronic Products & Systems)
 - "Moody's Ratings assigned 'Baa1' long-term / Stable rating; two notches above Sovereign Rating"
-- Strategic developments slide: "Electronic Products & Systems ... EVR Motors for next-gen EV traction motors" (deck text is garbled; exact wording of the EVR Motors item not reliably extractable)
+- "Electronic Products & Systems business partners with Israel based EVR Motors for next-gen EV traction motors"
 
 ## Named Catalysts
 
@@ -98,7 +98,7 @@ No numeric forward guidance in this presentation. Deck states: "Strong addressab
 | Grid / transmission / power infrastructure | "Energy infrastructure build-out — transition plus energy security" | Bullish (long-term macro view) |
 | EV / energy transition | "Global energy transition and decarbonisation capex" | Bullish (long-term macro view) |
 | Margin expansion / operating leverage | "EBITDA margin was impacted by lower execution levels, forex variation in IT subsidiaries and higher ECL provisions" | Cautious (EBITDA % 9.9% -> 9.0%) |
-| Working capital improvement | "NWC% TO REVENUE 4.9%" with "520 bps YoY improvement" | Bullish |
+| Working capital improvement | "NWC% TO REVENUE" with "4.9%" and "520 bps YoY improvement" | Bullish |
 
 ## Missing Data
 
