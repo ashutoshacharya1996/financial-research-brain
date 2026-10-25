@@ -123,3 +123,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-10-07 | NSE | Exchange Filing | Change in Director(s) | https://nsearchives.nseindia.com/corporate/HAL_07102026153915_ChangeInDirectorate_07102026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-10-11/Change-in-Director-s-b96dd2cc20.pdf | b96dd2cc20fa | downloaded |
+
+## Evidence collected 2026-10-25
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-22 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/HAL_22102026131032_GeneralUpdates22102026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-10-25/Updates-337188ac30.pdf | 337188ac3010 | downloaded |

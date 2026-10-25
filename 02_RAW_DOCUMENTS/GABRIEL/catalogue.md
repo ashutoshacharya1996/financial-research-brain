@@ -166,3 +166,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-10-06 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/GABRIEL_06102026215748_SE_intimation_press_release_final_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-11/Press-Release-d3d18c6ee3.pdf | d3d18c6ee310 | downloaded |
 | 2026-10-06 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/GABRIEL_06102026211621_SE_intimation_final_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-11/Outcome-of-Board-Meeting-9888b186b8.pdf | 9888b186b8ac | downloaded |
+
+## Evidence collected 2026-10-25
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-24 | NSE | Exchange Filing | Record Date | https://nsearchives.nseindia.com/corporate/GABRIEL_24102026194137_SEIntimation_BM_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-25/Record-Date-0816b7b31c.pdf | 0816b7b31cda | downloaded |
+| 2026-10-19 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/GABRIEL_19102026193810_SEIntimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-25/General-Updates-fbb05f435c.pdf | fbb05f435c4e | downloaded |

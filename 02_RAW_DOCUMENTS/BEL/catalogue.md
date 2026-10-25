@@ -149,3 +149,9 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-10-13 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_13102026153239_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-10-18/Bagging-Receiving-of-orders-contracts-cf9229b750.pdf | cf9229b7502b | downloaded |
 | 2026-10-12 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/BEL_12102026173613_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-10-18/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-0909b85ae7.pdf | 0909b85ae7b3 | downloaded |
+
+## Evidence collected 2026-10-25
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-21 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/BEL_21102026181543_Press_release_21102026.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-10-25/Press-Release-7569c0fd7a.pdf | 7569c0fd7ae8 | downloaded |

@@ -229,3 +229,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-10-16 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_16102026170806_Intimation16102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-18/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-353fd33f12.pdf | 353fd33f127b | downloaded |
 | 2026-10-12 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/PAM_12102026183004_Intimation745Sep2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-18/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-adc4b4596a.pdf | adc4b4596a0c | downloaded |
+
+## Evidence collected 2026-10-25
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-21 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_21102026094637_PressRelease21102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-25/Bagging-Receiving-of-orders-contracts-f4ed51842b.pdf | f4ed51842ba3 | downloaded |
+| 2026-10-19 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_19102026101805_PressRelease19102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-25/Bagging-Receiving-of-orders-contracts-a4ecfab786.pdf | a4ecfab7866b | downloaded |
