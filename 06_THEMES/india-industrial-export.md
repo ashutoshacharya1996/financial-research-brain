@@ -1,14 +1,14 @@
 # Theme: India Industrial Export — Manufacturing Beyond IT & Pharma
 
 ## Status
-Emerging
+Declining
 
 ## Confidence Score
-6.0 / 10
-Justification: JNKINDIA's UAE order is now a confirmed regulatory filing (not just a report) — CC7 Emirates / ADNOC / TA'ZIZ Salt Project / ₹100–300cr / December 2027 — moving from "first export win" to "first verified international EPC contract with named ADNOC relationship"; confidence upgrades materially because the ADNOC ecosystem is a high-quality recurring customer (not a spot order) and the full-scope nature (design → commissioning) signals engineering depth; still capped at 6.0 because it remains a 2-company theme and LT's international execution problems are a live counter-signal.
+4.6 / 10
+Justification: The anchor evidence (JNKINDIA UAE/ADNOC order, the basis of the 6.5 score) was cancelled by the client on 2026-07-16, and JNKINDIA's own guidance is now internally conflicting; BEL (USD 465 mn export book) and LT (many Gulf/Europe wins) show real export order flow but with Middle East execution risk, so the theme is damaged, not Broken.
 
 ## Trend Direction
-Accelerating
+Weakening
 
 ## Evidence
 
@@ -57,12 +57,17 @@ None yet — eligible for screener this run (confidence now ≥ 5.0 with confirm
 - JNKINDIA's UAE order: Company's first significant export — unproven international execution capability; December 2027 deadline is 18 months away, many things can go wrong
 - 97.5% of JNKINDIA's order book was domestic as of March 31, 2026 — export is early-stage, not a scaled thesis yet
 - Single reference customer (ADNOC) does not validate the broader GCC/international market; JNKINDIA needs 2–3 more international orders before the export theme is confirmed
+- **JNKINDIA UAE order CANCELLED (2026-07-16):** "the Company has received a communication dated July 16, 2026 from CC7 Emirates Engineering Solutions L.L.C., UAE informing that the aforesaid order stands cancelled." (events/order-cancellation-update-2026-07-16.md). Company: "This will have no impact on declared revenue and associated profit." The only verified international EPC contract behind this theme no longer exists. Value was disclosed only as a Rs 100-300 cr range; cancellation reason not stated.
+- JNKINDIA itself cites "high entry barriers in the industry related to technical approvals and a proven track record" - export entry is harder than the June thesis assumed. Order book fell to Rs 1,801 cr (from Rs 1,961.4 cr).
+- JNKINDIA FY27 guidance is CONFLICTING (call: 20-25% revenue / 12-14% EBITDA vs Aug 14 deck: 25-30% / 14-15%); management said it would "recheck". Not resolved here.
+- LT: release cites "supply chain constraints in the Middle East" and "resurgence of geopolitical tensions in West Asia ... remains key risks"; Q1 revenue +7% vs 10-12% guide. Orders are strong but conversion is the problem.
+- BEL: export book USD 465 mn but internal FY27 guide is only ~USD 300 mn and export is ~10% of revenue as an aspiration; HAL and GABRIEL mentions are single, non-quantified lines.
 
 ## Corroboration Count
-2 companies this week | 2 companies cumulative
+5 companies with some evidence this week (BEL, LT, JNKINDIA, HAL weak, GABRIEL weak) | 6 cumulative. Only BEL and LT carry concrete numbers; the original JNKINDIA proof point is void.
 
 ## Last Updated
-2026-06-22
+2026-10-26
 
 ---
 
@@ -75,3 +80,22 @@ None yet — eligible for screener this run (confidence now ≥ 5.0 with confirm
 - Stock +94% YTD 2026 reflects market's pricing of this international thesis
 
 **Confidence revised: 6.5** (from 6.0) — book-to-bill 2.0x and explicit CEO statement on international ambition add quality to what was a single-order signal. Still capped below 7.0 pending a second international order win.
+
+---
+
+## Update - 2026-10-26 (Q1 FY27 delta run)
+
+**Status change: Emerging -> Declining. Confidence 6.5 -> 4.6. Trend Accelerating -> Weakening.**
+
+| Company | Document | Date | Signal Type | Strength | Quote / Data Point |
+|---|---|---|---|---|---|
+| JNKINDIA | Order cancellation filing | 2026-07-16 | Contradicting | High | "the aforesaid order stands cancelled" (CC7 Emirates / ADNOC TA'ZIZ order of 2026-06-08) |
+| JNKINDIA | Q1 FY27 call | 2026-08 | Mixed | Medium | Pipeline "more than INR 6,000 crores" at "50:50" international/domestic; Nigeria, Ethiopia, USA, Malaysia, Iraq branch; but Sep 28 flare orders are domestic |
+| BEL | Q1 FY27 call | 2026-07-27 | New mention | Medium | "around USD465 million order book"; "aim at 10% of our revenues through export"; internal FY27 guide ~USD 300 mn |
+| LT | Q1 FY27 release/deck | 2026-08 | Mixed | High | Wins at ADNOC, KOC Kuwait, PDO Oman, Dubai RTA, Saudi/UAE PT&D, Europe offshore wind; offset by Middle East supply-chain and West Asia risk language |
+| HAL | Aravalli engine filing | 2026-08-26 | New mention | Low | engine "tailored to ... India and global markets" (single mention) |
+| GABRIEL | Q1 FY27 deck | 2026-07 | New mention | Low | "Focus on Latin American, Australia & African markets for growth in exports." |
+
+Why not Broken: the broader export-order evidence from BEL and LT is real and quantified. Why Declining: the specific JNKINDIA proof was reversed, JNKINDIA's order book shrank and its guidance is contradictory, and LT shows the Middle East region remains an execution problem. The theme's defining customer (ADNOC ecosystem) is gone. Confidence is below 5.0 so it does NOT pass to the screener. Re-test: a second JNKINDIA international order, or BEL export conversion above USD 300 mn.
+
+Open conflicts surfaced, not resolved: JNKINDIA guidance (above); reason for UAE cancellation.

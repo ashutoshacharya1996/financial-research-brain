@@ -4,11 +4,11 @@
 Developing
 
 ## Confidence Score
-9.2 / 10
-Justification: Updated 2026-06-22 (extraction run) — adds BEL GBMES contract (₹1,251 crore, Ministry of Defence, Indian Army, May 5, 2026 — fully indigenous ELINT system designed by DLRL/DRDO, manufactured by BEL). GBMES is the highest-value single disclosed order from BEL's Q1 FY27 period and was not in prior runs. ELINT (Electronic Intelligence) is BEL's most strategically classified product domain — higher margin than routine avionics. Combined with QRSAM (pending July 2026), P-75I, AMCA pipeline, PARAS guidance, and macro production record, the defence electronics thesis now has unprecedented corroboration depth. Capped at 9.2 (not higher) only because QRSAM remains unsigned.
+7.3 / 10
+Justification: Concrete order flow remains broad (BEL seven order releases Rs 4,882 cr, PARAS DRDO Rs 26.59 cr and Rs 293 cr CIWS, HAL DAC AoN ~Rs 1,10,000 cr and Aravalli engine contract) but the June 9.2 rested on QRSAM being signed in July; it is still unfiled at 2026-10-25, BEL's order book fell and its guidance is self-contradictory, HAL gives no management read, and governance flags hit HAL and PARAS.
 
 ## Trend Direction
-Accelerating
+Stable
 
 ## Evidence
 
@@ -48,11 +48,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-- `defence-electronics-aerospace-2026-Q4` — Confidence: 8.3 / Status: Active
+- `defence-electronics-aerospace-2026-Q4` — Confidence: 7.3 / Status: Active (re-validation flag, 2026-10-26)
 
 ## Research Queue Appearances
 
-8 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6
+12 — 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6 | 2026-10-26: BEL #1, LT #2, PARAS #3, HAL #4
 
 ## Potential Losers
 
@@ -74,12 +74,36 @@ Companies mentioning this theme this week:
 - BEL QRSAM timing: Already slipped from Feb/Mar 2026 to July 2026 — one quarter delay; procurement delays are common in Indian defence
 - LT margin compression: Q4 FY26 EBITDA 10.4% and PAT -3% YoY — the execution quality question applies to defence EPC as well as infrastructure
 - MALE UAV: 10-way competition means any single company faces ~10–20% probability of winning; optionality, not certainty
+- **QRSAM still not awarded (open, unresolved):** timelines Feb/Mar 2026 -> Jun-Jul -> July -> "maximum by September", CCS approval pending; no award or CCS filing in extracted data through 2026-10-25. Scope also unresolved (Rs 30,000 cr programme; BEL ~70% = ~Rs 21,000 cr is an analyst estimate; call says QRSAM is ~Rs 30,000 cr of the Rs 55,000 cr guide). Whether QRSAM is in or additive to the Rs 72,258 cr book is open.
+- **BEL conflicting FY27 guidance (open, unresolved):** Q&A "we will cross 28%" and "INR55,000 plus crores" vs closing remark "EBITDA margin 21% to 23%, order inflow of more than INR20,000 crores including QRSAM". Q1 order inflow also conflicting: "INR3,754 crores" vs "INR307 plus crores". Order book Rs 72,258 cr, down from Rs 73,882 cr. Q1 EBITDA margin 25.83%.
+- BEL lost the Netra 2 system-integrator role ("Adani became L1"); large platform orders "will start giving me big turnover after two years".
+- **HAL:** no order book, EBITDA or guidance in Q1 filing; LCA Mark-1A deliveries (Aug/Sep 2026) not evidenced anywhere; HATSOFF 50% acquisition "not at Arm's length"; Reg 17(1)/149(4) board non-compliance; Audit Committee and NRC not validly constituted; AGM votes against two re-appointments (up to 8.56% overall, 41.8% public institutions).
+- **PARAS:** shareholders rejected Res. 6, Rs 150 cr related-party limit with Paras Anti-Drone ("43.1992% in favour; 56.8008% against"); Controp-Paras Rs 450 cr limit passed with 41.4% against; Krasny Paras exit consideration "not finalised"; FY27 30-40% guidance is secondary-sourced only.
+- **LT:** defence evidence faded; MALE UAV outcome unresolved; K9 Vajra-T no update. LT revenue/margin miss: Q1 revenue +7% vs 10-12% guide, margin 9.0%.
 
 ## Corroboration Count
-4 companies this week | 4 companies cumulative
+4 companies this week (BEL, HAL, PARAS, LT fading) | 4 cumulative
 
 ## Last Updated
-2026-06-22 (extraction update)
+2026-10-26
 
 ### New Evidence (extraction run, 2026-06-22)
 | BEL | Press Release — GBMES | 2026-05-05 | Strengthening | High | "BEL has signed a contract with Ministry of Defence valued at Rs. 1251 Crore (excluding taxes) for supply of GBMES system to Indian Army. The GBMES is a totally indigenous, state of the art system designed and developed by DLRL Hyderabad and manufactured by BEL. The networked intelligence system is capable of detecting, classifying & locating all types of radars. The system also intercepts and analyzes all communication signals." |
+
+---
+
+## Update - 2026-10-26 (Q1 FY27 delta run)
+
+**Confidence 9.2 -> 7.3. Status Developing (unchanged). Trend Accelerating -> Stable (mixed).** The June 9.2 was explicitly capped only by unsigned QRSAM; that gap has widened rather than closed, and rule 5 (high conviction must acknowledge counters) now binds harder.
+
+| Company | Document | Date | Signal Type | Strength | Quote / Data Point |
+|---|---|---|---|---|---|
+| BEL | Q1 FY27 call + results | 2026-07-27/28 | Mixed | High | Revenue Rs 5,533 cr +25.27% YoY; PAT +8.17%; EBITDA 25.83%; order book Rs 72,258 cr; "maximum by September ... CCS only is waiting" for QRSAM |
+| BEL | Order-win releases | 2026-07-13 to 2026-10-21 | Strengthening | Medium | Seven releases totalling Rs 4,882 cr (latest Rs 1,011 cr, 21 Oct) vs FY27 guide Rs 55,000 cr (guide itself conflicting) |
+| BEL | Q1 FY27 call | 2026-07-27 | New mention | Medium | Project Kusha "INR40,000 plus crores"; Shatrughat/Samaghat ~Rs 9,000 cr; HAMMER ~Rs 2,500 cr; Shakti Ph4 ~Rs 2,000 cr; AMCA RFP "27th August 2026" (management views, unverified) |
+| HAL | Q1 FY27 results | 2026-08 | Stable | Medium | Revenue Rs 5,51,528 lakh +14.4% YoY vs 10-12% FY27 guide; PAT/revenue 28.7% |
+| HAL | DAC AoN / Aravalli | 2026-08-26 to 09-08 | Strengthening | Medium | AoN ~Rs 1,10,000 cr incl. ALH, "approximately 98% of procurements will be made from the Indian Industry"; Aravalli engine to power IMRH |
+| PARAS | Q1 FY27 results + events | 2026-07 to 09 | Strengthening | Medium | Revenue Rs 11,808 lakh +35% YoY; DRDO order ~Rs 26.59 cr; Controp-Paras/L&T CIWS ~Rs 293 cr |
+| LT | Q1 FY27 release | 2026-08 | Fading | Low | Defence only a macro line ("Strategic self-reliance (Atmanirbhar Bharat) in manufacturing and defence") |
+
+Beneficiary read is unchanged in direction, but the best-evidenced beneficiary of the near-term catalyst (BEL) now has an unfiled catalyst, a lower order book and conflicting guidance. HAL evidence is event-flow only. These conflicts are surfaced, not resolved.

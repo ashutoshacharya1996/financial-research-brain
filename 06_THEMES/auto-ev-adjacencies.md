@@ -4,11 +4,11 @@
 Emerging
 
 ## Confidence Score
-7.0 / 10
-Justification: This run unlocks the first concrete operational numbers on Gabriel's EV pivot — EV two-wheelers +30% YoY confirmed, Inalfa Gabriel sunroof JV delivering FY26 revenue ₹434 crore at 15.1% EBITDA margin (above management's own 12–14% target), ~170,000 sunroofs sold, Mahindra and Mobis confirmed as new OEM customers, Genos plant construction underway (commercial production Q4 CY26), and solar dampers and lubricants JVs both active; GABRIEL has crossed from "strategic intent with capex committed" to "operational business delivering above-guidance margins"; the cap to 7.0 is that JNKINDIA's green hydrogen signal remains unconfirmed, Mahindra/Mobis order values are undisclosed, and Q4 FY26 saw a ramp-up issue in the sunroof JV suggesting execution is not fully smooth.
+5.0 / 10
+Justification: GABRIEL's EV data is still positive (E2W share 57%, 2W/3W sales +21%, LOIs from TVSM, Suzuki, HMSI, M&M 2W, Sierra EV SOP) but tone is cooler, margins fell, the group story pivoted to debt-funded M&A and ADAS, and the second company (JNKINDIA green hydrogen) is loss-making at Chemdist with only ~Rs 50 cr of execution.
 
 ## Trend Direction
-Accelerating
+Weakening
 
 ## Evidence
 
@@ -40,7 +40,7 @@ None yet — first tracking run.
 
 ## Research Queue Appearances
 
-1 — 2026-06-22: GABRIEL #3
+2 — 2026-06-22: GABRIEL #3 | 2026-10-26: GABRIEL #5
 
 ## Potential Losers
 
@@ -61,9 +61,25 @@ None yet — first tracking run.
 - Sunroofs and solar dampers are not pure EV products — they appear on ICE vehicles too; the "EV adjacency" framing may be overstated
 - JNK India's green hydrogen signal is very early — no orders confirmed; "mentioned" ≠ "ordered"
 - EV penetration in India remains below 5% of total new vehicle sales — domestic EV transition is slower than management narratives suggest
+- GABRIEL margins fell (standalone 8.4% vs 9.3%) and no management commentary exists for Q1; the 15.1% sunroof JV margin from June is not updated in the delta. Passenger-vehicle sales only +5.5%.
+- Organic EV adjacencies (Genos, fastener plant, lubricants JV) are not mentioned in current files; the Rs 1,881 cr share-funded HL Mando Anand deal, HL Klemove India (USD 98.44 mn), FORVIA seating JV and Rs 1,000 cr NCD at 8.15% shift the story to M&A. CRISIL names debt-funded acquisitions above 2.5x as a downward rating factor.
+- JNKINDIA Chemdist operating loss ~Rs 3.6 cr; green hydrogen execution "about INR 50 crores"; breakeven "by year-end" is a forward claim.
 
 ## Corroboration Count
-2 companies this week | 2 companies cumulative
+2 companies this week (GABRIEL, JNKINDIA) | 2 cumulative; effectively a single-company theme with one weak corroborator
 
 ## Last Updated
-2026-06-22
+2026-10-26
+
+---
+
+## Update - 2026-10-26 (Q1 FY27 delta run)
+
+**Confidence 7.0 -> 5.0. Status Emerging (unchanged). Trend Accelerating -> Weakening.**
+
+| Company | Document | Date | Signal Type | Strength | Quote / Data Point |
+|---|---|---|---|---|---|
+| GABRIEL | Q1 FY27 deck | 2026-07/08 | Stable | Medium | "GIL E2W market share at 57% in Q1 FY27"; "SOP commenced for FSD supplies Sierra EV"; "LOI from TVSM, Suzuki, HMSI & M&M 2W"; AVAS for EVs via HL Klemove |
+| JNKINDIA | Q1 FY27 call | 2026-08 | Stable | Low | Green hydrogen execution "about INR 50 crores"; Chemdist 10-15% of revenue "this financial year or next couple of years" |
+
+Broader energy-transition evidence (LT HVDC, offshore wind, BESS) is tracked in the new energy-transition-grid-power theme, not here. Sits exactly at the 5.0 screener threshold; no upgrade without a second auto-component company.

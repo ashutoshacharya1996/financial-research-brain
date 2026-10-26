@@ -1,14 +1,14 @@
 # Theme: Indian Industrial Mid-Cap Margin Expansion & Operating Leverage
 
 ## Status
-Emerging
+Broken
 
 ## Confidence Score
-6.5 / 10
-Justification: Gabriel's sunroof JV now producing concrete above-guidance margin data (15.1% FY26 vs 12-14% target) on ₹434 crore revenue — the margin expansion thesis is no longer a projection but a Year-1 operational reality; PARAS issued first-ever revenue guidance (30-40% FY27-28 "while maintaining or growing profitability") implying explicit margin leverage alongside revenue growth; corroboration count unchanged at 2 companies but evidence quality has increased substantially — from projections to confirmed operational numbers for GABRIEL and from no-guidance to first guidance for PARAS; cap to 6.5 because the theme still needs 1-2 more companies and GABRIEL has a Q4 ramp-up issue that must be watched.
+2.0 / 10
+Justification: All primary evidence companies now contradict the thesis: GABRIEL (the core case) printed standalone EBITDA margin 8.4% vs 9.3% and consolidated 8.7% vs 9.8%, and BEL, LT and JNKINDIA margins all fell; PARAS is unobservable (no EBITDA or commentary).
 
 ## Trend Direction
-Accelerating
+Weakening
 
 ## Evidence
 
@@ -61,9 +61,28 @@ None yet — first run at threshold. Eligible for screener consideration.
 - PARAS: PAT leverage (+89% vs +58% revenue) may reflect non-operational items (tax benefit, lower interest) rather than true operating leverage; no earnings call to clarify
 - Only 2 companies — below what's needed for a structurally confirmed theme; needs 2–3 more mid-cap industrials showing the same pattern before the theme has standalone conviction
 - LT is a counter-case at scale: margin compression at ₹82,762 crore quarterly revenue despite massive order book — operating leverage is not automatic
+- **BROKEN 2026-10-26.** GABRIEL standalone EBITDA 8.4% vs 9.3% year ago on revenue +18.9%; consolidated 8.7% vs 9.8%. CRISIL: margin pressure from "commodity cost inflation, lag in pass-through of raw material cost increases and the inclusion of relatively lower-margin businesses acquired under Project Rise". Motilal's 55% PAT CAGR was set before the debt-funded HL Mando/Klemove/NCD structure and is not restated anywhere (status unknown).
+- JNKINDIA EBITDA 11.8% vs 15.2% in Q4 FY26; "maintained" is a YoY framing only. BEL 25.83% vs ~29% FY26 (mgmt cites 25-31% quarterly band, wage revision from Jan 2027). LT group margin 9.0%, -90 bps, plus higher credit provisions.
+- PARAS: derived PBT/revenue fell 27.8% to 24.1% QoQ (proxy only); the 30-40% growth guidance "while maintaining or growing profitability" is secondary-sourced and unrestated.
 
 ## Corroboration Count
-2 companies this week | 2 companies cumulative
+0 companies supporting this quarter; 4 companies contradicting (GABRIEL, JNKINDIA, BEL, LT); 1 unobservable (PARAS) | 5 cumulative. Broken as of 2026-10-26.
 
 ## Last Updated
-2026-06-22
+2026-10-26
+
+---
+
+## Update - 2026-10-26 (Q1 FY27 delta run) - THEME BROKEN
+
+**Status change: Emerging -> Broken (date broken: 2026-10-26). Confidence 6.5 -> 2.0. Trend Accelerating -> Weakening.**
+
+| Company | Document | Date | Signal Type | Strength | Quote / Data Point |
+|---|---|---|---|---|---|
+| GABRIEL | Q1 FY27 deck / CRISIL | 2026-07/08 | Contradicting | High | Standalone EBITDA 8.4% vs 9.3%; consolidated 8.7% vs 9.8%; "CORE 90 (COST REDUCTION IN 90 DAYS)" programme; sunroof JV Q1 margin not cited in the delta |
+| JNKINDIA | Q1 FY27 call | 2026-08 | Contradicting | High | EBITDA 11.8% vs 15.2% Q4; "we expect the operating leverage to improve meaningfully" (forward-dated) |
+| BEL | Q1 FY27 call | 2026-07-27 | Contradicting | High | "The EBITDA margin up to Q1 is 25.83%." vs FY26 ~29%; "due to product mix variation, not due to input cost" |
+| LT | Q1 FY27 release | 2026-08 | Contradicting | High | EBITDA margin 9.0%, -90 bps; "increase in credit provisions on account of expected delays in collection of receivables" |
+| PARAS | Q1 FY27 board outcome | 2026-08 | Unobservable | Low | "Margins: Not stated in this document."; revenue +35% YoY but PBT -18% QoQ |
+
+Lesson (kept as learning data): operating leverage was inferred from guidance and PAT-vs-revenue growth in Q4 FY26/June 2026; Q1 FY27 actuals show revenue growth is not converting into margin. Open conflict carried: BEL FY27 EBITDA guidance is stated as 28% in Q&A and "21% to 23%" in the closing remark; not resolved. Do not pass to the screener.
