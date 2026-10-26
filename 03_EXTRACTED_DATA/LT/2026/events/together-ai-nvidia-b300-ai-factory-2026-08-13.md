@@ -17,14 +17,14 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| GPU capacity | 10,000 B300 NVIDIA GPUs | Chennai campus | — | "with capacity of 10,000 B300 NVIDIA GPUs, will be hosted at Vyoma’s Chennai data centre" |
+| Data centre campus Phase 1 | 250 MW; power readiness 150 MVA | Chennai | — | "Phase 1 designed for 250 MW and power infrastructure readiness of 150 MVA" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| GPU capacity | 10,000 B300 NVIDIA GPUs | Chennai campus | — | "with capacity of 10,000 B300 NVIDIA GPUs, will be hosted at Vyoma’s Chennai data centre" |
-| Data centre campus Phase 1 | 250 MW; power readiness 150 MVA | Chennai | — | "Phase 1 designed for 250 MW and power infrastructure readiness of 150 MVA" |
 
 ## Guidance
 

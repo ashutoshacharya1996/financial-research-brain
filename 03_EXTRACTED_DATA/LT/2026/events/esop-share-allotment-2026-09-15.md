@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Equity shares allotted (ESOP) | 28,903 | 2026-09-15 | — | "approved allotment of 28,903 (Twenty Eight Thousand Nine Hundred Three Only) equity shares" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Equity shares allotted (ESOP) | 28,903 | 2026-09-15 | — | "approved allotment of 28,903 (Twenty Eight Thousand Nine Hundred Three Only) equity shares" |
 
 ## Guidance
 

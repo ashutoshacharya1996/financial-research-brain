@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Niche99 ESG score | 63 (category "Performer") | Assigned 2026-09-15 | — | "has assigned the Company’s a ESG score of “63” under “Performer” category" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Niche99 ESG score | 63 (category "Performer") | Assigned 2026-09-15 | — | "has assigned the Company’s a ESG score of “63” under “Performer” category" |
 
 ## Guidance
 

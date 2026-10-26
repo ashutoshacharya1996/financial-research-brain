@@ -46,7 +46,7 @@ None stated in this document.
 
 ## Named Risks
 
-- Second timeline extension: previously "revised to September 30, 2026" (intimation 2026-07-01)
+- Second timeline extension in 2026 (previous completion date was September 30, 2026 per the 2026-07-01 intimation, not in this document)
 
 ## Theme Signal Log
 

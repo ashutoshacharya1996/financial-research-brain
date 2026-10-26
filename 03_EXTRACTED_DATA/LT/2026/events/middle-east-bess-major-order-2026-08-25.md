@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Storage capacity (three BESS projects) | 6 GWh | Project | — | "The three projects will collectively contribute to 6 gigawatt-hour of storage capacity" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Storage capacity (three BESS projects) | 6 GWh | Project | — | "The three projects will collectively contribute to 6 gigawatt-hour of storage capacity" |
 
 ## Guidance
 

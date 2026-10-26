@@ -17,9 +17,6 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
-| PAT | | | | |
-| Order inflows | | | | |
-| Capex | | | | |
 | Revenue (₹ bn) | 679 | Q1 FY27 | +7% YoY (637 in Q1 FY26) | "Revenue 637 679 7%" |
 | EBITDA margin | 9.0% | Q1 FY27 | vs 9.9% Q1 FY26 | "EBITDA % 9.9% 9.0%" |
 | Reported PAT (₹ bn) | 41 | Q1 FY27 | +14% YoY (36 in Q1 FY26) | "Reported PAT 36 41 14%" |
@@ -27,9 +24,12 @@ Extraction date: 2026-10-26
 | Order inflow (₹ bn) | 1,080 | Q1 FY27 | +14% YoY (945 in Q1 FY26) | "Order Inflow 945 1080 14%" |
 | Order book - international share | 52% | As on 30-Jun-2026 | — | "International orders constitute 52% of the Order Book" |
 | Net working capital % to revenue | 4.9% | As on Jun'26 | from 10.1% as on Jun'25 | "Net Working Capital 10.1% 4.9%" and "520 bps YoY improvement" |
-| Cash flow from operations (excl. FS, ₹ bn) | 43 | Q1 FY27 | vs 58 Q1 FY26 | "Cash flow from Operations (excl Financial Services business) 58 43" |
+| Cash flow from operations (excl. FS, ₹ bn) | 43 | Q1 FY27 | vs 58 Q1 FY26 | "Cash flow from Operations (excl Financial Services business)" (Q1 FY26 58; Q1 FY27 43) |
 | Net investment in fixed assets (₹ bn) | (9.6) | Q1 FY27 | vs (13.2) Q1 FY26 | "Net Investment in Fixed Assets (incl. Intangible & Investment Property) (13.2) (9.6)" |
 | Financial Services loan book (₹ bn) | 1,296.3 | As on 30-Jun-26 | +27% YoY (1,023.1) | "1023.1 Book 1296.3 27%" |
+| PAT | | | | |
+| Order inflows | | | | |
+| Capex | | | | |
 
 ## Guidance
 

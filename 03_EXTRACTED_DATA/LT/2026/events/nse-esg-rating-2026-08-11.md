@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| NSE Ratings ESG score | 62 (category "Adequate") | Assigned 2026-08-10 | from 59 (FY2025) | "has on August 10, 2026, has assigned an ESG score of “62” with rating category “Adequate” to the Company (FY2025: ESG score 59)." |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| NSE Ratings ESG score | 62 (category "Adequate") | Assigned 2026-08-10 | from 59 (FY2025) | "has on August 10, 2026, has assigned an ESG score of “62” with rating category “Adequate” to the Company (FY2025: ESG score 59)." |
 
 ## Guidance
 

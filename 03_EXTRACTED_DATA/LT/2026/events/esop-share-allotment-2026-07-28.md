@@ -7,7 +7,7 @@ Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: None
 Date: 2026-07-28
-Quarter: Non-quarterly event (Q1 FY27)
+Quarter: Non-quarterly event (Q2 FY27)
 Extracted by: Extraction Agent
 Extraction date: 2026-10-26
 
@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Equity shares allotted (ESOP) | 1,36,908 | 2026-07-28 | — | "approved allotment of 1,36,908 (One Lakh Thirty Six Thousand Nine Hundred Eight) equity shares today" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Equity shares allotted (ESOP) | 1,36,908 | 2026-07-28 | — | "approved allotment of 1,36,908 (One Lakh Thirty Six Thousand Nine Hundred Eight) equity shares today" |
 
 ## Guidance
 

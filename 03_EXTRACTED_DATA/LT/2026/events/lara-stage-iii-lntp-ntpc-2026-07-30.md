@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Plant capacity (order scope) | 2x800 MW (1,600 MW) | Project | — | "Once commissioned, the plant will add 1,600 MW of reliable baseload generation capacity to India’s grid" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Plant capacity (order scope) | 2x800 MW (1,600 MW) | Project | — | "Once commissioned, the plant will add 1,600 MW of reliable baseload generation capacity to India’s grid" |
 
 ## Guidance
 

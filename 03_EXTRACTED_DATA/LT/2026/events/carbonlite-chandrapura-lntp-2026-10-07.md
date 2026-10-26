@@ -7,7 +7,7 @@ Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: None
 Date: 2026-10-07
-Quarter: Non-quarterly event (Q2 FY27)
+Quarter: Non-quarterly event (Q3 FY27)
 Extracted by: Extraction Agent
 Extraction date: 2026-10-26
 
@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Plant capacity (order scope) | 2x800 MW | Project | — | "the 2x800 MW Chandrapura thermal power plant in Jharkhand" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Plant capacity (order scope) | 2x800 MW | Project | — | "the 2x800 MW Chandrapura thermal power plant in Jharkhand" |
 
 ## Guidance
 

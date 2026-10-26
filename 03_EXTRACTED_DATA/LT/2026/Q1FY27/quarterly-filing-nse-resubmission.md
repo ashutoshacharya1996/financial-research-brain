@@ -19,12 +19,12 @@ Note: Letter states the original results PDF (32 pages) was accepted by both exc
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
-| EBITDA margin | | | | |
-| Capex | | | | |
 | Revenue (₹ crore) | 67,942 | Q1 FY27 | +7% YoY | "Revenues at ₹ 67,942 crore, up 7%" |
 | PAT (₹ crore) | 4,123 | Q1 FY27 | +14% YoY | "PAT at ₹ 4,123 crore, up 14%" |
 | Order inflows (₹ crore) | 108,014 | Q1 FY27 | +14% YoY | "Group Order Inflows at ₹ 108,014 crore, up 14%" |
 | Order book (₹ crore) | 778,954 | As on 30-Jun-2026 | +5% vs Mar'26 | "The Group’s consolidated order book as on June 30, 2026, was at ₹ 778,954 crore" |
+| EBITDA margin | | | | |
+| Capex | | | | |
 
 ## Guidance
 

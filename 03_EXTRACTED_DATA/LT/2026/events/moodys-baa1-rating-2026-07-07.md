@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Long-term issuer rating (Moody's) | Baa1, Stable outlook | Assigned 2026-07-06 | — | "assigned “Baa1” long-term issuer ratings with “Stable” Outlook to the Company" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Long-term issuer rating (Moody's) | Baa1, Stable outlook | Assigned 2026-07-06 | — | "assigned “Baa1” long-term issuer ratings with “Stable” Outlook to the Company" |
 
 ## Guidance
 

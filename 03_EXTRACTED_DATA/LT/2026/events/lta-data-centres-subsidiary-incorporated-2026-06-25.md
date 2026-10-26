@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Subscribed capital of new entity | Rs. 1,00,000/- | Incorporated 2026-06-20 | — | "Subscribed Capital: Entire share capital of Rs. 1,00,000 is subscribed by Vyoma.AI Limited" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Subscribed capital of new entity | Rs. 1,00,000/- | Incorporated 2026-06-20 | — | "Subscribed Capital: Entire share capital of Rs. 1,00,000 is subscribed by Vyoma.AI Limited" |
 
 ## Guidance
 

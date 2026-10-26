@@ -17,14 +17,14 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| India Ratings NCD rating | IND AAA, Stable | Affirmed 2026-09-01 | — | "has affirmed Larsen & Toubro Limited’s (L&T) Non-Convertible Debentures (NCDs) credit rating of ‘IND AAA’ with a Stable Outlook" |
+| India Ratings CP rating | IND A1+ | Affirmed 2026-09-01 | — | "Commercial Paper credit rating of ‘IND A1+’" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| India Ratings NCD rating | IND AAA, Stable | Affirmed 2026-09-01 | — | "has affirmed Larsen & Toubro Limited’s (L&T) Non-Convertible Debentures (NCDs) credit rating of ‘IND AAA’ with a Stable Outlook" |
-| India Ratings CP rating | IND A1+ | Affirmed 2026-09-01 | — | "Commercial Paper credit rating of ‘IND A1+’" |
 
 ## Guidance
 

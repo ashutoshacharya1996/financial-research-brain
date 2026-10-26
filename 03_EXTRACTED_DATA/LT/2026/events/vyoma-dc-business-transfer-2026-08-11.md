@@ -17,16 +17,16 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Consideration: DC business slump sale | ₹1,400 crore (subject to closing adjustments) | Agreement 2026-08-11 | — | "for an aggregate consideration of ₹1,400 crore, subject to closing adjustments, to be discharged by issue of fully paid equity shares of Vyoma" |
+| Consideration: LTNSPL share sale | ₹30 crore (subject to closing adjustments) | Agreement 2026-08-11 | — | "for a consideration of ₹30 crore, subject to closing adjustments" |
+| DC business revenue (standalone) | 36.6 crore (0.025% of L&T standalone revenue) | FY 2025-26 | — | "DataCenter Business 36.6 0.025%" |
+| DC business net worth | 1,142 crore (1.565% of standalone networth) | FY 2025-26 | — | "DataCenter Business 1,142 1.565%" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Consideration: DC business slump sale | ₹1,400 crore (subject to closing adjustments) | Agreement 2026-08-11 | — | "for an aggregate consideration of ₹1,400 crore, subject to closing adjustments, to be discharged by issue of fully paid equity shares of Vyoma" |
-| Consideration: LTNSPL share sale | ₹30 crore (subject to closing adjustments) | Agreement 2026-08-11 | — | "for a consideration of ₹30 crore, subject to closing adjustments" |
-| DC business revenue (standalone) | 36.6 crore (0.025% of L&T standalone revenue) | FY 2025-26 | — | "DataCenter Business 36.6 0.025%" |
-| DC business net worth | 1,142 crore (1.565% of standalone networth) | FY 2025-26 | — | "DataCenter Business 1,142 1.565%" |
 
 ## Guidance
 
@@ -46,7 +46,7 @@ None stated in this document.
 
 ## Named Catalysts
 
-- "Expected date of completion of sale/disposal: On or before October 31, 2026"
+- Expected completion of sale/disposal: "On or before October 31, 2026"
 
 ## Named Risks
 

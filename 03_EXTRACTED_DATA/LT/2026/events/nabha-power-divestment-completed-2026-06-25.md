@@ -17,14 +17,14 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Divestment consideration received | ₹ 3,632.35 crores (consequent to adjustments at closing) | Closing 2026-06-25 | — | "L&T PDL has received a consideration of ₹ 3,632.35 crores (consequent to adjustments at closing)." |
+| Residual holding (NCRPS in NPL) | ₹ 157.92 crores (book value) | As on 2026-03-31 | — | "recorded in the books of accounts of Nabha Power Limited at a value of ₹ 157.92 crores as on March 31, 2026." |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Divestment consideration received | ₹ 3,632.35 crores (consequent to adjustments at closing) | Closing 2026-06-25 | — | "L&T PDL has received a consideration of ₹ 3,632.35 crores (consequent to adjustments at closing)." |
-| Residual holding (NCRPS in NPL) | ₹ 157.92 crores (book value) | As on 2026-03-31 | — | "recorded in the books of accounts of Nabha Power Limited at a value of ₹ 157.92 crores as on March 31, 2026." |
 
 ## Guidance
 

@@ -17,7 +17,6 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
-| Capex | | | | |
 | Revenue (₹ crore) | 67,942 | Q1 FY27 | +7% YoY (63,679 Q1 FY26) | "Revenues at ₹ 67,942 crore, up 7%" |
 | EBITDA (₹ crore) | 6,116 | Q1 FY27 | -3% YoY (6,318 Q1 FY26) | "EBITDA 6,318 6,116 (3%)" |
 | EBITDA margin | 9.0% | Q1 FY27 | vs 9.9% Q1 FY26 | "EBITDA % 9.9% 9.0%" |
@@ -26,6 +25,7 @@ Extraction date: 2026-10-26
 | Order inflows (₹ crore, Group) | 108,014 | Q1 FY27 | +14% YoY (94,453 Q1 FY26) | "The Company secured orders worth ₹ 108,014 crore, registering a y-o-y growth of 14% for the quarter ended June 30, 2026." |
 | International revenue share | 51% (₹ 34,393 crore) | Q1 FY27 | vs 52% Q1 FY26 | "International revenues stood at ₹ 34,393 crore, contributing 51% of the Company’s total revenues." |
 | Financial Services loan book (₹ crore) | 129,634 | As on 30-Jun-2026 | +6% vs Mar-26 (121,728) | "The total Loan Book stood at ₹ 129,634 crore as on June 30, 2026, reflecting a 6% growth compared to March 2026" |
+| Capex | | | | |
 
 ## Guidance
 

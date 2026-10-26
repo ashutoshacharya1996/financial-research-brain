@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| CRISIL ESG score | 67 (category "Strong") | Revised 2026-06-23 | from 62 | "has on June 23, 2026, has revised the Company’s ESG score from “CRISIL ESG 62” to “CRISIL ESG 67” under the category “Strong”." |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| CRISIL ESG score | 67 (category "Strong") | Revised 2026-06-23 | from 62 | "has on June 23, 2026, has revised the Company’s ESG score from “CRISIL ESG 62” to “CRISIL ESG 67” under the category “Strong”." |
 
 ## Guidance
 

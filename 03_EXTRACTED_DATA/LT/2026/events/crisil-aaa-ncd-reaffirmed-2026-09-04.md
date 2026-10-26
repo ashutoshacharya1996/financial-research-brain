@@ -17,14 +17,14 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| CRISIL NCD rating | CRISIL AAA, Stable | Reaffirmed 2026-09-03 | — | "reaffirmed Larsen & Toubro Limited’s (L&T) Non-Convertible Debentures (NCDs) credit rating of ‘CRISIL AAA’ with a Stable Outlook." |
+| CRISIL bank loans / FDs | CRISIL AAA/Stable | Reaffirmed 2026-09-03 | — | "reaffirmed the ratings of the Company's bank loan facilities and fixed deposits at 'CRISIL AAA/Stable' and its commercial paper rating at 'CRISIL A1+'." |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| CRISIL NCD rating | CRISIL AAA, Stable | Reaffirmed 2026-09-03 | — | "reaffirmed Larsen & Toubro Limited’s (L&T) Non-Convertible Debentures (NCDs) credit rating of ‘CRISIL AAA’ with a Stable Outlook." |
-| CRISIL bank loans / FDs | CRISIL AAA/Stable | Reaffirmed 2026-09-03 | — | "reaffirmed the ratings of the Company's bank loan facilities and fixed deposits at 'CRISIL AAA/Stable' and its commercial paper rating at 'CRISIL A1+'." |
 
 ## Guidance
 

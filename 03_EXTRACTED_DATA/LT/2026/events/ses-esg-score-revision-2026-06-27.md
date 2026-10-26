@@ -19,13 +19,13 @@ Note: Date discrepancy: letter is dated June 27, 2026 and states the revision wa
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| SES ESG score | 69.8 | Revised 2026-06-24 | from 71.3 | "revised the Company’s ESG score from “71.3” to “69.8”" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| SES ESG score | 69.8 | Revised 2026-06-24 | from 71.3 | "revised the Company’s ESG score from “71.3” to “69.8”" |
 
 ## Guidance
 

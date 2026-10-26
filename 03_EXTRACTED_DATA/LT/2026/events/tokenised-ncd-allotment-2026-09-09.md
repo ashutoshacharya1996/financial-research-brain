@@ -17,14 +17,14 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| NCD issue size | ₹500 crore (50,000 NCDs of ₹1 lakh each) | Allotted 2026-09-09 | — | "the Company has today allotted 50,000, 7.40% Listed, Rated, Unsecured, Redeemable, Non-Convertible Tokenised Debentures of a face value of ₹1 lakh each (the “NCDs”) aggregating to ₹500 crore" |
+| NCD coupon | 7.40% p.a. (annual payment) | Maturity 2029-09-09 | — | "The said NCDs would mature on September 9, 2029 and the interest would be paid on an annual basis." |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| NCD issue size | ₹500 crore (50,000 NCDs of ₹1 lakh each) | Allotted 2026-09-09 | — | "the Company has today allotted 50,000, 7.40% Listed, Rated, Unsecured, Redeemable, Non-Convertible Tokenised Debentures of a face value of ₹1 lakh each (the “NCDs”) aggregating to ₹500 crore" |
-| NCD coupon | 7.40% p.a. (annual payment) | Maturity 2029-09-09 | — | "The said NCDs would mature on September 9, 2029 and the interest would be paid on an annual basis." |
 
 ## Guidance
 

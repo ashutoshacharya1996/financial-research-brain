@@ -17,13 +17,13 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
+| Tokenised bond raised | ₹500 crore, 3-year tenure | Issued 2026-09-09 | — | "has become the first private sector corporate in India to raise ₹500 crore through tokenised bonds with a 3-year tenure" |
 | Revenue | | | | |
 | EBITDA margin | | | | |
 | PAT | | | | |
 | Order book | | | | |
 | Order inflows | | | | |
 | Capex | | | | |
-| Tokenised bond raised | ₹500 crore, 3-year tenure | Issued 2026-09-09 | — | "has become the first private sector corporate in India to raise ₹500 crore through tokenised bonds with a 3-year tenure" |
 
 ## Guidance
 
