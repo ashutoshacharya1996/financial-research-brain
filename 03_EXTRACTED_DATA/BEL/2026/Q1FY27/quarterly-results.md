@@ -17,7 +17,7 @@ Extraction date: 2026-10-26
 
 | Metric | Value | Period | vs Prior Period | Source Quote |
 |--------|-------|--------|----------------|--------------|
-| Revenue | Rs 5,533.06 Crore (standalone; Rs 5,53,306 lakh) | Q1 FY27 (30.06.2026) | +25.27% YoY vs Rs 4,416.83 Crore (Q1 FY26); Q4 FY26 (31.03.2026): Rs 10,177.17 Crore | "BEL has achieved Revenue from operations of Rs.5,533.06 Crore, registering a growth of 25.27% during the 1st Quarter of FY 2026-27 over the Revenue from operations of Rs.4,416.83 Crore" |
+| Revenue | Rs 5,533.06 Crore (standalone; Rs 5,53,306 lakh) | Q1 FY27 (30.06.2026) | +25.27% YoY vs Rs 4,416.83 Crore (Q1 FY26); Q4 FY26 (31.03.2026): Rs 10,177.17 Crore | "Bharat Electronics Limited (BEL) has achieved Revenue from operations of Rs.5,533.06 Crore, registering a growth of 25.27% during the 1st Quarter of FY 2026-27 over the Revenue from operations of Rs.4,416.83 Crore" |
 | PBT | Rs 1,402.83 Crore (standalone) | Q1 FY27 | +8.81% YoY vs Rs 1,289.24 Crore | "Profit Before Tax (PBT) during the 1st Quarter of FY 2026-27 stood at Rs.1,402.83 Crore, with a growth of 8.81% over the Profit Before Tax (PBT) of Rs.1,289.24 Crore" |
 | PAT | Rs 1,048.33 Crore (standalone) | Q1 FY27 | +8.17% YoY vs Rs 969.13 Crore | "Profit After Tax (PAT) during the 1st Quarter of FY 2026-27 stood at Rs.1,048.33 Crore, with a growth of 8.17% over the Profit After Tax (PAT) of Rs.969.13 Crore" |
 | PAT (consolidated) | Rs 1,05,453 lakh | Q1 FY27 | Q1 FY26: 96,905 lakh; Q4 FY26: 2,22,635 lakh | "11 Profit for the period (9 + 10) 1 ,05,453 2,22,635 96,905 6,06,226" |
