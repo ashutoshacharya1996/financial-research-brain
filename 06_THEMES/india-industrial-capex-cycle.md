@@ -4,11 +4,11 @@
 Developing
 
 ## Confidence Score
-7.5 / 10
-Justification: Six companies across defence, infrastructure, industrials, and auto all showing strong order pipelines, but LT's confirmed Q4 FY26 data (PAT -3% YoY, EBITDA 10.4% compressed vs "stable" prior characterisation) introduces a real execution quality caveat — the order-to-revenue conversion lag and margin compression at the largest capex EPC player prevents a higher score; all five other companies still confirming demand is real and growing.
+6.3 / 10
+Justification: Demand and pipeline remain strong (LT order book Rs 7,78,954 cr +5% vs Mar'26, inflows +14%; BEL pipeline; PARAS Rs 6,200 cr proposed investment) but conversion is weakening: LT revenue +7% vs 10-12% guide with margin down 90 bps, BEL and JNKINDIA order books both fell QoQ, and GABRIEL's capex shifted to debt-funded M&A.
 
 ## Trend Direction
-Stable
+Weakening
 
 ## Evidence
 
@@ -54,11 +54,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-- `india-industrial-capex-cycle-2026-Q4` — Confidence: 7.5 / Status: Active
+- `india-industrial-capex-cycle-2026-Q4` — Confidence: 6.3 / Status: Active (re-validation flag, 2026-10-26)
 
 ## Research Queue Appearances
 
-18 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6
+24 — 2026-10-26: LT #2, BEL #1, PARAS #3, HAL #4, GABRIEL #5, JNKINDIA #6 | 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6
 
 ## Potential Losers
 
@@ -80,9 +80,31 @@ Companies mentioning this theme this week:
 - Capex cycle is interest-rate sensitive; if RBI raises rates in H2 FY27, some discretionary capex may be deferred
 - JNKINDIA margin pressure (15.2% EBITDA) despite strong order book — capacity constraints could compress margins further
 - LT Lakshya 2031 ROE guidance 16–17% described by analysts as "underwhelming" — management ambition may not translate to shareholder returns at scale
+- **LT revenue/margin miss (Q1 FY27):** revenue +7% YoY vs 10-12% guide, EBITDA -3%, margin 9.0% (-90 bps); numeric FY27 guidance not restated; "extended disruption in supply chains and elevated energy prices could interrupt the growth momentum"; new credit provisions for "expected delays in collection of receivables"; senior management resignation (27 Jul).
+- BEL order book Rs 73,882 cr -> Rs 72,258 cr; Q1 inflow conflicting (Rs 3,754 cr vs Rs 307 cr); QRSAM unfiled; guidance conflicting.
+- JNKINDIA order book Rs 1,961.4 cr -> Rs 1,801 cr; UAE order cancelled 2026-07-16; management wants to "reduce the dependency on large capex-based orders in the refining and petchem businesses"; EBITDA 11.8%.
+- GABRIEL organic capex plan (Genos, fastener plant) not mentioned in current files; capex now via HL Mando Anand / Klemove / FORVIA and Rs 1,000 cr NCD at 8.15%.
+- PARAS Rs 6,200 cr semiconductor capex has no commissioning date, funding or revenue stated.
 
 ## Corroboration Count
-6 companies this week | 6 companies cumulative (LT negative signal; 5 positive + 1 mixed)
+6 companies this week (LT, BEL, HAL, JNKINDIA, PARAS, GABRIEL) | 6 cumulative. Order evidence positive at LT/PARAS/BEL; conversion negative at LT/BEL/JNKINDIA.
 
 ## Last Updated
-2026-06-22
+2026-10-26
+
+---
+
+## Update - 2026-10-26 (Q1 FY27 delta run)
+
+**Confidence 7.5 -> 6.3. Status Developing (unchanged). Trend Stable -> Weakening.**
+
+| Company | Document | Date | Signal Type | Strength | Quote / Data Point |
+|---|---|---|---|---|---|
+| LT | Q1 FY27 release/deck | 2026-08 | Mixed | High | Record order book Rs 7,78,954 cr; inflows +14% (offshore wind, refinery packages, ferrous metals, Amaravati); revenue +7% only; NWC 4.9% of revenue |
+| BEL | Q1 FY27 call | 2026-07-27 | Stable | Low | "INR1,200 plus crores we are investing under capex"; R&D > Rs 2,200 cr; indigenisation "zero import ... next 5 years" |
+| JNKINDIA | Q1 FY27 call | 2026-08 | Weakening | Medium | Order book Rs 1,801 cr; refinery/fertilizer finalisation "in Q2, Q3"; Sep 28 flare package orders (16 months) |
+| PARAS | Events | 2026-07 to 09 | Strengthening | Medium | "Backed by a proposed investment of Rs 6,200 crore"; 50 acres Ujjain-Indore corridor |
+| GABRIEL | Q1 FY27 deck | 2026-07/08 | Mixed | Medium | FORVIA seating JV Rs 100 cr capital; organic capex Rs 323 Mn in the quarter |
+| HAL | Events | 2026-08/09 | Stable | Low | DAC AoN "approximately 98% ... from the Indian Industry"; no HAL capex data |
+
+Open conflict surfaced: LT revenue/margin miss vs record order book; Q1 shows the order-to-revenue lag the June file warned of.
