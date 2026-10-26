@@ -35,7 +35,7 @@ Not stated in this document.
 
 ## Named Catalysts
 
-- Rating upgrade: "ICRA Limited ... has upgraded the ratings to [ICRA]A from [ICRA]A- for the long-term and short-term facilities" (long-term outlook revised to Stable from Positive; bank guarantee and LC facilities "assigned for enhanced amount").
+- Rating upgrade: "has upgraded the ratings to [ICRA]A from [ICRA]A- for the long-term and short-term facilities" (ICRA Limited) (long-term outlook revised to Stable from Positive; bank guarantee and LC facilities "assigned for enhanced amount").
 
 ## Named Risks
 
