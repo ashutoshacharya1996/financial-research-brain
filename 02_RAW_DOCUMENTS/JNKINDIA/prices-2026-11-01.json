@@ -1,0 +1,16 @@
+{
+  "ticker": "JNKINDIA",
+  "company_name": "JNK India Ltd",
+  "as_of": "2026-11-01",
+  "currency": "INR",
+  "latest_close": 376.35,
+  "latest_open": 389.55,
+  "latest_high": 392.25,
+  "latest_low": 375.0,
+  "volume": 42659,
+  "fifty_two_week_high": 558.0,
+  "fifty_two_week_low": 200.92,
+  "market_cap": 21058256896,
+  "pe_ratio": 27.754425,
+  "source": "yfinance:JNKINDIA.NS"
+}

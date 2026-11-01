@@ -126,3 +126,10 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-10-08 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/PARAS_08102026165119_DPCertificate30092026.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-10-11/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-97074d9f59.pdf | 97074d9f5943 | downloaded |
+
+## Evidence collected 2026-11-01
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-30 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PARAS_30102026115113_Newspaper_Ad.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-01/Copy-of-Newspaper-Publication-1b5f957475.pdf | 1b5f9574758f | downloaded |
+| 2026-10-29 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PARAS_29102026131025_Scan__1_.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-01/Outcome-of-Board-Meeting-e6b0afaf52.pdf | e6b0afaf5230 | downloaded |

@@ -236,3 +236,15 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-10-21 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_21102026094637_PressRelease21102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-25/Bagging-Receiving-of-orders-contracts-f4ed51842b.pdf | f4ed51842ba3 | downloaded |
 | 2026-10-19 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_19102026101805_PressRelease19102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-10-25/Bagging-Receiving-of-orders-contracts-a4ecfab786.pdf | a4ecfab7866b | downloaded |
+
+## Evidence collected 2026-11-01
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-31 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/AB_31102026130022_SEIntimation_ExtensionofBTAVyoma_31102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-01/General-Updates-a860c41c89.pdf | a860c41c89dc | downloaded |
+| 2026-10-28 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PAM_28102026194657_NewspaperAdvtSep2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-01/Copy-of-Newspaper-Publication-1b9cf791a6.pdf | 1b9cf791a6a4 | downloaded |
+| 2026-10-27 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_27102026221257_Intimation27102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-01/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-6d43baf5d1.pdf | 6d43baf5d12a | downloaded |
+| 2026-10-27 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/PAM_27102026183653_AnalystPresentationSep2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-01/Updates-8a0416e463.pdf | 8a0416e463c7 | downloaded |
+| 2026-10-27 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PAM_27102026171156_LTSep2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-01/Outcome-of-Board-Meeting-da335b2be3.pdf | da335b2be356 | downloaded |
+| 2026-10-27 | NSE | Exchange Filing | Allotment of Securities | https://nsearchives.nseindia.com/corporate/PAM_27102026132854_ESOPAllotment27102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-01/Allotment-of-Securities-ea1fcc7fc5.pdf | ea1fcc7fc551 | downloaded |
+| 2026-10-27 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_27102026101631_PressRelease27102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-01/Bagging-Receiving-of-orders-contracts-8866d34200.pdf | 8866d342006a | downloaded |

@@ -155,3 +155,11 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-10-21 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/BEL_21102026181543_Press_release_21102026.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-10-25/Press-Release-7569c0fd7a.pdf | 7569c0fd7ae8 | downloaded |
+
+## Evidence collected 2026-11-01
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-10-31 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/BEL_31102026204800_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-01/Copy-of-Newspaper-Publication-44304adca7.pdf | 44304adca7eb | downloaded |
+| 2026-10-30 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/BEL_30102026165447_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-01/Outcome-of-Board-Meeting-b2ee7cc3d6.pdf | b2ee7cc3d677 | downloaded |
+| 2026-10-27 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_27102026164511_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-01/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-a1bad8dd5a.pdf | a1bad8dd5a94 | downloaded |
