@@ -4,11 +4,11 @@
 Emerging
 
 ## Confidence Score
-6.5 / 10
-Justification: Gabriel's sunroof JV now producing concrete above-guidance margin data (15.1% FY26 vs 12-14% target) on ₹434 crore revenue — the margin expansion thesis is no longer a projection but a Year-1 operational reality; PARAS issued first-ever revenue guidance (30-40% FY27-28 "while maintaining or growing profitability") implying explicit margin leverage alongside revenue growth; corroboration count unchanged at 2 companies but evidence quality has increased substantially — from projections to confirmed operational numbers for GABRIEL and from no-guidance to first guidance for PARAS; cap to 6.5 because the theme still needs 1-2 more companies and GABRIEL has a Q4 ramp-up issue that must be watched.
+5.5 / 10
+Justification: Updated 2026-11-02 — Q2 FY27 contradicts: LT EBITDA 8.7% vs 10.0% (EBITDA +1% on revenue +16%); BEL H1 PAT +14.81% vs revenue +25.97%; PARAS Q2 PAT +36.7% vs revenue +43%; GABRIEL standalone PAT +11.6% vs revenue +22.7%. Four of four tracked reporters show revenue outgrowing profit. Lowered from 6.5; counter-evidence from ≥2 companies.
 
 ## Trend Direction
-Accelerating
+Weakening
 
 ## Evidence
 
@@ -67,3 +67,10 @@ None yet — first run at threshold. Eligible for screener consideration.
 
 ## Last Updated
 2026-06-22
+
+
+## Update 2026-11-02 (Q2 FY27 extraction run)
+
+Companies with new evidence: LT, BEL, PARAS, GABRIEL. See `theme-run-2026-11-02.md` and `04_COMPANY_ANALYSIS/*/delta-2026-Q2FY27.md`.
+
+Q2 FY27 contradicts: LT EBITDA 8.7% vs 10.0% (EBITDA +1% on revenue +16%); BEL H1 PAT +14.81% vs revenue +25.97%; PARAS Q2 PAT +36.7% vs revenue +43%; GABRIEL standalone PAT +11.6% vs revenue +22.7%. Four of four tracked reporters show revenue outgrowing profit. Lowered from 6.5; counter-evidence from ≥2 companies.

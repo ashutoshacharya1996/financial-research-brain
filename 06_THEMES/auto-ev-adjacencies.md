@@ -5,10 +5,10 @@ Emerging
 
 ## Confidence Score
 7.0 / 10
-Justification: This run unlocks the first concrete operational numbers on Gabriel's EV pivot — EV two-wheelers +30% YoY confirmed, Inalfa Gabriel sunroof JV delivering FY26 revenue ₹434 crore at 15.1% EBITDA margin (above management's own 12–14% target), ~170,000 sunroofs sold, Mahindra and Mobis confirmed as new OEM customers, Genos plant construction underway (commercial production Q4 CY26), and solar dampers and lubricants JVs both active; GABRIEL has crossed from "strategic intent with capex committed" to "operational business delivering above-guidance margins"; the cap to 7.0 is that JNKINDIA's green hydrogen signal remains unconfirmed, Mahindra/Mobis order values are undisclosed, and Q4 FY26 saw a ramp-up issue in the sunroof JV suggesting execution is not fully smooth.
+Justification: Updated 2026-11-02 — Gabriel seating JV (FORVIA/ANAND, incorporated 19 Oct 2026) adds content-per-vehicle diversification but no new EV-specific data; unchanged at 7.0.
 
 ## Trend Direction
-Accelerating
+Stable
 
 ## Evidence
 
@@ -67,3 +67,10 @@ None yet — first tracking run.
 
 ## Last Updated
 2026-06-22
+
+
+## Update 2026-11-02 (Q2 FY27 extraction run)
+
+Companies with new evidence: GABRIEL. See `theme-run-2026-11-02.md` and `04_COMPANY_ANALYSIS/*/delta-2026-Q2FY27.md`.
+
+Gabriel seating JV (FORVIA/ANAND, incorporated 19 Oct 2026) adds content-per-vehicle diversification but no new EV-specific data; unchanged at 7.0.

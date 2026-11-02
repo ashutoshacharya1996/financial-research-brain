@@ -5,10 +5,10 @@
 - **opportunity_id:** india-industrial-capex-cycle-2026-Q4
 - **theme_name:** India Industrial Capex Cycle
 - **theme_status:** Developing
-- **confidence_score:** 7.5
-- **trend_direction:** Stable
+- **confidence_score:** 7.9
+- **trend_direction:** Accelerating
 - **date_identified:** 2026-06-20
-- **last_validated:** 2026-06-22
+- **last_validated:** 2026-11-02
 - **status:** Active
 
 ---

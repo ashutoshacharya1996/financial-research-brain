@@ -4,8 +4,8 @@
 Emerging
 
 ## Confidence Score
-6.0 / 10
-Justification: JNKINDIA's UAE order is now a confirmed regulatory filing (not just a report) — CC7 Emirates / ADNOC / TA'ZIZ Salt Project / ₹100–300cr / December 2027 — moving from "first export win" to "first verified international EPC contract with named ADNOC relationship"; confidence upgrades materially because the ADNOC ecosystem is a high-quality recurring customer (not a spot order) and the full-scope nature (design → commissioning) signals engineering depth; still capped at 6.0 because it remains a 2-company theme and LT's international execution problems are a live counter-signal.
+7.0 / 10
+Justification: Updated 2026-11-02 — LT: international = 54% of ₹8,535 bn order book and 58% of Q2 revenue; repeat Dhaka Metro CP09/CP10 orders (JICA-funded). Second international signal beyond JNKINDIA's ADNOC order. Raised from 6.5.
 
 ## Trend Direction
 Accelerating
@@ -75,3 +75,10 @@ None yet — eligible for screener this run (confidence now ≥ 5.0 with confirm
 - Stock +94% YTD 2026 reflects market's pricing of this international thesis
 
 **Confidence revised: 6.5** (from 6.0) — book-to-bill 2.0x and explicit CEO statement on international ambition add quality to what was a single-order signal. Still capped below 7.0 pending a second international order win.
+
+
+## Update 2026-11-02 (Q2 FY27 extraction run)
+
+Companies with new evidence: LT, JNKINDIA (prior). See `theme-run-2026-11-02.md` and `04_COMPANY_ANALYSIS/*/delta-2026-Q2FY27.md`.
+
+LT: international = 54% of ₹8,535 bn order book and 58% of Q2 revenue; repeat Dhaka Metro CP09/CP10 orders (JICA-funded). Second international signal beyond JNKINDIA's ADNOC order. Raised from 6.5.

@@ -4,11 +4,11 @@
 Developing
 
 ## Confidence Score
-9.2 / 10
-Justification: Updated 2026-06-22 (extraction run) — adds BEL GBMES contract (₹1,251 crore, Ministry of Defence, Indian Army, May 5, 2026 — fully indigenous ELINT system designed by DLRL/DRDO, manufactured by BEL). GBMES is the highest-value single disclosed order from BEL's Q1 FY27 period and was not in prior runs. ELINT (Electronic Intelligence) is BEL's most strategically classified product domain — higher margin than routine avionics. Combined with QRSAM (pending July 2026), P-75I, AMCA pipeline, PARAS guidance, and macro production record, the defence electronics thesis now has unprecedented corroboration depth. Capped at 9.2 (not higher) only because QRSAM remains unsigned.
+8.8 / 10
+Justification: Updated 2026-11-02 — Q2 FY27 filings: BEL H1 revenue +25.97% and PARAS H1 revenue +39.6% deliver on guidance, but BEL order book fell to ₹68,717 cr (1 Oct 2026) from ₹73,882 cr (1 Apr) and PAT growth (BEL H1 +14.81%) lags revenue; QRSAM signing not evidenced in extracted data. Lowered from 9.2.
 
 ## Trend Direction
-Accelerating
+Stable
 
 ## Evidence
 
@@ -83,3 +83,10 @@ Companies mentioning this theme this week:
 
 ### New Evidence (extraction run, 2026-06-22)
 | BEL | Press Release — GBMES | 2026-05-05 | Strengthening | High | "BEL has signed a contract with Ministry of Defence valued at Rs. 1251 Crore (excluding taxes) for supply of GBMES system to Indian Army. The GBMES is a totally indigenous, state of the art system designed and developed by DLRL Hyderabad and manufactured by BEL. The networked intelligence system is capable of detecting, classifying & locating all types of radars. The system also intercepts and analyzes all communication signals." |
+
+
+## Update 2026-11-02 (Q2 FY27 extraction run)
+
+Companies with new evidence: BEL, PARAS, HAL (governance only), LT. See `theme-run-2026-11-02.md` and `04_COMPANY_ANALYSIS/*/delta-2026-Q2FY27.md`.
+
+Q2 FY27 filings: BEL H1 revenue +25.97% and PARAS H1 revenue +39.6% deliver on guidance, but BEL order book fell to ₹68,717 cr (1 Oct 2026) from ₹73,882 cr (1 Apr) and PAT growth (BEL H1 +14.81%) lags revenue; QRSAM signing not evidenced in extracted data. Lowered from 9.2.

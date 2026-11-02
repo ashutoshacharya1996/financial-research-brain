@@ -4,11 +4,11 @@
 Developing
 
 ## Confidence Score
-7.5 / 10
-Justification: Six companies across defence, infrastructure, industrials, and auto all showing strong order pipelines, but LT's confirmed Q4 FY26 data (PAT -3% YoY, EBITDA 10.4% compressed vs "stable" prior characterisation) introduces a real execution quality caveat — the order-to-revenue conversion lag and margin compression at the largest capex EPC player prevents a higher score; all five other companies still confirming demand is real and growing.
+7.9 / 10
+Justification: Updated 2026-11-02 — LT record Q2 order inflow ₹1,477 bn (+28%), order book ₹8,535 bn (+28%), NWC 1.7%; BEL/PARAS/GABRIEL revenue +23% to +43% YoY; offset by LT EBITDA margin 8.7% (from 10.0%). Raised from 7.5.
 
 ## Trend Direction
-Stable
+Accelerating
 
 ## Evidence
 
@@ -86,3 +86,10 @@ Companies mentioning this theme this week:
 
 ## Last Updated
 2026-06-22
+
+
+## Update 2026-11-02 (Q2 FY27 extraction run)
+
+Companies with new evidence: LT, BEL, PARAS, GABRIEL. See `theme-run-2026-11-02.md` and `04_COMPANY_ANALYSIS/*/delta-2026-Q2FY27.md`.
+
+LT record Q2 order inflow ₹1,477 bn (+28%), order book ₹8,535 bn (+28%), NWC 1.7%; BEL/PARAS/GABRIEL revenue +23% to +43% YoY; offset by LT EBITDA margin 8.7% (from 10.0%). Raised from 7.5.
