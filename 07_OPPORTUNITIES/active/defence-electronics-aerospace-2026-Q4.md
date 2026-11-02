@@ -5,10 +5,10 @@
 - **opportunity_id:** defence-electronics-aerospace-2026-Q4
 - **theme_name:** Indian Defence Electronics & Aerospace Supply Chain
 - **theme_status:** Developing
-- **confidence_score:** 9.0
-- **trend_direction:** Accelerating
+- **confidence_score:** 8.8
+- **trend_direction:** Stable
 - **date_identified:** 2026-06-20
-- **last_validated:** 2026-06-22
+- **last_validated:** 2026-11-02
 - **status:** Active
 
 ---
