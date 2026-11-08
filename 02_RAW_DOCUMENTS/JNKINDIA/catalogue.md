@@ -130,3 +130,20 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-10-14 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.com/corporate/JNKINDIA23_14102026173747_JNK_Regulation_74_5__Sep_26_with_letter.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-10-18/Certificate-under-SEBI-Depositories-and-Participants-Regulations-2018-6b8175be4f.pdf | 6b8175be4f4b | downloaded |
+
+## Evidence collected 2026-11-08
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-11-07 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/JNKINDIA23_07112026174020_covering_letter_and_newspaper.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-11-08/Copy-of-Newspaper-Publication-cbb8cbce74.pdf | cbb8cbce74f4 | downloaded |
+| 2026-11-06 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_06112026190433_Audio_Recording_of_Q2_FY27_earnings_call.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-09ba7fb812.pdf | 09ba7fb812dc | downloaded |
+| 2026-11-06 | NSE | Exchange Filing | Resignation of Director/KMP/SMP | https://nsearchives.nseindia.com/corporate/JNKINDIA_ROID_104182_KMP_Doc.zip |  |  | metadata_only |
+| 2026-11-06 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.com/corporate/JNKINDIA23_06112026112338_press_release_covering_letter.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-11-08/Press-Release-077a8730cd.pdf | 077a8730cdd1 | downloaded |
+| 2026-11-06 | NSE | Exchange Filing | Investor Presentation | https://nsearchives.nseindia.com/corporate/JNKINDIA23_06112026110944_Q2FY27_investor_presentation.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-11-08/Investor-Presentation-f1509faf3c.pdf | f1509faf3cdf | downloaded |
+| 2026-11-05 | NSE | Exchange Filing | Appointment | https://nsearchives.nseindia.com/corporate/JNKINDIA23_05112026203438_Outcome_with_annexures_final.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-11-08/Appointment-24e0ce2378.pdf | 24e0ce2378b9 | downloaded |
+| 2026-11-05 | NSE | Exchange Filing | Cessation | https://nsearchives.nseindia.com/corporate/JNKINDIA23_05112026202759_Outcome_with_annexures_final.pdf |  |  | metadata_only |
+| 2026-11-05 | NSE | Exchange Filing | Resignation | https://nsearchives.nseindia.com/corporate/JNKINDIA23_05112026201945_Outcome_with_annexures_final.pdf |  |  | metadata_only |
+| 2026-11-05 | NSE | Exchange Filing | Integrated Filing- Financial | https://nsearchives.nseindia.com/corporate/JNKINDIA23_05112026195207_Outcome_with_annexures_final.pdf |  |  | metadata_only |
+| 2026-11-05 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/JNKINDIA23_05112026193549_Outcome_with_annexures_final.pdf |  |  | metadata_only |
+| 2026-11-03 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/JNKINDIA23_03112026192135_JNK_Reg_30_Disclosure_JNKG_Order_03112026.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-11-08/Bagging-Receiving-of-orders-contracts-2bdbe4ed57.pdf | 2bdbe4ed57ad | downloaded |
+| 2026-11-02 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/JNKINDIA23_02112026145527_Intimation_of_Q2FY27_earnings_concall__004_.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-2c12488d49.pdf | 2c12488d492f | downloaded |

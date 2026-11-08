@@ -163,3 +163,11 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-10-31 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/BEL_31102026204800_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-01/Copy-of-Newspaper-Publication-44304adca7.pdf | 44304adca7eb | downloaded |
 | 2026-10-30 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/BEL_30102026165447_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-01/Outcome-of-Board-Meeting-b2ee7cc3d6.pdf | b2ee7cc3d677 | downloaded |
 | 2026-10-27 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_27102026164511_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-01/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-a1bad8dd5a.pdf | a1bad8dd5a94 | downloaded |
+
+## Evidence collected 2026-11-08
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-11-06 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_06112026225005_Press_Release_06112026_SIGNED.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-08/Bagging-Receiving-of-orders-contracts-df0dfa50cb.pdf | df0dfa50cb55 | downloaded |
+| 2026-11-06 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_06112026145908_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-e1a642c14d.pdf | e1a642c14d7d | downloaded |
+| 2026-11-03 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_03112026214757_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-bc8ded2cfd.pdf | bc8ded2cfd4a | downloaded |

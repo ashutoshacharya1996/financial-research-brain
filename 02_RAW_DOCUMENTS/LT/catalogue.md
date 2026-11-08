@@ -248,3 +248,12 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-10-27 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PAM_27102026171156_LTSep2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-01/Outcome-of-Board-Meeting-da335b2be3.pdf | da335b2be356 | downloaded |
 | 2026-10-27 | NSE | Exchange Filing | Allotment of Securities | https://nsearchives.nseindia.com/corporate/PAM_27102026132854_ESOPAllotment27102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-01/Allotment-of-Securities-ea1fcc7fc5.pdf | ea1fcc7fc551 | downloaded |
 | 2026-10-27 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_27102026101631_PressRelease27102026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-01/Bagging-Receiving-of-orders-contracts-8866d34200.pdf | 8866d342006a | downloaded |
+
+## Evidence collected 2026-11-08
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-11-06 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_06112026153645_AnalystMeetIntimation06112026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-621f9fe906.pdf | 621f9fe90698 | downloaded |
+| 2026-11-04 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/PAM_04112026185041_Intimation04112026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-08/Updates-1b139ac1b1.pdf | 1b139ac1b195 | downloaded |
+| 2026-11-02 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_02112026175603_TranscriptSep2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-ada8460050.pdf | ada8460050b2 | downloaded |
+| 2026-11-02 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_02112026101835_PressRelease02112026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-08/Bagging-Receiving-of-orders-contracts-eb3ceddd37.pdf | eb3ceddd37e1 | downloaded |

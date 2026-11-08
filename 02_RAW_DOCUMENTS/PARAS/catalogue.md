@@ -133,3 +133,12 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 |---|---|---|---|---|---|---|---|
 | 2026-10-30 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PARAS_30102026115113_Newspaper_Ad.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-01/Copy-of-Newspaper-Publication-1b5f957475.pdf | 1b5f9574758f | downloaded |
 | 2026-10-29 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.com/corporate/PARAS_29102026131025_Scan__1_.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-01/Outcome-of-Board-Meeting-e6b0afaf52.pdf | e6b0afaf5230 | downloaded |
+
+## Evidence collected 2026-11-08
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-11-04 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.com/corporate/PARAS_04112026131331_NPAD.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-08/Copy-of-Newspaper-Publication-7e76d68846.pdf | 7e76d688468b | downloaded |
+| 2026-11-03 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PARAS_03112026135528_NoticePB_CC.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-08/General-Updates-f5aa7c6019.pdf | f5aa7c6019ba | downloaded |
+| 2026-11-03 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/PARAS_03112026115221_NoticePB.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-08/Shareholders-meeting-c85808497e.pdf | c85808497e04 | downloaded |
+| 2026-11-02 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_02112026141446_InvestormeetAshikaCapital.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-eec88c6d6f.pdf | eec88c6d6f18 | downloaded |
