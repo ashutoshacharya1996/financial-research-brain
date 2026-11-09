@@ -34,7 +34,7 @@ Consolidated unless stated. Sequential (QoQ) compares with Q4 FY26; YoY compares
 | PAT | Q4 FY26: Rs 33.0 Cr | Q1 FY27: Rs 9.6 Cr | Inflection down (QoQ, -70.9%); Acceleration (YoY) | High | YoY: 8.5x vs Rs 1.1 Cr. Low base; QoQ decline is the operative comparison. |
 | PAT margin | Q4 FY26: 9.6% | Q1 FY27: 5.2% | Inflection down (QoQ); Inflection up (YoY vs 1.1%) | Medium | |
 | Order book | Mar 31, 2026: Rs 1,961.4 Cr | Jun 30, 2026: Rs 1,801 Cr | Inflection down (QoQ, -8.2%) | High | "Our order book on June 30, 2026 is Rs 1,801 cr, and our growth visibility remains strong" — the June export order later cancelled (see Named Risks). |
-| Order inflows | FY26: Rs 1,694.4 Cr (full year) | Q1 FY27: not stated | Missing | — | Arithmetic only (not a disclosed figure): book change (-161.4) + revenue (186.0) implies roughly Rs 25 Cr of intake. Treat as unreliable; the cancelled order's booking/removal timing is not stated. |
+| Order inflows | FY26: Rs 1,694.4 Cr (full year) | Q1 FY27: not stated | Missing | — | Arithmetic only (not a disclosed figure): book change (-160.4) + revenue (186.0) implies roughly Rs 25.6 Cr of intake. Treat as unreliable; the cancelled order's booking/removal timing is not stated. |
 | Capex | Not in Q4 extraction | Not stated | Missing | — | |
 | Standalone EBITDA margin | Not in Q4 extraction | 14.0% (revised deck, Aug 12) | Cannot compare | — | Aug 11 deck showed 5.6%; see Source Conflicts. |
 | Standalone PAT | Not in Q4 extraction | Rs 13.5 Cr (revised deck, Aug 12) | Cannot compare | — | Aug 11 deck showed Rs -0.8 Cr; board OCR shows 135.46 (INR million). See Source Conflicts. |
