@@ -48,7 +48,7 @@ Note: 20-page transcript. Pages 1-14 reviewed in full. Pages 15-20 not reviewed.
 - Export: "in export also we are getting very good leads, we have given very good demos to some of the countries"
 - Netra 2: "in this particular program, Adani became L1 and they are the system integrator for this program."
 - Tejas LRUs: "in case they tell, it may if at all affect by few hundred crores here and there for us. So, maybe INR200 crores, INR300 crores turnover maybe shifted by few months"
-- AMCA: "I think the date is shifted by two months. So, 27th August 2026 is the date of RFP submission."
+- AMCA: "Now I think the date is shifted by two months. So, 27th August 2026 is the date of RFP submission."
 - LRSAM: "The leftover activity is around INR3,000 plus crores total we have to supply"
 
 ## Management Commentary — Margins
@@ -66,7 +66,7 @@ Note: 20-page transcript. Pages 1-14 reviewed in full. Pages 15-20 not reviewed.
 
 ## Named Catalysts
 
-- QRSAM order: expected "maximum by September" per management; "Hopefully, in next CCS, they may clear" is not in this transcript; CCS approval pending per management.
+- QRSAM order: "maximum by September we will get and I am still sticking to that."
 - Shatrughat and Samaghat: "we may get in another 3 to 6 months timeline."
 - Naval platforms (NGC / P-75I): "one of these two definitely we may go through"
 - HAMMER project and Shakti Phase 4: "we are going to get in this financial year"

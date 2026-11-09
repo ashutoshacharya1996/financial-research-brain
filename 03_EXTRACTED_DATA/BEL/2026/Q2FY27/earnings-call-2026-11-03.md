@@ -30,7 +30,7 @@ Note: 33-page transcript (32 numbered pages). Pages 1-14 reviewed in full. Pages
 
 ## Guidance
 
-- FY27 order inflow: "But overall, we are planning as of now between 15% to 20%, more than 15% growth." (revenue growth, as stated in reply on FY27 execution)
+- FY27 revenue growth: "But overall, we are planning as of now between 15% to 20%, more than 15% growth."
 - FY27 order inflow target: "total INR25,000 crores without QRSAM and with QRSAM INR55,000 crores, which was our guidance, we are sticking to that."
 - FY27 order inflow confidence: "Whatsoever guidance we have given to you at the year start, we are going to meet or exceed that."
 - Management on margin: "Whether it is nomination or competition, more or less similar margins will be there, okay? In nomination, we don't get higher margins."
@@ -40,8 +40,8 @@ Note: 33-page transcript (32 numbered pages). Pages 1-14 reviewed in full. Pages
 - QRSAM: "So, as such, and based on our inputs also, order is expected on us very shortly. Hopefully, in next CCS, they may clear."
 - QRSAM confidence: "So, this program, as of now and more than 99%, I am confident it is coming to us very soon."
 - QRSAM private-sector question: "I don't think at this point, that private thing is possible."
-- NGC: "around INR20,000 crores worth of orders we are expecting in a staggered way, but all of them, 99%, will come in this financial year."
-- NGC line items: "we are expecting ... 8 to 10 line items" (management: "all of them" to converge before March; slippage of one or two lines possible)
+- NGC: "around INR20,000 crores to be worth of orders we are expecting in a staggered way, but all of them, 99%, will come in this financial year."
+- NGC line items: "converge on all these line items, including NGC different 8 to 10 line items." (slippage of one or two lines noted as possible: "maybe 1- or 2-line items may slip")
 - P-75I: "maybe P-75I may slip to next year."
 - Shatrughat and Samaghat: "we hope to get both the orders one by one before March."
 - Drones: "we are working very, very closely with the 6 to 8 start-ups right now."
@@ -71,7 +71,7 @@ Note: 33-page transcript (32 numbered pages). Pages 1-14 reviewed in full. Pages
 
 ## Named Risks
 
-- QRSAM private-sector entry: "I hope I have answered your question." (management response to question on private participation; management stated "I don't think at this point, that private thing is possible.")
+- QRSAM private-sector entry: management stated "I don't think at this point, that private thing is possible." (response to analyst question on a private-sector QRSAM allocation)
 - Slippage: "maybe 1- or 2-line items may slip" (NGC and QRSAM)
 - Growth risk: management on FY27 revenue growth: "although the growth looks 20-plus percent overall still H1, but that is based on our strategy of making as much uniform our production as possible across quarters."
 - P-75I: "maybe P-75I may slip to next year."
