@@ -1,14 +1,14 @@
 # Theme: Auto Component Makers Pivoting into EV Adjacencies
 
 ## Status
-Emerging
+Developing
 
 ## Confidence Score
-7.0 / 10
-Justification: This run unlocks the first concrete operational numbers on Gabriel's EV pivot — EV two-wheelers +30% YoY confirmed, Inalfa Gabriel sunroof JV delivering FY26 revenue ₹434 crore at 15.1% EBITDA margin (above management's own 12–14% target), ~170,000 sunroofs sold, Mahindra and Mobis confirmed as new OEM customers, Genos plant construction underway (commercial production Q4 CY26), and solar dampers and lubricants JVs both active; GABRIEL has crossed from "strategic intent with capex committed" to "operational business delivering above-guidance margins"; the cap to 7.0 is that JNKINDIA's green hydrogen signal remains unconfirmed, Mahindra/Mobis order values are undisclosed, and Q4 FY26 saw a ramp-up issue in the sunroof JV suggesting execution is not fully smooth.
+6.5 / 10
+Justification: Revised from 7.0 on 2026-11-09: GABRIEL ADAS/steering/braking move is now backed by closed deals (HL Klemove shares acquired 25 Aug; HL Mando allotment 11 Sep; FORVIA seating JV), but EV-specific language is thin and JNKINDIA Chemdist is mention-only.
 
 ## Trend Direction
-Accelerating
+Stable
 
 ## Evidence
 
@@ -63,7 +63,13 @@ None yet — first tracking run.
 - EV penetration in India remains below 5% of total new vehicle sales — domestic EV transition is slower than management narratives suggest
 
 ## Corroboration Count
-2 companies this week | 2 companies cumulative
+2 companies this week (GABRIEL, JNKINDIA) | 2 cumulative
 
 ## Last Updated
-2026-06-22
+2026-11-09
+
+## Update 2026-11-09 (Q1/Q2 FY27 evidence)
+
+- **GABRIEL**: Jul 21 plan to "enter steering and braking solutions, automotive electronics, and advanced driver assistance technologies (ADAS)"; Aug 26 HL Klemove India to "develop, manufacture and sell a range of advanced mobility solutions"; HL Mando Anand 28.99% for about Rs 2,231 cr; Crisil AA+/Stable. EV-specific language weakened in Q2.
+- **JNKINDIA**: Chemdist green hydrogen 8.8% of Q1 group revenue; Q2 mention only, no quantification.
+- Note: theme is trending toward "auto electronics / ADAS" rather than EV.

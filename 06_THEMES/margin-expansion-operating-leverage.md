@@ -1,14 +1,14 @@
 # Theme: Indian Industrial Mid-Cap Margin Expansion & Operating Leverage
 
 ## Status
-Emerging
+Declining
 
 ## Confidence Score
-6.5 / 10
-Justification: Gabriel's sunroof JV now producing concrete above-guidance margin data (15.1% FY26 vs 12-14% target) on ₹434 crore revenue — the margin expansion thesis is no longer a projection but a Year-1 operational reality; PARAS issued first-ever revenue guidance (30-40% FY27-28 "while maintaining or growing profitability") implying explicit margin leverage alongside revenue growth; corroboration count unchanged at 2 companies but evidence quality has increased substantially — from projections to confirmed operational numbers for GABRIEL and from no-guidance to first guidance for PARAS; cap to 6.5 because the theme still needs 1-2 more companies and GABRIEL has a Q4 ramp-up issue that must be watched.
+4.5 / 10
+Justification: Downgraded on 2026-11-09 (was 6.5, Emerging): LT EBITDA margin 8.7% vs 10.0%, JNKINDIA cites execution challenges, and GABRIEL standalone PBT fell 11% QoQ; only BEL (implied about 28.6%, derived) supports the theme.
 
 ## Trend Direction
-Accelerating
+Weakening
 
 ## Evidence
 
@@ -63,7 +63,16 @@ None yet — first run at threshold. Eligible for screener consideration.
 - LT is a counter-case at scale: margin compression at ₹82,762 crore quarterly revenue despite massive order book — operating leverage is not automatic
 
 ## Corroboration Count
-2 companies this week | 2 companies cumulative
+4 companies this week (3 contradicting) | 4 cumulative
 
 ## Last Updated
-2026-06-22
+2026-11-09
+
+## Update 2026-11-09 (Q1/Q2 FY27 evidence)
+
+Downgrade trigger: contradictory evidence from at least 2 companies.
+
+- **LT** (contradicts): group EBITDA margin 8.7% in Q2 FY27 vs 10.0%; Q1 9.0% vs 9.9%; "lower margin across portfolio".
+- **JNKINDIA** (contradicts): Q1 EBITDA margin 11.8% (from 15.2%); Q2 "temporary execution challenges during Q2 arising from shipment delays and monsoon related disruption".
+- **GABRIEL** (mixed): Q1 standalone EBITDA margin 7.8%; Q2 standalone PBT down 11% QoQ; consolidated PAT Rs 1,240 Mn vs Rs 1,071 Mn.
+- **BEL** (supports): Q1 EBITDA 25.83% vs >28% guide; Q2 implied about 28.6% (derived, provisional).

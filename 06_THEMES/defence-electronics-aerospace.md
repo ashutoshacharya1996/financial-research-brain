@@ -4,11 +4,11 @@
 Developing
 
 ## Confidence Score
-9.2 / 10
-Justification: Updated 2026-06-22 (extraction run) — adds BEL GBMES contract (₹1,251 crore, Ministry of Defence, Indian Army, May 5, 2026 — fully indigenous ELINT system designed by DLRL/DRDO, manufactured by BEL). GBMES is the highest-value single disclosed order from BEL's Q1 FY27 period and was not in prior runs. ELINT (Electronic Intelligence) is BEL's most strategically classified product domain — higher margin than routine avionics. Combined with QRSAM (pending July 2026), P-75I, AMCA pipeline, PARAS guidance, and macro production record, the defence electronics thesis now has unprecedented corroboration depth. Capped at 9.2 (not higher) only because QRSAM remains unsigned.
+8.2 / 10
+Justification: Revised down from 9.2 on 2026-11-09. Filed results are strong (BEL Q2 revenue Rs 7,291 cr vs Rs 5,764 cr; PARAS Q2 revenue +43% YoY; HAL Q1 PAT +14.9%), but BEL order book has fallen two quarters running (Rs 73,882 cr to Rs 72,258 cr to Rs 68,717 cr) and QRSAM, expected Jun-Jul 2026, was still unsigned on 3 Nov; BEL also says P-75I may slip to next year.
 
 ## Trend Direction
-Accelerating
+Stable
 
 ## Evidence
 
@@ -76,10 +76,23 @@ Companies mentioning this theme this week:
 - MALE UAV: 10-way competition means any single company faces ~10–20% probability of winning; optionality, not certainty
 
 ## Corroboration Count
-4 companies this week | 4 companies cumulative
+4 companies this week (BEL, HAL, PARAS strong; LT coverage gap) | 4 cumulative
 
 ## Last Updated
-2026-06-22 (extraction update)
+2026-11-09
 
 ### New Evidence (extraction run, 2026-06-22)
 | BEL | Press Release — GBMES | 2026-05-05 | Strengthening | High | "BEL has signed a contract with Ministry of Defence valued at Rs. 1251 Crore (excluding taxes) for supply of GBMES system to Indian Army. The GBMES is a totally indigenous, state of the art system designed and developed by DLRL Hyderabad and manufactured by BEL. The networked intelligence system is capable of detecting, classifying & locating all types of radars. The system also intercepts and analyzes all communication signals." |
+
+## Update 2026-11-09 (Q1/Q2 FY27 evidence)
+
+| Company | Document | Date | Signal | Strength | Data point |
+|---|---|---|---|---|---|
+| BEL | Q2 FY27 results / call | 2026-10-30 / 11-03 | Mixed | High | Revenue Rs 7,291 cr (vs Rs 5,764 cr), PAT Rs 1,541 cr (vs Rs 1,286 cr); order book Rs 68,717 cr at 1 Oct (down from Rs 72,258 cr); FY27 inflow guide Rs 55,000 cr incl. QRSAM (Rs 25,000 cr ex-QRSAM); QRSAM "more than 99%" likely, unsigned |
+| BEL | Order wins Jul-Nov | 2026-07-13 to 11-06 | Strengthening | Medium | Eight disclosed wins totalling about Rs 5,791 cr (sum of press-release values) |
+| HAL | Q1 FY27 results | 2026-08-12 | Strengthening | High | Standalone revenue Rs 5,51,528 lakh vs Rs 4,81,914 lakh; PAT Rs 1,58,061 lakh vs Rs 1,37,715 lakh; auditors flag board/audit-committee composition non-compliance |
+| HAL | Aravalli engine contract, ALH AoN | 2026-08-26 / 09-07 | Strengthening | Medium | SAFHAL contract for IMRH/DBMRH; DAC AoN for ALH (about Rs 1.10 lakh cr across services, HAL share not stated) |
+| PARAS | Q2 FY27 results; DRDO order | 2026-10-29 / 09-28 | Strengthening | Medium | Revenue Rs 14,732 lakh vs Rs 10,272 lakh; PAT Rs 3,043 lakh vs Rs 2,226 lakh; DRDO order about Rs 26.59 cr; ICRA upgrade to A (Stable) |
+| LT | Q1/Q2 events | Jul-Sep 2026 | Neutral | Low | No defence award or MALE UAV outcome in local evidence; coverage gap, not evidence of decline |
+
+Counter-evidence added: BEL order book decline for two consecutive quarters; QRSAM slipped from Jun-Jul to September to "very shortly"; P-75I "maybe ... next year"; HAL governance non-compliance flag; HAL FY27 guidance not restated. Source conflicts in extraction files are carried unresolved.
