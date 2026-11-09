@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Acquisition Update (JVA and SPA executed)
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_21072026192218_Reg_30_Proj_Lavender_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/Acquisition-c86b289bbd.pdf
-Content hash: c86b289bbd2367cce39e1ee846d06d96093b3d6873ca8bea90cc8ba5acb23106
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_21082026151524_SE_Disclosure_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/Acquisition-c673e93d08.pdf
+Content hash: c673e93d084f694cbd4a3d4a129afc8560ce8f005015bac7ee398ce5fcdc5913
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-07-21
+Date: 2026-08-21
 Quarter: Non-quarterly event
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

@@ -71,7 +71,7 @@ Note: this deck's commentary (Nov 6, 2026) is consistent with the Q1 call (20-25
 | Export / global markets | "Secured a worth around Rs 500 cr for heater package for a project in Nigeria" | bullish |
 | Manufacturing / PLI / capex cycle | "Secured two orders aggregating Rs 30 cr for flare packages" | bullish |
 | EV / energy transition | "expanding into new and adjacent opportunities across renewable energy and related industries" | bullish |
-| Margin expansion / operating leverage | "Standalone EBITDA margin 10.4% vs 11.1%" (table: "EBITDA Margin 10.4% 11.1%") | cautious |
+| Margin expansion / operating leverage | "EBITDA Margin 10.4% 11.1% 11.2% 9.4% 13.0%" (standalone table) | cautious |
 
 ## Missing Data
 

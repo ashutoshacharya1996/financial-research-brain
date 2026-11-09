@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Investor Presentation (Business Update)
-Source: https://nsearchives.nseindia.com/corporate/team_sandeshc_11052026130830_9.PDF
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-05/Disclosure-under-SEBI-Takeover-Regulations-7e901bca42.pdf
-Content hash: 7e901bca42ecce81ebebf45a50e8359405a72b1308d7635b7333e6d2e4b9f4e7
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_21072026233051_SE_Intimation_merged_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-26/General-Updates-81ea7495a9.pdf
+Content hash: 81ea7495a9c65a19259505b0fb2e514b2a734920fff3c14ed4502c73efe0ad5d
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-06-29
+Date: 2026-07-21
 Quarter: Non-quarterly event (Project Rise / Project Jupiter)
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

@@ -61,7 +61,7 @@ Slide 7 "Q1FY27 CONSOLIDATED PERFORMANCE" and "Q1FY27 STANDALONE PERFORMANCE" fi
 | Export / global markets | "New geographies — USA and Malaysia — with new licensors, opening further opportunities" | bullish |
 | Manufacturing / PLI / capex cycle | "Average ticket size of projects increased to Rs. 500–1,000 Cr" | bullish |
 | EV / energy transition | "Entering off-shore, metals and minerals, renewable energy" | neutral |
-| Margin expansion / operating leverage | "Margin Guidance On track for EBITDA margin guidance of 14 -15%" | bullish |
+| Margin expansion / operating leverage | "On track for EBITDA margin guidance of 14 -15% and revenue growth of 25-30% for FY27" | bullish |
 
 ## Missing Data
 

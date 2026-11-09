@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Credit Rating (NCD Assignment)
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_30072026003537_SEIntimation_Credit_rating_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Credit-Rating--Revision-fcf82474ab.pdf
-Content hash: fcf82474ab582eba19b033bfdbd6250a1fc161bda51d512340c1aa3d363b60ca
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_27082026214338_SE_intimation_debenture_merged_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-30/Credit-Rating--New-4ddb0d643e.pdf
+Content hash: 4ddb0d643e80d545d47cebaa7b00f152c2979af90fd1d152c5b80ed8f97933d3
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-07-30
+Date: 2026-08-27
 Quarter: Non-quarterly event
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

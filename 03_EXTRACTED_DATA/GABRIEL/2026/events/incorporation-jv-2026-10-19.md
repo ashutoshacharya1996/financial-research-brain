@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Incorporation of JV Company
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_20082026182146_SE_Intimation_Scrutinizer_Report_final_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/Shareholders-meeting-57934f9b1d.pdf
-Content hash: 57934f9b1dfeff2af03f7c97901331783f8e157d027c7ac1a98429bf6d41c547
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_19102026193810_SEIntimation_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-25/General-Updates-fbb05f435c.pdf
+Content hash: fbb05f435c4e21da6e3150bf6b3bf30e601574c644e67327429762a7b1854c5d
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-08-20
+Date: 2026-10-19
 Quarter: Non-quarterly event
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

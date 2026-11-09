@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Investor Presentation (Q2 FY27 Results)
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_20082026164725_SE_intimation_NJ_revised_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/General-Updates-0efdab0f6e.pdf
-Content hash: 0efdab0f6e7e58b578059b0bf638a55e01eca39381c2a93fcd5c36e3db02b26a
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_31102026224612_SE_Intimation_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-11-01/Investor-Presentation-625d0064d8.pdf
+Content hash: 625d0064d86c18c42bbcca47d03e5fae3407262f8cfa790957fb2ab4cea86e93
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-08-20
+Date: 2026-10-31
 Quarter: Q2 FY27
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

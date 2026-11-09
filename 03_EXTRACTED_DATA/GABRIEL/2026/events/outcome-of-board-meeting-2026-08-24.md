@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Board Outcome (NCD fundraise)
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_29072026153652_SEIntimation_final_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-df05bed177.pdf
-Content hash: df05bed177cc1436e7bbb187561f6bc7bdef34b1237bf486875a06f7202151a9
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_24082026105235_Project_Gamut_BM_Outcome_24082026_2_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-30/Outcome-of-Board-Meeting-7b66191054.pdf
+Content hash: 7b66191054b4bb606c0e73acc4d6002d9bca00667cac33f7cb6532c46e0888e8
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-07-29
+Date: 2026-08-24
 Quarter: Non-quarterly event
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

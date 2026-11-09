@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
-Document type: Press Release
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_29072026170129_SE_Intimation_merged_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Copy-of-Newspaper-Publication-3b92ce74b1.pdf
-Content hash: 3b92ce74b1fd9ab6fab2f72ee26f964b37312ba5e1b8850f85a56d1ccab808f0
+Document type: Press Release (HL Klemove JV)
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_26082026115630_SE_intimation_merged_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-30/Press-Release-34b6bd4c49.pdf
+Content hash: 34b6bd4c491ac66badf596d609c6d0c13d3432c7c287ec1b8a5815d980823ec2
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-07-29
+Date: 2026-08-26
 Quarter: Non-quarterly event
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

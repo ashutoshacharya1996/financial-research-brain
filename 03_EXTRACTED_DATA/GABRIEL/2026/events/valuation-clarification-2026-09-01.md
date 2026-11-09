@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Clarification (HL Mando Anand valuation)
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_28072026195217_SE_Intimation_book_closure_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-02/Updates-d927b2847b.pdf
-Content hash: d927b2847bc3c0db0a1334a66bf5e206175b1ed7e15acec53d176de7ce98cda5
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_01092026160943_SE_Intimation_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-09-06/General-Updates-f27dc30cfa.pdf
+Content hash: f27dc30cfabac99cd139b6421a842c0bde9242d0948f6d741edbb63d269ec20d
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-07-28
+Date: 2026-09-01
 Quarter: Non-quarterly event
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

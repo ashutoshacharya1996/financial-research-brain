@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Transcript Notice
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_27082026214338_SE_intimation_debenture_merged_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-30/Credit-Rating--New-4ddb0d643e.pdf
-Content hash: 4ddb0d643e80d545d47cebaa7b00f152c2979af90fd1d152c5b80ed8f97933d3
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_06112026154649_SE_Intimation_final_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-9ae3a29536.pdf
+Content hash: 9ae3a29536135b8993462e2ff866ca374ef75decfe6d4f1b0cb02dc63758a5fa
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-08-27
+Date: 2026-11-06
 Quarter: Q2 FY27
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

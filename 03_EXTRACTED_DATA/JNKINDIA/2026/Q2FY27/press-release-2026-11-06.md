@@ -31,7 +31,7 @@ Source inconsistency: H1 total operational revenue growth appears as 30.4% in th
 
 ## Guidance
 
-"we continue to maintain our FY27 revenue growth guidance of 20–25% and EBITDA margin# guidance of 12–14%."
+"we remain confident in our growth outlook and continue to maintain our FY27 revenue growth guidance of 20–25% and EBITDA margin# guidance of 12–14%."
 
 Seasonality: "Given the project-based nature of our business, the second half of the year is typically more execution-intensive, with H2 historically contributing around 60–70% of our annual revenue, driven by progress in ongoing projects and anticipated order conversions."
 
@@ -67,7 +67,7 @@ Footnote: "#based on Total Operational Revenue"
 | Export / global markets | "We recently received an order from JNK Global for the supply of a Heater Package in Nigeria" | bullish |
 | Manufacturing / PLI / capex cycle | "a healthy mix of domestic and international opportunities" | bullish |
 | EV / energy transition | "expanding into new and adjacent opportunities across renewable energy and related industries" | bullish |
-| Margin expansion / operating leverage | "Q2 arising from shipment delays and monsoon related disruption" | cautious |
+| Margin expansion / operating leverage | "temporary execution challenges during Q2 arising from shipment delays and monsoon related disruption" | cautious |
 
 ## Missing Data
 

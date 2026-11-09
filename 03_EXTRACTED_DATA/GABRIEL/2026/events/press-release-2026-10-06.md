@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Press Release (FORVIA JV)
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_03082026193848_SE_Intimation_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-09/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-0a935f385c.pdf
-Content hash: 0a935f385ce1520661639ef6ff1b44dba19f0e3432a8850d51ebcb42d907c5af
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_06102026215748_SE_intimation_press_release_final_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-11/Press-Release-d3d18c6ee3.pdf
+Content hash: d3d18c6ee3109a2f125e0df99013392ac5ba897490f05fb40322111921b3cbfb
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-08-03
+Date: 2026-10-06
 Quarter: Non-quarterly event
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

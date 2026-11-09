@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Board Outcome (FASI JV)
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_21082026151524_SE_Disclosure_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/Acquisition-c673e93d08.pdf
-Content hash: c673e93d084f694cbd4a3d4a129afc8560ce8f005015bac7ee398ce5fcdc5913
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_06102026211621_SE_intimation_final_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-10-11/Outcome-of-Board-Meeting-9888b186b8.pdf
+Content hash: 9888b186b8ace66863c397f261fd19035a90324a0423745acb89bc302af7af77
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-08-21
+Date: 2026-10-06
 Quarter: Non-quarterly event
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

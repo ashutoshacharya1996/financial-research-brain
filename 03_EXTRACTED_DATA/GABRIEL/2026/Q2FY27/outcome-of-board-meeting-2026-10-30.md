@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Board Outcome (Q2 FY27 Results)
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_19082026203734_SE_Intimation_1_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-23/Amendment-to-AOA-MOA-972ea5b8ed.pdf
-Content hash: 972ea5b8edfaa4c354489b5704d72aeca6133b08003c97be26e55b956d6d2189
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_30102026204148_BM_outcome_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-11-01/Outcome-of-Board-Meeting-4c72cb9275.pdf
+Content hash: 4c72cb927515e4ebc86d972c13ba3100ac0685cd07a875913bf6423e18dad4d7
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-08-19
+Date: 2026-10-30
 Quarter: Q2 FY27
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

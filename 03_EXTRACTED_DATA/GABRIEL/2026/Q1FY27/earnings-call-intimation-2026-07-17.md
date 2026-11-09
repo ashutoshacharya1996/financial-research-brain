@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Earnings Call Intimation
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_11052026165143_SE_Intimation_final_Pallavi_Joshi.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-06-22/Shareholders-meeting-73d4e26a6b.pdf
-Content hash: 73d4e26a6b6021e9b9ffa51ea3541182b9c5433e9897b44f45bf3cfa456ab365
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_17072026200033_SE_intimation_merged_signed.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-19/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-0a8a7cb55b.pdf
+Content hash: 0a8a7cb55bd936b79a1001a5a0e2919ca138071f34a9cb100656596421096974
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-05-11
+Date: 2026-07-17
 Quarter: Q1 FY27
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

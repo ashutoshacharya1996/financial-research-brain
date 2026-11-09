@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Clarification to Exchange
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_11052026194435_SEIntimationFinalsigned_1.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-06-22/General-Updates-476496f6a0.pdf
-Content hash: 476496f6a04c02826d4c42b774be91821a5bb15a2972c8522e770e983721aaf8
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_29062026232352_Discrepancy_Clarification.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-07-12/Reply-to-Clarification--Financial-results-d4c4a2ced6.pdf
+Content hash: d4c4a2ced6ce14746a1aa6bfd513708c6c42cddfff3542b8db9c07de7c34d96f
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-05-11
+Date: 2026-07-09
 Quarter: Q4 FY26 (clarification on FY26 Q4 results filing)
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09

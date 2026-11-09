@@ -1,12 +1,12 @@
 # Extracted Data — GABRIEL INDIA LTD (GABRIEL)
 Document type: Exchange Filing — Call Recording Notice
-Source: https://nsearchives.nseindia.com/corporate/GABRIEL_26082026115630_SE_intimation_merged_signed.pdf
-Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-08-30/Press-Release-34b6bd4c49.pdf
-Content hash: 34b6bd4c491ac66badf596d609c6d0c13d3432c7c287ec1b8a5815d980823ec2
+Source: https://nsearchives.nseindia.com/corporate/GABRIEL_02112026203231_SE_Intimation_signed_1_.pdf
+Local evidence: 02_RAW_DOCUMENTS/GABRIEL/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-43bf61fe32.pdf
+Content hash: 43bf61fe324b89d57323ab21e62b3b2734c46009c68a1439482cc593896d36c7
 Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: N/A
-Date: 2026-08-26
+Date: 2026-11-02
 Quarter: Q2 FY27
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09
