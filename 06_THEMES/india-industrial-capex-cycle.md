@@ -4,8 +4,8 @@
 Developing
 
 ## Confidence Score
-7.5 / 10
-Justification: Six companies across defence, infrastructure, industrials, and auto all showing strong order pipelines, but LT's confirmed Q4 FY26 data (PAT -3% YoY, EBITDA 10.4% compressed vs "stable" prior characterisation) introduces a real execution quality caveat — the order-to-revenue conversion lag and margin compression at the largest capex EPC player prevents a higher score; all five other companies still confirming demand is real and growing.
+7.8 / 10
+Justification: Raised from 7.5 on 2026-11-09: LT record Q2 inflow Rs 1,47,665 cr (+28%) and Gabriel/BEL capex plans corroborate, but margin compression at LT (8.7% vs 10.0%) and JNKINDIA order book decline (Rs 1,662 cr) keep this below 8.
 
 ## Trend Direction
 Stable
@@ -54,9 +54,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-- `india-industrial-capex-cycle-2026-Q4` — Confidence: 7.5 / Status: Active
+- `india-industrial-capex-cycle-2026-Q4` — Confidence: 7.8 / Status: Active
 
 ## Research Queue Appearances
+
+2026-11-09: BEL #1, PARAS #2, GABRIEL #3, LT #4, HAL #5, JNKINDIA #6 (6 appearances) — see weekly/2026-11-09.md
 
 18 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6
 
@@ -82,7 +84,15 @@ Companies mentioning this theme this week:
 - LT Lakshya 2031 ROE guidance 16–17% described by analysts as "underwhelming" — management ambition may not translate to shareholder returns at scale
 
 ## Corroboration Count
-6 companies this week | 6 companies cumulative (LT negative signal; 5 positive + 1 mixed)
+5 companies this week | 6 cumulative
 
 ## Last Updated
-2026-06-22
+2026-11-09
+
+## Update 2026-11-09 (Q1/Q2 FY27 evidence)
+
+- **LT** Q2 FY27 (27 Oct): revenue Rs 78,750 cr (+16%), record order inflow Rs 1,47,665 cr (+28%), order book Rs 8,53,514 cr; Mfg & Products revenue +34%; "~Rs 10 trillion" prospects pipeline (qualitative). EBITDA margin 8.7% vs 10.0%.
+- **GABRIEL** Q2: consolidated revenue +22.9% YoY; FORVIA seating JV (about Rs 50 cr commitment), HL Mando/Klemove stakes; standalone borrowings up sharply.
+- **BEL**: Q2 revenue +26% YoY; capex plans from Q4 not restated in reviewed pages.
+- **JNKINDIA** (negative): order book Rs 1,662 cr, down 7.7% QoQ; cash Rs 6.9 cr; guidance 20-25% revenue growth vs earlier 25-30% slide (source conflict unresolved).
+- **PARAS**: proposed Rs 6,200 cr OSAT MoU (no timeline or funding).

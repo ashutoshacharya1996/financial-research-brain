@@ -5,10 +5,10 @@
 - **opportunity_id:** defence-electronics-aerospace-2026-Q4
 - **theme_name:** Indian Defence Electronics & Aerospace Supply Chain
 - **theme_status:** Developing
-- **confidence_score:** 9.0
-- **trend_direction:** Accelerating
+- **confidence_score:** 8.2
+- **trend_direction:** Stable
 - **date_identified:** 2026-06-20
-- **last_validated:** 2026-06-22
+- **last_validated:** 2026-11-09
 - **status:** Active
 
 ---
@@ -82,3 +82,14 @@
 - **LCA Tejas Mark-1A prior delivery slip:** HAL had originally targeted LCA Mark-1A deliveries in FY26; this slipped to Aug/Sep 2026. Management's Aug/Sep 2026 target is the second iteration — HAL's track record of delivery commitments on LCA is not clean. Revenue recognition for this programme is contingent on physical delivery of aircraft. Source: Earnings Update — HAL — 2026-06-21.
 - **LT H1 FY27 explicitly soft — forward deterioration:** LT management characterised H1 FY27 as "softer due to execution headwinds" with H2 recovery conditional on Middle East normalisation. This extends the execution quality concern (Q4 FY26 PAT -3%) forward in time; it is no longer a one-quarter rear-view risk. Source: Analyst Meet — LT — 2026-06-20.
 - **10-way competition limits MALE UAV win probability:** With 10 qualified bidders and a split-order (L1 + L2 winning ~₹15,000cr each), the expected value for any individual company is materially lower than the ₹30,000cr headline. One winning and one losing is the base case across LT and HAL. Source: MALE UAV Tender Event — 2026-06-16.
+
+
+---
+
+## Update 2026-11-09
+
+Revalidated against Q1/Q2 FY27 filings (see 07_OPPORTUNITIES/weekly/2026-11-09.md).
+
+- New evidence: BEL Q2 FY27 revenue Rs 7,291 cr, PAT Rs 1,541 cr, order book Rs 68,717 cr (1 Oct), QRSAM unsigned as of 3 Nov; HAL Q1 FY27 results (12 Aug) and Aravalli/ALH items; PARAS Q2 results (29 Oct), DRDO order, ICRA upgrade.
+- contradictory_evidence: BEL order book down two quarters; QRSAM slipped Jun-Jul → Sep → undated; P-75I may slip to next year; HAL auditor emphasis on governance non-compliance; HAL FY27 guidance not restated; LT shows no defence award in the window.
+- Confidence lowered from 9.0 to 8.2; trend Accelerating → Stable.
