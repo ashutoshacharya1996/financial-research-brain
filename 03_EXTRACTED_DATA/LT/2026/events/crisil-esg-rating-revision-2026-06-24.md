@@ -7,7 +7,7 @@ Collection status: downloaded
 Source tier: tier_1
 Collection failure reason: 
 Date: 2026-06-24
-Quarter: Non-quarterly event (events)
+Quarter: Non-quarterly event (Q1 FY27)
 Extracted by: Extraction Agent
 Extraction date: 2026-11-09
 
