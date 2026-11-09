@@ -54,9 +54,11 @@ Companies mentioning this theme this week:
 
 ## Linked Opportunities
 
-- `india-industrial-capex-cycle-2026-Q4` — Confidence: 7.5 / Status: Active
+- `india-industrial-capex-cycle-2026-Q4` — Confidence: 7.8 / Status: Active
 
 ## Research Queue Appearances
+
+2026-11-09: BEL #1, PARAS #2, GABRIEL #3, LT #4, HAL #5, JNKINDIA #6 (6 appearances) — see weekly/2026-11-09.md
 
 18 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6
 

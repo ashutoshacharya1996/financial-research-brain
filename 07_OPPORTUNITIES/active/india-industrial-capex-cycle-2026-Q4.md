@@ -5,10 +5,10 @@
 - **opportunity_id:** india-industrial-capex-cycle-2026-Q4
 - **theme_name:** India Industrial Capex Cycle
 - **theme_status:** Developing
-- **confidence_score:** 7.5
+- **confidence_score:** 7.8
 - **trend_direction:** Stable
 - **date_identified:** 2026-06-20
-- **last_validated:** 2026-06-22
+- **last_validated:** 2026-11-09
 - **status:** Active
 
 ---
@@ -79,3 +79,14 @@
 Not required at 7.5/10. Key counter-evidence documented in Risks above and in the linked theme record (`06_THEMES/india-industrial-capex-cycle.md`).
 
 **Most material counter-signal this run:** LT Q4 FY26 PAT -3% YoY + EBITDA margin 10.4% — the largest EPC company in the universe is experiencing margin compression despite record order inflows; order quality (profit-generating) is not tracking order quantity. Watch FY27 Q1 for whether this is a one-quarter anomaly or structural.
+
+
+---
+
+## Update 2026-11-09
+
+Revalidated against Q1/Q2 FY27 filings (see 07_OPPORTUNITIES/weekly/2026-11-09.md).
+
+- New evidence: LT Q2 FY27 record inflow Rs 1,47,665 cr (+28%), margin 8.7% vs 10.0%; GABRIEL Q2 +22.9% and FORVIA JV; BEL Q2 results; PARAS OSAT MoU.
+- contradictory_evidence: LT margin compression; JNKINDIA order book Rs 1,662 cr, cash Rs 6.9 cr, related-party Nigeria order; GABRIEL borrowing jump.
+- Confidence raised from 7.5 to 7.8; trend Stable.
