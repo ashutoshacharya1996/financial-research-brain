@@ -142,3 +142,20 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-11-03 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.com/corporate/PARAS_03112026135528_NoticePB_CC.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-08/General-Updates-f5aa7c6019.pdf | f5aa7c6019ba | downloaded |
 | 2026-11-03 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.com/corporate/PARAS_03112026115221_NoticePB.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-08/Shareholders-meeting-c85808497e.pdf | c85808497e04 | downloaded |
 | 2026-11-02 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PARAS_02112026141446_InvestormeetAshikaCapital.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-eec88c6d6f.pdf | eec88c6d6f18 | downloaded |
+
+## Evidence collected 2026-11-15
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-11-12 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/PARAS_12112026134919_BOFA.pdf | 02_RAW_DOCUMENTS/PARAS/raw/2026-11-15/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-4b41493e7a.pdf | 4b41493e7a6c | downloaded |
+| 2026-11-04 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.in/corporate/PARAS_04112026131331_NPAD.pdf |  |  | metadata_only |
+| 2026-11-03 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.in/corporate/PARAS_03112026135528_NoticePB_CC.pdf |  |  | metadata_only |
+| 2026-11-03 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.in/corporate/PARAS_03112026115221_NoticePB.pdf |  |  | metadata_only |
+| 2026-11-02 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/PARAS_02112026141446_InvestormeetAshikaCapital.pdf |  |  | metadata_only |
+| 2026-10-30 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.in/corporate/PARAS_30102026115113_Newspaper_Ad.pdf |  |  | metadata_only |
+| 2026-10-29 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.in/corporate/PARAS_29102026131025_Scan__1_.pdf |  |  | metadata_only |
+| 2026-10-08 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.in/corporate/PARAS_08102026165119_DPCertificate30092026.pdf |  |  | metadata_only |
+| 2026-09-30 | NSE | Exchange Filing | Credit Rating | https://nsearchives.nseindia.in/corporate/PARAS_30092026180526_Reg_30_ICRA.pdf |  |  | metadata_only |
+| 2026-09-28 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/PARAS_28092026132508_Intimation_DRDO_Order_CC_signed.pdf |  |  | metadata_only |
+| 2026-09-24 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/PARAS_24092026121421_InvestormeetNuvamaCC.pdf |  |  | metadata_only |
+| 2026-09-19 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.in/corporate/PARAS_19092026172049_Intimation_for_Closure_of_Trading_Window_30092026.pdf |  |  | metadata_only |

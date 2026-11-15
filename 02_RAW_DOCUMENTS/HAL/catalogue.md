@@ -141,3 +141,18 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
 |---|---|---|---|---|---|---|---|
 | 2026-11-03 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/HAL_03112026165816_HATSOFFtransfer_signed.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-11-08/Updates-37e6008f96.pdf | 37e6008f9687 | downloaded |
+
+## Evidence collected 2026-11-15
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-11-13 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.in/corporate/HAL_13112026141735_ChangeInMngt_13112026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-11-15/Change-in-Management-c18840199a.pdf | c18840199a7c | downloaded |
+| 2026-11-12 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.in/corporate/HAL_12112026132915_IntegratedFinancial_30092026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-11-15/Outcome-of-Board-Meeting-3b685f83b7.pdf | 3b685f83b769 | downloaded |
+| 2026-11-11 | NSE | Exchange Filing | Credit Rating- Others | https://nsearchives.nseindia.in/corporate/HAL_11112026153259_WithdrawalOfRating_11112026.pdf | 02_RAW_DOCUMENTS/HAL/raw/2026-11-15/Credit-Rating--Others-55788751d5.pdf | 55788751d59a | downloaded |
+| 2026-11-03 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.in/corporate/HAL_03112026165816_HATSOFFtransfer_signed.pdf |  |  | metadata_only |
+| 2026-10-28 | NSE | Exchange Filing | Change in Director(s) | https://nsearchives.nseindia.in/corporate/HAL_28102026180358_changeinmanagement_Dops_Signed.pdf |  |  | metadata_only |
+| 2026-10-22 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.in/corporate/HAL_22102026131032_GeneralUpdates22102026.pdf |  |  | metadata_only |
+| 2026-10-07 | NSE | Exchange Filing | Change in Director(s) | https://nsearchives.nseindia.in/corporate/HAL_07102026153915_ChangeInDirectorate_07102026.pdf |  |  | metadata_only |
+| 2026-10-02 | NSE | Exchange Filing | Agreements | https://nsearchives.nseindia.in/corporate/HAL_02102026194550_AgreementSigned_02102026.pdf |  |  | metadata_only |
+| 2026-09-28 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.in/corporate/HAL_28092026150918_TradingWindowClosure_26092026.pdf |  |  | metadata_only |
+| 2026-09-28 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.in/corporate/HAL_28092026145433_ChangeInMngt_28092026.pdf |  |  | metadata_only |

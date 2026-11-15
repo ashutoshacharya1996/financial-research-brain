@@ -171,3 +171,21 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-11-06 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/BEL_06112026225005_Press_Release_06112026_SIGNED.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-08/Bagging-Receiving-of-orders-contracts-df0dfa50cb.pdf | df0dfa50cb55 | downloaded |
 | 2026-11-06 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_06112026145908_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-e1a642c14d.pdf | e1a642c14d7d | downloaded |
 | 2026-11-03 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/BEL_03112026214757_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-bc8ded2cfd.pdf | bc8ded2cfd4a | downloaded |
+
+## Evidence collected 2026-11-15
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-11-13 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/BEL_13112026182841_Lettersigned.pdf | 02_RAW_DOCUMENTS/BEL/raw/2026-11-15/Bagging-Receiving-of-orders-contracts-ae48beadd6.pdf | ae48beadd651 | downloaded |
+| 2026-11-06 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/BEL_06112026225005_Press_Release_06112026_SIGNED.pdf |  |  | metadata_only |
+| 2026-11-06 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/BEL_06112026145908_Lettersigned.pdf |  |  | metadata_only |
+| 2026-11-03 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/BEL_03112026214757_Lettersigned.pdf |  |  | metadata_only |
+| 2026-10-31 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.in/corporate/BEL_31102026204800_Lettersigned.pdf |  |  | metadata_only |
+| 2026-10-30 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.in/corporate/BEL_30102026165447_Lettersigned.pdf |  |  | metadata_only |
+| 2026-10-27 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/BEL_27102026164511_Lettersigned.pdf |  |  | metadata_only |
+| 2026-10-21 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.in/corporate/BEL_21102026181543_Press_release_21102026.pdf |  |  | metadata_only |
+| 2026-10-13 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/BEL_13102026153239_Lettersigned.pdf |  |  | metadata_only |
+| 2026-10-12 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.in/corporate/BEL_12102026173613_Lettersigned.pdf |  |  | metadata_only |
+| 2026-09-30 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.in/corporate/BEL_30092026164929_Lettersigned.pdf |  |  | metadata_only |
+| 2026-09-28 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.in/corporate/BEL_28092026102208_LetterSigned.pdf |  |  | metadata_only |
+| 2026-09-17 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/BEL_17092026164308_Lettersigned.pdf |  |  | metadata_only |

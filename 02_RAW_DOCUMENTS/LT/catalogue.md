@@ -257,3 +257,33 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-11-04 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.com/corporate/PAM_04112026185041_Intimation04112026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-08/Updates-1b139ac1b1.pdf | 1b139ac1b195 | downloaded |
 | 2026-11-02 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.com/corporate/PAM_02112026175603_TranscriptSep2026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-08/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-ada8460050.pdf | ada8460050b2 | downloaded |
 | 2026-11-02 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.com/corporate/PAM_02112026101835_PressRelease02112026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-08/Bagging-Receiving-of-orders-contracts-eb3ceddd37.pdf | eb3ceddd37e1 | downloaded |
+
+## Evidence collected 2026-11-15
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-11-09 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/PAM_09112026103717_PressRelease09112026.pdf | 02_RAW_DOCUMENTS/LT/raw/2026-11-15/Bagging-Receiving-of-orders-contracts-278006de5e.pdf | 278006de5e90 | downloaded |
+| 2026-11-06 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/PAM_06112026153645_AnalystMeetIntimation06112026.pdf |  |  | metadata_only |
+| 2026-11-04 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.in/corporate/PAM_04112026185041_Intimation04112026.pdf |  |  | metadata_only |
+| 2026-11-02 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/PAM_02112026175603_TranscriptSep2026.pdf |  |  | metadata_only |
+| 2026-11-02 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/PAM_02112026101835_PressRelease02112026.pdf |  |  | metadata_only |
+| 2026-10-31 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.in/corporate/AB_31102026130022_SEIntimation_ExtensionofBTAVyoma_31102026.pdf |  |  | metadata_only |
+| 2026-10-28 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.in/corporate/PAM_28102026194657_NewspaperAdvtSep2026.pdf |  |  | metadata_only |
+| 2026-10-27 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/PAM_27102026221257_Intimation27102026.pdf |  |  | metadata_only |
+| 2026-10-27 | NSE | Exchange Filing | Updates | https://nsearchives.nseindia.in/corporate/PAM_27102026183653_AnalystPresentationSep2026.pdf |  |  | metadata_only |
+| 2026-10-27 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.in/corporate/PAM_27102026171156_LTSep2026.pdf |  |  | metadata_only |
+| 2026-10-27 | NSE | Exchange Filing | Allotment of Securities | https://nsearchives.nseindia.in/corporate/PAM_27102026132854_ESOPAllotment27102026.pdf |  |  | metadata_only |
+| 2026-10-27 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/PAM_27102026101631_PressRelease27102026.pdf |  |  | metadata_only |
+| 2026-10-21 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/PAM_21102026094637_PressRelease21102026.pdf |  |  | metadata_only |
+| 2026-10-19 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/PAM_19102026101805_PressRelease19102026.pdf |  |  | metadata_only |
+| 2026-10-16 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/PAM_16102026170806_Intimation16102026.pdf |  |  | metadata_only |
+| 2026-10-12 | NSE | Exchange Filing | Certificate under SEBI (Depositories and Participants) Regulations, 2018 | https://nsearchives.nseindia.in/corporate/PAM_12102026183004_Intimation745Sep2026.pdf |  |  | metadata_only |
+| 2026-10-07 | NSE | Exchange Filing | Change in Management | https://nsearchives.nseindia.in/corporate/PAM_07102026212904_IntimationSRMGT07102026.pdf |  |  | metadata_only |
+| 2026-10-07 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/PAM_07102026101304_PressRelease07102026.pdf |  |  | metadata_only |
+| 2026-10-05 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/PAM_05102026093512_PressRelease05102026.pdf |  |  | metadata_only |
+| 2026-09-30 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.in/corporate/PAM_30092026152845_IntimationLTMRHL30092026.pdf |  |  | metadata_only |
+| 2026-09-30 | NSE | Exchange Filing | Bagging/Receiving of orders/contracts | https://nsearchives.nseindia.in/corporate/PAM_30092026121641_PressRelease30092026.pdf |  |  | metadata_only |
+| 2026-09-25 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.in/corporate/PAM_25092026164412_Intimation25092026.pdf |  |  | metadata_only |
+| 2026-09-18 | NSE | Exchange Filing | Press Release | https://nsearchives.nseindia.in/corporate/PAM_18092026105408_PressRelease18092026.pdf |  |  | metadata_only |
+| 2026-09-17 | NSE | Exchange Filing | Credit Rating | https://nsearchives.nseindia.in/corporate/PAM_17092026142102_ESGRating17092026.pdf |  |  | metadata_only |
+| 2026-09-16 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/PAM_16092026172400_Intimation16092026.pdf |  |  | metadata_only |
