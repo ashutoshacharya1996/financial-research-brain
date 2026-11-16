@@ -292,12 +292,16 @@ def norm(text: str) -> str:
 def resolve_scheme_code(fund: dict, schemes: list[tuple[str, str]]) -> tuple[str | None, str | None]:
     if (fund.get("scheme_code") or "").strip():
         return fund["scheme_code"].strip(), None
-    kws = [norm(k) for k in (fund.get("match_keywords") or "").split("|") if k.strip()]
+    raw = [norm(k) for k in (fund.get("match_keywords") or "").split("|") if k.strip()]
+    kws = [k for k in raw if not k.startswith("!")]
+    negs = [k[1:].strip().replace(" ", "") for k in raw if k.startswith("!")]  # "!tax" excludes names with "tax"
     matches = []
     for code, name in schemes:
         low = norm(name)
         squashed = low.replace(" ", "")
         if not all(k.replace(" ", "") in squashed for k in kws):
+            continue
+        if any(n in squashed for n in negs):
             continue
         if "direct" not in low or "growth" not in low:
             continue
@@ -312,7 +316,7 @@ def resolve_scheme_code(fund: dict, schemes: list[tuple[str, str]]) -> tuple[str
 
 def mfapi_search(session: requests.Session, fund: dict) -> tuple[str | None, str | None]:
     """Fallback: mfapi.in search API, filtered with the same keyword rules."""
-    kws = [k.strip() for k in (fund.get("match_keywords") or "").split("|") if k.strip()]
+    kws = [k.strip() for k in (fund.get("match_keywords") or "").split("|") if k.strip() and not k.strip().startswith("!")]
     try:
         rows = session_get(session, "https://api.mfapi.in/mf/search?q=" + urllib.parse.quote(" ".join(kws)),
                            retries=2).json()
@@ -369,7 +373,8 @@ def fetch_funds(session: requests.Session, status: dict) -> list[dict]:
         if not code:
             code, matched_name = mfapi_search(session, fund)
         if not code:
-            last = norm((fund.get("match_keywords") or "").split("|")[-1]).replace(" ", "")
+            pos = [k for k in (fund.get("match_keywords") or "").split("|") if k.strip() and not k.strip().startswith("!")]
+            last = norm(pos[-1] if pos else "").replace(" ", "")
             rec["candidates"] = [f"{c} {n}" for c, n in schemes
                                  if last and last in norm(n).replace(" ", "") and "direct" in n.lower()][:10]
         rec["scheme_code"] = code
