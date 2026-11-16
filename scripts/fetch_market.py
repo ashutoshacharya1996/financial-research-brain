@@ -369,8 +369,9 @@ def fetch_funds(session: requests.Session, status: dict) -> list[dict]:
         if not code:
             code, matched_name = mfapi_search(session, fund)
         if not code:
-            first = norm((fund.get("match_keywords") or "").split("|")[0])
-            rec["candidates"] = [f"{c} {n}" for c, n in schemes if first and first in norm(n)][:8]
+            last = norm((fund.get("match_keywords") or "").split("|")[-1]).replace(" ", "")
+            rec["candidates"] = [f"{c} {n}" for c, n in schemes
+                                 if last and last in norm(n).replace(" ", "") and "direct" in n.lower()][:10]
         rec["scheme_code"] = code
         rec["matched_scheme_name"] = matched_name
         if not code:
