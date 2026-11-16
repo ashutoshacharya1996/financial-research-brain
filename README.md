@@ -1,42 +1,29 @@
-﻿Opportunity Discovery Engine
+Opportunity Discovery Engine
 
-## Weekly Workflow
+## Weekly Workflow (redesigned 2026-11-16)
 
-Current rule: Sunday runs collection only. Lane A fetches companies where
-`fetch_enabled=true`; Lane B writes discovery evidence under
-`02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/`. Universe Manager updates
-`01_UNIVERSE/company_master.csv` later on Monday.
+The weekly pipeline now tracks the **broad Indian market across industries and the mutual
+funds held** — not a fixed list of stocks.
 
-**Sunday (automatic):** A GitHub Action runs at 09:00 IST. It fetches prices, news, and exchange filings for companies where `fetch_enabled=true`, and also runs broad discovery collection using `scripts/fetch_evidence.py` - no AI, no API keys. Evidence is committed to `02_RAW_DOCUMENTS/`.
+**Sunday 09:00 IST (GitHub Action, no AI):** `scripts/fetch_market.py` collects index levels
+(Nifty 50, Sensex, Nifty 500, Midcap 150, Smallcap 250, ~15 sectors, India VIX), valuation
+(PE/PB), FII/DII flows, global/macro markers (S&P, Brent, gold, USD/INR, US 10Y), NAV returns
+for every fund in `01_UNIVERSE/mf_watchlist.csv`, and the week's market/AMC headlines.
+Output: `02_RAW_DOCUMENTS/_market/YYYY-MM-DD/`.
 
-**Monday+ (local):** Pull the new evidence and run the AI pipeline locally:
+**Monday (Claude):** `/weekly-run` → `/market-brief` writes
+`08_PORTFOLIO_INPUTS/market-brief-YYYY-MM-DD.md` — one page:
 
-```
-git pull
-claude
-```
+1. What happened last week
+2. Anything to take note of
+3. Opportunities in play
+4. Bull / Base / Bear odds for the next 3 months (rule-based score, shown in the brief)
 
-Then say: _"New evidence is in. Run extraction, discovery summary, Universe Manager, delta, themes, opportunity screener, and weekly brief. Skip only the collection step."_
+**Fund list:** edit `01_UNIVERSE/mf_watchlist.csv`. If a fund's NAVs don't resolve, put its
+AMFI scheme code in the `scheme_code` column.
 
-Universe Manager runs on Monday after the discovery summary is generated from
-`02_RAW_DOCUMENTS/_discovery/YYYY-MM-DD/`. It is the step that updates
-`01_UNIVERSE/company_master.csv`. Sunday collection does not directly promote,
-deprioritize, or remove companies.
-
-Claude Code processes extraction â†’ delta â†’ themes â†’ opportunity screener â†’ weekly brief and commits the outputs.
-
-If a stock from the weekly report looks investment-relevant, run the Investment
-Impact layer before any stock-selection work:
-
-```
-Run investment impact notes for the top handoff names from this week's report.
-```
-
-This creates files in `08_PORTFOLIO_INPUTS/investment-impact/`. Those notes are
-the bridge into India Stock Picker review. They are not buy/sell decisions.
-
-To add a company to the fetch cycle: add or update the row in
-`01_UNIVERSE/company_master.csv` and set `fetch_enabled: true`.
+**Stock research (on demand, no longer weekly):** the extraction → delta → theme → screener →
+investment-impact skills and `scripts/fetch_evidence.py` remain available for single-stock deep dives.
 
 ---
 
