@@ -16,7 +16,6 @@ Extraction date: 2026-11-16
 - "the valuation undertaken in connection with the proposed transaction is based on audited financial statements for the financial year ended March 31, 2026, including in respect of the erstwhile Anchemco India Private Limited".
 - "there is no change in the equity share exchange ratio or in the terms of the proposed acquisition and the proposed preferential issue".
 - Joint valuation report dated July 21, 2026 by "KPMG Valuation Services LLP ... and BDO Valuation Advisory LLP".
-- Note: filing exists because the Aug-2026 AGM/valuation disclosures required clarification (reason not stated in the filing).
 
 ## Theme Signal Log
 | Theme Category | Exact Quote | Context |
