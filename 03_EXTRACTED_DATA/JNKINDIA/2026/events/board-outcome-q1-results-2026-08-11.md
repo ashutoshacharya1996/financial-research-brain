@@ -14,7 +14,7 @@ Extraction date: 2026-11-16
 
 ## Financial Metrics (consolidated Q1 FY27 statement, INR million as filed; OCR text, digits partially noisy)
 - Revenue from Operations 1,799.63 (Q1 FY26: 990.99); Other Income 60.37; Total Income 1,860.00 (Q4 FY26: 3,445.70; Q1 FY26: 1,029.70); Finance Cost 44.35; Profit before tax 146.35 (Q1 FY26: 19.81). Auditor: P G Bhagwat LLP (limited review).
-- Segment revenue: Combustion Equipment 1,637.10; Process Equipment 162.53 (OCR) — consistent with Rs 16.5 cr Chemdist revenue in the press release.
+- Segment revenue (INR million): Combustion Equipment 1,637.10; Process Equipment 162.53 (Q4 FY26: 352.87; FY26: 588.20). Segment result before tax and finance costs: Combustion Equipment 297.25 (Q4 FY26 647.04); Process Equipment (13.30) loss (Q4 FY26 15.02; FY26 24.69).
 - Order book / guidance: not in this filing.
 
 ## Board decisions (verbatim)

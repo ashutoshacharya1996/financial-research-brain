@@ -86,4 +86,4 @@ Same management statement as Q2FY27/press-release.md (slide 3). Business slides:
 | Margin expansion / operating leverage | "EBITDA Margin 11.1% 10.8% 10.6% 9.2%" | Neutral |
 
 ## Missing Data
-- Quarterly Q2 order inflow number; Chemdist standalone P&L; receivable ageing for Sep-26; segment results (OCR in the board-outcome filing is garbled, see events/board-outcome-cfo-change-2026-11-05.md)
+- Quarterly Q2 order inflow number; Chemdist standalone P&L; receivable ageing for Sep-26; segment results are not in the presentation (they are in the 2026-11-05 board-outcome filing; see events/board-outcome-cfo-change-2026-11-05.md)
