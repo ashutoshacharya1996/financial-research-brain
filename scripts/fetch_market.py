@@ -274,22 +274,30 @@ def parse_amfi(text: str) -> list[tuple[str, str]]:
     schemes = []
     for line in text.splitlines():
         parts = line.split(";")
-        if len(parts) >= 6 and parts[0].strip().isdigit():
-            schemes.append((parts[0].strip(), parts[3].strip()))
+        if len(parts) >= 4 and parts[0].strip().isdigit():
+            # Name column is normally parts[3]; take the longest alphabetic field to survive format drift.
+            texty = [x.strip() for x in parts[1:] if sum(c.isalpha() for c in x) > 10]
+            if texty:
+                schemes.append((parts[0].strip(), max(texty, key=len)))
     return schemes
 
 
 EXCLUDE_WORDS = ("idcw", "dividend", "bonus", "regular", "payout", "reinvest", "segregated")
 
 
+def norm(text: str) -> str:
+    return " ".join(text.lower().replace("-", " ").replace("&", " & ").split())
+
+
 def resolve_scheme_code(fund: dict, schemes: list[tuple[str, str]]) -> tuple[str | None, str | None]:
     if (fund.get("scheme_code") or "").strip():
         return fund["scheme_code"].strip(), None
-    kws = [k.strip().lower() for k in (fund.get("match_keywords") or "").split("|") if k.strip()]
+    kws = [norm(k) for k in (fund.get("match_keywords") or "").split("|") if k.strip()]
     matches = []
     for code, name in schemes:
-        low = name.lower()
-        if not all(k in low for k in kws):
+        low = norm(name)
+        squashed = low.replace(" ", "")
+        if not all(k.replace(" ", "") in squashed for k in kws):
             continue
         if "direct" not in low or "growth" not in low:
             continue
@@ -300,6 +308,19 @@ def resolve_scheme_code(fund: dict, schemes: list[tuple[str, str]]) -> tuple[str
         return None, None
     matches.sort()
     return matches[0][1], matches[0][2]
+
+
+def mfapi_search(session: requests.Session, fund: dict) -> tuple[str | None, str | None]:
+    """Fallback: mfapi.in search API, filtered with the same keyword rules."""
+    kws = [k.strip() for k in (fund.get("match_keywords") or "").split("|") if k.strip()]
+    try:
+        rows = session_get(session, "https://api.mfapi.in/mf/search?q=" + urllib.parse.quote(" ".join(kws)),
+                           retries=2).json()
+        schemes = [(str(r.get("schemeCode")), r.get("schemeName") or "") for r in rows]
+        return resolve_scheme_code({**fund, "scheme_code": ""}, schemes)
+    except Exception as exc:  # noqa: BLE001
+        print(f"  [MF] search fallback failed for {fund.get('fund_name')}: {exc}")
+        return None, None
 
 
 def nav_returns(navs: list[tuple[date, float]]) -> dict:
@@ -345,6 +366,11 @@ def fetch_funds(session: requests.Session, status: dict) -> list[dict]:
     for fund in funds:
         rec = {k: fund.get(k) for k in ("fund_name", "category", "benchmark_key", "status", "sip_amount", "notes")}
         code, matched_name = resolve_scheme_code(fund, schemes)
+        if not code:
+            code, matched_name = mfapi_search(session, fund)
+        if not code:
+            first = norm((fund.get("match_keywords") or "").split("|")[0])
+            rec["candidates"] = [f"{c} {n}" for c, n in schemes if first and first in norm(n)][:8]
         rec["scheme_code"] = code
         rec["matched_scheme_name"] = matched_name
         if not code:
