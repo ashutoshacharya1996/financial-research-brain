@@ -1,0 +1,12 @@
+fund_name,match_keywords,scheme_code,category,benchmark_key,status,sip_amount,source,notes
+Axis Midcap Fund,axis|midcap,,Mid Cap,NIFTY_MIDCAP_150,active_sip,12000,user-profile + user 2026-11-16,Mid-cap core
+Mirae Asset Large & Midcap Fund,mirae|large|midcap,,Large & Mid Cap,NIFTY_LARGEMID_250,active_sip,11000,user-profile + user 2026-11-16,Bridge between caps
+Nippon India Small Cap Fund,nippon|small cap,,Small Cap,NIFTY_SMALLCAP_250,active_sip,10000,user-profile + user 2026-11-16,Small-cap pedigree
+Parag Parikh Flexi Cap Fund,parag parikh|flexi cap,,Flexi Cap,NIFTY_500,held,,user 2026-11-16,Named by user 2026-11-16; not in June profile; confirm SIP/held via Kite
+Edelweiss Mid Cap Fund,edelweiss|mid cap,,Mid Cap,NIFTY_MIDCAP_150,held,,user 2026-11-16,Named by user 2026-11-16; not in June profile; confirm SIP/held via Kite
+quant Quantamental Fund,quant|quantamental,,Multi Cap,NIFTY_500,active_sip,4000,user-profile + user 2026-11-16,Multi-cap satellite; Quant AMC SEBI watch
+HDFC Focused Fund,hdfc|focused,,Focused,NIFTY_500,active_sip,8000,user-profile,High-conviction concentrated
+Aditya Birla Sun Life Savings Fund,aditya birla|savings,,Debt - Low Duration,,active_sip,5000,user-profile,War chest; deploy at pre-committed Nifty trigger (22000)
+Canara Robeco Large Cap Fund,canara robeco|large cap,,Large Cap,NIFTY_50,held,,user-profile,SIP stopped; held
+Mirae Asset ELSS Tax Saver Fund,mirae|elss,,ELSS,NIFTY_500,held,,user-profile,SIP stopped; held
+quant ELSS Tax Saver Fund,quant|elss,,ELSS,NIFTY_500,held,,user-profile,SIP stopped; held; Quant AMC SEBI watch
