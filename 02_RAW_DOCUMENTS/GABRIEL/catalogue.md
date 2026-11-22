@@ -209,3 +209,12 @@ https://www.nseindia.com/companies-listing/corporate-filings-financial-results (
 | 2026-10-02 | NSE | Exchange Filing | Copy of Newspaper Publication | https://nsearchives.nseindia.in/corporate/GABRIEL_02102026112554_SE_Intimation.pdf |  |  | metadata_only |
 | 2026-09-24 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.in/corporate/GABRIEL_24092026164311_SE_Intimation_signed.pdf |  |  | metadata_only |
 | 2026-09-21 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/GABRIEL_21092026180231_SE_Intimation_signed.pdf |  |  | metadata_only |
+
+## Evidence collected 2026-11-22
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-11-20 | NSE | Exchange Filing | Change in Company Secretary/Compliance Officer | https://nsearchives.nseindia.in/corporate/GABRIEL_20112026110821_SE_Intimation_signed_CO.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-11-22/Change-in-Company-Secretary-Compliance-Officer-d6c130300b.pdf | d6c130300bbd | downloaded |
+| 2026-11-20 | NSE | Exchange Filing | Outcome of Board Meeting | https://nsearchives.nseindia.in/corporate/GABRIEL_20112026105859_SE_Intimation_signed_CO.pdf |  |  | metadata_only |
+| 2026-11-19 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/GABRIEL_19112026221858_SE_Intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-11-22/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-49fc3caf9e.pdf | 49fc3caf9ee0 | downloaded |
+| 2026-11-16 | NSE | Exchange Filing | Analysts/Institutional Investor Meet/Con. Call Updates | https://nsearchives.nseindia.in/corporate/GABRIEL_16112026212029_SE_intimation_signed.pdf | 02_RAW_DOCUMENTS/GABRIEL/raw/2026-11-22/Analysts-Institutional-Investor-Meet-Con.-Call-Updates-84b9a05af0.pdf | 84b9a05af03b | downloaded |

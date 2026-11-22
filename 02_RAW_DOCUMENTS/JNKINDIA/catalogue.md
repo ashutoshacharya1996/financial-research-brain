@@ -171,3 +171,9 @@ https://www.nseindia.com/get-quotes/equity?symbol=JNKINDIA
 | 2026-09-28 | NSE | Exchange Filing | Trading Window | https://nsearchives.nseindia.in/corporate/JNKINDIA23_28092026161152_JNK_Trading_window_closure_September_2026.PDF |  |  | metadata_only |
 | 2026-09-25 | NSE | Exchange Filing | Shareholders meeting | https://nsearchives.nseindia.in/corporate/JNKINDIA23_25092026152751_covering_letter_and_AGM_proceeding.pdf |  |  | metadata_only |
 | 2026-09-24 | NSE | Exchange Filing | Credit Rating- Revision | https://nsearchives.nseindia.in/corporate/JNKINDIA23_24092026130742_JNK_Reg_30_Disclosure_Revision_of_Credit_rating.pdf |  |  | metadata_only |
+
+## Evidence collected 2026-11-22
+
+| Date | Source | Type | Title | Source URL | Local Path | Hash | Collection Status |
+|---|---|---|---|---|---|---|---|
+| 2026-11-17 | NSE | Exchange Filing | General Updates | https://nsearchives.nseindia.in/corporate/JNKINDIA23_17112026114918_Letter__CIN_Updation__002_.pdf | 02_RAW_DOCUMENTS/JNKINDIA/raw/2026-11-22/General-Updates-f8d2cf67eb.pdf | f8d2cf67eb48 | downloaded |
