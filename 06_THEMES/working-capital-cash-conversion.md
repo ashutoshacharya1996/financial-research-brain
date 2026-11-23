@@ -43,11 +43,12 @@ Companies mentioning this theme this run (2026-06-23 → 2026-11-22):
 
 ## Linked Opportunities
 
-None. New theme; no Opportunity Record in 07_OPPORTUNITIES/active/ is grounded in it.
+- `working-capital-cash-conversion-2026-Q4` — Confidence: 5.2 / Status: Active / Stage: Discovery. Created by the screener on 2026-11-23. Weekly report: 07_OPPORTUNITIES/weekly/2026-11-23.md (Opportunity #3).
 
 ## Research Queue Appearances
 
 0 — new theme (no weekly Top 10 reports produced since 2026-06-22).
+2026-11-23: +3 (LT #1, BEL #2, PARAS #3). Running count = 3.
 
 ## Potential Losers
 

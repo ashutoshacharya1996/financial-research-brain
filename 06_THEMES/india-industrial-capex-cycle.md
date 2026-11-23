@@ -77,11 +77,13 @@ Companies mentioning this theme this week:
 - *(2026-11-23)* **Power T&D / thermal EPC suppliers** — LT's PT&D Mega orders and two 1,600 MW thermal LNTPs point to power-sector capex; tracked-but-not-extracted SIEMENS, ABB, CUMMINSIND, POLYCAB and KEI are plausible beneficiaries (unverified, no extraction yet).
 
 ## Linked Opportunities
-- `india-industrial-capex-cycle-2026-Q4` — Confidence: 7.5 (record last validated 2026-06-22) / Status: Active
+- `india-industrial-capex-cycle-2026-Q4` — Confidence: 7.0 (re-validated 2026-11-23; was 7.5) / Status: Active / Trend: Stable
   - Theme agent note (2026-11-23): theme now 7.0 / Stable. The JNKINDIA rationale in the record (UAE order) is void because the order was cancelled on 2026-07-16; the screener should revalidate.
+  - Screener update (2026-11-23): re-validated. The JNKINDIA UAE, GABRIEL sunroof and BEL "QRSAM July" rationales are marked void; the record is re-based on LT's record Q2 inflow. JNKINDIA is retained as a contradicting candidate. Weekly report: 07_OPPORTUNITIES/weekly/2026-11-23.md (Opportunity #2).
 
 ## Research Queue Appearances
 0 in the 4 weeks to 2026-11-22 (no weekly Top 10 reports produced since 2026-06-22).
+2026-11-23: +6 (LT #1, BEL #2, PARAS #3, HAL #4, GABRIEL #5, JNKINDIA #6). Running count over the last 4 weeks = 6. Cumulative: 24.
 Historical: 18 — 2026-06-20: BEL #1, HAL #2, JNKINDIA #3, LT #4, PARAS #5, GABRIEL #6 | 2026-06-21: BEL #1, HAL #2, JNKINDIA #3, PARAS #4, GABRIEL #5, LT #6 | 2026-06-22: PARAS #1, BEL #2, GABRIEL #3, HAL #4, JNKINDIA #5, LT #6
 
 ## Potential Losers

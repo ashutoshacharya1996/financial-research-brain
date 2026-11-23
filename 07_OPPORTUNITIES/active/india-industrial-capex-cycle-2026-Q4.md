@@ -5,44 +5,60 @@
 - **opportunity_id:** india-industrial-capex-cycle-2026-Q4
 - **theme_name:** India Industrial Capex Cycle
 - **theme_status:** Developing
-- **confidence_score:** 7.5
+- **opportunity_stage:** Validation
+- **confidence_score:** 7.0 (was 7.5 on 2026-06-22)
 - **trend_direction:** Stable
+- **expected_horizon:** 1-3y
 - **date_identified:** 2026-06-20
-- **last_validated:** 2026-06-22
+- **last_validated:** 2026-11-23
 - **status:** Active
+
+> **Re-validation 2026-11-23 (window 2026-06-23 → 2026-11-22).**
+> - The JNKINDIA rationale (UAE/ADNOC TA'ZIZ order) is **void**. The order was cancelled on 2026-07-16 because "not receiving approval from the project licensor".
+> - The GABRIEL rationale (sunroof JV margin 15.1% above guidance; ROCE and broker targets) is **void**. The sunroof JV's H1 FY27 PAT fell 71.1%, consolidated EBITDA margin fell, and capex has shifted to related-party acquisitions.
+> - The BEL rationale ("QRSAM July 2026; order book +40% on signing") is **void**.
+>
+> The record is re-based on LT's tier-1 order data. Confidence follows the theme record (7.5 → 7.0). Sources: `06_THEMES/india-industrial-capex-cycle.md`; `04_COMPANY_ANALYSIS/<T>/delta-2026-11-23.md`.
 
 ---
 
 ## Candidate Stocks
 
-| Ticker | Company | Rationale |
-|--------|---------|-----------|
-| BEL | Bharat Electronics Ltd | QRSAM ₹30,000cr confirmed; BEL ~₹21,000cr (~70%); July 2026 signing imminent; order book lifts ~40% day of signing; FY27 inflow guidance >₹55,000cr |
-| HAL | Hindustan Aeronautics Ltd | FY26 PAT ₹9,115.52cr (27.6% net margin) confirmed; order book ₹2,54,538cr (7.7x revenue); LCA Mark-1A delivery Aug/Sep 2026 |
-| JNKINDIA | JNK India Ltd | UAE export order confirmed via NSE/BSE regulatory filing (Jun 8, 2026): CC7 Emirates / ADNOC / TA'ZIZ Salt Project; ₹100–300cr; Dec 2027; ADNOC reference customer established |
-| LT | Larsen & Toubro Ltd | Order book ₹7.40 trillion (+28% YoY); K9 Vajra-T ₹7,628.70cr confirmed; MALE UAV bid submitted; EXECUTION CONCERN: Q4 PAT -3% YoY, EBITDA 10.4% |
-| PARAS | Paras Defence & Space Technologies | Order book ₹928cr (1.9x FY26 revenue) first disclosed; BEL subcontract ₹52.82cr confirmed via regulatory filing; PAT +89% Q4 YoY vs revenue +58% — operating leverage visible |
-| GABRIEL | Gabriel India Ltd | FY26 PAT ₹252.2cr confirmed (+14.8% YoY); Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA 81%; Motilal Oswal Buy ₹1,266; sunroof JV margin 15.1% above 12-14% guidance on ₹434cr revenue; total capex ₹260-270cr confirmed including new fastener vertical; Genos plant Q4 CY26 |
+| Ticker | Company | Opportunity Fit Score | Rationale (re-validated 2026-11-23) |
+|--------|---------|----------------------|-----------|
+| LT | Larsen & Toubro Ltd | 9.0 | Primary beneficiary. Record Q2 FY27 inflow ₹1,47,665cr (+28%). H1 inflow ₹2,55,678cr (+22%) vs a 10–12% guide. Order book ₹8.535trn (+28%). "Private capex recovery broadening". **However**, EBITDA margin is 8.7% (third straight decline), ~60% of H1 inflow is international, and the prospects pipeline fell from ~₹15trn to ~₹10trn. Kite LTP 2026-11-23 ₹4,192.10 (~32.3x trailing, derived). |
+| BEL | Bharat Electronics Ltd | 6.5 | Own capex is "around INR1,200 crores" and R&D "INR2,200-plus crores". H1 revenue +25.97%. **However**, the order book fell 7.0% to ₹68,717cr. Kite LTP 2026-11-23 ₹401.55. |
+| HAL | Hindustan Aeronautics Ltd | 6.0 | Aravalli engine design-to-manufacture contract (2026-08-26). Capacity plan ~₹12,000cr by 2030 (FY26 call; no update). H1 revenue +14.7%. Capex for Q1/Q2 was not disclosed. |
+| PARAS | Paras Defence & Space Technologies | 5.0 | ₹6,200cr OSAT MoU (2026-07-22) is strategic but unfunded (≈8x the ₹770cr equity). Core H1 capex was only ₹13.3cr. |
+| GABRIEL | Gabriel India Ltd | 5.0 (was ~8) | H1 capex Rs 667 Mn, in line with ₹200–230cr p.a. (Crisil). Growth has shifted to inorganic (HL Mando ₹2,231cr from the promoter; HL Klemove ₹935cr) and is funded by a ₹1,000cr NCD. No Genos or fastener plant update in the Q1/Q2 decks. |
+| JNKINDIA | JNK India Ltd | 3.0 (was ~8; **contradicting**) | Order book −15.3% (₹1,961 → ₹1,662cr). Q2 revenue +3.4%. FY27 guide cut, presented as "maintained". Management cites "longer decision-making cycles". Kept as a counter-signal. The bid pipeline is ~₹5,000cr (Nov). |
 
 ---
 
 ## Why Now
 
-- **GABRIEL total capex ₹260-270 crore confirmed and multi-vertical:** ₹150cr suspension expansion + ₹50cr sunroof JV + ₹60-70cr fastener plant (entirely new product vertical) — management's capital allocation extending beyond existing segments signals high conviction in multi-year demand visibility; Genos plant commercial production Q4 CY26 is a near-term milestone; per Investor Presentation (NSE May 27) — GABRIEL — extracted 2026-06-22
-- **QRSAM ₹30,000cr signing expected July 2026 — confirmed and quantified:** Contract value, BEL share (~₹21,000cr, ~70%), and counterparty (BDL ~30%) all confirmed; order book lifts ~40% on signing day; FY27 pipeline decomposed: QRSAM + P-75I + AMCA + data centres named at June 19 investor meet; per Catalyst Update — BEL — 2026-06-21 + Investor Meet — BEL — 2026-06-19
-- **JNKINDIA UAE export confirmed via regulatory filing:** NSE/BSE filing (Jun 8, 2026) with named client CC7 Emirates, named project (TA'ZIZ Salt Project, ADNOC), full EPC scope, ₹100–300cr, Dec 2027 completion — moves the export thesis from anecdote to documented exchange filing; per Exchange Filing — JNKINDIA — 2026-06-08
-- **GABRIEL quality compounder profile confirmed with above-guidance operational numbers:** Sunroof JV FY26 margin 15.1% above management's own 12-14% guidance on ₹434cr revenue in Year 1; Core ROCE +800bps to 37.7% by FY28; 10-yr NOCF/EBITDA 81%; confirms capex cycle is producing durable high-quality returns, not just order volume; per Analyst Initiation + Investor Presentation — GABRIEL — 2026-06-09 / 2026-06-22
-- **LCA Mark-1A deliveries Aug/Sep 2026:** HAL targeting near-term delivery of first batch (~20 aircraft); revenue recognition milestone in FY27 H1; per Earnings Update — HAL — 2026-06-21
+- **LT record order intake confirms the demand leg.** Q2 FY27 inflow was "Record Order Inflows at ₹ 147,665 crore, up 28%". The order book is ₹8.535trn (+28% YoY, ~2.8x TTM revenue, derived). Per Quarterly Results — LT — 2026-10-27 (03_EXTRACTED_DATA/LT/2026/Q2FY27/quarterly-results.md).
+- **LT Q3 FY27 results (late January 2027)** will show the first margin print after the record-inflow quarter. They are also the next status point on LNTP/conditional awards (NTPC Lara and DVC Chandrapura 1,600 MW thermal; Tashkent ultra-mega) converting to full notices to proceed. Per LT delta 2026-11-23.
+- **New capex segments appear in tier-1 order flow.** The TenneT 2 GW HVDC framework, 6 GWh BESS, PT&D Mega orders (Saudi 380 kV, UAE, Vizag) and the NVIDIA B300 AI Factory are all at LT. Per LT order-wins 2026-07-20 → 2026-09-30.
+- **The FY28 Union Budget (February 2027)** is the next public-capex allocation signal for the domestic leg.
 
 ---
 
 ## Risks
 
-- **LT H1 FY27 explicitly soft — forward deterioration confirmed:** LT management characterised H1 FY27 as "softer due to execution headwinds" with H2 recovery conditional on Middle East normalisation at analyst meet June 20 — this extends the execution quality risk (Q4 FY26 PAT -3%) forward in time; Q1 FY27 results are a live earnings miss risk; per Analyst Meet — LT — 2026-06-20
-- **LT execution quality — confirmed negative signal running two quarters:** Q4 FY26 PAT -3% YoY (₹5,326cr) and EBITDA margin 10.4% confirmed — the largest capex EPC player in the universe showed margin compression even as order book hit ₹7.4 trillion record; H1 FY27 soft forward guidance compounds this pattern; per Earnings Update — LT — 2026-06-21
-- **Order-to-revenue conversion lag:** BEL, HAL, and LT collectively hold 2–8x annual revenue in order books; strong inflows are visible but revenue conversion is multi-year; near-term earnings may disappoint even with thesis intact
-- **JNKINDIA international execution unproven:** UAE order is JNKINDIA's first significant export; 97.5% of the pre-order book was domestic; international EPC in Middle East is harder than domestic (per LT's own experience); Dec 2027 completion is 18 months away
-- **Interest rate sensitivity:** India industrial capex cycle is partly rate-sensitive; RBI increases in H2 FY27 could defer discretionary industrial projects
+- **RBI tightening has come true.** The repo rate rose 25 bp to 5.50% with a stance of "calibrated tightening" (LT Q2 FY27 outlook). Domestic discretionary private capex is the exposed leg.
+- **International-led growth.** About 60% of LT's H1 inflow and 54% of its order book are international, and "The Middle East continue to pose varied downside risks".
+- **Orders are not converting to operating profit.** LT Q2 EBITDA rose 1% vs inflow +28%. PP&M margin is 7.0% vs a ~7.8% guide. H1 ECL is ₹2,353cr (+26%). Q2 PAT growth (+33%) came from other income (+67%), lower finance cost and a deferred-tax credit.
+- **Shrinking order books at two of six companies.** BEL is down 7.0% and JNKINDIA down 15.3% since March 2026.
+- **Pipeline compression.** LT's near-term prospects fell from ~₹15trn (Q1 deck) to ~₹10trn (Q2 deck).
+
+---
+
+## Thesis Breakers
+
+- LT FY27 order inflow growth falls back below 10% (H2 inflow down YoY), **and** its EBITDA margin stays at or below 8.7% through Q3 and Q4 FY27.
+- A further RBI hike, followed by domestic share of LT inflow falling below 35% for two quarters.
+- Order books shrink at three or more of the six tracked companies in the same quarter.
 
 ---
 
@@ -50,32 +66,26 @@
 
 | Company | Document Type | Date |
 |---------|--------------|------|
-| LT | Q4 FY26 Earnings Call | 2026-05-05 |
-| HAL | Q4 FY26 Earnings Call | 2026-05-15 |
-| PARAS | Q4 FY26 Quarterly Results | 2026-05-13 |
-| JNKINDIA | Q4 FY26 Earnings Call + Press Release | 2026-05-21 / 2026-06-09 |
-| BEL | Q4 FY26 Earnings Call | 2026-05-22 |
-| GABRIEL | Q4 FY26 Earnings Call | 2026-05-28 |
-| PARAS | Exchange Filing — BEL electro-optics subcontract ₹52.82cr | 2026-06-02 |
-| JNKINDIA | Exchange Filing — UAE/ADNOC export order ₹100–300cr confirmed | 2026-06-08 |
-| GABRIEL | Analyst Initiation — Motilal Oswal Buy; ROCE 37.7%; PAT CAGR 55% | 2026-06-09 |
-| BEL | Catalyst Update — QRSAM ₹30,000cr confirmed; BEL ~70% (~₹21,000cr) | 2026-06-21 |
-| HAL | Earnings Update — FY26 PAT ₹9,115.52cr (27.6% net margin) | 2026-06-21 |
-| LT | Earnings Update — Q4 PAT -3% YoY; EBITDA 10.4% (NEGATIVE SIGNAL) | 2026-06-21 |
-| GABRIEL | Earnings Update — FY26 PAT ₹252.2cr confirmed | 2026-06-21 |
-| GABRIEL | Investor Presentation (NSE May 27) — Sunroof JV margin 15.1%; capex ₹260-270cr; fastener plant new; Genos Q4 CY26 | 2026-06-22 (extracted) |
-| BEL | Order Win Announcement — ₹608cr Q1 FY27 fresh orders (12 product categories) | 2026-05-25 |
-| BEL | Investor Meet — FY27 pipeline: QRSAM + P-75I + AMCA + data centres; capex >₹1,200cr undisturbed | 2026-06-19 |
-| LT | Analyst Meet — H1 FY27 explicitly soft; H2 recovery tied to Middle East normalisation (NEGATIVE SIGNAL) | 2026-06-20 |
+| LT | Q1 FY27 Results + Investor Presentation — inflow ₹1,08,014cr (+14%); prospects ~₹15trn; "Private capex recovery broadening" | 2026-07-28 |
+| LT | Order wins — TenneT HVDC FCA, 3 ME ultra-megas, BESS, PT&D, AI Factory | 2026-07-20 → 2026-09-30 |
+| LT | Q2 FY27 Results + Investor Presentation — record inflow ₹1,47,665cr; book ₹8.535trn; EBITDA 8.7%; NWC 1.7%; RBI tightening | 2026-10-27 |
+| BEL | Q2 FY27 Earnings Call — capex ~₹1,200cr; R&D ₹2,200cr+; order book ₹68,717cr | 2026-11-03 |
+| HAL | Aravalli engine contract (SAFHAL) | 2026-08-26 |
+| PARAS | MoU / Press Release — ₹6,200cr OSAT facility | 2026-07-22 |
+| GABRIEL | Q2 FY27 Quarterly Filing — H1 capex Rs 667 Mn; NCD ₹1,000cr | 2026-10-30 |
+| JNKINDIA | Order cancellation (UAE/CC7) — **contradicting** | 2026-07-16 |
+| JNKINDIA | Q2 FY27 Earnings Call — order book ₹1,662cr; guide 20–25% / 12–14% — **contradicting** | 2026-11-06 |
+| *June 2026 sources (partly superseded)* | Q4 FY26 calls (LT 05-05, HAL 05-15, PARAS 05-13, JNKINDIA 05-21, BEL 05-22, GABRIEL 05-28); JNKINDIA UAE filing 06-08 (**void**); GABRIEL deck/analyst initiation 06-09/06-22 (sunroof rationale **void**); BEL Investor Meet 06-19; LT Analyst Meet 06-20 | 2026-05 → 2026-06 |
 
 ---
 
 ## Corroboration Count
-6 companies | 3 runs — BEL, HAL, LT, JNKINDIA, PARAS, GABRIEL
+6 companies this run (LT, BEL, HAL, PARAS, GABRIEL supporting or mixed; JNKINDIA contradicting on orders) | 6 cumulative. History: 2026-06-22: 6 | 3 runs → 2026-11-23: 6 | 4 runs.
 
 ---
 
 ## Contradictory Evidence
-Not required at 7.5/10. Key counter-evidence documented in Risks above and in the linked theme record (`06_THEMES/india-industrial-capex-cycle.md`).
-
-**Most material counter-signal this run:** LT Q4 FY26 PAT -3% YoY + EBITDA margin 10.4% — the largest EPC company in the universe is experiencing margin compression despite record order inflows; order quality (profit-generating) is not tracking order quantity. Watch FY27 Q1 for whether this is a one-quarter anomaly or structural.
+Not required at 7.0. Recorded anyway:
+- **Profit conversion:** India's largest EPC posted record orders alongside its lowest EBITDA margin in the tracked series (8.7%). Order quality is not tracking order quantity: three quarters of compression, versus the two flagged in June.
+- **JNKINDIA:** the niche refinery/petchem supplier's book shrank 15% and management cites "longer decision-making cycles". Scale players are taking the order flow.
+- **Earnings quality:** LT and GABRIEL PAT growth is below the line (other income, tax, associates). The Margin Expansion theme is Broken (2026-11-23).

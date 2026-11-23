@@ -77,11 +77,13 @@ Companies mentioning this theme this week:
 - *(2026-11-23)* **BDL / GSL / GRSE** (not tracked) — NGC signed by the parent shipyards; QRSAM missile share ~30% (BDL) once signed.
 
 ## Linked Opportunities
-- `defence-electronics-aerospace-2026-Q4` — Confidence: 9.0 (record last validated 2026-06-22; stale) / Status: Active
+- `defence-electronics-aerospace-2026-Q4` — Confidence: 7.4 (re-validated 2026-11-23; was 9.0) / Status: Monitoring (was Active) / Trend: Weakening
   - Theme agent note (2026-11-23): the theme is now at 7.4 / Weakening. The screener should revalidate this record; the BEL rationale ("QRSAM July 2026 signing", "4 named programmes") is no longer current.
+  - Screener update (2026-11-23): re-validated. June catalysts (QRSAM July, LCA Aug/Sep, MALE UAV) marked superseded; the record is re-based on the NGC clearance, the Dec–Mar BEL inflow test and H1 execution. Candidates: BEL, HAL, PARAS (LT indirect). Weekly report: 07_OPPORTUNITIES/weekly/2026-11-23.md (Opportunity #1).
 
 ## Research Queue Appearances
 0 in the 4 weeks to 2026-11-22. No weekly Top 10 report has been produced since 2026-06-22, so no stock could appear.
+2026-11-23: +4 (LT #1, BEL #2, PARAS #3, HAL #4). Running count over the last 4 weeks = 4.
 Historical: 2026-06-20: BEL #1, HAL #2, LT #4, PARAS #5 | 2026-06-21: BEL #1, HAL #2, PARAS #4, LT #6 | 2026-06-22: PARAS #1, BEL #2, HAL #4, LT #6
 
 ## Potential Losers
